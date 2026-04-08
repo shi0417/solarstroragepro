@@ -1,0 +1,24 @@
+# Vercel build upload ignore list
+# (Does not affect GitHub; use .gitignore for git)
+
+node_modules
+.next
+out
+coverage
+build
+
+# env (never upload)
+.env
+.env.*
+.env*.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# misc
+.DS_Store
+*.pem
+

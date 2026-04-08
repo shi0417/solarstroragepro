@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
 import { siteContact } from "@/lib/site-config";
+import { getSupabaseEnv } from "@/lib/supabase/env";
 
 type KnowledgeRow = {
   topic: string;
@@ -107,10 +108,21 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "message is required" }, { status: 400 });
   }
 
+  const env = getSupabaseEnv();
+  if (!env) {
+    return NextResponse.json(
+      {
+        reply:
+          "服务器未配置 Supabase 环境变量（NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY），暂无法读取知识库。",
+      },
+      { status: 503 }
+    );
+  }
+
   const cookieStore = await cookies();
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
+    env.url,
+    env.publishableKey,
     {
       cookies: {
         getAll() {

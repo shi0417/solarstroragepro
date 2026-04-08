@@ -2,6 +2,7 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
 import { detectLocaleFromRequest, isLocale, LOCALE_COOKIE, LOCALE_HEADER, type Locale } from "@/lib/locale";
+import { getSupabaseEnv } from "@/lib/supabase/env";
 
 /**
  * Keeps Supabase auth cookies in sync for public marketing routes.
@@ -28,10 +29,9 @@ export async function middleware(request: NextRequest) {
     },
   });
 
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
-    {
+  const supabaseEnv = getSupabaseEnv();
+  if (supabaseEnv) {
+    const supabase = createServerClient(supabaseEnv.url, supabaseEnv.publishableKey, {
       cookies: {
         getAll() {
           return request.cookies.getAll();
@@ -48,10 +48,10 @@ export async function middleware(request: NextRequest) {
           );
         },
       },
-    }
-  );
+    });
 
-  await supabase.auth.getSession();
+    await supabase.auth.getSession();
+  }
 
   if (persistLocale) {
     response.cookies.set(LOCALE_COOKIE, locale, {
