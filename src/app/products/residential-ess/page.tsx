@@ -318,9 +318,7 @@ export default function ResidentialEssPage() {
                         <p className="text-xs font-medium uppercase tracking-wide text-solar-500">
                           {p.categoryKey === "lv"
                             ? ui.catLv
-                            : p.categoryKey === "hv"
-                              ? ui.catHv
-                              : ui.catAio}
+                            : ui.catAio}
                         </p>
                         <h3 className="mt-2 text-xl font-semibold text-white">{p.title}</h3>
                         <p className="text-sm text-slate-400">{p.subtitle}</p>
