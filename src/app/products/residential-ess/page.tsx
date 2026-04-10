@@ -20,6 +20,14 @@ type ProductCard = {
   imageDetailHref?: string;
 };
 
+/** 非高压卡片区域仅会出现 lv / aio（hv 在独立分支渲染），避免与 "hv" 比较导致 TS 无交集错误 */
+function badgeForLvOrAio(
+  key: Extract<ProductCard["categoryKey"], "lv" | "aio">,
+  labels: { catLv: string; catAio: string },
+): string {
+  return key === "lv" ? labels.catLv : labels.catAio;
+}
+
 const COMM_EN = "RS485 / RS232 / CAN";
 const COMM_ZH = "RS485 / RS232 / CAN";
 
@@ -316,9 +324,7 @@ export default function ResidentialEssPage() {
                       )}
                       <div className="border-t border-[var(--border)] p-5 sm:p-6">
                         <p className="text-xs font-medium uppercase tracking-wide text-solar-500">
-                          {p.categoryKey === "lv"
-                            ? ui.catLv
-                            : ui.catAio}
+                          {badgeForLvOrAio(p.categoryKey, ui)}
                         </p>
                         <h3 className="mt-2 text-xl font-semibold text-white">{p.title}</h3>
                         <p className="text-sm text-slate-400">{p.subtitle}</p>
