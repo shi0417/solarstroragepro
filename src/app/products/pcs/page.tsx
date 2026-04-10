@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   Box,
   Cpu,
@@ -13,6 +14,8 @@ import {
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
+
+const PCS_PRODUCT_IMAGE = "/images/SES4H-5160-6900-MV-EX.png" as const;
 
 type SpecRow = { category: string; item: string; detail: string };
 
@@ -31,13 +34,20 @@ export default function PcsProductPage() {
         overviewName: "名称",
         overviewNameVal: "SES4H-5160/6900-MV-EX 预制舱式逆变升压站（Prefabricated Inverter Substation）",
         featuresTitle: "核心优势",
-        placeholderTitle: "PCS 产品图",
-        placeholder: "请将图片放入 public/images/ 并在下方替换为 <img> 或 next/image",
+        imageAlt: "SES4H-5160/6900-MV-EX 预制舱式逆变升压站产品图",
         specsTitle: "技术参数",
         specsHint: "表格支持横向滚动以查看完整内容。",
         colCat: "类别",
         colItem: "参数项目",
         colDetail: "规格详情",
+        complianceTitle: "技术合规与认证",
+        complianceIntro:
+          "本产品设计与型式试验符合下列标准与并网规范（以交付批次证书为准）。",
+        placeholderDiagram: "系统单线图 / 拓扑示意图",
+        placeholderDiagramHint: "Insert system diagram here — 可替换为 next/image 或 <img>",
+        placeholderTransformer: "变压器细节 / 内部开关柜照片",
+        placeholderTransformerHint:
+          "Insert transformer detail or switchgear photo here — 可替换为 next/image 或 <img>",
         ctaDatasheet: "索取资料",
         ctaContact: "联系我们",
         features: [
@@ -68,7 +78,8 @@ export default function PcsProductPage() {
           },
           {
             title: "电网友好",
-            body: "额定交流功率按模块数 N 可配置（典型 N×215kW @45°C，N 为模块数 20~32）。",
+            body:
+              "额定交流功率：N×215kW @45°C，N×129kW @50°C（N 为模块数 20~32）；电流谐波 THDi/THDu <3%。",
             icon: <Gauge className="h-5 w-5" aria-hidden />,
           },
         ],
@@ -84,14 +95,20 @@ export default function PcsProductPage() {
         overviewNameVal:
           "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation (PCS)",
         featuresTitle: "Key advantages",
-        placeholderTitle: "PCS Product Image",
-        placeholder:
-          "Add your asset under public/images/ and replace this block with <img> or next/image",
+        imageAlt: "SES4H-5160/6900-MV-EX prefabricated inverter substation product",
         specsTitle: "Technical specifications",
         specsHint: "Scroll horizontally on small screens.",
         colCat: "Category",
         colItem: "Parameter",
         colDetail: "Specification",
+        complianceTitle: "Technical compliance",
+        complianceIntro:
+          "Design and type tests align with the following standards and grid codes (subject to the certificate package for each delivery).",
+        placeholderDiagram: "System single-line / topology diagram",
+        placeholderDiagramHint: "Insert system diagram here — replace with next/image or <img>",
+        placeholderTransformer: "Transformer detail / switchgear photo",
+        placeholderTransformerHint:
+          "Insert transformer detail or switchgear photo here — replace with next/image or <img>",
         ctaDatasheet: "Request datasheet",
         ctaContact: "Contact us",
         features: [
@@ -122,18 +139,27 @@ export default function PcsProductPage() {
           },
           {
             title: "Rated AC power",
-            body: "N × 215 kW @ 45°C (N = number of modules, typically 20–32).",
+            body: "N × 215 kW @ 45°C; N × 129 kW @ 50°C (N = 20–32). THDi/THDu < 3%.",
             icon: <Gauge className="h-5 w-5" aria-hidden />,
           },
         ],
       };
+
+  const CERTIFICATIONS = [
+    "IEC62477",
+    "IEC61000",
+    "G99",
+    "VDE4110",
+    "VDE4120",
+    "EN50549-2",
+  ] as const;
 
   const specRows: SpecRow[] = isZh
     ? [
         {
           category: "交流与直流参数",
           item: "额定交流功率",
-          detail: "N × 215kW @ 45°C（N 为模块数，20~32）",
+          detail: "N × 215kW @ 45°C；N × 129kW @ 50°C（N 为模块数，20~32）",
         },
         {
           category: "交流与直流参数",
@@ -148,12 +174,32 @@ export default function PcsProductPage() {
         {
           category: "交流与直流参数",
           item: "直流电压范围",
-          detail: "1000V–1500V（满载放电 1070V–1500V）",
+          detail: "1000V–1500V（满载放电以 1070V 为参考下限）",
+        },
+        {
+          category: "交流与直流参数",
+          item: "THDi / THDu",
+          detail: "< 3%",
         },
         {
           category: "交流与直流参数",
           item: "最大直流电流（每支路）",
           detail: "1612A / 201A",
+        },
+        {
+          category: "低压与辅助设备",
+          item: "辅助变压器",
+          detail: "50kVA，690V / 400V",
+        },
+        {
+          category: "低压与辅助设备",
+          item: "UPS",
+          detail: "2kVA（1h 标准）",
+        },
+        {
+          category: "低压与辅助设备",
+          item: "冷却方式",
+          detail: "温控强制风冷",
         },
         {
           category: "变压器参数",
@@ -162,75 +208,125 @@ export default function PcsProductPage() {
         },
         {
           category: "变压器参数",
-          item: "类型 / 冷却方式",
-          detail: "油浸式变压器 / ONAN",
+          item: "联结组别",
+          detail: "Dy11y11",
+        },
+        {
+          category: "变压器参数",
+          item: "类型 / 冷却",
+          detail: "油浸式 / ONAN",
         },
         {
           category: "变压器参数",
           item: "效率",
-          detail: "Tier 2（符合 EU548）",
+          detail: "Tier 2（EU548）",
         },
         {
-          category: "通用参数",
-          item: "尺寸（W×H×D）",
-          detail: "40ft（12192×2896×2438 mm）/ 45ft",
+          category: "变压器参数",
+          item: "本体保护",
+          detail: "压力、温度（两级）、气体继电器",
         },
         {
-          category: "通用参数",
-          item: "重量 / 防护等级",
-          detail: "≤ 30t / IP54（整体）",
+          category: "开关柜与保护",
+          item: "开关柜配置",
+          detail: "DeV / CV / CCV / VMV（可定制）",
         },
         {
-          category: "通用参数",
+          category: "开关柜与保护",
+          item: "中压开关与保护",
+          detail: "真空断路器（VCB）、微机保护系统",
+        },
+        {
+          category: "开关柜与保护",
+          item: "直流侧保护",
+          detail: "直流断路器 / 熔断器",
+        },
+        {
+          category: "通用与环境参数",
+          item: "集装箱尺寸（W×H×D）",
+          detail: "40ft（12192×2896×2438 mm）或 45ft",
+        },
+        {
+          category: "通用与环境参数",
+          item: "总重",
+          detail: "≤ 30t",
+        },
+        {
+          category: "通用与环境参数",
+          item: "防护等级",
+          detail: "IP54（舱体整体）",
+        },
+        {
+          category: "通用与环境参数",
           item: "工作温度",
           detail: "-25°C 至 60°C（45°C 以上降额）",
         },
         {
-          category: "通用参数",
+          category: "通用与环境参数",
           item: "防腐等级",
           detail: "C5（仅外部机械部件）",
         },
         {
-          category: "保护与合规",
+          category: "通讯接口",
           item: "通讯方式",
           detail: "RS485, CAN, TCP/IP",
-        },
-        {
-          category: "保护与合规",
-          item: "认证",
-          detail: "IEC62477, IEC61000, G99, VDE4110, VDE4120, EN50549-2",
         },
       ]
     : [
         {
-          category: "AC & DC",
+          category: "AC & DC parameters",
           item: "Rated AC power",
-          detail: "N × 215 kW @ 45°C (N = modules, 20–32)",
+          detail: "N × 215 kW @ 45°C; N × 129 kW @ 50°C (N = 20–32)",
         },
         {
-          category: "AC & DC",
+          category: "AC & DC parameters",
           item: "Max AC power",
           detail: "110% rated for 2 minutes (≤ 45°C)",
         },
         {
-          category: "AC & DC",
+          category: "AC & DC parameters",
           item: "AC voltage / frequency",
           detail: "10 kV–33 kV / 50 Hz",
         },
         {
-          category: "AC & DC",
+          category: "AC & DC parameters",
           item: "DC voltage range",
-          detail: "1000 V–1500 V (full-load discharge 1070 V–1500 V)",
+          detail: "1000 V–1500 V (1070 V reference at full-load discharge)",
         },
         {
-          category: "AC & DC",
+          category: "AC & DC parameters",
+          item: "THDi / THDu",
+          detail: "< 3%",
+        },
+        {
+          category: "AC & DC parameters",
           item: "Max DC current (per branch)",
           detail: "1612 A / 201 A",
+        },
+        {
+          category: "LV & auxiliary equipment",
+          item: "Auxiliary transformer",
+          detail: "50 kVA, 690 V / 400 V",
+        },
+        {
+          category: "LV & auxiliary equipment",
+          item: "UPS",
+          detail: "2 kVA (1 h standard)",
+        },
+        {
+          category: "LV & auxiliary equipment",
+          item: "Cooling",
+          detail: "Temperature-controlled forced-air cooling",
         },
         {
           category: "Transformer",
           item: "Capacity",
           detail: "5200 kVA @ 45°C or 6900 kVA @ 45°C",
+        },
+        {
+          category: "Transformer",
+          item: "Vector group",
+          detail: "Dy11y11",
         },
         {
           category: "Transformer",
@@ -243,34 +339,54 @@ export default function PcsProductPage() {
           detail: "Tier 2 (EU548)",
         },
         {
-          category: "General",
-          item: "Dimensions (W×H×D)",
-          detail: "40 ft (12192×2896×2438 mm) / 45 ft",
+          category: "Transformer",
+          item: "Transformer protection",
+          detail: "Pressure relay; two-stage temperature; gas (Buchholz) relay",
         },
         {
-          category: "General",
-          item: "Weight / protection",
-          detail: "≤ 30 t / IP54 (enclosure)",
+          category: "Switchgear & protection",
+          item: "Switchgear configuration",
+          detail: "DeV / CV / CCV / VMV (customized)",
         },
         {
-          category: "General",
+          category: "Switchgear & protection",
+          item: "MV switching & protection",
+          detail: "Vacuum circuit breaker (VCB), microcomputer-based protection",
+        },
+        {
+          category: "Switchgear & protection",
+          item: "DC side protection",
+          detail: "DC circuit breakers / fuses",
+        },
+        {
+          category: "General & environment",
+          item: "Enclosure size (W×H×D)",
+          detail: "40 ft (12192×2896×2438 mm) or 45 ft",
+        },
+        {
+          category: "General & environment",
+          item: "Total weight",
+          detail: "≤ 30 t",
+        },
+        {
+          category: "General & environment",
+          item: "Enclosure protection",
+          detail: "IP54 (overall)",
+        },
+        {
+          category: "General & environment",
           item: "Operating temperature",
           detail: "-25°C to 60°C (derate above 45°C)",
         },
         {
-          category: "General",
-          item: "Corrosion class",
+          category: "General & environment",
+          item: "Corrosion prevention",
           detail: "C5 (external mechanical parts only)",
         },
         {
-          category: "Protection & compliance",
-          item: "Communication",
+          category: "Communication",
+          item: "Interfaces",
           detail: "RS485, CAN, TCP/IP",
-        },
-        {
-          category: "Protection & compliance",
-          item: "Certifications",
-          detail: "IEC62477, IEC61000, G99, VDE4110, VDE4120, EN50549-2",
         },
       ];
 
@@ -327,12 +443,37 @@ export default function PcsProductPage() {
                 </div>
               </dl>
 
-              <div
-                className="mt-8 flex min-h-[240px] flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-slate-600 bg-slate-800/40 px-6 py-12 text-center text-sm text-slate-500"
-                aria-label="PCS product image placeholder"
-              >
-                <span className="text-base font-semibold text-slate-400">{ui.placeholderTitle}</span>
-                <span className="max-w-md leading-relaxed">{ui.placeholder}</span>
+              <div className="mt-8 overflow-hidden rounded-xl border border-slate-700/80 bg-slate-900/40 p-4 sm:p-6">
+                <Image
+                  src={PCS_PRODUCT_IMAGE}
+                  alt={ui.imageAlt}
+                  width={1600}
+                  height={900}
+                  sizes="(max-width: 768px) 100vw, 896px"
+                  priority
+                  className="mx-auto h-auto w-full max-h-[min(70vh,520px)] object-contain"
+                />
+              </div>
+
+              <div className="mt-6 grid gap-6 lg:grid-cols-2">
+                <div
+                  className="flex min-h-[200px] flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-slate-600 bg-slate-800/30 px-6 py-10 text-center"
+                  data-placeholder="system-diagram"
+                >
+                  <span className="text-sm font-semibold text-solar-400">{ui.placeholderDiagram}</span>
+                  <span className="max-w-sm text-xs leading-relaxed text-slate-500">
+                    {ui.placeholderDiagramHint}
+                  </span>
+                </div>
+                <div
+                  className="flex min-h-[200px] flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-slate-600 bg-slate-800/30 px-6 py-10 text-center"
+                  data-placeholder="transformer-switchgear"
+                >
+                  <span className="text-sm font-semibold text-solar-400">{ui.placeholderTransformer}</span>
+                  <span className="max-w-sm text-xs leading-relaxed text-slate-500">
+                    {ui.placeholderTransformerHint}
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -389,6 +530,20 @@ export default function PcsProductPage() {
                   </tbody>
                 </table>
               </div>
+            </div>
+
+            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
+              <h2 className="text-xl font-bold text-white sm:text-2xl">{ui.complianceTitle}</h2>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">{ui.complianceIntro}</p>
+              <ul className="mt-6 flex flex-wrap gap-2" aria-label={ui.complianceTitle}>
+                {CERTIFICATIONS.map((code) => (
+                  <li key={code}>
+                    <span className="inline-flex rounded-lg border border-slate-600 bg-slate-900/60 px-3 py-1.5 font-mono text-xs font-medium text-slate-200">
+                      {code}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4 rounded-2xl border border-solar-500/25 bg-gradient-to-br from-solar-500/10 to-transparent p-8">
