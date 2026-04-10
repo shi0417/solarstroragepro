@@ -91,6 +91,10 @@ const en: Messages = {
         { label: "Residential all-in-one ESS", href: "/products/residential-ess" },
         { label: "C&I battery cabinets", href: "/#products" },
         { label: "Energy Storage System", href: "/products/energy-storage-system" },
+        {
+          label: "PCS (Prefabricated Inverter Substation)",
+          href: "/products/pcs",
+        },
       ],
     },
     {
@@ -245,6 +249,7 @@ const zh: Messages = {
         { label: "户用光储一体机", href: "/products/residential-ess" },
         { label: "工商业储能柜", href: "/#products" },
         { label: "Energy Storage System", href: "/products/energy-storage-system" },
+        { label: "PCS（预制舱式逆变升压站）", href: "/products/pcs" },
       ],
     },
     {
