@@ -77,7 +77,7 @@ export default function CaseCenterPage() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {CASES.map((c) => (
                 <article
-                  key={c.sourceUrl}
+                  key={c.id}
                   className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-xl shadow-black/20 backdrop-blur transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-solar-500/10"
                 >
                   <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
@@ -107,7 +107,7 @@ export default function CaseCenterPage() {
                     <div className="mt-6 grid grid-cols-1 gap-3 border-t border-white/5 pt-6">
                       {c.stats.map((stat) => (
                         <div
-                          key={`${c.sourceUrl}-${stat.labelEn}`}
+                          key={`${c.id}-${stat.labelEn}`}
                           className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2"
                         >
                           <span className="flex items-center gap-2 text-xs text-slate-400">
@@ -120,15 +120,13 @@ export default function CaseCenterPage() {
                     </div>
 
                     <div className="mt-auto pt-6">
-                      <a
-                        href={c.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        href={`/case-center/${c.id}`}
                         className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-solar-500/10 px-4 py-2.5 text-sm font-medium text-solar-400 transition hover:bg-solar-500/20 hover:text-solar-300"
                       >
                         {ui.readMore}
                         <ExternalLink className="h-4 w-4" aria-hidden />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </article>
