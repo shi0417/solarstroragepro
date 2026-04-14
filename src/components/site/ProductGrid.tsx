@@ -14,7 +14,7 @@ export function ProductGrid() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{p.heading}</h2>
         <p className="mt-3 max-w-2xl text-slate-400">{p.sub}</p>
-        <ul className="mt-12 grid gap-6 md:grid-cols-3">
+        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {p.items.map((item) => (
             <li
               key={item.name}
