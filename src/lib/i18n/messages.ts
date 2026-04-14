@@ -32,7 +32,8 @@ export type Messages = {
     items: { title: string; body: string }[];
   };
   anchor: {
-    blogSub: string;
+    caseCenterHeading: string;
+    caseCenterSub: string;
     resourcesSub: string;
     companySub: string;
     serviceSub: string;
@@ -112,7 +113,7 @@ const en: Messages = {
         },
       ],
     },
-    { label: "Blog", href: "#blog" },
+    { label: "Case Center", href: "/case-center" },
     {
       label: "Resources",
       href: "#resources",
@@ -192,7 +193,9 @@ const en: Messages = {
     ],
   },
   anchor: {
-    blogSub: "Technical notes, use cases, and market trends — wire to Supabase or a headless CMS.",
+    caseCenterHeading: "Case Center",
+    caseCenterSub:
+      "High-efficiency PV projects worldwide — utility, C&I, and residential highlights (data from AIKO Solar case studies).",
     resourcesSub: "Whitepapers, certificates, manuals, and downloads hub.",
     companySub: "R&D, quality, and global delivery — add capacity, tenure, and investment stats here.",
     serviceSub: "Presales design, commissioning, warranty, and remote ops — connect tickets/SLA in Supabase.",
@@ -271,7 +274,7 @@ const zh: Messages = {
         { label: "电网级电池储能系统（BESS）", href: "/solutions/grid-level-bess" },
       ],
     },
-    { label: "博客", href: "#blog" },
+    { label: "案例中心", href: "/case-center" },
     {
       label: "资源",
       href: "#resources",
@@ -351,7 +354,9 @@ const zh: Messages = {
     ],
   },
   anchor: {
-    blogSub: "技术解读、应用案例与行业趋势，可对接 Supabase 文章表或 Headless CMS。",
+    caseCenterHeading: "案例中心",
+    caseCenterSub:
+      "全球高效光伏项目精选 — 地面电站、工商业与户用场景（案例数据来源于爱旭太阳能 AIKO Solar）。",
     resourcesSub: "白皮书、认证证书、安装手册与下载中心入口。",
     companySub: "研发制造、质量体系与全球交付能力，可在此放置产能、投资与年限等数据条。",
     serviceSub: "售前方案、交付调试、质保与远程运维。可将工单与 SLA 与 Supabase 后台打通。",
