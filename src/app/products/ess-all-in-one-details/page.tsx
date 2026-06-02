@@ -150,7 +150,7 @@ export default function EssAllInOneDetailsPage() {
       ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -179,7 +179,7 @@ export default function EssAllInOneDetailsPage() {
             {series.map((block) => (
               <article
                 key={block.id}
-                className="grid gap-8 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-start"
+                className="grid gap-8 rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-start"
               >
                 <div className="flex flex-col items-center justify-center rounded-xl bg-slate-900/70 px-4 py-8 lg:min-h-[280px]">
                   <img

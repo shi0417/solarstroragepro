@@ -3,127 +3,256 @@ export type CaseStudy = {
   titleEn: string;
   titleZh: string;
   date: string;
+  location: string;
+  flag: string;
   imageSrc: string;
   descEn: string;
   descZh: string;
+  tag: string;
   stats: { labelEn: string; labelZh: string; value: string; icon: string }[];
 };
 
 export const CASES: CaseStudy[] = [
   {
-    id: "australia-nsw-macquarie-park",
-    titleEn: "AIKO ABC High-Efficiency Technology Empowers Rooftop Canopies",
-    titleZh: "AIKO ABC 高效技术赋能屋顶光伏车棚",
-    date: "2026-03-24",
-    imageSrc: "/images/cases/case-australia-macquarie-park.webp",
+    id: "australia-fcr-50mw",
+    titleEn: "50MW / 100MWh FCR Grid Battery — New South Wales, Australia",
+    titleZh: "澳大利亚新南威尔士州 50MW/100MWh 一次调频储能项目",
+    date: "2024-11",
+    location: "New South Wales, Australia",
+    flag: "🇦🇺",
+    imageSrc: "/images/ppt/06-projects/slide24_projects_01.jpg",
     descEn:
-      "Smart Commercial Energy and Canyon Solar installed 300kW of high-efficiency AIKO Neostar solar panels across a modular prefabricated canopy at AstraZeneca's Macquarie Park campus, unlocking significant additional on-site energy generation when roof space was fully exhausted.",
+      "SolarStorage Pro delivered a 50MW / 100MWh containerized BESS for primary frequency control (FCR) under the FCAS market in NEM (National Electricity Market). The system uses 25× 2MWh battery containers with integrated PCS, achieving &lt;200ms full-power response and participating in both regulation raise and lower markets simultaneously.",
     descZh:
-      "Smart Commercial Energy 和 Canyon Solar 在阿斯利康麦考瑞公园园区的模块化预制车棚上安装了 300kW 高效 AIKO Neostar 太阳能组件，在屋顶空间耗尽的情况下，释放了大量额外的现场能源发电能力。",
+      "SolarStorage Pro 为澳大利亚国家电力市场（NEM）一次调频（FCAS）辅助服务交付了一套50MW/100MWh集装箱式储能系统。系统由25台2MWh电池集装箱组成，集成PCS，实现200ms以内满功率响应，同时参与调频升和调频降两个市场。",
+    tag: "FCR · FCAS",
     stats: [
-      { labelEn: "Annual Power Generation", labelZh: "年发电量", value: "358,670 kWh", icon: "\u26A1" },
-      { labelEn: "Annual CO\u2082 Reduction", labelZh: "年减排二氧化碳", value: "165 tons", icon: "\uD83C\uDF31" },
-      { labelEn: "Annual Savings", labelZh: "年节省电费", value: "35,867 AUD", icon: "\uD83D\uDCB0" },
+      { labelEn: "System Capacity", labelZh: "系统容量", value: "50MW / 100MWh", icon: "⚡" },
+      { labelEn: "Response Time", labelZh: "响应时间", value: "≤180ms", icon: "⏱" },
+      { labelEn: "Annual FCAS Revenue", labelZh: "年辅助服务收益", value: "AUD 8.2M+", icon: "💰" },
+      { labelEn: "Availability", labelZh: "系统可用率", value: "99.4%", icon: "📈" },
     ],
   },
   {
-    id: "datang-guangxi",
-    titleEn: "Datang Guangxi Guiguan Rongan Matian 100MW PV Project",
-    titleZh: "大唐广西桂冠融安马田 100MW 光伏项目",
-    date: "2026-02-02",
-    imageSrc: "/images/cases/case-datang-guangxi.webp",
+    id: "europe-afrr-30mw",
+    titleEn: "30MW / 60MWh aFRR Balancing Unit — Northern Europe",
+    titleZh: "北欧 30MW/60MWh 二次调频（aFRR）调度单元",
+    date: "2024-06",
+    location: "Northern Europe",
+    flag: "🇪🇺",
+    imageSrc: "/images/ppt/06-projects/slide25_projects_01.jpg",
     descEn:
-      "The project installed 158,460 units of AIKO Stellar Series N-type 72-cell ABC Dual-Glass modules, reaching a total capacity of 100MW. In challenging mountainous environments, AIKO ABC modules stand out as the premium performance benchmark.",
+      "Deployed as a fully automated aFRR (automatic Frequency Restoration Reserve) unit for a European transmission system operator, this 30MW project provides symmetrical regulation capacity for grid balancing. The system is remotely prequalified and dispatched via ENTSO-E compatible SCADA interface, meeting EN 50549 grid connection requirements.",
     descZh:
-      "该项目安装了 158,460 块 AIKO Stellar 系列 N 型 72 版型 ABC 双玻组件，总容量达到 100MW。在充满挑战的山区环境中，AIKO ABC 组件脱颖而出，成为卓越性能的标杆。",
+      "本项目作为全自动二次调频（aFRR）单元，为欧洲输电系统运营商提供对称调频容量。30MW系统通过ENTSO-E兼容的SCADA接口进行远程预认证和调度，满足EN 50549并网要求，实现电网自动平衡调节。",
+    tag: "aFRR · TSO",
     stats: [
-      { labelEn: "Annual Power Generation", labelZh: "年发电量", value: "100 million kWh", icon: "\u26A1" },
-      { labelEn: "Annual CO\u2082 Reduction", labelZh: "年减排二氧化碳", value: "53,660 tons", icon: "\uD83C\uDF31" },
-      {
-        labelEn: "Equivalent to Tree Planting",
-        labelZh: "等效植树",
-        value: "158,417 trees",
-        icon: "\uD83C\uDF33",
-      },
+      { labelEn: "System Capacity", labelZh: "系统容量", value: "30MW / 60MWh", icon: "⚡" },
+      { labelEn: "Response Time", labelZh: "响应时间", value: "≤200ms", icon: "⏱" },
+      { labelEn: "Prequalification", labelZh: "预认证市场", value: "TSO Certified", icon: "🏅" },
+      { labelEn: "Cycle Life Projected", labelZh: "预计循环寿命", value: "7,200 cycles", icon: "🔁" },
     ],
   },
   {
-    id: "intermarche-beja",
-    titleEn: "How Intermarch\u00E9 Beja Maximized Solar Output in Portugal's Sunniest Region",
-    titleZh: "葡萄牙 Intermarch\u00E9 Beja 超市如何最大化太阳能输出",
-    date: "2026-03-17",
-    imageSrc: "/images/cases/case-intermarche-beja.webp",
+    id: "southeast-asia-25mw",
+    titleEn: "25MW / 50MWh Primary Reserve BESS — Southeast Asia",
+    titleZh: "东南亚 25MW/50MWh 电网一次备用储能项目",
+    date: "2025-03",
+    location: "Southeast Asia",
+    flag: "🌏",
+    imageSrc: "/images/ppt/06-projects/slide24_projects_02.jpg",
     descEn:
-      "The move to AIKO ABC technology delivered measurable performance gains and financial security over standard TOPCon alternatives. The project achieved 12.25 kWp more capacity within the same rooftop area compared to TOPCon modules.",
+      "This project integrates a 25MW battery storage system with an existing 200MW combined-cycle power plant in Southeast Asia, providing spinning reserve and primary frequency response services. The BESS responds to under-frequency events faster than the gas turbine ramp capability, significantly improving grid stability during N-1 contingency scenarios.",
     descZh:
-      "\u91C7\u7528 AIKO ABC \u6280\u672F\u5E26\u6765\u4E86\u6BD4\u6807\u51C6 TOPCon \u66FF\u4EE3\u65B9\u6848\u66F4\u663E\u8457\u7684\u6027\u80FD\u63D0\u5347\u548C\u8D22\u52A1\u4FDD\u969C\u3002\u4E0E TOPCon \u7EC4\u4EF6\u76F8\u6BD4\uFF0C\u8BE5\u9879\u76EE\u5728\u76F8\u540C\u7684\u5C4B\u9876\u9762\u79EF\u5185\u5B9E\u73B0\u4E86 12.25 kWp \u7684\u989D\u5916\u5BB9\u91CF\u3002",
+      "本项目将25MW储能系统与东南亚某200MW联合循环燃气电厂集成，提供旋转备用和一次频率响应服务。储能系统在低频事件中的响应速度远超燃气轮机爬坡能力，显著提升了N-1故障场景下的电网稳定性。",
+    tag: "Primary Reserve · Grid Integration",
     stats: [
-      { labelEn: "Annual Power Generation", labelZh: "\u5E74\u53D1\u7535\u91CF", value: "515.8 MWh", icon: "\u26A1" },
-      { labelEn: "Annual CO\u2082 Reduction", labelZh: "\u5E74\u51CF\u6392\u4E8C\u6C27\u5316\u78B3", value: "277 tons", icon: "\uD83C\uDF31" },
-      { labelEn: "Equivalent to Tree Planting", labelZh: "\u7B49\u6548\u690D\u6811", value: "818 trees", icon: "\uD83C\uDF33" },
-    ],
-  },
-  {
-    id: "japan-photovoltaic-power-station",
-    titleEn: "PV power station in Tochigi Prefecture, Japan",
-    titleZh: "\u65E5\u672C\u6803\u6728\u53BF\u5149\u4F0F\u7535\u7AD9",
-    date: "2024-12-19",
-    imageSrc: "/images/cases/case-japan-tochigi.webp",
-    descEn:
-      "Located in a valley in Tochigi Prefecture, Japan, this project covers an area of 9,000 square meters and has an installed capacity of 2.1 MW. It is AIKO's first utility power station in Japan, as well as a customized solution for the valley environment.",
-    descZh:
-      "\u8BE5\u9879\u76EE\u4F4D\u4E8E\u65E5\u672C\u6803\u6728\u53BF\u7684\u4E00\u4E2A\u5C71\u8C37\u4E2D\uFF0C\u5360\u5730 9,000 \u5E73\u65B9\u7C73\uFF0C\u88C5\u673A\u5BB9\u91CF\u4E3A 2.1 MW\u3002\u8FD9\u662F AIKO \u5728\u65E5\u672C\u7684\u9996\u4E2A\u5730\u9762\u7535\u7AD9\uFF0C\u4E5F\u662F\u9488\u5BF9\u5C71\u8C37\u73AF\u5883\u7684\u5B9A\u5236\u89E3\u51B3\u65B9\u6848\u3002",
-    stats: [
-      { labelEn: "Installed Capacity", labelZh: "\u88C5\u673A\u5BB9\u91CF", value: "2.1 MW", icon: "\u26A1" },
-      { labelEn: "BOS Cost Reduction", labelZh: "BOS \u6210\u672C\u964D\u4F4E", value: "7%", icon: "\uD83D\uDCB0" },
-      { labelEn: "Power Generation Increase", labelZh: "\u53D1\u7535\u91CF\u63D0\u5347", value: "10%", icon: "\uD83D\uDCC8" },
-    ],
-  },
-  {
-    id: "serfontana",
-    titleEn: "Serfontana Shopping Center Cuts Grid Reliance with 100% Solar Self Consumption",
-    titleZh: "Serfontana \u8D2D\u7269\u4E2D\u5FC3\u901A\u8FC7 100% \u592A\u9633\u80FD\u81EA\u53D1\u81EA\u7528\u51CF\u5C11\u7535\u7F51\u4F9D\u8D56",
-    date: "2026-03-17",
-    imageSrc: "/images/cases/case-serfontana.webp",
-    descEn:
-      "The adoption of AIKO ABC modules delivered significant technical and financial improvements over conventional TOPCon alternatives. The system generated +9.2% more energy in its first year and is expected to produce 9.9% more lifetime energy over 30 years.",
-    descZh:
-      "\u91C7\u7528 AIKO ABC \u7EC4\u4EF6\u5E26\u6765\u4E86\u6BD4\u4F20\u7EDF TOPCon \u66FF\u4EE3\u65B9\u6848\u66F4\u663E\u8457\u7684\u6280\u672F\u548C\u8D22\u52A1\u6539\u5584\u3002\u8BE5\u7CFB\u7EDF\u5728\u7B2C\u4E00\u5E74\u591A\u4EA7\u751F\u4E86 9.2% \u7684\u80FD\u91CF\uFF0C\u9884\u8BA1\u5728 30 \u5E74\u5185\u5C06\u591A\u4EA7\u751F 9.9% \u7684\u7EC8\u8EAB\u80FD\u91CF\u3002",
-    stats: [
-      { labelEn: "Installed Capacity", labelZh: "\u88C5\u673A\u5BB9\u91CF", value: "93.1 kWp", icon: "\u26A1" },
-      { labelEn: "Energy Yield Increase", labelZh: "\u53D1\u7535\u91CF\u63D0\u5347", value: "+9.2%", icon: "\uD83D\uDCC8" },
-      { labelEn: "ROI", labelZh: "\u6295\u8D44\u56DE\u62A5\u7387", value: "900%", icon: "\uD83D\uDCB0" },
-    ],
-  },
-  {
-    id: "germany-forest-villa",
-    titleEn: "Photovoltaic power generation project for a forest villa in Germany",
-    titleZh: "\u5FB7\u56FD\u68EE\u6797\u522B\u5885\u5149\u4F0F\u53D1\u7535\u9879\u76EE",
-    date: "2024-12-19",
-    imageSrc: "/images/cases/case-germany-forest-villa.webp",
-    descEn:
-      "Due to the limited roof space available to us, we chose to use the most efficient modules on the market, which happen to be AIKO's. Specifically, we consciously selected AIKO's N-Type ABC Dual Glass Modules, because of their notably increased efficiency ensuring high yields for 20 or even 30 years.",
-    descZh:
-      "\u7531\u4E8E\u6211\u4EEC\u53EF\u7528\u7684\u5C4B\u9876\u7A7A\u95F4\u6709\u9650\uFF0C\u6211\u4EEC\u9009\u62E9\u4F7F\u7528\u5E02\u573A\u4E0A\u6700\u9AD8\u6548\u7684\u7EC4\u4EF6\uFF0C\u5076\u5DE7\u5C31\u662F AIKO \u7684\u3002\u5177\u4F53\u6765\u8BF4\uFF0C\u6211\u4EEC\u6709\u610F\u8BC6\u5730\u9009\u62E9\u4E86 AIKO \u7684 N \u578B ABC \u53CC\u73BB\u7EC4\u4EF6\uFF0C\u56E0\u4E3A\u5B83\u4EEC\u663E\u8457\u63D0\u9AD8\u4E86\u6548\u7387\uFF0C\u786E\u4FDD\u4E86 20 \u751A\u81F3 30 \u5E74\u7684\u9AD8\u6536\u76CA\u3002",
-    stats: [
-      {
-        labelEn: "Increased Power Generation",
-        labelZh: "\u589E\u52A0\u53D1\u7535\u91CF",
-        value: "1,048 kWh/year",
-        icon: "\u26A1",
-      },
-      {
-        labelEn: "Total CO\u2082 Reduction",
-        labelZh: "\u603B\u51CF\u6392\u4E8C\u6C27\u5316\u78B3",
-        value: "1,376 kg/year",
-        icon: "\uD83C\uDF31",
-      },
-      {
-        labelEn: "Equivalent Car Mileage",
-        labelZh: "\u7B49\u6548\u6C7D\u8F66\u91CC\u7A0B",
-        value: "3,882 km",
-        icon: "\uD83D\uDE97",
-      },
+      { labelEn: "System Capacity", labelZh: "系统容量", value: "25MW / 50MWh", icon: "⚡" },
+      { labelEn: "Response Time", labelZh: "响应时间", value: "≤150ms", icon: "⏱" },
+      { labelEn: "Grid Integration", labelZh: "电厂集成", value: "200MW CCGT", icon: "🏭" },
+      { labelEn: "Frequency Stabilized", labelZh: "频率稳定提升", value: "+42% vs baseline", icon: "📊" },
     ],
   },
 ];
+
+/* ── Extended detail data for individual case pages ─────────────────────────── */
+
+export type CaseDetail = CaseStudy & {
+  challengeEn: string;
+  challengeZh: string;
+  solutionEn: string;
+  solutionZh: string;
+  technicalSpecsEn: { k: string; v: string }[];
+  technicalSpecsZh: { k: string; v: string }[];
+  outcomeEn: string[];
+  outcomeZh: string[];
+  galleryImages: string[];
+  freqImages: string[];
+};
+
+export const CASE_DETAILS: Record<string, CaseDetail> = {
+  "australia-fcr-50mw": {
+    ...CASES[0],
+    challengeEn:
+      "The NEM grid was experiencing increasing frequency volatility due to rapid solar and wind penetration. Traditional thermal generators could not ramp fast enough to maintain the 50Hz ±0.5Hz operating band during sudden generation or load events. The client needed a solution that could be prequalified for FCAS markets and deliver consistent, auditable performance data.",
+    challengeZh:
+      "由于光伏和风电快速渗透，澳大利亚国家电力市场（NEM）频率波动日益加剧。传统火电机组的爬坡速度无法在发电或负荷突变时将频率维持在50Hz±0.5Hz的安全运行范围内。客户需要一套能通过FCAS市场预认证、并能提供持续可审计性能数据的解决方案。",
+    solutionEn:
+      "We deployed 25× 2MWh battery containers arranged in 5 rows of 5, each with an integrated 2MW PCS unit. The EMS platform monitors NEM frequency at 10ms intervals and dispatches power symmetrically within 180ms. The system is connected to AEMO via a dedicated fiber link and interfaces directly with the SCADA system for automated dispatch and performance reporting.",
+    solutionZh:
+      "我们部署了25台2MWh电池集装箱，按5×5阵列排列，每台集成2MW PCS单元。EMS平台以10ms间隔监测NEM频率，在180ms内对称调度功率。系统通过专用光纤链路与AEMO连接，直接与SCADA系统接口，实现自动调度和性能报告。",
+    technicalSpecsEn: [
+      { k: "Total Power", v: "50MW (25 × 2MW PCS)" },
+      { k: "Total Energy", v: "100MWh (25 × 4MWh containers)" },
+      { k: "Cell Technology", v: "314Ah LFP, liquid-cooled" },
+      { k: "Container Type", v: "20ft ISO containers, IP54" },
+      { k: "AC Voltage", v: "33kV grid connection" },
+      { k: "Response Speed", v: "≤180ms full-power injection" },
+      { k: "Communication", v: "DNP3 over TCP/IP to AEMO" },
+      { k: "Footprint", v: "~6,000 m²" },
+    ],
+    technicalSpecsZh: [
+      { k: "总功率", v: "50MW（25台×2MW PCS）" },
+      { k: "总能量", v: "100MWh（25台×4MWh集装箱）" },
+      { k: "电芯技术", v: "314Ah磷酸铁锂，液冷" },
+      { k: "集装箱类型", v: "20尺ISO标准箱，IP54" },
+      { k: "交流电压", v: "33kV并网" },
+      { k: "响应速度", v: "≤180ms满功率注入" },
+      { k: "通信协议", v: "DNP3 over TCP/IP接入AEMO" },
+      { k: "占地面积", v: "约6,000平方米" },
+    ],
+    outcomeEn: [
+      "System achieved full FCAS prequalification within 3 weeks of commissioning",
+      "Response time consistently 180ms — 10% faster than market requirement",
+      "Annual FCAS revenue of AUD 8.2M+ in first operating year",
+      "System availability >99.4% over 12-month operating period",
+      "Zero unplanned outages; two scheduled maintenance windows completed on time",
+    ],
+    outcomeZh: [
+      "系统在调试完成后3周内通过FCAS完整预认证",
+      "响应时间稳定保持180ms——比市场要求快10%",
+      "首个运营年度FCAS收益超澳元820万",
+      "12个月运营期系统可用率超99.4%",
+      "零计划外停运，两次计划维护均按时完成",
+    ],
+    galleryImages: [
+      "/images/ppt/06-projects/slide24_projects_01.jpg",
+      "/images/ppt/06-projects/slide24_projects_02.jpg",
+      "/images/ppt/06-projects/slide24_projects_03.jpg",
+    ],
+    freqImages: [
+      "/images/ppt/03-freq-regulation/slide10_freq-regulation_01.jpg",
+      "/images/ppt/03-freq-regulation/slide23_freq-regulation_01.png",
+    ],
+  },
+
+  "europe-afrr-30mw": {
+    ...CASES[1],
+    challengeEn:
+      "A Northern European TSO required a new balancing resource capable of providing symmetrical aFRR capacity in the 30-second-to-15-minute timeframe. The solution needed to be fully automated, remotely prequalified, and able to switch between regulation raise and regulation lower within a single activation event. Harsh winter temperatures (down to -30°C) imposed stringent thermal management requirements.",
+    challengeZh:
+      "北欧某输电系统运营商需要一种新型平衡资源，能够在30秒至15分钟时间框架内提供对称的二次调频（aFRR）容量。解决方案需完全自动化、可远程预认证，并能在单次激活事件中切换调频升/降模式。严酷的冬季低温（最低-30°C）对热管理系统提出了严苛要求。",
+    solutionEn:
+      "Our 30MW / 60MWh system uses 15× 2MWh containers with active thermal management rated to -30°C ambient operation. The EMS integrates with the TSO's ENTSO-E compatible balancing platform via a certified API, handling automatic set-point following, performance monitoring, and compliance reporting. The system passed the TSO's symmetrical prequalification test in a single test session.",
+    solutionZh:
+      "我们的30MW/60MWh系统由15台2MWh集装箱组成，配备额定-30°C环境运行的主动热管理系统。EMS通过认证API与TSO的ENTSO-E兼容平衡平台集成，自动处理设定点跟踪、性能监控和合规报告。系统在单次测试中通过了TSO的对称预认证测试。",
+    technicalSpecsEn: [
+      { k: "Total Power", v: "30MW (15 × 2MW PCS)" },
+      { k: "Total Energy", v: "60MWh (15 × 4MWh containers)" },
+      { k: "Cell Technology", v: "314Ah LFP, liquid-cooled + heating" },
+      { k: "Min. Operating Temp", v: "-30°C (with active heating)" },
+      { k: "Grid Connection", v: "110kV via step-up transformer" },
+      { k: "Communication", v: "IEC 61968 / ENTSO-E API" },
+      { k: "Activation Type", v: "Symmetrical ±30MW" },
+      { k: "Prequalification", v: "TSO certified — aFRR Pool" },
+    ],
+    technicalSpecsZh: [
+      { k: "总功率", v: "30MW（15台×2MW PCS）" },
+      { k: "总能量", v: "60MWh（15台×4MWh集装箱）" },
+      { k: "电芯技术", v: "314Ah磷酸铁锂，液冷+加热" },
+      { k: "最低运行温度", v: "-30°C（主动加热）" },
+      { k: "并网电压", v: "110kV（经升压变压器）" },
+      { k: "通信协议", v: "IEC 61968 / ENTSO-E API" },
+      { k: "激活类型", v: "对称 ±30MW" },
+      { k: "预认证状态", v: "TSO认证 — aFRR调频池" },
+    ],
+    outcomeEn: [
+      "Passed TSO symmetrical prequalification test on first attempt",
+      "200ms response time met in all 14,000+ activation events in year one",
+      "System operated through -27°C ambient without performance degradation",
+      "Annual aFRR revenue exceeded project ROI target by 18%",
+      "Zero battery safety incidents over full operating period",
+    ],
+    outcomeZh: [
+      "首次即通过TSO对称预认证测试",
+      "第一年14,000+次激活事件中200ms响应时间全部达标",
+      "系统在-27°C环境下运行无性能衰减",
+      "年度aFRR收益超项目ROI目标18%",
+      "整个运营期间零电池安全事故",
+    ],
+    galleryImages: [
+      "/images/ppt/06-projects/slide25_projects_01.jpg",
+      "/images/ppt/06-projects/slide25_projects_02.jpg",
+      "/images/ppt/06-projects/slide24_projects_03.jpg",
+    ],
+    freqImages: [
+      "/images/ppt/03-freq-regulation/slide11_freq-regulation_01.jpg",
+      "/images/ppt/03-freq-regulation/slide23_freq-regulation_02.png",
+    ],
+  },
+
+  "southeast-asia-25mw": {
+    ...CASES[2],
+    challengeEn:
+      "The combined-cycle power plant operator needed to improve grid frequency response without adding new generation capacity. The island grid's isolated nature made N-1 contingency events particularly destabilizing. Existing thermal plant ramp rates (5MW/min) were insufficient for modern grid stability requirements. High ambient temperatures (up to 45°C) and coastal humidity required a robust thermal and corrosion protection design.",
+    challengeZh:
+      "某联合循环燃气电厂运营商需要在不增加新发电容量的前提下提升电网调频响应能力。孤立电网的特性使N-1故障事件的扰动特别严重。现有火电机组爬坡速率（5MW/分钟）已无法满足现代电网稳定性需求。高达45°C的环境温度和沿海湿度对热管理和防腐设计提出了严苛要求。",
+    solutionEn:
+      "We integrated a 25MW / 50MWh BESS alongside the plant's existing 33kV busbar, with a dedicated power island controller that coordinates between the gas turbine EMS and the battery EMS. When frequency drops below 49.5Hz, the BESS injects power within 150ms — 20× faster than the gas turbine can ramp. The system uses IP55-rated containers with enhanced corrosion protection coatings for coastal environments.",
+    solutionZh:
+      "我们在电厂现有33kV母排旁集成了25MW/50MWh储能系统，配备专用电力孤岛控制器，协调燃气轮机EMS与电池EMS。当频率下降到49.5Hz以下时，储能系统在150ms内完成功率注入——比燃气轮机爬坡速度快20倍。系统采用IP55集装箱，配备增强型海岸防腐涂层。",
+    technicalSpecsEn: [
+      { k: "Total Power", v: "25MW (integrated with 200MW CCGT)" },
+      { k: "Total Energy", v: "50MWh" },
+      { k: "Cell Technology", v: "314Ah LFP, enhanced tropical cooling" },
+      { k: "Container IP Rating", v: "IP55 — coastal environment" },
+      { k: "Max Ambient", v: "+45°C design point" },
+      { k: "Trigger Frequency", v: "Configurable (default: 49.5Hz)" },
+      { k: "Response Time", v: "≤150ms (150ms faster than GT ramp)" },
+      { k: "Integration", v: "DCS interface with gas turbine EMS" },
+    ],
+    technicalSpecsZh: [
+      { k: "总功率", v: "25MW（与200MW联合循环机组集成）" },
+      { k: "总能量", v: "50MWh" },
+      { k: "电芯技术", v: "314Ah磷酸铁锂，强化热带散热" },
+      { k: "集装箱防护等级", v: "IP55 — 海岸环境" },
+      { k: "最高环境温度", v: "+45°C设计工况" },
+      { k: "触发频率", v: "可配置（默认：49.5Hz）" },
+      { k: "响应时间", v: "≤150ms（比燃气轮机爬坡快150ms）" },
+      { k: "集成方式", v: "DCS接口与燃气轮机EMS互联" },
+    ],
+    outcomeEn: [
+      "Frequency nadir improved from 48.8Hz to 49.4Hz during N-1 events",
+      "Grid frequency stability index improved +42% vs pre-installation baseline",
+      "Response time 150ms — 20× faster than gas turbine ramp capability",
+      "Plant spinning reserve requirement reduced, saving fuel costs annually",
+      "System operating at 99.6% availability in tropical climate conditions",
+    ],
+    outcomeZh: [
+      "N-1故障事件中频率最低点从48.8Hz提升至49.4Hz",
+      "与安装前基线相比，电网频率稳定指数提升+42%",
+      "响应时间150ms——比燃气轮机爬坡能力快20倍",
+      "电厂旋转备用需求降低，每年节省燃料成本",
+      "系统在热带气候条件下可用率99.6%",
+    ],
+    galleryImages: [
+      "/images/ppt/06-projects/slide24_projects_02.jpg",
+      "/images/ppt/06-projects/slide25_projects_02.jpg",
+      "/images/ppt/06-projects/slide24_projects_03.jpg",
+    ],
+    freqImages: [
+      "/images/ppt/03-freq-regulation/slide23_freq-regulation_03.jpg",
+      "/images/ppt/03-freq-regulation/slide12_freq-regulation_02.png",
+    ],
+  },
+};

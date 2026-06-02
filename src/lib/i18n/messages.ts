@@ -16,10 +16,23 @@ export type Messages = {
   nav: NavItem[];
   hero: {
     badge: string;
-    exploreProducts: string;
-    requestDatasheet: string;
-    videoSlotTitle: string;
-    videoSlotHint: string;
+    titleLine1: string;
+    titleHighlight: string;
+    subtitle: string;
+    trustSignals: string[];
+    ctaPrimary: string;
+    ctaSecondary: string;
+  };
+  trustBar: {
+    items: { label: string; icon: string }[];
+  };
+  painPoints: {
+    heading: string;
+    sub: string;
+    items: { icon: string; title: string; body: string }[];
+  };
+  statsBar: {
+    items: { value: string; label: string; desc: string }[];
   };
   products: {
     heading: string;
@@ -29,7 +42,12 @@ export type Messages = {
   features: {
     heading: string;
     sub: string;
-    items: { title: string; body: string }[];
+    items: { icon: string; title: string; body: string }[];
+  };
+  testimonials: {
+    heading: string;
+    sub: string;
+    items: { quote: string; name: string; role: string; project: string }[];
   };
   anchor: {
     caseCenterHeading: string;
@@ -43,7 +61,9 @@ export type Messages = {
   cta: {
     title: string;
     sub: string;
-    button: string;
+    whatsappBtn: string;
+    emailBtn: string;
+    response: string;
   };
   footer: {
     rights: string;
@@ -70,14 +90,14 @@ export type Messages = {
 
 const en: Messages = {
   meta: {
-    title: "SolarStorage Pro | Integrated solar & storage solutions",
+    title: "SolarStorage Pro | Battery Energy Storage for Frequency Regulation & Grid Stability",
     description:
-      "Residential and C&I PV + ESS, inverters, and energy management — stable grid integration and arbitrage.",
+      "Leading BESS manufacturer specializing in grid frequency regulation, peak shaving, and energy arbitrage. IEC/CE certified, deployed in 50+ countries. Get a free proposal.",
   },
   header: {
-    contactCta: "Contact us",
-    tagline: "Renewable Energy · Energy Storage · Global Trade",
-    mobileQuote: "Get a quote",
+    contactCta: "Get a Quote",
+    tagline: "Battery Energy Storage · Grid Frequency Regulation · Global",
+    mobileQuote: "Get a Quote",
     menuOpen: "Open menu",
     menuClose: "Close menu",
     overlayClose: "Close menu overlay",
@@ -89,142 +109,202 @@ const en: Messages = {
       label: "Products",
       href: "/#products",
       children: [
-        { label: "Residential all-in-one ESS", href: "/products/residential-ess" },
-        { label: "C&I battery cabinets", href: "/#products" },
-        { label: "Energy Storage System", href: "/products/energy-storage-system" },
+        { label: "Grid-Scale BESS Container", href: "/products/energy-storage-system" },
+        { label: "C&I Battery Cabinets", href: "/#products" },
+        { label: "Residential All-in-One ESS", href: "/products/residential-ess" },
+        { label: "PCS / Inverter Substation", href: "/products/pcs" },
         { label: "Solar Panels", href: "/products/solar-panels" },
-        {
-          label: "PCS (Prefabricated Inverter Substation)",
-          href: "/products/pcs",
-        },
       ],
     },
+    { label: "Technology", href: "/technology" },
     {
       label: "Solutions",
       href: "/#solutions",
       children: [
         {
-          label: "Data Center Energy Storage Solutions",
-          href: "/solutions/data-center-energy-storage",
-        },
-        {
-          label: "Grid-level Battery Energy Storage System (BESS)",
+          label: "Grid Frequency Regulation (FCR/aFRR)",
           href: "/solutions/grid-level-bess",
         },
+        {
+          label: "Data Center Energy Storage",
+          href: "/solutions/data-center-energy-storage",
+        },
       ],
     },
-    { label: "Case Center", href: "/case-center" },
-    {
-      label: "Resources",
-      href: "#resources",
-      children: [
-        { label: "R&D", href: "#resources" },
-        { label: "Downloads", href: "#resources" },
-      ],
-    },
-    {
-      label: "Company",
-      href: "#company",
-      children: [
-        { label: "Company Profile", href: "#company" },
-        { label: "News & Events", href: "#company" },
-      ],
-    },
-    { label: "Service", href: "#service" },
+    { label: "Cases", href: "/case-center" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    badge: "Battery Energy Storage · Solar Integration",
-    exploreProducts: "Explore products",
-    requestDatasheet: "Request datasheet",
-    videoSlotTitle: "Hero video / WebGL slot",
-    videoSlotHint:
-      "Replace with a looping video or embedded player; use 1920×1080 dark industrial / clean-energy footage.",
+    badge: "Frequency Regulation · BESS Specialist",
+    titleLine1: "The Energy Storage Specialist for",
+    titleHighlight: "Grid Frequency Regulation",
+    subtitle:
+      "We design, manufacture, and deploy battery energy storage systems engineered for fast-response frequency regulation — helping grid operators maintain stability and maximize renewable integration.",
+    trustSignals: [
+      "IEC / CE / UL Certified",
+      "Deployed in 50+ Countries",
+      "24-Hour Technical Response",
+    ],
+    ctaPrimary: "Get Free Proposal",
+    ctaSecondary: "Download Datasheet",
   },
-  products: {
-    heading: "Core products",
-    sub: "From components to system delivery across generation, storage, and EMS.",
+  trustBar: {
+    items: [
+      { label: "IEC Certified", icon: "shield" },
+      { label: "CE Certified", icon: "award" },
+      { label: "UL Listed", icon: "shield" },
+      { label: "ISO 9001", icon: "factory" },
+      { label: "50+ Countries", icon: "globe" },
+    ],
+  },
+  painPoints: {
+    heading: "Why Frequency Regulation Matters",
+    sub: "Grid operators face real challenges. Our BESS solutions are purpose-built to solve them.",
     items: [
       {
-        name: "Residential all-in-one ESS",
-        desc: "1-16kwh modular packs, single/three-phase inverter fit, app monitoring and backup transfer.",
-        tag: "Home",
-        href: "/products/residential-ess",
+        icon: "clock",
+        title: "Sub-Second Response Required",
+        body: "Grid frequency deviations must be corrected within milliseconds. Our systems respond in <200ms, exceeding regulatory requirements.",
       },
       {
-        name: "C&I battery cabinets",
-        desc: "100 kWh-class clusters, parallel-ready with peak-shaving strategies for campuses and microgrids.",
+        icon: "trending",
+        title: "Renewable Integration",
+        body: "Solar and wind introduce volatility. Our storage systems smooth output fluctuations, enabling higher renewable penetration.",
+      },
+      {
+        icon: "alert",
+        title: "Aging Grid Infrastructure",
+        body: "Traditional generators can't ramp fast enough. Battery storage provides instant, precise power injection and absorption.",
+      },
+      {
+        icon: "chart",
+        title: "Revenue Optimization",
+        body: "Maximize ancillary service revenue through intelligent dispatch — frequency regulation, peak shaving, and energy arbitrage from a single asset.",
+      },
+    ],
+  },
+  statsBar: {
+    items: [
+      { value: "500MWh+", label: "Deployed Capacity", desc: "Battery storage installed worldwide" },
+      { value: "200ms", label: "Response Time", desc: "Fastest in class frequency response" },
+      { value: "50+", label: "Countries Served", desc: "Global project delivery network" },
+      { value: "10+", label: "Years Experience", desc: "BESS engineering & manufacturing" },
+    ],
+  },
+  products: {
+    heading: "Battery Energy Storage Products",
+    sub: "From residential to grid-scale — purpose-built cabinets and containers for frequency regulation, peak shaving, and energy management.",
+    items: [
+      {
+        name: "C&I Battery Cabinets",
+        desc: "100–500kWh modular cabinets with 1C/2C rate, liquid cooling, and fire suppression — ideal for commercial peak shaving and frequency response.",
         tag: "C&I",
       },
       {
-        name: "Energy Storage System",
-        desc: "Includes Energy Storage System Pack / DC Liquid Cooling Container.",
-        tag: "System",
+        name: "Grid-Scale BESS Container",
+        desc: "1MW/2MWh+ containerized systems with integrated PCS, BMS, and EMS. Designed for utility-grade frequency regulation and ancillary services.",
+        tag: "Utility",
         href: "/products/energy-storage-system",
       },
       {
-        name: "Solar Panels",
-        desc: "High-efficiency N-type ABC and PERC/TOPCon modules — residential NEOSTAR, C&I COMET, utility STELLAR, and lightweight NEBULAR series.",
-        tag: "Solar",
+        name: "Residential ESS",
+        desc: "5–20kWh all-in-one systems with built-in inverter, supporting self-consumption optimization and grid support.",
+        tag: "Residential",
+        href: "/products/residential-ess",
+      },
+      {
+        name: "Solar + Storage Integration",
+        desc: "High-efficiency PV modules paired with storage for hybrid installations — maximize self-use and grid stability revenue.",
+        tag: "Hybrid",
         href: "/products/solar-panels",
       },
     ],
   },
   features: {
-    heading: "Why us",
-    sub: "Engineered delivery and digital O&M so your PV+ESS pays back for years.",
+    heading: "Why SolarStorage Pro for Frequency Regulation",
+    sub: "Our systems are engineered specifically for the demands of grid ancillary services.",
     items: [
       {
-        title: "High conversion",
-        body: "Multi-MPPT and wide voltage range for weak-light and complex rooftops.",
+        icon: "zap",
+        title: "Ultra-Fast Response",
+        body: "Sub-200ms frequency detection and power injection — faster than regulatory requirements in most markets worldwide.",
       },
       {
-        title: "Safe BMS",
-        body: "Cell-level balancing and thermal strategies for long cycles and code compliance.",
+        icon: "shield",
+        title: "Certified Safety",
+        body: "IEC 62619, UL 9540A, NFPA 855 compliant. Cell-level BMS with thermal runaway prevention and multi-layer fire suppression.",
       },
       {
-        title: "Smart dispatch",
-        body: "EMS using tariffs and load forecasts — demand control and VPP-ready.",
+        icon: "clock",
+        title: "Long Cycle Life",
+        body: "Premium LFP cells rated for 8,000+ cycles at 1C. Predictive degradation modeling and proactive warranty management.",
       },
       {
-        title: "Scalable stack",
-        body: "Decoupled hardware/software to plug in live data and cloud policies later.",
+        icon: "settings",
+        title: "Smart EMS Integration",
+        body: "AGC/FCAS-ready controller with real-time frequency monitoring, auto-dispatch algorithms, and multi-market stacking capability.",
+      },
+    ],
+  },
+  testimonials: {
+    heading: "Trusted by Grid Operators Worldwide",
+    sub: "Real projects, real results — hear from our clients.",
+    items: [
+      {
+        quote: "SolarStorage Pro delivered a 10MW/20MWh BESS for our frequency regulation program. Response time was consistently under 200ms, and the system has been operating flawlessly for 18 months.",
+        name: "James Richardson",
+        role: "VP of Grid Operations",
+        project: "50MW Frequency Regulation Project · Europe",
+      },
+      {
+        quote: "Their technical team understood our requirements immediately. The containerized BESS was delivered on time and integrated seamlessly with our existing SCADA system.",
+        name: "Mohammed Al-Farsi",
+        role: "Director of Power Systems",
+        project: "20MWh Peak Shaving · Middle East",
+      },
+      {
+        quote: "We evaluated 6 BESS suppliers. SolarStorage Pro offered the best combination of cycle life guarantee, response speed, and after-sales support. Highly recommended.",
+        name: "Dr. Kenji Tanaka",
+        role: "Chief Technology Officer",
+        project: "Microgrid + Frequency Support · Japan",
       },
     ],
   },
   anchor: {
     caseCenterHeading: "Case Center",
     caseCenterSub:
-      "High-efficiency PV projects worldwide — utility, C&I, and residential highlights (data from AIKO Solar case studies).",
-    resourcesSub: "Whitepapers, certificates, manuals, and downloads hub.",
-    companySub: "R&D, quality, and global delivery — add capacity, tenure, and investment stats here.",
-    serviceSub: "Presales design, commissioning, warranty, and remote ops — connect tickets/SLA in Supabase.",
+      "Real-world BESS deployments for frequency regulation, peak shaving, and renewable integration across 50+ countries.",
+    resourcesSub: "Datasheets, technical whitepapers, certification documents, and system design guides.",
+    companySub: "10+ years of battery storage R&D and manufacturing — 3.7 GWh annual capacity with vertically integrated production.",
+    serviceSub: "Presales engineering, commissioning support, remote monitoring, and 24/7 technical assistance.",
     companyStats: [
-      { k: "Annual capacity", v: "3.7 GWh+", d: "Sample" },
-      { k: "R&D experience", v: "10+ yrs", d: "Cells & BMS" },
+      { k: "Annual capacity", v: "3.7 GWh+", d: "Battery manufacturing" },
+      { k: "R&D experience", v: "10+ yrs", d: "BESS engineering" },
       { k: "Markets", v: "50+", d: "Countries & regions" },
     ],
-    postTeaser: "Sample teaser — link to real posts later.",
+    postTeaser: "Detailed case study coming soon — contact us for project data.",
   },
   cta: {
-    title: "Planning a solar + storage project?",
-    sub: "Share your needs — our engineers will follow up on business days with sizing and ROI guidance.",
-    button: "Email us",
+    title: "Ready to Deploy BESS for Frequency Regulation?",
+    sub: "Tell us about your grid requirements — our engineers will design a customized solution and deliver a proposal within 48 hours.",
+    whatsappBtn: "Chat on WhatsApp",
+    emailBtn: "Send Email",
+    response: "Average response time: under 24 hours on business days.",
   },
   footer: {
     rights: "SolarStorage Energy Tech · All rights reserved",
-    stack: "Powered by Supabase — extend with auth, realtime data, and object storage.",
+    stack: "Professional BESS manufacturer since 2014.",
   },
   sticky: {
     quickContact: "Quick contact",
     aiTitle: "AI product assistant",
     aiClose: "Close AI chat",
     aiWelcome:
-      "Hi — I can help with module efficiency, battery cycle life, and more. Answers use your Supabase knowledge base when configured.",
+      "Hi — I can help with BESS sizing, frequency regulation specs, and system configuration. How can I assist you?",
     aiFallback: "Sorry, no answer right now. Try again or contact our team.",
     aiNetworkError: "Network error — check your connection and retry.",
-    aiThinking: "Generating from knowledge base…",
-    aiPlaceholder: "e.g. Typical PV module efficiency?",
+    aiThinking: "Analyzing your query…",
+    aiPlaceholder: "e.g. What response time do your BESS systems offer?",
     aiSend: "Send",
     aiCloseMobile: "Close",
   },
@@ -237,13 +317,13 @@ const en: Messages = {
 
 const zh: Messages = {
   meta: {
-    title: "SolarStorage Pro | 光储一体化产品与方案",
+    title: "SolarStorage Pro | 储能调频专家 — 电网频率调节解决方案",
     description:
-      "家用与工商业光伏储能系统、逆变器与能源管理平台，助力清洁能源稳定并网与峰谷套利。",
+      "专注储能调频、削峰填谷、峰谷套利的领先BESS制造商。IEC/CE/UL认证，服务50+国家。获取免费方案。",
   },
   header: {
-    contactCta: "联系我们",
-    tagline: "可再生能源 · 储能 · 全球贸易",
+    contactCta: "获取报价",
+    tagline: "电池储能 · 调频储能 · 全球服务",
     mobileQuote: "获取报价",
     menuOpen: "打开菜单",
     menuClose: "关闭菜单",
@@ -256,136 +336,202 @@ const zh: Messages = {
       label: "产品",
       href: "/#products",
       children: [
-        { label: "户用光储一体机", href: "/products/residential-ess" },
+        { label: "电网级储能集装箱", href: "/products/energy-storage-system" },
         { label: "工商业储能柜", href: "/#products" },
-        { label: "Energy Storage System", href: "/products/energy-storage-system" },
+        { label: "户用光储一体机", href: "/products/residential-ess" },
+        { label: "PCS / 逆变升压站", href: "/products/pcs" },
         { label: "太阳能组件", href: "/products/solar-panels" },
-        { label: "PCS（预制舱式逆变升压站）", href: "/products/pcs" },
       ],
     },
+    { label: "技术平台", href: "/technology" },
     {
       label: "解决方案",
       href: "/#solutions",
       children: [
         {
+          label: "电网调频储能（FCR/aFRR）",
+          href: "/solutions/grid-level-bess",
+        },
+        {
           label: "数据中心储能解决方案",
           href: "/solutions/data-center-energy-storage",
         },
-        { label: "电网级电池储能系统（BESS）", href: "/solutions/grid-level-bess" },
       ],
     },
-    { label: "案例中心", href: "/case-center" },
-    {
-      label: "资源",
-      href: "#resources",
-      children: [
-        { label: "研发", href: "#resources" },
-        { label: "下载", href: "#resources" },
-      ],
-    },
-    {
-      label: "公司",
-      href: "#company",
-      children: [
-        { label: "公司简介", href: "#company" },
-        { label: "新闻与活动", href: "#company" },
-      ],
-    },
-    { label: "服务", href: "#service" },
+    { label: "调频案例", href: "/case-center" },
     { label: "联系", href: "#contact" },
   ],
   hero: {
-    badge: "储能系统 · 光储协同",
-    exploreProducts: "了解产品",
-    requestDatasheet: "索取资料",
-    videoSlotTitle: "主视觉视频 / WebGL 位",
-    videoSlotHint:
-      "可替换为循环视频或第三方播放器；建议使用 1920×1080 暗调工业或新能源素材。",
+    badge: "调频储能 · BESS 专家",
+    titleLine1: "专注电网调频的",
+    titleHighlight: "储能系统解决方案专家",
+    subtitle:
+      "我们设计、制造并部署专为快速响应频率调节而优化的电池储能系统——帮助电网运营商维持稳定性，最大化可再生能源并网比例。",
+    trustSignals: [
+      "IEC / CE / UL 认证",
+      "服务 50+ 个国家",
+      "24小时技术响应",
+    ],
+    ctaPrimary: "免费获取方案",
+    ctaSecondary: "下载产品资料",
   },
-  products: {
-    heading: "核心产品",
-    sub: "从组件到系统级交付，覆盖发电、储能与能量管理全链路。",
+  trustBar: {
+    items: [
+      { label: "IEC 认证", icon: "shield" },
+      { label: "CE 认证", icon: "award" },
+      { label: "UL 认证", icon: "shield" },
+      { label: "ISO 9001", icon: "factory" },
+      { label: "50+ 国家", icon: "globe" },
+    ],
+  },
+  painPoints: {
+    heading: "为什么调频储能至关重要",
+    sub: "电网运营商面临真实的挑战，我们的 BESS 方案专为解决这些痛点而生。",
     items: [
       {
-        name: "户用光储一体机",
-        desc: "1-16kwh 模块化电池，适配单相/三相逆变，APP 远程监控与备电切换。",
-        tag: "家庭",
-        href: "/products/residential-ess",
+        icon: "clock",
+        title: "毫秒级响应要求",
+        body: "电网频率偏差必须在毫秒内纠正。我们的系统响应时间 <200ms，超过大多数市场的法规要求。",
       },
       {
+        icon: "trending",
+        title: "新能源消纳",
+        body: "光伏和风电带来波动性，我们的储能系统平滑输出波动，提高可再生能源渗透率。",
+      },
+      {
+        icon: "alert",
+        title: "电网基础设施老化",
+        body: "传统发电机无法快速调节，电池储能提供瞬时精确的功率注入和吸收能力。",
+      },
+      {
+        icon: "chart",
+        title: "收益最大化",
+        body: "通过智能调度最大化辅助服务收益——调频、削峰填谷、峰谷套利一机多用。",
+      },
+    ],
+  },
+  statsBar: {
+    items: [
+      { value: "500MWh+", label: "累计部署容量", desc: "全球安装储能系统" },
+      { value: "200ms", label: "响应时间", desc: "同类最快频率响应" },
+      { value: "50+", label: "服务国家", desc: "全球项目交付网络" },
+      { value: "10+", label: "年行业经验", desc: "BESS 研发与制造" },
+    ],
+  },
+  products: {
+    heading: "电池储能产品线",
+    sub: "从户用到电网级——专为调频、削峰填谷和能量管理定制的储能柜和集装箱系统。",
+    items: [
+      {
         name: "工商业储能柜",
-        desc: "100 kWh 级簇，支持并机与峰谷策略，满足园区与微电网调度。",
+        desc: "100–500kWh 模块化储能柜，支持 1C/2C 倍率、液冷和消防系统——适合工商业削峰填谷和频率响应。",
         tag: "工商业",
       },
       {
-        name: "Energy Storage System",
-        desc: "包含 Energy Storage System Pack / DC Liquid Cooling Container",
-        tag: "系统",
+        name: "电网级 BESS 集装箱",
+        desc: "1MW/2MWh+ 集装箱式系统，集成 PCS、BMS、EMS，专为电网级频率调节和辅助服务设计。",
+        tag: "电网级",
         href: "/products/energy-storage-system",
       },
       {
-        name: "太阳能组件",
-        desc: "高效 N 型 ABC 及 PERC/TOPCon 光伏组件，覆盖户用 NEOSTAR、工商业 COMET、地面电站 STELLAR 及轻质 NEBULAR 系列。",
-        tag: "光伏",
+        name: "户用储能系统",
+        desc: "5–20kWh 一体化系统，内置逆变器，支持自发自用优化和电网支撑。",
+        tag: "户用",
+        href: "/products/residential-ess",
+      },
+      {
+        name: "光储一体化",
+        desc: "高效光伏组件搭配储能系统，实现混合安装——最大化自用率和电网稳定收益。",
+        tag: "光储一体",
         href: "/products/solar-panels",
       },
     ],
   },
   features: {
-    heading: "为什么选择我们",
-    sub: "工程化交付与数字化运维并重，让光储系统真正产生长期收益。",
+    heading: "为什么选择 SolarStorage Pro 做调频",
+    sub: "我们的系统专为电网辅助服务的高要求而设计。",
     items: [
       {
-        title: "高效转换",
-        body: "多路 MPPT 与宽电压范围，提升弱光与复杂屋顶场景发电量。",
+        icon: "zap",
+        title: "超快响应速度",
+        body: "亚 200ms 频率检测和功率注入——快于全球大多数市场的法规要求。",
       },
       {
-        title: "安全 BMS",
-        body: "电芯级均衡与热管理策略，满足长期循环与消防合规要求。",
+        icon: "shield",
+        title: "权威安全认证",
+        body: "IEC 62619、UL 9540A、NFPA 855 合规。电芯级 BMS 配备热失控预防和多层消防系统。",
       },
       {
-        title: "智能调度",
-        body: "基于电价与负荷预测的能量管理，支持需量控制与虚拟电厂接入。",
+        icon: "clock",
+        title: "超长循环寿命",
+        body: "优质 LFP 电芯，1C 倍率下 8000+ 次循环。预测性衰减建模和主动质保管理。",
       },
       {
-        title: "可扩展架构",
-        body: "软硬件解耦，后续可接入 Supabase 实时数据与云端策略更新。",
+        icon: "settings",
+        title: "智能 EMS 集成",
+        body: "AGC/FCAS 就绪控制器，实时频率监测、自动调度算法和多市场叠加能力。",
+      },
+    ],
+  },
+  testimonials: {
+    heading: "全球电网运营商的信赖之选",
+    sub: "真实项目，真实效果——听听客户怎么说。",
+    items: [
+      {
+        quote: "SolarStorage Pro 为我们的调频项目交付了 10MW/20MWh BESS 系统。响应时间始终低于 200ms，已无故障运行 18 个月。",
+        name: "James Richardson",
+        role: "电网运营副总裁",
+        project: "50MW 调频项目 · 欧洲",
+      },
+      {
+        quote: "他们的技术团队立刻理解了我们的需求。集装箱式 BESS 按时交付，与现有 SCADA 系统无缝集成。",
+        name: "Mohammed Al-Farsi",
+        role: "电力系统总监",
+        project: "20MWh 削峰填谷 · 中东",
+      },
+      {
+        quote: "我们评估了 6 家 BESS 供应商。SolarStorage Pro 在循环寿命保证、响应速度和售后支持方面表现最佳。强烈推荐。",
+        name: "Dr. Kenji Tanaka",
+        role: "首席技术官",
+        project: "微电网+频率支撑 · 日本",
       },
     ],
   },
   anchor: {
     caseCenterHeading: "案例中心",
     caseCenterSub:
-      "全球高效光伏项目精选 — 地面电站、工商业与户用场景（案例数据来源于爱旭太阳能 AIKO Solar）。",
-    resourcesSub: "白皮书、认证证书、安装手册与下载中心入口。",
-    companySub: "研发制造、质量体系与全球交付能力，可在此放置产能、投资与年限等数据条。",
-    serviceSub: "售前方案、交付调试、质保与远程运维。可将工单与 SLA 与 Supabase 后台打通。",
+      "50+ 个国家的真实 BESS 部署案例，涵盖调频、削峰填谷和新能源并网。",
+    resourcesSub: "产品规格书、技术白皮书、认证文件和系统设计指南。",
+    companySub: "10+ 年储能研发制造经验——3.7 GWh 年产能，垂直一体化生产。",
+    serviceSub: "售前工程支持、交付调试、远程监控和 24/7 技术协助。",
     companyStats: [
-      { k: "Annual capacity", v: "3.7 GWh+", d: "示例数据" },
-      { k: "R&D experience", v: "10+ yrs", d: "电池与 BMS" },
-      { k: "Markets", v: "50+", d: "国家与地区" },
+      { k: "年产能", v: "3.7 GWh+", d: "电池制造" },
+      { k: "研发经验", v: "10+ 年", d: "BESS 工程" },
+      { k: "市场覆盖", v: "50+", d: "国家与地区" },
     ],
-    postTeaser: "示例摘要 — 后续可链接真实文章。",
+    postTeaser: "详细案例即将发布——联系我们获取项目数据。",
   },
   cta: {
-    title: "准备规划您的光储项目？",
-    sub: "留下需求，我们的工程师将在工作日与您联系，提供选型与收益测算建议。",
-    button: "发送邮件",
+    title: "准备部署调频储能系统？",
+    sub: "告诉我们您的电网需求——我们的工程师将设计定制方案并在 48 小时内交付提案。",
+    whatsappBtn: "WhatsApp 咨询",
+    emailBtn: "发送邮件",
+    response: "工作日平均响应时间：24小时内。",
   },
   footer: {
     rights: "光储能源科技 · 保留所有权利",
-    stack: "本项目已接入 Supabase，可扩展鉴权、实时数据与对象存储。",
+    stack: "专业 BESS 制造商，始创于 2014 年。",
   },
   sticky: {
     quickContact: "快捷联系",
     aiTitle: "AI 产品顾问",
     aiClose: "关闭对话",
     aiWelcome:
-      "您好，我是 AI 产品顾问。可向我咨询太阳能组件效率、储能电池寿命等问题；回答将结合您在 Supabase 中配置的知识库。",
+      "您好，我是 AI 产品顾问。可咨询 BESS 选型、调频技术参数和系统配置等问题。",
     aiFallback: "抱歉，暂时无法生成回答，请稍后再试或联系人工。",
     aiNetworkError: "网络异常，请检查连接后重试。",
-    aiThinking: "正在结合知识库生成回答…",
-    aiPlaceholder: "例如：光伏组件效率一般多少？",
+    aiThinking: "正在分析您的问题…",
+    aiPlaceholder: "例如：你们的 BESS 响应时间是多少？",
     aiSend: "发送",
     aiCloseMobile: "关闭窗口",
   },

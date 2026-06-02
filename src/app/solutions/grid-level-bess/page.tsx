@@ -172,7 +172,7 @@ export default function GridLevelBessPage() {
   const techRows = isZh ? TECH_HIGHLIGHTS_ZH : TECH_HIGHLIGHTS_EN;
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -233,7 +233,7 @@ export default function GridLevelBessPage() {
               {copy.advantages.map((item) => (
                 <li
                   key={item.n}
-                  className="flex gap-4 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
+                  className="flex gap-4 rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
                 >
                   <span className="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-xl bg-solar-500/15 text-xs font-bold text-solar-400">
                     {item.n}
@@ -262,7 +262,7 @@ export default function GridLevelBessPage() {
               {copy.apps.map((app) => (
                 <div
                   key={app.title}
-                  className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-xl shadow-black/25 backdrop-blur"
+                  className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-7 shadow-xl shadow-black/25 backdrop-blur"
                 >
                   <div className="flex items-center gap-3">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-solar-500/15 text-solar-400">
@@ -282,7 +282,7 @@ export default function GridLevelBessPage() {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{copy.techTitle}</h2>
             <p className="mt-3 text-sm text-slate-400">{copy.techNote}</p>
 
-            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--card)] shadow-2xl shadow-black/30">
+            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-slate-800/80 shadow-2xl shadow-black/30">
               <div className="divide-y divide-[var(--border)]">
                 {techRows.map((row) => (
                   <div

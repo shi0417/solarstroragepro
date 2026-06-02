@@ -182,7 +182,7 @@ export default function ResidentialEssPage() {
       ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -208,15 +208,15 @@ export default function ResidentialEssPage() {
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{ui.pageSub}</p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 backdrop-blur">
+              <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-4 backdrop-blur">
                 <p className="text-xs font-semibold uppercase tracking-wide text-solar-400">{ui.catLv}</p>
                 <p className="mt-2 text-sm text-slate-400">{ui.catLvDesc}</p>
               </div>
-              <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 backdrop-blur">
+              <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-4 backdrop-blur">
                 <p className="text-xs font-semibold uppercase tracking-wide text-solar-400">{ui.catHv}</p>
                 <p className="mt-2 text-sm text-slate-400">{ui.catHvDesc}</p>
               </div>
-              <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 backdrop-blur">
+              <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-4 backdrop-blur">
                 <p className="text-xs font-semibold uppercase tracking-wide text-solar-400">{ui.catAio}</p>
                 <p className="mt-2 text-sm text-slate-400">{ui.catAioDesc}</p>
               </div>
@@ -232,7 +232,7 @@ export default function ResidentialEssPage() {
               {products.map((p) => (
                 <li
                   key={p.subtitle}
-                  className="group relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-xl shadow-black/25 backdrop-blur transition duration-300 hover:scale-[1.02] hover:border-solar-500/45 hover:shadow-lg hover:shadow-solar-500/15"
+                  className="group relative overflow-hidden rounded-2xl border border-[var(--border)] bg-slate-800/80 shadow-xl shadow-black/25 backdrop-blur transition duration-300 hover:scale-[1.02] hover:border-solar-500/45 hover:shadow-lg hover:shadow-solar-500/15"
                 >
                   {p.categoryKey === "hv" ? (
                     <Link

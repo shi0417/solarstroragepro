@@ -209,7 +209,7 @@ export default function SolarPanelsPage() {
       };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -255,7 +255,7 @@ export default function SolarPanelsPage() {
               {PRODUCTS.map((p) => (
                 <article
                   key={p.title}
-                  className="overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-xl shadow-black/20 backdrop-blur sm:flex"
+                  className="overflow-hidden rounded-2xl border border-[var(--border)] bg-slate-800/80 shadow-xl shadow-black/20 backdrop-blur sm:flex"
                 >
                   <div className="relative flex min-h-[240px] w-full items-center justify-center bg-slate-900/80 p-6 sm:w-2/5 sm:min-h-[280px]">
                     <img

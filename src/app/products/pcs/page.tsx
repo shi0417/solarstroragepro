@@ -391,7 +391,7 @@ export default function PcsProductPage() {
       ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -434,7 +434,7 @@ export default function PcsProductPage() {
 
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6">
-            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
+            <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
               <h2 className="text-xl font-bold text-white sm:text-2xl">{ui.overviewTitle}</h2>
               <dl className="mt-4 space-y-2 text-sm text-slate-300">
                 <div>
@@ -483,7 +483,7 @@ export default function PcsProductPage() {
                 {ui.features.map((f) => (
                   <div
                     key={f.title}
-                    className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-lg shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
+                    className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-lg shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
                   >
                     <div className="flex items-center gap-3">
                       <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-solar-500/15 text-solar-400">
@@ -497,7 +497,7 @@ export default function PcsProductPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
+            <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
               <h2 className="text-xl font-bold text-white sm:text-2xl">{ui.specsTitle}</h2>
               <p className="mt-2 text-sm text-slate-500">{ui.specsHint}</p>
 
@@ -532,7 +532,7 @@ export default function PcsProductPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
+            <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
               <h2 className="text-xl font-bold text-white sm:text-2xl">{ui.complianceTitle}</h2>
               <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">{ui.complianceIntro}</p>
               <ul className="mt-6 flex flex-wrap gap-2" aria-label={ui.complianceTitle}>

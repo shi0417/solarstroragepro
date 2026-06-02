@@ -260,7 +260,7 @@ export default function DataCenterEnergyStoragePage() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -311,7 +311,7 @@ export default function DataCenterEnergyStoragePage() {
               {copy.painItems.map((text, i) => (
                 <li
                   key={i}
-                  className="flex gap-4 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-lg shadow-black/20 backdrop-blur"
+                  className="flex gap-4 rounded-2xl border border-[var(--border)] bg-slate-800/80 p-5 shadow-lg shadow-black/20 backdrop-blur"
                 >
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-solar-500/15 text-sm font-bold text-solar-400">
                     {String(i + 1).padStart(2, "0")}
@@ -332,11 +332,11 @@ export default function DataCenterEnergyStoragePage() {
                 : "For future distributed data center power architectures, storage adds both stabilization and backup at grid- and load-side touchpoints."}
             </p>
             <div className="mt-12 grid gap-6 lg:grid-cols-2">
-              <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8 shadow-xl shadow-black/25 backdrop-blur">
+              <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-8 shadow-xl shadow-black/25 backdrop-blur">
                 <h3 className="text-xl font-semibold text-white">{copy.scenarioGrid.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-400">{copy.scenarioGrid.body}</p>
               </div>
-              <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8 shadow-xl shadow-black/25 backdrop-blur">
+              <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-8 shadow-xl shadow-black/25 backdrop-blur">
                 <h3 className="text-xl font-semibold text-white">{copy.scenarioLocal.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-400">{copy.scenarioLocal.body}</p>
               </div>
@@ -356,7 +356,7 @@ export default function DataCenterEnergyStoragePage() {
               {copy.advantages.map((item, i) => (
                 <div
                   key={item.title}
-                  className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
+                  className="group rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
                 >
                   <div className="flex items-center gap-3">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-solar-500/15 text-solar-400">
@@ -378,7 +378,7 @@ export default function DataCenterEnergyStoragePage() {
               {isZh ? "表格可在小屏横向滚动查看。" : "Scroll horizontally on small screens to view all columns."}
             </p>
 
-            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--card)] shadow-2xl shadow-black/30">
+            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-slate-800/80 shadow-2xl shadow-black/30">
               <div className="overflow-x-auto">
                 <table className="min-w-[720px] w-full border-separate border-spacing-0">
                   <thead>
@@ -414,7 +414,7 @@ export default function DataCenterEnergyStoragePage() {
             </div>
 
             <h2 className="mt-16 text-3xl font-bold tracking-tight text-white sm:text-4xl">{copy.systemTableTitle}</h2>
-            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--card)] shadow-2xl shadow-black/30">
+            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-slate-800/80 shadow-2xl shadow-black/30">
               <div className="overflow-x-auto">
                 <table className="min-w-[640px] w-full border-separate border-spacing-0">
                   <thead>
@@ -493,7 +493,7 @@ export default function DataCenterEnergyStoragePage() {
               <p className="mt-2 text-sm leading-relaxed text-slate-400">{copy.footnote}</p>
             </div>
 
-            <div className="mt-12 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6">
+            <div className="mt-12 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6">
               <div>
                 <p className="text-sm font-semibold text-white">{copy.relatedTitle}</p>
                 <p className="mt-1 text-sm text-slate-400">

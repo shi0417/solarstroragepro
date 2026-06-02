@@ -9,7 +9,7 @@ type ComparisonSpecTableProps = {
   /** 单元格水平对齐，默认左对齐 */
   cellAlign?: "left" | "center";
   /**
-   * 首列（参数名）背景：default 为更深 slate-950；slate800 为略亮的 slate-800 条带。
+   * 首列（参数名）背景样式
    */
   labelColumnStyle?: "default" | "slate800" | "slate900";
 };
@@ -17,22 +17,22 @@ type ComparisonSpecTableProps = {
 function labelCellClass(align: "left" | "center", variant: "default" | "slate800" | "slate900") {
   const bg =
     variant === "slate800"
-      ? "bg-slate-800/95"
+      ? "bg-slate-100"
       : variant === "slate900"
-        ? "bg-slate-900/95"
-        : "bg-slate-950/95";
+        ? "bg-slate-200"
+        : "bg-slate-50";
   const al = align === "center" ? "text-center" : "text-left";
-  return `sticky left-0 z-10 w-[min(11rem,38vw)] min-w-[9.5rem] max-w-[13rem] border border-slate-700/90 ${bg} px-4 py-3.5 ${al} text-sm font-bold text-slate-100 shadow-[2px_0_8px_rgba(0,0,0,0.35)] backdrop-blur-sm`;
+  return `sticky left-0 z-10 w-[min(11rem,38vw)] min-w-[9.5rem] max-w-[13rem] border border-slate-200 ${bg} px-4 py-3.5 ${al} text-sm font-bold text-slate-900 shadow-[2px_0_8px_rgba(0,0,0,0.06)] backdrop-blur-sm`;
 }
 
 function valueCellClass(align: "left" | "center") {
   const al = align === "center" ? "text-center" : "text-left";
-  return `min-w-[132px] border border-slate-700/90 px-4 py-3.5 ${al} text-sm leading-snug text-slate-300 sm:min-w-[148px]`;
+  return `min-w-[132px] border border-slate-200 px-4 py-3.5 ${al} text-sm leading-snug text-slate-600 sm:min-w-[148px]`;
 }
 
 function headerTitleCellClass(align: "left" | "center") {
   const al = align === "center" ? "text-center" : "text-left";
-  return `min-w-[132px] border border-slate-700/90 bg-slate-800/85 px-4 py-3.5 ${al} text-xs font-bold uppercase tracking-wide text-solar-300 sm:min-w-[148px] sm:text-sm`;
+  return `min-w-[132px] border border-slate-200 bg-slate-100 px-4 py-3.5 ${al} text-xs font-bold uppercase tracking-wide text-brand-700 sm:min-w-[148px] sm:text-sm`;
 }
 
 /**
@@ -50,7 +50,7 @@ export function ComparisonSpecTable({
   const minTableWidth = Math.max(480, 168 + width * 152);
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-slate-700/80 bg-slate-900/40 shadow-inner">
+    <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-inner">
       <table
         className={
           cellAlign === "center"
@@ -61,7 +61,7 @@ export function ComparisonSpecTable({
       >
         <tbody>
           {headerRow ? (
-            <tr className="bg-slate-900/60">
+            <tr className="bg-slate-50">
               <th scope="row" className={labelCellClass(cellAlign, labelColumnStyle)}>
                 {headerRow.cornerLabel}
               </th>
@@ -75,7 +75,7 @@ export function ComparisonSpecTable({
           {rows.map((row, i) => (
             <tr
               key={`${row.label}-${i}`}
-              className={i % 2 === 0 ? "bg-slate-800/25" : "bg-slate-800/10"}
+              className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}
             >
               <th scope="row" className={labelCellClass(cellAlign, labelColumnStyle)}>
                 {row.label}

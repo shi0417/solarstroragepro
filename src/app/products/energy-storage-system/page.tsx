@@ -132,7 +132,7 @@ export default function EnergyStorageSystemPage() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -222,7 +222,7 @@ export default function EnergyStorageSystemPage() {
               {features.map((f) => (
                 <div
                   key={f.title}
-                  className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
+                  className="group rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur transition hover:border-solar-500/40"
                 >
                   <div className="flex items-center gap-3">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-solar-500/15 text-solar-400">
@@ -248,7 +248,7 @@ export default function EnergyStorageSystemPage() {
                 : "Scroll horizontally on mobile to view all capacity variants."}
             </p>
 
-            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--card)] shadow-2xl shadow-black/30">
+            <div className="mt-10 overflow-hidden rounded-3xl border border-[var(--border)] bg-slate-800/80 shadow-2xl shadow-black/30">
               <div className="p-3 sm:p-4">
                 <ComparisonSpecTable
                   headerRow={{

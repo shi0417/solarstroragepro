@@ -17,7 +17,7 @@ import { useLocaleContext } from "./LocaleProvider";
 import { WeChatQrModal } from "./WeChatQrModal";
 
 const btnClass =
-  "flex h-12 w-12 shrink-0 items-center justify-center rounded-l-xl border border-slate-600/80 bg-slate-900/95 text-slate-100 shadow-lg shadow-black/40 backdrop-blur-md transition hover:border-solar-500/60 hover:bg-slate-800 hover:text-solar-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-solar-500 md:h-11 md:w-11";
+  "flex h-12 w-12 shrink-0 items-center justify-center rounded-l-xl border border-slate-200 bg-white text-slate-600 shadow-lg shadow-slate-200/60 backdrop-blur-md transition hover:border-brand-300 hover:bg-brand-50 hover:text-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 md:h-11 md:w-11";
 
 export function StickySiteTools() {
   const { locale, messages: siteMessages } = useLocaleContext();
@@ -55,7 +55,7 @@ export function StickySiteTools() {
           href={whatsappUrl()}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${btnClass} text-emerald-400 hover:text-emerald-300 max-md:rounded-xl`}
+          className={`${btnClass} text-emerald-600 hover:!text-emerald-500 hover:!border-emerald-300 hover:!bg-emerald-50 max-md:rounded-xl`}
           title="WhatsApp"
           aria-label="WhatsApp"
         >
@@ -88,7 +88,7 @@ export function StickySiteTools() {
         </button>
         <button
           type="button"
-          className={`${btnClass} border-solar-500/40 text-solar-400 hover:text-solar-300 max-md:rounded-xl max-md:rounded-r-xl max-md:rounded-l-xl`}
+          className={`${btnClass} border-brand-200 text-brand-600 hover:!border-brand-400 hover:!text-brand-700 hover:!bg-brand-100 max-md:rounded-xl max-md:rounded-r-xl max-md:rounded-l-xl`}
           title="AI Chat"
           aria-label="AI Chat"
           onClick={() => setChatOpen((v) => !v)}
@@ -101,18 +101,18 @@ export function StickySiteTools() {
 
       {chatOpen ? (
         <div
-          className="fixed bottom-0 left-0 right-0 z-[60] flex max-h-[min(92vh,560px)] flex-col rounded-t-2xl border border-[var(--border)] bg-slate-950/98 shadow-2xl shadow-black/50 backdrop-blur-md md:bottom-6 md:left-auto md:right-[4.25rem] md:max-h-[520px] md:w-[min(100vw-2rem,400px)] md:rounded-2xl"
+          className="fixed bottom-0 left-0 right-0 z-[60] flex max-h-[min(92vh,560px)] flex-col rounded-t-2xl border border-slate-200 bg-white shadow-2xl shadow-slate-300/40 backdrop-blur-md md:bottom-6 md:left-auto md:right-[4.25rem] md:max-h-[520px] md:w-[min(100vw-2rem,400px)] md:rounded-2xl"
           role="dialog"
           aria-modal="true"
           aria-labelledby="ai-chat-title"
         >
-          <div className="flex items-center justify-between border-b border-[var(--border)] px-4 py-3">
-            <h2 id="ai-chat-title" className="text-sm font-semibold text-white">
+          <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
+            <h2 id="ai-chat-title" className="text-sm font-semibold text-slate-900">
               {s.aiTitle}
             </h2>
             <button
               type="button"
-              className="rounded-lg p-2 text-slate-400 transition hover:bg-white/10 hover:text-white"
+              className="rounded-lg p-2 text-slate-400 transition hover:bg-slate-100 hover:text-slate-700"
               aria-label={s.aiClose}
               onClick={() => setChatOpen(false)}
             >
@@ -166,31 +166,31 @@ function AiChatPanel({ onClose }: { onClose: () => void }) {
     <>
       <div
         ref={listRef}
-        className="flex flex-1 flex-col gap-3 overflow-y-auto px-4 py-3 text-sm"
+        className="flex flex-1 flex-col gap-3 overflow-y-auto bg-slate-50 px-4 py-3 text-sm"
       >
         {chatMessages.map((msg, i) => (
           <div
             key={i}
             className={
               msg.role === "user"
-                ? "ml-8 rounded-xl bg-solar-500/15 px-3 py-2 text-slate-100"
-                : "mr-4 rounded-xl border border-[var(--border)] bg-slate-900/80 px-3 py-2 text-slate-300"
+                ? "ml-8 rounded-xl bg-brand-600 px-3 py-2 text-white"
+                : "mr-4 rounded-xl border border-slate-200 bg-white px-3 py-2 text-slate-700"
             }
           >
             {msg.text}
           </div>
         ))}
-        {loading && <div className="mr-4 text-xs text-slate-500">{s.aiThinking}</div>}
+        {loading && <div className="mr-4 text-xs text-slate-400">{s.aiThinking}</div>}
       </div>
       <form
-        className="flex gap-2 border-t border-[var(--border)] p-3"
+        className="flex gap-2 border-t border-slate-200 bg-white p-3"
         onSubmit={(e) => {
           e.preventDefault();
           void send();
         }}
       >
         <input
-          className="min-w-0 flex-1 rounded-xl border border-[var(--border)] bg-slate-900/80 px-3 py-2 text-sm text-white placeholder:text-slate-500 focus:border-solar-500/50 focus:outline-none"
+          className="min-w-0 flex-1 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-brand-400 focus:outline-none"
           placeholder={s.aiPlaceholder}
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -199,14 +199,14 @@ function AiChatPanel({ onClose }: { onClose: () => void }) {
         <button
           type="submit"
           disabled={loading}
-          className="shrink-0 rounded-xl bg-solar-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-solar-400 disabled:opacity-50"
+          className="shrink-0 rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700 disabled:opacity-50"
         >
           {s.aiSend}
         </button>
       </form>
       <button
         type="button"
-        className="border-t border-[var(--border)] py-2 text-center text-xs text-slate-500 hover:text-slate-300 md:hidden"
+        className="border-t border-slate-200 bg-white py-2 text-center text-xs text-slate-400 hover:text-slate-600 md:hidden"
         onClick={onClose}
       >
         {s.aiCloseMobile}

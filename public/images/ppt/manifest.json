@@ -1,0 +1,1330 @@
+[
+  {
+    "web_path": "/images/ppt/01-cover/slide01_cover_01.png",
+    "slide": 1,
+    "category": "cover",
+    "size_px": "1218x440",
+    "bytes": 2968528,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_02.png",
+    "slide": 1,
+    "category": "icons",
+    "size_px": "259x40",
+    "bytes": 17758,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 1,
+    "category": "icons",
+    "size_px": "217x31",
+    "bytes": 1448217,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/01-cover/slide02_cover_01.jpg",
+    "slide": 2,
+    "category": "cover",
+    "size_px": "1291x729",
+    "bytes": 45172,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/01-cover/slide02_cover_02.jpg",
+    "slide": 2,
+    "category": "cover",
+    "size_px": "1308x735",
+    "bytes": 46918,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide03_overview_01.jpg",
+    "slide": 3,
+    "category": "overview",
+    "size_px": "756x422",
+    "bytes": 1089575,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 3,
+    "category": "icons",
+    "size_px": "312x44",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 3,
+    "category": "icons",
+    "size_px": "169x21",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide03_overview_02.png",
+    "slide": 3,
+    "category": "icons",
+    "size_px": "59x59",
+    "bytes": 14899,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide03_overview_03.png",
+    "slide": 3,
+    "category": "icons",
+    "size_px": "59x59",
+    "bytes": 8091,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide03_overview_04.png",
+    "slide": 3,
+    "category": "icons",
+    "size_px": "54x54",
+    "bytes": 8632,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_01.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "1214x595",
+    "bytes": 5495066,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide04_certifications_02.png",
+    "slide": 4,
+    "category": "icons",
+    "size_px": "24x24",
+    "bytes": 312,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 4,
+    "category": "icons",
+    "size_px": "169x21",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_03.jpg",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "124x165",
+    "bytes": 927987,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_04.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "126x168",
+    "bytes": 109289,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_05.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "123x168",
+    "bytes": 109214,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_06.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "122x168",
+    "bytes": 107433,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_07.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "123x168",
+    "bytes": 78628,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_08.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "124x173",
+    "bytes": 63605,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_09.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "225x320",
+    "bytes": 464524,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_10.jpg",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "289x203",
+    "bytes": 142745,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_11.png",
+    "slide": 4,
+    "category": "certifications",
+    "size_px": "288x203",
+    "bytes": 417615,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 5,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide05_projects-map_01.png",
+    "slide": 5,
+    "category": "icons",
+    "size_px": "31x31",
+    "bytes": 4990,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide05_projects-map_02.png",
+    "slide": 5,
+    "category": "icons",
+    "size_px": "35x35",
+    "bytes": 13432,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 6,
+    "category": "value-chain",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_02.png",
+    "slide": 6,
+    "category": "value-chain",
+    "size_px": "543x565",
+    "bytes": 1638618,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_03.png",
+    "slide": 6,
+    "category": "value-chain",
+    "size_px": "593x274",
+    "bytes": 459831,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_03.png",
+    "slide": 6,
+    "category": "value-chain",
+    "size_px": "593x274",
+    "bytes": 459831,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide06_value-chain_04.png",
+    "slide": 6,
+    "category": "icons",
+    "size_px": "398x68",
+    "bytes": 36238,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_05.png",
+    "slide": 6,
+    "category": "value-chain",
+    "size_px": "113x103",
+    "bytes": 16054,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide06_value-chain_06.png",
+    "slide": 6,
+    "category": "icons",
+    "size_px": "35x73",
+    "bytes": 32338,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide06_value-chain_06.png",
+    "slide": 6,
+    "category": "icons",
+    "size_px": "37x74",
+    "bytes": 32338,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide06_value-chain_07.png",
+    "slide": 6,
+    "category": "icons",
+    "size_px": "67x67",
+    "bytes": 11810,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide06_value-chain_08.png",
+    "slide": 6,
+    "category": "icons",
+    "size_px": "65x65",
+    "bytes": 4973,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide06_value-chain_09.png",
+    "slide": 6,
+    "category": "icons",
+    "size_px": "65x65",
+    "bytes": 13481,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 6,
+    "category": "icons",
+    "size_px": "169x21",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide07_special_01.jpg",
+    "slide": 7,
+    "category": "special",
+    "size_px": "1297x729",
+    "bytes": 41860,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 8,
+    "category": "ups-datacenter",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 8,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 8,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/05-ups-datacenter/slide08_ups-datacenter_02.jpg",
+    "slide": 8,
+    "category": "ups-datacenter",
+    "size_px": "415x261",
+    "bytes": 70594,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/05-ups-datacenter/slide08_ups-datacenter_03.png",
+    "slide": 8,
+    "category": "ups-datacenter",
+    "size_px": "649x177",
+    "bytes": 87686,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/05-ups-datacenter/slide08_ups-datacenter_04.png",
+    "slide": 8,
+    "category": "ups-datacenter",
+    "size_px": "88x82",
+    "bytes": 5498,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_05.png",
+    "slide": 8,
+    "category": "icons",
+    "size_px": "82x79",
+    "bytes": 3265,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 9,
+    "category": "ups-products",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_01.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "71x71",
+    "bytes": 9799,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_02.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "74x74",
+    "bytes": 8701,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_03.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "74x74",
+    "bytes": 5899,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_04.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "40x40",
+    "bytes": 2417,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_04.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "40x40",
+    "bytes": 2417,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_05.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "30x30",
+    "bytes": 1701,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_06.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "48x19",
+    "bytes": 2857,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide09_ups-products_07.png",
+    "slide": 9,
+    "category": "icons",
+    "size_px": "35x17",
+    "bytes": 1900,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 10,
+    "category": "freq-regulation",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 10,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 10,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide10_freq-regulation_01.jpg",
+    "slide": 10,
+    "category": "freq-regulation",
+    "size_px": "405x240",
+    "bytes": 106476,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 11,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 11,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_09.png",
+    "slide": 11,
+    "category": "freq-regulation",
+    "size_px": "225x320",
+    "bytes": 464524,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide11_freq-regulation_01.jpg",
+    "slide": 11,
+    "category": "freq-regulation",
+    "size_px": "289x203",
+    "bytes": 91973,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/02-certifications/slide04_certifications_11.png",
+    "slide": 11,
+    "category": "freq-regulation",
+    "size_px": "288x203",
+    "bytes": 417615,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 11,
+    "category": "freq-regulation",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide12_freq-regulation_01.png",
+    "slide": 12,
+    "category": "icons",
+    "size_px": "26x26",
+    "bytes": 728,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 12,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide12_freq-regulation_02.png",
+    "slide": 12,
+    "category": "freq-regulation",
+    "size_px": "124x190",
+    "bytes": 4485,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide12_freq-regulation_03.png",
+    "slide": 12,
+    "category": "freq-regulation",
+    "size_px": "131x186",
+    "bytes": 445648,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide12_freq-regulation_04.png",
+    "slide": 12,
+    "category": "freq-regulation",
+    "size_px": "127x178",
+    "bytes": 81462,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide12_freq-regulation_05.png",
+    "slide": 12,
+    "category": "freq-regulation",
+    "size_px": "288x372",
+    "bytes": 95340,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide12_freq-regulation_06.png",
+    "slide": 12,
+    "category": "freq-regulation",
+    "size_px": "320x196",
+    "bytes": 174611,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 12,
+    "category": "freq-regulation",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide13_freq-regulation_01.png",
+    "slide": 13,
+    "category": "freq-regulation",
+    "size_px": "454x214",
+    "bytes": 8543254,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 13,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 13,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 14,
+    "category": "small-power",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 14,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 14,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide14_small-power_01.png",
+    "slide": 14,
+    "category": "small-power",
+    "size_px": "418x264",
+    "bytes": 674003,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide14_small-power_02.png",
+    "slide": 14,
+    "category": "small-power",
+    "size_px": "272x253",
+    "bytes": 162398,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide14_small-power_03.png",
+    "slide": 14,
+    "category": "icons",
+    "size_px": "64x64",
+    "bytes": 8475,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide14_small-power_04.png",
+    "slide": 14,
+    "category": "icons",
+    "size_px": "56x61",
+    "bytes": 10253,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide14_small-power_05.png",
+    "slide": 14,
+    "category": "icons",
+    "size_px": "61x61",
+    "bytes": 9058,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide14_small-power_06.png",
+    "slide": 14,
+    "category": "icons",
+    "size_px": "90x58",
+    "bytes": 7808,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 15,
+    "category": "special",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 15,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 15,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide15_special_01.png",
+    "slide": 15,
+    "category": "special",
+    "size_px": "348x248",
+    "bytes": 3884468,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide15_special_02.png",
+    "slide": 15,
+    "category": "special",
+    "size_px": "164x187",
+    "bytes": 109540,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide15_special_03.png",
+    "slide": 15,
+    "category": "special",
+    "size_px": "144x126",
+    "bytes": 110244,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide15_special_04.png",
+    "slide": 15,
+    "category": "icons",
+    "size_px": "66x66",
+    "bytes": 6376,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide14_small-power_03.png",
+    "slide": 15,
+    "category": "icons",
+    "size_px": "64x64",
+    "bytes": 8475,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide14_small-power_06.png",
+    "slide": 15,
+    "category": "icons",
+    "size_px": "90x58",
+    "bytes": 7808,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide07_special_01.jpg",
+    "slide": 16,
+    "category": "technology",
+    "size_px": "1297x729",
+    "bytes": 41860,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 17,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 17,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide17_technology_01.png",
+    "slide": 17,
+    "category": "icons",
+    "size_px": "48x34",
+    "bytes": 1194,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide17_technology_02.png",
+    "slide": 17,
+    "category": "icons",
+    "size_px": "54x47",
+    "bytes": 2512,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide17_technology_03.png",
+    "slide": 17,
+    "category": "icons",
+    "size_px": "47x40",
+    "bytes": 2941,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide17_technology_04.png",
+    "slide": 17,
+    "category": "icons",
+    "size_px": "47x40",
+    "bytes": 1625,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide17_technology_05.png",
+    "slide": 17,
+    "category": "technology",
+    "size_px": "217x217",
+    "bytes": 62360,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide17_technology_06.png",
+    "slide": 17,
+    "category": "technology",
+    "size_px": "217x217",
+    "bytes": 66643,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 17,
+    "category": "technology",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 18,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 18,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide18_technology_01.png",
+    "slide": 18,
+    "category": "icons",
+    "size_px": "49x47",
+    "bytes": 1305,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide18_technology_02.png",
+    "slide": 18,
+    "category": "icons",
+    "size_px": "49x43",
+    "bytes": 2202,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide18_technology_03.png",
+    "slide": 18,
+    "category": "icons",
+    "size_px": "50x46",
+    "bytes": 2211,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide18_technology_04.png",
+    "slide": 18,
+    "category": "icons",
+    "size_px": "45x45",
+    "bytes": 1292,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide18_technology_05.png",
+    "slide": 18,
+    "category": "technology",
+    "size_px": "284x284",
+    "bytes": 94619,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 18,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 18,
+    "category": "technology",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 19,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 19,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide19_technology_01.png",
+    "slide": 19,
+    "category": "technology",
+    "size_px": "465x233",
+    "bytes": 385730,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide19_technology_02.png",
+    "slide": 19,
+    "category": "technology",
+    "size_px": "111x82",
+    "bytes": 29572,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide19_technology_03.png",
+    "slide": 19,
+    "category": "technology",
+    "size_px": "620x140",
+    "bytes": 47813,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 19,
+    "category": "technology",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 20,
+    "category": "technology",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide20_technology_01.png",
+    "slide": 20,
+    "category": "technology",
+    "size_px": "468x293",
+    "bytes": 2081204,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide20_technology_02.png",
+    "slide": 20,
+    "category": "icons",
+    "size_px": "29x30",
+    "bytes": 1641,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide20_technology_03.png",
+    "slide": 20,
+    "category": "technology",
+    "size_px": "177x105",
+    "bytes": 1844751,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide20_technology_04.png",
+    "slide": 20,
+    "category": "technology",
+    "size_px": "177x105",
+    "bytes": 1243148,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/04-technology/slide20_technology_05.png",
+    "slide": 20,
+    "category": "technology",
+    "size_px": "177x111",
+    "bytes": 1238037,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 20,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 20,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 21,
+    "category": "technology",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide08_ups-datacenter_01.png",
+    "slide": 21,
+    "category": "icons",
+    "size_px": "33x33",
+    "bytes": 561,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 21,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 22,
+    "category": "ups-datacenter",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide12_freq-regulation_01.png",
+    "slide": 22,
+    "category": "icons",
+    "size_px": "26x26",
+    "bytes": 728,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 22,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/05-ups-datacenter/slide22_ups-datacenter_01.png",
+    "slide": 22,
+    "category": "ups-datacenter",
+    "size_px": "238x132",
+    "bytes": 791627,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/05-ups-datacenter/slide22_ups-datacenter_02.jpg",
+    "slide": 22,
+    "category": "ups-datacenter",
+    "size_px": "167x237",
+    "bytes": 11060,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/05-ups-datacenter/slide22_ups-datacenter_03.jpg",
+    "slide": 22,
+    "category": "ups-datacenter",
+    "size_px": "239x132",
+    "bytes": 69674,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/05-ups-datacenter/slide22_ups-datacenter_04.jpg",
+    "slide": 22,
+    "category": "ups-datacenter",
+    "size_px": "301x235",
+    "bytes": 168789,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 23,
+    "category": "freq-regulation",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide12_freq-regulation_01.png",
+    "slide": 23,
+    "category": "icons",
+    "size_px": "26x26",
+    "bytes": 728,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 23,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide23_freq-regulation_01.png",
+    "slide": 23,
+    "category": "freq-regulation",
+    "size_px": "294x180",
+    "bytes": 656704,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide23_freq-regulation_02.png",
+    "slide": 23,
+    "category": "freq-regulation",
+    "size_px": "293x180",
+    "bytes": 648225,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide10_freq-regulation_01.jpg",
+    "slide": 23,
+    "category": "freq-regulation",
+    "size_px": "304x180",
+    "bytes": 106476,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide23_freq-regulation_03.jpg",
+    "slide": 23,
+    "category": "freq-regulation",
+    "size_px": "302x187",
+    "bytes": 93945,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/03-freq-regulation/slide23_freq-regulation_04.png",
+    "slide": 23,
+    "category": "freq-regulation",
+    "size_px": "317x187",
+    "bytes": 432665,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 24,
+    "category": "projects",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide12_freq-regulation_01.png",
+    "slide": 24,
+    "category": "icons",
+    "size_px": "26x26",
+    "bytes": 728,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 24,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/06-projects/slide24_projects_01.jpg",
+    "slide": 24,
+    "category": "projects",
+    "size_px": "353x193",
+    "bytes": 377002,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/06-projects/slide24_projects_02.jpg",
+    "slide": 24,
+    "category": "projects",
+    "size_px": "364x194",
+    "bytes": 137999,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/06-projects/slide24_projects_03.jpg",
+    "slide": 24,
+    "category": "projects",
+    "size_px": "364x194",
+    "bytes": 167033,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 25,
+    "category": "projects",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/06-projects/slide25_projects_01.jpg",
+    "slide": 25,
+    "category": "projects",
+    "size_px": "448x270",
+    "bytes": 182603,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide12_freq-regulation_01.png",
+    "slide": 25,
+    "category": "icons",
+    "size_px": "26x26",
+    "bytes": 728,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 25,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/06-projects/slide25_projects_02.jpg",
+    "slide": 25,
+    "category": "projects",
+    "size_px": "438x270",
+    "bytes": 178179,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/07-company/slide06_value-chain_01.png",
+    "slide": 26,
+    "category": "special",
+    "size_px": "1278x486",
+    "bytes": 1651795,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide12_freq-regulation_01.png",
+    "slide": 26,
+    "category": "icons",
+    "size_px": "26x26",
+    "bytes": 728,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 26,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/09-icons-small/slide01_cover_03.png",
+    "slide": 26,
+    "category": "icons",
+    "size_px": "131x18",
+    "bytes": 1448217,
+    "duplicate": true
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide26_special_01.jpg",
+    "slide": 26,
+    "category": "special",
+    "size_px": "245x336",
+    "bytes": 78481,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide26_special_02.png",
+    "slide": 26,
+    "category": "special",
+    "size_px": "372x237",
+    "bytes": 1051473,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/08-other-products/slide26_special_03.png",
+    "slide": 26,
+    "category": "special",
+    "size_px": "336x237",
+    "bytes": 294336,
+    "duplicate": false
+  },
+  {
+    "web_path": "/images/ppt/01-cover/slide27_cover_01.jpg",
+    "slide": 27,
+    "category": "cover",
+    "size_px": "1280x720",
+    "bytes": 776715,
+    "duplicate": false
+  }
+]

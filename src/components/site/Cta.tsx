@@ -1,6 +1,8 @@
 "use client";
 
-import { siteContact } from "@/lib/site-config";
+import { ArrowRight, MessageCircle, Clock } from "lucide-react";
+
+import { siteContact, whatsappUrl } from "@/lib/site-config";
 
 import { useLocaleContext } from "./LocaleProvider";
 
@@ -9,18 +11,45 @@ export function Cta() {
   const c = messages.cta;
 
   return (
-    <section id="contact" className="scroll-mt-20 py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="overflow-hidden rounded-3xl border border-[var(--border)] bg-gradient-to-br from-slate-800/80 to-slate-900 p-8 sm:p-12 md:flex md:items-center md:justify-between md:gap-8">
-          <div>
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">{c.title}</h2>
-            <p className="mt-2 max-w-xl text-slate-400">{c.sub}</p>
-          </div>
+    <section id="contact" className="scroll-mt-20 relative overflow-hidden bg-gradient-to-br from-brand-800 via-brand-900 to-brand-950 dark-section-overlay">
+      {/* Background decorations */}
+      <div className="pointer-events-none absolute -left-32 -top-32 h-[500px] w-[500px] rounded-full bg-brand-400/10 blur-[150px]" />
+      <div className="pointer-events-none absolute -right-32 bottom-0 h-[400px] w-[400px] rounded-full bg-emerald-400/5 blur-[120px]" />
+
+      <div className="relative mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 sm:py-24">
+        {/* Response time badge */}
+        <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-300">
+          <Clock className="h-4 w-4" aria-hidden />
+          {c.response}
+        </div>
+
+        <h2
+          className="font-extrabold tracking-tight text-white"
+          style={{ fontSize: "clamp(1.875rem, 3.5vw, 3rem)" }}
+        >
+          {c.title}
+        </h2>
+        <p className="mx-auto mt-5 max-w-2xl text-lg text-brand-200/80" style={{ lineHeight: 1.7 }}>
+          {c.sub}
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <a
+            href={whatsappUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary bg-emerald-500 text-white shadow-xl shadow-emerald-600/30 hover:bg-emerald-400 hover:shadow-2xl hover:shadow-emerald-500/30"
+          >
+            <MessageCircle className="h-5 w-5" aria-hidden />
+            {c.whatsappBtn}
+          </a>
           <a
             href={`mailto:${siteContact.email}`}
-            className="mt-6 inline-flex shrink-0 items-center justify-center rounded-full bg-solar-500 px-8 py-3 font-semibold text-slate-950 shadow-lg shadow-solar-500/25 transition hover:bg-solar-400 md:mt-0"
+            className="btn-secondary border-white/15 bg-white/[0.06] text-white backdrop-blur-sm hover:bg-white/15 hover:border-white/25"
           >
-            {c.button}
+            {c.emailBtn}
+            <ArrowRight className="h-5 w-5" aria-hidden />
           </a>
         </div>
       </div>

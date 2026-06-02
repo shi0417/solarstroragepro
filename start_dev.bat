@@ -17,8 +17,15 @@ if %errorlevel% neq 0 (
 :: 检查 node_modules 是否存在，如果不存在则通过镜像源安装依赖
 if not exist "node_modules\" (
     echo [系统提示] 检测到未安装依赖，正在通过镜像源快速安装...
-    :: 临时使用腾讯云镜像源（也可改为淘宝源：https://registry.npmmirror.com）
     call npm install --registry=https://mirrors.cloud.tencent.com/npm/
+)
+
+:: 自动检查并释放 3000 端口
+for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":3000" ^| findstr "LISTENING"') do (
+    echo [系统提示] 检测到端口 3000 被进程 %%a 占用，正在自动释放...
+    taskkill /F /PID %%a >nul 2>nul
+    timeout /t 2 /nobreak >nul
+    echo [系统提示] 端口 3000 已释放。
 )
 
 echo [系统提示] 正在启动预览页面...

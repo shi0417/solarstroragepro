@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowRight, ChevronRight, Zap } from "lucide-react";
 
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
-
+import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { CASES } from "./case-data";
 
 export default function CaseCenterPage() {
@@ -15,72 +15,71 @@ export default function CaseCenterPage() {
 
   const ui = isZh
     ? {
-        back: "返回首页",
-        pageTitle: "案例中心",
+        badge: "全球项目",
+        pageTitle: "调频储能案例中心",
         pageSub:
-          "AIKO 已在全球 70 多个国家和地区完成项目，利用高效组件推动各行各业的绿色能源发展。数据来源：爱旭太阳能（AIKO Solar）。",
-        source: "数据来源",
-        sourceLink: "aikosolar.com",
+          "SolarStoragePro 已在全球 50+ 个国家和地区交付储能调频项目，服务电网运营商、独立发电商与工商业用户。以下为代表性项目案例。",
         readMore: "查看详情",
+        ctaTitle: "您有类似项目需求？",
+        ctaSub: "无论是 FCR、aFRR 还是一次备用，我们均可提供定制化储能方案。",
+        ctaBtn: "获取方案报价",
+        techLink: "了解我们的技术平台",
       }
     : {
-        back: "Back to home",
-        pageTitle: "Case Center",
+        badge: "Global Projects",
+        pageTitle: "Frequency Regulation Case Studies",
         pageSub:
-          "AIKO has completed projects across more than 70 countries and regions worldwide, using high-efficiency modules to drive green energy across various industries. Data sourced from AIKO Solar.",
-        source: "Data source",
-        sourceLink: "aikosolar.com",
-        readMore: "Read more",
+          "SolarStoragePro has deployed BESS frequency regulation projects in 50+ countries, serving TSOs, IPPs, and C&I clients. Below are selected case studies.",
+        readMore: "View Case Study",
+        ctaTitle: "Have a Similar Project?",
+        ctaSub:
+          "Whether you need FCR, aFRR, or primary reserve — we design custom BESS solutions for your grid.",
+        ctaBtn: "Request a Proposal",
+        techLink: "Explore Our Technology",
       };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <section className="relative overflow-hidden border-b border-[var(--border)]">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900" />
-          <div className="pointer-events-none absolute inset-0 bg-grid-slate bg-[length:44px_44px] opacity-20" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_120%_70%_at_50%_-20%,rgba(245,158,11,0.12),transparent)]" />
+        {/* ── Page Header ── */}
+        <section className="relative overflow-hidden bg-slate-950 py-16 sm:py-20">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_100%_60%_at_50%_-10%,rgba(59,130,246,0.15),transparent)]" />
+          <div className="pointer-events-none absolute inset-0 bg-grid-slate bg-[length:44px_44px] opacity-10" />
 
-          <div className="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm transition hover:border-solar-500/40 hover:bg-solar-500/10 hover:text-solar-300"
-            >
-              <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
-              {ui.back}
-            </Link>
-
-            <p className="mt-8 inline-flex rounded-full border border-[var(--border)] bg-[var(--accent-dim)] px-3 py-1 text-xs font-medium text-solar-400">
-              {isZh ? "全球项目" : "Global Projects"}
-            </p>
-            <h1 className="mt-4 text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <div className="relative mx-auto max-w-5xl px-4 sm:px-6">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-400">
+              <Zap className="h-3 w-3" aria-hidden />
+              {ui.badge}
+            </span>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
               {ui.pageTitle}
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{ui.pageSub}</p>
-            <p className="mt-3 text-xs text-slate-500">
-              {ui.source}:{" "}
-              <a
-                href="https://aikosolar.com/en/case-center/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-solar-400"
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300">{ui.pageSub}</p>
+
+            <div className="mt-6">
+              <Link
+                href="/technology"
+                className="inline-flex items-center gap-1.5 text-sm text-slate-400 transition hover:text-blue-400"
               >
-                {ui.sourceLink}
-              </a>
-            </p>
+                {ui.techLink}
+                <ChevronRight className="h-3.5 w-3.5" aria-hidden />
+              </Link>
+            </div>
           </div>
         </section>
 
+        {/* ── Cases Grid ── */}
         <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {CASES.map((c) => (
                 <article
                   key={c.id}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-xl shadow-black/20 backdrop-blur transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-solar-500/10"
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
                 >
-                  <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
+                  {/* Image */}
+                  <div className="relative aspect-[16/9] overflow-hidden bg-slate-100">
                     <img
                       src={c.imageSrc}
                       alt={isZh ? c.titleZh : c.titleEn}
@@ -88,44 +87,44 @@ export default function CaseCenterPage() {
                       decoding="async"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <time className="text-xs font-medium text-solar-400" dateTime={c.date}>
-                        {c.date}
-                      </time>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                    <div className="absolute bottom-3 left-3">
+                      <span className="rounded-full bg-blue-600/90 px-2.5 py-0.5 text-xs font-semibold text-white backdrop-blur">
+                        {c.tag}
+                      </span>
                     </div>
+                    <div className="absolute right-3 top-3 text-xl">{c.flag}</div>
                   </div>
 
-                  <div className="flex flex-1 flex-col p-6">
-                    <h3 className="line-clamp-2 text-xl font-bold leading-tight text-white">
+                  {/* Body */}
+                  <div className="flex flex-1 flex-col p-5">
+                    <time className="text-xs font-medium text-slate-400" dateTime={c.date}>
+                      {c.date}
+                    </time>
+                    <h3 className="mt-1 line-clamp-2 text-base font-bold leading-snug text-slate-900">
                       {isZh ? c.titleZh : c.titleEn}
                     </h3>
-                    <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-slate-400">
-                      {isZh ? c.descZh : c.descEn}
-                    </p>
 
-                    <div className="mt-6 grid grid-cols-1 gap-3 border-t border-white/5 pt-6">
-                      {c.stats.map((stat) => (
-                        <div
-                          key={`${c.id}-${stat.labelEn}`}
-                          className="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2"
-                        >
-                          <span className="flex items-center gap-2 text-xs text-slate-400">
-                            <span aria-hidden>{stat.icon}</span>
+                    {/* Stats */}
+                    <div className="mt-4 grid grid-cols-2 gap-2 border-t border-slate-100 pt-4">
+                      {c.stats.slice(0, 2).map((stat) => (
+                        <div key={stat.labelEn} className="rounded-lg bg-slate-50 px-3 py-2">
+                          <p className="text-sm font-bold text-slate-900">{stat.value}</p>
+                          <p className="text-xs text-slate-500">
                             {isZh ? stat.labelZh : stat.labelEn}
-                          </span>
-                          <span className="text-sm font-semibold text-white">{stat.value}</span>
+                          </p>
                         </div>
                       ))}
                     </div>
 
-                    <div className="mt-auto pt-6">
+                    {/* CTA */}
+                    <div className="mt-auto pt-4">
                       <Link
                         href={`/case-center/${c.id}`}
-                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-solar-500/10 px-4 py-2.5 text-sm font-medium text-solar-400 transition hover:bg-solar-500/20 hover:text-solar-300"
+                        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-blue-50 px-4 py-2.5 text-sm font-medium text-blue-700 transition hover:bg-blue-100"
                       >
                         {ui.readMore}
-                        <ExternalLink className="h-4 w-4" aria-hidden />
+                        <ArrowRight className="h-4 w-4" aria-hidden />
                       </Link>
                     </div>
                   </div>
@@ -134,8 +133,28 @@ export default function CaseCenterPage() {
             </div>
           </div>
         </section>
+
+        {/* ── Bottom CTA ── */}
+        <section className="border-t border-slate-100 bg-slate-50 py-14 sm:py-16">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900">{ui.ctaTitle}</h2>
+            <p className="mx-auto mt-4 max-w-xl text-base text-slate-600">{ui.ctaSub}</p>
+            <div className="mt-6">
+              <a
+                href="https://wa.me/8613800000000"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow transition hover:bg-blue-700"
+              >
+                {ui.ctaBtn}
+                <ArrowRight className="h-4 w-4" aria-hidden />
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }

@@ -72,7 +72,7 @@ export default function LfpBatteryDetailsPage() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <section className="relative overflow-hidden border-b border-[var(--border)]">
@@ -98,7 +98,7 @@ export default function LfpBatteryDetailsPage() {
 
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-6xl space-y-20 px-4 sm:px-6">
-            <article className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
+            <article className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
               <h2 className="text-xl font-bold text-solar-300 sm:text-2xl">{ui.sec1}</h2>
 
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -134,7 +134,7 @@ export default function LfpBatteryDetailsPage() {
               </div>
             </article>
 
-            <article className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
+            <article className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
               <h2 className="text-xl font-bold text-solar-300 sm:text-2xl">{ui.sec2}</h2>
 
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
