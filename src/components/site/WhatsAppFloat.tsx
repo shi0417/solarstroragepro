@@ -8,6 +8,19 @@ import { whatsappUrl } from "@/lib/site-config";
  * Uses pulse ring animation to draw attention without being intrusive.
  */
 export function WhatsAppFloat() {
+  const handleClick = () => {
+    // Track WhatsApp click for Meta Pixel
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const w = window as any;
+    if (typeof w.fbq === "function") {
+      w.fbq("track", "Contact", {
+        content_name: "WhatsApp Click",
+        value: 20,
+        currency: "USD",
+      });
+    }
+  };
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {/* Pulse ring */}
@@ -20,6 +33,7 @@ export function WhatsAppFloat() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
+        onClick={handleClick}
         className="relative flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-xl shadow-emerald-500/30 transition-all duration-300 hover:bg-emerald-400 hover:shadow-2xl hover:shadow-emerald-500/40 hover:scale-110 active:scale-95"
       >
         <MessageCircle className="h-6 w-6" aria-hidden />

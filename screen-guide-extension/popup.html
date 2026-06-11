@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>ScreenGuide - AI 屏幕操作助手</title>
+  <link rel="stylesheet" href="popup.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      padding: 14px 16px;
+      text-align: center;
+      position: relative;
+    }
+    .header h1 { font-size: 16px; font-weight: 600; }
+    .header p { font-size: 11px; opacity: 0.85; margin-top: 2px; }
+    .settings-toggle {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.2);
+      border: none;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .settings-toggle:hover { background: rgba(255,255,255,0.3); }
+
+    /* Settings panel */
+    .settings-panel {
+      display: none;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 14px 16px;
+    }
+    .settings-panel.active { display: block; }
+    .settings-panel h3 { font-size: 13px; margin-bottom: 10px; color: #374151; }
+    .setting-row { margin-bottom: 10px; }
+    .setting-row label {
+      display: block;
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    .setting-row input, .setting-row select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: monospace;
+    }
+    .setting-row input:focus, .setting-row select:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+    }
+    .btn-save {
+      width: 100%;
+      padding: 8px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+    .btn-save:hover { background: #4338ca; }
+    .api-status {
+      font-size: 11px;
+      margin-top: 6px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .api-status.ok { background: #d1fae5; color: #065f46; }
+    .api-status.warn { background: #fef3c7; color: #92400e; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 10px 4px;
+      border: none;
+      background: none;
+      font-size: 12px;
+      color: #6b7280;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      color: #4f46e5;
+      border-bottom-color: #4f46e5;
+      font-weight: 600;
+    }
+    .tab-btn:hover { color: #4f46e5; }
+
+    /* Panels */
+    .panel { display: none; padding: 14px 16px; }
+    .panel.active { display: block; }
+
+    /* ── Panel 1: Screenshot AI ── */
+    .goal-input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 13px;
+      margin-bottom: 12px;
+      resize: vertical;
+      min-height: 56px;
+      font-family: inherit;
+    }
+    .goal-input:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+    }
+    .goal-label {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .capture-area {
+      background: white;
+      border: 2px dashed #d1d5db;
+      border-radius: 10px;
+      min-height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .capture-area.has-image {
+      border-style: solid;
+      border-color: #e5e7eb;
+      min-height: auto;
+    }
+    .capture-area img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .capture-placeholder {
+      text-align: center;
+      color: #9ca3af;
+      padding: 20px;
+    }
+    .capture-placeholder .icon { font-size: 32px; margin-bottom: 6px; }
+    .capture-placeholder p { font-size: 12px; }
+
+    .btn-primary {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 8px;
+      transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.92; }
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .btn-secondary {
+      flex: 1;
+      padding: 8px;
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #374151;
+    }
+    .btn-secondary:hover { background: #f9fafb; }
+    .btn-secondary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .btn-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .btn-analyze {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #059669, #10b981);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-analyze.visible { display: flex; }
+    .btn-analyze:hover { opacity: 0.92; }
+    .btn-analyze:disabled { opacity: 0.5; }
+
+    /* Analysis result */
+    .analysis-box {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 12px;
+      display: none;
+    }
+    .analysis-box.visible { display: block; }
+    .analysis-box h4 {
+      font-size: 13px;
+      color: #4f46e5;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .analysis-content {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #374151;
+      white-space: pre-wrap;
+    }
+    .analysis-content p { margin-bottom: 8px; }
+    .analysis-content ol, .analysis-content ul {
+      margin-left: 18px;
+      margin-bottom: 8px;
+    }
+    .analysis-content li { margin-bottom: 4px; }
+    .analysis-content strong { color: #1f2937; }
+    .analysis-content code {
+      background: #f3f4f6;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    .btn-annotate {
+      width: 100%;
+      padding: 10px;
+      background: #f59e0b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      display: none;
+    }
+    .btn-annotate.visible { display: block; }
+    .btn-annotate:hover { background: #d97706; }
+
+    /* Status */
+    .status-box {
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .status-waiting { background: #f3f4f6; color: #6b7280; }
+    .status-success { background: #d1fae5; color: #065f46; }
+    .status-error { background: #fee2e2; color: #991b1b; }
+    .status-info { background: #dbeafe; color: #1e40af; }
+
+    /* Loading spinner */
+    .spinner {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Panel 2 & 3: Guides & Annotation ── */
+    .guide-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .guide-card:hover {
+      border-color: #4f46e5;
+      box-shadow: 0 2px 8px rgba(79,70,229,0.1);
+    }
+    .guide-card .num {
+      width: 28px;
+      height: 28px;
+      background: #4f46e5;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .guide-card .info h3 { font-size: 13px; color: #1f2937; }
+    .guide-card .info p { font-size: 11px; color: #6b7280; margin-top: 2px; }
+
+    .guide-active { display: none; }
+    .guide-active-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .guide-active-header h3 { font-size: 14px; color: #1f2937; }
+    .step-counter {
+      font-size: 11px;
+      color: #6b7280;
+      background: #f3f4f6;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+    .step-text {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      min-height: 60px;
+    }
+    .guide-nav {
+      display: flex;
+      gap: 8px;
+    }
+    .guide-nav button {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #d1d5db;
+      background: white;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .guide-nav button:hover { background: #f9fafb; }
+    .guide-nav button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .anno-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .anno-btn {
+      padding: 10px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 12px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .anno-btn:hover { border-color: #4f46e5; background: #f5f3ff; }
+    .anno-status {
+      font-size: 12px;
+      color: #6b7280;
+      text-align: center;
+      padding: 8px;
+      background: white;
+      border-radius: 6px;
+    }
+
+    .small-note {
+      font-size: 11px;
+      color: #9ca3af;
+      text-align: center;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>ScreenGuide</h1>
+    <p>AI 屏幕操作引导助手</p>
+    <button class="settings-toggle" id="btn-settings">&#9881; 设置</button>
+  </div>
+
+  <!-- Settings Panel -->
+  <div class="settings-panel" id="settings-panel">
+    <h3>AI API 设置</h3>
+    <div class="setting-row">
+      <label>API Key</label>
+      <input type="password" id="setting-api-key" placeholder="sk-..." />
+    </div>
+    <div class="setting-row">
+      <label>API Endpoint（可选，默认 OpenAI）</label>
+      <input type="text" id="setting-endpoint" placeholder="https://api.openai.com/v1/chat/completions" />
+    </div>
+    <div class="setting-row">
+      <label>模型</label>
+      <select id="setting-model">
+        <option value="gpt-4o-mini">gpt-4o-mini（快&便宜）</option>
+        <option value="gpt-4o">gpt-4o（更准）</option>
+      </select>
+    </div>
+    <button class="btn-save" id="btn-save-settings">保存设置</button>
+    <div class="api-status warn" id="api-status">请填写 API Key 以启用 AI 分析</div>
+    <p class="small-note" style="margin-top:8px;">API Key 仅保存在本地，不会上传</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="ai">&#129302; AI 截图分析</button>
+    <button class="tab-btn" data-tab="guides">&#128214; 操作指南</button>
+    <button class="tab-btn" data-tab="anno">&#9999; 标注工具</button>
+  </div>
+
+  <!-- Panel 1: AI Screenshot Analysis -->
+  <div class="panel active" id="panel-ai">
+    <label class="goal-label">&#127919; 你想做什么？（告诉 AI 你的目标）</label>
+    <textarea class="goal-input" id="goal-input" placeholder="例如：我要更换 Facebook 广告的主页身份，从『Lojinha Magica』换成『SolarStoragePRO』品牌主页"></textarea>
+
+    <div class="capture-area" id="capture-area">
+      <div class="capture-placeholder" id="capture-placeholder">
+        <div class="icon">&#128247;</div>
+        <p>点击扩展图标时已自动截取页面<br>如果没有自动加载，点击「重新截取」</p>
+      </div>
+    </div>
+
+    <div id="ai-status" class="status-box status-waiting">点击扩展图标时已自动截取页面，正在加载...</div>
+
+    <button class="btn-primary" id="btn-capture">
+      <span id="capture-text">&#128247; 重新截取页面</span>
+    </button>
+
+    <div class="btn-row">
+      <button class="btn-secondary" id="btn-copy" disabled>&#128203; 复制图片</button>
+      <button class="btn-secondary" id="btn-download" disabled>&#11015; 下载</button>
+      <button class="btn-secondary" id="btn-clear" disabled>&#128465; 清除</button>
+    </div>
+
+    <button class="btn-analyze" id="btn-analyze">
+      <span class="spinner" id="analyze-spinner" style="display:none;"></span>
+      <span id="analyze-text">&#129302; AI 分析截图并给出指导</span>
+    </button>
+
+    <div class="analysis-box" id="analysis-box">
+      <h4>&#129302; AI 分析结果</h4>
+      <div class="analysis-content" id="analysis-content"></div>
+      <button class="btn-annotate" id="btn-annotate-page">&#128308; 在网页上标注重点位置</button>
+    </div>
+  </div>
+
+  <!-- Panel 2: Step-by-step Guides -->
+  <div class="panel" id="panel-guides">
+    <div id="guide-list"></div>
+    <div class="guide-active" id="guide-active">
+      <div class="guide-active-header">
+        <h3 id="active-title">指南</h3>
+        <span class="step-counter" id="step-counter"></span>
+      </div>
+      <div class="step-text" id="active-step"></div>
+      <div class="guide-nav">
+        <button id="btn-prev" disabled>&#9664; 上一步</button>
+        <button id="btn-stop">&#10060; 结束</button>
+        <button id="btn-next">下一步 &#9654;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel 3: Annotation Tools -->
+  <div class="panel" id="panel-anno">
+    <p class="small-note" style="margin-bottom:10px;text-align:left;">选择工具后，在网页上点击即可标注</p>
+    <div class="anno-grid">
+      <button class="anno-btn" id="btn-spotlight">&#128161; 聚光灯</button>
+      <button class="anno-btn" id="btn-highlight">&#11088; 高亮框</button>
+      <button class="anno-btn" id="btn-circle">&#128308; 红圈</button>
+      <button class="anno-btn" id="btn-arrow">&#10142; 箭头</button>
+    </div>
+    <button class="btn-secondary" id="btn-clear-anno" style="width:100%;">&#128465; 清除所有标注</button>
+    <div class="anno-status" id="anno-status">选择上方工具，然后在网页上点击要标注的位置</div>
+  </div>
+
+  <script src="guides.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

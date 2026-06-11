@@ -40,7 +40,7 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-3">
               {[
-                { label: "C&I Battery Cabinets", href: "/#products" },
+                { label: "C&I Battery Cabinets", href: "/products/ci-battery-cabinets" },
                 { label: "Grid-Scale BESS", href: "/products/energy-storage-system" },
                 { label: "Residential ESS", href: "/products/residential-ess" },
                 { label: "Solar + Storage", href: "/products/solar-panels" },
@@ -139,6 +139,8 @@ export function Footer() {
             <span>UL 9540A</span>
             <span className="text-slate-700">|</span>
             <span>ISO 9001</span>
+            <span className="text-slate-700">|</span>
+            <span>24/7 Technical Support Across Time Zones</span>
           </div>
         </div>
       </div>

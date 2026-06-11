@@ -1,0 +1,82 @@
+/* ScreenGuide annotation styles */
+
+#sg-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none !important;
+  z-index: 2147483646 !important;
+  overflow: visible !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#sg-step-tip {
+  pointer-events: auto !important;
+}
+
+#sg-toast {
+  transition: opacity 0.3s ease;
+}
+
+/* Animation keyframes — also injected via JS, but fallback here */
+@keyframes sgPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+}
+
+@keyframes sgPulseDelay {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.18); opacity: 0.1; }
+}
+
+@keyframes sgBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+@keyframes sgPop {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.12); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes sgFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes sgTipPop {
+  0% { transform: translateY(8px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes sgBannerSlide {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.sg-pulse {
+  animation: sgPulse 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.sg-pulse-delay {
+  animation: sgPulseDelay 2.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.sg-bounce {
+  animation: sgBounce 1.2s ease-in-out infinite;
+}
+
+.sg-pop {
+  animation: sgPop 0.3s ease-out forwards;
+}
+
+.sg-fade-in {
+  animation: sgFadeIn 0.3s ease-out forwards;
+}

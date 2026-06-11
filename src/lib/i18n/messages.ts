@@ -110,7 +110,7 @@ const en: Messages = {
       href: "/#products",
       children: [
         { label: "Grid-Scale BESS Container", href: "/products/energy-storage-system" },
-        { label: "C&I Battery Cabinets", href: "/#products" },
+        { label: "C&I Battery Cabinets", href: "/products/ci-battery-cabinets" },
         { label: "Residential All-in-One ESS", href: "/products/residential-ess" },
         { label: "PCS / Inverter Substation", href: "/products/pcs" },
         { label: "Solar Panels", href: "/products/solar-panels" },
@@ -199,6 +199,7 @@ const en: Messages = {
         name: "C&I Battery Cabinets",
         desc: "100–500kWh modular cabinets with 1C/2C rate, liquid cooling, and fire suppression — ideal for commercial peak shaving and frequency response.",
         tag: "C&I",
+        href: "/products/ci-battery-cabinets",
       },
       {
         name: "Grid-Scale BESS Container",
@@ -337,7 +338,7 @@ const zh: Messages = {
       href: "/#products",
       children: [
         { label: "电网级储能集装箱", href: "/products/energy-storage-system" },
-        { label: "工商业储能柜", href: "/#products" },
+        { label: "工商业储能柜", href: "/products/ci-battery-cabinets" },
         { label: "户用光储一体机", href: "/products/residential-ess" },
         { label: "PCS / 逆变升压站", href: "/products/pcs" },
         { label: "太阳能组件", href: "/products/solar-panels" },
@@ -426,6 +427,7 @@ const zh: Messages = {
         name: "工商业储能柜",
         desc: "100–500kWh 模块化储能柜，支持 1C/2C 倍率、液冷和消防系统——适合工商业削峰填谷和频率响应。",
         tag: "工商业",
+        href: "/products/ci-battery-cabinets",
       },
       {
         name: "电网级 BESS 集装箱",

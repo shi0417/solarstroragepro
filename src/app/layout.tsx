@@ -4,6 +4,8 @@ import { headers } from "next/headers";
 
 import { LocaleProvider } from "@/components/site/LocaleProvider";
 import { StickySiteTools } from "@/components/site/StickySiteTools";
+import { MetaPixel } from "@/components/site/MetaPixel";
+import { MetaPixelEvents } from "@/components/site/MetaPixelEvents";
 import { getMessages } from "@/lib/i18n/messages";
 import { isLocale, LOCALE_HEADER, type Locale } from "@/lib/locale";
 
@@ -46,6 +48,8 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
+        <MetaPixel />
+        <MetaPixelEvents />
         <LocaleProvider initialLocale={locale}>
           {children}
           <StickySiteTools />
