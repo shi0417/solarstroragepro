@@ -10,6 +10,8 @@
 ## 项目结构约定
 - 产品页位于 `src/app/products/[slug]/page.tsx`
 - 解决方案页位于 `src/app/solutions/[slug]/page.tsx`
+- 博客页位于 `src/app/blog/page.tsx`（列表）和 `src/app/blog/[slug]/page.tsx`（详情）
+- 博客文章数据集中在 `src/app/blog/blog-data.ts`（ARTICLES 数组，中英双语）
 - 共享组件在 `src/components/site/`
 - i18n 消息集中在 `src/lib/i18n/messages.ts`（en + zh 两个 locale）
 - API 路由在 `src/app/api/`
@@ -38,9 +40,14 @@
   - ResourceDownload 组件 + /api/resource-download 路由
   - CTA 区改版（双栏布局：表单+快捷按钮+资料下载）
   - Supabase contact_submissions 和 resource_downloads 表
+- 2026-06-12: SEO 博客系统上线
+  - /blog 列表页 + /blog/[slug] 详情页
+  - 5 篇初始 SEO 长尾关键词文章（ROI分析、安装指南、产品对比、认证指南、采购指南）
+  - 导航栏 + 页脚添加 Blog/Resources 链接
+  - 每篇文章包含中英双语、目录、相关文章、联系表单 CTA
+  - 创建了每日自动写文定时任务（PAUSED 状态，需用户激活）
 
 ## 待办
 - 上传实际的 PDF 资源文件到 public/resources/
 - 替换 C&I 产品页占位图片为实际产品图
-- 为每个产品页添加联系表单（目前只有 C&I 页有）
-- 编写 SEO 长尾文章
+- 激活每日博客写作自动化（automation: SEO博客文章日更，当前 PAUSED）
