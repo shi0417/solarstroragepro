@@ -133,7 +133,7 @@ const en: Messages = {
     },
     { label: "Cases", href: "/case-center" },
     { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/#contact" },
   ],
   hero: {
     badge: "Frequency Regulation · BESS Specialist",
@@ -362,7 +362,7 @@ const zh: Messages = {
     },
     { label: "调频案例", href: "/case-center" },
     { label: "技术博客", href: "/blog" },
-    { label: "联系", href: "#contact" },
+    { label: "联系", href: "/#contact" },
   ],
   hero: {
     badge: "调频储能 · BESS 专家",

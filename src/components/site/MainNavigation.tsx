@@ -156,7 +156,7 @@ export function MainNavigation() {
               </div>
             ))}
             <Link
-              href="#contact"
+              href="/#contact"
               className="mt-4 rounded-full bg-brand-600 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setOpen(false)}
             >

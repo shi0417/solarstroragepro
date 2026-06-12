@@ -65,8 +65,8 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-3">
               {[
-                { label: "Frequency Regulation", href: "#solutions" },
-                { label: "Peak Shaving", href: "#solutions" },
+                { label: "Frequency Regulation", href: "/#solutions" },
+                { label: "Peak Shaving", href: "/#solutions" },
                 { label: "Data Center Storage", href: "/solutions/data-center-energy-storage" },
                 { label: "Grid-Level BESS", href: "/solutions/grid-level-bess" },
                 { label: "Case Studies", href: "/case-center" },
@@ -141,7 +141,7 @@ export function Footer() {
             {/* Quick CTA */}
             <div className="mt-6">
               <a
-                href="#contact"
+                href="/#contact"
                 className="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-brand-700 hover:shadow-md hover:shadow-brand-600/20"
               >
                 Get a Quote
