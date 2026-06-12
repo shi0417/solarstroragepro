@@ -1,9 +1,19 @@
-"""Execute Supabase migration SQL via Management API."""
+"""Execute Supabase migration SQL via Management API.
+
+Usage: python run-migration.py
+Requires SUPABASE_LOGIN_TOKEN env var (from .env.local)
+"""
 import json
+import os
 import urllib.request
 
 API_URL = "https://api.supabase.com/v1/projects/qujcrmbzuzlgjrexbzga/database/query"
-TOKEN = "REMOVED_SECRET"
+TOKEN = os.environ.get("SUPABASE_LOGIN_TOKEN", "")
+
+if not TOKEN:
+    print("ERROR: SUPABASE_LOGIN_TOKEN env var not set.")
+    print("Set it from .env.local: export SUPABASE_LOGIN_TOKEN=sbp_...")
+    exit(1)
 
 queries = [
     # contact_submissions policies
