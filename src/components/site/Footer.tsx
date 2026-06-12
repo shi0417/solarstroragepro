@@ -14,7 +14,7 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-900 text-slate-400">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
@@ -70,6 +70,31 @@ export function Footer() {
                 { label: "Data Center Storage", href: "/solutions/data-center-energy-storage" },
                 { label: "Grid-Level BESS", href: "/solutions/grid-level-bess" },
                 { label: "Case Studies", href: "/case-center" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="inline-flex items-center gap-1 text-sm transition-colors hover:text-brand-400"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+              Resources
+            </h3>
+            <ul className="mt-4 space-y-3">
+              {[
+                { label: "Blog & Insights", href: "/blog" },
+                { label: "ROI Calculator", href: "/blog/commercial-battery-storage-roi" },
+                { label: "Installation Guide", href: "/blog/ci-solar-storage-installation-guide" },
+                { label: "Certification Guide", href: "/blog/solar-storage-certification-guide" },
+                { label: "Supplier Evaluation", href: "/blog/how-to-choose-energy-storage-supplier" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link

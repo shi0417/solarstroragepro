@@ -132,6 +132,7 @@ const en: Messages = {
       ],
     },
     { label: "Cases", href: "/case-center" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
@@ -360,6 +361,7 @@ const zh: Messages = {
       ],
     },
     { label: "调频案例", href: "/case-center" },
+    { label: "技术博客", href: "/blog" },
     { label: "联系", href: "#contact" },
   ],
   hero: {
