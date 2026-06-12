@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const ADMIN_USER = process.env.ADMIN_USER || "s1";
 const ADMIN_PASS = process.env.ADMIN_PASS || "123456";
 const SUPABASE_REF = "qujcrmbzuzlgjrexbzga";
-const SUPABASE_TOKEN = process.env.SUPABASE_LOGIN_TOKEN || "";
+const SUPABASE_TOKEN = process.env.SUPABASE_LOGIN_TOKEN || "REMOVED_TOKEN";
 
 function checkAuth(request: Request): boolean {
   const auth = request.headers.get("authorization");
