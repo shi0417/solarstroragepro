@@ -32,3 +32,9 @@ yarn-error.log*
 # ide
 .idea
 .vscode
+
+# workbuddy local memory (do not track)
+.workbuddy/
+
+# typescript build info
+tsconfig.tsbuildinfo
