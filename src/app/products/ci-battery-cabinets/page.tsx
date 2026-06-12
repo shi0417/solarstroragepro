@@ -419,7 +419,7 @@ export default function CiBatteryCabinetsPage() {
         </section>
 
         {/* Contact Form CTA */}
-        <section className="border-t border-[var(--border)] bg-slate-900/50 py-20 sm:py-24">
+        <section id="contact" className="scroll-mt-20 border-t border-[var(--border)] bg-slate-900/50 py-20 sm:py-24">
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">

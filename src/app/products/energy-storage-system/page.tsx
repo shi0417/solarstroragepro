@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 
 import { ComparisonSpecTable } from "@/components/site/ComparisonSpecTable";
+import { ContactForm } from "@/components/site/ContactForm";
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
@@ -279,6 +280,26 @@ export default function EnergyStorageSystemPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Form CTA */}
+        <section id="contact" className="scroll-mt-20 border-t border-[var(--border)] bg-slate-900/50 py-20 sm:py-24">
+          <div className="mx-auto max-w-3xl px-4 sm:px-6">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                {isZh ? "获取定制方案" : "Get a Custom Solution"}
+              </h2>
+              <p className="mt-3 text-slate-400">
+                {isZh
+                  ? "告诉我们您的项目需求，工程师将在48小时内提供定制方案。"
+                  : "Tell us about your project — our engineers will design a custom solution within 48 hours."}
+              </p>
+            </div>
+
+            <div className="mt-10 rounded-2xl border border-[var(--border)] bg-slate-800/60 p-8 shadow-xl shadow-black/20 backdrop-blur">
+              <ContactForm />
             </div>
           </div>
         </section>
