@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import type { ReactNode } from "react";
+import React, { type ReactNode } from "react";
 import {
   Activity,
   Award,
@@ -9,6 +10,7 @@ import {
   Bolt,
   Flame,
   Layers,
+  Play,
   Puzzle,
   ShieldCheck,
   SlidersHorizontal,
@@ -22,6 +24,86 @@ import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 
 type Feature = { title: string; body: string; icon: ReactNode };
+
+/* ── Product Showcase: image first, fallback to video with click-to-play, fallback to icon ── */
+function ProductShowcase({
+  imageSrc,
+  videoSrc,
+  alt,
+}: {
+  imageSrc: string;
+  videoSrc: string;
+  alt: string;
+}) {
+  const [mode, setMode] = React.useState<"image" | "video" | "icon">("image");
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = React.useState(false);
+
+  const handlePlay = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+  };
+
+  return (
+    <div className="relative flex h-[320px] w-full items-center justify-center">
+      {/* Image mode */}
+      {mode === "image" && (
+        <Image
+          src={imageSrc}
+          alt={alt}
+          fill
+          className="rounded-2xl object-contain"
+          onError={() => {
+            if (videoSrc) setMode("video");
+            else setMode("icon");
+          }}
+          priority
+        />
+      )}
+
+      {/* Video mode */}
+      {mode === "video" && (
+        <div className="relative h-full w-full">
+          <video
+            ref={videoRef}
+            src={videoSrc}
+            className="h-full w-full rounded-2xl object-contain"
+            muted
+            loop
+            playsInline
+            onError={() => setMode("icon")}
+            onEnded={() => setIsPlaying(false)}
+            preload="metadata"
+          />
+
+          {/* Play button overlay */}
+          {!isPlaying && (
+            <button
+              onClick={handlePlay}
+              className="absolute inset-0 z-10 flex items-center justify-center rounded-2xl bg-black/30 transition hover:bg-black/40"
+              aria-label="播放视频"
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:scale-105 hover:bg-white">
+                <Play className="ml-1 h-7 w-7 text-slate-800" fill="currentColor" />
+              </div>
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* Icon fallback */}
+      {mode === "icon" && (
+        <div className="flex flex-col items-center gap-3">
+          <Battery className="h-24 w-24 text-solar-400/60" aria-hidden />
+          <p className="text-xs text-slate-500">
+            {"Image / video placeholder — upload product media"}
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
 
 const SPEC_HEADERS = ["100kWh", "200kWh", "250kWh", "500kWh"] as const;
 
@@ -185,9 +267,11 @@ export default function CiBatteryCabinetsPage() {
                 <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/40 backdrop-blur">
                   <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,158,11,0.18),transparent_55%)]" />
                   <div className="relative flex items-center justify-center">
-                    <div className="flex h-[320px] w-full items-center justify-center">
-                      <Battery className="h-24 w-24 text-solar-400/60" aria-hidden />
-                    </div>
+                    <ProductShowcase
+                      imageSrc="/images/products/ci-battery-cabinets.jpg"
+                      videoSrc="/videos/ci-product.mp4"
+                      alt={isZh ? "工商业储能柜产品图" : "C&I Battery Cabinet"}
+                    />
                   </div>
                 </div>
 
