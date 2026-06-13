@@ -36,7 +36,7 @@ export function LanguageSwitcher() {
         aria-haspopup="listbox"
       >
         <span>🌐</span>
-        <span>{current.label}</span>
+        <span>{current.native}</span>
         <svg
           className={`h-3 w-3 transition-transform ${open ? "rotate-180" : ""}`}
           fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}

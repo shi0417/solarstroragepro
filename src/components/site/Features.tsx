@@ -28,7 +28,7 @@ export function Features() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="section-eyebrow">
             <Zap className="h-4 w-4" aria-hidden />
-            Why Choose Us
+            {f.eyebrow}
           </span>
           <h2 className="section-heading mt-4">
             {f.heading}
@@ -68,7 +68,7 @@ export function Features() {
                     {item.body.split("—")[0].slice(0, 60).length > 10 && (
                       <li className="flex items-center gap-2 text-xs text-slate-400">
                         <Check className="h-3.5 w-3.5 text-emerald-500" aria-hidden />
-                        Proven in 50+ deployments
+                        {f.provenText}
                       </li>
                     )}
                   </ul>

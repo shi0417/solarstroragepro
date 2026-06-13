@@ -82,7 +82,18 @@
       "Respuesta Técnica en 24 Horas"
     ],
     "ctaPrimary": "Obtener Propuesta Gratuita",
-    "ctaSecondary": "Descargar Ficha Técnica"
+    "ctaSecondary": "Descargar Ficha Técnica",
+    "productLabel": "Contenedor BESS",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "Respuesta de Frecuencia (Hz)",
+    "chartLive": "En vivo",
+    "responseTime": "<200ms",
+    "countries": "50+ Países",
+    "statusLabels": {
+      "response": "Respuesta",
+      "output": "Salida",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
@@ -186,7 +197,9 @@
         "tag": "Híbrido",
         "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "Línea de Productos",
+    "learnMore": "Saber más"
   },
   "features": {
     "heading": "Por Qué SolarStorage Pro para Regulación de Frecuencia",
@@ -212,7 +225,9 @@
         "title": "Integración EMS Inteligente",
         "body": "Controlador compatible con AGC/FCAS con monitoreo de frecuencia en tiempo real, algoritmos de despacho automático y capacidad de apilamiento multimercado."
       }
-    ]
+    ],
+    "eyebrow": "Por Qué Elegirnos",
+    "provenText": "Comprobado en 50+ implementaciones"
   },
   "testimonials": {
     "heading": "Confiado por Operadores de Red en Todo el Mundo",

@@ -82,15 +82,41 @@
       "Resposta Técnica em 24 Horas"
     ],
     "ctaPrimary": "Obter Proposta Gratuita",
-    "ctaSecondary": "Baixar Ficha Técnica"
+    "ctaSecondary": "Baixar Ficha Técnica",
+    "productLabel": "Contêiner BESS",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "Resposta de Frequência (Hz)",
+    "chartLive": "Ao vivo",
+    "responseTime": "<200ms",
+    "countries": "50+ Países",
+    "statusLabels": {
+      "response": "Resposta",
+      "output": "Saída",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "Certificado IEC", "icon": "shield" },
-      { "label": "Certificado CE", "icon": "award" },
-      { "label": "Certificado UL", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "Mais de 50 Países", "icon": "globe" }
+      {
+        "label": "Certificado IEC",
+        "icon": "shield"
+      },
+      {
+        "label": "Certificado CE",
+        "icon": "award"
+      },
+      {
+        "label": "Certificado UL",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "Mais de 50 Países",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -121,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "Capacidade Implantada", "desc": "Armazenamento instalado globalmente" },
-      { "value": "200ms", "label": "Tempo de Resposta", "desc": "Resposta de frequência mais rápida da categoria" },
-      { "value": "50+", "label": "Países Atendidos", "desc": "Rede global de entrega de projetos" },
-      { "value": "10+", "label": "Anos de Experiência", "desc": "Engenharia e fabricação BESS" }
+      {
+        "value": "500MWh+",
+        "label": "Capacidade Implantada",
+        "desc": "Armazenamento instalado globalmente"
+      },
+      {
+        "value": "200ms",
+        "label": "Tempo de Resposta",
+        "desc": "Resposta de frequência mais rápida da categoria"
+      },
+      {
+        "value": "50+",
+        "label": "Países Atendidos",
+        "desc": "Rede global de entrega de projetos"
+      },
+      {
+        "value": "10+",
+        "label": "Anos de Experiência",
+        "desc": "Engenharia e fabricação BESS"
+      }
     ]
   },
   "products": {
@@ -155,7 +197,9 @@
         "tag": "Híbrido",
         "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "Linha de Produtos",
+    "learnMore": "Saiba mais"
   },
   "features": {
     "heading": "Por Que SolarStorage Pro para Regulação de Frequência",
@@ -181,7 +225,9 @@
         "title": "Integração EMS Inteligente",
         "body": "Controlador compatível com AGC/FCAS com monitoramento de frequência em tempo real, algoritmos de despacho automático e capacidade de empilhamento multimercado."
       }
-    ]
+    ],
+    "eyebrow": "Por Que Nos Escolher",
+    "provenText": "Comprovado em 50+ implantações"
   },
   "testimonials": {
     "heading": "Confiado por Operadores de Rede em Todo o Mundo",
@@ -214,9 +260,21 @@
     "companySub": "Mais de 10 anos de P&D e fabricação de armazenamento em baterias — capacidade anual de 3,7 GWh com produção verticalmente integrada.",
     "serviceSub": "Engenharia de pré-venda, suporte de comissionamento, monitoramento remoto e assistência técnica 24/7.",
     "companyStats": [
-      { "k": "Capacidade anual", "v": "3,7 GWh+", "d": "Fabricação de baterias" },
-      { "k": "Experiência em P&D", "v": "Mais de 10 anos", "d": "Engenharia BESS" },
-      { "k": "Mercados", "v": "50+", "d": "Países e regiões" }
+      {
+        "k": "Capacidade anual",
+        "v": "3,7 GWh+",
+        "d": "Fabricação de baterias"
+      },
+      {
+        "k": "Experiência em P&D",
+        "v": "Mais de 10 anos",
+        "d": "Engenharia BESS"
+      },
+      {
+        "k": "Mercados",
+        "v": "50+",
+        "d": "Países e regiões"
+      }
     ],
     "postTeaser": "Estudo de caso detalhado em breve — entre em contato para dados do projeto."
   },

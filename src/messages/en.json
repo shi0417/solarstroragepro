@@ -82,7 +82,18 @@
       "24-Hour Technical Response"
     ],
     "ctaPrimary": "Get Free Proposal",
-    "ctaSecondary": "Download Datasheet"
+    "ctaSecondary": "Download Datasheet",
+    "productLabel": "BESS Container",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "Frequency Response (Hz)",
+    "chartLive": "Live",
+    "responseTime": "<200ms",
+    "countries": "50+ Countries",
+    "statusLabels": {
+      "response": "Response",
+      "output": "Output",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
@@ -159,8 +170,10 @@
     ]
   },
   "products": {
+    "eyebrow": "Product Line",
     "heading": "Battery Energy Storage Products",
     "sub": "From residential to grid-scale — purpose-built cabinets and containers for frequency regulation, peak shaving, and energy management.",
+    "learnMore": "Learn more",
     "items": [
       {
         "name": "C&I Battery Cabinets",
@@ -189,8 +202,10 @@
     ]
   },
   "features": {
+    "eyebrow": "Why Choose Us",
     "heading": "Why SolarStorage Pro for Frequency Regulation",
     "sub": "Our systems are engineered specifically for the demands of grid ancillary services.",
+    "provenText": "Proven in 50+ deployments",
     "items": [
       {
         "icon": "zap",

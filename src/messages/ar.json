@@ -18,25 +18,58 @@
       "label": "المنتجات",
       "href": "/#products",
       "children": [
-        { "label": "حاوية BESS على نطاق الشبكة", "href": "/products/energy-storage-system" },
-        { "label": "خزائن بطاريات تجارية وصناعية", "href": "/products/ci-battery-cabinets" },
-        { "label": "نظام ESS سكني متكامل", "href": "/products/residential-ess" },
-        { "label": "محطة PCS / العاكس الفرعية", "href": "/products/pcs" },
-        { "label": "ألواح شمسية", "href": "/products/solar-panels" }
+        {
+          "label": "حاوية BESS على نطاق الشبكة",
+          "href": "/products/energy-storage-system"
+        },
+        {
+          "label": "خزائن بطاريات تجارية وصناعية",
+          "href": "/products/ci-battery-cabinets"
+        },
+        {
+          "label": "نظام ESS سكني متكامل",
+          "href": "/products/residential-ess"
+        },
+        {
+          "label": "محطة PCS / العاكس الفرعية",
+          "href": "/products/pcs"
+        },
+        {
+          "label": "ألواح شمسية",
+          "href": "/products/solar-panels"
+        }
       ]
     },
-    { "label": "التكنولوجيا", "href": "/technology" },
+    {
+      "label": "التكنولوجيا",
+      "href": "/technology"
+    },
     {
       "label": "الحلول",
       "href": "/#solutions",
       "children": [
-        { "label": "تنظيم تردد الشبكة (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
-        { "label": "تخزين الطاقة لمراكز البيانات", "href": "/solutions/data-center-energy-storage" }
+        {
+          "label": "تنظيم تردد الشبكة (FCR/aFRR)",
+          "href": "/solutions/grid-level-bess"
+        },
+        {
+          "label": "تخزين الطاقة لمراكز البيانات",
+          "href": "/solutions/data-center-energy-storage"
+        }
       ]
     },
-    { "label": "دراسات الحالة", "href": "/case-center" },
-    { "label": "المدونة", "href": "/blog" },
-    { "label": "اتصل بنا", "href": "/#contact" }
+    {
+      "label": "دراسات الحالة",
+      "href": "/case-center"
+    },
+    {
+      "label": "المدونة",
+      "href": "/blog"
+    },
+    {
+      "label": "اتصل بنا",
+      "href": "/#contact"
+    }
   ],
   "hero": {
     "badge": "تنظيم التردد · متخصص BESS",
@@ -49,15 +82,41 @@
       "دعم فني على مدار 24 ساعة"
     ],
     "ctaPrimary": "احصل على عرض مجاني",
-    "ctaSecondary": "تنزيل ورقة البيانات"
+    "ctaSecondary": "تنزيل ورقة البيانات",
+    "productLabel": "حاوية BESS",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "استجابة التردد (Hz)",
+    "chartLive": "مباشر",
+    "responseTime": "<200ms",
+    "countries": "50+ دولة",
+    "statusLabels": {
+      "response": "الاستجابة",
+      "output": "المخرج",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "حاصل على شهادة IEC", "icon": "shield" },
-      { "label": "حاصل على شهادة CE", "icon": "award" },
-      { "label": "مدرج في قائمة UL", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "أكثر من 50 دولة", "icon": "globe" }
+      {
+        "label": "حاصل على شهادة IEC",
+        "icon": "shield"
+      },
+      {
+        "label": "حاصل على شهادة CE",
+        "icon": "award"
+      },
+      {
+        "label": "مدرج في قائمة UL",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "أكثر من 50 دولة",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -88,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "السعة المنشورة", "desc": "تخزين بطاريات مركب عالمياً" },
-      { "value": "200ms", "label": "زمن الاستجابة", "desc": "أسرع استجابة تردد في فئتها" },
-      { "value": "50+", "label": "دولة مخدومة", "desc": "شبكة توصيل مشاريع عالمية" },
-      { "value": "10+", "label": "سنوات من الخبرة", "desc": "هندسة وتصنيع BESS" }
+      {
+        "value": "500MWh+",
+        "label": "السعة المنشورة",
+        "desc": "تخزين بطاريات مركب عالمياً"
+      },
+      {
+        "value": "200ms",
+        "label": "زمن الاستجابة",
+        "desc": "أسرع استجابة تردد في فئتها"
+      },
+      {
+        "value": "50+",
+        "label": "دولة مخدومة",
+        "desc": "شبكة توصيل مشاريع عالمية"
+      },
+      {
+        "value": "10+",
+        "label": "سنوات من الخبرة",
+        "desc": "هندسة وتصنيع BESS"
+      }
     ]
   },
   "products": {
@@ -101,24 +176,30 @@
       {
         "name": "خزائن بطاريات تجارية وصناعية",
         "desc": "خزائن معيارية 100-500 كيلوواط ساعة بمعدل 1C/2C مع تبريد سائل وإخماد حرائق — مثالية لإدارة ذروة الأحمال التجارية واستجابة التردد.",
-        "tag": "تجاري وصناعي", "href": "/products/ci-battery-cabinets"
+        "tag": "تجاري وصناعي",
+        "href": "/products/ci-battery-cabinets"
       },
       {
         "name": "حاوية BESS على نطاق الشبكة",
         "desc": "أنظمة حاويات 1MW/2MWh+ مع PCS وBMS وEMS مدمجة. مصممة لتنظيم التردد على مستوى المرافق والخدمات المساعدة.",
-        "tag": "مرافق", "href": "/products/energy-storage-system"
+        "tag": "مرافق",
+        "href": "/products/energy-storage-system"
       },
       {
         "name": "نظام ESS سكني",
         "desc": "أنظمة متكاملة 5-20 كيلوواط ساعة مع عاكس مدمج، تدعم تحسين الاستهلاك الذاتي ودعم الشبكة.",
-        "tag": "سكني", "href": "/products/residential-ess"
+        "tag": "سكني",
+        "href": "/products/residential-ess"
       },
       {
         "name": "تكامل الطاقة الشمسية + التخزين",
         "desc": "وحدات كهروضوئية عالية الكفاءة مقترنة بالتخزين للتركيبات الهجينة — تعظيم الاستخدام الذاتي وإيرادات استقرار الشبكة.",
-        "tag": "هجين", "href": "/products/solar-panels"
+        "tag": "هجين",
+        "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "خط المنتجات",
+    "learnMore": "اعرف المزيد"
   },
   "features": {
     "heading": "لماذا SolarStorage Pro لتنظيم التردد",
@@ -144,7 +225,9 @@
         "title": "تكامل EMS ذكي",
         "body": "وحدة تحكم متوافقة مع AGC/FCAS مع مراقبة التردد في الوقت الفعلي وخوارزميات إرسال تلقائية وقدرة على التجميع متعدد الأسواق."
       }
-    ]
+    ],
+    "eyebrow": "لماذا تختارنا",
+    "provenText": "مثبت في 50+ مشروع"
   },
   "testimonials": {
     "heading": "موثوق به من قبل مشغلي الشبكات حول العالم",
@@ -177,9 +260,21 @@
     "companySub": "أكثر من 10 سنوات من البحث والتطوير والتصنيع في تخزين البطاريات — قدرة سنوية 3.7 جيجاوات ساعة مع إنتاج متكامل رأسياً.",
     "serviceSub": "هندسة ما قبل البيع ودعم التشغيل والمراقبة عن بُعد والمساعدة الفنية على مدار الساعة.",
     "companyStats": [
-      { "k": "القدرة السنوية", "v": "+3.7 GWh", "d": "تصنيع البطاريات" },
-      { "k": "خبرة البحث والتطوير", "v": "+10 سنوات", "d": "هندسة BESS" },
-      { "k": "الأسواق", "v": "+50", "d": "دولة ومنطقة" }
+      {
+        "k": "القدرة السنوية",
+        "v": "+3.7 GWh",
+        "d": "تصنيع البطاريات"
+      },
+      {
+        "k": "خبرة البحث والتطوير",
+        "v": "+10 سنوات",
+        "d": "هندسة BESS"
+      },
+      {
+        "k": "الأسواق",
+        "v": "+50",
+        "d": "دولة ومنطقة"
+      }
     ],
     "postTeaser": "دراسة حالة مفصلة قريبًا — اتصل بنا للحصول على بيانات المشروع."
   },

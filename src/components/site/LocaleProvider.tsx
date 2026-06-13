@@ -25,9 +25,25 @@ export function LocaleProvider({
 }) {
   const value = useMemo(() => {
     const setLocale = (next: string) => {
-      if (typeof document !== "undefined") {
+      if (typeof window !== "undefined") {
         const pathname = window.location.pathname;
-        const newPath = pathname.replace(/^\/[^/]+/, `/${next}`);
+        let newPath: string;
+        
+        // 根路径：直接跳转到 /{next}
+        if (pathname === "/") {
+          newPath = `/${next}`;
+        } else {
+          // 替换第一个路径段（locale）
+          const match = pathname.match(/^\/([^/]+)/);
+          if (match && ["en","zh","es","tr","pt","de","fr","th","ar","ja","ko","id"].includes(match[1])) {
+            // 有有效的 locale 前缀，替换它
+            newPath = `/${next}${pathname.slice(match[0].length)}`;
+          } else {
+            // 没有 locale 前缀，添加它
+            newPath = `/${next}${pathname}`;
+          }
+        }
+        
         document.cookie = `locale=${next}; Path=/; Max-Age=${60 * 60 * 24 * 365}; SameSite=Lax`;
         window.location.href = newPath;
       }

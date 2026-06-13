@@ -18,25 +18,58 @@
       "label": "製品",
       "href": "/#products",
       "children": [
-        { "label": "系統規模BESSコンテナ", "href": "/products/energy-storage-system" },
-        { "label": "産業用蓄電池キャビネット", "href": "/products/ci-battery-cabinets" },
-        { "label": "家庭用オールインワンESS", "href": "/products/residential-ess" },
-        { "label": "PCS / インバーター変電所", "href": "/products/pcs" },
-        { "label": "ソーラーパネル", "href": "/products/solar-panels" }
+        {
+          "label": "系統規模BESSコンテナ",
+          "href": "/products/energy-storage-system"
+        },
+        {
+          "label": "産業用蓄電池キャビネット",
+          "href": "/products/ci-battery-cabinets"
+        },
+        {
+          "label": "家庭用オールインワンESS",
+          "href": "/products/residential-ess"
+        },
+        {
+          "label": "PCS / インバーター変電所",
+          "href": "/products/pcs"
+        },
+        {
+          "label": "ソーラーパネル",
+          "href": "/products/solar-panels"
+        }
       ]
     },
-    { "label": "技術", "href": "/technology" },
+    {
+      "label": "技術",
+      "href": "/technology"
+    },
     {
       "label": "ソリューション",
       "href": "/#solutions",
       "children": [
-        { "label": "系統周波数調整（FCR/aFRR）", "href": "/solutions/grid-level-bess" },
-        { "label": "データセンター用蓄電", "href": "/solutions/data-center-energy-storage" }
+        {
+          "label": "系統周波数調整（FCR/aFRR）",
+          "href": "/solutions/grid-level-bess"
+        },
+        {
+          "label": "データセンター用蓄電",
+          "href": "/solutions/data-center-energy-storage"
+        }
       ]
     },
-    { "label": "導入事例", "href": "/case-center" },
-    { "label": "ブログ", "href": "/blog" },
-    { "label": "お問い合わせ", "href": "/#contact" }
+    {
+      "label": "導入事例",
+      "href": "/case-center"
+    },
+    {
+      "label": "ブログ",
+      "href": "/blog"
+    },
+    {
+      "label": "お問い合わせ",
+      "href": "/#contact"
+    }
   ],
   "hero": {
     "badge": "周波数調整 · BESSスペシャリスト",
@@ -49,15 +82,41 @@
       "24時間技術サポート"
     ],
     "ctaPrimary": "無料提案書を入手",
-    "ctaSecondary": "データシートをダウンロード"
+    "ctaSecondary": "データシートをダウンロード",
+    "productLabel": "BESSコンテナ",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "周波数応答 (Hz)",
+    "chartLive": "ライブ",
+    "responseTime": "<200ms",
+    "countries": "50+ カ国",
+    "statusLabels": {
+      "response": "応答時間",
+      "output": "出力",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "IEC認証", "icon": "shield" },
-      { "label": "CE認証", "icon": "award" },
-      { "label": "UL認証", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "50カ国以上", "icon": "globe" }
+      {
+        "label": "IEC認証",
+        "icon": "shield"
+      },
+      {
+        "label": "CE認証",
+        "icon": "award"
+      },
+      {
+        "label": "UL認証",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "50カ国以上",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -88,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "導入済容量", "desc": "世界中に設置された蓄電システム" },
-      { "value": "200ms", "label": "応答時間", "desc": "クラス最速の周波数応答" },
-      { "value": "50+", "label": "サービス提供国", "desc": "グローバルプロジェクトネットワーク" },
-      { "value": "10+", "label": "年の経験", "desc": "BESSエンジニアリングと製造" }
+      {
+        "value": "500MWh+",
+        "label": "導入済容量",
+        "desc": "世界中に設置された蓄電システム"
+      },
+      {
+        "value": "200ms",
+        "label": "応答時間",
+        "desc": "クラス最速の周波数応答"
+      },
+      {
+        "value": "50+",
+        "label": "サービス提供国",
+        "desc": "グローバルプロジェクトネットワーク"
+      },
+      {
+        "value": "10+",
+        "label": "年の経験",
+        "desc": "BESSエンジニアリングと製造"
+      }
     ]
   },
   "products": {
@@ -101,24 +176,30 @@
       {
         "name": "産業用蓄電池キャビネット",
         "desc": "1C/2Cレート対応の100～500kWhモジュラーキャビネット。液冷と消火システムを搭載 — 商業用ピークシェービングと周波数応答に最適。",
-        "tag": "産業用", "href": "/products/ci-battery-cabinets"
+        "tag": "産業用",
+        "href": "/products/ci-battery-cabinets"
       },
       {
         "name": "系統規模BESSコンテナ",
         "desc": "PCS、BMS、EMSを統合した1MW/2MWh+のコンテナ型システム。系統レベルの周波数調整とアンシラリーサービス向けに設計。",
-        "tag": "系統用", "href": "/products/energy-storage-system"
+        "tag": "系統用",
+        "href": "/products/energy-storage-system"
       },
       {
         "name": "家庭用ESS",
         "desc": "インバーター内蔵の5～20kWhオールインワンシステム。自家消費の最適化と系統サポートを実現。",
-        "tag": "家庭用", "href": "/products/residential-ess"
+        "tag": "家庭用",
+        "href": "/products/residential-ess"
       },
       {
         "name": "太陽光＋蓄電統合",
         "desc": "高効率PVモジュールと蓄電池を組み合わせたハイブリッド設置 — 自家消費と系統安定化収益を最大化。",
-        "tag": "ハイブリッド", "href": "/products/solar-panels"
+        "tag": "ハイブリッド",
+        "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "製品ライン",
+    "learnMore": "詳細を見る"
   },
   "features": {
     "heading": "周波数調整にSolarStorage Proを選ぶ理由",
@@ -144,7 +225,9 @@
         "title": "スマートEMS統合",
         "body": "リアルタイム周波数監視、自動制御アルゴリズム、複数市場スタッキング機能を備えたAGC/FCAS対応コントローラー。"
       }
-    ]
+    ],
+    "eyebrow": "選ばれる理由",
+    "provenText": "50+ の導入実績"
   },
   "testimonials": {
     "heading": "世界中の系統運用者から信頼",
@@ -177,9 +260,21 @@
     "companySub": "10年以上の蓄電池研究開発・製造実績 — 垂直統合生産による年間3.7 GWhの生産能力。",
     "serviceSub": "プリセールスエンジニアリング、試運転サポート、遠隔監視、24時間365日の技術支援。",
     "companyStats": [
-      { "k": "年間生産能力", "v": "3.7 GWh+", "d": "蓄電池製造" },
-      { "k": "研究開発経験", "v": "10年以上", "d": "BESSエンジニアリング" },
-      { "k": "市場", "v": "50+", "d": "国と地域" }
+      {
+        "k": "年間生産能力",
+        "v": "3.7 GWh+",
+        "d": "蓄電池製造"
+      },
+      {
+        "k": "研究開発経験",
+        "v": "10年以上",
+        "d": "BESSエンジニアリング"
+      },
+      {
+        "k": "市場",
+        "v": "50+",
+        "d": "国と地域"
+      }
     ],
     "postTeaser": "詳細な導入事例は近日公開 — プロジェクトデータについてはお問い合わせください。"
   },

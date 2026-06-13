@@ -18,25 +18,58 @@
       "label": "Produits",
       "href": "/#products",
       "children": [
-        { "label": "Conteneur BESS à l'Échelle du Réseau", "href": "/products/energy-storage-system" },
-        { "label": "Armoires de Batteries C&I", "href": "/products/ci-battery-cabinets" },
-        { "label": "Système ESS Résidentiel Tout-en-Un", "href": "/products/residential-ess" },
-        { "label": "Sous-station PCS / Onduleur", "href": "/products/pcs" },
-        { "label": "Panneaux Solaires", "href": "/products/solar-panels" }
+        {
+          "label": "Conteneur BESS à l'Échelle du Réseau",
+          "href": "/products/energy-storage-system"
+        },
+        {
+          "label": "Armoires de Batteries C&I",
+          "href": "/products/ci-battery-cabinets"
+        },
+        {
+          "label": "Système ESS Résidentiel Tout-en-Un",
+          "href": "/products/residential-ess"
+        },
+        {
+          "label": "Sous-station PCS / Onduleur",
+          "href": "/products/pcs"
+        },
+        {
+          "label": "Panneaux Solaires",
+          "href": "/products/solar-panels"
+        }
       ]
     },
-    { "label": "Technologie", "href": "/technology" },
+    {
+      "label": "Technologie",
+      "href": "/technology"
+    },
     {
       "label": "Solutions",
       "href": "/#solutions",
       "children": [
-        { "label": "Régulation de Fréquence Réseau (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
-        { "label": "Stockage pour Data Centers", "href": "/solutions/data-center-energy-storage" }
+        {
+          "label": "Régulation de Fréquence Réseau (FCR/aFRR)",
+          "href": "/solutions/grid-level-bess"
+        },
+        {
+          "label": "Stockage pour Data Centers",
+          "href": "/solutions/data-center-energy-storage"
+        }
       ]
     },
-    { "label": "Études de Cas", "href": "/case-center" },
-    { "label": "Blog", "href": "/blog" },
-    { "label": "Contact", "href": "/#contact" }
+    {
+      "label": "Études de Cas",
+      "href": "/case-center"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Contact",
+      "href": "/#contact"
+    }
   ],
   "hero": {
     "badge": "Régulation de Fréquence · Spécialiste BESS",
@@ -49,15 +82,41 @@
       "Support Technique 24h/24"
     ],
     "ctaPrimary": "Obtenir une Proposition Gratuite",
-    "ctaSecondary": "Télécharger la Fiche Technique"
+    "ctaSecondary": "Télécharger la Fiche Technique",
+    "productLabel": "Conteneur BESS",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "Réponse en Fréquence (Hz)",
+    "chartLive": "En direct",
+    "responseTime": "<200ms",
+    "countries": "50+ Pays",
+    "statusLabels": {
+      "response": "Réponse",
+      "output": "Sortie",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "Certifié IEC", "icon": "shield" },
-      { "label": "Certifié CE", "icon": "award" },
-      { "label": "Homologué UL", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "Plus de 50 Pays", "icon": "globe" }
+      {
+        "label": "Certifié IEC",
+        "icon": "shield"
+      },
+      {
+        "label": "Certifié CE",
+        "icon": "award"
+      },
+      {
+        "label": "Homologué UL",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "Plus de 50 Pays",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -88,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "Capacité Déployée", "desc": "Stockage installé dans le monde" },
-      { "value": "200ms", "label": "Temps de Réponse", "desc": "Réponse en fréquence la plus rapide de sa catégorie" },
-      { "value": "50+", "label": "Pays Desservis", "desc": "Réseau mondial de livraison de projets" },
-      { "value": "10+", "label": "Années d'Expérience", "desc": "Ingénierie et fabrication BESS" }
+      {
+        "value": "500MWh+",
+        "label": "Capacité Déployée",
+        "desc": "Stockage installé dans le monde"
+      },
+      {
+        "value": "200ms",
+        "label": "Temps de Réponse",
+        "desc": "Réponse en fréquence la plus rapide de sa catégorie"
+      },
+      {
+        "value": "50+",
+        "label": "Pays Desservis",
+        "desc": "Réseau mondial de livraison de projets"
+      },
+      {
+        "value": "10+",
+        "label": "Années d'Expérience",
+        "desc": "Ingénierie et fabrication BESS"
+      }
     ]
   },
   "products": {
@@ -101,24 +176,30 @@
       {
         "name": "Armoires de Batteries C&I",
         "desc": "Armoires modulaires 100–500kWh avec taux 1C/2C, refroidissement liquide et extinction d'incendie — idéales pour l'écrêtement de pointe commercial et la réponse en fréquence.",
-        "tag": "C&I", "href": "/products/ci-battery-cabinets"
+        "tag": "C&I",
+        "href": "/products/ci-battery-cabinets"
       },
       {
         "name": "Conteneur BESS à l'Échelle du Réseau",
         "desc": "Systèmes conteneurisés 1MW/2MWh+ avec PCS, BMS et EMS intégrés. Conçus pour la régulation de fréquence et les services auxiliaires de niveau utility.",
-        "tag": "Utility", "href": "/products/energy-storage-system"
+        "tag": "Utility",
+        "href": "/products/energy-storage-system"
       },
       {
         "name": "Système ESS Résidentiel",
         "desc": "Systèmes tout-en-un 5–20kWh avec onduleur intégré, optimisation de l'autoconsommation et soutien au réseau.",
-        "tag": "Résidentiel", "href": "/products/residential-ess"
+        "tag": "Résidentiel",
+        "href": "/products/residential-ess"
       },
       {
         "name": "Intégration Solaire + Stockage",
         "desc": "Modules photovoltaïques haute efficacité associés au stockage pour installations hybrides — maximisez l'autoconsommation et les revenus de stabilité réseau.",
-        "tag": "Hybride", "href": "/products/solar-panels"
+        "tag": "Hybride",
+        "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "Gamme de Produits",
+    "learnMore": "En savoir plus"
   },
   "features": {
     "heading": "Pourquoi SolarStorage Pro pour la Régulation de Fréquence",
@@ -144,7 +225,9 @@
         "title": "Intégration EMS Intelligente",
         "body": "Contrôleur compatible AGC/FCAS avec surveillance de fréquence en temps réel, algorithmes de dispatching automatique et capacité d'empilement multi-marchés."
       }
-    ]
+    ],
+    "eyebrow": "Pourquoi Nous Choisir",
+    "provenText": "Prouvé dans 50+ déploiements"
   },
   "testimonials": {
     "heading": "Approuvé par les Gestionnaires de Réseau du Monde Entier",
@@ -177,9 +260,21 @@
     "companySub": "Plus de 10 ans de R&D et fabrication de stockage par batteries — capacité annuelle de 3,7 GWh avec production verticalement intégrée.",
     "serviceSub": "Ingénierie avant-vente, support de mise en service, surveillance à distance et assistance technique 24h/24 et 7j/7.",
     "companyStats": [
-      { "k": "Capacité annuelle", "v": "3,7 GWh+", "d": "Fabrication de batteries" },
-      { "k": "Expérience R&D", "v": "Plus de 10 ans", "d": "Ingénierie BESS" },
-      { "k": "Marchés", "v": "50+", "d": "Pays et régions" }
+      {
+        "k": "Capacité annuelle",
+        "v": "3,7 GWh+",
+        "d": "Fabrication de batteries"
+      },
+      {
+        "k": "Expérience R&D",
+        "v": "Plus de 10 ans",
+        "d": "Ingénierie BESS"
+      },
+      {
+        "k": "Marchés",
+        "v": "50+",
+        "d": "Pays et régions"
+      }
     ],
     "postTeaser": "Étude de cas détaillée à venir — contactez-nous pour les données du projet."
   },

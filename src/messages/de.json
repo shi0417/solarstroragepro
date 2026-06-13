@@ -18,11 +18,26 @@
       "label": "Produkte",
       "href": "/#products",
       "children": [
-        { "label": "Grid-Scale BESS Container", "href": "/products/energy-storage-system" },
-        { "label": "C&I Batterieschränke", "href": "/products/ci-battery-cabinets" },
-        { "label": "Residential All-in-One ESS", "href": "/products/residential-ess" },
-        { "label": "PCS / Wechselrichter-Station", "href": "/products/pcs" },
-        { "label": "Solarmodule", "href": "/products/solar-panels" }
+        {
+          "label": "Grid-Scale BESS Container",
+          "href": "/products/energy-storage-system"
+        },
+        {
+          "label": "C&I Batterieschränke",
+          "href": "/products/ci-battery-cabinets"
+        },
+        {
+          "label": "Residential All-in-One ESS",
+          "href": "/products/residential-ess"
+        },
+        {
+          "label": "PCS / Wechselrichter-Station",
+          "href": "/products/pcs"
+        },
+        {
+          "label": "Solarmodule",
+          "href": "/products/solar-panels"
+        }
       ]
     },
     {
@@ -33,13 +48,28 @@
       "label": "Lösungen",
       "href": "/#solutions",
       "children": [
-        { "label": "Netzfrequenzregelung (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
-        { "label": "Energiespeicher für Rechenzentren", "href": "/solutions/data-center-energy-storage" }
+        {
+          "label": "Netzfrequenzregelung (FCR/aFRR)",
+          "href": "/solutions/grid-level-bess"
+        },
+        {
+          "label": "Energiespeicher für Rechenzentren",
+          "href": "/solutions/data-center-energy-storage"
+        }
       ]
     },
-    { "label": "Referenzen", "href": "/case-center" },
-    { "label": "Blog", "href": "/blog" },
-    { "label": "Kontakt", "href": "/#contact" }
+    {
+      "label": "Referenzen",
+      "href": "/case-center"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/#contact"
+    }
   ],
   "hero": {
     "badge": "Frequenzregelung · BESS-Spezialist",
@@ -52,15 +82,41 @@
       "24-Stunden Technischer Support"
     ],
     "ctaPrimary": "Kostenloses Angebot",
-    "ctaSecondary": "Datenblatt herunterladen"
+    "ctaSecondary": "Datenblatt herunterladen",
+    "productLabel": "BESS Container",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "Frequenzantwort (Hz)",
+    "chartLive": "Live",
+    "responseTime": "<200ms",
+    "countries": "50+ Länder",
+    "statusLabels": {
+      "response": "Antwortzeit",
+      "output": "Ausgang",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "IEC Zertifiziert", "icon": "shield" },
-      { "label": "CE Zertifiziert", "icon": "award" },
-      { "label": "UL Gelistet", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "Über 50 Länder", "icon": "globe" }
+      {
+        "label": "IEC Zertifiziert",
+        "icon": "shield"
+      },
+      {
+        "label": "CE Zertifiziert",
+        "icon": "award"
+      },
+      {
+        "label": "UL Gelistet",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "Über 50 Länder",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -91,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "Installierte Kapazität", "desc": "Weltweit installierte Batteriespeicher" },
-      { "value": "200ms", "label": "Reaktionszeit", "desc": "Schnellste Frequenzantwort ihrer Klasse" },
-      { "value": "50+", "label": "Belieferte Länder", "desc": "Globales Projektliefernetzwerk" },
-      { "value": "10+", "label": "Jahre Erfahrung", "desc": "BESS-Entwicklung & Fertigung" }
+      {
+        "value": "500MWh+",
+        "label": "Installierte Kapazität",
+        "desc": "Weltweit installierte Batteriespeicher"
+      },
+      {
+        "value": "200ms",
+        "label": "Reaktionszeit",
+        "desc": "Schnellste Frequenzantwort ihrer Klasse"
+      },
+      {
+        "value": "50+",
+        "label": "Belieferte Länder",
+        "desc": "Globales Projektliefernetzwerk"
+      },
+      {
+        "value": "10+",
+        "label": "Jahre Erfahrung",
+        "desc": "BESS-Entwicklung & Fertigung"
+      }
     ]
   },
   "products": {
@@ -104,24 +176,30 @@
       {
         "name": "C&I Batterieschränke",
         "desc": "Modulare 100–500kWh Schränke mit 1C/2C-Rate, Flüssigkühlung und Brandunterdrückung — ideal für kommerzielles Peak Shaving und Frequenzantwort.",
-        "tag": "C&I", "href": "/products/ci-battery-cabinets"
+        "tag": "C&I",
+        "href": "/products/ci-battery-cabinets"
       },
       {
         "name": "Grid-Scale BESS Container",
         "desc": "Containerisierte 1MW/2MWh+ Systeme mit integriertem PCS, BMS und EMS. Ausgelegt für Frequenzregelung und Systemdienstleistungen auf Utility-Niveau.",
-        "tag": "Utility", "href": "/products/energy-storage-system"
+        "tag": "Utility",
+        "href": "/products/energy-storage-system"
       },
       {
         "name": "Residential ESS",
         "desc": "5–20kWh All-in-One-Systeme mit integriertem Wechselrichter zur Optimierung des Eigenverbrauchs und Netzunterstützung.",
-        "tag": "Residential", "href": "/products/residential-ess"
+        "tag": "Residential",
+        "href": "/products/residential-ess"
       },
       {
         "name": "Solar + Speicher Integration",
         "desc": "Hocheffiziente PV-Module kombiniert mit Speicher für Hybridanlagen — maximieren Sie Eigenverbrauch und Netzstabilitätserlöse.",
-        "tag": "Hybrid", "href": "/products/solar-panels"
+        "tag": "Hybrid",
+        "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "Produktlinie",
+    "learnMore": "Mehr erfahren"
   },
   "features": {
     "heading": "Warum SolarStorage Pro für Frequenzregelung",
@@ -147,7 +225,9 @@
         "title": "Intelligente EMS-Integration",
         "body": "AGC/FCAS-fähiger Controller mit Echtzeit-Frequenzüberwachung, automatischen Dispatch-Algorithmen und Multi-Market-Stacking."
       }
-    ]
+    ],
+    "eyebrow": "Warum Uns Wählen",
+    "provenText": "Bewährt in 50+ Installationen"
   },
   "testimonials": {
     "heading": "Weltweit von Netzbetreibern Vertraut",
@@ -180,9 +260,21 @@
     "companySub": "Über 10 Jahre Batteriespeicher-F&E und Fertigung — 3,7 GWh Jahreskapazität mit vertikal integrierter Produktion.",
     "serviceSub": "Presales-Engineering, Inbetriebnahmeunterstützung, Fernüberwachung und 24/7 technische Unterstützung.",
     "companyStats": [
-      { "k": "Jahreskapazität", "v": "3,7 GWh+", "d": "Batteriefertigung" },
-      { "k": "F&E-Erfahrung", "v": "Über 10 Jahre", "d": "BESS-Entwicklung" },
-      { "k": "Märkte", "v": "50+", "d": "Länder & Regionen" }
+      {
+        "k": "Jahreskapazität",
+        "v": "3,7 GWh+",
+        "d": "Batteriefertigung"
+      },
+      {
+        "k": "F&E-Erfahrung",
+        "v": "Über 10 Jahre",
+        "d": "BESS-Entwicklung"
+      },
+      {
+        "k": "Märkte",
+        "v": "50+",
+        "d": "Länder & Regionen"
+      }
     ],
     "postTeaser": "Detaillierte Fallstudie in Kürze — kontaktieren Sie uns für Projektdaten."
   },

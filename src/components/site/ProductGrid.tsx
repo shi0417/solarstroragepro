@@ -38,7 +38,7 @@ export function ProductGrid() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="section-eyebrow">
             <Battery className="h-4 w-4" aria-hidden />
-            Product Line
+            {p.eyebrow}
           </span>
           <h2 className="section-heading mt-4">
             {p.heading}
@@ -65,6 +65,7 @@ export function ProductGrid() {
                     item={item}
                     icon={iconMap[item.tag] ?? <Battery className="h-6 w-6" />}
                     gradient={colorMap[item.tag] ?? "from-brand-500 to-brand-600"}
+                    learnMore={p.learnMore}
                   />
                 </Link>
               ) : (
@@ -73,6 +74,7 @@ export function ProductGrid() {
                     item={item}
                     icon={iconMap[item.tag] ?? <Battery className="h-6 w-6" />}
                     gradient={colorMap[item.tag] ?? "from-brand-500 to-brand-600"}
+                    learnMore={p.learnMore}
                   />
                 </div>
               )}
@@ -88,10 +90,12 @@ function ProductCardContent({
   item,
   icon,
   gradient,
+  learnMore,
 }: {
   item: { name: string; desc: string; tag: string };
   icon: React.ReactNode;
   gradient: string;
+  learnMore: string;
 }) {
   return (
     <>
@@ -129,7 +133,7 @@ function ProductCardContent({
           {item.desc}
         </p>
         <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-brand-600 opacity-0 transition-opacity group-hover:opacity-100">
-          Learn more
+          {learnMore}
           <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
         </div>
       </div>

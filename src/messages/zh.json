@@ -82,7 +82,18 @@
       "24小时技术响应"
     ],
     "ctaPrimary": "免费获取方案",
-    "ctaSecondary": "下载产品资料"
+    "ctaSecondary": "下载产品资料",
+    "productLabel": "储能集装箱",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "频率响应 (Hz)",
+    "chartLive": "实时",
+    "responseTime": "<200ms",
+    "countries": "50+ 国家",
+    "statusLabels": {
+      "response": "响应时间",
+      "output": "输出功率",
+      "soc": "电量"
+    }
   },
   "trustBar": {
     "items": [
@@ -186,7 +197,9 @@
         "tag": "光储一体",
         "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "产品线",
+    "learnMore": "了解更多"
   },
   "features": {
     "heading": "为什么选择 SolarStorage Pro 做调频",
@@ -212,7 +225,9 @@
         "title": "智能 EMS 集成",
         "body": "AGC/FCAS 就绪控制器，实时频率监测、自动调度算法和多市场叠加能力。"
       }
-    ]
+    ],
+    "eyebrow": "为什么选择我们",
+    "provenText": "50+ 项目验证"
   },
   "testimonials": {
     "heading": "全球电网运营商的信赖之选",

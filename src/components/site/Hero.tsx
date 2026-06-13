@@ -107,18 +107,18 @@ export function Hero() {
                     <Battery className="h-5 w-5 text-emerald-400" aria-hidden />
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-white">BESS Container</div>
-                    <div className="text-xs text-slate-400">1MW / 2MWh</div>
+                    <div className="text-sm font-semibold text-white">{h.productLabel}</div>
+                    <div className="text-xs text-slate-400">{h.productSpec}</div>
                   </div>
                 </div>
 
                 {/* Frequency response chart mock */}
                 <div className="h-48 rounded-xl bg-white/[0.04] p-4">
                   <div className="flex items-center justify-between text-xs text-slate-400 mb-3">
-                    <span>Frequency Response (Hz)</span>
+                    <span>{h.chartTitle}</span>
                     <span className="flex items-center gap-1 text-emerald-400">
                       <Activity className="h-3 w-3" />
-                      Live
+                      {h.chartLive}
                     </span>
                   </div>
                   {/* Chart bars */}
@@ -136,13 +136,13 @@ export function Hero() {
                 {/* Status indicators */}
                 <div className="mt-4 grid grid-cols-3 gap-3">
                   {[
-                    { label: "Response", value: "186ms", color: "text-emerald-400" },
-                    { label: "Output", value: "0.92MW", color: "text-brand-300" },
-                    { label: "SOC", value: "67%", color: "text-sky-300" },
+                    { key: "response", value: "186ms", color: "text-emerald-400" },
+                    { key: "output", value: "0.92MW", color: "text-brand-300" },
+                    { key: "soc", value: "67%", color: "text-sky-300" },
                   ].map((s) => (
-                    <div key={s.label} className="rounded-lg bg-white/[0.04] p-2.5 text-center">
+                    <div key={s.key} className="rounded-lg bg-white/[0.04] p-2.5 text-center">
                       <div className={`text-sm font-bold ${s.color}`}>{s.value}</div>
-                      <div className="text-[10px] text-slate-500">{s.label}</div>
+                      <div className="text-[10px] text-slate-500">{h.statusLabels[s.key]}</div>
                     </div>
                   ))}
                 </div>
@@ -150,10 +150,10 @@ export function Hero() {
 
               {/* Floating badges */}
               <div className="absolute -top-4 -right-4 rounded-xl border border-white/10 bg-emerald-500/90 px-3 py-2 text-xs font-bold text-white shadow-lg">
-                &lt;200ms ✓
+                {h.responseTime} ✓
               </div>
               <div className="absolute -bottom-4 -left-4 rounded-xl border border-white/10 bg-brand-600/90 px-3 py-2 text-xs font-bold text-white shadow-lg">
-                50+ Countries
+                {h.countries}
               </div>
             </div>
           </div>

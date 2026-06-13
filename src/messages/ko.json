@@ -18,25 +18,58 @@
       "label": "제품",
       "href": "/#products",
       "children": [
-        { "label": "계통 규모 BESS 컨테이너", "href": "/products/energy-storage-system" },
-        { "label": "산업용 배터리 캐비닛", "href": "/products/ci-battery-cabinets" },
-        { "label": "주거용 올인원 ESS", "href": "/products/residential-ess" },
-        { "label": "PCS / 인버터 변전소", "href": "/products/pcs" },
-        { "label": "태양광 패널", "href": "/products/solar-panels" }
+        {
+          "label": "계통 규모 BESS 컨테이너",
+          "href": "/products/energy-storage-system"
+        },
+        {
+          "label": "산업용 배터리 캐비닛",
+          "href": "/products/ci-battery-cabinets"
+        },
+        {
+          "label": "주거용 올인원 ESS",
+          "href": "/products/residential-ess"
+        },
+        {
+          "label": "PCS / 인버터 변전소",
+          "href": "/products/pcs"
+        },
+        {
+          "label": "태양광 패널",
+          "href": "/products/solar-panels"
+        }
       ]
     },
-    { "label": "기술", "href": "/technology" },
+    {
+      "label": "기술",
+      "href": "/technology"
+    },
     {
       "label": "솔루션",
       "href": "/#solutions",
       "children": [
-        { "label": "계통 주파수 조정 (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
-        { "label": "데이터센터 에너지 저장", "href": "/solutions/data-center-energy-storage" }
+        {
+          "label": "계통 주파수 조정 (FCR/aFRR)",
+          "href": "/solutions/grid-level-bess"
+        },
+        {
+          "label": "데이터센터 에너지 저장",
+          "href": "/solutions/data-center-energy-storage"
+        }
       ]
     },
-    { "label": "사례", "href": "/case-center" },
-    { "label": "블로그", "href": "/blog" },
-    { "label": "문의", "href": "/#contact" }
+    {
+      "label": "사례",
+      "href": "/case-center"
+    },
+    {
+      "label": "블로그",
+      "href": "/blog"
+    },
+    {
+      "label": "문의",
+      "href": "/#contact"
+    }
   ],
   "hero": {
     "badge": "주파수 조정 · BESS 전문가",
@@ -49,15 +82,41 @@
       "24시간 기술 지원"
     ],
     "ctaPrimary": "무료 제안서 받기",
-    "ctaSecondary": "데이터시트 다운로드"
+    "ctaSecondary": "데이터시트 다운로드",
+    "productLabel": "BESS 컨테이너",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "주파수 응답 (Hz)",
+    "chartLive": "실시간",
+    "responseTime": "<200ms",
+    "countries": "50+ 국가",
+    "statusLabels": {
+      "response": "응답 시간",
+      "output": "출력",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "IEC 인증", "icon": "shield" },
-      { "label": "CE 인증", "icon": "award" },
-      { "label": "UL 인증", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "50개국 이상", "icon": "globe" }
+      {
+        "label": "IEC 인증",
+        "icon": "shield"
+      },
+      {
+        "label": "CE 인증",
+        "icon": "award"
+      },
+      {
+        "label": "UL 인증",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "50개국 이상",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -88,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "구축 용량", "desc": "전 세계에 설치된 배터리 저장" },
-      { "value": "200ms", "label": "응답 시간", "desc": "동급 최고 속도의 주파수 응답" },
-      { "value": "50+", "label": "서비스 국가", "desc": "글로벌 프로젝트 납품 네트워크" },
-      { "value": "10+", "label": "년 경험", "desc": "BESS 엔지니어링 및 제조" }
+      {
+        "value": "500MWh+",
+        "label": "구축 용량",
+        "desc": "전 세계에 설치된 배터리 저장"
+      },
+      {
+        "value": "200ms",
+        "label": "응답 시간",
+        "desc": "동급 최고 속도의 주파수 응답"
+      },
+      {
+        "value": "50+",
+        "label": "서비스 국가",
+        "desc": "글로벌 프로젝트 납품 네트워크"
+      },
+      {
+        "value": "10+",
+        "label": "년 경험",
+        "desc": "BESS 엔지니어링 및 제조"
+      }
     ]
   },
   "products": {
@@ -101,24 +176,30 @@
       {
         "name": "산업용 배터리 캐비닛",
         "desc": "1C/2C 비율, 액체 냉각 및 화재 진압 기능을 갖춘 100~500kWh 모듈형 캐비닛 — 상업용 피크 부하 관리 및 주파수 응답에 이상적.",
-        "tag": "산업용", "href": "/products/ci-battery-cabinets"
+        "tag": "산업용",
+        "href": "/products/ci-battery-cabinets"
       },
       {
         "name": "계통 규모 BESS 컨테이너",
         "desc": "PCS, BMS, EMS가 통합된 1MW/2MWh+ 컨테이너 시스템. 계통 수준의 주파수 조정 및 보조 서비스용으로 설계.",
-        "tag": "계통용", "href": "/products/energy-storage-system"
+        "tag": "계통용",
+        "href": "/products/energy-storage-system"
       },
       {
         "name": "주거용 ESS",
         "desc": "인버터 내장 5~20kWh 올인원 시스템. 자가 소비 최적화 및 계통 지원 제공.",
-        "tag": "주거용", "href": "/products/residential-ess"
+        "tag": "주거용",
+        "href": "/products/residential-ess"
       },
       {
         "name": "태양광 + 저장 통합",
         "desc": "하이브리드 설치를 위한 고효율 PV 모듈과 저장 장치 결합 — 자가 소비와 계통 안정성 수익을 극대화.",
-        "tag": "하이브리드", "href": "/products/solar-panels"
+        "tag": "하이브리드",
+        "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "제품 라인",
+    "learnMore": "더 알아보기"
   },
   "features": {
     "heading": "주파수 조정에 SolarStorage Pro를 선택하는 이유",
@@ -144,7 +225,9 @@
         "title": "스마트 EMS 통합",
         "body": "실시간 주파수 모니터링, 자동 디스패치 알고리즘 및 다중 시장 스태킹 기능을 갖춘 AGC/FCAS 지원 컨트롤러."
       }
-    ]
+    ],
+    "eyebrow": "선택해야 하는 이유",
+    "provenText": "50+ 프로젝트에서 입증됨"
   },
   "testimonials": {
     "heading": "전 세계 계통 운영자의 신뢰",
@@ -177,9 +260,21 @@
     "companySub": "10년 이상의 배터리 저장 연구개발 및 제조 경험 — 수직 통합 생산으로 연간 3.7 GWh 생산 능력.",
     "serviceSub": "판매 전 엔지니어링, 시운전 지원, 원격 모니터링 및 연중무휴 기술 지원.",
     "companyStats": [
-      { "k": "연간 생산 능력", "v": "3.7 GWh+", "d": "배터리 제조" },
-      { "k": "연구개발 경험", "v": "10년 이상", "d": "BESS 엔지니어링" },
-      { "k": "시장", "v": "50+", "d": "국가 및 지역" }
+      {
+        "k": "연간 생산 능력",
+        "v": "3.7 GWh+",
+        "d": "배터리 제조"
+      },
+      {
+        "k": "연구개발 경험",
+        "v": "10년 이상",
+        "d": "BESS 엔지니어링"
+      },
+      {
+        "k": "시장",
+        "v": "50+",
+        "d": "국가 및 지역"
+      }
     ],
     "postTeaser": "상세 사례 연구 곧 공개 — 프로젝트 데이터는 문의해 주세요."
   },

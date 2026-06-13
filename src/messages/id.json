@@ -18,25 +18,58 @@
       "label": "Produk",
       "href": "/#products",
       "children": [
-        { "label": "Kontainer BESS Skala Jaringan", "href": "/products/energy-storage-system" },
-        { "label": "Lemari Baterai Komersial & Industri", "href": "/products/ci-battery-cabinets" },
-        { "label": "Sistem ESS Perumahan All-in-One", "href": "/products/residential-ess" },
-        { "label": "Gardu PCS / Inverter", "href": "/products/pcs" },
-        { "label": "Panel Surya", "href": "/products/solar-panels" }
+        {
+          "label": "Kontainer BESS Skala Jaringan",
+          "href": "/products/energy-storage-system"
+        },
+        {
+          "label": "Lemari Baterai Komersial & Industri",
+          "href": "/products/ci-battery-cabinets"
+        },
+        {
+          "label": "Sistem ESS Perumahan All-in-One",
+          "href": "/products/residential-ess"
+        },
+        {
+          "label": "Gardu PCS / Inverter",
+          "href": "/products/pcs"
+        },
+        {
+          "label": "Panel Surya",
+          "href": "/products/solar-panels"
+        }
       ]
     },
-    { "label": "Teknologi", "href": "/technology" },
+    {
+      "label": "Teknologi",
+      "href": "/technology"
+    },
     {
       "label": "Solusi",
       "href": "/#solutions",
       "children": [
-        { "label": "Regulasi Frekuensi Jaringan (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
-        { "label": "Penyimpanan Energi Pusat Data", "href": "/solutions/data-center-energy-storage" }
+        {
+          "label": "Regulasi Frekuensi Jaringan (FCR/aFRR)",
+          "href": "/solutions/grid-level-bess"
+        },
+        {
+          "label": "Penyimpanan Energi Pusat Data",
+          "href": "/solutions/data-center-energy-storage"
+        }
       ]
     },
-    { "label": "Studi Kasus", "href": "/case-center" },
-    { "label": "Blog", "href": "/blog" },
-    { "label": "Kontak", "href": "/#contact" }
+    {
+      "label": "Studi Kasus",
+      "href": "/case-center"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Kontak",
+      "href": "/#contact"
+    }
   ],
   "hero": {
     "badge": "Regulasi Frekuensi · Spesialis BESS",
@@ -49,15 +82,41 @@
       "Respons Teknis 24 Jam"
     ],
     "ctaPrimary": "Dapatkan Proposal Gratis",
-    "ctaSecondary": "Unduh Lembar Data"
+    "ctaSecondary": "Unduh Lembar Data",
+    "productLabel": "Kontainer BESS",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "Respons Frekuensi (Hz)",
+    "chartLive": "Langsun",
+    "responseTime": "<200ms",
+    "countries": "50+ Negara",
+    "statusLabels": {
+      "response": "Respons",
+      "output": "Output",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "Tersertifikasi IEC", "icon": "shield" },
-      { "label": "Tersertifikasi CE", "icon": "award" },
-      { "label": "Tercatat UL", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "50+ Negara", "icon": "globe" }
+      {
+        "label": "Tersertifikasi IEC",
+        "icon": "shield"
+      },
+      {
+        "label": "Tersertifikasi CE",
+        "icon": "award"
+      },
+      {
+        "label": "Tercatat UL",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "50+ Negara",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -88,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "Kapasitas Terpasang", "desc": "Penyimpanan baterai terpasang global" },
-      { "value": "200ms", "label": "Waktu Respons", "desc": "Respons frekuensi tercepat di kelasnya" },
-      { "value": "50+", "label": "Negara Dilayani", "desc": "Jaringan pengiriman proyek global" },
-      { "value": "10+", "label": "Tahun Pengalaman", "desc": "Rekayasa & manufaktur BESS" }
+      {
+        "value": "500MWh+",
+        "label": "Kapasitas Terpasang",
+        "desc": "Penyimpanan baterai terpasang global"
+      },
+      {
+        "value": "200ms",
+        "label": "Waktu Respons",
+        "desc": "Respons frekuensi tercepat di kelasnya"
+      },
+      {
+        "value": "50+",
+        "label": "Negara Dilayani",
+        "desc": "Jaringan pengiriman proyek global"
+      },
+      {
+        "value": "10+",
+        "label": "Tahun Pengalaman",
+        "desc": "Rekayasa & manufaktur BESS"
+      }
     ]
   },
   "products": {
@@ -101,24 +176,30 @@
       {
         "name": "Lemari Baterai Komersial & Industri",
         "desc": "Lemari modular 100–500kWh dengan laju 1C/2C, pendinginan cair, dan pemadam kebakaran — ideal untuk peak shaving komersial dan respons frekuensi.",
-        "tag": "Komersial", "href": "/products/ci-battery-cabinets"
+        "tag": "Komersial",
+        "href": "/products/ci-battery-cabinets"
       },
       {
         "name": "Kontainer BESS Skala Jaringan",
         "desc": "Sistem kontainer 1MW/2MWh+ dengan PCS, BMS, dan EMS terintegrasi. Dirancang untuk regulasi frekuensi tingkat utilitas dan layanan tambahan.",
-        "tag": "Utilitas", "href": "/products/energy-storage-system"
+        "tag": "Utilitas",
+        "href": "/products/energy-storage-system"
       },
       {
         "name": "Sistem ESS Perumahan",
         "desc": "Sistem all-in-one 5–20kWh dengan inverter bawaan, mendukung optimalisasi konsumsi mandiri dan dukungan jaringan.",
-        "tag": "Perumahan", "href": "/products/residential-ess"
+        "tag": "Perumahan",
+        "href": "/products/residential-ess"
       },
       {
         "name": "Integrasi Surya + Penyimpanan",
         "desc": "Modul PV efisiensi tinggi dipadukan dengan penyimpanan untuk instalasi hibrida — maksimalkan penggunaan sendiri dan pendapatan stabilitas jaringan.",
-        "tag": "Hibrida", "href": "/products/solar-panels"
+        "tag": "Hibrida",
+        "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "Lini Produk",
+    "learnMore": "Pelajari lebih lanjut"
   },
   "features": {
     "heading": "Mengapa SolarStorage Pro untuk Regulasi Frekuensi",
@@ -144,7 +225,9 @@
         "title": "Integrasi EMS Cerdas",
         "body": "Kontroler siap AGC/FCAS dengan pemantauan frekuensi real-time, algoritma pengiriman otomatis, dan kemampuan penumpukan multi-pasar."
       }
-    ]
+    ],
+    "eyebrow": "Mengapa Memilih Kami",
+    "provenText": "Terbukti di 50+ instalasi"
   },
   "testimonials": {
     "heading": "Dipercaya oleh Operator Jaringan di Seluruh Dunia",
@@ -177,9 +260,21 @@
     "companySub": "Pengalaman R&D dan manufaktur penyimpanan baterai 10+ tahun — kapasitas tahunan 3,7 GWh dengan produksi terintegrasi vertikal.",
     "serviceSub": "Rekayasa pra-penjualan, dukungan komisioning, pemantauan jarak jauh, dan bantuan teknis 24/7.",
     "companyStats": [
-      { "k": "Kapasitas tahunan", "v": "3,7 GWh+", "d": "Manufaktur baterai" },
-      { "k": "Pengalaman R&D", "v": "10+ tahun", "d": "Rekayasa BESS" },
-      { "k": "Pasar", "v": "50+", "d": "Negara & wilayah" }
+      {
+        "k": "Kapasitas tahunan",
+        "v": "3,7 GWh+",
+        "d": "Manufaktur baterai"
+      },
+      {
+        "k": "Pengalaman R&D",
+        "v": "10+ tahun",
+        "d": "Rekayasa BESS"
+      },
+      {
+        "k": "Pasar",
+        "v": "50+",
+        "d": "Negara & wilayah"
+      }
     ],
     "postTeaser": "Studi kasus terperinci segera hadir — hubungi kami untuk data proyek."
   },

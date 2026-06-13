@@ -18,25 +18,58 @@
       "label": "Ürünler",
       "href": "/#products",
       "children": [
-        { "label": "Şebeke Ölçekli BESS Konteyneri", "href": "/products/energy-storage-system" },
-        { "label": "Ticari ve Endüstriyel Batarya Dolapları", "href": "/products/ci-battery-cabinets" },
-        { "label": "Konut Hepsi Bir Arada ESS", "href": "/products/residential-ess" },
-        { "label": "PCS / İnvertör Trafo Merkezi", "href": "/products/pcs" },
-        { "label": "Güneş Panelleri", "href": "/products/solar-panels" }
+        {
+          "label": "Şebeke Ölçekli BESS Konteyneri",
+          "href": "/products/energy-storage-system"
+        },
+        {
+          "label": "Ticari ve Endüstriyel Batarya Dolapları",
+          "href": "/products/ci-battery-cabinets"
+        },
+        {
+          "label": "Konut Hepsi Bir Arada ESS",
+          "href": "/products/residential-ess"
+        },
+        {
+          "label": "PCS / İnvertör Trafo Merkezi",
+          "href": "/products/pcs"
+        },
+        {
+          "label": "Güneş Panelleri",
+          "href": "/products/solar-panels"
+        }
       ]
     },
-    { "label": "Teknoloji", "href": "/technology" },
+    {
+      "label": "Teknoloji",
+      "href": "/technology"
+    },
     {
       "label": "Çözümler",
       "href": "/#solutions",
       "children": [
-        { "label": "Şebeke Frekans Regülasyonu (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
-        { "label": "Veri Merkezi Enerji Depolama", "href": "/solutions/data-center-energy-storage" }
+        {
+          "label": "Şebeke Frekans Regülasyonu (FCR/aFRR)",
+          "href": "/solutions/grid-level-bess"
+        },
+        {
+          "label": "Veri Merkezi Enerji Depolama",
+          "href": "/solutions/data-center-energy-storage"
+        }
       ]
     },
-    { "label": "Vakalar", "href": "/case-center" },
-    { "label": "Blog", "href": "/blog" },
-    { "label": "İletişim", "href": "/#contact" }
+    {
+      "label": "Vakalar",
+      "href": "/case-center"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "İletişim",
+      "href": "/#contact"
+    }
   ],
   "hero": {
     "badge": "Frekans Regülasyonu · BESS Uzmanı",
@@ -49,15 +82,41 @@
       "24 Saat Teknik Destek"
     ],
     "ctaPrimary": "Ücretsiz Teklif Alın",
-    "ctaSecondary": "Veri Sayfasını İndir"
+    "ctaSecondary": "Veri Sayfasını İndir",
+    "productLabel": "BESS Konteyner",
+    "productSpec": "1MW / 2MWh",
+    "chartTitle": "Frekans Yanıtı (Hz)",
+    "chartLive": "Canlı",
+    "responseTime": "<200ms",
+    "countries": "50+ Ülke",
+    "statusLabels": {
+      "response": "Yanıt",
+      "output": "Çıkış",
+      "soc": "SOC"
+    }
   },
   "trustBar": {
     "items": [
-      { "label": "IEC Sertifikalı", "icon": "shield" },
-      { "label": "CE Sertifikalı", "icon": "award" },
-      { "label": "UL Listeli", "icon": "shield" },
-      { "label": "ISO 9001", "icon": "factory" },
-      { "label": "50+ Ülke", "icon": "globe" }
+      {
+        "label": "IEC Sertifikalı",
+        "icon": "shield"
+      },
+      {
+        "label": "CE Sertifikalı",
+        "icon": "award"
+      },
+      {
+        "label": "UL Listeli",
+        "icon": "shield"
+      },
+      {
+        "label": "ISO 9001",
+        "icon": "factory"
+      },
+      {
+        "label": "50+ Ülke",
+        "icon": "globe"
+      }
     ]
   },
   "painPoints": {
@@ -88,10 +147,26 @@
   },
   "statsBar": {
     "items": [
-      { "value": "500MWh+", "label": "Kurulu Kapasite", "desc": "Dünya genelinde kurulu batarya depolama" },
-      { "value": "200ms", "label": "Yanıt Süresi", "desc": "Sınıfının en hızlı frekans yanıtı" },
-      { "value": "50+", "label": "Hizmet Verilen Ülke", "desc": "Küresel proje teslimat ağı" },
-      { "value": "10+", "label": "Yıllık Deneyim", "desc": "BESS mühendisliği ve üretimi" }
+      {
+        "value": "500MWh+",
+        "label": "Kurulu Kapasite",
+        "desc": "Dünya genelinde kurulu batarya depolama"
+      },
+      {
+        "value": "200ms",
+        "label": "Yanıt Süresi",
+        "desc": "Sınıfının en hızlı frekans yanıtı"
+      },
+      {
+        "value": "50+",
+        "label": "Hizmet Verilen Ülke",
+        "desc": "Küresel proje teslimat ağı"
+      },
+      {
+        "value": "10+",
+        "label": "Yıllık Deneyim",
+        "desc": "BESS mühendisliği ve üretimi"
+      }
     ]
   },
   "products": {
@@ -101,24 +176,30 @@
       {
         "name": "Ticari ve Endüstriyel Batarya Dolapları",
         "desc": "1C/2C oranlı, sıvı soğutmalı ve yangın söndürme sistemli 100–500kWh modüler dolaplar — ticari puant yük yönetimi ve frekans yanıtı için ideal.",
-        "tag": "Ticari", "href": "/products/ci-battery-cabinets"
+        "tag": "Ticari",
+        "href": "/products/ci-battery-cabinets"
       },
       {
         "name": "Şebeke Ölçekli BESS Konteyneri",
         "desc": "Entegre PCS, BMS ve EMS'li 1MW/2MWh+ konteyner sistemleri. Şebeke düzeyinde frekans regülasyonu ve yardımcı hizmetler için tasarlanmıştır.",
-        "tag": "Şebeke", "href": "/products/energy-storage-system"
+        "tag": "Şebeke",
+        "href": "/products/energy-storage-system"
       },
       {
         "name": "Konut ESS",
         "desc": "Dahili invertörlü 5–20kWh hepsi bir arada sistemler, öz tüketim optimizasyonu ve şebeke desteği sağlar.",
-        "tag": "Konut", "href": "/products/residential-ess"
+        "tag": "Konut",
+        "href": "/products/residential-ess"
       },
       {
         "name": "Güneş + Depolama Entegrasyonu",
         "desc": "Hibrit kurulumlar için yüksek verimli PV modülleri depolama ile birleştirildi — öz kullanımı ve şebeke kararlılığı gelirini maksimize edin.",
-        "tag": "Hibrit", "href": "/products/solar-panels"
+        "tag": "Hibrit",
+        "href": "/products/solar-panels"
       }
-    ]
+    ],
+    "eyebrow": "Ürün Serisi",
+    "learnMore": "Daha fazla bilgi"
   },
   "features": {
     "heading": "Frekans Regülasyonu için Neden SolarStorage Pro",
@@ -144,7 +225,9 @@
         "title": "Akıllı EMS Entegrasyonu",
         "body": "Gerçek zamanlı frekans izleme, otomatik sevkiyat algoritmaları ve çoklu piyasa istifleme kapasitesine sahip AGC/FCAS uyumlu kontrolör."
       }
-    ]
+    ],
+    "eyebrow": "Neden Bizi Seçmelisiniz",
+    "provenText": "50+ kurulumda kanıtlandı"
   },
   "testimonials": {
     "heading": "Dünya Genelinde Şebeke Operatörleri Tarafından Güveniliyor",
@@ -177,9 +260,21 @@
     "companySub": "10 yılı aşkın batarya depolama Ar-Ge ve üretim deneyimi — dikey entegre üretim ile 3,7 GWh yıllık kapasite.",
     "serviceSub": "Satış öncesi mühendislik, devreye alma desteği, uzaktan izleme ve 7/24 teknik yardım.",
     "companyStats": [
-      { "k": "Yıllık kapasite", "v": "3,7 GWh+", "d": "Batarya üretimi" },
-      { "k": "Ar-Ge deneyimi", "v": "10+ yıl", "d": "BESS mühendisliği" },
-      { "k": "Pazarlar", "v": "50+", "d": "Ülke ve bölge" }
+      {
+        "k": "Yıllık kapasite",
+        "v": "3,7 GWh+",
+        "d": "Batarya üretimi"
+      },
+      {
+        "k": "Ar-Ge deneyimi",
+        "v": "10+ yıl",
+        "d": "BESS mühendisliği"
+      },
+      {
+        "k": "Pazarlar",
+        "v": "50+",
+        "d": "Ülke ve bölge"
+      }
     ],
     "postTeaser": "Detaylı vaka çalışması yakında — proje verileri için bizimle iletişime geçin."
   },
