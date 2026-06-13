@@ -86,6 +86,18 @@ export type Messages = {
     hint: string;
     missing: string;
   };
+  productsEssAllInOne: {
+    back: string;
+    pageTitle: string;
+    pageSub: string;
+  };
+  productsStackableBattery: {
+    back: string;
+    title: string;
+    sub: string;
+    section: string;
+    corner: string;
+  };
 };
 
 const en: Messages = {
@@ -314,6 +326,19 @@ const en: Messages = {
     title: "WeChat",
     hint: "Save your enterprise WeChat QR as",
     missing: "Image not found. Save the QR as wechat-qr.png in the public folder and refresh.",
+  },
+  productsEssAllInOne: {
+    back: "Back to residential ESS",
+    pageTitle: "ESS All-in-one series",
+    pageSub:
+      "Portable power stations (500W / 1000W) plus a modular stacked all-in-one for mobile backup and scalable home energy.",
+  },
+  productsStackableBattery: {
+    back: "Back to residential ESS",
+    title: "Stackable / floor-standing battery comparison",
+    sub: "Comparison for 7 variants in the same family: labels on the left, one column per model. Horizontal scroll enabled.",
+    section: "Comparison (7 models)",
+    corner: "Parameter",
   },
 };
 
@@ -544,6 +569,19 @@ const zh: Messages = {
     hint: "请将企业微信二维码保存为项目根目录",
     missing:
       "未检测到图片。请将二维码命名为 wechat-qr.png 放入 public 文件夹后刷新页面。",
+  },
+  productsEssAllInOne: {
+    back: "返回户用光储列表",
+    pageTitle: "ESS All-in-one 系列",
+    pageSub:
+      "便携式储能（500W / 1000W）与模块化堆叠一体机，覆盖移动备电与家庭可扩展装机场景。",
+  },
+  productsStackableBattery: {
+    back: "返回户用光储列表",
+    title: "堆叠式 / 落地式电池（314Ah / 200Ah）对比",
+    sub: "同系列 7 个型号参数对比：左侧为参数项，右侧每一列为一个具体型号。支持横向滚动查看。",
+    section: "参数对比（7 个型号）",
+    corner: "参数名称",
   },
 };
 

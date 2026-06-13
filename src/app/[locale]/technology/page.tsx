@@ -431,8 +431,9 @@ const COPY = {
 /* ─── component ─────────────────────────────────────────────────────────────── */
 
 export default function TechnologyPage() {
-  const { locale } = useLocaleContext();
+  const { locale, messages } = useLocaleContext();
   const copy = COPY[locale === "zh" ? "zh" : "en"];
+  const t = messages.technology ?? {};
   const [activeTab, setActiveTab] = useState(0);
   const topo = copy.topology;
   const activeTopo = topo.tabs[activeTab];
@@ -611,9 +612,7 @@ export default function TechnologyPage() {
                     />
                   </div>
                   <p className="mt-3 text-center text-xs text-slate-500">
-                    {locale === "zh"
-                      ? "系统单线图 — 点击上方标签切换不同拓扑"
-                      : "System single-line diagram — click tabs above to switch topologies"}
+                    {t.diagramCaption}
                   </p>
                 </div>
 
@@ -758,7 +757,7 @@ export default function TechnologyPage() {
               className="group flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-blue-600"
             >
               <ExternalLink className="h-4 w-4" aria-hidden />
-              {locale === "zh" ? "查看调频案例" : "View Frequency Regulation Cases"}
+                            {t.viewCases}
               <ChevronRight
                 className="h-4 w-4 transition group-hover:translate-x-0.5"
                 aria-hidden
@@ -768,7 +767,7 @@ export default function TechnologyPage() {
               href="/solutions/grid-level-bess"
               className="group flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-blue-600"
             >
-              {locale === "zh" ? "电网级BESS方案" : "Grid-Level BESS Solutions"}
+                            {t.gridBessLink}
               <ChevronRight
                 className="h-4 w-4 transition group-hover:translate-x-0.5"
                 aria-hidden

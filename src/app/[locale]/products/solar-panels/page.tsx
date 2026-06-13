@@ -185,28 +185,9 @@ const PRODUCTS: SolarProduct[] = [
 ];
 
 export default function SolarPanelsPage() {
-  const { locale } = useLocaleContext();
+  const { locale, messages } = useLocaleContext();
   const isZh = locale === "zh";
-
-  const ui = isZh
-    ? {
-        back: "返回首页",
-        pageTitle: "太阳能组件",
-        pageSub:
-          "高效 N 型 ABC 及 PERC/TOPCon 光伏组件，覆盖户用、工商业及地面电站全场景。产品数据来源：爱旭太阳能（AIKO Solar）。",
-        gridTitle: "产品系列",
-        source: "数据来源",
-        sourceLink: "aikosolar.com",
-      }
-    : {
-        back: "Back to home",
-        pageTitle: "Solar Panels",
-        pageSub:
-          "High-efficiency N-type ABC and PERC/TOPCon modules for residential, C&I, and utility scenarios. Product data sourced from AIKO Solar.",
-        gridTitle: "Product Series",
-        source: "Data source",
-        sourceLink: "aikosolar.com",
-      };
+  const m = messages.productsSolarPanels ?? {};
 
   return (
     <div className="min-h-screen bg-slate-950">
@@ -223,25 +204,25 @@ export default function SolarPanelsPage() {
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm transition hover:border-solar-500/40 hover:bg-solar-500/10 hover:text-solar-300"
             >
               <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
-              {ui.back}
+              {m.back}
             </Link>
 
             <p className="mt-8 inline-flex rounded-full border border-[var(--border)] bg-[var(--accent-dim)] px-3 py-1 text-xs font-medium text-solar-400">
-              {isZh ? "光伏产品" : "Solar"}
+              {m.badge}
             </p>
             <h1 className="mt-4 text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              {ui.pageTitle}
+              {m.pageTitle}
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{ui.pageSub}</p>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{m.pageSub}</p>
             <p className="mt-3 text-xs text-slate-500">
-              {ui.source}:{" "}
+              {m.source}:{" "}
               <a
                 href="https://aikosolar.com/en/products/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-solar-400"
               >
-                {ui.sourceLink}
+                {m.sourceLink}
               </a>
             </p>
           </div>
@@ -249,7 +230,7 @@ export default function SolarPanelsPage() {
 
         <section className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">{ui.gridTitle}</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">{m.gridTitle}</h2>
 
             <div className="mt-10 space-y-10">
               {PRODUCTS.map((p) => (

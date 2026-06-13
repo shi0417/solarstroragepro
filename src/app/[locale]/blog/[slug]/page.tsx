@@ -13,9 +13,11 @@ import { getArticleBySlug, ARTICLES } from "../blog-data";
 
 export default function BlogArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
-  const { locale } = useLocaleContext();
+  const { locale, messages } = useLocaleContext();
   const isZh = locale === "zh";
   const article = getArticleBySlug(slug);
+
+  const bd = messages.blogDetail ?? {};
 
   if (!article) {
     return (
@@ -23,37 +25,17 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
         <Header />
         <div className="mx-auto max-w-3xl px-4 py-32 text-center">
           <h1 className="text-2xl font-bold text-slate-900">
-            {isZh ? "文章未找到" : "Article Not Found"}
+            {bd.notFound}
           </h1>
           <Link href="/blog" className="mt-4 inline-flex items-center gap-2 text-brand-600 hover:underline">
             <ArrowLeft className="h-4 w-4" />
-            {isZh ? "返回博客" : "Back to Blog"}
+            {bd.backToBlog}
           </Link>
         </div>
         <Footer />
       </div>
     );
   }
-
-  const ui = isZh
-    ? {
-        backToBlog: "返回博客",
-        readTime: "分钟阅读",
-        tableOfContents: "目录",
-        ctaTitle: "对这篇文章有疑问？",
-        ctaSub: "联系我们的工程师团队，获取针对您项目的专业建议。",
-        relatedArticles: "相关文章",
-        readMore: "阅读全文",
-      }
-    : {
-        backToBlog: "Back to Blog",
-        readTime: "min read",
-        tableOfContents: "Table of Contents",
-        ctaTitle: "Questions About This Article?",
-        ctaSub: "Contact our engineering team for expert advice tailored to your project.",
-        relatedArticles: "Related Articles",
-        readMore: "Read Article",
-      };
 
   const title = isZh ? article.title.zh : article.title.en;
   const description = isZh ? article.description.zh : article.description.en;
@@ -86,7 +68,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
               className="inline-flex items-center gap-1.5 text-sm text-slate-400 transition hover:text-brand-400"
             >
               <ArrowLeft className="h-4 w-4" />
-              {ui.backToBlog}
+              {bd.backToBlog}
             </Link>
 
             <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-400">
@@ -99,7 +81,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
               </span>
               <span className="inline-flex items-center gap-1">
                 <Clock className="h-3.5 w-3.5" />
-                {article.readTime} {ui.readTime}
+                {article.readTime} {bd.readTime}
               </span>
             </div>
 
@@ -145,7 +127,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
               <aside className="hidden lg:block">
                 <div className="sticky top-24">
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                    {ui.tableOfContents}
+                    {bd.tableOfContents}
                   </h3>
                   <nav className="mt-3 space-y-2">
                     {contentSections.map((section) => (
@@ -169,9 +151,9 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                {ui.ctaTitle}
+                {bd.ctaTitle}
               </h2>
-              <p className="mt-3 text-slate-600">{ui.ctaSub}</p>
+              <p className="mt-3 text-slate-600">{bd.ctaSub}</p>
             </div>
             <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
               <ContactForm />
@@ -183,7 +165,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
         {relatedArticles.length > 0 && (
           <section className="border-t border-slate-200 py-12 sm:py-16">
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
-              <h2 className="text-2xl font-bold text-slate-900">{ui.relatedArticles}</h2>
+              <h2 className="text-2xl font-bold text-slate-900">{bd.relatedArticles}</h2>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {relatedArticles.map((related) => (
                   <Link

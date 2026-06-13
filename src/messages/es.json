@@ -449,15 +449,23 @@
   },
   "blog": {
     "latestArticles": "Últimos Artículos",
-    "readMore": "Leer Más",
+    "readMore": "Read Article",
     "publishedOn": "Publicado el",
     "minRead": "min de lectura",
     "backToBlog": "Volver al Blog",
     "relatedPosts": "Artículos Relacionados",
     "noResults": "No se encontraron artículos.",
-    "categories": "Categorías",
+    "categories": "Categories",
     "allCategories": "Todas",
-    "searchBlog": "Buscar artículos..."
+    "searchBlog": "Buscar artículos...",
+    "badge": "Knowledge Base",
+    "pageTitle": "Energy Storage Blog",
+    "pageSub": "Deep dives into battery storage technology, market trends, and best practices. From ROI analysis to installation guides, make informed decisions for your energy storage projects.",
+    "readTime": "min read",
+    "backToHome": "Back to Home",
+    "ctaTitle": "Need Expert Advice?",
+    "ctaSub": "Our engineering team can design a custom energy storage solution for your project.",
+    "ctaBtn": "Request a Proposal"
   },
   "caseCenter": {
     "title": "Centro de Casos",
@@ -468,17 +476,314 @@
     "renewable": "Integ. Renovable",
     "noCases": "No hay casos disponibles aún.",
     "filterByRegion": "Filtrar por Región",
-    "allRegions": "Todas las Regiones"
+    "allRegions": "Todas las Regiones",
+    "badge": "Global Projects",
+    "pageTitle": "Frequency Regulation & Energy Storage Cases",
+    "pageSub": "Real-world deployments in grid frequency regulation, peak shaving, and renewable integration across 50+ countries.",
+    "readMore": "View Details",
+    "ctaTitle": "Need a similar solution?",
+    "ctaSub": "Our engineering team will design a custom frequency regulation and energy storage system for your grid requirements.",
+    "ctaBtn": "Request a Proposal",
+    "techLink": "Explore our technology platform"
   },
   "technology": {
-    "title": "Plataforma Tecnológica Central",
-    "subtitle": "Integración propietaria de BMS + PCS + EMS que ofrece respuesta de frecuencia de nivel milisegundo con algoritmos de despacho inteligente.",
-    "bmsTitle": "Sistema de Gestión de Baterías (BMS)",
-    "bmsSub": "Monitoreo en tiempo real, equilibrado a nivel de celda y protección multicapa.",
-    "pcsTitle": "Sistema de Conversión de Potencia (PCS)",
-    "pcsSub": "Inversor bidireccional que admite modos de formación y seguimiento de red con eficiencia >98%.",
-    "emsTitle": "Sistema de Gestión de Energía (EMS)",
-    "emsSub": "Controlador listo para AGC/FCAS con pronóstico impulsado por IA y optimización de despacho automático.",
-    "viewCases": "Ver Casos de Regulación de Frecuencia"
+    "diagramCaption": "System single-line diagram — click tabs above to switch topologies",
+    "viewCases": "View Frequency Regulation Cases",
+    "gridBessLink": "Grid-Level BESS Solutions"
+  },
+  "productsEnergyStorage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbProducts": "Products",
+    "badge": "Core product",
+    "title": "Energy Storage System",
+    "description": "Includes Energy Storage System Pack / DC Liquid Cooling Container — system-level delivery for high-power, long-life, and safe deployments.",
+    "certTitle": "Certifications",
+    "certDesc": "Common transport & safety standards",
+    "featuresTitle": "Features",
+    "featuresSub": "System-engineering features for scalable delivery: power coverage, lifetime consistency, redundant safety, and O&M friendliness.",
+    "features": [
+      {
+        "t": "High power",
+        "b": "0.25P–2P coverage across power-type and energy-type battery containers."
+      },
+      {
+        "t": "Long lifetime",
+        "b": "Cell temperature delta: 2℃ within a pack, 5℃ across clusters — designed for 10-year calendar life."
+      },
+      {
+        "t": "Real safety",
+        "b": "Three-layer fire protection at pack/cluster/container levels; battery modules rated IP67."
+      },
+      {
+        "t": "Easy integration",
+        "b": "Modular design enables per-cluster unit architecture with no inter-cluster circulating current; supports independent maintenance and upgrades."
+      },
+      {
+        "t": "Flexible configuration",
+        "b": "Side-by-side or end-to-end layout options with flexible expansion."
+      },
+      {
+        "t": "Easy management",
+        "b": "Real-time data exchange with energy statistics, fault warnings, and thermal-runaway early warning."
+      }
+    ],
+    "specsTitle": "Specifications",
+    "specsSub": "Scroll horizontally on mobile to view all capacity variants.",
+    "specCornerLabel": "Parameter \\ Model",
+    "certFooter": "Certifications",
+    "ctaTitle": "Get a Custom Solution",
+    "ctaSub": "Tell us about your project — our engineers will design a custom solution within 48 hours."
+  },
+  "productsResidentialEss": {
+    "back": "Back to home",
+    "badge": "Residential",
+    "pageTitle": "Residential ESS",
+    "pageSub": "Low-voltage stack & wall-mount packs, high-voltage systems, and all-in-one inverter + battery solutions.",
+    "categoriesTitle": "Product families",
+    "catLv": "Low-voltage (51.2V)",
+    "catLvDesc": "Stackable and wall-mounted batteries around 10kWh & 16kWh class.",
+    "catHv": "High-voltage (358.4V – 716.8V)",
+    "catHvDesc": "Systems for higher power and HV DC bus requirements.",
+    "catAio": "ESS all-in-one",
+    "catAioDesc": "Integrated inverter and battery for faster residential deployment.",
+    "gridTitle": "Products",
+    "viewHvsDetails": "View HVS high-voltage series details",
+    "viewAioDetails": "View ESS All-in-one series details",
+    "viewLfpDetails": "View LFP battery series details",
+    "details": "Details",
+    "products": [
+      {
+        "key": "wallMount",
+        "title": "Wall-mounted battery",
+        "subtitle": "MDS-512200",
+        "specs": [
+          {
+            "l": "Voltage",
+            "v": "25.6V-51.2V"
+          },
+          {
+            "l": "Capacity",
+            "v": "206Ah"
+          },
+          {
+            "l": "Energy",
+            "v": "5.12KWH-10.54KWH"
+          },
+          {
+            "l": "Cycle life",
+            "v": "6000 cycles"
+          },
+          {
+            "l": "Dimensions (mm)",
+            "v": "723 × 655 × 255"
+          },
+          {
+            "l": "Communication",
+            "v": "RS485 / RS232 / CAN"
+          }
+        ]
+      },
+      {
+        "key": "stackable",
+        "title": "Stackable battery",
+        "subtitle": "MDS-51314",
+        "specs": [
+          {
+            "l": "Voltage",
+            "v": "51.2V"
+          },
+          {
+            "l": "Capacity",
+            "v": "314Ah"
+          },
+          {
+            "l": "Energy",
+            "v": "16.07kWh"
+          },
+          {
+            "l": "Cycle life",
+            "v": "8000 cycles"
+          },
+          {
+            "l": "Dimensions (mm)",
+            "v": "730 × 610 × 257"
+          },
+          {
+            "l": "Communication",
+            "v": "RS485 / RS232 / CAN"
+          }
+        ]
+      },
+      {
+        "key": "hvSystem",
+        "title": "High voltage system",
+        "subtitle": "HVS Series",
+        "specs": [
+          {
+            "l": "Voltage range",
+            "v": "358.4V – 716.8V"
+          },
+          {
+            "l": "Energy range",
+            "v": "14.33kWh – 100.35kWh (scalable)"
+          },
+          {
+            "l": "Cycle life",
+            "v": "8000 cycles"
+          },
+          {
+            "l": "Communication",
+            "v": "RS485 / RS232 / CAN"
+          }
+        ]
+      },
+      {
+        "key": "aio",
+        "title": "ESS all-in-one",
+        "subtitle": "All-in-one family",
+        "specs": [
+          {
+            "l": "Voltage",
+            "v": "51.2V"
+          },
+          {
+            "l": "Capacity",
+            "v": "100Ah / 314Ah"
+          },
+          {
+            "l": "Energy",
+            "v": "5.12kWh – 16.07kWh"
+          },
+          {
+            "l": "Representative models",
+            "v": "M1200 (1), MB-1111, etc."
+          },
+          {
+            "l": "Communication",
+            "v": "RS485 / RS232 / CAN"
+          }
+        ]
+      }
+    ]
+  },
+  "productsPcs": {
+    "back": "Back to home",
+    "badge": "PCS · Prefabricated",
+    "heroTitle": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation",
+    "heroSub": "Highly integrated prefabricated cabin combining inverter and step-up substation for utility-scale PV+storage and grid connection.",
+    "overviewTitle": "Product overview",
+    "overviewName": "Name",
+    "overviewNameVal": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation (PCS)",
+    "featuresTitle": "Key advantages",
+    "imageAlt": "SES4H-5160/6900-MV-EX prefabricated inverter substation product",
+    "specsTitle": "Technical specifications",
+    "specsHint": "Scroll horizontally on small screens.",
+    "colCat": "Category",
+    "colItem": "Parameter",
+    "colDetail": "Details",
+    "complianceTitle": "Compliance & certifications",
+    "complianceIntro": "Design and type testing comply with the following standards and grid codes (subject to delivery certificate).",
+    "ctaDatasheet": "Request datasheet",
+    "ctaContact": "Contact us",
+    "features": [
+      {
+        "t": "Flexible config",
+        "b": "Integrated inverter and substation in a highly prefabricated design, improving space efficiency and simplifying installation."
+      },
+      {
+        "t": "Modular power",
+        "b": "Modular design allows configurable power rating to match project requirements."
+      },
+      {
+        "t": "High efficiency & stability",
+        "b": "1500V wide DC voltage range with multi-branch DC design to prevent battery circulating current."
+      },
+      {
+        "t": "Versatile use",
+        "b": "Supports VSG / PQ / VF modes with peak shaving and local autonomous operation."
+      },
+      {
+        "t": "Safe & compatible",
+        "b": "Supports HVRT/LVRT, four-quadrant active/reactive power regulation, fast power response (<20ms)."
+      },
+      {
+        "t": "Grid-friendly",
+        "b": "Rated AC power: N×215kW @45°C, N×129kW @50°C (N = 20~32 modules); THDi/THDu <3%."
+      }
+    ]
+  },
+  "productsSolarPanels": {
+    "back": "Back to home",
+    "badge": "Solar",
+    "pageTitle": "Solar Panels",
+    "pageSub": "High-efficiency ABC INFINITE modules with partial shading optimisation and industry-leading warranties.",
+    "gridTitle": "Product series",
+    "source": "Data source",
+    "sourceLink": "aikosolar.com"
+  },
+  "productsHvs": {
+    "back": "Back to residential ESS",
+    "title": "High-Voltage System HVS Series",
+    "sub": "Rack-mount and cabinet-style high-voltage battery systems for higher power density and scalability.",
+    "secA": "Section A · Standard Rack (100Ah)",
+    "secB": "Section B · High-capacity Rack (280Ah)",
+    "secC": "Section C · Cabinet BESS (large capacity)",
+    "introA": "100Ah rack family: modular stackable design with IP65 protection, ideal for indoor/outdoor residential HV battery banks.",
+    "introB": "280Ah racks up to 35.84kWh per tower — designed for higher energy demands with the same footprint.",
+    "introC": "Cabinet BESS: pre-assembled high-voltage solution for residential and small commercial applications, scalable up to 100kWh."
+  },
+  "productsLfpBattery": {
+    "back": "Back to residential ESS",
+    "title": "LFP Battery Series",
+    "sub": "Ultra-slim wall-mount and floor-standing / mobile LFP battery solutions.",
+    "sec1": "Ultra-slim Wall-mount Group · M1200 / M2400",
+    "sec2": "Floor / Mobile Group · M-BXS / M-LFP",
+    "corner": "Parameter"
+  },
+  "productsAllInOne": {
+    "back": "Back to residential ESS",
+    "title": "Wall-mounted / Floor-standing LFP Battery Comparison",
+    "sub": "Side-by-side specification comparison across 6 popular models in the LFP battery lineup.",
+    "section": "Parameter comparison (6 models)",
+    "corner": "Parameter"
+  },
+  "productsEssAllInOne": {
+    "back": "Back to residential ESS",
+    "pageTitle": "ESS All-in-one Series",
+    "pageSub": "Integrated inverter + battery systems for hassle-free residential energy storage deployment."
+  },
+  "productsStackableBattery": {
+    "back": "Back to residential ESS",
+    "title": "Stackable / Floor-standing Battery (314Ah / 200Ah) Comparison",
+    "sub": "Side-by-side specification comparison across 7 popular models.",
+    "section": "Parameter comparison (7 models)",
+    "corner": "Parameter"
+  },
+  "blogDetail": {
+    "notFound": "Article Not Found",
+    "backToBlog": "Back to Blog",
+    "readTime": "min read",
+    "tableOfContents": "Table of Contents",
+    "ctaTitle": "Questions about this article?",
+    "ctaSub": "Contact our engineering team for a personalised consultation on your energy storage project.",
+    "relatedArticles": "Related Articles",
+    "readMore": "Read Article"
+  },
+  "caseDetail": {
+    "back": "Back to case center",
+    "location": "Location",
+    "date": "Implementation date",
+    "type": "Frequency regulation type",
+    "challengeTitle": "The Problem to Solve",
+    "solutionTitle": "Our Approach",
+    "specsTitle": "Technical Specifications",
+    "outcomesTitle": "Measurable Results",
+    "gallery": "Site photos",
+    "freqDiagram": "Frequency response diagram",
+    "cta": "Get a similar solution",
+    "ctaSub": "Tell us about your project requirements and our engineers will design a tailored solution.",
+    "ctaBtn": "WhatsApp Consultation",
+    "moreBtn": "View more cases",
+    "techPageBtn": "Explore technology platform"
   }
 }

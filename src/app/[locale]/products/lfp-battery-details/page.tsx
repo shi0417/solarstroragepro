@@ -9,26 +9,10 @@ import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 
 export default function LfpBatteryDetailsPage() {
-  const { locale } = useLocaleContext();
+  const { locale, messages } = useLocaleContext();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const m = (messages as any).productsLfpBattery ?? {};
   const isZh = locale === "zh";
-
-  const ui = isZh
-    ? {
-        back: "返回户用光储列表",
-        title: "LFP 电池系列",
-        sub: "壁挂 / 超薄与落地、移动式磷酸铁锂产品对比。左侧为参数项，右侧各列为具体型号。",
-        sec1: "超薄壁挂组 · M1200 / M2400",
-        sec2: "落地 / 移动组 · M-BXS / M-LFP",
-      }
-    : {
-        back: "Back to residential ESS",
-        title: "LFP battery series",
-        sub: "Wall-mount / slim and floor / portable LFP packs — parameter labels on the left, one column per model.",
-        sec1: "Slim wall-mount · M1200 / M2400",
-        sec2: "Floor / portable · M-BXS / M-LFP",
-      };
-
-  const corner = isZh ? "参数名称" : "Parameter";
 
   const rows1: ComparisonSpecRow[] = isZh
     ? [
@@ -86,20 +70,20 @@ export default function LfpBatteryDetailsPage() {
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm transition hover:border-solar-500/40 hover:bg-solar-500/10 hover:text-solar-300"
             >
               <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
-              {ui.back}
+              {m.back}
             </Link>
 
             <h1 className="mt-8 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              {ui.title}
+              {m.title}
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{ui.sub}</p>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{m.sub}</p>
           </div>
         </section>
 
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-6xl space-y-20 px-4 sm:px-6">
             <article className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
-              <h2 className="text-xl font-bold text-solar-300 sm:text-2xl">{ui.sec1}</h2>
+              <h2 className="text-xl font-bold text-solar-300 sm:text-2xl">{m.sec1}</h2>
 
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {[
@@ -125,7 +109,7 @@ export default function LfpBatteryDetailsPage() {
               <div className="mt-8">
                 <ComparisonSpecTable
                   headerRow={{
-                    cornerLabel: corner,
+                    cornerLabel: m.corner,
                     titles: ["M1200 (1)", "M1200 (2)", "M2400"],
                   }}
                   rows={rows1}
@@ -135,7 +119,7 @@ export default function LfpBatteryDetailsPage() {
             </article>
 
             <article className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
-              <h2 className="text-xl font-bold text-solar-300 sm:text-2xl">{ui.sec2}</h2>
+              <h2 className="text-xl font-bold text-solar-300 sm:text-2xl">{m.sec2}</h2>
 
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
@@ -160,7 +144,7 @@ export default function LfpBatteryDetailsPage() {
               <div className="mt-8">
                 <ComparisonSpecTable
                   headerRow={{
-                    cornerLabel: corner,
+                    cornerLabel: m.corner,
                     titles: ["M-BXS200", "M-LFP51200"],
                   }}
                   rows={rows2}

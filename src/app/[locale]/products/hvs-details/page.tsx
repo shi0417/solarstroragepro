@@ -9,26 +9,10 @@ import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 
 export default function HvsDetailsPage() {
-  const { locale } = useLocaleContext();
+  const { locale, messages } = useLocaleContext();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const m = (messages as any).productsHvs ?? {};
   const isZh = locale === "zh";
-
-  const ui = isZh
-    ? {
-        back: "返回户用光储列表",
-        title: "高压系统 HVS 系列",
-        sub: "标准机架式（100Ah / 280Ah）与柜式大容量 BESS，覆盖 358.4V–716.8V 直流母线与百 kWh 级能量配置。",
-        secA: "区块 A · 标准机架式（100Ah）",
-        secB: "区块 B · 大容量机架式（280Ah）",
-        secC: "区块 C · 柜式储能系统（大容量）",
-      }
-    : {
-        back: "Back to residential ESS",
-        title: "HVS high-voltage series",
-        sub: "Rack-mount 100Ah / 280Ah platforms plus cabinet-class BESS from 358.4V–716.8V DC up to 200+kWh-class energy.",
-        secA: "Section A · Standard rack-mount (100Ah)",
-        secB: "Section B · High-capacity rack-mount (280Ah)",
-        secC: "Section C · Cabinet BESS (bulk energy)",
-      };
 
   const rowsA: ComparisonSpecRow[] = isZh
     ? [
@@ -98,32 +82,26 @@ export default function HvsDetailsPage() {
   }[] = [
     {
       id: "100ah",
-      heading: ui.secA,
+      heading: m.secA,
       imageSrc: "/images/HVS-100Ah.png",
       imageAlt: "HVS 100Ah rack-mount",
-      intro: isZh
-        ? "100Ah 标准机架：左侧为参数项，右侧各列对应不同型号，便于逐项对比电压、能量与尺寸。"
-        : "100Ah rack family: parameter labels on the left, one column per model for quick side-by-side review.",
+      intro: m.introA,
       rows: rowsA,
     },
     {
       id: "280ah",
-      heading: ui.secB,
+      heading: m.secB,
       imageSrc: "/images/HVS-280Ah.png",
       imageAlt: "HVS 280Ah rack-mount",
-      intro: isZh
-        ? "280Ah 大容量机架：最高 716.8V，14.336kWh 单模块按 7 / 11 / 14 组扩展，8000 次循环。"
-        : "280Ah racks up to 716.8V with 14.336kWh modules in 7 / 11 / 14 stacks and 8000-cycle life.",
+      intro: m.introB,
       rows: rowsB,
     },
     {
       id: "cabinet",
-      heading: ui.secC,
+      heading: m.secC,
       imageSrc: "/images/HVS-Cabinet.png",
       imageAlt: "HVS cabinet BESS",
-      intro: isZh
-        ? "柜式 BESS：百 kWh 级与两百 kWh 级并排对比，工业级外形尺寸一目了然。"
-        : "Cabinet BESS: ~100kWh vs ~200kWh columns with industrial footprints side by side.",
+      intro: m.introC,
       rows: rowsC,
     },
   ];
@@ -143,13 +121,13 @@ export default function HvsDetailsPage() {
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm transition hover:border-solar-500/40 hover:bg-solar-500/10 hover:text-solar-300"
             >
               <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
-              {ui.back}
+              {m.back}
             </Link>
 
             <h1 className="mt-8 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              {ui.title}
+              {m.title}
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{ui.sub}</p>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{m.sub}</p>
           </div>
         </section>
 

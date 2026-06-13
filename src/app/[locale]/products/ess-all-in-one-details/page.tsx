@@ -21,21 +21,9 @@ type SeriesBlock = {
 };
 
 export default function EssAllInOneDetailsPage() {
-  const { locale } = useLocaleContext();
+  const { locale, messages } = useLocaleContext();
+  const m = messages.productsEssAllInOne ?? {};
   const isZh = locale === "zh";
-
-  const ui = isZh
-    ? {
-        back: "返回户用光储列表",
-        pageTitle: "ESS All-in-one 系列",
-        pageSub: "便携式储能（500W / 1000W）与模块化堆叠一体机，覆盖移动备电与家庭可扩展装机场景。",
-      }
-    : {
-        back: "Back to residential ESS",
-        pageTitle: "ESS All-in-one series",
-        pageSub:
-          "Portable power stations (500W / 1000W) plus a modular stacked all-in-one for mobile backup and scalable home energy.",
-      };
 
   const series: SeriesBlock[] = isZh
     ? [
@@ -164,13 +152,13 @@ export default function EssAllInOneDetailsPage() {
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm transition hover:border-solar-500/40 hover:bg-solar-500/10 hover:text-solar-300"
             >
               <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
-              {ui.back}
+              {m.back}
             </Link>
 
             <h1 className="mt-8 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              {ui.pageTitle}
+              {m.pageTitle}
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{ui.pageSub}</p>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{m.pageSub}</p>
           </div>
         </section>
 

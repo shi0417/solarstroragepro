@@ -10,33 +10,10 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { CASES } from "./case-data";
 
 export default function CaseCenterPage() {
-  const { locale } = useLocaleContext();
+  const { locale, messages } = useLocaleContext();
   const isZh = locale === "zh";
 
-  const ui = isZh
-    ? {
-        badge: "全球项目",
-        pageTitle: "调频储能案例中心",
-        pageSub:
-          "SolarStoragePro 已在全球 50+ 个国家和地区交付储能调频项目，服务电网运营商、独立发电商与工商业用户。以下为代表性项目案例。",
-        readMore: "查看详情",
-        ctaTitle: "您有类似项目需求？",
-        ctaSub: "无论是 FCR、aFRR 还是一次备用，我们均可提供定制化储能方案。",
-        ctaBtn: "获取方案报价",
-        techLink: "了解我们的技术平台",
-      }
-    : {
-        badge: "Global Projects",
-        pageTitle: "Frequency Regulation Case Studies",
-        pageSub:
-          "SolarStoragePro has deployed BESS frequency regulation projects in 50+ countries, serving TSOs, IPPs, and C&I clients. Below are selected case studies.",
-        readMore: "View Case Study",
-        ctaTitle: "Have a Similar Project?",
-        ctaSub:
-          "Whether you need FCR, aFRR, or primary reserve — we design custom BESS solutions for your grid.",
-        ctaBtn: "Request a Proposal",
-        techLink: "Explore Our Technology",
-      };
+  const cc = messages.caseCenter ?? {};
 
   return (
     <div className="min-h-screen bg-white">
@@ -50,19 +27,19 @@ export default function CaseCenterPage() {
           <div className="relative mx-auto max-w-5xl px-4 sm:px-6">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-400">
               <Zap className="h-3 w-3" aria-hidden />
-              {ui.badge}
+              {cc.badge}
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              {ui.pageTitle}
+              {cc.pageTitle}
             </h1>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300">{ui.pageSub}</p>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300">{cc.pageSub}</p>
 
             <div className="mt-6">
               <Link
                 href="/technology"
                 className="inline-flex items-center gap-1.5 text-sm text-slate-400 transition hover:text-blue-400"
               >
-                {ui.techLink}
+                {cc.techLink}
                 <ChevronRight className="h-3.5 w-3.5" aria-hidden />
               </Link>
             </div>
@@ -123,7 +100,7 @@ export default function CaseCenterPage() {
                         href={`/case-center/${c.id}`}
                         className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-blue-50 px-4 py-2.5 text-sm font-medium text-blue-700 transition hover:bg-blue-100"
                       >
-                        {ui.readMore}
+                        {cc.readMore}
                         <ArrowRight className="h-4 w-4" aria-hidden />
                       </Link>
                     </div>
@@ -137,8 +114,8 @@ export default function CaseCenterPage() {
         {/* ── Bottom CTA ── */}
         <section className="border-t border-slate-100 bg-slate-50 py-14 sm:py-16">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900">{ui.ctaTitle}</h2>
-            <p className="mx-auto mt-4 max-w-xl text-base text-slate-600">{ui.ctaSub}</p>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900">{cc.ctaTitle}</h2>
+            <p className="mx-auto mt-4 max-w-xl text-base text-slate-600">{cc.ctaSub}</p>
             <div className="mt-6">
               <a
                 href="https://wa.me/8613800000000"
@@ -146,7 +123,7 @@ export default function CaseCenterPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow transition hover:bg-blue-700"
               >
-                {ui.ctaBtn}
+                {cc.ctaBtn}
                 <ArrowRight className="h-4 w-4" aria-hidden />
               </a>
             </div>
