@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-const LOCALES = ["en", "zh", "es", "tr", "pt", "de", "fr"];
+const LOCALES = ["en", "zh", "es", "tr", "pt", "de", "fr", "th", "ar", "ja", "ko", "id"];
 
 type Params = Promise<{ rest: string[] }>;
 

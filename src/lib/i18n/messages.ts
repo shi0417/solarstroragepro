@@ -547,7 +547,7 @@ const zh: Messages = {
   },
 };
 
-const byLocale: Record<Locale, Messages> = { en, zh };
+const byLocale: Partial<Record<Locale, Messages>> = { en, zh };
 
 export function getMessages(locale: Locale): Messages {
   return byLocale[locale] ?? en;
