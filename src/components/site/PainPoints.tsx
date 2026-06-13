@@ -33,7 +33,7 @@ export function PainPoints() {
 
         {/* Pain point cards */}
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:gap-8">
-          {p.items.map((item, i) => (
+          {p.items.map((item: { icon: string; title: string; desc: string; body?: string }, i: number) => (
             <div
               key={i}
               className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-brand-200 hover:shadow-lg hover:shadow-brand-500/5 hover:-translate-y-1"

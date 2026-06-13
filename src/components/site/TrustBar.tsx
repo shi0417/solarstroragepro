@@ -25,7 +25,7 @@ export function TrustBar() {
 
           {/* Certifications */}
           <div className="flex flex-wrap items-center justify-center gap-1">
-            {t.items.map((item, i) => (
+            {t.items.map((item: { label: string; icon: string }, i: number) => (
               <div key={item.label} className="flex items-center">
                 {i > 0 && (
                   <ChevronRight className="mx-2 h-3.5 w-3.5 text-slate-200 hidden sm:block" aria-hidden />

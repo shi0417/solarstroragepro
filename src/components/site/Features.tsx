@@ -40,7 +40,7 @@ export function Features() {
 
         {/* Feature grid — 2x2 with asymmetric sizing */}
         <div className="mt-16 grid gap-6 lg:grid-cols-2">
-          {f.items.map((item, i) => (
+          {f.items.map((item: { icon: string; title: string; body: string }, i: number) => (
             <div
               key={i}
               className={`group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-500/5 hover:-translate-y-0.5 ${i === 0 ? "lg:row-span-1" : ""}`}

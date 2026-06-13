@@ -67,7 +67,7 @@ export function Hero() {
 
             {/* Trust signals */}
             <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-sky-100/80">
-              {h.trustSignals.map((s, i) => (
+              {h.trustSignals.map((s: string, i: number) => (
                 <span key={i} className="inline-flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-400" aria-hidden />
                   {s}

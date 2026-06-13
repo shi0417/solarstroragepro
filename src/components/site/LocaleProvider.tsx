@@ -1,63 +1,42 @@
 "use client";
 
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
-import { useRouter } from "next/navigation";
+import { createContext, useContext, type ReactNode, useMemo } from "react";
 
-import { getMessages, type Messages } from "@/lib/i18n/messages";
-import { LOCALE_COOKIE, type Locale } from "@/lib/locale";
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Messages = Record<string, any>;
 
 type Ctx = {
-  locale: Locale;
+  locale: string;
   messages: Messages;
-  setLocale: (next: Locale) => void;
+  setLocale: (next: string) => void;
 };
 
 const LocaleContext = createContext<Ctx | null>(null);
 
-function writeLocaleCookie(locale: Locale) {
-  const maxAge = 60 * 60 * 24 * 365;
-  document.cookie = `${LOCALE_COOKIE}=${locale}; Path=/; Max-Age=${maxAge}; SameSite=Lax`;
-}
-
 export function LocaleProvider({
+  locale,
+  messages,
   children,
-  initialLocale,
 }: {
+  locale: string;
+  messages: Messages;
   children: ReactNode;
-  initialLocale: Locale;
 }) {
-  const router = useRouter();
-  const [locale, setLocaleState] = useState<Locale>(initialLocale);
-
-  useEffect(() => {
-    setLocaleState(initialLocale);
-  }, [initialLocale]);
-
-  const messages = useMemo(() => getMessages(locale), [locale]);
-
-  const setLocale = useCallback(
-    (next: Locale) => {
-      writeLocaleCookie(next);
-      setLocaleState(next);
+  const value = useMemo(() => {
+    const setLocale = (next: string) => {
       if (typeof document !== "undefined") {
-        document.documentElement.lang = next === "zh" ? "zh-CN" : "en";
+        const pathname = window.location.pathname;
+        const newPath = pathname.replace(/^\/[^/]+/, `/${next}`);
+        document.cookie = `locale=${next}; Path=/; Max-Age=${60 * 60 * 24 * 365}; SameSite=Lax`;
+        window.location.href = newPath;
       }
-      router.refresh();
-    },
-    [router]
+    };
+    return { locale, messages, setLocale };
+  }, [locale, messages]);
+
+  return (
+    <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>
   );
-
-  const value = useMemo(() => ({ locale, messages, setLocale }), [locale, messages, setLocale]);
-
-  return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
 }
 
 export function useLocaleContext(): Ctx {

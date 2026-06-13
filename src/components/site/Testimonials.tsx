@@ -26,7 +26,7 @@ export function Testimonials() {
 
         {/* Testimonial cards */}
         <div className="mt-16 grid gap-8 md:grid-cols-3">
-          {t.items.map((item, i) => (
+          {t.items.map((item: { quote: string; name: string; role: string; company: string; project: string }, i: number) => (
             <div
               key={i}
               className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-500/5 hover:-translate-y-1"
@@ -63,7 +63,7 @@ export function Testimonials() {
                 <div className="flex items-center gap-4">
                   {/* Avatar placeholder */}
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-100 to-brand-200 text-sm font-bold text-brand-700">
-                    {item.name.split(" ").map((n) => n[0]).join("")}
+                    {item.name.split(" ").map((n: string) => n[0]).join("")}
                   </div>
                   <div>
                     <div className="font-bold text-slate-900">{item.name}</div>

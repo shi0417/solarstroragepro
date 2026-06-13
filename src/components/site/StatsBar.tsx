@@ -22,7 +22,7 @@ export function StatsBar() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {s.items.map((item, i) => (
+          {s.items.map((item: { value: string; label: string; desc: string }, i: number) => (
             <div
               key={i}
               className="group relative rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6 text-center backdrop-blur-sm transition-all hover:border-white/10 hover:bg-white/[0.06]"

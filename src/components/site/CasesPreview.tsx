@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { useLocaleContext } from "@/components/site/LocaleProvider";
-import { CASES } from "@/app/case-center/case-data";
+import { CASES } from "@/app/[locale]/case-center/case-data";
 
 const UI = {
   en: {

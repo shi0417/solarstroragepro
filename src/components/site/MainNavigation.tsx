@@ -108,7 +108,7 @@ export function MainNavigation() {
   return (
     <>
       <div className="hidden items-center gap-8 lg:flex">
-        {nav.map((item) => (
+        {nav.map((item: { label: string; href: string; children?: Array<{ label: string; href: string }> }) => (
           <DesktopDropdown key={item.label} item={item} viewAll={h.viewAll} />
         ))}
       </div>
@@ -134,7 +134,7 @@ export function MainNavigation() {
             className="absolute right-0 top-0 flex h-full w-[min(100vw-3rem,320px)] flex-col gap-1 border-l border-slate-200 bg-white p-4 pt-20 shadow-2xl"
             aria-label={h.navAria}
           >
-            {nav.map((item) => (
+            {nav.map((item: { label: string; href: string; children?: Array<{ label: string; href: string }> }) => (
               <div key={item.label} className="border-b border-slate-100 py-2">
                 <NavDropdownChild
                   href={item.href}
@@ -143,7 +143,7 @@ export function MainNavigation() {
                 >
                   {item.label}
                 </NavDropdownChild>
-                {item.children?.map((c) => (
+                {item.children?.map((c: { label: string; href: string }) => (
                   <NavDropdownChild
                     key={c.label}
                     href={c.href}

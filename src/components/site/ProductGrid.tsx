@@ -50,7 +50,7 @@ export function ProductGrid() {
 
         {/* Product cards */}
         <ul className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {p.items.map((item) => (
+          {p.items.map((item: { name: string; href?: string; image: string; tag: string; desc: string; specs: Array<{ label: string; value: string }> }) => (
             <li
               key={item.name}
               className="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-500/5 hover:-translate-y-1"

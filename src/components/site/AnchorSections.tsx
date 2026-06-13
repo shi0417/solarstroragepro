@@ -107,7 +107,7 @@ export function AnchorSections() {
             <p className="section-desc mx-auto mt-3">{a.companySub}</p>
           </div>
           <dl className="mt-12 grid gap-6 sm:grid-cols-3">
-            {a.companyStats.map((row) => (
+            {a.companyStats.map((row: { k: string; v: string; d: string }) => (
               <div
                 key={row.k}
                 className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm transition-all hover:border-brand-200 hover:shadow-md"

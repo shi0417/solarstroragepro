@@ -1,15 +1,7 @@
+import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { headers } from "next/headers";
 import Script from "next/script";
-
-import { LocaleProvider } from "@/components/site/LocaleProvider";
-import { StickySiteTools } from "@/components/site/StickySiteTools";
-import { MetaPixel } from "@/components/site/MetaPixel";
-import { MetaPixelEvents } from "@/components/site/MetaPixelEvents";
-import { getMessages } from "@/lib/i18n/messages";
-import { isLocale, LOCALE_HEADER, type Locale } from "@/lib/locale";
-
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,39 +14,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-async function resolveLocale(): Promise<Locale> {
-  const h = await headers();
-  const raw = h.get(LOCALE_HEADER);
-  return isLocale(raw) ? raw : "en";
-}
+export const metadata: Metadata = {
+  title: "SolarStoragePro - Battery Energy Storage Solutions",
+  description:
+    "Industrial & commercial battery energy storage systems. Reliable, safe, locally supported.",
+};
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await resolveLocale();
-  const m = getMessages(locale);
-  return {
-    title: m.meta.title,
-    description: m.meta.description,
-  };
-}
-
-export default async function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const locale = await resolveLocale();
-
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang={locale === "zh" ? "zh-CN" : "en"}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
-      >
-        {/* Google Ads Global Site Tag - AW-18235093488 */}
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        {/* Google Ads Global Site Tag */}
         <Script
-          strategy="beforeInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-18235093488"
+          strategy="beforeInteractive"
         />
-        <Script id="google-ads-gtag-init" strategy="beforeInteractive">
+        <Script id="gtag-init" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -62,29 +37,25 @@ export default async function RootLayout({
             gtag('config', 'AW-18235093488');
           `}
         </Script>
-        {/* Google Ads Conversion Tracking — unified handler for form, WhatsApp, Email */}
-        <Script id="google-ads-conversion" strategy="beforeInteractive">
+        {/* Google Ads Conversion */}
+        <Script id="gtag-conversion" strategy="beforeInteractive">
           {`
-            function gtag_report_conversion(event_label) {
-              var label = typeof event_label === 'string' ? event_label : 'form_submit';
-              var value = label === 'form_submit' ? 5.0 : 2.0;
+            window.gtag_report_conversion = function(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
               gtag('event', 'conversion', {
-                  'send_to': 'AW-18235093488/jw1ICOmCj74cEPDjlfdD',
-                  'value': value,
-                  'currency': 'HKD',
-                  'event_label': label
+                'send_to': 'AW-18235093488/jw1ICOmCj74cEPDjlfdD',
+                'event_callback': callback
               });
               return false;
             }
           `}
         </Script>
-        <MetaPixel />
-        <MetaPixelEvents />
-        <LocaleProvider initialLocale={locale}>
-          {children}
-          <StickySiteTools />
-        </LocaleProvider>
-      </body>
+      </head>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }

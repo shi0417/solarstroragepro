@@ -18,7 +18,7 @@ import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
-import { CASE_DETAILS } from "@/app/case-center/case-data";
+import { CASE_DETAILS } from "@/app/[locale]/case-center/case-data";
 
 export default function CaseDetailPage() {
   const params = useParams();
