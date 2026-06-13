@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { headers } from "next/headers";
-import Script from "next/script";
 
 import { LocaleProvider } from "@/components/site/LocaleProvider";
 import { StickySiteTools } from "@/components/site/StickySiteTools";
@@ -48,18 +47,20 @@ export default async function RootLayout({
     <html lang={locale === "zh" ? "zh-CN" : "en"}>
       <head>
         {/* Google Ads Global Site Tag (gtag.js) - AW-18235093488 */}
-        <Script
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=AW-18235093488"
-          strategy="afterInteractive"
         />
-        <Script id="google-ads-gtag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-18235093488');
-          `}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18235093488');
+            `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
