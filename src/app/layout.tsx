@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { headers } from "next/headers";
+import Script from "next/script";
 
 import { LocaleProvider } from "@/components/site/LocaleProvider";
 import { StickySiteTools } from "@/components/site/StickySiteTools";
@@ -45,26 +46,22 @@ export default async function RootLayout({
 
   return (
     <html lang={locale === "zh" ? "zh-CN" : "en"}>
-      <head>
-        {/* Google Ads Global Site Tag (gtag.js) - AW-18235093488 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18235093488"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-18235093488');
-            `,
-          }}
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
+        {/* Google Ads Global Site Tag - AW-18235093488 */}
+        <Script
+          strategy="beforeInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18235093488"
+        />
+        <Script id="google-ads-gtag-init" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18235093488');
+          `}
+        </Script>
         <MetaPixel />
         <MetaPixelEvents />
         <LocaleProvider initialLocale={locale}>

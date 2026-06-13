@@ -140,13 +140,13 @@ export function Footer() {
 
             {/* Quick CTA */}
             <div className="mt-6">
-              <a
+              <Link
                 href="/#contact"
                 className="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-brand-700 hover:shadow-md hover:shadow-brand-600/20"
               >
                 Get a Quote
                 <ArrowUpRight className="h-4 w-4" aria-hidden />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
