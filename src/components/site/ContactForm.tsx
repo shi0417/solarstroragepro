@@ -75,6 +75,14 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       setStatus("success");
       setForm({ name: "", company: "", email: "", projectType: "", message: "" });
 
+      // Track with Google Ads conversion
+      const gw = window as unknown as {
+        gtag_report_conversion?: (url?: string) => boolean;
+      };
+      if (typeof gw.gtag_report_conversion === "function") {
+        gw.gtag_report_conversion();
+      }
+
       // Track with FB Pixel
       const w = window as unknown as { fbq?: (...args: unknown[]) => void };
       if (typeof w.fbq === "function") {

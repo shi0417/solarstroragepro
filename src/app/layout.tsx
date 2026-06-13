@@ -62,6 +62,25 @@ export default async function RootLayout({
             gtag('config', 'AW-18235093488');
           `}
         </Script>
+        {/* Google Ads Conversion Tracking - Contact Form Submit */}
+        <Script id="google-ads-conversion" strategy="beforeInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-18235093488/jw1ICOmCj74cEPDjlfdD',
+                  'value': 1.0,
+                  'currency': 'HKD',
+                  'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
         <MetaPixel />
         <MetaPixelEvents />
         <LocaleProvider initialLocale={locale}>
