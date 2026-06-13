@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 
 import { siteContact } from "@/lib/site-config";
+import { trackEmailClick } from "@/lib/tracking";
 
 import { useLocaleContext } from "./LocaleProvider";
 
@@ -117,6 +118,7 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${siteContact.email}`}
+                  onClick={() => trackEmailClick("Footer")}
                   className="inline-flex items-center gap-2 text-sm transition-colors hover:text-brand-400"
                 >
                   <Mail className="h-4 w-4 text-brand-500" aria-hidden />

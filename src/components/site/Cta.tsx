@@ -3,6 +3,7 @@
 import { ArrowRight, MessageCircle, Clock } from "lucide-react";
 
 import { siteContact, whatsappUrl } from "@/lib/site-config";
+import { trackEmailClick, trackWhatsAppClick } from "@/lib/tracking";
 
 import { ContactForm } from "./ContactForm";
 import { ResourceDownload } from "./ResourceDownload";
@@ -57,13 +58,7 @@ export function Cta() {
                   href={whatsappUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => {
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    const w = window as any;
-                    if (typeof w.fbq === "function") {
-                      w.fbq("track", "Contact", { content_name: "WhatsApp CTA", value: 20, currency: "USD" });
-                    }
-                  }}
+                  onClick={() => trackWhatsAppClick("CTA Section")}
                   className="inline-flex items-center gap-3 rounded-xl border border-emerald-400/20 bg-emerald-500/10 px-5 py-4 text-sm font-semibold text-emerald-300 transition hover:bg-emerald-500/20 hover:border-emerald-400/30"
                 >
                   <MessageCircle className="h-5 w-5" aria-hidden />
@@ -71,13 +66,7 @@ export function Cta() {
                 </a>
                 <a
                   href={`mailto:${siteContact.email}`}
-                  onClick={() => {
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    const w = window as any;
-                    if (typeof w.fbq === "function") {
-                      w.fbq("track", "Contact", { content_name: "Email CTA", value: 20, currency: "USD" });
-                    }
-                  }}
+                  onClick={() => trackEmailClick("CTA Section")}
                   className="inline-flex items-center gap-3 rounded-xl border border-white/15 bg-white/[0.06] px-5 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/15 hover:border-white/25"
                 >
                   {c.emailBtn}

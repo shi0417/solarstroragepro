@@ -62,20 +62,17 @@ export default async function RootLayout({
             gtag('config', 'AW-18235093488');
           `}
         </Script>
-        {/* Google Ads Conversion Tracking - Contact Form Submit */}
+        {/* Google Ads Conversion Tracking — unified handler for form, WhatsApp, Email */}
         <Script id="google-ads-conversion" strategy="beforeInteractive">
           {`
-            function gtag_report_conversion(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  window.location = url;
-                }
-              };
+            function gtag_report_conversion(event_label) {
+              var label = typeof event_label === 'string' ? event_label : 'form_submit';
+              var value = label === 'form_submit' ? 5.0 : 2.0;
               gtag('event', 'conversion', {
                   'send_to': 'AW-18235093488/jw1ICOmCj74cEPDjlfdD',
-                  'value': 1.0,
+                  'value': value,
                   'currency': 'HKD',
-                  'event_callback': callback
+                  'event_label': label
               });
               return false;
             }

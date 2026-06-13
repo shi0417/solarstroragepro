@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import { siteContact, skypeChatUrl, whatsappUrl } from "@/lib/site-config";
+import { trackEmailClick, trackWhatsAppClick } from "@/lib/tracking";
 
 import { useLocaleContext } from "./LocaleProvider";
 import { WeChatQrModal } from "./WeChatQrModal";
@@ -58,6 +59,7 @@ export function StickySiteTools() {
           className={`${btnClass} text-emerald-600 hover:!text-emerald-500 hover:!border-emerald-300 hover:!bg-emerald-50 max-md:rounded-xl`}
           title="WhatsApp"
           aria-label="WhatsApp"
+          onClick={() => trackWhatsAppClick("Sticky Sidebar")}
         >
           <MessageCircle className="h-5 w-5" aria-hidden />
         </a>
@@ -66,6 +68,7 @@ export function StickySiteTools() {
           className={`${btnClass} max-md:rounded-xl`}
           title="Email"
           aria-label="Email"
+          onClick={() => trackEmailClick("Sticky Sidebar")}
         >
           <Mail className="h-5 w-5" aria-hidden />
         </a>

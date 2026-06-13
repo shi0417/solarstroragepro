@@ -6,6 +6,7 @@ import { siteContact } from "@/lib/site-config";
 import { HeaderChrome } from "@/components/site/HeaderChrome";
 import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
 import { MainNavigation } from "@/components/site/MainNavigation";
+import { TrackedContactLink } from "@/components/site/TrackedContactLink";
 
 export function Header() {
   return (
@@ -22,13 +23,15 @@ export function Header() {
               <span className="font-medium text-slate-700">{siteContact.phoneDisplay}</span>
             </a>
             <span className="text-slate-200">|</span>
-            <a
+            <TrackedContactLink
+              type="email"
+              source="Header"
               href={`mailto:${siteContact.email}`}
               className="inline-flex items-center gap-1.5 transition-colors hover:text-brand-600"
             >
               <Mail className="h-3 w-3 text-brand-500" aria-hidden />
               {siteContact.email}
-            </a>
+            </TrackedContactLink>
           </div>
           <div className="flex w-full items-center justify-between sm:w-auto sm:justify-end sm:gap-4">
             <HeaderChrome

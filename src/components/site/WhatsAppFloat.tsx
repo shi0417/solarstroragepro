@@ -2,6 +2,7 @@
 
 import { MessageCircle } from "lucide-react";
 import { whatsappUrl } from "@/lib/site-config";
+import { trackWhatsAppClick } from "@/lib/tracking";
 
 /**
  * Fixed WhatsApp floating button — right-bottom corner.
@@ -9,16 +10,7 @@ import { whatsappUrl } from "@/lib/site-config";
  */
 export function WhatsAppFloat() {
   const handleClick = () => {
-    // Track WhatsApp click for Meta Pixel
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const w = window as any;
-    if (typeof w.fbq === "function") {
-      w.fbq("track", "Contact", {
-        content_name: "WhatsApp Click",
-        value: 20,
-        currency: "USD",
-      });
-    }
+    trackWhatsAppClick("Floating Button");
   };
 
   return (

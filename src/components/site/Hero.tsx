@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import { siteContact, whatsappUrl } from "@/lib/site-config";
+import { trackEmailClick, trackWhatsAppClick } from "@/lib/tracking";
 
 import { useLocaleContext } from "./LocaleProvider";
 
@@ -81,6 +82,7 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary bg-white text-brand-900 shadow-xl shadow-black/10 hover:bg-sky-50 hover:shadow-2xl"
+                onClick={() => trackWhatsAppClick("Hero")}
               >
                 {h.ctaPrimary}
                 <ArrowRight className="h-5 w-5" aria-hidden />
@@ -88,6 +90,7 @@ export function Hero() {
               <a
                 href={`mailto:${siteContact.email}`}
                 className="btn-secondary border-white/20 bg-white/[0.06] text-white backdrop-blur-sm hover:bg-white/15 hover:border-white/30"
+                onClick={() => trackEmailClick("Hero")}
               >
                 {h.ctaSecondary}
               </a>

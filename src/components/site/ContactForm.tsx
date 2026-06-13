@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { Send, CheckCircle2, Loader2 } from "lucide-react";
 
 import { useLocaleContext } from "./LocaleProvider";
+import { trackFormSubmit } from "@/lib/tracking";
 
 type FormData = {
   name: string;
@@ -74,25 +75,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
 
       setStatus("success");
       setForm({ name: "", company: "", email: "", projectType: "", message: "" });
-
-      // Track with Google Ads conversion
-      const gw = window as unknown as {
-        gtag_report_conversion?: (url?: string) => boolean;
-      };
-      if (typeof gw.gtag_report_conversion === "function") {
-        gw.gtag_report_conversion();
-      }
-
-      // Track with FB Pixel
-      const w = window as unknown as { fbq?: (...args: unknown[]) => void };
-      if (typeof w.fbq === "function") {
-        w.fbq("track", "Lead", {
-          content_name: "Contact Form",
-          content_category: "B2B Inquiry",
-          value: 50,
-          currency: "USD",
-        });
-      }
+      trackFormSubmit();
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Unknown error");
