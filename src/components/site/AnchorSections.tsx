@@ -6,7 +6,7 @@ import { ArrowRight, Building2, FileDown, LayoutGrid, Wrench, Headphones, Truck 
 import { useLocaleContext } from "./LocaleProvider";
 
 export function AnchorSections() {
-  const { messages } = useLocaleContext();
+  const { messages, localizePath } = useLocaleContext();
   const a = messages.anchor;
   const viewAll = messages.header.viewAll;
 
@@ -27,7 +27,7 @@ export function AnchorSections() {
               <p className="section-desc mt-3">{a.caseCenterSub}</p>
             </div>
             <Link
-              href="/case-center"
+              href={localizePath("/case-center")}
               className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-brand-300 hover:text-brand-600 hover:bg-brand-50/50"
             >
               {viewAll}

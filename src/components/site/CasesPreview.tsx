@@ -24,7 +24,7 @@ const UI = {
 };
 
 export function CasesPreview() {
-  const { locale } = useLocaleContext();
+  const { locale, localizePath } = useLocaleContext();
   const isZh = locale === "zh";
   const copy = UI[isZh ? "zh" : "en"];
 
@@ -43,7 +43,7 @@ export function CasesPreview() {
             <p className="mt-3 max-w-xl text-base text-slate-400">{copy.sub}</p>
           </div>
           <Link
-            href="/case-center"
+            href={localizePath("/case-center")}
             className="shrink-0 inline-flex items-center gap-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400 transition hover:bg-blue-500/20"
           >
             {copy.viewAll}

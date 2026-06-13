@@ -15,14 +15,14 @@ type ContactProps = {
 };
 
 export function HeaderChrome(props: TaglineProps | ContactProps) {
-  const { messages } = useLocaleContext();
+  const { messages, localizePath } = useLocaleContext();
 
   if (props.field === "tagline") {
     return <p className={props.className}>{messages.header.tagline}</p>;
   }
 
   return (
-    <a href={props.href} className={props.className}>
+    <a href={localizePath(props.href)} className={props.className}>
       {messages.header.contactCta}
     </a>
   );

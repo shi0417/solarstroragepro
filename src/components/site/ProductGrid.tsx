@@ -6,7 +6,7 @@ import { ArrowUpRight, Battery, Container, Home, Sun } from "lucide-react";
 import { useLocaleContext } from "./LocaleProvider";
 
 export function ProductGrid() {
-  const { messages } = useLocaleContext();
+  const { messages, localizePath } = useLocaleContext();
   const p = messages.products;
 
   const iconMap: Record<string, React.ReactNode> = {
@@ -57,7 +57,7 @@ export function ProductGrid() {
             >
               {item.href ? (
                 <Link
-                  href={item.href}
+                  href={localizePath(item.href)}
                   className="flex h-full flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
                   aria-label={`${item.name} details`}
                 >

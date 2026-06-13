@@ -9,6 +9,7 @@ type Ctx = {
   locale: string;
   messages: Messages;
   setLocale: (next: string) => void;
+  localizePath: (path: string) => string;
 };
 
 const LocaleContext = createContext<Ctx | null>(null);
@@ -31,7 +32,14 @@ export function LocaleProvider({
         window.location.href = newPath;
       }
     };
-    return { locale, messages, setLocale };
+    const localizePath = (path: string): string => {
+      if (/^https?:\/\//i.test(path)) return path;
+      if (path === "/") return `/${locale}`;
+      if (path.startsWith("/#")) return `/${locale}${path}`;
+      if (path.startsWith("/")) return `/${locale}${path}`;
+      return path;
+    };
+    return { locale, messages, setLocale, localizePath };
   }, [locale, messages]);
 
   return (

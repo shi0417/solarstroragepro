@@ -27,6 +27,9 @@ function NavDropdownChild({
   children: ReactNode;
   onClick?: () => void;
 }) {
+  const { localizePath } = useLocaleContext();
+  const localizedHref = localizePath(href);
+
   if (isExternalHref(href)) {
     return (
       <a
@@ -42,7 +45,7 @@ function NavDropdownChild({
   }
   if (isInternalAppRoute(href)) {
     return (
-      <Link href={href} className={className} onClick={onClick}>
+      <Link href={localizedHref} className={className} onClick={onClick}>
         {children}
       </Link>
     );
@@ -101,7 +104,7 @@ function DesktopDropdown({ item, viewAll }: { item: NavItem; viewAll: string }) 
 
 export function MainNavigation() {
   const [open, setOpen] = useState(false);
-  const { messages } = useLocaleContext();
+  const { messages, localizePath } = useLocaleContext();
   const nav = messages.nav;
   const h = messages.header;
 
@@ -156,7 +159,7 @@ export function MainNavigation() {
               </div>
             ))}
             <Link
-              href="/#contact"
+              href={localizePath("/#contact")}
               className="mt-4 rounded-full bg-brand-600 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setOpen(false)}
             >

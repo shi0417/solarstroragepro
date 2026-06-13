@@ -9,7 +9,7 @@ import { trackEmailClick } from "@/lib/tracking";
 import { useLocaleContext } from "./LocaleProvider";
 
 export function Footer() {
-  const { messages } = useLocaleContext();
+  const { messages, localizePath } = useLocaleContext();
   const f = messages.footer;
 
   return (
@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5">
+            <Link href={localizePath("/")} className="flex items-center gap-2.5">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-black text-white">
                 SS
               </span>
@@ -49,7 +49,7 @@ export function Footer() {
               ].map((link) => (
                 <li key={link.label}>
                   <Link
-                    href={link.href}
+                    href={localizePath(link.href)}
                     className="inline-flex items-center gap-1 text-sm transition-colors hover:text-brand-400"
                   >
                     {link.label}
@@ -71,10 +71,10 @@ export function Footer() {
                 { label: "Data Center Storage", href: "/solutions/data-center-energy-storage" },
                 { label: "Grid-Level BESS", href: "/solutions/grid-level-bess" },
                 { label: "Case Studies", href: "/case-center" },
-              ].map((link) => (
+              ].map((link: { label: string; href: string }) => (
                 <li key={link.label}>
                   <Link
-                    href={link.href}
+                    href={localizePath(link.href)}
                     className="inline-flex items-center gap-1 text-sm transition-colors hover:text-brand-400"
                   >
                     {link.label}
@@ -96,10 +96,10 @@ export function Footer() {
                 { label: "Installation Guide", href: "/blog/ci-solar-storage-installation-guide" },
                 { label: "Certification Guide", href: "/blog/solar-storage-certification-guide" },
                 { label: "Supplier Evaluation", href: "/blog/how-to-choose-energy-storage-supplier" },
-              ].map((link) => (
+              ].map((link: { label: string; href: string }) => (
                 <li key={link.label}>
                   <Link
-                    href={link.href}
+                    href={localizePath(link.href)}
                     className="inline-flex items-center gap-1 text-sm transition-colors hover:text-brand-400"
                   >
                     {link.label}
@@ -143,7 +143,7 @@ export function Footer() {
             {/* Quick CTA */}
             <div className="mt-6">
               <Link
-                href="/#contact"
+                href={localizePath("/#contact")}
                 className="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-brand-700 hover:shadow-md hover:shadow-brand-600/20"
               >
                 Get a Quote

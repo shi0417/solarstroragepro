@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 
@@ -7,8 +9,10 @@ import { HeaderChrome } from "@/components/site/HeaderChrome";
 import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
 import { MainNavigation } from "@/components/site/MainNavigation";
 import { TrackedContactLink } from "@/components/site/TrackedContactLink";
+import { useLocaleContext } from "./LocaleProvider";
 
 export function Header() {
+  const { localizePath } = useLocaleContext();
   return (
     <header className="sticky top-0 z-50 border-b border-transparent bg-white/95 backdrop-blur-xl transition-all duration-300">
       {/* Top bar — compact, high info density */}
@@ -46,7 +50,7 @@ export function Header() {
       {/* Main nav bar — clean, spacious */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:h-[4.5rem] sm:px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
+        <Link href={localizePath("/")} className="flex items-center gap-2.5 group">
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-black tracking-tight text-white shadow-md shadow-brand-600/20 transition-shadow group-hover:shadow-lg group-hover:shadow-brand-600/30">
             SS
           </span>
