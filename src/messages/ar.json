@@ -1,294 +1,214 @@
 {
   "meta": {
-    "title": "SolarStorage Pro | Battery Energy Storage for Frequency Regulation & Grid Stability",
-    "description": "Leading BESS manufacturer specializing in grid frequency regulation, peak shaving, and energy arbitrage. IEC/CE certified, deployed in 50+ countries. Get a free proposal."
+    "title": "SolarStorage Pro | تخزين طاقة البطاريات لتنظيم التردد واستقرار الشبكة",
+    "description": "شركة رائدة في تصنيع أنظمة تخزين طاقة البطاريات (BESS) متخصصة في تنظيم تردد الشبكة وإدارة ذروة الأحمال والمراجحة الطاقية. حاصلة على شهادات IEC/CE/UL، منتشرة في أكثر من 50 دولة. احصل على عرض مجاني."
   },
   "header": {
-    "contactCta": "Get a Quote",
-    "tagline": "Battery Energy Storage · Grid Frequency Regulation · Global",
-    "mobileQuote": "Get a Quote",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu",
-    "overlayClose": "Close menu overlay",
-    "navAria": "Mobile navigation",
-    "viewAll": "View all"
+    "contactCta": "طلب عرض سعر",
+    "tagline": "تخزين طاقة البطاريات · تنظيم التردد · عالمي",
+    "mobileQuote": "طلب عرض سعر",
+    "menuOpen": "فتح القائمة",
+    "menuClose": "إغلاق القائمة",
+    "overlayClose": "إغلاق تراكب القائمة",
+    "navAria": "التنقل عبر الجوال",
+    "viewAll": "عرض الكل"
   },
   "nav": [
     {
-      "label": "Products",
+      "label": "المنتجات",
       "href": "/#products",
       "children": [
-        {
-          "label": "Grid-Scale BESS Container",
-          "href": "/products/energy-storage-system"
-        },
-        {
-          "label": "C&I Battery Cabinets",
-          "href": "/products/ci-battery-cabinets"
-        },
-        {
-          "label": "Residential All-in-One ESS",
-          "href": "/products/residential-ess"
-        },
-        {
-          "label": "PCS / Inverter Substation",
-          "href": "/products/pcs"
-        },
-        {
-          "label": "Solar Panels",
-          "href": "/products/solar-panels"
-        }
+        { "label": "حاوية BESS على نطاق الشبكة", "href": "/products/energy-storage-system" },
+        { "label": "خزائن بطاريات تجارية وصناعية", "href": "/products/ci-battery-cabinets" },
+        { "label": "نظام ESS سكني متكامل", "href": "/products/residential-ess" },
+        { "label": "محطة PCS / العاكس الفرعية", "href": "/products/pcs" },
+        { "label": "ألواح شمسية", "href": "/products/solar-panels" }
       ]
     },
+    { "label": "التكنولوجيا", "href": "/technology" },
     {
-      "label": "Technology",
-      "href": "/technology"
-    },
-    {
-      "label": "Solutions",
+      "label": "الحلول",
       "href": "/#solutions",
       "children": [
-        {
-          "label": "Grid Frequency Regulation (FCR/aFRR)",
-          "href": "/solutions/grid-level-bess"
-        },
-        {
-          "label": "Data Center Energy Storage",
-          "href": "/solutions/data-center-energy-storage"
-        }
+        { "label": "تنظيم تردد الشبكة (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
+        { "label": "تخزين الطاقة لمراكز البيانات", "href": "/solutions/data-center-energy-storage" }
       ]
     },
-    {
-      "label": "Cases",
-      "href": "/case-center"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
-    },
-    {
-      "label": "Contact",
-      "href": "/#contact"
-    }
+    { "label": "دراسات الحالة", "href": "/case-center" },
+    { "label": "المدونة", "href": "/blog" },
+    { "label": "اتصل بنا", "href": "/#contact" }
   ],
   "hero": {
-    "badge": "Frequency Regulation · BESS Specialist",
-    "titleLine1": "The Energy Storage Specialist for",
-    "titleHighlight": "Grid Frequency Regulation",
-    "subtitle": "We design, manufacture, and deploy battery energy storage systems engineered for fast-response frequency regulation — helping grid operators maintain stability and maximize renewable integration.",
+    "badge": "تنظيم التردد · متخصص BESS",
+    "titleLine1": "متخصص تخزين الطاقة من أجل",
+    "titleHighlight": "تنظيم تردد الشبكة",
+    "subtitle": "نقوم بتصميم وتصنيع ونشر أنظمة تخزين طاقة البطاريات المحسّنة لتنظيم التردد سريع الاستجابة — لمساعدة مشغلي الشبكات في الحفاظ على الاستقرار وتعظيم دمج الطاقة المتجددة.",
     "trustSignals": [
-      "IEC / CE / UL Certified",
-      "Deployed in 50+ Countries",
-      "24-Hour Technical Response"
+      "حاصل على شهادات IEC / CE / UL",
+      "منتشر في أكثر من 50 دولة",
+      "دعم فني على مدار 24 ساعة"
     ],
-    "ctaPrimary": "Get Free Proposal",
-    "ctaSecondary": "Download Datasheet"
+    "ctaPrimary": "احصل على عرض مجاني",
+    "ctaSecondary": "تنزيل ورقة البيانات"
   },
   "trustBar": {
     "items": [
-      {
-        "label": "IEC Certified",
-        "icon": "shield"
-      },
-      {
-        "label": "CE Certified",
-        "icon": "award"
-      },
-      {
-        "label": "UL Listed",
-        "icon": "shield"
-      },
-      {
-        "label": "ISO 9001",
-        "icon": "factory"
-      },
-      {
-        "label": "50+ Countries",
-        "icon": "globe"
-      }
+      { "label": "حاصل على شهادة IEC", "icon": "shield" },
+      { "label": "حاصل على شهادة CE", "icon": "award" },
+      { "label": "مدرج في قائمة UL", "icon": "shield" },
+      { "label": "ISO 9001", "icon": "factory" },
+      { "label": "أكثر من 50 دولة", "icon": "globe" }
     ]
   },
   "painPoints": {
-    "heading": "Why Frequency Regulation Matters",
-    "sub": "Grid operators face real challenges. Our BESS solutions are purpose-built to solve them.",
+    "heading": "لماذا يعتبر تنظيم التردد مهماً",
+    "sub": "يواجه مشغلو الشبكات تحديات حقيقية. صُممت حلول BESS الخاصة بنا لمعالجتها.",
     "items": [
       {
         "icon": "clock",
-        "title": "Sub-Second Response Required",
-        "body": "Grid frequency deviations must be corrected within milliseconds. Our systems respond in <200ms, exceeding regulatory requirements."
+        "title": "استجابة فائقة السرعة مطلوبة",
+        "body": "يجب تصحيح انحرافات تردد الشبكة في أجزاء من الثانية. تستجيب أنظمتنا في أقل من 200 مللي ثانية، متجاوزة المتطلبات التنظيمية."
       },
       {
         "icon": "trending",
-        "title": "Renewable Integration",
-        "body": "Solar and wind introduce volatility. Our storage systems smooth output fluctuations, enabling higher renewable penetration."
+        "title": "دمج الطاقة المتجددة",
+        "body": "تسبب الطاقة الشمسية وطاقة الرياح تقلبات. تعمل أنظمة التخزين لدينا على تنعيم تقلبات الإنتاج، مما يتيح نسبة أعلى من الطاقة المتجددة."
       },
       {
         "icon": "alert",
-        "title": "Aging Grid Infrastructure",
-        "body": "Traditional generators can't ramp fast enough. Battery storage provides instant, precise power injection and absorption."
+        "title": "بنية تحتية متقادمة للشبكة",
+        "body": "لا تستطيع المولدات التقليدية التنظيم بالسرعة الكافية. يوفر تخزين البطاريات حقنًا وامتصاصًا فوريًا ودقيقًا للطاقة."
       },
       {
         "icon": "chart",
-        "title": "Revenue Optimization",
-        "body": "Maximize ancillary service revenue through intelligent dispatch — frequency regulation, peak shaving, and energy arbitrage from a single asset."
+        "title": "تحسين الإيرادات",
+        "body": "قم بتعظيم إيرادات الخدمات المساعدة من خلال الإرسال الذكي — تنظيم التردد وإدارة ذروة الأحمال والمراجحة الطاقية من أصل واحد."
       }
     ]
   },
   "statsBar": {
     "items": [
-      {
-        "value": "500MWh+",
-        "label": "Deployed Capacity",
-        "desc": "Battery storage installed worldwide"
-      },
-      {
-        "value": "200ms",
-        "label": "Response Time",
-        "desc": "Fastest in class frequency response"
-      },
-      {
-        "value": "50+",
-        "label": "Countries Served",
-        "desc": "Global project delivery network"
-      },
-      {
-        "value": "10+",
-        "label": "Years Experience",
-        "desc": "BESS engineering & manufacturing"
-      }
+      { "value": "500MWh+", "label": "السعة المنشورة", "desc": "تخزين بطاريات مركب عالمياً" },
+      { "value": "200ms", "label": "زمن الاستجابة", "desc": "أسرع استجابة تردد في فئتها" },
+      { "value": "50+", "label": "دولة مخدومة", "desc": "شبكة توصيل مشاريع عالمية" },
+      { "value": "10+", "label": "سنوات من الخبرة", "desc": "هندسة وتصنيع BESS" }
     ]
   },
   "products": {
-    "heading": "Battery Energy Storage Products",
-    "sub": "From residential to grid-scale — purpose-built cabinets and containers for frequency regulation, peak shaving, and energy management.",
+    "heading": "منتجات تخزين طاقة البطاريات",
+    "sub": "من السكني إلى نطاق الشبكة — خزائن وحاويات مصممة خصيصًا لتنظيم التردد وإدارة ذروة الأحمال وإدارة الطاقة.",
     "items": [
       {
-        "name": "C&I Battery Cabinets",
-        "desc": "100–500kWh modular cabinets with 1C/2C rate, liquid cooling, and fire suppression — ideal for commercial peak shaving and frequency response.",
-        "tag": "C&I",
-        "href": "/products/ci-battery-cabinets"
+        "name": "خزائن بطاريات تجارية وصناعية",
+        "desc": "خزائن معيارية 100-500 كيلوواط ساعة بمعدل 1C/2C مع تبريد سائل وإخماد حرائق — مثالية لإدارة ذروة الأحمال التجارية واستجابة التردد.",
+        "tag": "تجاري وصناعي", "href": "/products/ci-battery-cabinets"
       },
       {
-        "name": "Grid-Scale BESS Container",
-        "desc": "1MW/2MWh+ containerized systems with integrated PCS, BMS, and EMS. Designed for utility-grade frequency regulation and ancillary services.",
-        "tag": "Utility",
-        "href": "/products/energy-storage-system"
+        "name": "حاوية BESS على نطاق الشبكة",
+        "desc": "أنظمة حاويات 1MW/2MWh+ مع PCS وBMS وEMS مدمجة. مصممة لتنظيم التردد على مستوى المرافق والخدمات المساعدة.",
+        "tag": "مرافق", "href": "/products/energy-storage-system"
       },
       {
-        "name": "Residential ESS",
-        "desc": "5–20kWh all-in-one systems with built-in inverter, supporting self-consumption optimization and grid support.",
-        "tag": "Residential",
-        "href": "/products/residential-ess"
+        "name": "نظام ESS سكني",
+        "desc": "أنظمة متكاملة 5-20 كيلوواط ساعة مع عاكس مدمج، تدعم تحسين الاستهلاك الذاتي ودعم الشبكة.",
+        "tag": "سكني", "href": "/products/residential-ess"
       },
       {
-        "name": "Solar + Storage Integration",
-        "desc": "High-efficiency PV modules paired with storage for hybrid installations — maximize self-use and grid stability revenue.",
-        "tag": "Hybrid",
-        "href": "/products/solar-panels"
+        "name": "تكامل الطاقة الشمسية + التخزين",
+        "desc": "وحدات كهروضوئية عالية الكفاءة مقترنة بالتخزين للتركيبات الهجينة — تعظيم الاستخدام الذاتي وإيرادات استقرار الشبكة.",
+        "tag": "هجين", "href": "/products/solar-panels"
       }
     ]
   },
   "features": {
-    "heading": "Why SolarStorage Pro for Frequency Regulation",
-    "sub": "Our systems are engineered specifically for the demands of grid ancillary services.",
+    "heading": "لماذا SolarStorage Pro لتنظيم التردد",
+    "sub": "صُممت أنظمتنا خصيصًا لمتطلبات خدمات الشبكة المساعدة.",
     "items": [
       {
         "icon": "zap",
-        "title": "Ultra-Fast Response",
-        "body": "Sub-200ms frequency detection and power injection — faster than regulatory requirements in most markets worldwide."
+        "title": "استجابة فائقة السرعة",
+        "body": "كشف التردد وحقن الطاقة في أقل من 200 مللي ثانية — أسرع من المتطلبات التنظيمية في معظم الأسواق العالمية."
       },
       {
         "icon": "shield",
-        "title": "Certified Safety",
-        "body": "IEC 62619, UL 9540A, NFPA 855 compliant. Cell-level BMS with thermal runaway prevention and multi-layer fire suppression."
+        "title": "سلامة معتمدة",
+        "body": "متوافقة مع IEC 62619 وUL 9540A وNFPA 855. نظام إدارة بطارية على مستوى الخلية مع منع الانفلات الحراري وإخماد حرائق متعدد الطبقات."
       },
       {
         "icon": "clock",
-        "title": "Long Cycle Life",
-        "body": "Premium LFP cells rated for 8,000+ cycles at 1C. Predictive degradation modeling and proactive warranty management."
+        "title": "عمر دورة طويل",
+        "body": "خلايا LFP ممتازة مصنفة لأكثر من 8000 دورة عند 1C. نمذجة تنبؤية للتدهور وإدارة استباقية للضمان."
       },
       {
         "icon": "settings",
-        "title": "Smart EMS Integration",
-        "body": "AGC/FCAS-ready controller with real-time frequency monitoring, auto-dispatch algorithms, and multi-market stacking capability."
+        "title": "تكامل EMS ذكي",
+        "body": "وحدة تحكم متوافقة مع AGC/FCAS مع مراقبة التردد في الوقت الفعلي وخوارزميات إرسال تلقائية وقدرة على التجميع متعدد الأسواق."
       }
     ]
   },
   "testimonials": {
-    "heading": "Trusted by Grid Operators Worldwide",
-    "sub": "Real projects, real results — hear from our clients.",
+    "heading": "موثوق به من قبل مشغلي الشبكات حول العالم",
+    "sub": "مشاريع حقيقية، نتائج حقيقية — استمع إلى عملائنا.",
     "items": [
       {
-        "quote": "SolarStorage Pro delivered a 10MW/20MWh BESS for our frequency regulation program. Response time was consistently under 200ms, and the system has been operating flawlessly for 18 months.",
+        "quote": "قامت SolarStorage Pro بتسليم نظام BESS بقدرة 10MW/20MWh لبرنامج تنظيم التردد لدينا. كان زمن الاستجابة باستمرار أقل من 200 مللي ثانية، ويعمل النظام بدون أخطاء لمدة 18 شهرًا.",
         "name": "James Richardson",
-        "role": "VP of Grid Operations",
-        "project": "50MW Frequency Regulation Project · Europe"
+        "role": "نائب رئيس عمليات الشبكة",
+        "project": "مشروع تنظيم تردد 50MW · أوروبا"
       },
       {
-        "quote": "Their technical team understood our requirements immediately. The containerized BESS was delivered on time and integrated seamlessly with our existing SCADA system.",
+        "quote": "فهم فريقهم التقني متطلباتنا على الفور. تم تسليم نظام BESS الحاوي في الوقت المحدد وتم دمجه بسلاسة مع نظام SCADA الحالي لدينا.",
         "name": "Mohammed Al-Farsi",
-        "role": "Director of Power Systems",
-        "project": "20MWh Peak Shaving · Middle East"
+        "role": "مدير أنظمة الطاقة",
+        "project": "إدارة ذروة أحمال 20MWh · الشرق الأوسط"
       },
       {
-        "quote": "We evaluated 6 BESS suppliers. SolarStorage Pro offered the best combination of cycle life guarantee, response speed, and after-sales support. Highly recommended.",
+        "quote": "قمنا بتقييم 6 موردي BESS. قدمت SolarStorage Pro أفضل مزيج من ضمان عمر الدورة وسرعة الاستجابة ودعم ما بعد البيع. موصى به بشدة.",
         "name": "Dr. Kenji Tanaka",
-        "role": "Chief Technology Officer",
-        "project": "Microgrid + Frequency Support · Japan"
+        "role": "الرئيس التنفيذي للتكنولوجيا",
+        "project": "شبكة صغيرة + دعم التردد · اليابان"
       }
     ]
   },
   "anchor": {
-    "caseCenterHeading": "Case Center",
-    "caseCenterSub": "Real-world BESS deployments for frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "resourcesSub": "Datasheets, technical whitepapers, certification documents, and system design guides.",
-    "companySub": "10+ years of battery storage R&D and manufacturing — 3.7 GWh annual capacity with vertically integrated production.",
-    "serviceSub": "Presales engineering, commissioning support, remote monitoring, and 24/7 technical assistance.",
+    "caseCenterHeading": "مركز دراسات الحالة",
+    "caseCenterSub": "نشرات BESS حقيقية لتنظيم التردد وإدارة ذروة الأحمال ودمج الطاقة المتجددة في أكثر من 50 دولة.",
+    "resourcesSub": "أوراق البيانات والمستندات التقنية ووثائق الشهادات وأدلة تصميم الأنظمة.",
+    "companySub": "أكثر من 10 سنوات من البحث والتطوير والتصنيع في تخزين البطاريات — قدرة سنوية 3.7 جيجاوات ساعة مع إنتاج متكامل رأسياً.",
+    "serviceSub": "هندسة ما قبل البيع ودعم التشغيل والمراقبة عن بُعد والمساعدة الفنية على مدار الساعة.",
     "companyStats": [
-      {
-        "k": "Annual capacity",
-        "v": "3.7 GWh+",
-        "d": "Battery manufacturing"
-      },
-      {
-        "k": "R&D experience",
-        "v": "10+ yrs",
-        "d": "BESS engineering"
-      },
-      {
-        "k": "Markets",
-        "v": "50+",
-        "d": "Countries & regions"
-      }
+      { "k": "القدرة السنوية", "v": "+3.7 GWh", "d": "تصنيع البطاريات" },
+      { "k": "خبرة البحث والتطوير", "v": "+10 سنوات", "d": "هندسة BESS" },
+      { "k": "الأسواق", "v": "+50", "d": "دولة ومنطقة" }
     ],
-    "postTeaser": "Detailed case study coming soon — contact us for project data."
+    "postTeaser": "دراسة حالة مفصلة قريبًا — اتصل بنا للحصول على بيانات المشروع."
   },
   "cta": {
-    "title": "Ready to Deploy BESS for Frequency Regulation?",
-    "sub": "Tell us about your grid requirements — our engineers will design a customized solution and deliver a proposal within 48 hours.",
-    "whatsappBtn": "Chat on WhatsApp",
-    "emailBtn": "Send Email",
-    "response": "Average response time: under 24 hours on business days."
+    "title": "هل أنت مستعد لنشر BESS لتنظيم التردد؟",
+    "sub": "أخبرنا عن متطلبات شبكتك — سيقوم مهندسونا بتصميم حل مخصص وتقديم عرض في غضون 48 ساعة.",
+    "whatsappBtn": "محادثة عبر واتساب",
+    "emailBtn": "إرسال بريد إلكتروني",
+    "response": "متوسط وقت الاستجابة: أقل من 24 ساعة في أيام العمل."
   },
   "footer": {
-    "rights": "SolarStorage Energy Tech · All rights reserved",
-    "stack": "Professional BESS manufacturer since 2014."
+    "rights": "SolarStorage Energy Tech · جميع الحقوق محفوظة",
+    "stack": "شركة تصنيع BESS محترفة منذ عام 2014."
   },
   "sticky": {
-    "quickContact": "Quick contact",
-    "aiTitle": "AI product assistant",
-    "aiClose": "Close AI chat",
-    "aiWelcome": "Hi — I can help with BESS sizing, frequency regulation specs, and system configuration. How can I assist you?",
-    "aiFallback": "Sorry, no answer right now. Try again or contact our team.",
-    "aiNetworkError": "Network error — check your connection and retry.",
-    "aiThinking": "Analyzing your query…",
-    "aiPlaceholder": "e.g. What response time do your BESS systems offer?",
-    "aiSend": "Send",
-    "aiCloseMobile": "Close"
+    "quickContact": "اتصال سريع",
+    "aiTitle": "مساعد المنتج الذكي",
+    "aiClose": "إغلاق المحادثة الذكية",
+    "aiWelcome": "مرحبًا — يمكنني المساعدة في تحديد حجم BESS ومواصفات تنظيم التردد وتكوين النظام. كيف يمكنني مساعدتك؟",
+    "aiFallback": "عذرًا، لا توجد إجابة الآن. حاول مرة أخرى أو اتصل بفريقنا.",
+    "aiNetworkError": "خطأ في الشبكة — تحقق من اتصالك وأعد المحاولة.",
+    "aiThinking": "جارٍ تحليل استفسارك…",
+    "aiPlaceholder": "مثال: ما هو زمن الاستجابة الذي توفره أنظمة BESS لديكم؟",
+    "aiSend": "إرسال",
+    "aiCloseMobile": "إغلاق"
   },
   "wechat": {
     "title": "WeChat",
-    "hint": "Save your enterprise WeChat QR as",
-    "missing": "Image not found. Save the QR as wechat-qr.png in the public folder and refresh."
+    "hint": "احفظ رمز QR الخاص بـ WeChat المؤسسي باسم",
+    "missing": "الصورة غير موجودة. احفظ رمز QR باسم wechat-qr.png في مجلد public وقم بالتحديث."
   }
 }

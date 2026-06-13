@@ -1,294 +1,214 @@
 {
   "meta": {
-    "title": "SolarStorage Pro | Battery Energy Storage for Frequency Regulation & Grid Stability",
-    "description": "Leading BESS manufacturer specializing in grid frequency regulation, peak shaving, and energy arbitrage. IEC/CE certified, deployed in 50+ countries. Get a free proposal."
+    "title": "SolarStorage Pro | 周波数調整と系統安定化のための蓄電池エネルギー貯蔵",
+    "description": "系統周波数調整、ピークシェービング、エネルギーアービトラージを専門とするBESS大手メーカー。IEC/CE認証取得、50カ国以上で導入実績。無料提案書を入手。"
   },
   "header": {
-    "contactCta": "Get a Quote",
-    "tagline": "Battery Energy Storage · Grid Frequency Regulation · Global",
-    "mobileQuote": "Get a Quote",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu",
-    "overlayClose": "Close menu overlay",
-    "navAria": "Mobile navigation",
-    "viewAll": "View all"
+    "contactCta": "見積もり依頼",
+    "tagline": "蓄電池エネルギー貯蔵 · 周波数調整 · グローバル",
+    "mobileQuote": "見積もり依頼",
+    "menuOpen": "メニューを開く",
+    "menuClose": "メニューを閉じる",
+    "overlayClose": "メニューオーバーレイを閉じる",
+    "navAria": "モバイルナビゲーション",
+    "viewAll": "すべて表示"
   },
   "nav": [
     {
-      "label": "Products",
+      "label": "製品",
       "href": "/#products",
       "children": [
-        {
-          "label": "Grid-Scale BESS Container",
-          "href": "/products/energy-storage-system"
-        },
-        {
-          "label": "C&I Battery Cabinets",
-          "href": "/products/ci-battery-cabinets"
-        },
-        {
-          "label": "Residential All-in-One ESS",
-          "href": "/products/residential-ess"
-        },
-        {
-          "label": "PCS / Inverter Substation",
-          "href": "/products/pcs"
-        },
-        {
-          "label": "Solar Panels",
-          "href": "/products/solar-panels"
-        }
+        { "label": "系統規模BESSコンテナ", "href": "/products/energy-storage-system" },
+        { "label": "産業用蓄電池キャビネット", "href": "/products/ci-battery-cabinets" },
+        { "label": "家庭用オールインワンESS", "href": "/products/residential-ess" },
+        { "label": "PCS / インバーター変電所", "href": "/products/pcs" },
+        { "label": "ソーラーパネル", "href": "/products/solar-panels" }
       ]
     },
+    { "label": "技術", "href": "/technology" },
     {
-      "label": "Technology",
-      "href": "/technology"
-    },
-    {
-      "label": "Solutions",
+      "label": "ソリューション",
       "href": "/#solutions",
       "children": [
-        {
-          "label": "Grid Frequency Regulation (FCR/aFRR)",
-          "href": "/solutions/grid-level-bess"
-        },
-        {
-          "label": "Data Center Energy Storage",
-          "href": "/solutions/data-center-energy-storage"
-        }
+        { "label": "系統周波数調整（FCR/aFRR）", "href": "/solutions/grid-level-bess" },
+        { "label": "データセンター用蓄電", "href": "/solutions/data-center-energy-storage" }
       ]
     },
-    {
-      "label": "Cases",
-      "href": "/case-center"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
-    },
-    {
-      "label": "Contact",
-      "href": "/#contact"
-    }
+    { "label": "導入事例", "href": "/case-center" },
+    { "label": "ブログ", "href": "/blog" },
+    { "label": "お問い合わせ", "href": "/#contact" }
   ],
   "hero": {
-    "badge": "Frequency Regulation · BESS Specialist",
-    "titleLine1": "The Energy Storage Specialist for",
-    "titleHighlight": "Grid Frequency Regulation",
-    "subtitle": "We design, manufacture, and deploy battery energy storage systems engineered for fast-response frequency regulation — helping grid operators maintain stability and maximize renewable integration.",
+    "badge": "周波数調整 · BESSスペシャリスト",
+    "titleLine1": "系統周波数調整のための",
+    "titleHighlight": "エネルギー貯蔵専門企業",
+    "subtitle": "高速応答の周波数調整に最適化された蓄電池エネルギー貯蔵システムを設計・製造・展開し、系統運用者が安定性を維持し、再生可能エネルギーの統合を最大化できるよう支援します。",
     "trustSignals": [
-      "IEC / CE / UL Certified",
-      "Deployed in 50+ Countries",
-      "24-Hour Technical Response"
+      "IEC / CE / UL 認証取得",
+      "50カ国以上で導入実績",
+      "24時間技術サポート"
     ],
-    "ctaPrimary": "Get Free Proposal",
-    "ctaSecondary": "Download Datasheet"
+    "ctaPrimary": "無料提案書を入手",
+    "ctaSecondary": "データシートをダウンロード"
   },
   "trustBar": {
     "items": [
-      {
-        "label": "IEC Certified",
-        "icon": "shield"
-      },
-      {
-        "label": "CE Certified",
-        "icon": "award"
-      },
-      {
-        "label": "UL Listed",
-        "icon": "shield"
-      },
-      {
-        "label": "ISO 9001",
-        "icon": "factory"
-      },
-      {
-        "label": "50+ Countries",
-        "icon": "globe"
-      }
+      { "label": "IEC認証", "icon": "shield" },
+      { "label": "CE認証", "icon": "award" },
+      { "label": "UL認証", "icon": "shield" },
+      { "label": "ISO 9001", "icon": "factory" },
+      { "label": "50カ国以上", "icon": "globe" }
     ]
   },
   "painPoints": {
-    "heading": "Why Frequency Regulation Matters",
-    "sub": "Grid operators face real challenges. Our BESS solutions are purpose-built to solve them.",
+    "heading": "周波数調整が重要な理由",
+    "sub": "系統運用者は実際の課題に直面しています。当社のBESSソリューションは、それらの課題を解決するために設計されています。",
     "items": [
       {
         "icon": "clock",
-        "title": "Sub-Second Response Required",
-        "body": "Grid frequency deviations must be corrected within milliseconds. Our systems respond in <200ms, exceeding regulatory requirements."
+        "title": "瞬時の応答が必須",
+        "body": "系統周波数の偏差はミリ秒単位で補正する必要があります。当社のシステムは200ミリ秒未満で応答し、規制要件を上回ります。"
       },
       {
         "icon": "trending",
-        "title": "Renewable Integration",
-        "body": "Solar and wind introduce volatility. Our storage systems smooth output fluctuations, enabling higher renewable penetration."
+        "title": "再生可能エネルギーの統合",
+        "body": "太陽光と風力は変動をもたらします。当社の蓄電システムは出力変動を平滑化し、より高い再生可能エネルギー比率を可能にします。"
       },
       {
         "icon": "alert",
-        "title": "Aging Grid Infrastructure",
-        "body": "Traditional generators can't ramp fast enough. Battery storage provides instant, precise power injection and absorption."
+        "title": "老朽化する系統インフラ",
+        "body": "従来の発電機では十分な速さで調整できません。蓄電池は瞬時かつ精密な電力注入と吸収を提供します。"
       },
       {
         "icon": "chart",
-        "title": "Revenue Optimization",
-        "body": "Maximize ancillary service revenue through intelligent dispatch — frequency regulation, peak shaving, and energy arbitrage from a single asset."
+        "title": "収益の最適化",
+        "body": "インテリジェントな制御により、単一の設備から周波数調整、ピークシェービング、エネルギーアービトラージの収益を最大化します。"
       }
     ]
   },
   "statsBar": {
     "items": [
-      {
-        "value": "500MWh+",
-        "label": "Deployed Capacity",
-        "desc": "Battery storage installed worldwide"
-      },
-      {
-        "value": "200ms",
-        "label": "Response Time",
-        "desc": "Fastest in class frequency response"
-      },
-      {
-        "value": "50+",
-        "label": "Countries Served",
-        "desc": "Global project delivery network"
-      },
-      {
-        "value": "10+",
-        "label": "Years Experience",
-        "desc": "BESS engineering & manufacturing"
-      }
+      { "value": "500MWh+", "label": "導入済容量", "desc": "世界中に設置された蓄電システム" },
+      { "value": "200ms", "label": "応答時間", "desc": "クラス最速の周波数応答" },
+      { "value": "50+", "label": "サービス提供国", "desc": "グローバルプロジェクトネットワーク" },
+      { "value": "10+", "label": "年の経験", "desc": "BESSエンジニアリングと製造" }
     ]
   },
   "products": {
-    "heading": "Battery Energy Storage Products",
-    "sub": "From residential to grid-scale — purpose-built cabinets and containers for frequency regulation, peak shaving, and energy management.",
+    "heading": "蓄電池エネルギー貯蔵製品",
+    "sub": "家庭用から系統規模まで — 周波数調整、ピークシェービング、エネルギー管理のための専用キャビネットとコンテナ。",
     "items": [
       {
-        "name": "C&I Battery Cabinets",
-        "desc": "100–500kWh modular cabinets with 1C/2C rate, liquid cooling, and fire suppression — ideal for commercial peak shaving and frequency response.",
-        "tag": "C&I",
-        "href": "/products/ci-battery-cabinets"
+        "name": "産業用蓄電池キャビネット",
+        "desc": "1C/2Cレート対応の100～500kWhモジュラーキャビネット。液冷と消火システムを搭載 — 商業用ピークシェービングと周波数応答に最適。",
+        "tag": "産業用", "href": "/products/ci-battery-cabinets"
       },
       {
-        "name": "Grid-Scale BESS Container",
-        "desc": "1MW/2MWh+ containerized systems with integrated PCS, BMS, and EMS. Designed for utility-grade frequency regulation and ancillary services.",
-        "tag": "Utility",
-        "href": "/products/energy-storage-system"
+        "name": "系統規模BESSコンテナ",
+        "desc": "PCS、BMS、EMSを統合した1MW/2MWh+のコンテナ型システム。系統レベルの周波数調整とアンシラリーサービス向けに設計。",
+        "tag": "系統用", "href": "/products/energy-storage-system"
       },
       {
-        "name": "Residential ESS",
-        "desc": "5–20kWh all-in-one systems with built-in inverter, supporting self-consumption optimization and grid support.",
-        "tag": "Residential",
-        "href": "/products/residential-ess"
+        "name": "家庭用ESS",
+        "desc": "インバーター内蔵の5～20kWhオールインワンシステム。自家消費の最適化と系統サポートを実現。",
+        "tag": "家庭用", "href": "/products/residential-ess"
       },
       {
-        "name": "Solar + Storage Integration",
-        "desc": "High-efficiency PV modules paired with storage for hybrid installations — maximize self-use and grid stability revenue.",
-        "tag": "Hybrid",
-        "href": "/products/solar-panels"
+        "name": "太陽光＋蓄電統合",
+        "desc": "高効率PVモジュールと蓄電池を組み合わせたハイブリッド設置 — 自家消費と系統安定化収益を最大化。",
+        "tag": "ハイブリッド", "href": "/products/solar-panels"
       }
     ]
   },
   "features": {
-    "heading": "Why SolarStorage Pro for Frequency Regulation",
-    "sub": "Our systems are engineered specifically for the demands of grid ancillary services.",
+    "heading": "周波数調整にSolarStorage Proを選ぶ理由",
+    "sub": "当社のシステムは、系統アンシラリーサービスの要件に特化して設計されています。",
     "items": [
       {
         "icon": "zap",
-        "title": "Ultra-Fast Response",
-        "body": "Sub-200ms frequency detection and power injection — faster than regulatory requirements in most markets worldwide."
+        "title": "超高速応答",
+        "body": "200ミリ秒未満での周波数検出と電力注入 — 世界のほとんどの市場で規制要件を上回る性能。"
       },
       {
         "icon": "shield",
-        "title": "Certified Safety",
-        "body": "IEC 62619, UL 9540A, NFPA 855 compliant. Cell-level BMS with thermal runaway prevention and multi-layer fire suppression."
+        "title": "認証済み安全性",
+        "body": "IEC 62619、UL 9540A、NFPA 855準拠。熱暴走防止と多層消火機能を備えたセルレベルBMS。"
       },
       {
         "icon": "clock",
-        "title": "Long Cycle Life",
-        "body": "Premium LFP cells rated for 8,000+ cycles at 1C. Predictive degradation modeling and proactive warranty management."
+        "title": "長サイクル寿命",
+        "body": "1Cで8,000サイクル以上の定格を持つプレミアムLFPセル。予測劣化モデリングとプロアクティブな保証管理。"
       },
       {
         "icon": "settings",
-        "title": "Smart EMS Integration",
-        "body": "AGC/FCAS-ready controller with real-time frequency monitoring, auto-dispatch algorithms, and multi-market stacking capability."
+        "title": "スマートEMS統合",
+        "body": "リアルタイム周波数監視、自動制御アルゴリズム、複数市場スタッキング機能を備えたAGC/FCAS対応コントローラー。"
       }
     ]
   },
   "testimonials": {
-    "heading": "Trusted by Grid Operators Worldwide",
-    "sub": "Real projects, real results — hear from our clients.",
+    "heading": "世界中の系統運用者から信頼",
+    "sub": "実際のプロジェクト、実際の成果 — お客様の声をお聞きください。",
     "items": [
       {
-        "quote": "SolarStorage Pro delivered a 10MW/20MWh BESS for our frequency regulation program. Response time was consistently under 200ms, and the system has been operating flawlessly for 18 months.",
+        "quote": "SolarStorage Proは、当社の周波数調整プログラムに10MW/20MWhのBESSを納入しました。応答時間は常に200ミリ秒未満で、システムは18ヶ月間問題なく稼働しています。",
         "name": "James Richardson",
-        "role": "VP of Grid Operations",
-        "project": "50MW Frequency Regulation Project · Europe"
+        "role": "系統運用担当副社長",
+        "project": "50MW周波数調整プロジェクト · 欧州"
       },
       {
-        "quote": "Their technical team understood our requirements immediately. The containerized BESS was delivered on time and integrated seamlessly with our existing SCADA system.",
+        "quote": "技術チームは当社の要件を即座に理解しました。コンテナ型BESSは予定通り納入され、既存のSCADAシステムとシームレスに統合されました。",
         "name": "Mohammed Al-Farsi",
-        "role": "Director of Power Systems",
-        "project": "20MWh Peak Shaving · Middle East"
+        "role": "電力システムディレクター",
+        "project": "20MWhピークシェービング · 中東"
       },
       {
-        "quote": "We evaluated 6 BESS suppliers. SolarStorage Pro offered the best combination of cycle life guarantee, response speed, and after-sales support. Highly recommended.",
+        "quote": "6社のBESSサプライヤーを評価しました。SolarStorage Proは、サイクル寿命保証、応答速度、アフターサポートの最適な組み合わせを提供しました。強く推奨します。",
         "name": "Dr. Kenji Tanaka",
-        "role": "Chief Technology Officer",
-        "project": "Microgrid + Frequency Support · Japan"
+        "role": "最高技術責任者",
+        "project": "マイクログリッド＋周波数サポート · 日本"
       }
     ]
   },
   "anchor": {
-    "caseCenterHeading": "Case Center",
-    "caseCenterSub": "Real-world BESS deployments for frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "resourcesSub": "Datasheets, technical whitepapers, certification documents, and system design guides.",
-    "companySub": "10+ years of battery storage R&D and manufacturing — 3.7 GWh annual capacity with vertically integrated production.",
-    "serviceSub": "Presales engineering, commissioning support, remote monitoring, and 24/7 technical assistance.",
+    "caseCenterHeading": "導入事例センター",
+    "caseCenterSub": "50カ国以上での周波数調整、ピークシェービング、再生可能エネルギー統合の実際のBESS導入事例。",
+    "resourcesSub": "データシート、技術ホワイトペーパー、認証文書、システム設計ガイド。",
+    "companySub": "10年以上の蓄電池研究開発・製造実績 — 垂直統合生産による年間3.7 GWhの生産能力。",
+    "serviceSub": "プリセールスエンジニアリング、試運転サポート、遠隔監視、24時間365日の技術支援。",
     "companyStats": [
-      {
-        "k": "Annual capacity",
-        "v": "3.7 GWh+",
-        "d": "Battery manufacturing"
-      },
-      {
-        "k": "R&D experience",
-        "v": "10+ yrs",
-        "d": "BESS engineering"
-      },
-      {
-        "k": "Markets",
-        "v": "50+",
-        "d": "Countries & regions"
-      }
+      { "k": "年間生産能力", "v": "3.7 GWh+", "d": "蓄電池製造" },
+      { "k": "研究開発経験", "v": "10年以上", "d": "BESSエンジニアリング" },
+      { "k": "市場", "v": "50+", "d": "国と地域" }
     ],
-    "postTeaser": "Detailed case study coming soon — contact us for project data."
+    "postTeaser": "詳細な導入事例は近日公開 — プロジェクトデータについてはお問い合わせください。"
   },
   "cta": {
-    "title": "Ready to Deploy BESS for Frequency Regulation?",
-    "sub": "Tell us about your grid requirements — our engineers will design a customized solution and deliver a proposal within 48 hours.",
-    "whatsappBtn": "Chat on WhatsApp",
-    "emailBtn": "Send Email",
-    "response": "Average response time: under 24 hours on business days."
+    "title": "周波数調整用BESSの導入準備はお済みですか？",
+    "sub": "系統要件をお知らせください — エンジニアがカスタマイズされたソリューションを設計し、48時間以内に提案書をお届けします。",
+    "whatsappBtn": "WhatsAppで相談",
+    "emailBtn": "メールを送信",
+    "response": "平均応答時間：営業日24時間以内。"
   },
   "footer": {
-    "rights": "SolarStorage Energy Tech · All rights reserved",
-    "stack": "Professional BESS manufacturer since 2014."
+    "rights": "SolarStorage Energy Tech · 無断転載禁止",
+    "stack": "2014年創業のプロフェッショナルBESSメーカー。"
   },
   "sticky": {
-    "quickContact": "Quick contact",
-    "aiTitle": "AI product assistant",
-    "aiClose": "Close AI chat",
-    "aiWelcome": "Hi — I can help with BESS sizing, frequency regulation specs, and system configuration. How can I assist you?",
-    "aiFallback": "Sorry, no answer right now. Try again or contact our team.",
-    "aiNetworkError": "Network error — check your connection and retry.",
-    "aiThinking": "Analyzing your query…",
-    "aiPlaceholder": "e.g. What response time do your BESS systems offer?",
-    "aiSend": "Send",
-    "aiCloseMobile": "Close"
+    "quickContact": "クイック連絡",
+    "aiTitle": "AI製品アシスタント",
+    "aiClose": "AIチャットを閉じる",
+    "aiWelcome": "こんにちは — BESSのサイジング、周波数調整仕様、システム構成についてお手伝いできます。どのようなご用件でしょうか？",
+    "aiFallback": "申し訳ありません。現在回答できません。再度お試しいただくか、弊社チームにお問い合わせください。",
+    "aiNetworkError": "ネットワークエラー — 接続を確認して再試行してください。",
+    "aiThinking": "ご質問を分析中…",
+    "aiPlaceholder": "例：BESSシステムの応答時間はどのくらいですか？",
+    "aiSend": "送信",
+    "aiCloseMobile": "閉じる"
   },
   "wechat": {
     "title": "WeChat",
-    "hint": "Save your enterprise WeChat QR as",
-    "missing": "Image not found. Save the QR as wechat-qr.png in the public folder and refresh."
+    "hint": "企業WeChat QRコードを次の場所に保存：",
+    "missing": "画像が見つかりません。QRコードをwechat-qr.pngとしてpublicフォルダに保存し、更新してください。"
   }
 }

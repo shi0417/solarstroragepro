@@ -1,294 +1,214 @@
 {
   "meta": {
-    "title": "SolarStorage Pro | Battery Energy Storage for Frequency Regulation & Grid Stability",
-    "description": "Leading BESS manufacturer specializing in grid frequency regulation, peak shaving, and energy arbitrage. IEC/CE certified, deployed in 50+ countries. Get a free proposal."
+    "title": "SolarStorage Pro | Penyimpanan Energi Baterai untuk Regulasi Frekuensi & Stabilitas Jaringan",
+    "description": "Produsen BESS terkemuka yang mengkhususkan diri dalam regulasi frekuensi jaringan, peak shaving, dan arbitrase energi. Tersertifikasi IEC/CE/UL, digunakan di 50+ negara. Dapatkan proposal gratis."
   },
   "header": {
-    "contactCta": "Get a Quote",
-    "tagline": "Battery Energy Storage · Grid Frequency Regulation · Global",
-    "mobileQuote": "Get a Quote",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu",
-    "overlayClose": "Close menu overlay",
-    "navAria": "Mobile navigation",
-    "viewAll": "View all"
+    "contactCta": "Minta Penawaran",
+    "tagline": "Penyimpanan Energi Baterai · Regulasi Frekuensi · Global",
+    "mobileQuote": "Minta Penawaran",
+    "menuOpen": "Buka menu",
+    "menuClose": "Tutup menu",
+    "overlayClose": "Tutup overlay menu",
+    "navAria": "Navigasi seluler",
+    "viewAll": "Lihat semua"
   },
   "nav": [
     {
-      "label": "Products",
+      "label": "Produk",
       "href": "/#products",
       "children": [
-        {
-          "label": "Grid-Scale BESS Container",
-          "href": "/products/energy-storage-system"
-        },
-        {
-          "label": "C&I Battery Cabinets",
-          "href": "/products/ci-battery-cabinets"
-        },
-        {
-          "label": "Residential All-in-One ESS",
-          "href": "/products/residential-ess"
-        },
-        {
-          "label": "PCS / Inverter Substation",
-          "href": "/products/pcs"
-        },
-        {
-          "label": "Solar Panels",
-          "href": "/products/solar-panels"
-        }
+        { "label": "Kontainer BESS Skala Jaringan", "href": "/products/energy-storage-system" },
+        { "label": "Lemari Baterai Komersial & Industri", "href": "/products/ci-battery-cabinets" },
+        { "label": "Sistem ESS Perumahan All-in-One", "href": "/products/residential-ess" },
+        { "label": "Gardu PCS / Inverter", "href": "/products/pcs" },
+        { "label": "Panel Surya", "href": "/products/solar-panels" }
       ]
     },
+    { "label": "Teknologi", "href": "/technology" },
     {
-      "label": "Technology",
-      "href": "/technology"
-    },
-    {
-      "label": "Solutions",
+      "label": "Solusi",
       "href": "/#solutions",
       "children": [
-        {
-          "label": "Grid Frequency Regulation (FCR/aFRR)",
-          "href": "/solutions/grid-level-bess"
-        },
-        {
-          "label": "Data Center Energy Storage",
-          "href": "/solutions/data-center-energy-storage"
-        }
+        { "label": "Regulasi Frekuensi Jaringan (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
+        { "label": "Penyimpanan Energi Pusat Data", "href": "/solutions/data-center-energy-storage" }
       ]
     },
-    {
-      "label": "Cases",
-      "href": "/case-center"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
-    },
-    {
-      "label": "Contact",
-      "href": "/#contact"
-    }
+    { "label": "Studi Kasus", "href": "/case-center" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Kontak", "href": "/#contact" }
   ],
   "hero": {
-    "badge": "Frequency Regulation · BESS Specialist",
-    "titleLine1": "The Energy Storage Specialist for",
-    "titleHighlight": "Grid Frequency Regulation",
-    "subtitle": "We design, manufacture, and deploy battery energy storage systems engineered for fast-response frequency regulation — helping grid operators maintain stability and maximize renewable integration.",
+    "badge": "Regulasi Frekuensi · Spesialis BESS",
+    "titleLine1": "Spesialis Penyimpanan Energi untuk",
+    "titleHighlight": "Regulasi Frekuensi Jaringan",
+    "subtitle": "Kami merancang, memproduksi, dan menerapkan sistem penyimpanan energi baterai yang dioptimalkan untuk regulasi frekuensi respons cepat — membantu operator jaringan menjaga stabilitas dan memaksimalkan integrasi energi terbarukan.",
     "trustSignals": [
-      "IEC / CE / UL Certified",
-      "Deployed in 50+ Countries",
-      "24-Hour Technical Response"
+      "Tersertifikasi IEC / CE / UL",
+      "Digunakan di 50+ Negara",
+      "Respons Teknis 24 Jam"
     ],
-    "ctaPrimary": "Get Free Proposal",
-    "ctaSecondary": "Download Datasheet"
+    "ctaPrimary": "Dapatkan Proposal Gratis",
+    "ctaSecondary": "Unduh Lembar Data"
   },
   "trustBar": {
     "items": [
-      {
-        "label": "IEC Certified",
-        "icon": "shield"
-      },
-      {
-        "label": "CE Certified",
-        "icon": "award"
-      },
-      {
-        "label": "UL Listed",
-        "icon": "shield"
-      },
-      {
-        "label": "ISO 9001",
-        "icon": "factory"
-      },
-      {
-        "label": "50+ Countries",
-        "icon": "globe"
-      }
+      { "label": "Tersertifikasi IEC", "icon": "shield" },
+      { "label": "Tersertifikasi CE", "icon": "award" },
+      { "label": "Tercatat UL", "icon": "shield" },
+      { "label": "ISO 9001", "icon": "factory" },
+      { "label": "50+ Negara", "icon": "globe" }
     ]
   },
   "painPoints": {
-    "heading": "Why Frequency Regulation Matters",
-    "sub": "Grid operators face real challenges. Our BESS solutions are purpose-built to solve them.",
+    "heading": "Mengapa Regulasi Frekuensi Itu Penting",
+    "sub": "Operator jaringan menghadapi tantangan nyata. Solusi BESS kami dirancang untuk mengatasinya.",
     "items": [
       {
         "icon": "clock",
-        "title": "Sub-Second Response Required",
-        "body": "Grid frequency deviations must be corrected within milliseconds. Our systems respond in <200ms, exceeding regulatory requirements."
+        "title": "Respons Sub-Detik Diperlukan",
+        "body": "Penyimpangan frekuensi jaringan harus dikoreksi dalam milidetik. Sistem kami merespons dalam <200ms, melampaui persyaratan regulasi."
       },
       {
         "icon": "trending",
-        "title": "Renewable Integration",
-        "body": "Solar and wind introduce volatility. Our storage systems smooth output fluctuations, enabling higher renewable penetration."
+        "title": "Integrasi Energi Terbarukan",
+        "body": "Tenaga surya dan angin menyebabkan volatilitas. Sistem penyimpanan kami menghaluskan fluktuasi output, memungkinkan penetrasi energi terbarukan yang lebih tinggi."
       },
       {
         "icon": "alert",
-        "title": "Aging Grid Infrastructure",
-        "body": "Traditional generators can't ramp fast enough. Battery storage provides instant, precise power injection and absorption."
+        "title": "Infrastruktur Jaringan yang Menua",
+        "body": "Generator tradisional tidak dapat mengatur dengan cukup cepat. Penyimpanan baterai memberikan injeksi dan penyerapan daya yang instan dan presisi."
       },
       {
         "icon": "chart",
-        "title": "Revenue Optimization",
-        "body": "Maximize ancillary service revenue through intelligent dispatch — frequency regulation, peak shaving, and energy arbitrage from a single asset."
+        "title": "Optimalisasi Pendapatan",
+        "body": "Maksimalkan pendapatan layanan tambahan melalui pengiriman cerdas — regulasi frekuensi, peak shaving, dan arbitrase energi dari satu aset."
       }
     ]
   },
   "statsBar": {
     "items": [
-      {
-        "value": "500MWh+",
-        "label": "Deployed Capacity",
-        "desc": "Battery storage installed worldwide"
-      },
-      {
-        "value": "200ms",
-        "label": "Response Time",
-        "desc": "Fastest in class frequency response"
-      },
-      {
-        "value": "50+",
-        "label": "Countries Served",
-        "desc": "Global project delivery network"
-      },
-      {
-        "value": "10+",
-        "label": "Years Experience",
-        "desc": "BESS engineering & manufacturing"
-      }
+      { "value": "500MWh+", "label": "Kapasitas Terpasang", "desc": "Penyimpanan baterai terpasang global" },
+      { "value": "200ms", "label": "Waktu Respons", "desc": "Respons frekuensi tercepat di kelasnya" },
+      { "value": "50+", "label": "Negara Dilayani", "desc": "Jaringan pengiriman proyek global" },
+      { "value": "10+", "label": "Tahun Pengalaman", "desc": "Rekayasa & manufaktur BESS" }
     ]
   },
   "products": {
-    "heading": "Battery Energy Storage Products",
-    "sub": "From residential to grid-scale — purpose-built cabinets and containers for frequency regulation, peak shaving, and energy management.",
+    "heading": "Produk Penyimpanan Energi Baterai",
+    "sub": "Dari perumahan hingga skala jaringan — lemari dan kontainer yang dirancang khusus untuk regulasi frekuensi, peak shaving, dan manajemen energi.",
     "items": [
       {
-        "name": "C&I Battery Cabinets",
-        "desc": "100–500kWh modular cabinets with 1C/2C rate, liquid cooling, and fire suppression — ideal for commercial peak shaving and frequency response.",
-        "tag": "C&I",
-        "href": "/products/ci-battery-cabinets"
+        "name": "Lemari Baterai Komersial & Industri",
+        "desc": "Lemari modular 100–500kWh dengan laju 1C/2C, pendinginan cair, dan pemadam kebakaran — ideal untuk peak shaving komersial dan respons frekuensi.",
+        "tag": "Komersial", "href": "/products/ci-battery-cabinets"
       },
       {
-        "name": "Grid-Scale BESS Container",
-        "desc": "1MW/2MWh+ containerized systems with integrated PCS, BMS, and EMS. Designed for utility-grade frequency regulation and ancillary services.",
-        "tag": "Utility",
-        "href": "/products/energy-storage-system"
+        "name": "Kontainer BESS Skala Jaringan",
+        "desc": "Sistem kontainer 1MW/2MWh+ dengan PCS, BMS, dan EMS terintegrasi. Dirancang untuk regulasi frekuensi tingkat utilitas dan layanan tambahan.",
+        "tag": "Utilitas", "href": "/products/energy-storage-system"
       },
       {
-        "name": "Residential ESS",
-        "desc": "5–20kWh all-in-one systems with built-in inverter, supporting self-consumption optimization and grid support.",
-        "tag": "Residential",
-        "href": "/products/residential-ess"
+        "name": "Sistem ESS Perumahan",
+        "desc": "Sistem all-in-one 5–20kWh dengan inverter bawaan, mendukung optimalisasi konsumsi mandiri dan dukungan jaringan.",
+        "tag": "Perumahan", "href": "/products/residential-ess"
       },
       {
-        "name": "Solar + Storage Integration",
-        "desc": "High-efficiency PV modules paired with storage for hybrid installations — maximize self-use and grid stability revenue.",
-        "tag": "Hybrid",
-        "href": "/products/solar-panels"
+        "name": "Integrasi Surya + Penyimpanan",
+        "desc": "Modul PV efisiensi tinggi dipadukan dengan penyimpanan untuk instalasi hibrida — maksimalkan penggunaan sendiri dan pendapatan stabilitas jaringan.",
+        "tag": "Hibrida", "href": "/products/solar-panels"
       }
     ]
   },
   "features": {
-    "heading": "Why SolarStorage Pro for Frequency Regulation",
-    "sub": "Our systems are engineered specifically for the demands of grid ancillary services.",
+    "heading": "Mengapa SolarStorage Pro untuk Regulasi Frekuensi",
+    "sub": "Sistem kami direkayasa secara khusus untuk tuntutan layanan tambahan jaringan.",
     "items": [
       {
         "icon": "zap",
-        "title": "Ultra-Fast Response",
-        "body": "Sub-200ms frequency detection and power injection — faster than regulatory requirements in most markets worldwide."
+        "title": "Respons Ultra-Cepat",
+        "body": "Deteksi frekuensi dan injeksi daya di bawah 200ms — lebih cepat dari persyaratan regulasi di sebagian besar pasar global."
       },
       {
         "icon": "shield",
-        "title": "Certified Safety",
-        "body": "IEC 62619, UL 9540A, NFPA 855 compliant. Cell-level BMS with thermal runaway prevention and multi-layer fire suppression."
+        "title": "Keamanan Tersertifikasi",
+        "body": "Mematuhi IEC 62619, UL 9540A, NFPA 855. BMS tingkat sel dengan pencegahan thermal runaway dan pemadam kebakaran multi-lapis."
       },
       {
         "icon": "clock",
-        "title": "Long Cycle Life",
-        "body": "Premium LFP cells rated for 8,000+ cycles at 1C. Predictive degradation modeling and proactive warranty management."
+        "title": "Umur Siklus Panjang",
+        "body": "Sel LFP premium dengan rating 8.000+ siklus pada 1C. Pemodelan degradasi prediktif dan manajemen garansi proaktif."
       },
       {
         "icon": "settings",
-        "title": "Smart EMS Integration",
-        "body": "AGC/FCAS-ready controller with real-time frequency monitoring, auto-dispatch algorithms, and multi-market stacking capability."
+        "title": "Integrasi EMS Cerdas",
+        "body": "Kontroler siap AGC/FCAS dengan pemantauan frekuensi real-time, algoritma pengiriman otomatis, dan kemampuan penumpukan multi-pasar."
       }
     ]
   },
   "testimonials": {
-    "heading": "Trusted by Grid Operators Worldwide",
-    "sub": "Real projects, real results — hear from our clients.",
+    "heading": "Dipercaya oleh Operator Jaringan di Seluruh Dunia",
+    "sub": "Proyek nyata, hasil nyata — dengarkan dari klien kami.",
     "items": [
       {
-        "quote": "SolarStorage Pro delivered a 10MW/20MWh BESS for our frequency regulation program. Response time was consistently under 200ms, and the system has been operating flawlessly for 18 months.",
+        "quote": "SolarStorage Pro mengirimkan BESS 10MW/20MWh untuk program regulasi frekuensi kami. Waktu respons secara konsisten di bawah 200ms, dan sistem telah beroperasi tanpa cacat selama 18 bulan.",
         "name": "James Richardson",
-        "role": "VP of Grid Operations",
-        "project": "50MW Frequency Regulation Project · Europe"
+        "role": "VP Operasi Jaringan",
+        "project": "Proyek Regulasi Frekuensi 50MW · Eropa"
       },
       {
-        "quote": "Their technical team understood our requirements immediately. The containerized BESS was delivered on time and integrated seamlessly with our existing SCADA system.",
+        "quote": "Tim teknis mereka langsung memahami persyaratan kami. BESS kontainer dikirimkan tepat waktu dan terintegrasi dengan mulus dengan sistem SCADA kami yang ada.",
         "name": "Mohammed Al-Farsi",
-        "role": "Director of Power Systems",
-        "project": "20MWh Peak Shaving · Middle East"
+        "role": "Direktur Sistem Tenaga",
+        "project": "Peak Shaving 20MWh · Timur Tengah"
       },
       {
-        "quote": "We evaluated 6 BESS suppliers. SolarStorage Pro offered the best combination of cycle life guarantee, response speed, and after-sales support. Highly recommended.",
+        "quote": "Kami mengevaluasi 6 pemasok BESS. SolarStorage Pro menawarkan kombinasi terbaik dari jaminan umur siklus, kecepatan respons, dan dukungan purna jual. Sangat direkomendasikan.",
         "name": "Dr. Kenji Tanaka",
         "role": "Chief Technology Officer",
-        "project": "Microgrid + Frequency Support · Japan"
+        "project": "Microgrid + Dukungan Frekuensi · Jepang"
       }
     ]
   },
   "anchor": {
-    "caseCenterHeading": "Case Center",
-    "caseCenterSub": "Real-world BESS deployments for frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "resourcesSub": "Datasheets, technical whitepapers, certification documents, and system design guides.",
-    "companySub": "10+ years of battery storage R&D and manufacturing — 3.7 GWh annual capacity with vertically integrated production.",
-    "serviceSub": "Presales engineering, commissioning support, remote monitoring, and 24/7 technical assistance.",
+    "caseCenterHeading": "Pusat Studi Kasus",
+    "caseCenterSub": "Penerapan BESS nyata untuk regulasi frekuensi, peak shaving, dan integrasi energi terbarukan di 50+ negara.",
+    "resourcesSub": "Lembar data, whitepaper teknis, dokumen sertifikasi, dan panduan desain sistem.",
+    "companySub": "Pengalaman R&D dan manufaktur penyimpanan baterai 10+ tahun — kapasitas tahunan 3,7 GWh dengan produksi terintegrasi vertikal.",
+    "serviceSub": "Rekayasa pra-penjualan, dukungan komisioning, pemantauan jarak jauh, dan bantuan teknis 24/7.",
     "companyStats": [
-      {
-        "k": "Annual capacity",
-        "v": "3.7 GWh+",
-        "d": "Battery manufacturing"
-      },
-      {
-        "k": "R&D experience",
-        "v": "10+ yrs",
-        "d": "BESS engineering"
-      },
-      {
-        "k": "Markets",
-        "v": "50+",
-        "d": "Countries & regions"
-      }
+      { "k": "Kapasitas tahunan", "v": "3,7 GWh+", "d": "Manufaktur baterai" },
+      { "k": "Pengalaman R&D", "v": "10+ tahun", "d": "Rekayasa BESS" },
+      { "k": "Pasar", "v": "50+", "d": "Negara & wilayah" }
     ],
-    "postTeaser": "Detailed case study coming soon — contact us for project data."
+    "postTeaser": "Studi kasus terperinci segera hadir — hubungi kami untuk data proyek."
   },
   "cta": {
-    "title": "Ready to Deploy BESS for Frequency Regulation?",
-    "sub": "Tell us about your grid requirements — our engineers will design a customized solution and deliver a proposal within 48 hours.",
-    "whatsappBtn": "Chat on WhatsApp",
-    "emailBtn": "Send Email",
-    "response": "Average response time: under 24 hours on business days."
+    "title": "Siap Menerapkan BESS untuk Regulasi Frekuensi?",
+    "sub": "Beri tahu kami tentang persyaratan jaringan Anda — teknisi kami akan merancang solusi khusus dan memberikan proposal dalam 48 jam.",
+    "whatsappBtn": "Chat via WhatsApp",
+    "emailBtn": "Kirim Email",
+    "response": "Waktu respons rata-rata: di bawah 24 jam pada hari kerja."
   },
   "footer": {
-    "rights": "SolarStorage Energy Tech · All rights reserved",
-    "stack": "Professional BESS manufacturer since 2014."
+    "rights": "SolarStorage Energy Tech · Hak cipta dilindungi",
+    "stack": "Produsen BESS profesional sejak 2014."
   },
   "sticky": {
-    "quickContact": "Quick contact",
-    "aiTitle": "AI product assistant",
-    "aiClose": "Close AI chat",
-    "aiWelcome": "Hi — I can help with BESS sizing, frequency regulation specs, and system configuration. How can I assist you?",
-    "aiFallback": "Sorry, no answer right now. Try again or contact our team.",
-    "aiNetworkError": "Network error — check your connection and retry.",
-    "aiThinking": "Analyzing your query…",
-    "aiPlaceholder": "e.g. What response time do your BESS systems offer?",
-    "aiSend": "Send",
-    "aiCloseMobile": "Close"
+    "quickContact": "Kontak cepat",
+    "aiTitle": "Asisten produk AI",
+    "aiClose": "Tutup obrolan AI",
+    "aiWelcome": "Halo — Saya dapat membantu dengan ukuran BESS, spesifikasi regulasi frekuensi, dan konfigurasi sistem. Ada yang bisa saya bantu?",
+    "aiFallback": "Maaf, tidak ada jawaban saat ini. Coba lagi atau hubungi tim kami.",
+    "aiNetworkError": "Kesalahan jaringan — periksa koneksi Anda dan coba lagi.",
+    "aiThinking": "Menganalisis pertanyaan Anda…",
+    "aiPlaceholder": "Contoh: Berapa waktu respons yang ditawarkan sistem BESS Anda?",
+    "aiSend": "Kirim",
+    "aiCloseMobile": "Tutup"
   },
   "wechat": {
     "title": "WeChat",
-    "hint": "Save your enterprise WeChat QR as",
-    "missing": "Image not found. Save the QR as wechat-qr.png in the public folder and refresh."
+    "hint": "Simpan QR Code WeChat sebagai",
+    "missing": "Gambar tidak ditemukan. Simpan QR sebagai wechat-qr.png di folder public dan segarkan."
   }
 }

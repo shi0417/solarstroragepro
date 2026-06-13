@@ -1,294 +1,214 @@
 {
   "meta": {
-    "title": "SolarStorage Pro | Battery Energy Storage for Frequency Regulation & Grid Stability",
-    "description": "Leading BESS manufacturer specializing in grid frequency regulation, peak shaving, and energy arbitrage. IEC/CE certified, deployed in 50+ countries. Get a free proposal."
+    "title": "SolarStorage Pro | Frekans Regülasyonu ve Şebeke Kararlılığı için Batarya Enerji Depolama",
+    "description": "Şebeke frekans regülasyonu, puant yük yönetimi ve enerji arbitrajı konusunda uzmanlaşmış lider BESS üreticisi. IEC/CE sertifikalı, 50'den fazla ülkede kurulu. Ücretsiz teklif alın."
   },
   "header": {
-    "contactCta": "Get a Quote",
-    "tagline": "Battery Energy Storage · Grid Frequency Regulation · Global",
-    "mobileQuote": "Get a Quote",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu",
-    "overlayClose": "Close menu overlay",
-    "navAria": "Mobile navigation",
-    "viewAll": "View all"
+    "contactCta": "Teklif Al",
+    "tagline": "Batarya Enerji Depolama · Frekans Regülasyonu · Küresel",
+    "mobileQuote": "Teklif Al",
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat",
+    "overlayClose": "Menü kaplamasını kapat",
+    "navAria": "Mobil navigasyon",
+    "viewAll": "Tümünü gör"
   },
   "nav": [
     {
-      "label": "Products",
+      "label": "Ürünler",
       "href": "/#products",
       "children": [
-        {
-          "label": "Grid-Scale BESS Container",
-          "href": "/products/energy-storage-system"
-        },
-        {
-          "label": "C&I Battery Cabinets",
-          "href": "/products/ci-battery-cabinets"
-        },
-        {
-          "label": "Residential All-in-One ESS",
-          "href": "/products/residential-ess"
-        },
-        {
-          "label": "PCS / Inverter Substation",
-          "href": "/products/pcs"
-        },
-        {
-          "label": "Solar Panels",
-          "href": "/products/solar-panels"
-        }
+        { "label": "Şebeke Ölçekli BESS Konteyneri", "href": "/products/energy-storage-system" },
+        { "label": "Ticari ve Endüstriyel Batarya Dolapları", "href": "/products/ci-battery-cabinets" },
+        { "label": "Konut Hepsi Bir Arada ESS", "href": "/products/residential-ess" },
+        { "label": "PCS / İnvertör Trafo Merkezi", "href": "/products/pcs" },
+        { "label": "Güneş Panelleri", "href": "/products/solar-panels" }
       ]
     },
+    { "label": "Teknoloji", "href": "/technology" },
     {
-      "label": "Technology",
-      "href": "/technology"
-    },
-    {
-      "label": "Solutions",
+      "label": "Çözümler",
       "href": "/#solutions",
       "children": [
-        {
-          "label": "Grid Frequency Regulation (FCR/aFRR)",
-          "href": "/solutions/grid-level-bess"
-        },
-        {
-          "label": "Data Center Energy Storage",
-          "href": "/solutions/data-center-energy-storage"
-        }
+        { "label": "Şebeke Frekans Regülasyonu (FCR/aFRR)", "href": "/solutions/grid-level-bess" },
+        { "label": "Veri Merkezi Enerji Depolama", "href": "/solutions/data-center-energy-storage" }
       ]
     },
-    {
-      "label": "Cases",
-      "href": "/case-center"
-    },
-    {
-      "label": "Blog",
-      "href": "/blog"
-    },
-    {
-      "label": "Contact",
-      "href": "/#contact"
-    }
+    { "label": "Vakalar", "href": "/case-center" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "İletişim", "href": "/#contact" }
   ],
   "hero": {
-    "badge": "Frequency Regulation · BESS Specialist",
-    "titleLine1": "The Energy Storage Specialist for",
-    "titleHighlight": "Grid Frequency Regulation",
-    "subtitle": "We design, manufacture, and deploy battery energy storage systems engineered for fast-response frequency regulation — helping grid operators maintain stability and maximize renewable integration.",
+    "badge": "Frekans Regülasyonu · BESS Uzmanı",
+    "titleLine1": "Şebeke Frekans Regülasyonu için",
+    "titleHighlight": "Enerji Depolama Uzmanı",
+    "subtitle": "Hızlı yanıtlı frekans regülasyonu için optimize edilmiş batarya enerji depolama sistemleri tasarlıyor, üretiyor ve devreye alıyoruz — şebeke operatörlerinin kararlılığı korumasına ve yenilenebilir entegrasyonunu maksimize etmesine yardımcı oluyoruz.",
     "trustSignals": [
-      "IEC / CE / UL Certified",
-      "Deployed in 50+ Countries",
-      "24-Hour Technical Response"
+      "IEC / CE / UL Sertifikalı",
+      "50'den Fazla Ülkede Kurulu",
+      "24 Saat Teknik Destek"
     ],
-    "ctaPrimary": "Get Free Proposal",
-    "ctaSecondary": "Download Datasheet"
+    "ctaPrimary": "Ücretsiz Teklif Alın",
+    "ctaSecondary": "Veri Sayfasını İndir"
   },
   "trustBar": {
     "items": [
-      {
-        "label": "IEC Certified",
-        "icon": "shield"
-      },
-      {
-        "label": "CE Certified",
-        "icon": "award"
-      },
-      {
-        "label": "UL Listed",
-        "icon": "shield"
-      },
-      {
-        "label": "ISO 9001",
-        "icon": "factory"
-      },
-      {
-        "label": "50+ Countries",
-        "icon": "globe"
-      }
+      { "label": "IEC Sertifikalı", "icon": "shield" },
+      { "label": "CE Sertifikalı", "icon": "award" },
+      { "label": "UL Listeli", "icon": "shield" },
+      { "label": "ISO 9001", "icon": "factory" },
+      { "label": "50+ Ülke", "icon": "globe" }
     ]
   },
   "painPoints": {
-    "heading": "Why Frequency Regulation Matters",
-    "sub": "Grid operators face real challenges. Our BESS solutions are purpose-built to solve them.",
+    "heading": "Frekans Regülasyonu Neden Önemlidir",
+    "sub": "Şebeke operatörleri gerçek zorluklarla karşı karşıya. BESS çözümlerimiz bunları çözmek için özel olarak üretildi.",
     "items": [
       {
         "icon": "clock",
-        "title": "Sub-Second Response Required",
-        "body": "Grid frequency deviations must be corrected within milliseconds. Our systems respond in <200ms, exceeding regulatory requirements."
+        "title": "Saniyenin Altında Yanıt Gereksinimi",
+        "body": "Şebeke frekans sapmaları milisaniyeler içinde düzeltilmelidir. Sistemlerimiz <200ms'de yanıt vererek düzenleyici gereklilikleri aşar."
       },
       {
         "icon": "trending",
-        "title": "Renewable Integration",
-        "body": "Solar and wind introduce volatility. Our storage systems smooth output fluctuations, enabling higher renewable penetration."
+        "title": "Yenilenebilir Entegrasyonu",
+        "body": "Güneş ve rüzgar enerjisi dalgalanmalara neden olur. Depolama sistemlerimiz çıkış dalgalanmalarını düzelterek daha yüksek yenilenebilir penetrasyonu sağlar."
       },
       {
         "icon": "alert",
-        "title": "Aging Grid Infrastructure",
-        "body": "Traditional generators can't ramp fast enough. Battery storage provides instant, precise power injection and absorption."
+        "title": "Yaşlanan Şebeke Altyapısı",
+        "body": "Geleneksel jeneratörler yeterince hızlı regüle edemez. Batarya depolama anlık, hassas güç enjeksiyonu ve emilimi sağlar."
       },
       {
         "icon": "chart",
-        "title": "Revenue Optimization",
-        "body": "Maximize ancillary service revenue through intelligent dispatch — frequency regulation, peak shaving, and energy arbitrage from a single asset."
+        "title": "Gelir Optimizasyonu",
+        "body": "Akıllı sevkiyat ile yardımcı hizmet gelirini maksimize edin — tek bir varlıktan frekans regülasyonu, puant yük yönetimi ve enerji arbitrajı."
       }
     ]
   },
   "statsBar": {
     "items": [
-      {
-        "value": "500MWh+",
-        "label": "Deployed Capacity",
-        "desc": "Battery storage installed worldwide"
-      },
-      {
-        "value": "200ms",
-        "label": "Response Time",
-        "desc": "Fastest in class frequency response"
-      },
-      {
-        "value": "50+",
-        "label": "Countries Served",
-        "desc": "Global project delivery network"
-      },
-      {
-        "value": "10+",
-        "label": "Years Experience",
-        "desc": "BESS engineering & manufacturing"
-      }
+      { "value": "500MWh+", "label": "Kurulu Kapasite", "desc": "Dünya genelinde kurulu batarya depolama" },
+      { "value": "200ms", "label": "Yanıt Süresi", "desc": "Sınıfının en hızlı frekans yanıtı" },
+      { "value": "50+", "label": "Hizmet Verilen Ülke", "desc": "Küresel proje teslimat ağı" },
+      { "value": "10+", "label": "Yıllık Deneyim", "desc": "BESS mühendisliği ve üretimi" }
     ]
   },
   "products": {
-    "heading": "Battery Energy Storage Products",
-    "sub": "From residential to grid-scale — purpose-built cabinets and containers for frequency regulation, peak shaving, and energy management.",
+    "heading": "Batarya Enerji Depolama Ürünleri",
+    "sub": "Konuttan şebeke ölçeğine — frekans regülasyonu, puant yük yönetimi ve enerji yönetimi için özel olarak tasarlanmış dolaplar ve konteynerler.",
     "items": [
       {
-        "name": "C&I Battery Cabinets",
-        "desc": "100–500kWh modular cabinets with 1C/2C rate, liquid cooling, and fire suppression — ideal for commercial peak shaving and frequency response.",
-        "tag": "C&I",
-        "href": "/products/ci-battery-cabinets"
+        "name": "Ticari ve Endüstriyel Batarya Dolapları",
+        "desc": "1C/2C oranlı, sıvı soğutmalı ve yangın söndürme sistemli 100–500kWh modüler dolaplar — ticari puant yük yönetimi ve frekans yanıtı için ideal.",
+        "tag": "Ticari", "href": "/products/ci-battery-cabinets"
       },
       {
-        "name": "Grid-Scale BESS Container",
-        "desc": "1MW/2MWh+ containerized systems with integrated PCS, BMS, and EMS. Designed for utility-grade frequency regulation and ancillary services.",
-        "tag": "Utility",
-        "href": "/products/energy-storage-system"
+        "name": "Şebeke Ölçekli BESS Konteyneri",
+        "desc": "Entegre PCS, BMS ve EMS'li 1MW/2MWh+ konteyner sistemleri. Şebeke düzeyinde frekans regülasyonu ve yardımcı hizmetler için tasarlanmıştır.",
+        "tag": "Şebeke", "href": "/products/energy-storage-system"
       },
       {
-        "name": "Residential ESS",
-        "desc": "5–20kWh all-in-one systems with built-in inverter, supporting self-consumption optimization and grid support.",
-        "tag": "Residential",
-        "href": "/products/residential-ess"
+        "name": "Konut ESS",
+        "desc": "Dahili invertörlü 5–20kWh hepsi bir arada sistemler, öz tüketim optimizasyonu ve şebeke desteği sağlar.",
+        "tag": "Konut", "href": "/products/residential-ess"
       },
       {
-        "name": "Solar + Storage Integration",
-        "desc": "High-efficiency PV modules paired with storage for hybrid installations — maximize self-use and grid stability revenue.",
-        "tag": "Hybrid",
-        "href": "/products/solar-panels"
+        "name": "Güneş + Depolama Entegrasyonu",
+        "desc": "Hibrit kurulumlar için yüksek verimli PV modülleri depolama ile birleştirildi — öz kullanımı ve şebeke kararlılığı gelirini maksimize edin.",
+        "tag": "Hibrit", "href": "/products/solar-panels"
       }
     ]
   },
   "features": {
-    "heading": "Why SolarStorage Pro for Frequency Regulation",
-    "sub": "Our systems are engineered specifically for the demands of grid ancillary services.",
+    "heading": "Frekans Regülasyonu için Neden SolarStorage Pro",
+    "sub": "Sistemlerimiz, şebeke yardımcı hizmetlerinin talepleri için özel olarak tasarlanmıştır.",
     "items": [
       {
         "icon": "zap",
-        "title": "Ultra-Fast Response",
-        "body": "Sub-200ms frequency detection and power injection — faster than regulatory requirements in most markets worldwide."
+        "title": "Ultra Hızlı Yanıt",
+        "body": "200ms'nin altında frekans algılama ve güç enjeksiyonu — dünya çapındaki çoğu pazarda düzenleyici gerekliliklerden daha hızlı."
       },
       {
         "icon": "shield",
-        "title": "Certified Safety",
-        "body": "IEC 62619, UL 9540A, NFPA 855 compliant. Cell-level BMS with thermal runaway prevention and multi-layer fire suppression."
+        "title": "Sertifikalı Güvenlik",
+        "body": "IEC 62619, UL 9540A, NFPA 855 uyumlu. Termal kaçak önleme ve çok katmanlı yangın söndürme özellikli hücre seviyesinde BMS."
       },
       {
         "icon": "clock",
-        "title": "Long Cycle Life",
-        "body": "Premium LFP cells rated for 8,000+ cycles at 1C. Predictive degradation modeling and proactive warranty management."
+        "title": "Uzun Çevrim Ömrü",
+        "body": "1C'de 8.000'den fazla çevrim için derecelendirilmiş premium LFP hücreler. Öngörücü bozulma modellemesi ve proaktif garanti yönetimi."
       },
       {
         "icon": "settings",
-        "title": "Smart EMS Integration",
-        "body": "AGC/FCAS-ready controller with real-time frequency monitoring, auto-dispatch algorithms, and multi-market stacking capability."
+        "title": "Akıllı EMS Entegrasyonu",
+        "body": "Gerçek zamanlı frekans izleme, otomatik sevkiyat algoritmaları ve çoklu piyasa istifleme kapasitesine sahip AGC/FCAS uyumlu kontrolör."
       }
     ]
   },
   "testimonials": {
-    "heading": "Trusted by Grid Operators Worldwide",
-    "sub": "Real projects, real results — hear from our clients.",
+    "heading": "Dünya Genelinde Şebeke Operatörleri Tarafından Güveniliyor",
+    "sub": "Gerçek projeler, gerçek sonuçlar — müşterilerimizi dinleyin.",
     "items": [
       {
-        "quote": "SolarStorage Pro delivered a 10MW/20MWh BESS for our frequency regulation program. Response time was consistently under 200ms, and the system has been operating flawlessly for 18 months.",
+        "quote": "SolarStorage Pro, frekans regülasyonu programımız için 10MW/20MWh BESS teslim etti. Yanıt süresi sürekli olarak 200ms'nin altındaydı ve sistem 18 aydır sorunsuz çalışıyor.",
         "name": "James Richardson",
-        "role": "VP of Grid Operations",
-        "project": "50MW Frequency Regulation Project · Europe"
+        "role": "Şebeke Operasyonları Başkan Yardımcısı",
+        "project": "50MW Frekans Regülasyonu Projesi · Avrupa"
       },
       {
-        "quote": "Their technical team understood our requirements immediately. The containerized BESS was delivered on time and integrated seamlessly with our existing SCADA system.",
+        "quote": "Teknik ekipleri gereksinimlerimizi hemen anladı. Konteyner BESS zamanında teslim edildi ve mevcut SCADA sistemimizle sorunsuz entegre edildi.",
         "name": "Mohammed Al-Farsi",
-        "role": "Director of Power Systems",
-        "project": "20MWh Peak Shaving · Middle East"
+        "role": "Güç Sistemleri Direktörü",
+        "project": "20MWh Puant Yük Yönetimi · Orta Doğu"
       },
       {
-        "quote": "We evaluated 6 BESS suppliers. SolarStorage Pro offered the best combination of cycle life guarantee, response speed, and after-sales support. Highly recommended.",
+        "quote": "6 BESS tedarikçisini değerlendirdik. SolarStorage Pro, çevrim ömrü garantisi, yanıt hızı ve satış sonrası desteğin en iyi kombinasyonunu sundu. Şiddetle tavsiye edilir.",
         "name": "Dr. Kenji Tanaka",
-        "role": "Chief Technology Officer",
-        "project": "Microgrid + Frequency Support · Japan"
+        "role": "Baş Teknoloji Sorumlusu",
+        "project": "Mikroşebeke + Frekans Desteği · Japonya"
       }
     ]
   },
   "anchor": {
-    "caseCenterHeading": "Case Center",
-    "caseCenterSub": "Real-world BESS deployments for frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "resourcesSub": "Datasheets, technical whitepapers, certification documents, and system design guides.",
-    "companySub": "10+ years of battery storage R&D and manufacturing — 3.7 GWh annual capacity with vertically integrated production.",
-    "serviceSub": "Presales engineering, commissioning support, remote monitoring, and 24/7 technical assistance.",
+    "caseCenterHeading": "Vaka Merkezi",
+    "caseCenterSub": "50'den fazla ülkede frekans regülasyonu, puant yük yönetimi ve yenilenebilir entegrasyonu için gerçek BESS kurulumları.",
+    "resourcesSub": "Veri sayfaları, teknik beyaz kitaplar, sertifikasyon belgeleri ve sistem tasarım kılavuzları.",
+    "companySub": "10 yılı aşkın batarya depolama Ar-Ge ve üretim deneyimi — dikey entegre üretim ile 3,7 GWh yıllık kapasite.",
+    "serviceSub": "Satış öncesi mühendislik, devreye alma desteği, uzaktan izleme ve 7/24 teknik yardım.",
     "companyStats": [
-      {
-        "k": "Annual capacity",
-        "v": "3.7 GWh+",
-        "d": "Battery manufacturing"
-      },
-      {
-        "k": "R&D experience",
-        "v": "10+ yrs",
-        "d": "BESS engineering"
-      },
-      {
-        "k": "Markets",
-        "v": "50+",
-        "d": "Countries & regions"
-      }
+      { "k": "Yıllık kapasite", "v": "3,7 GWh+", "d": "Batarya üretimi" },
+      { "k": "Ar-Ge deneyimi", "v": "10+ yıl", "d": "BESS mühendisliği" },
+      { "k": "Pazarlar", "v": "50+", "d": "Ülke ve bölge" }
     ],
-    "postTeaser": "Detailed case study coming soon — contact us for project data."
+    "postTeaser": "Detaylı vaka çalışması yakında — proje verileri için bizimle iletişime geçin."
   },
   "cta": {
-    "title": "Ready to Deploy BESS for Frequency Regulation?",
-    "sub": "Tell us about your grid requirements — our engineers will design a customized solution and deliver a proposal within 48 hours.",
-    "whatsappBtn": "Chat on WhatsApp",
-    "emailBtn": "Send Email",
-    "response": "Average response time: under 24 hours on business days."
+    "title": "Frekans Regülasyonu için BESS Kurmaya Hazır mısınız?",
+    "sub": "Şebeke gereksinimlerinizi bize bildirin — mühendislerimiz özel bir çözüm tasarlayacak ve 48 saat içinde bir teklif sunacaktır.",
+    "whatsappBtn": "WhatsApp'ta Sohbet",
+    "emailBtn": "E-posta Gönder",
+    "response": "Ortalama yanıt süresi: iş günlerinde 24 saatten az."
   },
   "footer": {
-    "rights": "SolarStorage Energy Tech · All rights reserved",
-    "stack": "Professional BESS manufacturer since 2014."
+    "rights": "SolarStorage Energy Tech · Tüm hakları saklıdır",
+    "stack": "2014'ten beri profesyonel BESS üreticisi."
   },
   "sticky": {
-    "quickContact": "Quick contact",
-    "aiTitle": "AI product assistant",
-    "aiClose": "Close AI chat",
-    "aiWelcome": "Hi — I can help with BESS sizing, frequency regulation specs, and system configuration. How can I assist you?",
-    "aiFallback": "Sorry, no answer right now. Try again or contact our team.",
-    "aiNetworkError": "Network error — check your connection and retry.",
-    "aiThinking": "Analyzing your query…",
-    "aiPlaceholder": "e.g. What response time do your BESS systems offer?",
-    "aiSend": "Send",
-    "aiCloseMobile": "Close"
+    "quickContact": "Hızlı iletişim",
+    "aiTitle": "Yapay zeka ürün asistanı",
+    "aiClose": "AI sohbeti kapat",
+    "aiWelcome": "Merhaba — BESS boyutlandırma, frekans regülasyonu özellikleri ve sistem konfigürasyonu konusunda yardımcı olabilirim. Size nasıl yardımcı olabilirim?",
+    "aiFallback": "Üzgünüz, şu anda yanıt veremiyoruz. Tekrar deneyin veya ekibimizle iletişime geçin.",
+    "aiNetworkError": "Ağ hatası — bağlantınızı kontrol edip tekrar deneyin.",
+    "aiThinking": "Sorunuz analiz ediliyor…",
+    "aiPlaceholder": "Örn: BESS sistemleriniz hangi yanıt süresini sunuyor?",
+    "aiSend": "Gönder",
+    "aiCloseMobile": "Kapat"
   },
   "wechat": {
     "title": "WeChat",
-    "hint": "Save your enterprise WeChat QR as",
-    "missing": "Image not found. Save the QR as wechat-qr.png in the public folder and refresh."
+    "hint": "Kurumsal WeChat QR kodunu şuraya kaydedin:",
+    "missing": "Görüntü bulunamadı. QR kodunu public klasörüne wechat-qr.png olarak kaydedin ve yenileyin."
   }
 }
