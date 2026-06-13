@@ -10,9 +10,8 @@ import { ResourceDownload } from "./ResourceDownload";
 import { useLocaleContext } from "./LocaleProvider";
 
 export function Cta() {
-  const { messages, locale } = useLocaleContext();
+  const { messages } = useLocaleContext();
   const c = messages.cta;
-  const isZh = locale === "zh";
 
   return (
     <section id="contact" className="scroll-mt-20 relative overflow-hidden bg-gradient-to-br from-brand-800 via-brand-900 to-brand-950 dark-section-overlay">
@@ -42,7 +41,7 @@ export function Cta() {
           {/* Left: Contact Form */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-xl backdrop-blur sm:p-8">
             <h3 className="mb-6 text-lg font-bold text-white">
-              {isZh ? "在线询盘" : "Quick Inquiry"}
+              {c.inquiryTitle}
             </h3>
             <ContactForm compact />
           </div>
@@ -51,7 +50,7 @@ export function Cta() {
           <div className="flex flex-col justify-between gap-6">
             <div>
               <h3 className="mb-4 text-lg font-bold text-white">
-                {isZh ? "或直接联系我们" : "Or reach us directly"}
+                {c.orReachUs}
               </h3>
               <div className="flex flex-col gap-3">
                 <a
@@ -78,12 +77,10 @@ export function Cta() {
             {/* 24/7 Support badge */}
             <div className="rounded-xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur">
               <p className="text-sm font-semibold text-white">
-                {isZh ? "跨时区技术服务" : "24/7 Technical Support Across Time Zones"}
+                {c.supportTitle}
               </p>
               <p className="mt-1 text-xs text-brand-300/60">
-                {isZh
-                  ? "我们的工程团队覆盖亚太、欧洲和美洲时区"
-                  : "Our engineering team covers APAC, European, and Americas time zones"}
+                {c.supportSub}
               </p>
             </div>
           </div>
@@ -93,12 +90,10 @@ export function Cta() {
         <div className="mt-16">
           <div className="mb-8 text-center">
             <h3 className="text-2xl font-bold text-white sm:text-3xl">
-              {isZh ? "免费下载技术资料" : "Free Technical Resources"}
+              {c.resourceTitle}
             </h3>
             <p className="mt-2 text-brand-200/70">
-              {isZh
-                ? "白皮书、选型手册和认证指南——助力您的项目决策"
-                : "Whitepapers, selection guides, and certification references to support your project decisions"}
+              {c.resourceSub}
             </p>
           </div>
           <div className="mx-auto max-w-4xl">

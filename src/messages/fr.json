@@ -283,7 +283,13 @@
     "sub": "Décrivez-nous vos besoins réseau — nos ingénieurs concevront une solution sur mesure et fourniront une proposition sous 48 heures.",
     "whatsappBtn": "Chatter sur WhatsApp",
     "emailBtn": "Envoyer un Email",
-    "response": "Délai de réponse moyen : moins de 24 heures les jours ouvrés."
+    "response": "Délai de réponse moyen : moins de 24 heures les jours ouvrés.",
+    "inquiryTitle": "Demande rapide",
+    "orReachUs": "Ou contactez-nous directement",
+    "supportTitle": "Support technique 24/7 sur tous les fuseaux horaires",
+    "supportSub": "Notre équipe d'ingénieurs couvre les fuseaux horaires APAC, Europe et Amériques",
+    "resourceTitle": "Ressources techniques gratuites",
+    "resourceSub": "Livres blancs, guides de sélection et références de certification pour soutenir vos décisions de projet"
   },
   "footer": {
     "rights": "SolarStorage Energy Tech · Tous droits réservés",
@@ -305,5 +311,174 @@
     "title": "WeChat",
     "hint": "Enregistrez le QR code WeChat en tant que",
     "missing": "Image introuvable. Enregistrez le QR code sous wechat-qr.png dans le dossier public et actualisez."
+  },
+  "contactForm": {
+    "successTitle": "Merci !",
+    "successMessage": "Nos ingénieurs vous contacteront dans les 24 heures.",
+    "nameLabel": "Nom complet",
+    "namePlaceholder": "Votre nom complet",
+    "companyLabel": "Nom de l'entreprise",
+    "companyPlaceholder": "Votre entreprise",
+    "emailLabel": "E-mail professionnel",
+    "emailPlaceholder": "nom@entreprise.com",
+    "projectTypeLabel": "Type de projet",
+    "projectTypePlaceholder": "-- Sélectionner le type de projet --",
+    "messageLabel": "Exigences du projet",
+    "messagePlaceholder": "Décrivez brièvement vos besoins en matière de projet, capacité requise, etc.",
+    "errorPrefix": "Échec de l'envoi : ",
+    "submittingText": "Envoi en cours...",
+    "submitText": "Envoyer la demande",
+    "privacyNote": "Vos informations sont sécurisées et ne seront jamais partagées avec des tiers.",
+    "projectOptions": [
+      "Régulation de fréquence réseau",
+      "Lissage des pics",
+      "Intégration renouvelable",
+      "Stockage centre de données",
+      "Industriel et commercial",
+      "ESS résidentiel",
+      "Autre"
+    ]
+  },
+  "resourceDownload": {
+    "downloadStarted": "Téléchargement démarré !",
+    "downloadMessage": "Votre fichier est en cours de téléchargement. Notre équipe vous contactera également par e-mail.",
+    "downloadMore": "Télécharger plus de ressources",
+    "freeDownload": "Téléchargement gratuit",
+    "businessEmail": "E-mail professionnel",
+    "fullName": "Nom complet",
+    "companyName": "Entreprise",
+    "namePlaceholder": "Votre nom",
+    "companyPlaceholder": "Votre entreprise",
+    "submissionFailed": "Échec de l'envoi. Veuillez réessayer.",
+    "processing": "Traitement en cours...",
+    "downloadNow": "Télécharger maintenant",
+    "backBtn": "Retour",
+    "clickNote": "* Cliquez sur une ressource pour démarrer le téléchargement — e-mail requis",
+    "resources": [
+      {
+        "title": "Livre blanc sur la régulation de fréquence BESS",
+        "desc": "Analyse technique approfondie de la régulation de fréquence avec les systèmes BESS"
+      },
+      {
+        "title": "Guide de sélection BESS",
+        "desc": "Guide complet de comparaison et dimensionnement pour toutes les gammes de produits"
+      },
+      {
+        "title": "Guide mondial de certification",
+        "desc": "Exigences de certification UL 9540 / IEC 62619 / CE par marché"
+      }
+    ]
+  },
+  "casesPreview": {
+    "eyebrow": "Projets Réels",
+    "heading": "Cas de Régulation de Fréquence",
+    "sub": "Du NEM australien au Nord de l'Europe et à l'Asie du Sud-Est — voici comment notre BESS fonctionne sur le terrain.",
+    "viewAll": "Voir Toutes les Études de Cas",
+    "readMore": "Lire l'étude"
+  },
+  "productsCiBattery": {
+    "badge": "Commercial & Industriel",
+    "title": "Armoires à Batteries C&I",
+    "desc": "Armoires modulaires à batteries de 100–500kWh avec taux 1C/2C, refroidissement liquide et triple suppression incendie — conçues pour le lissage de charges commerciaux et réponse en fréquence réseau.",
+    "tagRate": "Taux 1C/2C",
+    "tagCooling": "Refroidissement Liquide",
+    "tagCycles": "8 000+ Cycles",
+    "tagIp55": "IP55",
+    "certTitle": "Certifications",
+    "certSub": "Normes internationales de transport et sécurité",
+    "altText": "Armoire à Batteries C&I",
+    "playVideo": "Lire la vidéo",
+    "fallbackText": "Image/vidéo temporaire — télécharger les médias du produit",
+    "featHeading": "Avantages Clés",
+    "featSub": "Conçu pour les applications C&I : décharge à taux élevé, sécurité ultime et flexibilité modulaire.",
+    "features": [
+      {
+        "t": "Taux Élevé 1C/2C",
+        "b": "Prend en charge les taux de charge/décharge 1C et 2C pour une réponse rapide en régulation de fréquence — ajustement de puissance en moins de 200 ms."
+      },
+      {
+        "t": "Refroidissement Liquide",
+        "b": "Système intelligent de refroidissement liquide avec contrôle précis de température cellulaire — écart de température de pack ≤2 °C pour une durée de vie prolongée."
+      },
+      {
+        "t": "Triple Suppression Incendie",
+        "b": "Protection contre l'incendie à trois niveaux — pack, cluster et armoire — systèmes de sécurité redondants perfluoro, aérosol et pulvérisation d'eau."
+      },
+      {
+        "t": "Design Modulaire",
+        "b": "Conception d'armoire standard avec expansion flexible — installation simplifiée sur site et faibles coûts de maintenance."
+      },
+      {
+        "t": "BMS Intelligent",
+        "b": "Surveillance au niveau cellulaire avec estimation SOH en temps réel, alerte de défaut, alerte précoce de emballement thermique et support O&M distant."
+      },
+      {
+        "t": "Configuration Flexible",
+        "b": "Couverture de capacité 100–500 kWh pour le lissage de charges, réponse en fréquence, gestion de demande et plus encore."
+      }
+    ],
+    "specTitle": "Spécifications",
+    "specSub": "Faites défiler horizontalement sur mobile pour voir toutes les variantes de capacité.",
+    "specCorner": "Paramètre \\ Modèle",
+    "certs": [
+      "IEC 62619",
+      "UN38.3",
+      "CE",
+      "UL 9540A",
+      "GB/T 36276-2023"
+    ],
+    "appTitle": "Scénarios d'Application",
+    "apps": [
+      {
+        "t": "Régulation de Fréseau Réseau",
+        "d": "Réponse en millisecondes répondant aux exigences de services auxiliaires FCR/aFRR"
+      },
+      {
+        "t": "Lissage de Pics",
+        "d": "Réduit les charges de pointe et optimise les coûts d'électricité"
+      },
+      {
+        "t": "Alimentation Secours",
+        "d": "Alimentation sans interruption pour les charges critiques"
+      }
+    ],
+    "ctaTitle": "Obtenir une Solution Sur Mesure",
+    "ctaSub": "Décrivez votre projet — nos ingénieurs concevront une solution personnalisée sous 48 heures.",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbProducts": "Produits"
+  },
+  "blog": {
+    "latestArticles": "Derniers Articles",
+    "readMore": "Lire la Suite",
+    "publishedOn": "Publié le",
+    "minRead": "min de lecture",
+    "backToBlog": "Retour au Blog",
+    "relatedPosts": "Articles Connexes",
+    "noResults": "Aucun article trouvé.",
+    "categories": "Catégories",
+    "allCategories": "Toutes",
+    "searchBlog": "Rechercher des articles..."
+  },
+  "caseCenter": {
+    "titre": "Centre d'Études de Cas",
+    "subtitle": "Déploiements réels dans plus de 50 pays démontrant la performance de notre BESS en régulation de fréquence, lissage de pics et intégration renouvelable.",
+    "allCases": "Tous les Cas",
+    "gridFreq": "Réglage Fréq. Réseau",
+    "peakShave": "Lissage de Pics",
+    "renewable": "Intégr. Renouv.",
+    "noCases": "Pas encore de cas disponibles.",
+    "filterByRegion": "Filtrer par Région",
+    "allRegions": "Toutes les Régions"
+  },
+  "technology": {
+    "title": "Plateforme Technologique Principale",
+    "subtitle": "Intégration propriétaire BMS + PCS + EMS offrant une réponse en fréquence au niveau de la milliseconde avec algorithmes de répartition intelligents.",
+    "bmsTitle": "Système de Gestion de Batteries (BMS)",
+    "bmsSub": " Surveillance en temps réel, équilibrage au niveau cellule et protection multicouche.",
+    "pcsTitle": "Système de Conversion de Puissance (PCS)",
+    "pcsSub": "Onduleur bidirectionnel prenant en charge les modes Grid-Forming et Grid-Following avec un rendement >98%.",
+    "emsTitle": "Système de Gestion d'Énergie (EMS)",
+    "emsSub": "Contrôleur prêt pour AGC/FCAS avec prévision basée sur l'IA et optimisation de répartition automatique.",
+    "viewCases": "Voir les Cas de Régulation de Fréquence"
   }
 }

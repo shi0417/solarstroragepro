@@ -283,7 +283,13 @@
     "sub": "系統要件をお知らせください — エンジニアがカスタマイズされたソリューションを設計し、48時間以内に提案書をお届けします。",
     "whatsappBtn": "WhatsAppで相談",
     "emailBtn": "メールを送信",
-    "response": "平均応答時間：営業日24時間以内。"
+    "response": "平均応答時間：営業日24時間以内。",
+    "inquiryTitle": "お問い合わせ",
+    "orReachUs": "または直接ご連絡ください",
+    "supportTitle": "24時間365日のタイムゾーンを跨ぐテクニカルサポート",
+    "supportSub": "当社エンジニアリングチームはアジア太平洋・ヨーロッパ・アメリカ地域のタイムゾーンに対応しています",
+    "resourceTitle": "無料技術資料",
+    "resourceSub": "ホワイトペーパー、選定ガイド、認証参考情報でプロジェクト判断をサポート"
   },
   "footer": {
     "rights": "SolarStorage Energy Tech · 無断転載禁止",
@@ -305,5 +311,174 @@
     "title": "WeChat",
     "hint": "企業WeChat QRコードを次の場所に保存：",
     "missing": "画像が見つかりません。QRコードをwechat-qr.pngとしてpublicフォルダに保存し、更新してください。"
+  },
+  "contactForm": {
+    "successTitle": "ありがとうございます！",
+    "successMessage": "当社のエンジニアが24時間以内にご連絡いたします。",
+    "nameLabel": "氏名",
+    "namePlaceholder": "お名前（氏名）",
+    "companyLabel": "会社名",
+    "companyPlaceholder": "御社名",
+    "emailLabel": "業務用メール",
+    "emailPlaceholder": "name@company.com",
+    "projectTypeLabel": "プロジェクト種別",
+    "projectTypePlaceholder": "-- プロジェクト種別を選択 --",
+    "messageLabel": "プロジェクト要件",
+    "messagePlaceholder": "プロジェクトのニーズ、必要容量などを簡潔にご記載ください。",
+    "errorPrefix": "送信に失敗しました：",
+    "submittingText": "送信中...",
+    "submitText": "問い合わせを送信",
+    "privacyNote": "お客様の情報は安全に管理され、第三者と共有されることはありません。",
+    "projectOptions": [
+      "グリッド周波数調整",
+      "ピークカット",
+      "再生可能エネルギー統合",
+      "データセンター蓄電",
+      "産業・商業用",
+      "住宅用蓄電システム",
+      "その他"
+    ]
+  },
+  "resourceDownload": {
+    "downloadStarted": "ダウンロードを開始しました！",
+    "downloadMessage": "ファイルをダウンロード中です。当社チームからもメールにてご連絡いたします。",
+    "downloadMore": "その他のリソースをダウンロード",
+    "freeDownload": "無料ダウンロード",
+    "businessEmail": "ビジネスメール",
+    "fullName": "氏名",
+    "companyName": "会社名",
+    "namePlaceholder": "お名前",
+    "companyPlaceholder": "御社名",
+    "submissionFailed": "送信に失敗しました。もう一度お試しください。",
+    "processing": "処理中...",
+    "downloadNow": "今すぐダウンロード",
+    "backBtn": "戻る",
+    "clickNote": "* リソースをクリックしてダウンロードを開始してください — メールアドレスが必要です",
+    "resources": [
+      {
+        "title": "周波数調整BESS技術資料",
+        "desc": "BESSシステムによるグリッド周波数調整に関する技術的な詳細分析"
+      },
+      {
+        "title": "BESS選定ガイド",
+        "desc": "全製品ラインの完全なパラメータ比較およびサイジングガイド"
+      },
+      {
+        "title": "世界認証ガイド",
+        "desc": "市場別UL 9540 / IEC 62619 / CE認証要件"
+      }
+    ]
+  },
+  "casesPreview": {
+    "eyebrow": "実績プロジェクト",
+    "heading": "周波数調整導入事例",
+    "sub": "オーストラリアのNEMから北欧・東南アジアまで——当社BESSが現場でどのように稼働しているかをご紹介します。",
+    "viewAll": "すべての導入事例を見る",
+    "readMore": "事例を読む"
+  },
+  "productsCiBattery": {
+    "badge": "商用工業用",
+    "title": "C&I蓄電キャビネット",
+    "desc": "100–500kWhモジュラー式蓄電キャビネット。1C/2Cレート、液冷、三重消火システム搭載——商用工業のピークカットおよびグリッド周波数調整用途に特別設計。",
+    "tagRate": "1C/2Cレート",
+    "tagCooling": "液冷式",
+    "tagCycles": "8,000+サイクル",
+    "tagIp55": "IP55",
+    "certTitle": "認証",
+    "certSub": "国際輸送・安全基準",
+    "altText": "C&I蓄電キャビネット",
+    "playVideo": "動画を再生",
+    "fallbackText": "画像/動画のプレースホルダー——製品メディアをアップロード",
+    "featHeading": "主要な利点",
+    "featSub": "C&I用途向けに設計：高出力放電、最高レベルの安全性、モジュラーフレキシビリティ。",
+    "features": [
+      {
+        "t": "1C/2C高出力",
+        "b": "高速な周波数調整応答のため1C/2C充放電レート対応——200ミリ秒以内で出力調整。"
+      },
+      {
+        "t": "液冷方式",
+        "b": "精密なセル温度制御を行うインテリジェント液冷システム——パック内温度差≤2℃で長寿命化。"
+      },
+      {
+        "t": "三重消火システム",
+        "b": "パック・クラスタ・キャビネットの3層消火対策——パフルオロ、エアロゾル、散水の多重安全システム。"
+      },
+      {
+        "t": "モジューラ設計",
+        "b": "柔軟な拡張対応の標準キャビネット設計——現地設置簡単、低メンテナンスコスト。"
+      },
+      {
+        "t": "スマートBMS",
+        "b": "リアルタイムSOH推定、故障警告、熱暴走早期警告、リモートO&Mサポート付きセルレベル監視。"
+      },
+      {
+        "t": "柔軟な構成",
+        "b": "ピークカット、周波数応答、デマンド管理などに対応する100～500kWh容量カバー。"
+      }
+    ],
+    "specTitle": "仕様",
+    "specSub": "モバイルで横スクロールして全容量バリエーションをご確認ください。",
+    "specCorner": "パラメータ \\ モデル",
+    "certs": [
+      "IEC 62619",
+      "UN38.3",
+      "CE",
+      "UL 9540A",
+      "GB/T 36276-2023"
+    ],
+    "appTitle": "適用シーン",
+    "apps": [
+      {
+        "t": "グリッド周波数調整",
+        "d": "ミリ秒応答でFCR/aFRR補助サービス要件を満たす"
+      },
+      {
+        "t": "ピークカット",
+        "d": "ピーク需要料金を削減し、電気代を最適化"
+      },
+      {
+        "t": "非常用電源",
+        "d": "重要負荷への無停電電源供給"
+      }
+    ],
+    "ctaTitle": "カスタムソリューションを取得",
+    "ctaSub": "プロジェクトをお聞かせください——48時間以内にエンジニアがカスタムソリューションを設計いたします。",
+    "breadcrumbHome": "ホーム",
+    "breadcrumbProducts": "製品"
+  },
+  "blog": {
+    "latestArticles": "最新記事",
+    "readMore": "続きを読む",
+    "publishedOn": "公開日",
+    "minRead": "分で読む",
+    "backToBlog": "ブログに戻る",
+    "relatedPosts": "関連記事",
+    "noResults": "記事が見つかりませんでした。",
+    "categories": "カテゴリ",
+    "allCategories": "すべて",
+    "searchBlog": "記事を検索..."
+  },
+  "caseCenter": {
+    "title": "導入事例センター",
+    "subtitle": "50以上の国での実際の導入実績——当社BESSの周波数調整、ピークカット、再エネ統合における性能を実証。",
+    "allCases": "全ての事例",
+    "gridFreq": "グリッド周波数調整",
+    "peakShave": "ピークカット",
+    "renewable": "再エネ統合",
+    "noCases": "まだ事例がありません。",
+    "filterByRegion": "地域でフィルター",
+    "allRegions": "全ての地域"
+  },
+  "technology": {
+    "title": "コアテクノロジープラットフォーム",
+    "subtitle": "独自のBMS＋PCS＋EMS統合により、インテリジェントディスパッチアルゴリズムでミリ秒級の周波数応答を実現。",
+    "bmsTitle": "バッテリー管理システム（BMS）",
+    "bmsSub": "リアルタイム監視、セルレベルバランシング、多層保護。",
+    "pcsTitle": "電力変換システム（PCS）",
+    "pcsSub": "双方向インバーター、グリドフォーミング/グリドフォローイング対応、往復効率>98%。",
+    "emsTitle": "エネルギー管理システム（EMS）",
+    "emsSub": "AGC/FCAS対応コントローラー、AI予測＋自動ディスパッチ最適化。",
+    "viewCases": "周波数調整事例を見る"
   }
 }

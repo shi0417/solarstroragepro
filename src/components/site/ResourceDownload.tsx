@@ -14,10 +14,8 @@ import { useLocaleContext } from "./LocaleProvider";
 
 type Resource = {
   slug: string;
-  titleEn: string;
-  titleZh: string;
-  descEn: string;
-  descZh: string;
+  titleKey: number; // index into resourceDownload.resources[].title
+  descKey: number;  // index into resourceDownload.resources[].desc
   icon: React.ReactNode;
   fileName: string;
 };
@@ -25,36 +23,31 @@ type Resource = {
 const RESOURCES: Resource[] = [
   {
     slug: "frequency-regulation-whitepaper",
-    titleEn: "Frequency Regulation BESS Whitepaper",
-    titleZh: "调频储能技术白皮书",
-    descEn: "Technical deep-dive into grid frequency regulation with BESS systems",
-    descZh: "调频储能系统技术深度解析",
+    titleKey: 0,
+    descKey: 0,
     icon: <BookOpen className="h-6 w-6" aria-hidden />,
     fileName: "SolarStoragePro-Frequency-Regulation-Whitepaper.pdf",
   },
   {
     slug: "bess-selection-guide",
-    titleEn: "BESS Selection Guide",
-    titleZh: "储能柜选型手册",
-    descEn: "Complete parameter comparison and sizing guide for all product lines",
-    descZh: "全产品线参数对比与选型指南",
+    titleKey: 1,
+    descKey: 1,
     icon: <ClipboardList className="h-6 w-6" aria-hidden />,
     fileName: "SolarStoragePro-BESS-Selection-Guide.pdf",
   },
   {
     slug: "certification-guide",
-    titleEn: "Global Certification Guide",
-    titleZh: "全球认证准入指南",
-    descEn: "UL 9540 / IEC 62619 / CE certification requirements by market",
-    descZh: "UL 9540 / IEC 62619 / CE 各市场认证要求",
+    titleKey: 2,
+    descKey: 2,
     icon: <FileText className="h-6 w-6" aria-hidden />,
     fileName: "SolarStoragePro-Certification-Guide.pdf",
   },
 ];
 
 export function ResourceDownload() {
-  const { locale } = useLocaleContext();
-  const isZh = locale === "zh";
+  const { messages } = useLocaleContext();
+  const rd = messages.resourceDownload;
+  const resources = rd.resources as { title: string; desc: string }[];
 
   const [selectedResource, setSelectedResource] = useState<Resource | null>(null);
   const [email, setEmail] = useState("");
@@ -77,7 +70,7 @@ export function ResourceDownload() {
           name,
           company,
           resourceSlug: selectedResource.slug,
-          resourceName: isZh ? selectedResource.titleZh : selectedResource.titleEn,
+          resourceName: resources[selectedResource.titleKey]?.title ?? selectedResource.slug,
         }),
       });
 
@@ -114,12 +107,10 @@ export function ResourceDownload() {
       <div className="flex flex-col items-center gap-3 rounded-2xl border border-emerald-200 bg-emerald-50 p-8 text-center">
         <CheckCircle2 className="h-12 w-12 text-emerald-500" aria-hidden />
         <h3 className="text-lg font-bold text-emerald-800">
-          {isZh ? "下载已开始！" : "Download started!"}
+          {rd.downloadStarted}
         </h3>
         <p className="text-sm text-emerald-600">
-          {isZh
-            ? "文件正在下载，我们的团队也会通过邮件与您联系。"
-            : "Your file is downloading. Our team will also reach out via email."}
+          {rd.downloadMessage}
         </p>
         <button
           onClick={() => {
@@ -131,7 +122,7 @@ export function ResourceDownload() {
           }}
           className="mt-2 text-sm font-medium text-brand-600 hover:text-brand-700"
         >
-          {isZh ? "下载更多资料" : "Download more resources"}
+          {rd.downloadMore}
         </button>
       </div>
     );
@@ -153,22 +144,20 @@ export function ResourceDownload() {
                 {r.icon}
               </div>
               <h3 className="mt-4 text-base font-bold text-slate-900">
-                {isZh ? r.titleZh : r.titleEn}
+                {resources[r.titleKey]?.title}
               </h3>
               <p className="mt-1.5 text-sm text-slate-500">
-                {isZh ? r.descZh : r.descEn}
+                {resources[r.descKey]?.desc}
               </p>
               <div className="mt-4 flex items-center gap-1.5 text-sm font-semibold text-brand-600">
                 <Download className="h-4 w-4" aria-hidden />
-                {isZh ? "免费下载" : "Free Download"}
+                {rd.freeDownload}
               </div>
             </button>
           ))}
         </div>
         <p className="mt-4 text-center text-xs text-slate-400">
-          {isZh
-            ? "* 点击资料即进入下载流程，需填写邮箱"
-            : "* Click a resource to start the download — email required"}
+          {rd.clickNote}
         </p>
       </div>
     );
@@ -183,10 +172,10 @@ export function ResourceDownload() {
         </div>
         <div>
           <h3 className="font-bold text-slate-900">
-            {isZh ? selectedResource.titleZh : selectedResource.titleEn}
+            {resources[selectedResource.titleKey]?.title}
           </h3>
           <p className="text-sm text-slate-500">
-            {isZh ? selectedResource.descZh : selectedResource.descEn}
+            {resources[selectedResource.descKey]?.desc}
           </p>
         </div>
       </div>
@@ -194,7 +183,7 @@ export function ResourceDownload() {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="rd-email" className="block text-sm font-semibold text-slate-700 mb-1.5">
-            {isZh ? "工作邮箱" : "Business Email"} <span className="text-red-500">*</span>
+            {rd.businessEmail} <span className="text-red-500">*</span>
           </label>
           <input
             id="rd-email"
@@ -209,27 +198,27 @@ export function ResourceDownload() {
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label htmlFor="rd-name" className="block text-sm font-semibold text-slate-700 mb-1.5">
-              {isZh ? "姓名" : "Full Name"}
+              {rd.fullName}
             </label>
             <input
               id="rd-name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder={isZh ? "您的姓名" : "Your name"}
+              placeholder={rd.namePlaceholder}
               className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 transition focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
             />
           </div>
           <div>
             <label htmlFor="rd-company" className="block text-sm font-semibold text-slate-700 mb-1.5">
-              {isZh ? "公司" : "Company"}
+              {rd.companyName}
             </label>
             <input
               id="rd-company"
               type="text"
               value={company}
               onChange={(e) => setCompany(e.target.value)}
-              placeholder={isZh ? "您的公司" : "Your company"}
+              placeholder={rd.companyPlaceholder}
               className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 transition focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
             />
           </div>
@@ -237,7 +226,7 @@ export function ResourceDownload() {
 
         {status === "error" && (
           <p className="text-sm text-red-600">
-            {isZh ? "提交失败，请重试" : "Submission failed. Please try again."}
+            {rd.submissionFailed}
           </p>
         )}
 
@@ -250,12 +239,12 @@ export function ResourceDownload() {
             {status === "submitting" ? (
               <>
                 <Loader2 className="h-5 w-5 animate-spin" aria-hidden />
-                {isZh ? "处理中..." : "Processing..."}
+                {rd.processing}
               </>
             ) : (
               <>
                 <Download className="h-5 w-5" aria-hidden />
-                {isZh ? "下载资料" : "Download Now"}
+                {rd.downloadNow}
               </>
             )}
           </button>
@@ -267,7 +256,7 @@ export function ResourceDownload() {
             }}
             className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-600 transition hover:bg-slate-50"
           >
-            {isZh ? "返回" : "Back"}
+            {rd.backBtn}
           </button>
         </div>
       </form>

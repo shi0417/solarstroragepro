@@ -283,7 +283,13 @@
     "sub": "Tell us about your grid requirements — our engineers will design a customized solution and deliver a proposal within 48 hours.",
     "whatsappBtn": "Chat on WhatsApp",
     "emailBtn": "Send Email",
-    "response": "Average response time: under 24 hours on business days."
+    "response": "Average response time: under 24 hours on business days.",
+    "inquiryTitle": "Quick Inquiry",
+    "orReachUs": "Or reach us directly",
+    "supportTitle": "24/7 Technical Support Across Time Zones",
+    "supportSub": "Our engineering team covers APAC, European, and Americas time zones",
+    "resourceTitle": "Free Technical Resources",
+    "resourceSub": "Whitepapers, selection guides, and certification references to support your project decisions"
   },
   "footer": {
     "rights": "SolarStorage Energy Tech · All rights reserved",
@@ -305,5 +311,174 @@
     "title": "WeChat",
     "hint": "Save your enterprise WeChat QR as",
     "missing": "Image not found. Save the QR as wechat-qr.png in the public folder and refresh."
+  },
+  "contactForm": {
+    "successTitle": "Thank you!",
+    "successMessage": "Our engineers will contact you within 24 hours.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your full name",
+    "companyLabel": "Company Name",
+    "companyPlaceholder": "Your company",
+    "emailLabel": "Business Email",
+    "emailPlaceholder": "name@company.com",
+    "projectTypeLabel": "Project Type",
+    "projectTypePlaceholder": "-- Select project type --",
+    "messageLabel": "Project Requirements",
+    "messagePlaceholder": "Briefly describe your project needs, capacity requirements, etc.",
+    "errorPrefix": "Submission failed: ",
+    "submittingText": "Submitting...",
+    "submitText": "Submit Inquiry",
+    "privacyNote": "Your information is secure and will never be shared with third parties.",
+    "projectOptions": [
+      "Grid Frequency Regulation",
+      "Peak Shaving",
+      "Renewable Integration",
+      "Data Center Storage",
+      "Industrial & Commercial",
+      "Residential ESS",
+      "Other"
+    ]
+  },
+  "resourceDownload": {
+    "downloadStarted": "Download started!",
+    "downloadMessage": "Your file is downloading. Our team will also reach out via email.",
+    "downloadMore": "Download more resources",
+    "freeDownload": "Free Download",
+    "businessEmail": "Business Email",
+    "fullName": "Full Name",
+    "companyName": "Company",
+    "namePlaceholder": "Your name",
+    "companyPlaceholder": "Your company",
+    "submissionFailed": "Submission failed. Please try again.",
+    "processing": "Processing...",
+    "downloadNow": "Download Now",
+    "backBtn": "Back",
+    "clickNote": "* Click a resource to start the download — email required",
+    "resources": [
+      {
+        "title": "Frequency Regulation BESS Whitepaper",
+        "desc": "Technical deep-dive into grid frequency regulation with BESS systems"
+      },
+      {
+        "title": "BESS Selection Guide",
+        "desc": "Complete parameter comparison and sizing guide for all product lines"
+      },
+      {
+        "title": "Global Certification Guide",
+        "desc": "UL 9540 / IEC 62619 / CE certification requirements by market"
+      }
+    ]
+  },
+  "casesPreview": {
+    "eyebrow": "Real Projects",
+    "heading": "Frequency Regulation Cases",
+    "sub": "From Australia's NEM to Northern Europe and Southeast Asia — here's how our BESS performs in the field.",
+    "viewAll": "View All Case Studies",
+    "readMore": "Read Case"
+  },
+  "productsCiBattery": {
+    "badge": "Commercial & Industrial",
+    "title": "C&I Battery Cabinets",
+    "desc": "100–500kWh modular battery cabinets with 1C/2C rate, liquid cooling, and triple fire suppression — purpose-built for commercial peak shaving and grid frequency response.",
+    "tagRate": "1C/2C Rate",
+    "tagCooling": "Liquid Cooled",
+    "tagCycles": "8,000+ Cycles",
+    "tagIp55": "IP55 Rated",
+    "certTitle": "Certifications",
+    "certSub": "International transport & safety standards",
+    "altText": "C&I Battery Cabinet",
+    "playVideo": "Play video",
+    "fallbackText": "Image / video placeholder — upload product media",
+    "featHeading": "Key Advantages",
+    "featSub": "Engineered for C&I applications: high-rate discharge, ultimate safety, and modular flexibility.",
+    "features": [
+      {
+        "t": "1C/2C High Rate",
+        "b": "Supports 1C and 2C charging/discharging rates for fast frequency regulation response — power adjustment within 200ms."
+      },
+      {
+        "t": "Liquid Cooling",
+        "b": "Intelligent liquid cooling system with precise cell temperature control — pack temperature delta ≤2°C for extended battery life."
+      },
+      {
+        "t": "Triple Fire Suppression",
+        "b": "Three-layer fire protection at pack, cluster, and cabinet levels — perfluoro, aerosol, and water spray redundant safety systems."
+      },
+      {
+        "t": "Modular Design",
+        "b": "Standard cabinet design with flexible expansion — simple on-site installation and low maintenance costs."
+      },
+      {
+        "t": "Smart BMS",
+        "b": "Cell-level monitoring with real-time SOH estimation, fault warning, thermal runaway early warning, and remote O&M support."
+      },
+      {
+        "t": "Flexible Configuration",
+        "b": "100–500kWh capacity coverage for peak shaving, frequency response, demand management, and more."
+      }
+    ],
+    "specTitle": "Specifications",
+    "specSub": "Scroll horizontally on mobile to view all capacity variants.",
+    "specCorner": "Parameter \\ Model",
+    "certs": [
+      "IEC 62619",
+      "UN38.3",
+      "CE",
+      "UL 9540A",
+      "GB/T 36276-2023"
+    ],
+    "appTitle": "Application Scenarios",
+    "apps": [
+      {
+        "t": "Grid Frequency Regulation",
+        "d": "Millisecond response meeting FCR/aFRR ancillary service requirements"
+      },
+      {
+        "t": "Peak Shaving",
+        "d": "Reduce peak demand charges and optimize electricity costs"
+      },
+      {
+        "t": "Backup Power",
+        "d": "Uninterruptible power supply for critical loads"
+      }
+    ],
+    "ctaTitle": "Get a Custom Solution",
+    "ctaSub": "Tell us about your project — our engineers will design a custom solution within 48 hours.",
+    "breadcrumbHome": "Home",
+    "breadcrumbProducts": "Products"
+  },
+  "blog": {
+    "latestArticles": "Latest Articles",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog",
+    "relatedPosts": "Related Articles",
+    "noResults": "No articles found.",
+    "categories": "Categories",
+    "allCategories": "All",
+    "searchBlog": "Search articles..."
+  },
+  "caseCenter": {
+    "title": "Case Studies Center",
+    "subtitle": "Real-world deployments across 50+ countries demonstrating our BESS performance in frequency regulation, peak shaving, and renewable integration.",
+    "allCases": "All Cases",
+    "gridFreq": "Grid Freq Reg",
+    "peakShave": "Peak Shaving",
+    "renewable": "Renewable Integration",
+    "noCases": "No cases available yet.",
+    "filterByRegion": "Filter by Region",
+    "allRegions": "All Regions"
+  },
+  "technology": {
+    "title": "Core Technology Platform",
+    "subtitle": "Proprietary BMS + PCS + EMS integration delivering millisecond-level frequency response with intelligent dispatch algorithms.",
+    "bmsTitle": "Battery Management System (BMS)",
+    "bmsSub": "Real-time monitoring, cell-level balancing, and multi-layer protection.",
+    "pcsTitle": "Power Conversion System (PCS)",
+    "pcsSub": "Bi-directional inverter supporting grid-forming and grid-following modes with >98% round-trip efficiency.",
+    "emsTitle": "Energy Management System (EMS)",
+    "emsSub": "AGC/FCAS-ready controller with AI-powered forecasting and auto-dispatch optimization.",
+    "viewCases": "View Frequency Regulation Cases"
   }
 }

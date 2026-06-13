@@ -283,7 +283,13 @@
     "sub": "Teilen Sie uns Ihre Netzanforderungen mit — unsere Ingenieure entwerfen eine maßgeschneiderte Lösung und liefern ein Angebot innerhalb von 48 Stunden.",
     "whatsappBtn": "WhatsApp Chat",
     "emailBtn": "E-Mail senden",
-    "response": "Durchschnittliche Antwortzeit: unter 24 Stunden an Werktagen."
+    "response": "Durchschnittliche Antwortzeit: unter 24 Stunden an Werktagen.",
+    "inquiryTitle": "Schnellanfrage",
+    "orReachUs": "Oder erreichen Sie uns direkt",
+    "supportTitle": "24/7 Technischer Support in verschiedenen Zeitzonen",
+    "supportSub": "Unser Ingenieurteam deckt die Zeitzonen APAC, Europa und Amerika ab",
+    "resourceTitle": "Kostenlose technische Ressourcen",
+    "resourceSub": "Whitepapers, Auswahlleitfäden und Zertifizierungsreferenzen zur Unterstützung Ihrer Projektentscheidungen"
   },
   "footer": {
     "rights": "SolarStorage Energy Tech · Alle Rechte vorbehalten",
@@ -305,5 +311,173 @@
     "title": "WeChat",
     "hint": "Speichern Sie den WeChat-QR-Code als",
     "missing": "Bild nicht gefunden. Speichern Sie den QR-Code als wechat-qr.png im Public-Ordner und aktualisieren Sie die Seite."
+  },
+  "contactForm": {
+    "successTitle": "Vielen Dank!",
+    "successMessage": "Unsere Ingenieure werden sich innerhalb von 24 Stunden bei Ihnen melden.",
+    "nameLabel": "Vollständiger Name",
+    "namePlaceholder": "Ihr vollständiger Name",
+    "companyLabel": "Firmenname",
+    "companyPlaceholder": "Ihre Firma",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPlaceholder": "name@firma.de",
+    "projectTypeLabel": "Projektart",
+    "projectTypePlaceholder": "-- Projektart auswählen --",
+    "messageLabel": "Projektanforderungen",
+    "messagePlaceholder": "Beschreiben Sie kurz Ihre Projektanforderungen, Kapazitätsanforderungen usw.",
+    "errorPrefix": "Übermittlung fehlgeschlagen: ",
+    "submittingText": "Wird gesendet...",
+    "submitText": "Anfrage senden",
+    "privacyNote": "Ihre Informationen sind sicher und werden niemals an Dritte weitergegeben.",
+    "projectOptions": [
+      "Netzfrequenzregulierung",
+      "Lastspitzenkappung",
+      "Erneuerbare Integration",
+      "Rechenzentrumspeicher",
+      "Industriell & Kommerziell",
+      "Wohnungs-ESS",
+      "Sonstiges"
+    ]
+  },
+  "resourceDownload": {
+    "downloadStarted": "Download gestartet!",
+    "downloadMessage": "Ihre Datei wird heruntergeladen. Unser Team wird sich auch per E-Mail bei Ihnen melden.",
+    "downloadMore": "Weitere Ressourcen herunterladen",
+    "freeDownload": "Kostenlos herunterladen",
+    "businessEmail": "Geschäftliche E-Mail",
+    "fullName": "Vollständiger Name",
+    "companyName": "Unternehmen",
+    "namePlaceholder": "Ihr Name",
+    "companyPlaceholder": "Ihr Unternehmen",
+    "submissionFailed": "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "processing": "Verarbeitung...",
+    "downloadNow": "Jetzt herunterladen",
+    "backBtn": "Zurück",
+    "clickNote": "* Klicken Sie auf eine Ressource, um den Download zu starten — E-Mail erforderlich",
+    "resources": [
+      {
+        "title": "Frequenzregulierung BESS Whitepaper",
+        "desc": "Technische Tiefenanalyse der Netzfrequenzregulierung mit BESS-Systemen"
+      },
+      {
+        "title": "BESS-Auswahlleitfaden",
+        "desc": "Vollständiger Parametervergleich und Dimensionierungsleitfaden für alle Produktlinien"
+      },
+      {
+        "title": "Globaler Zertifizierungsleitfaden",
+        "desc": "UL 9540 / IEC 62619 / CE Zertifizierungsanforderungen nach Markt"
+      }
+    ]
+  },
+  "casesPreview": {
+    "eyebrow": "Echte Projekte",
+    "heading": "Frequenzregulierung-Fälle",
+    "sub": "Vom australischen NEM über Nordeuropa bis Südostasien — so schneidet unser BESS in der Praxis ab.",
+    "viewAll": "Alle Fallstudien anzeigen",
+    "readMore": "Fall lesen"
+  },
+  "productsCiBattery": {
+    "badge": "Gewerbe & Industrie",
+    "title": "Gewerbe-Industrie-Batterieschränke",
+    "desc": "100–500kWh modulare Batterieschränke mit 1C/2C-Rate, Flüssigkeitskühlung und dreifachem Brand Schutz — entwickelt für gewerbliche Lastspitzenkappung und Netzfrequenzregulierung.",
+    "tagRate": "1C/2C-Rate",
+    "tagCooling": "Flüssigkeitsgekühlt",
+    "tagCycles": "8,000+ Zyklen",
+    "tagIp55": "IP55",
+    "certTitle": "Zertifizierungen",
+    "certSub": "Internationale Transport- und Sicherheitsstandards",
+    "altText": "Gewerbe-Batterieschrank",
+    "playVideo": "Video abspielen",
+    "fallbackText": "Bild/Video-Platzhalter — Produktmedien hochladen",
+    "featHeading": "Hauptvorteile",
+    "featSub": "Entwickelt für G&I-Anwendungen: Hochrate-Entladung, maximale Sicherheit und modulare Flexibilität.",
+    "features": [
+      {
+        "t": "1C/2C Hochrate",
+        "b": "Unterstützt 1C- und 2C-Lade-/Entladeraten für schnelle Frequenzregulierungsantwort — Leistungsanpassung unter 200ms."
+      },
+      {
+        "t": "Flüssigkeitskühlung",
+        "b": "Intelligentes Flüssigkeitskühlsystem mit präziser Zelltemperatursteuerung — Pack-Temperaturdifferenz ≤2°C für längere Batterielebensdauer."
+      },
+      {
+        "t": "Dreifacher Brandschutz",
+        "b": "Dreistufiger Brandschutz auf Pack-, Cluster- und Schrankebene — Perfluor-, Aerosol- und Wasssprüh-Sicherheitssysteme."
+      },
+      {
+        "t": "Modulares Design",
+        "b": "Standardschrankdesign mit flexibler Erweiterung — einfache Vor-Ort-Installation und geringe Wartungskosten."
+      },
+      {
+        "t": "Intelligentes BMS",
+        "b": "Zellüberwachung mit Echtzeit-SOH-Schätzung, Fehlerwarnung, Thermal-Runaway-Frühwarnung und Remote-O&M-Unterstützung."
+      },
+      {
+        "t": "Flexible Konfiguration",
+        "b": "100–500kWh Kapazitätsabdeckung für Lastspitzenkappung, Frequenzantwort, Nachfragemanagement u.v.m."
+      }
+    ],
+    "specTitle": "Technische Daten",
+    "specSub": "Auf Mobilgeräten horizontal scrollen, um alle Kapazitätsvarianten zu sehen.",
+    "specCorner": "Parameter \\ Modell",
+    "certs": [
+      "IEC 62619",
+      "UN38.3",
+      "CE",
+      "UL 9540A",
+      "GB/T 36276-2023"
+    ],
+    "appTitle": "Anwendungsbereiche",
+    "apps": [
+      {
+        "t": "Netzfrequenzregulierung",
+        "d": "Millisekunden-Antwort erfüllt FCR/aFRR Hilfsdienst Anforderungen"
+      },
+      {
+        "t": "Lastspitzenkappung",
+        "d": "Reduziert Spitzenlastkosten und optimiert Stromkosten"
+      },
+      {
+        "t": "Notstromversorgung",
+        "d": "Unterbrechungsfreie Stromversorgung für kritische Lasten"
+      }
+    ],
+    "ctaTitle": "Individuelle Lösung erhalten",
+    "ctaSub": "Erzählen Sie uns von Ihrem Projekt — unsere Ingenieure entwerfen innerhalb von 48 Stunden eine Maßlösung.",
+    "breadcrumbHome": "Startseite",
+    "breadcrumbProducts": "Produkte"
+  },
+  "blog": {
+    "latestArticles": "Neueste Artikel",
+    "readMore": "Weiterlesen",
+    "publishedOn": "Veröffentlicht am",
+    "minRead": "Min. Lesezeit",
+    "backToBlog": "Zurück zum Blog",
+    "relatedPosts": "Verwandte Artikel",
+    "noResults": "Keine Artikel gefunden.",
+    "categories": "Kategorien",
+    "allCategories": "Alle",
+    "searchBlog": "Artikel suchen..."
+  },
+  "caseCenter": {
+    "title": "Fallstudien-Zentrum",
+    "subtitle": "Echte Bereitstellungen in über 50 Ländern, die die Leistung unseres BESS bei Frequenzregulierung, Lastspitzenkappung und erneuerbarer Integration zeigen.",
+    "allCases": "Alle Fälle",
+    "gridFreq": "Netzfrequenzreg",
+    "peakShave": "Lastspitzenkapp.",
+    "renewable": "Erneuerbare Integr.",
+    "noCases": "Noch keine Fälle verfügbar.",
+    "filterByRegion": "Nach Region filtern",
+    "allRegions": "Alle Regionen"
+  },
+  "technology": {
+    "title": "Kerntechnologie-Plattform",
+    "subtitle": "Proprietäre BMS + PCS + EMS Integration mit Millisekunden-Frequenzantwort und intelligenten Dispatch-Algorithmen.",
+    "bmsTitle": "Batterie-Management-System (BMS)",
+    "bmsSub": "Echtzeitüberwachung, Zellausgleich und mehrschichtiger Schutz.",
+    "pcsTitle": "Leistungsumrichtsystem (PCS)",
+    "pcsSub": "Bidirektionaler Wechselrichter unterstützt Grid-Forming und Grid-Following Modi mit >98% Rundlaufwirkungsgrad.",
+    "emsSub": "AGC/FCAS-fähiger Controller mit KI-gestützter Prognose und Auto-Dispatch-Optimierung.",
+    "viewCases": "Frequenzregulierung-Fälle ansehen"
   }
 }

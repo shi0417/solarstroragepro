@@ -283,7 +283,13 @@
     "sub": "Şebeke gereksinimlerinizi bize bildirin — mühendislerimiz özel bir çözüm tasarlayacak ve 48 saat içinde bir teklif sunacaktır.",
     "whatsappBtn": "WhatsApp'ta Sohbet",
     "emailBtn": "E-posta Gönder",
-    "response": "Ortalama yanıt süresi: iş günlerinde 24 saatten az."
+    "response": "Ortalama yanıt süresi: iş günlerinde 24 saatten az.",
+    "inquiryTitle": "Hızlı Sorğu",
+    "orReachUs": "Ya da doğrudan bize ulaşın",
+    "supportTitle": "7/24 Farklı Saat Dilimlerinde Teknik Destek",
+    "supportSub": "Mühendislik ekibimiz APAC, Avrupa ve Amerika saat dilimlerini kapsar",
+    "resourceTitle": "Ücretsiz Teknik Kaynaklar",
+    "resourceSub": "Kitaplar, seçim kılavuzları ve sertifikasyon referansları proje kararlarınızı desteklemek için"
   },
   "footer": {
     "rights": "SolarStorage Energy Tech · Tüm hakları saklıdır",
@@ -305,5 +311,174 @@
     "title": "WeChat",
     "hint": "Kurumsal WeChat QR kodunu şuraya kaydedin:",
     "missing": "Görüntü bulunamadı. QR kodunu public klasörüne wechat-qr.png olarak kaydedin ve yenileyin."
+  },
+  "contactForm": {
+    "successTitle": "Teşekkürler!",
+    "successMessage": "Mühendislerimiz 24 saat içinde sizinle iletişime geçecektir.",
+    "nameLabel": "Ad Soyad",
+    "namePlaceholder": "Tam adınız",
+    "companyLabel": "Şirket Adı",
+    "companyPlaceholder": "Şirketiniz",
+    "emailLabel": "İş E-postası",
+    "emailPlaceholder": "isim@sirket.com",
+    "projectTypeLabel": "Proje Tipi",
+    "projectTypePlaceholder": "-- Proje tipi seçin --",
+    "messageLabel": "Proje Gereksinimleri",
+    "messagePlaceholder": "Proje ihtiyaçlarınızı, kapasite gereksinimleriniz vb. kısaca açıklayın.",
+    "errorPrefix": "Gönderim başarısız: ",
+    "submittingText": "Gönderiliyor...",
+    "submitText": "Sorgu Gönder",
+    "privacyNote": "Bilgileriniz güvendedir ve asla üçüncü taraflarla paylaşılmayacaktır.",
+    "projectOptions": [
+      "Şebeke Frekans Regülasyonu",
+      "Peak Shaving",
+      "Yenilenebilir Entegrasyon",
+      "Veri Merkezi Depolama",
+      "Endüstriyel ve Ticari",
+      "Konut ESS",
+      "Diğer"
+    ]
+  },
+  "resourceDownload": {
+    "downloadStarted": "İndirme başladı!",
+    "downloadMessage": "Dosyanız indiriliyor. Ekibimiz ayrıca e-posta ile size ulaşacaktır.",
+    "downloadMore": "Daha fazla kaynak indir",
+    "freeDownload": "Ücretsiz İndir",
+    "businessEmail": "İş E-postası",
+    "fullName": "Ad Soyad",
+    "companyName": "Şirket",
+    "namePlaceholder": "Adınız",
+    "companyPlaceholder": "Şirketiniz",
+    "submissionFailed": "Gönderim başarısız. Tekrar deneyin.",
+    "processing": "İşleniyor...",
+    "downloadNow": "Şimdi İndir",
+    "backBtn": "Geri",
+    "clickNote": "* Kaynak indirmek için tıklayın — e-posta gerekli",
+    "resources": [
+      {
+        "title": "Frekans Regülasyonu BESS Kitabı",
+        "desc": "BESS sistemleri ile şebeke frekans regülasyonuna teknik derinlemesine bakış"
+      },
+      {
+        "title": "BESS Seçim Kılavuzu",
+        "desc": "Tüm ürün hatları için kapsamlı parametre karşılaştırma ve boyutlandırma kılavuzu"
+      },
+      {
+        "title": "Küresel Sertifikasyon Kılavuzu",
+        "desc": "Pazar bazında UL 9540 / IEC 62619 / CE sertifikasyon gereksinimleri"
+      }
+    ]
+  },
+  "casesPreview": {
+    "eyebrow": "Gerçek Projeler",
+    "heading": "Frekans Regülasyonu Vakaları",
+    "sub": "Avustralya NEM'den Kuzey Avrupa ve Güneydoğu Asya'ya — BESS'imizin sahada nasıl performans gösterdiğini buradan görebilirsiniz.",
+    "viewAll": "Tüm Durum İncelemelerini Gör",
+    "readMore": "Vakayı Oku"
+  },
+  "productsCiBattery": {
+    "badge": "Ticari ve Endüstriyel",
+    "title": "C&I Batarya Dolapları",
+    "desc": "100–500kWh modüler batarya dolapları, 1C/2C oran, sıvı soğutma ve üç katlı yangın söndürme ile — ticari yük kesme ve şebeke frekans regülasyonu için özel tasarlanmış.",
+    "tagRate": "1C/2C Oran",
+    "tagCooling": "Sivi Soğutmalı",
+    "tagCycles": "8,000+ Döngü",
+    "tagIp55": "IP55 Sınıflı",
+    "certTitle": "Sertifikalar",
+    "certSub": "Uluslararası taşıma ve güvenlik standartları",
+    "altText": "C&I Batarya Dolabı",
+    "playVideo": "Videoyu oynat",
+    "fallbackText": "Görüntü/video yer tutucusu — ürün medyasını yükleyin",
+    "featHeading": "Temel Avantajlar",
+    "featSub": "C&I uygulamaları için mühendislik: yüksek oranlı deşarj, son güvenlik ve modüler esneklik.",
+    "features": [
+      {
+        "t": "1C/2C Yüksek Oran",
+        "b": "Hızlı frekans regülasyonu yanıtı için 1C ve 2C şarj/deşarj oranlarını destekler — 200ms içinde güç ayarı."
+      },
+      {
+        "t": "Sıvı Soğutma",
+        "b": "Hassas hücre sıcaklığı kontrolüne sahip akıllı sıvı soğutma sistemi — paket sıcaklık farkı ≤2°C uzun batarya ömrü için."
+      },
+      {
+        "t": "Üç Katlı Yangın Söndürme",
+        "b": "Paket, küme ve dolap seviyesinde üç katmanlı yangın koruması — perfloro, aerosol ve su spreyi yedekli güvenlik sistemleri."
+      },
+      {
+        "t": "Modüler Tasarım",
+        "b": "Esnek genişleme ile standart dolap tasarımı — yerinde kolay kurulum ve düşük bakım maliyetleri."
+      },
+      {
+        "t": "Akıllı BMS",
+        "b": "Gerçek zamanlı SOH tahmini, ariza uyarısı, termal kaçış erken uyarısı ve uzaktan O&M desteği ile hücze seviyesinde izleme."
+      },
+      {
+        "t": "Esnek Yapılandırma",
+        "b": "Yük kesmesi, frekans yanıtı, talep yönetimi ve daha fazlası için 100–500kWh kapasite kapsamı."
+      }
+    ],
+    "specTitle": "Teknik Özellikler",
+    "specSub": "Mobilde tüm kapasite varyantlarını görmek için yatay kaydırın.",
+    "specCorner": "Parametre \\ Model",
+    "certs": [
+      "IEC 62619",
+      "UN38.3",
+      "CE",
+      "UL 9540A",
+      "GB/T 36276-2023"
+    ],
+    "appTitle": "Uygulama Senaryoları",
+    "apps": [
+      {
+        "t": "Şebeke Frekans Regülasyonu",
+        "d": "FCR/aFRR yardımcı hizmet gereksinimlerini karşılayan milisaniye yanıtı"
+      },
+      {
+        "t": "Peak Shaving (Yük Kesimi)",
+        "d": "Tepe talep ücretlerini azaltır ve elektrik maliyetlerini optimize eder"
+      },
+      {
+        "t": "Yedek Güç",
+        "d": "Kritik yükler için kesintisiz güç kaynağı"
+      }
+    ],
+    "ctaTitle": "Özel Çözüm Alın",
+    "ctaSub": "Projenizi bize anlatın — mühendislerimiz 48 saat içinde özel bir çözüm tasarlayacak.",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbProducts": "Ürünler"
+  },
+  "blog": {
+    "latestArticles": "Son Makaleler",
+    "readMore": "Devamını Oku",
+    "publishedOn": "Yayınlanma Tarihi",
+    "minRead": "dk okuma",
+    "backToBlog": "Bloğa Dön",
+    "relatedPosts": "İlgili Makaleler",
+    "noResults": "Makale bulunamadı.",
+    "categories": "Kategoriler",
+    "allCategories": "Tümü",
+    "searchBlog": "Makale ara..."
+  },
+  "caseCenter": {
+    "title": "Durum İnceleme Merkezi",
+    "subtitle": "50'den fazla ülkede gerçek hayattaki dağıtımlar, BESS'imizin frekans regülasyonu, yük kesimi ve yenilenebilir entegrasyondaki performansını gösteriyor.",
+    "allCases": "Tüm Vakalar",
+    "gridFreq": "Şebeke Freq Reg",
+    "peakShave": "Yük Kesimi",
+    "renewable": "Yenilenebilir Entegrasyon",
+    "noCases": "Henüz vakıt yok.",
+    "filterByRegion": "Bölgeye Göre Filtrele",
+    "allRegions": "Tüm Bölgeler"
+  },
+  "technology": {
+    "title": "Temel Teknoloji Platformu",
+    "subtitle": "Özel BMS + PCS + CMS entegrasyonu, zeka algoritmalarıyla milisaniye düzeyinde frekans yanıtı sunuyor.",
+    "bmsTitle": "Batarya Yönetim Sistemi (BMS)",
+    "bmsSub": "Gerçek zamanlı izleme, hücze seviyesi dengeleme ve çok katmanlı koruma.",
+    "pcsTitle": "Güç Dönüşüm Sistemi (PCS)",
+    "pcsSub": "Çift yönlü evirici, ağ oluşturma ve ağ izleme modlarını destekler, %98 üzeri yuvarlak verimlilik.",
+    "emsTitle": "Enerji Yönetim Sistemi (EMS)",
+    "emsSub": "AGC/FCAS hazır denetleyici, AI destekli öngörü ve otomatik dağıtım optimizasyonu.",
+    "viewCases": "Frekans Regülasyonu Vakalarını Gör"
   }
 }

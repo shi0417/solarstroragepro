@@ -283,7 +283,13 @@
     "sub": "Beri tahu kami tentang persyaratan jaringan Anda — teknisi kami akan merancang solusi khusus dan memberikan proposal dalam 48 jam.",
     "whatsappBtn": "Chat via WhatsApp",
     "emailBtn": "Kirim Email",
-    "response": "Waktu respons rata-rata: di bawah 24 jam pada hari kerja."
+    "response": "Waktu respons rata-rata: di bawah 24 jam pada hari kerja.",
+    "inquiryTitle": "Pertanyaan Cepat",
+    "orReachUs": "Atau hubungi kami langsung",
+    "supportTitle": "Dukungan Teknis 24/7 di Semua Zona Waktu",
+    "supportSub": "Tim teknik kami mencakup zona waktu APAC, Eropa, dan Amerika",
+    "resourceTitle": "Sumber Daya Teknis Gratis",
+    "resourceSub": "Whitebook, panduan seleksi, dan referensi sertifikasi untuk mendukung keputusan proyek Anda"
   },
   "footer": {
     "rights": "SolarStorage Energy Tech · Hak cipta dilindungi",
@@ -305,5 +311,174 @@
     "title": "WeChat",
     "hint": "Simpan QR Code WeChat sebagai",
     "missing": "Gambar tidak ditemukan. Simpan QR sebagai wechat-qr.png di folder public dan segarkan."
+  },
+  "contactForm": {
+    "successTitle": "Terima kasih!",
+    "successMessage": "Insinyur kami akan menghubungi Anda dalam 24 jam.",
+    "nameLabel": "Nama Lengkap",
+    "namePlaceholder": "Nama lengkap Anda",
+    "companyLabel": "Nama Perusahaan",
+    "companyPlaceholder": "Perusahaan Anda",
+    "emailLabel": "Email Bisnis",
+    "emailPlaceholder": "nama@perusahaan.com",
+    "projectTypeLabel": "Jenis Proyek",
+    "projectTypePlaceholder": "-- Pilih jenis proyek --",
+    "messageLabel": "Kebutuhan Proyek",
+    "messagePlaceholder": "Jelaskan secara singkat kebutuhan proyek, kapasitas yang dibutuhkan, dll.",
+    "errorPrefix": "Pengiriman gagal: ",
+    "submittingText": "Mengirim...",
+    "submitText": "Kirim Pertanyaan",
+    "privacyNote": "Informasi Anda aman dan tidak akan dibagikan kepada pihak ketiga.",
+    "projectOptions": [
+      "Regulasi Frekuensi Jaringan",
+      "Pemangkasan Beban Puncak",
+      "Integrasi Terbarukan",
+      "Penyimpanan Pusat Data",
+      "Industri & Komersial",
+      "ESS Perumahan",
+      "Lainnya"
+    ]
+  },
+  "resourceDownload": {
+    "downloadStarted": "Unduhan dimulai!",
+    "downloadMessage": "File Anda sedang diunduh. Tim kami juga akan menghubungi melalui email.",
+    "downloadMore": "Unduh sumber daya lainnya",
+    "freeDownload": "Unduh gratis",
+    "businessEmail": "Email Bisnis",
+    "fullName": "Nama Lengkap",
+    "companyName": "Perusahaan",
+    "namePlaceholder": "Nama Anda",
+    "companyPlaceholder": "Perusahaan Anda",
+    "submissionFailed": "Pengiriman gagal. Silakan coba lagi.",
+    "processing": "Memproses...",
+    "downloadNow": "Unduh Sekarang",
+    "backBtn": "Kembali",
+    "clickNote": "* Klik sumber daya untuk memulai unduhan — email diperlukan",
+    "resources": [
+      {
+        "title": "Whitebook Regulasi Frekuensi BESS",
+        "desc": "Analisis teknis mendalam tentang regulasi frekuensi jaringan dengan sistem BESS"
+      },
+      {
+        "title": "Panduan Seleksi BESS",
+        "desc": "Panduan perbandingan parameter dan pengukuran ukuran lengkap untuk semua lini produk"
+      },
+      {
+        "title": "Panduan Sertifikasi Global",
+        "desc": "Persyaratan sertifikasi UL 9540 / IEC 62619 / CE berdasarkan pasar"
+      }
+    ]
+  },
+  "casesPreview": {
+    "eyebrow": "Proyek Nyata",
+    "heading": "Kasus Regulasi Frekuensi",
+    "sub": "Dari NEM Australia hingga Eropa Utara dan Asia Tenggara — beginilah cara kerja BESS kami di lapangan.",
+    "viewAll": "Lihat Semua Studi Kasus",
+    "readMore": "Baca Studi Kasus"
+  },
+  "productsCiBattery": {
+    "badge": "Komersial & Industri",
+    "title": "Kabinet Baterai C&I",
+    "desc": "Kabinet baterai modular 100–500kWh dengan rate 1C/2C, pendingin cairan, dan pemadam api tiga lapis — dirancang khusus untuk pemangkas beban puncak komersial dan respons frekuensi jaringan.",
+    "tagRate": "Rate 1C/2C",
+    "tagCooling": "Pendingin Cairan",
+    "tagCycles": "8.000+ Siklus",
+    "tagIp55": "IP55",
+    "certTitle": "Sertifikasi",
+    "certSub": "Standar transportasi dan keamanan internasional",
+    "altText": "Kabinet Baterai C&I",
+    "playVideo": "Putar video",
+    "fallbackText": "Gambar/video placeholder — unggah media produk",
+    "fiturKeunggulan": "Keunggulan Utama",
+    "fiturSub": "Dirancang untuk aplikasi C&I: pelepasan rate tinggi, keselamatan utama, dan fleksibilitas modular.",
+    "features": [
+      {
+        "t": "Rate Tinggi 1C/2C",
+        "b": "Mendukung rate muat/bongkar 1C dan 2C untuk respons cepat regulasi frekuensi — penyesuaian daya dalam 200ms."
+      },
+      {
+        "t": "Pendingin Cairan",
+        "b": "Sistem pendingin cairan cerdas dengan kontrol suhu sel yang presisi — delta suhu paket ≤2°C untuk masa pakai baterai lebih lama."
+      },
+      {
+        "t": "Pemadam Api Tiga Lapis",
+        "b": "Perlindungan api tiga tingkat pada level paket, cluster, dan kabinet — sistem keamanan redundan perfluoro, aerosol, dan semprot air."
+      },
+      {
+        "t": "Desain Modular",
+        "b": "Desain kabinet standar dengan ekspansi fleksibel — instalasi sederhana di lokasi dan biaya pemeliharaan rendah."
+      },
+      {
+        "t": "BMS Cerdas",
+        "b": "Pemantauan level sel dengan estimasi SOH real-time, peringatan kesalahan, peringatan dini thermal runaway, dan dukungan O&M jarak jauh."
+      },
+      {
+        "t": "Konfigurasi Fleksibel",
+        "b": "Cakupan kapasitas 100–500kWh untuk pemangkas beban puncak, respons frekuensi, manajemen permintaan, dan lainnya."
+      }
+    ],
+    "specTitle": "Spesifikasi",
+    "specSub": "Gesar horizontal di seluler untuk melihat semua varian kapasitas.",
+    "specCorner": "Parameter \\ Model",
+    "certs": [
+      "IEC 62619",
+      "UN38.3",
+      "CE",
+      "UL 9540A",
+      "GB/T 36276-2023"
+    ],
+    "appTitle": "Skenario Aplikasi",
+    "apps": [
+      {
+        "t": "Regulasi Frekuensi Jaringan",
+        "d": "Respons milidetik memenuhi persyaratan layanan tambahan FCR/aFRR"
+      },
+      {
+        "t": "Pemangkas Beban Puncak",
+        "d": "Mengurangi biaya permintaan puncak dan mengoptimalkan biaya listrik"
+      },
+      {
+        "t": "Daya Cadangan",
+        "d": "Pasokan daya tanpa gangguan untuk beban kritis"
+      }
+    ],
+    "ctaTitle": "Dapatkan Solusi Khusus",
+    "ctaSub": "Ceritakan tentang proyek Anda — insinyur kami akan merancang solusi khusus dalam 48 jam.",
+    "breadcrumbHome": "Beranda",
+    "breadcrumbProducts": "Produk"
+  },
+  "blog": {
+    "latestArticles": "Artikel Terbaru",
+    "readMore": "Baca Selengkapnya",
+    "publishedOn": "Diterbitkan pada",
+    "minRead": "menit baca",
+    "backToBlog": "Kembali ke Blog",
+    "relatedPosts": "Artikel Terkait",
+    "noResults": "Artikel tidak ditemukan.",
+    "categories": "Kategori",
+    "allCategories": "Semua",
+    "searchBlog": "Cari artikel..."
+  },
+  "caseCenter": {
+    "title": "Pusat Studi Kasus",
+    "subtitle": "Deploy nyata di lebih dari 50 negara menunjukkan kinerja BESS kami dalam regulasi frekuensi, pemangkas beban puncak, dan integrasi terbarukan.",
+    "allCases": "Semua Kasus",
+    "gridFreq": "Regulasi Frekuensi Jaringan",
+    "peakShave": "Pemangkas Beban Puncak",
+    "renewable": "Integrasi Terbarukan",
+    "noCases": "Belum ada kasus yang tersedia.",
+    "filterByRegion": "Filter berdasarkan Wilayah",
+    "allRegions": "Semua Wilayah"
+  },
+  "technology": {
+    "title": "Platform Teknologi Inti",
+    "subtitle": "Integrasi proprietary BMS + PCS + EMS yang memberikan respons frekuensi tingkat milidetik dengan algoritma dispatch cerdas.",
+    "bmsTitle": "Sistem Manajemen Baterai (BMS)",
+    "bmsSub": "Monitoring real-time, penyeimbangan level sel, dan perlindungan multi-lapis.",
+    "pcsTitle": "Sistem Konversi Daya (PCS)",
+    "pcsSub": "Inverter bidirectional mendukung mode Grid-Forming dan Grid-Following dengan efisiensi >98%.",
+    "emsTitle": "Sistem Manajemen Energi (EMS)",
+    "emsSub": "Controller siap AGC/FCAS dengan prakiraan berbasis AI dan optimasi dispatch otomatis.",
+    "viewCases": "Lihat Kasus Regulasi Frekuensi"
   }
 }

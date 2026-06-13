@@ -283,7 +283,13 @@
     "sub": "告诉我们您的电网需求——我们的工程师将设计定制方案并在 48 小时内交付提案。",
     "whatsappBtn": "WhatsApp 咨询",
     "emailBtn": "发送邮件",
-    "response": "工作日平均响应时间：24小时内。"
+    "response": "工作日平均响应时间：24小时内。",
+    "inquiryTitle": "在线询盘",
+    "orReachUs": "或直接联系我们",
+    "supportTitle": "跨时区技术服务",
+    "supportSub": "我们的工程团队覆盖亚太、欧洲和美洲时区",
+    "resourceTitle": "免费下载技术资料",
+    "resourceSub": "白皮书、选型手册和认证指南——助力您的项目决策"
   },
   "footer": {
     "rights": "光储能源科技 · 保留所有权利",
@@ -305,5 +311,174 @@
     "title": "微信咨询",
     "hint": "请将企业微信二维码保存为项目根目录",
     "missing": "未检测到图片。请将二维码命名为 wechat-qr.png 放入 public 文件夹后刷新页面。"
+  },
+  "contactForm": {
+    "successTitle": "提交成功！",
+    "successMessage": "我们的工程师将在24小时内与您联系。",
+    "nameLabel": "姓名",
+    "namePlaceholder": "您的姓名",
+    "companyLabel": "公司名称",
+    "companyPlaceholder": "您的公司",
+    "emailLabel": "工作邮箱",
+    "emailPlaceholder": "name@company.com",
+    "projectTypeLabel": "项目类型",
+    "projectTypePlaceholder": "-- 选择项目类型 --",
+    "messageLabel": "项目需求简述",
+    "messagePlaceholder": "请简要描述您的项目需求、容量要求等...",
+    "errorPrefix": "提交失败：",
+    "submittingText": "提交中...",
+    "submitText": "提交询盘",
+    "privacyNote": "我们承诺保护您的信息安全，不会分享给第三方。",
+    "projectOptions": [
+      "电网调频",
+      "削峰填谷",
+      "新能源消纳",
+      "数据中心储能",
+      "工商业储能",
+      "户用储能",
+      "其他"
+    ]
+  },
+  "resourceDownload": {
+    "downloadStarted": "下载已开始！",
+    "downloadMessage": "文件正在下载，我们的团队也会通过邮件与您联系。",
+    "downloadMore": "下载更多资料",
+    "freeDownload": "免费下载",
+    "businessEmail": "工作邮箱",
+    "fullName": "姓名",
+    "companyName": "公司",
+    "namePlaceholder": "您的姓名",
+    "companyPlaceholder": "您的公司",
+    "submissionFailed": "提交失败，请重试",
+    "processing": "处理中...",
+    "downloadNow": "下载资料",
+    "backBtn": "返回",
+    "clickNote": "* 点击资料即进入下载流程，需填写邮箱",
+    "resources": [
+      {
+        "title": "调频储能技术白皮书",
+        "desc": "调频储能系统技术深度解析"
+      },
+      {
+        "title": "储能柜选型手册",
+        "desc": "全产品线参数对比与选型指南"
+      },
+      {
+        "title": "全球认证准入指南",
+        "desc": "UL 9540 / IEC 62619 / CE 各市场认证要求"
+      }
+    ]
+  },
+  "casesPreview": {
+    "eyebrow": "真实项目",
+    "heading": "调频储能案例",
+    "sub": "从澳大利亚NEM到北欧电网，再到东南亚孤立电网——来自实际运营的调频储能数据。",
+    "viewAll": "查看全部案例",
+    "readMore": "详情"
+  },
+  "productsCiBattery": {
+    "badge": "工商业储能",
+    "title": "工商业储能柜",
+    "desc": "100–500kWh 模块化储能柜，支持 1C/2C 倍率放电、液冷温控和三重消防系统——专为工商业削峰填谷和电网频率响应优化。",
+    "tagRate": "1C/2C 倍率",
+    "tagCooling": "液冷温控",
+    "tagCycles": "8,000+ 循环",
+    "tagIp55": "IP55 防护",
+    "certTitle": "认证与标准",
+    "certSub": "满足国际运输与安全标准",
+    "altText": "工商业储能柜产品图",
+    "playVideo": "播放视频",
+    "fallbackText": "图片/视频占位——上传产品媒体",
+    "featHeading": "产品核心优势",
+    "featSub": "为工商业场景量身打造：高倍率放电、极致安全、模块化灵活部署。",
+    "features": [
+      {
+        "t": "1C/2C 高倍率",
+        "b": "支持1C和2C充放电倍率，满足频率调节快速响应需求，200ms内完成功率调节。"
+      },
+      {
+        "t": "液冷温控",
+        "b": "智能液冷系统精确控制电芯温度，PACK内温差≤2℃，延长电池寿命。"
+      },
+      {
+        "t": "三重消防",
+        "b": "PACK级、簇级和柜级三重消防保护，全氟己酮+气溶胶+水消防多重安全冗余。"
+      },
+      {
+        "t": "模块化设计",
+        "b": "标准机柜设计，支持灵活扩容，现场安装简便，运维成本低。"
+      },
+      {
+        "t": "智能BMS",
+        "b": "电芯级监控，实时SOH估算、故障预警、热失控预警，远程运维支持。"
+      },
+      {
+        "t": "灵活配置",
+        "b": "100~500kWh覆盖，支持削峰填谷、调频响应、需量管理等多场景应用。"
+      }
+    ],
+    "specTitle": "技术参数",
+    "specSub": "移动端支持横向滚动查看不同容量型号的完整参数。",
+    "specCorner": "参数 \\ 型号",
+    "certs": [
+      "IEC 62619",
+      "UN38.3",
+      "CE",
+      "UL 9540A",
+      "GB/T 36276-2023"
+    ],
+    "appTitle": "应用场景",
+    "apps": [
+      {
+        "t": "电网频率调节",
+        "d": "毫秒级响应，满足FCR/aFRR辅助服务要求"
+      },
+      {
+        "t": "削峰填谷",
+        "d": "降低用电峰值需量，节省电费支出"
+      },
+      {
+        "t": "备用电源",
+        "d": "关键负荷不间断供电保障"
+      }
+    ],
+    "ctaTitle": "获取定制方案",
+    "ctaSub": "告诉我们您的项目需求，工程师将在48小时内提供定制方案。",
+    "breadcrumbHome": "首页",
+    "breadcrumbProducts": "产品"
+  },
+  "blog": {
+    "latestArticles": "最新文章",
+    "readMore": "阅读全文",
+    "publishedOn": "发布于",
+    "minRead": "分钟阅读",
+    "backToBlog": "返回博客",
+    "relatedPosts": "相关文章",
+    "noResults": "未找到文章。",
+    "categories": "分类",
+    "allCategories": "全部",
+    "searchBlog": "搜索文章..."
+  },
+  "caseCenter": {
+    "title": "案例中心",
+    "subtitle": "来自50+国家的实际部署，展示我们的BESS在调频、削峰填谷和新能源消纳方面的性能表现。",
+    "allCases": "全部案例",
+    "gridFreq": "电网调频",
+    "peakShave": "削峰填谷",
+    "renewable": "新能源消纳",
+    "noCases": "暂无案例。",
+    "filterByRegion": "按地区筛选",
+    "allRegions": "全部地区"
+  },
+  "technology": {
+    "title": "核心技术平台",
+    "subtitle": "自研 BMS + PCS + EMS 一体化集成，毫秒级响应 + 智能调度算法。",
+    "bmsTitle": "电池管理系统（BMS）",
+    "bmsSub": "实时监控、电芯级均衡、多层保护。",
+    "pcsTitle": "功率转换系统（PCS）",
+    "pcsSub": "双向变流器，支持构网型/跟网型模式，循环效率>98%。",
+    "emsTitle": "能量管理系统（EMS）",
+    "emsSub": "AGC/FCAS就绪控制器，AI预测+自动调度优化。",
+    "viewCases": "查看调频案例"
   }
 }
