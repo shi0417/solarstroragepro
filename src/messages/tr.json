@@ -449,23 +449,23 @@
   },
   "blog": {
     "latestArticles": "Son Makaleler",
-    "readMore": "Read Article",
+    "readMore": "Makaleyi Oku",
     "publishedOn": "Yayınlanma Tarihi",
     "minRead": "dk okuma",
     "backToBlog": "Bloğa Dön",
     "relatedPosts": "İlgili Makaleler",
     "noResults": "Makale bulunamadı.",
-    "categories": "Categories",
+    "categories": "Kategoriler",
     "allCategories": "Tümü",
     "searchBlog": "Makale ara...",
-    "badge": "Knowledge Base",
-    "pageTitle": "Energy Storage Blog",
-    "pageSub": "Deep dives into battery storage technology, market trends, and best practices. From ROI analysis to installation guides, make informed decisions for your energy storage projects.",
-    "readTime": "min read",
-    "backToHome": "Back to Home",
-    "ctaTitle": "Need Expert Advice?",
-    "ctaSub": "Our engineering team can design a custom energy storage solution for your project.",
-    "ctaBtn": "Request a Proposal"
+    "badge": "Bilgi Bankası",
+    "pageTitle": "Enerji Depolama Blogu",
+    "pageSub": "Batarya depolama teknolojisi, pazar trendleri ve en iyi uygulamalar hakkında derinlemesine analizler. ROI analizinden kurulum kılavuzlarına, enerji depolama projeleriniz için bilinçli kararlar alın.",
+    "readTime": "dk okuma",
+    "backToHome": "Ana Sayfaya Dön",
+    "ctaTitle": "Uzman Tavsiyesine mi İhtiyacınız Var?",
+    "ctaSub": "Mühendislik ekibimiz projeniz için özel bir enerji depolama çözümü tasarlayabilir.",
+    "ctaBtn": "Teklif Talep Et"
   },
   "caseCenter": {
     "title": "Durum İnceleme Merkezi",
@@ -477,189 +477,189 @@
     "noCases": "Henüz vakıt yok.",
     "filterByRegion": "Bölgeye Göre Filtrele",
     "allRegions": "Tüm Bölgeler",
-    "badge": "Global Projects",
-    "pageTitle": "Frequency Regulation & Energy Storage Cases",
-    "pageSub": "Real-world deployments in grid frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "readMore": "View Details",
-    "ctaTitle": "Need a similar solution?",
-    "ctaSub": "Our engineering team will design a custom frequency regulation and energy storage system for your grid requirements.",
-    "ctaBtn": "Request a Proposal",
-    "techLink": "Explore our technology platform"
+    "badge": "Küresel Projeler",
+    "pageTitle": "Frekans Regülasyonu ve Enerji Depolama Vakaları",
+    "pageSub": "50'den fazla ülkede şebeke frekans regülasyonu, puant yük yönetimi ve yenilenebilir entegrasyonunda gerçek dağıtımlar.",
+    "readMore": "Detayları Gör",
+    "ctaTitle": "Benzer bir çözüme mi ihtiyacınız var?",
+    "ctaSub": "Mühendislik ekibimiz, şebeke gereksinimleriniz için özel bir frekans regülasyonu ve enerji depolama sistemi tasarlayacaktır.",
+    "ctaBtn": "Teklif Talep Et",
+    "techLink": "Teknoloji platformumuzu keşfedin"
   },
   "technology": {
-    "diagramCaption": "System single-line diagram — click tabs above to switch topologies",
-    "viewCases": "View Frequency Regulation Cases",
-    "gridBessLink": "Grid-Level BESS Solutions"
+    "diagramCaption": "Sistem tek hat şeması — topolojileri değiştirmek için yukarıdaki sekmelere tıklayın",
+    "viewCases": "Frekans Regülasyonu Vakalarını Gör",
+    "gridBessLink": "Şebeke Ölçekli BESS Çözümleri"
   },
   "productsEnergyStorage": {
-    "breadcrumbHome": "Home",
-    "breadcrumbProducts": "Products",
-    "badge": "Core product",
-    "title": "Energy Storage System",
-    "description": "Includes Energy Storage System Pack / DC Liquid Cooling Container — system-level delivery for high-power, long-life, and safe deployments.",
-    "certTitle": "Certifications",
-    "certDesc": "Common transport & safety standards",
-    "featuresTitle": "Features",
-    "featuresSub": "System-engineering features for scalable delivery: power coverage, lifetime consistency, redundant safety, and O&M friendliness.",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbProducts": "Ürünler",
+    "badge": "Temel ürün",
+    "title": "Enerji Depolama Sistemi",
+    "description": "Enerji Depolama Sistemi Paketi / DC Sıvı Soğutma Konteyneri — yüksek güçlü, uzun ömürlü ve güvenli dağıtımlar için sistem seviyesinde teslimat.",
+    "certTitle": "Sertifikalar",
+    "certDesc": "Ortak taşıma ve güvenlik standartları",
+    "featuresTitle": "Özellikler",
+    "featuresSub": "Ölçeklenebilir teslimat için sistem mühendisliği özellikleri: güç kapsamı, ömür tutarlılığı, yedekli güvenlik ve O&M kolaylığı.",
     "features": [
       {
-        "t": "High power",
-        "b": "0.25P–2P coverage across power-type and energy-type battery containers."
+        "t": "Yüksek güç",
+        "b": "Güç tipi ve enerji tipi batarya konteynerlerinde 0.25P–2P kapsamı."
       },
       {
-        "t": "Long lifetime",
-        "b": "Cell temperature delta: 2℃ within a pack, 5℃ across clusters — designed for 10-year calendar life."
+        "t": "Uzun ömür",
+        "b": "Hücre sıcaklık farkı: paket içinde 2°C, kümeler arasında 5°C — 10 yıllık takvim ömrü için tasarlanmıştır."
       },
       {
-        "t": "Real safety",
-        "b": "Three-layer fire protection at pack/cluster/container levels; battery modules rated IP67."
+        "t": "Gerçek güvenlik",
+        "b": "Paket/küme/konteyner seviyelerinde üç katmanlı yangın koruması; IP67 sınıfı batarya modülleri."
       },
       {
-        "t": "Easy integration",
-        "b": "Modular design enables per-cluster unit architecture with no inter-cluster circulating current; supports independent maintenance and upgrades."
+        "t": "Kolay entegrasyon",
+        "b": "Modüler tasarım, küme içi dolaşım akımı olmadan küme başına birim mimarisi sağlar; bağımsız bakım ve yükseltmeleri destekler."
       },
       {
-        "t": "Flexible configuration",
-        "b": "Side-by-side or end-to-end layout options with flexible expansion."
+        "t": "Esnek yapılandırma",
+        "b": "Esnek genişletme ile yan yana veya uçtan uca yerleşim seçenekleri."
       },
       {
-        "t": "Easy management",
-        "b": "Real-time data exchange with energy statistics, fault warnings, and thermal-runaway early warning."
+        "t": "Kolay yönetim",
+        "b": "Enerji istatistikleri, arıza uyarıları ve termal kaçış erken uyarısı ile gerçek zamanlı veri alışverişi."
       }
     ],
-    "specsTitle": "Specifications",
-    "specsSub": "Scroll horizontally on mobile to view all capacity variants.",
-    "specCornerLabel": "Parameter \\ Model",
-    "certFooter": "Certifications",
-    "ctaTitle": "Get a Custom Solution",
-    "ctaSub": "Tell us about your project — our engineers will design a custom solution within 48 hours."
+    "specsTitle": "Teknik Özellikler",
+    "specsSub": "Tüm kapasite varyantlarını görmek için mobilde yatay kaydırın.",
+    "specCornerLabel": "Parametre \\ Model",
+    "certFooter": "Sertifikalar",
+    "ctaTitle": "Özel Çözüm Alın",
+    "ctaSub": "Projenizi bize anlatın — mühendislerimiz 48 saat içinde özel bir çözüm tasarlayacak."
   },
   "productsResidentialEss": {
-    "back": "Back to home",
-    "badge": "Residential",
-    "pageTitle": "Residential ESS",
-    "pageSub": "Low-voltage stack & wall-mount packs, high-voltage systems, and all-in-one inverter + battery solutions.",
-    "categoriesTitle": "Product families",
-    "catLv": "Low-voltage (51.2V)",
-    "catLvDesc": "Stackable and wall-mounted batteries around 10kWh & 16kWh class.",
-    "catHv": "High-voltage (358.4V – 716.8V)",
-    "catHvDesc": "Systems for higher power and HV DC bus requirements.",
-    "catAio": "ESS all-in-one",
-    "catAioDesc": "Integrated inverter and battery for faster residential deployment.",
-    "gridTitle": "Products",
-    "viewHvsDetails": "View HVS high-voltage series details",
-    "viewAioDetails": "View ESS All-in-one series details",
-    "viewLfpDetails": "View LFP battery series details",
-    "details": "Details",
+    "back": "Ana sayfaya dön",
+    "badge": "Konut",
+    "pageTitle": "Konut ESS",
+    "pageSub": "Alçak gerilim istifli ve duvar montajlı paketler, yüksek gerilim sistemleri ve hepsi bir arada invertör + batarya çözümleri.",
+    "categoriesTitle": "Ürün aileleri",
+    "catLv": "Alçak gerilim (51.2V)",
+    "catLvDesc": "10kWh ve 16kWh sınıfında istiflenebilir ve duvara monte bataryalar.",
+    "catHv": "Yüksek gerilim (358.4V – 716.8V)",
+    "catHvDesc": "Daha yüksek güç ve YG DC bara gereksinimleri için sistemler.",
+    "catAio": "Hepsi bir arada ESS",
+    "catAioDesc": "Daha hızlı konut dağıtımı için entegre invertör ve batarya.",
+    "gridTitle": "Ürünler",
+    "viewHvsDetails": "HVS yüksek gerilim serisi detaylarını gör",
+    "viewAioDetails": "ESS Hepsi bir arada serisi detaylarını gör",
+    "viewLfpDetails": "LFP batarya serisi detaylarını gör",
+    "details": "Detaylar",
     "products": [
       {
         "key": "wallMount",
-        "title": "Wall-mounted battery",
+        "title": "Duvara monte batarya",
         "subtitle": "MDS-512200",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "Voltaj",
             "v": "25.6V-51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "Kapasite",
             "v": "206Ah"
           },
           {
-            "l": "Energy",
+            "l": "Enerji",
             "v": "5.12KWH-10.54KWH"
           },
           {
-            "l": "Cycle life",
-            "v": "6000 cycles"
+            "l": "Çevrim ömrü",
+            "v": "6000 çevrim"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "Boyutlar (mm)",
             "v": "723 × 655 × 255"
           },
           {
-            "l": "Communication",
+            "l": "İletişim",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "stackable",
-        "title": "Stackable battery",
+        "title": "İstiflenebilir batarya",
         "subtitle": "MDS-51314",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "Voltaj",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "Kapasite",
             "v": "314Ah"
           },
           {
-            "l": "Energy",
+            "l": "Enerji",
             "v": "16.07kWh"
           },
           {
-            "l": "Cycle life",
-            "v": "8000 cycles"
+            "l": "Çevrim ömrü",
+            "v": "8000 çevrim"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "Boyutlar (mm)",
             "v": "730 × 610 × 257"
           },
           {
-            "l": "Communication",
+            "l": "İletişim",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "hvSystem",
-        "title": "High voltage system",
-        "subtitle": "HVS Series",
+        "title": "Yüksek gerilim sistemi",
+        "subtitle": "HVS Serisi",
         "specs": [
           {
-            "l": "Voltage range",
+            "l": "Voltaj aralığı",
             "v": "358.4V – 716.8V"
           },
           {
-            "l": "Energy range",
-            "v": "14.33kWh – 100.35kWh (scalable)"
+            "l": "Enerji aralığı",
+            "v": "14.33kWh – 100.35kWh (ölçeklenebilir)"
           },
           {
-            "l": "Cycle life",
-            "v": "8000 cycles"
+            "l": "Çevrim ömrü",
+            "v": "8000 çevrim"
           },
           {
-            "l": "Communication",
+            "l": "İletişim",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "aio",
-        "title": "ESS all-in-one",
-        "subtitle": "All-in-one family",
+        "title": "Hepsi bir arada ESS",
+        "subtitle": "Hepsi bir arada ailesi",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "Voltaj",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "Kapasite",
             "v": "100Ah / 314Ah"
           },
           {
-            "l": "Energy",
+            "l": "Enerji",
             "v": "5.12kWh – 16.07kWh"
           },
           {
-            "l": "Representative models",
-            "v": "M1200 (1), MB-1111, etc."
+            "l": "Temsili modeller",
+            "v": "M1200 (1), MB-1111, vb."
           },
           {
-            "l": "Communication",
+            "l": "İletişim",
             "v": "RS485 / RS232 / CAN"
           }
         ]
@@ -667,90 +667,90 @@
     ]
   },
   "productsPcs": {
-    "back": "Back to home",
-    "badge": "PCS · Prefabricated",
-    "heroTitle": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation",
-    "heroSub": "Highly integrated prefabricated cabin combining inverter and step-up substation for utility-scale PV+storage and grid connection.",
-    "overviewTitle": "Product overview",
-    "overviewName": "Name",
-    "overviewNameVal": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation (PCS)",
-    "featuresTitle": "Key advantages",
-    "imageAlt": "SES4H-5160/6900-MV-EX prefabricated inverter substation product",
-    "specsTitle": "Technical specifications",
-    "specsHint": "Scroll horizontally on small screens.",
-    "colCat": "Category",
-    "colItem": "Parameter",
-    "colDetail": "Details",
-    "complianceTitle": "Compliance & certifications",
-    "complianceIntro": "Design and type testing comply with the following standards and grid codes (subject to delivery certificate).",
-    "ctaDatasheet": "Request datasheet",
-    "ctaContact": "Contact us",
+    "back": "Ana sayfaya dön",
+    "badge": "PCS · Prefabrik",
+    "heroTitle": "SES4H-5160/6900-MV-EX Prefabrik İnvertör Trafo Merkezi",
+    "heroSub": "Şebeke ölçekli PV+depolama ve şebeke bağlantısı için invertör ve yükseltici trafo merkezini birleştiren yüksek entegre prefabrik kabin.",
+    "overviewTitle": "Ürün genel bakışı",
+    "overviewName": "Ad",
+    "overviewNameVal": "SES4H-5160/6900-MV-EX Prefabrik İnvertör Trafo Merkezi (PCS)",
+    "featuresTitle": "Temel avantajlar",
+    "imageAlt": "SES4H-5160/6900-MV-EX prefabrik invertör trafo merkezi ürünü",
+    "specsTitle": "Teknik özellikler",
+    "specsHint": "Küçük ekranlarda yatay kaydırın.",
+    "colCat": "Kategori",
+    "colItem": "Parametre",
+    "colDetail": "Detaylar",
+    "complianceTitle": "Uyumluluk ve sertifikalar",
+    "complianceIntro": "Tasarım ve tip testi aşağıdaki standartlara ve şebeke kodlarına uygundur (teslimat sertifikasına tabidir).",
+    "ctaDatasheet": "Veri sayfası talep et",
+    "ctaContact": "Bize ulaşın",
     "features": [
       {
-        "t": "Flexible config",
-        "b": "Integrated inverter and substation in a highly prefabricated design, improving space efficiency and simplifying installation."
+        "t": "Esnek yapılandırma",
+        "b": "Yüksek prefabrik tasarımda entegre invertör ve trafo merkezi, alan verimliliğini artırır ve kurulumu basitleştirir."
       },
       {
-        "t": "Modular power",
-        "b": "Modular design allows configurable power rating to match project requirements."
+        "t": "Modüler güç",
+        "b": "Modüler tasarım, proje gereksinimlerine uygun yapılandırılabilir güç değeri sağlar."
       },
       {
-        "t": "High efficiency & stability",
-        "b": "1500V wide DC voltage range with multi-branch DC design to prevent battery circulating current."
+        "t": "Yüksek verimlilik ve kararlılık",
+        "b": "Batarya dolaşım akımını önleyen çok dallı DC tasarımı ile 1500V geniş DC voltaj aralığı."
       },
       {
-        "t": "Versatile use",
-        "b": "Supports VSG / PQ / VF modes with peak shaving and local autonomous operation."
+        "t": "Çok yönlü kullanım",
+        "b": "Puanti yük yönetimi ve yerel otonom çalışma ile VSG / PQ / VF modlarını destekler."
       },
       {
-        "t": "Safe & compatible",
-        "b": "Supports HVRT/LVRT, four-quadrant active/reactive power regulation, fast power response (<20ms)."
+        "t": "Güvenli ve uyumlu",
+        "b": "HVRT/LVRT, dört kadran aktif/reaktif güç regülasyonu, hızlı güç yanıtı (<20ms) destekler."
       },
       {
-        "t": "Grid-friendly",
-        "b": "Rated AC power: N×215kW @45°C, N×129kW @50°C (N = 20~32 modules); THDi/THDu <3%."
+        "t": "Şebeke dostu",
+        "b": "Nominal AC güç: N×215kW @45°C, N×129kW @50°C (N = 20~32 modül); THDi/THDu <3%."
       }
     ]
   },
   "productsSolarPanels": {
-    "back": "Back to home",
-    "badge": "Solar",
-    "pageTitle": "Solar Panels",
-    "pageSub": "High-efficiency ABC INFINITE modules with partial shading optimisation and industry-leading warranties.",
-    "gridTitle": "Product series",
-    "source": "Data source",
+    "back": "Ana sayfaya dön",
+    "badge": "Güneş",
+    "pageTitle": "Güneş Panelleri",
+    "pageSub": "Kısmi gölgeleme optimizasyonu ve sektör lideri garantilerle yüksek verimli ABC INFINITE modüller.",
+    "gridTitle": "Ürün serisi",
+    "source": "Veri kaynağı",
     "sourceLink": "aikosolar.com"
   },
   "productsHvs": {
-    "back": "Back to residential ESS",
-    "title": "High-Voltage System HVS Series",
-    "sub": "Rack-mount and cabinet-style high-voltage battery systems for higher power density and scalability.",
-    "secA": "Section A · Standard Rack (100Ah)",
-    "secB": "Section B · High-capacity Rack (280Ah)",
-    "secC": "Section C · Cabinet BESS (large capacity)",
-    "introA": "100Ah rack family: modular stackable design with IP65 protection, ideal for indoor/outdoor residential HV battery banks.",
-    "introB": "280Ah racks up to 35.84kWh per tower — designed for higher energy demands with the same footprint.",
-    "introC": "Cabinet BESS: pre-assembled high-voltage solution for residential and small commercial applications, scalable up to 100kWh.",
+    "back": "Konut ESS'ye dön",
+    "title": "Yüksek Gerilim Sistemi HVS Serisi",
+    "sub": "Daha yüksek güç yoğunluğu ve ölçeklenebilirlik için raf montajlı ve kabin tipi yüksek gerilim batarya sistemleri.",
+    "secA": "Bölüm A · Standart Raf (100Ah)",
+    "secB": "Bölüm B · Yüksek Kapasiteli Raf (280Ah)",
+    "secC": "Bölüm C · Kabin BESS (büyük kapasite)",
+    "introA": "100Ah raf ailesi: IP65 korumalı modüler istiflenebilir tasarım, iç/dış mekan konut YG batarya bankaları için ideal.",
+    "introB": "Kule başına 35.84kWh'ye kadar 280Ah raflar — aynı ayak iziyle daha yüksek enerji talepleri için tasarlanmıştır.",
+    "introC": "Kabin BESS: konut ve küçük ticari uygulamalar için önceden monte edilmiş yüksek gerilim çözümü, 100kWh'ye kadar ölçeklenebilir.",
     "specLabels": {
       "model": {
         "en": "Model",
         "zh": "型号",
         "es": "Modelo",
         "tr": "Model",
-        "pt": "Model",
-        "de": "Model",
-        "fr": "Model",
-        "th": "Model",
-        "ar": "Model",
-        "ja": "Model",
-        "ko": "Model",
+        "pt": "Modelo",
+        "de": "Modell",
+        "fr": "Modèle",
+        "th": "รุ่น",
+        "ar": "الطراز",
+        "ja": "モデル",
+        "ko": "모델",
         "id": "Model"
       },
       "voltage": {
         "en": "Voltage",
         "zh": "标称电压",
         "es": "Voltaje",
-        "tr": "Voltage",
+        "tr": "Voltaj",
         "pt": "Voltage",
         "de": "Voltage",
         "fr": "Voltage",
@@ -764,7 +764,7 @@
         "en": "Capacity",
         "zh": "容量",
         "es": "Capacidad",
-        "tr": "Capacity",
+        "tr": "Kapasite",
         "pt": "Capacity",
         "de": "Capacity",
         "fr": "Capacity",
@@ -778,7 +778,7 @@
         "en": "Energy",
         "zh": "能量配置",
         "es": "Energía",
-        "tr": "Energy",
+        "tr": "Enerji",
         "pt": "Energy",
         "de": "Energy",
         "fr": "Energy",
@@ -792,7 +792,7 @@
         "en": "Cycle life",
         "zh": "循环寿命",
         "es": "Vida útil (ciclos)",
-        "tr": "Cycle life",
+        "tr": "Çevrim ömrü",
         "pt": "Cycle life",
         "de": "Cycle life",
         "fr": "Cycle life",
@@ -806,7 +806,7 @@
         "en": "Dimensions",
         "zh": "尺寸",
         "es": "Dimensiones",
-        "tr": "Dimensions",
+        "tr": "Boyutlar",
         "pt": "Dimensions",
         "de": "Dimensions",
         "fr": "Dimensions",
@@ -820,7 +820,7 @@
         "en": "Comm.",
         "zh": "通讯",
         "es": "Comunicación",
-        "tr": "Comm.",
+        "tr": "İletişim",
         "pt": "Comm.",
         "de": "Comm.",
         "fr": "Comm.",
@@ -834,7 +834,7 @@
         "en": "Module size",
         "zh": "单模块尺寸",
         "es": "Tamaño del módulo",
-        "tr": "Module size",
+        "tr": "Modül boyutu",
         "pt": "Module size",
         "de": "Module size",
         "fr": "Module size",
@@ -848,7 +848,7 @@
         "en": "Total energy",
         "zh": "能量总量",
         "es": "Energía total",
-        "tr": "Total energy",
+        "tr": "Toplam enerji",
         "pt": "Total energy",
         "de": "Total energy",
         "fr": "Total energy",
@@ -862,7 +862,7 @@
         "en": "Footprint",
         "zh": "外形尺寸",
         "es": "Huella",
-        "tr": "Footprint",
+        "tr": "Ayak izi",
         "pt": "Footprint",
         "de": "Footprint",
         "fr": "Footprint",
@@ -876,7 +876,7 @@
         "en": "Nominal voltage",
         "zh": "标称电压",
         "es": "Voltaje nominal",
-        "tr": "Nominal voltage",
+        "tr": "Nominal voltaj",
         "pt": "Nominal voltage",
         "de": "Nominal voltage",
         "fr": "Nominal voltage",
@@ -889,18 +889,18 @@
     }
   },
   "productsLfpBattery": {
-    "back": "Back to residential ESS",
-    "title": "LFP Battery Series",
-    "sub": "Ultra-slim wall-mount and floor-standing / mobile LFP battery solutions.",
-    "sec1": "Ultra-slim Wall-mount Group · M1200 / M2400",
-    "sec2": "Floor / Mobile Group · M-BXS / M-LFP",
-    "corner": "Parameter",
+    "back": "Konut ESS'ye dön",
+    "title": "LFP Batarya Serisi",
+    "sub": "Ultra ince duvar montajlı ve zeminde duran / mobil LFP batarya çözümleri.",
+    "sec1": "Ultra İnce Duvar Montajlı Grup · M1200 / M2400",
+    "sec2": "Zemin / Mobil Grup · M-BXS / M-LFP",
+    "corner": "Parametre",
     "specLabels": {
       "nominalVoltage": {
         "en": "Nominal voltage",
         "zh": "标称电压",
         "es": "Voltaje nominal",
-        "tr": "Nominal voltage",
+        "tr": "Nominal voltaj",
         "pt": "Nominal voltage",
         "de": "Nominal voltage",
         "fr": "Nominal voltage",
@@ -914,7 +914,7 @@
         "en": "Nominal capacity",
         "zh": "标称容量",
         "es": "Capacidad nominal",
-        "tr": "Nominal capacity",
+        "tr": "Nominal kapasite",
         "pt": "Nominal capacity",
         "de": "Nominal capacity",
         "fr": "Nominal capacity",
@@ -928,7 +928,7 @@
         "en": "Energy",
         "zh": "能量",
         "es": "Energía",
-        "tr": "Energy",
+        "tr": "Enerji",
         "pt": "Energy",
         "de": "Energy",
         "fr": "Energy",
@@ -942,7 +942,7 @@
         "en": "Cycle life",
         "zh": "循环寿命",
         "es": "Vida útil (ciclos)",
-        "tr": "Cycle life",
+        "tr": "Çevrim ömrü",
         "pt": "Cycle life",
         "de": "Cycle life",
         "fr": "Cycle life",
@@ -956,7 +956,7 @@
         "en": "Dimensions (L×W×H)",
         "zh": "尺寸 (L×W×H)",
         "es": "Dimensiones (L×W×H)",
-        "tr": "Dimensions (L×W×H)",
+        "tr": "Boyutlar (U×G×Y)",
         "pt": "Dimensions (L×W×H)",
         "de": "Dimensions (L×W×H)",
         "fr": "Dimensions (L×W×H)",
@@ -970,7 +970,7 @@
         "en": "Communication",
         "zh": "通讯方式",
         "es": "Comunicación",
-        "tr": "Communication",
+        "tr": "İletişim",
         "pt": "Communication",
         "de": "Communication",
         "fr": "Communication",
@@ -983,23 +983,23 @@
     }
   },
   "productsAllInOne": {
-    "back": "Back to residential ESS",
-    "title": "Wall-mounted / Floor-standing LFP Battery Comparison",
-    "sub": "Side-by-side specification comparison across 6 popular models in the LFP battery lineup.",
-    "section": "Parameter comparison (6 models)",
-    "corner": "Parameter"
+    "back": "Konut ESS'ye dön",
+    "title": "Duvara Monte / Zeminde Duran LFP Batarya Karşılaştırması",
+    "sub": "LFP batarya serisindeki 6 popüler modelin yan yana teknik özellik karşılaştırması.",
+    "section": "Parametre karşılaştırması (6 model)",
+    "corner": "Parametre"
   },
   "productsEssAllInOne": {
-    "back": "Back to residential ESS",
-    "pageTitle": "ESS All-in-one Series",
-    "pageSub": "Integrated inverter + battery systems for hassle-free residential energy storage deployment."
+    "back": "Konut ESS'ye dön",
+    "pageTitle": "Hepsi Bir Arada ESS Serisi",
+    "pageSub": "Sorunsuz konut enerji depolama dağıtımı için entegre invertör + batarya sistemleri."
   },
   "productsStackableBattery": {
-    "back": "Back to residential ESS",
-    "title": "Stackable / Floor-standing Battery (314Ah / 200Ah) Comparison",
-    "sub": "Side-by-side specification comparison across 7 popular models.",
+    "back": "Konut ESS'ye dön",
+    "title": "İstiflenebilir / Zeminde Duran Batarya (314Ah / 200Ah) Karşılaştırması",
+    "sub": "İstiflenebilir ve zeminde duran LFP serisindeki modellerin yan yana karşılaştırması.",
     "section": "Parameter comparison (7 models)",
-    "corner": "Parameter"
+    "corner": "Parametre"
   },
   "blogDetail": {
     "notFound": "Article Not Found",

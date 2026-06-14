@@ -25,9 +25,9 @@ export default function BlogListPage() {
           setArticles(data);
           setLoading(false);
         }
-      } catch (e: any) {
+      } catch (e: unknown) {
         if (!cancelled) {
-          setError(e.message);
+          setError(e instanceof Error ? e.message : String(e));
           setLoading(false);
         }
       }

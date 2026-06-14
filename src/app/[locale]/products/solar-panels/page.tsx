@@ -43,6 +43,10 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEOSTAR — Residencial",
         desc: "Módulo ABC INFINITE de tercera generación. Optimización de sombreado parcial, mejor coeficiente de temperatura (-0,26 %/°C), resistencia a microgrietas, 25 años de garantía de producto y 30 años de garantía de rendimiento. Eficiencia de hasta 24,8 %. Fabricante de paneles solares Tier 1 de BloombergNEF.",
       },
+      tr: {
+        series: "NEOSTAR — Konut",
+        desc: "Üçüncü nesil ABC INFINITE modül. Kısmi gölgeleme optimizasyonu, daha iyi sıcaklık katsayısı (-0,26 %/°C), mikro çatlak direnci, 25 yıl ürün garantisi ve 30 yıl performans garantisi. %24,8'e varan verimlilik. BloombergNEF Tier 1 Solar PV üreticisi.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "530 W – 550 W" },
@@ -80,6 +84,10 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEOSTAR — Residencial",
         desc: "Módulo residencial de vidrio simple de tercera generación con tecnología Infinite. Mayor potencia de salida, menor BOS y mayor valor estético.",
       },
+      tr: {
+        series: "NEOSTAR — Konut",
+        desc: "Infinite teknolojisine sahip üçüncü nesil tek camlı konut modülü. Daha yüksek güç çıkışı, daha düşük BOS ve daha estetik değerler.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "530 W – 555 W" },
@@ -115,6 +123,10 @@ const PRODUCTS: SolarProduct[] = [
         series: "COMET — C&I",
         desc: "Mayor tasa de retorno en el mismo período de recuperación. Módulo N-type de tercera generación para aplicaciones comerciales e industriales con optimización de sombreado parcial y resistencia a microgrietas.",
       },
+      tr: {
+        series: "COMET — Ticari",
+        desc: "Aynı geri ödeme süresinde daha yüksek getiri oranı. Ticari ve endüstriyel uygulamalar için üçüncü nesil N-tipi modül, kısmi gölgeleme optimizasyonu ve mikro çatlak direnci.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "655 W – 690 W" },
@@ -145,6 +157,10 @@ const PRODUCTS: SolarProduct[] = [
       es: {
         series: "STELLAR — Utilidad",
         desc: "Mayor potencia de salida y menor LCOE para proyectos solares a gran escala. Módulo N-type de doble vidrio de tercera generación con tecnología Infinite.",
+      },
+      tr: {
+        series: "STELLAR — Endüstriyel",
+        desc: "Şebeke ölçekli güneş projeleri için daha yüksek güç çıkışı ve daha düşük LCOE. Infinite teknolojisine sahip üçüncü nesil çift cam N-tipi modül.",
       },
     },
     specs: [
@@ -181,6 +197,10 @@ const PRODUCTS: SolarProduct[] = [
         series: "STELLAR — Utilidad",
         desc: "Módulo de alta potencia para servicios públicos. N-type de doble vidrio de segunda generación con potencia de 770–805 W y gestión térmica avanzada.",
       },
+      tr: {
+        series: "STELLAR — Endüstriyel",
+        desc: "Ultra yüksek güçlü şebeke modülü. 770–805 W çıkışa sahip ikinci nesil çift cam N-tipi ve gelişmiş termal yönetim.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "770 W – 805 W" },
@@ -216,6 +236,10 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEBULAR — Peso ligero",
         desc: "Módulo ligero para techos con capacidad de carga limitada. Optimización de sombreado parcial, resistencia a microgrietas y mayor valor estético.",
       },
+      tr: {
+        series: "NEBULAR — Hafif",
+        desc: "Sınırlı taşıma kapasiteli çatılar için hafif modül. Kısmi gölgeleme optimizasyonu, mikro çatlak direnci ve daha estetik değerler.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "435 W – 450 W" },
@@ -241,12 +265,12 @@ const PRODUCTS: SolarProduct[] = [
  * Add more locales as needed; the component falls back to `en`.
  */
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia" },
-  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio" },
-  generation:  { en: "Generation", zh: "代次", es: "Generación" },
-  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)" },
-  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia" },
-  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura" },
+  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı" },
+  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi" },
+  generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil" },
+  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar" },
+  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik" },
+  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı" },
 };
 
 function getLabel(labelKey: string, locale: string): string {
