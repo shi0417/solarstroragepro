@@ -265,11 +265,11 @@ const PRODUCTS: SolarProduct[] = [
  * Add more locales as needed; the component falls back to `en`.
  */
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı" },
+  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı", pt: "Faixa de Potência" },
   glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi" },
   generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil" },
-  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar" },
-  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik" },
+  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar", pt: "Dimensões" },
+  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik", pt: "Eficiência" },
   tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı" },
 };
 

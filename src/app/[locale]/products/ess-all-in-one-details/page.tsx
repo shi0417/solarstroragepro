@@ -101,19 +101,19 @@ const SERIES: SeriesBlock[] = [
 ];
 
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  model:            { en: "Model", zh: "型号", es: "Modelo", tr: "Model" },
+  model:            { en: "Model", zh: "型号", es: "Modelo", tr: "Model", pt: "Modelo" },
   ratedPower:       { en: "Rated power", zh: "额定功率", es: "Potencia nominal", tr: "Nominal Güç" },
   ratedEnergy:      { en: "Rated energy", zh: "额定能量", es: "Energía nominal", tr: "Nominal Enerji" },
   voltage:          { en: "Voltage", zh: "电压", es: "Voltaje", tr: "Voltaj" },
   nominalVoltage:   { en: "Nominal voltage", zh: "标称电压", es: "Voltaje nominal", tr: "Nominal Voltaj" },
   capacity:         { en: "Capacity", zh: "容量", es: "Capacidad", tr: "Kapasite" },
-  acOutput:         { en: "AC output", zh: "AC 输出", es: "Salida AC", tr: "AC Çıkış" },
+  acOutput:         { en: "AC output", zh: "AC 输出", es: "Salida AC", tr: "AC Çıkış", pt: "Saída AC" },
   acInput:          { en: "AC input", zh: "AC 输入", es: "Entrada AC", tr: "AC Giriş" },
-  dimensions:       { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar (G×Y×D)" },
+  dimensions:       { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar (G×Y×D)", pt: "Dimensões" },
   energyPerModule:  { en: "Energy per module", zh: "单模块能量", es: "Energía por módulo", tr: "Modül Başına Enerji" },
   scalability:      { en: "Scalability", zh: "扩展能力", es: "Escalabilidad", tr: "Ölçeklenebilirlik" },
   cycleLife:        { en: "Cycle life", zh: "循环寿命", es: "Vida útil (ciclos)", tr: "Çevrim Ömrü" },
-  communication:    { en: "Communication", zh: "通讯", es: "Comunicación", tr: "İletişim" },
+  communication:    { en: "Communication", zh: "通讯", es: "Comunicación", tr: "İletişim", pt: "Comunicação" },
   dimSingle:        { en: "Dimensions — single tier (mm)", zh: "尺寸 — 单层 (mm)", es: "Dimensiones — un nivel (mm)", tr: "Boyutlar — Tek Katman (mm)" },
   dimThree:         { en: "Dimensions — three tiers (mm)", zh: "尺寸 — 三层 (mm)", es: "Dimensiones — tres niveles (mm)", tr: "Boyutlar — Üç Katman (mm)" },
 };
