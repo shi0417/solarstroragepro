@@ -508,7 +508,7 @@
       },
       {
         "t": "Larga vida útil",
-        "b": "Cell temperature delta: 2℃ within a pack, 5℃ across clusters — designed for 10-year calendar life."
+        "b": "Delta de temperatura de celda: 2℃ dentro de un paquete, 5℃ entre clústeres — diseñado para vida útil de calendario de 10 años."
       },
       {
         "t": "Seguridad real",
@@ -640,7 +640,7 @@
       {
         "key": "aio",
         "title": "ESS todo-en-uno",
-        "subtitle": "All-in-one family",
+        "subtitle": "Familia todo-en-uno",
         "specs": [
           {
             "l": "Tensión",
@@ -862,7 +862,7 @@
     ],
     "relatedTitle": "Productos relacionados de almacenamiento de energía",
     "relatedBody": "Explora la documentación de ESS containerizado y a nivel de sistema en nuestra página de productos.",
-    "relatedCta": "Energy Storage System",
+    "relatedCta": "Ver Sistema de Almacenamiento",
     "contactCta": "Contactar a ingeniería"
   },
   "solutionsDataCenter": {
@@ -933,9 +933,9 @@
     "footnote": "Diseño: topología modular en paralelo — seguro, confiable, flexible, inteligente y O&M simplificado. Supresión de incendios: opciones de aerosol y perfluoro (según ingeniería del proyecto).",
     "relatedTitle": "Producto de almacenamiento de energía relacionado",
     "relatedBody": "Explora ESS containerizado y detalles listos para fichas técnicas.",
-    "relatedCta": "Ver Energy Storage System",
+    "relatedCta": "Ver Sistema de Almacenamiento",
     "contactCta": "Contactar a ingeniería",
-    "scenariosParagraph": "For future distributed data center power architectures, storage adds both stabilization and backup at grid- and load-side touchpoints.",
-    "tableNote": "Scroll horizontally on small screens to view all columns."
+    "scenariosParagraph": "Para futuras arquitecturas de energía distribuida en centros de datos, el almacenamiento aporta tanto estabilización como respaldo en puntos de contacto de red y lado de carga.",
+    "tableNote": "Desliza horizontalmente en pantallas pequeñas para ver todas las columnas."
   }
 }
