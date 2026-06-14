@@ -8,78 +8,87 @@ import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 
+/**
+ * Spec label keys used in the HVS comparison tables.
+ * Translations live in messages.productsHvs.specLabels.
+ */
+const SPEC_LABELS = {
+  model: "model",
+  voltage: "voltage",
+  capacity: "capacity",
+  energy: "energy",
+  cycleLife: "cycleLife",
+  dimensions: "dimensions",
+  comm: "comm",
+  moduleSize: "moduleSize",
+  totalEnergy: "totalEnergy",
+  footprint: "footprint",
+} as const;
+
+type SpecRowKey = keyof typeof SPEC_LABELS;
+
+function buildRows(
+  labelKeys: SpecRowKey[],
+  valuesList: string[][],
+  locale: string,
+  specLabels: Record<string, Record<string, string>>,
+): ComparisonSpecRow[] {
+  return labelKeys.map((key, i) => ({
+    label: specLabels[key]?.[locale] ?? specLabels[key]?.en ?? key,
+    values: valuesList[i],
+  }));
+}
+
 export default function HvsDetailsPage() {
   const { locale, messages } = useLocaleContext();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const m = (messages as any).productsHvs ?? {};
-  const isZh = locale === "zh";
+  const specLabels: Record<string, Record<string, string>> = m.specLabels ?? {};
 
-  const rowsA: ComparisonSpecRow[] = isZh
-    ? [
-        { label: "型号", values: ["MDS-3584100", "MDS-5120100"] },
-        { label: "标称电压", values: ["358.4V", "512V"] },
-        { label: "容量", values: ["100Ah", "100Ah"] },
-        { label: "能量配置", values: ["5.12kWh×7", "5.12kWh×10"] },
-        { label: "循环寿命", values: ["6000 次", "6000 次"] },
-        { label: "尺寸", values: ["440×442×133 mm×7", "440×442×133 mm×10"] },
-        { label: "通讯", values: ["RS485/RS232/CAN", "RS485/RS232/CAN"] },
-      ]
-    : [
-        { label: "Model", values: ["MDS-3584100", "MDS-5120100"] },
-        { label: "Voltage", values: ["358.4V", "512V"] },
-        { label: "Capacity", values: ["100Ah", "100Ah"] },
-        { label: "Energy", values: ["5.12kWh × 7", "5.12kWh × 10"] },
-        { label: "Cycle life", values: ["6000 cycles", "6000 cycles"] },
-        { label: "Dimensions", values: ["440×442×133 mm × 7", "440×442×133 mm × 10"] },
-        { label: "Comm.", values: ["RS485/RS232/CAN", "RS485/RS232/CAN"] },
-      ];
+  // Universal spec data — values are the same across all languages
+  const rowsAData: { keys: SpecRowKey[]; values: string[][] } = {
+    keys: ["model", "voltage", "capacity", "energy", "cycleLife", "dimensions", "comm"],
+    values: [
+      ["MDS-3584100", "MDS-5120100"],
+      ["358.4V", "512V"],
+      ["100Ah", "100Ah"],
+      ["5.12kWh×7", "5.12kWh×10"],
+      ["6000 次", "6000 次"],
+      ["440×442×133 mm×7", "440×442×133 mm×10"],
+      ["RS485/RS232/CAN", "RS485/RS232/CAN"],
+    ],
+  };
 
-  const rowsB: ComparisonSpecRow[] = isZh
-    ? [
-        { label: "型号", values: ["MDS-3584280 (A)", "MDS-5632280", "MDS-7168280 (A)"] },
-        { label: "标称电压", values: ["358.4V", "563.2V", "716.8V"] },
-        { label: "容量", values: ["280Ah", "280Ah", "280Ah"] },
-        { label: "能量配置", values: ["14.336kWh×7", "14.336kWh×11", "14.336kWh×14"] },
-        { label: "循环寿命", values: ["8000 次", "8000 次", "8000 次"] },
-        { label: "单模块尺寸", values: ["483×792×245 mm", "483×792×245 mm", "483×792×245 mm"] },
-        { label: "通讯", values: ["RS485/RS232/CAN", "RS485/RS232/CAN", "RS485/RS232/CAN"] },
-      ]
-    : [
-        { label: "Model", values: ["MDS-3584280 (A)", "MDS-5632280", "MDS-7168280 (A)"] },
-        { label: "Voltage", values: ["358.4V", "563.2V", "716.8V"] },
-        { label: "Capacity", values: ["280Ah", "280Ah", "280Ah"] },
-        { label: "Energy", values: ["14.336kWh × 7", "14.336kWh × 11", "14.336kWh × 14"] },
-        { label: "Cycle life", values: ["8000 cycles", "8000 cycles", "8000 cycles"] },
-        { label: "Module size", values: ["483×792×245 mm", "483×792×245 mm", "483×792×245 mm"] },
-        { label: "Comm.", values: ["RS485/RS232/CAN", "RS485/RS232/CAN", "RS485/RS232/CAN"] },
-      ];
+  const rowsBData: { keys: SpecRowKey[]; values: string[][] } = {
+    keys: ["model", "voltage", "capacity", "energy", "cycleLife", "moduleSize", "comm"],
+    values: [
+      ["MDS-3584280 (A)", "MDS-5632280", "MDS-7168280 (A)"],
+      ["358.4V", "563.2V", "716.8V"],
+      ["280Ah", "280Ah", "280Ah"],
+      ["14.336kWh×7", "14.336kWh×11", "14.336kWh×14"],
+      ["8000 次", "8000 次", "8000 次"],
+      ["483×792×245 mm", "483×792×245 mm", "483×792×245 mm"],
+      ["RS485/RS232/CAN", "RS485/RS232/CAN", "RS485/RS232/CAN"],
+    ],
+  };
 
-  const rowsC: ComparisonSpecRow[] = isZh
-    ? [
-        { label: "型号", values: ["MDS-3584280 (B)", "MDS-7168280 (B)"] },
-        { label: "标称电压", values: ["358.4V", "716.8V"] },
-        { label: "能量总量", values: ["100.352kWh", "200.704kWh"] },
-        { label: "循环寿命", values: ["8000 次", "8000 次"] },
-        { label: "外形尺寸", values: ["1250×1245×2175 mm", "1626×1245×2175 mm"] },
-        { label: "通讯", values: ["RS485/RS232/CAN", "RS485/RS232/CAN"] },
-      ]
-    : [
-        { label: "Model", values: ["MDS-3584280 (B)", "MDS-7168280 (B)"] },
-        { label: "Nominal voltage", values: ["358.4V", "716.8V"] },
-        { label: "Total energy", values: ["100.352kWh", "200.704kWh"] },
-        { label: "Cycle life", values: ["8000 cycles", "8000 cycles"] },
-        { label: "Footprint", values: ["1250×1245×2175 mm", "1626×1245×2175 mm"] },
-        { label: "Comm.", values: ["RS485/RS232/CAN", "RS485/RS232/CAN"] },
-      ];
+  const rowsCData: { keys: SpecRowKey[]; values: string[][] } = {
+    keys: ["model", "voltage", "totalEnergy", "cycleLife", "footprint", "comm"],
+    values: [
+      ["MDS-3584280 (B)", "MDS-7168280 (B)"],
+      ["358.4V", "716.8V"],
+      ["100.352kWh", "200.704kWh"],
+      ["8000 次", "8000 次"],
+      ["1250×1245×2175 mm", "1626×1245×2175 mm"],
+      ["RS485/RS232/CAN", "RS485/RS232/CAN"],
+    ],
+  };
 
-  const blocks: {
-    id: string;
-    heading: string;
-    imageSrc: string;
-    imageAlt: string;
-    intro: string;
-    rows: ComparisonSpecRow[];
-  }[] = [
+  const rowsA = buildRows(rowsAData.keys, rowsAData.values, locale, specLabels);
+  const rowsB = buildRows(rowsBData.keys, rowsBData.values, locale, specLabels);
+  const rowsC = buildRows(rowsCData.keys, rowsCData.values, locale, specLabels);
+
+  const blocks = [
     {
       id: "100ah",
       heading: m.secA,

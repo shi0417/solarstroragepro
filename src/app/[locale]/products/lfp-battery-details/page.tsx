@@ -8,47 +8,61 @@ import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 
+const SPEC_LABELS = {
+  nominalVoltage: "nominalVoltage",
+  nominalCapacity: "nominalCapacity",
+  energy: "energy",
+  cycleLife: "cycleLife",
+  dimensions: "dimensions",
+  communication: "communication",
+} as const;
+
+type SpecRowKey = keyof typeof SPEC_LABELS;
+
+function buildRows(
+  labelKeys: SpecRowKey[],
+  valuesList: string[][],
+  locale: string,
+  specLabels: Record<string, Record<string, string>>,
+): ComparisonSpecRow[] {
+  return labelKeys.map((key, i) => ({
+    label: specLabels[key]?.[locale] ?? specLabels[key]?.en ?? key,
+    values: valuesList[i],
+  }));
+}
+
 export default function LfpBatteryDetailsPage() {
   const { locale, messages } = useLocaleContext();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const m = (messages as any).productsLfpBattery ?? {};
-  const isZh = locale === "zh";
+  const specLabels: Record<string, Record<string, string>> = m.specLabels ?? {};
 
-  const rows1: ComparisonSpecRow[] = isZh
-    ? [
-        { label: "标称电压", values: ["51.2V", "51.2V", "51.2V"] },
-        { label: "标称容量", values: ["100Ah", "200Ah", "314Ah"] },
-        { label: "能量", values: ["5.12kWh", "10.24kWh", "16.0768kWh"] },
-        { label: "循环寿命", values: ["6000 次", "8000 次", "8000 次"] },
-        { label: "尺寸 (L×W×H)", values: ["410×145×660 mm", "530×145×825 mm", "485×245×823 mm"] },
-        { label: "通讯方式", values: ["RS485/RS232/CAN", "RS232/RS485/CAN", "RS485/RS232/CAN"] },
-      ]
-    : [
-        { label: "Nominal voltage", values: ["51.2V", "51.2V", "51.2V"] },
-        { label: "Nominal capacity", values: ["100Ah", "200Ah", "314Ah"] },
-        { label: "Energy", values: ["5.12kWh", "10.24kWh", "16.0768kWh"] },
-        { label: "Cycle life", values: ["6000 cycles", "8000 cycles", "8000 cycles"] },
-        { label: "Dimensions (L×W×H)", values: ["410×145×660 mm", "530×145×825 mm", "485×245×823 mm"] },
-        { label: "Communication", values: ["RS485/RS232/CAN", "RS232/RS485/CAN", "RS485/RS232/CAN"] },
-      ];
+  const rows1Data: { keys: SpecRowKey[]; values: string[][] } = {
+    keys: ["nominalVoltage", "nominalCapacity", "energy", "cycleLife", "dimensions", "communication"],
+    values: [
+      ["51.2V", "51.2V", "51.2V"],
+      ["100Ah", "200Ah", "314Ah"],
+      ["5.12kWh", "10.24kWh", "16.0768kWh"],
+      ["6000 次", "8000 次", "8000 次"],
+      ["410×145×660 mm", "530×145×825 mm", "485×245×823 mm"],
+      ["RS485/RS232/CAN", "RS232/RS485/CAN", "RS485/RS232/CAN"],
+    ],
+  };
 
-  const rows2: ComparisonSpecRow[] = isZh
-    ? [
-        { label: "标称电压", values: ["25.6V", "51.2V"] },
-        { label: "标称容量", values: ["314Ah", "200Ah"] },
-        { label: "能量", values: ["8.0384kWh", "10.24kWh"] },
-        { label: "循环寿命", values: ["8000 次", "6000 次"] },
-        { label: "尺寸 (L×W×H)", values: ["420×240×465 mm", "553×256×845 mm"] },
-        { label: "通讯方式", values: ["RS485/RS232/CAN", "RS232/RS485/CAN"] },
-      ]
-    : [
-        { label: "Nominal voltage", values: ["25.6V", "51.2V"] },
-        { label: "Nominal capacity", values: ["314Ah", "200Ah"] },
-        { label: "Energy", values: ["8.0384kWh", "10.24kWh"] },
-        { label: "Cycle life", values: ["8000 cycles", "6000 cycles"] },
-        { label: "Dimensions (L×W×H)", values: ["420×240×465 mm", "553×256×845 mm"] },
-        { label: "Communication", values: ["RS485/RS232/CAN", "RS232/RS485/CAN"] },
-      ];
+  const rows2Data: { keys: SpecRowKey[]; values: string[][] } = {
+    keys: ["nominalVoltage", "nominalCapacity", "energy", "cycleLife", "dimensions", "communication"],
+    values: [
+      ["25.6V", "51.2V"],
+      ["314Ah", "200Ah"],
+      ["8.0384kWh", "10.24kWh"],
+      ["8000 次", "6000 次"],
+      ["420×240×465 mm", "553×256×845 mm"],
+      ["RS485/RS232/CAN", "RS232/RS485/CAN"],
+    ],
+  };
+
+  const rows1 = buildRows(rows1Data.keys, rows1Data.values, locale, specLabels);
+  const rows2 = buildRows(rows2Data.keys, rows2Data.values, locale, specLabels);
 
   const tableProps = {
     cellAlign: "center" as const,

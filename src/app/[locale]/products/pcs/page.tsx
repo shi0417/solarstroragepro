@@ -20,11 +20,54 @@ const PCS_PRODUCT_IMAGE = "/images/SES4H-5160-6900-MV-EX.png" as const;
 
 const FEATURE_ICONS: LucideIcon[] = [Layers, Box, Zap, Cpu, Shield, Gauge];
 
-type SpecRow = { category: string; item: string; detail: string };
+/**
+ * Spec rows with per-locale translations.
+ * Keys are stable; add more locales to `t` as needed.
+ */
+const SPEC_ROWS = [
+  // AC & DC parameters
+  { catKey: "acDc", t: { en: { item: "Rated AC power", detail: "N × 215kW @ 45°C；N × 129kW @ 50°C（N 为模块数，20~32）" }, zh: { item: "额定交流功率", detail: "N × 215kW @ 45°C；N × 129kW @ 50°C（N 为模块数，20~32）" }, es: { item: "Potencia AC nominal", detail: "N × 215kW @ 45°C; N × 129kW @ 50°C (N = número de módulos, 20~32)" } } },
+  { catKey: "acDc", t: { en: { item: "Max AC power", detail: "110% 额定功率，2 分钟（≤ 45°C）" }, zh: { item: "最大交流功率", detail: "110% 额定功率，2 分钟（≤ 45°C）" }, es: { item: "Potencia AC máx.", detail: "110% potencia nominal, 2 min (≤ 45°C)" } } },
+  { catKey: "acDc", t: { en: { item: "AC voltage / frequency", detail: "10kV–33kV / 50Hz" }, zh: { item: "交流电压 / 频率", detail: "10kV–33kV / 50Hz" }, es: { item: "Voltaje AC / frecuencia", detail: "10kV–33kV / 50Hz" } } },
+  { catKey: "acDc", t: { en: { item: "DC voltage range", detail: "1000V–1500V（满载放电以 1070V 为参考下限）" }, zh: { item: "直流电压范围", detail: "1000V–1500V（满载放电以 1070V 为参考下限）" }, es: { item: "Rango de voltaje DC", detail: "1000V–1500V (referencia 1070V para descarga a plena carga)" } } },
+  { catKey: "acDc", t: { en: { item: "THDi / THDu", detail: "< 3%" }, zh: { item: "THDi / THDu", detail: "< 3%" }, es: { item: "THDi / THDu", detail: "< 3%" } } },
+  { catKey: "acDc", t: { en: { item: "Max DC current (per branch)", detail: "1612A / 201A" }, zh: { item: "最大直流电流（每支路）", detail: "1612A / 201A" }, es: { item: "Corriente DC máx. (por rama)", detail: "1612A / 201A" } } },
+  // LV & auxiliary
+  { catKey: "lv", t: { en: { item: "Auxiliary transformer", detail: "50kVA，690V / 400V" }, zh: { item: "辅助变压器", detail: "50kVA，690V / 400V" }, es: { item: "Transformador auxiliar", detail: "50kVA, 690V / 400V" } } },
+  { catKey: "lv", t: { en: { item: "UPS", detail: "2kVA（1h 标准）" }, zh: { item: "UPS", detail: "2kVA（1h 标准）" }, es: { item: "UPS", detail: "2kVA (1h estándar)" } } },
+  { catKey: "lv", t: { en: { item: "Cooling", detail: "温控强制风冷" }, zh: { item: "冷却方式", detail: "温控强制风冷" }, es: { item: "Refrigeración", detail: "Enfriamiento forzado por aire controlado por temperatura" } } },
+  // Transformer
+  { catKey: "transformer", t: { en: { item: "Capacity", detail: "5200kVA @ 45°C 或 6900kVA @ 45°C" }, zh: { item: "容量", detail: "5200kVA @ 45°C 或 6900kVA @ 45°C" }, es: { item: "Capacidad", detail: "5200kVA @ 45°C o 6900kVA @ 45°C" } } },
+  { catKey: "transformer", t: { en: { item: "Vector group", detail: "Dy11y11" }, zh: { item: "联结组别", detail: "Dy11y11" }, es: { item: "Grupo de conexión", detail: "Dy11y11" } } },
+  { catKey: "transformer", t: { en: { item: "Type / cooling", detail: "油浸式 / ONAN" }, zh: { item: "类型 / 冷却", detail: "油浸式 / ONAN" }, es: { item: "Tipo / refrigeración", detail: "Sumergido en aceite / ONAN" } } },
+  { catKey: "transformer", t: { en: { item: "Efficiency", detail: "Tier 2（EU548）" }, zh: { item: "效率", detail: "Tier 2（EU548）" }, es: { item: "Eficiencia", detail: "Tier 2 (EU548)" } } },
+  { catKey: "transformer", t: { en: { item: "Transformer protection", detail: "压力、温度（两级）、气体继电器" }, zh: { item: "本体保护", detail: "压力、温度（两级）、气体继电器" }, es: { item: "Protección del transformador", detail: "Presión, temperatura (dos niveles), relé de gas" } } },
+  // Switchgear
+  { catKey: "switchgear", t: { en: { item: "Switchgear configuration", detail: "DeV / CV / CCV / VMV（可定制）" }, zh: { item: "开关柜配置", detail: "DeV / CV / CCV / VMV（可定制）" }, es: { item: "Configuración del interruptor", detail: "DeV / CV / CCV / VMV (personalizable)" } } },
+  { catKey: "switchgear", t: { en: { item: "MV switching & protection", detail: "真空断路器（VCB）、微机保护系统" }, zh: { item: "中压开关与保护", detail: "真空断路器（VCB）、微机保护系统" }, es: { item: "Conmutación y protección MV", detail: "Interruptor de circuito al vacío (VCB), sistema de protección basado en microcomputadora" } } },
+  { catKey: "switchgear", t: { en: { item: "DC side protection", detail: "直流断路器 / 熔断器" }, zh: { item: "直流侧保护", detail: "直流断路器 / 熔断器" }, es: { item: "Protección del lado DC", detail: "Interruptor de circuito DC / fusibles" } } },
+  // General
+  { catKey: "general", t: { en: { item: "Enclosure size (W×H×D)", detail: "40ft（12192×2896×2438 mm）或 45ft" }, zh: { item: "集装箱尺寸（W×H×D）", detail: "40ft（12192×2896×2438 mm）或 45ft" }, es: { item: "Tamaño del contenedor (W×H×D)", detail: "40ft (12192×2896×2438 mm) o 45ft" } } },
+  { catKey: "general", t: { en: { item: "Total weight", detail: "≤ 30t" }, zh: { item: "总重", detail: "≤ 30t" }, es: { item: "Peso total", detail: "≤ 30t" } } },
+  { catKey: "general", t: { en: { item: "Enclosure protection", detail: "IP54（舱体整体）" }, zh: { item: "防护等级", detail: "IP54（舱体整体）" }, es: { item: "Protección del recinto", detail: "IP54 (conjunto del contenedor)" } } },
+  { catKey: "general", t: { en: { item: "Operating temperature", detail: "-25°C 至 60°C（45°C 以上降额）" }, zh: { item: "工作温度", detail: "-25°C 至 60°C（45°C 以上降额）" }, es: { item: "Temperatura de funcionamiento", detail: "-25°C a 60°C (derating por encima de 45°C)" } } },
+  { catKey: "general", t: { en: { item: "Corrosion prevention", detail: "C5（仅外部机械部件）" }, zh: { item: "防腐等级", detail: "C5（仅外部机械部件）" }, es: { item: "Grado de corrosión", detail: "C5 (solo partes mecánicas externas)" } } },
+  // Communication
+  { catKey: "communication", t: { en: { item: "Interfaces", detail: "RS485, CAN, TCP/IP" }, zh: { item: "通讯方式", detail: "RS485, CAN, TCP/IP" }, es: { item: "Interfaces", detail: "RS485, CAN, TCP/IP" } } },
+];
+
+/** Category label translations */
+const CATEGORY_LABELS: Record<string, Record<string, string>> = {
+  acDc:          { en: "AC & DC parameters", zh: "交流与直流参数", es: "Parámetros AC y DC" },
+  lv:            { en: "LV & auxiliary equipment", zh: "低压与辅助设备", es: "Equipo LV y auxiliar" },
+  transformer:   { en: "Transformer", zh: "变压器参数", es: "Transformador" },
+  switchgear:    { en: "Switchgear & protection", zh: "开关柜与保护", es: "Interruptores y protección" },
+  general:      { en: "General & environment", zh: "通用与环境参数", es: "General y entorno" },
+  communication: { en: "Communication", zh: "通讯接口", es: "Comunicación" },
+};
 
 export default function PcsProductPage() {
   const { locale, messages } = useLocaleContext();
-  const isZh = locale === "zh";
   const m = messages.productsPcs ?? {};
 
   const CERTIFICATIONS = [
@@ -36,246 +79,11 @@ export default function PcsProductPage() {
     "EN50549-2",
   ] as const;
 
-  const specRows: SpecRow[] = isZh
-    ? [
-        {
-          category: "交流与直流参数",
-          item: "额定交流功率",
-          detail: "N × 215kW @ 45°C；N × 129kW @ 50°C（N 为模块数，20~32）",
-        },
-        {
-          category: "交流与直流参数",
-          item: "最大交流功率",
-          detail: "110% 额定功率，2 分钟（≤ 45°C）",
-        },
-        {
-          category: "交流与直流参数",
-          item: "交流电压 / 频率",
-          detail: "10kV–33kV / 50Hz",
-        },
-        {
-          category: "交流与直流参数",
-          item: "直流电压范围",
-          detail: "1000V–1500V（满载放电以 1070V 为参考下限）",
-        },
-        {
-          category: "交流与直流参数",
-          item: "THDi / THDu",
-          detail: "< 3%",
-        },
-        {
-          category: "交流与直流参数",
-          item: "最大直流电流（每支路）",
-          detail: "1612A / 201A",
-        },
-        {
-          category: "低压与辅助设备",
-          item: "辅助变压器",
-          detail: "50kVA，690V / 400V",
-        },
-        {
-          category: "低压与辅助设备",
-          item: "UPS",
-          detail: "2kVA（1h 标准）",
-        },
-        {
-          category: "低压与辅助设备",
-          item: "冷却方式",
-          detail: "温控强制风冷",
-        },
-        {
-          category: "变压器参数",
-          item: "容量",
-          detail: "5200kVA @ 45°C 或 6900kVA @ 45°C",
-        },
-        {
-          category: "变压器参数",
-          item: "联结组别",
-          detail: "Dy11y11",
-        },
-        {
-          category: "变压器参数",
-          item: "类型 / 冷却",
-          detail: "油浸式 / ONAN",
-        },
-        {
-          category: "变压器参数",
-          item: "效率",
-          detail: "Tier 2（EU548）",
-        },
-        {
-          category: "变压器参数",
-          item: "本体保护",
-          detail: "压力、温度（两级）、气体继电器",
-        },
-        {
-          category: "开关柜与保护",
-          item: "开关柜配置",
-          detail: "DeV / CV / CCV / VMV（可定制）",
-        },
-        {
-          category: "开关柜与保护",
-          item: "中压开关与保护",
-          detail: "真空断路器（VCB）、微机保护系统",
-        },
-        {
-          category: "开关柜与保护",
-          item: "直流侧保护",
-          detail: "直流断路器 / 熔断器",
-        },
-        {
-          category: "通用与环境参数",
-          item: "集装箱尺寸（W×H×D）",
-          detail: "40ft（12192×2896×2438 mm）或 45ft",
-        },
-        {
-          category: "通用与环境参数",
-          item: "总重",
-          detail: "≤ 30t",
-        },
-        {
-          category: "通用与环境参数",
-          item: "防护等级",
-          detail: "IP54（舱体整体）",
-        },
-        {
-          category: "通用与环境参数",
-          item: "工作温度",
-          detail: "-25°C 至 60°C（45°C 以上降额）",
-        },
-        {
-          category: "通用与环境参数",
-          item: "防腐等级",
-          detail: "C5（仅外部机械部件）",
-        },
-        {
-          category: "通讯接口",
-          item: "通讯方式",
-          detail: "RS485, CAN, TCP/IP",
-        },
-      ]
-    : [
-        {
-          category: "AC & DC parameters",
-          item: "Rated AC power",
-          detail: "N × 215 kW @ 45°C; N × 129 kW @ 50°C (N = 20–32)",
-        },
-        {
-          category: "AC & DC parameters",
-          item: "Max AC power",
-          detail: "110% rated for 2 minutes (≤ 45°C)",
-        },
-        {
-          category: "AC & DC parameters",
-          item: "AC voltage / frequency",
-          detail: "10 kV–33 kV / 50 Hz",
-        },
-        {
-          category: "AC & DC parameters",
-          item: "DC voltage range",
-          detail: "1000 V–1500 V (1070 V reference at full-load discharge)",
-        },
-        {
-          category: "AC & DC parameters",
-          item: "THDi / THDu",
-          detail: "< 3%",
-        },
-        {
-          category: "AC & DC parameters",
-          item: "Max DC current (per branch)",
-          detail: "1612 A / 201 A",
-        },
-        {
-          category: "LV & auxiliary equipment",
-          item: "Auxiliary transformer",
-          detail: "50 kVA, 690 V / 400 V",
-        },
-        {
-          category: "LV & auxiliary equipment",
-          item: "UPS",
-          detail: "2 kVA (1 h standard)",
-        },
-        {
-          category: "LV & auxiliary equipment",
-          item: "Cooling",
-          detail: "Temperature-controlled forced-air cooling",
-        },
-        {
-          category: "Transformer",
-          item: "Capacity",
-          detail: "5200 kVA @ 45°C or 6900 kVA @ 45°C",
-        },
-        {
-          category: "Transformer",
-          item: "Vector group",
-          detail: "Dy11y11",
-        },
-        {
-          category: "Transformer",
-          item: "Type / cooling",
-          detail: "Oil-immersed / ONAN",
-        },
-        {
-          category: "Transformer",
-          item: "Efficiency",
-          detail: "Tier 2 (EU548)",
-        },
-        {
-          category: "Transformer",
-          item: "Transformer protection",
-          detail: "Pressure relay; two-stage temperature; gas (Buchholz) relay",
-        },
-        {
-          category: "Switchgear & protection",
-          item: "Switchgear configuration",
-          detail: "DeV / CV / CCV / VMV (customized)",
-        },
-        {
-          category: "Switchgear & protection",
-          item: "MV switching & protection",
-          detail: "Vacuum circuit breaker (VCB), microcomputer-based protection",
-        },
-        {
-          category: "Switchgear & protection",
-          item: "DC side protection",
-          detail: "DC circuit breakers / fuses",
-        },
-        {
-          category: "General & environment",
-          item: "Enclosure size (W×H×D)",
-          detail: "40 ft (12192×2896×2438 mm) or 45 ft",
-        },
-        {
-          category: "General & environment",
-          item: "Total weight",
-          detail: "≤ 30 t",
-        },
-        {
-          category: "General & environment",
-          item: "Enclosure protection",
-          detail: "IP54 (overall)",
-        },
-        {
-          category: "General & environment",
-          item: "Operating temperature",
-          detail: "-25°C to 60°C (derate above 45°C)",
-        },
-        {
-          category: "General & environment",
-          item: "Corrosion prevention",
-          detail: "C5 (external mechanical parts only)",
-        },
-        {
-          category: "Communication",
-          item: "Interfaces",
-          detail: "RS485, CAN, TCP/IP",
-        },
-      ];
-
   return (
     <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
+        {/* ── Hero ── */}
         <section className="relative overflow-hidden border-b border-[var(--border)]">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950 to-slate-900" />
           <div className="pointer-events-none absolute inset-0 bg-grid-slate bg-[length:44px_44px] opacity-20" />
@@ -314,6 +122,7 @@ export default function PcsProductPage() {
           </div>
         </section>
 
+        {/* ── Overview + Image ── */}
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6">
             <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
@@ -359,6 +168,7 @@ export default function PcsProductPage() {
               </div>
             </div>
 
+            {/* ── Features ── */}
             <div>
               <h2 className="text-xl font-bold text-white sm:text-2xl">{m.featuresTitle}</h2>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -382,6 +192,7 @@ export default function PcsProductPage() {
               </div>
             </div>
 
+            {/* ── Spec Table ── */}
             <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
               <h2 className="text-xl font-bold text-white sm:text-2xl">{m.specsTitle}</h2>
               <p className="mt-2 text-sm text-slate-500">{m.specsHint}</p>
@@ -396,27 +207,32 @@ export default function PcsProductPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {specRows.map((row, i) => (
-                      <tr
-                        key={`${row.category}-${row.item}-${i}`}
-                        className={i % 2 === 0 ? "bg-slate-800/20" : "bg-slate-800/10"}
-                      >
-                        <td className="border-t border-slate-700/80 px-4 py-3 font-medium text-slate-300">
-                          {row.category}
-                        </td>
-                        <td className="border-t border-slate-700/80 px-4 py-3 text-slate-400">
-                          {row.item}
-                        </td>
-                        <td className="border-t border-slate-700/80 px-4 py-3 text-slate-200">
-                          {row.detail}
-                        </td>
-                      </tr>
-                    ))}
+                    {SPEC_ROWS.map((row, i) => {
+                      const t = row.t[locale as keyof typeof row.t] ?? row.t.en;
+                      const catLabel = CATEGORY_LABELS[row.catKey]?.[locale] ?? CATEGORY_LABELS[row.catKey]?.en ?? row.catKey;
+                      return (
+                        <tr
+                          key={`${row.catKey}-${i}`}
+                          className={i % 2 === 0 ? "bg-slate-800/20" : "bg-slate-800/10"}
+                        >
+                          <td className="border-t border-slate-700/80 px-4 py-3 font-medium text-slate-300">
+                            {catLabel}
+                          </td>
+                          <td className="border-t border-slate-700/80 px-4 py-3 text-slate-400">
+                            {t.item}
+                          </td>
+                          <td className="border-t border-slate-700/80 px-4 py-3 text-slate-200">
+                            {t.detail}
+                          </td>
+                        </tr>
+                      );
+                    })}
                   </tbody>
                 </table>
               </div>
             </div>
 
+            {/* ── Certifications ── */}
             <div className="rounded-2xl border border-[var(--border)] bg-slate-800/80 p-6 shadow-xl shadow-black/20 backdrop-blur sm:p-8">
               <h2 className="text-xl font-bold text-white sm:text-2xl">{m.complianceTitle}</h2>
               <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">{m.complianceIntro}</p>
@@ -431,6 +247,7 @@ export default function PcsProductPage() {
               </ul>
             </div>
 
+            {/* ── CTA ── */}
             <div className="flex flex-wrap justify-center gap-4 rounded-2xl border border-solar-500/25 bg-gradient-to-br from-solar-500/10 to-transparent p-8">
               <a
                 href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "sales@solarstoragepro.com"}?subject=${encodeURIComponent("PCS datasheet request")}`}
