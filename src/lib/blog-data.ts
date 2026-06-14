@@ -47,7 +47,7 @@ export async function fetchArticles(locale: string): Promise<BlogArticle[]> {
 
   if (!rows || !Array.isArray(rows)) return [];
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   return rows
     .filter(
       (row: Record<string, any>) =>
@@ -69,6 +69,7 @@ export async function fetchArticles(locale: string): Promise<BlogArticle[]> {
       locale,
     };
   });
+  /* eslint-enable @typescript-eslint/no-explicit-any */
 }
 
 /**

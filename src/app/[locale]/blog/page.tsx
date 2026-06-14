@@ -11,7 +11,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { fetchArticles, BlogArticle } from "@/lib/blog-data";
 
 export default function BlogListPage() {
-  const { locale, messages } = useLocaleContext();
+  const { locale, messages, localizePath } = useLocaleContext();
   const [articles, setArticles] = useState<BlogArticle[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -97,7 +97,7 @@ export default function BlogListPage() {
                 {articles.map((article) => (
                   <Link
                     key={article.slug}
-                    href={`/blog/${article.slug}`}
+                    href={localizePath(`/blog/${article.slug}`)}
                     className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:border-brand-200 hover:shadow-lg hover:shadow-brand-500/5"
                   >
                     {/* Accent bar */}

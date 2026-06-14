@@ -13,7 +13,7 @@ import { fetchArticleBySlug, fetchArticles, BlogArticle } from "@/lib/blog-data"
 
 export default function BlogArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
-  const { locale, messages } = useLocaleContext();
+  const { locale, messages, localizePath } = useLocaleContext();
   const bd = messages.blogDetail ?? {};
 
   const [article, setArticle] = useState<BlogArticle | null>(null);
@@ -70,7 +70,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
         <Header />
         <div className="mx-auto max-w-3xl px-4 py-32 text-center">
           <h1 className="text-2xl font-bold text-slate-900">{bd.notFound}</h1>
-          <Link href="/blog" className="mt-4 inline-flex items-center gap-2 text-brand-600 hover:underline">
+          <Link href={localizePath("/blog")} className="mt-4 inline-flex items-center gap-2 text-brand-600 hover:underline">
             <ArrowLeft className="h-4 w-4" />
             {bd.backToBlog}
           </Link>
@@ -100,7 +100,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
 
           <div className="relative mx-auto max-w-4xl px-4 sm:px-6">
             <Link
-              href="/blog"
+              href={localizePath("/blog")}
               className="inline-flex items-center gap-1.5 text-sm text-slate-400 transition hover:text-brand-400"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -204,7 +204,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
                 {related.map((r) => (
                   <Link
                     key={r.slug}
-                    href={`/blog/${r.slug}`}
+                    href={localizePath(`/blog/${r.slug}`)}
                     className="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-brand-200 hover:shadow-md"
                   >
                     <span className="text-xs font-medium text-brand-600">{r.category}</span>
