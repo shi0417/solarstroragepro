@@ -7,7 +7,11 @@
  */
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://qujcrmbzuzlgjrexbzga.supabase.co";
-const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
+const SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY ||
+  "sb_publishable_bBrZR2df4POLnM4sWI96xQ_xPvlD06k";
 
 export interface BlogArticle {
   id: string;
@@ -27,11 +31,16 @@ async function supabaseGet(endpoint: string) {
     headers: {
       apikey: SUPABASE_ANON_KEY,
       Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      Accept: "application/json",
     },
-    next: { revalidate: 3600 }, // ISR: revalidate every hour
+    // Note: next.revalidate removed — ISR is server-only; this runs client-side
   });
   if (!res.ok) {
-    console.error(`Supabase fetch error: ${res.status} ${endpoint}`);
+    const body = await res.text().catch(() => "");
+    console.error(
+      `[blog-data] Supabase fetch error: ${res.status} ${endpoint}`,
+      { body: body.slice(0, 200) }
+    );
     return [];
   }
   return res.json();

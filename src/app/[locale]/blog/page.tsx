@@ -1,42 +1,42 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock, Tag } from "lucide-react";
 
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
-import { useLocaleContext } from "@/components/site/LocaleProvider";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
-import { fetchArticles, BlogArticle } from "@/lib/blog-data";
+import { fetchArticles } from "@/lib/blog-data";
+import { loadMessages } from "@/lib/load-messages";
 
-export default function BlogListPage() {
-  const { locale, messages, localizePath } = useLocaleContext();
-  const [articles, setArticles] = useState<BlogArticle[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+const LOCALES = ["en", "zh", "es", "tr", "pt", "de", "fr", "th", "ar", "ja", "ko", "id"] as const;
 
-  useEffect(() => {
-    let cancelled = false;
-    async function load() {
-      try {
-        const data = await fetchArticles(locale);
-        if (!cancelled) {
-          setArticles(data);
-          setLoading(false);
-        }
-      } catch (e: unknown) {
-        if (!cancelled) {
-          setError(e instanceof Error ? e.message : String(e));
-          setLoading(false);
-        }
-      }
-    }
-    load();
-    return () => { cancelled = true; };
-  }, [locale]);
+type Params = Promise<{ locale: string }>;
 
-  const b = messages.blog ?? {};
+export default async function BlogListPage({ params }: { params: Params }) {
+  const { locale } = await params;
+
+  // Validate locale
+  const normalizedLocale = LOCALES.includes(locale as typeof LOCALES[number]) ? locale : "en";
+  const messages = loadMessages(normalizedLocale);
+  const b = (messages as Record<string, Record<string, string>>).blog ?? {};
+
+  // Fetch articles server-side
+  let articles: Awaited<ReturnType<typeof fetchArticles>> = [];
+  let fetchError: string | null = null;
+
+  try {
+    articles = await fetchArticles(normalizedLocale);
+  } catch (e) {
+    fetchError = e instanceof Error ? e.message : String(e);
+    console.error("[blog page] fetchArticles failed:", fetchError);
+  }
+
+  const localizePath = (path: string) => {
+    if (/^https?:\/\//i.test(path)) return path;
+    if (path === "/") return `/${normalizedLocale}`;
+    if (path.startsWith("/#")) return `/${normalizedLocale}${path}`;
+    if (path.startsWith("/")) return `/${normalizedLocale}${path}`;
+    return path;
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -63,36 +63,20 @@ export default function BlogListPage() {
         {/* ── Article Grid ── */}
         <section className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            {loading && (
-              <div className="grid gap-8 md:grid-cols-2">
-                {[1, 2].map((n) => (
-                  <div key={n} className="animate-pulse rounded-2xl border border-slate-200 bg-white p-6">
-                    <div className="h-1.5 w-24 rounded bg-slate-200" />
-                    <div className="mt-4 h-6 w-3/4 rounded bg-slate-200" />
-                    <div className="mt-2 h-4 w-full rounded bg-slate-100" />
-                    <div className="mt-2 h-4 w-2/3 rounded bg-slate-100" />
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {error && (
+            {fetchError && (
               <div className="text-center py-12">
-                <p className="text-red-500">Failed to load articles: {error}</p>
-                <button
-                  onClick={() => window.location.reload()}
-                  className="mt-4 inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white"
-                >
-                  Retry
-                </button>
+                <p className="text-red-500">Failed to load articles: {fetchError}</p>
               </div>
             )}
 
-            {!loading && !error && articles.length === 0 && (
-              <div className="text-center py-12 text-slate-500">{b.noArticles || "No articles yet."}</div>
+            {!fetchError && articles.length === 0 && (
+              <div className="text-center py-12 text-slate-500">
+                <p>{b.noArticles || "No articles yet."}</p>
+                <p className="mt-2 text-xs text-slate-400">locale={normalizedLocale}, count={articles.length}</p>
+              </div>
             )}
 
-            {!loading && !error && articles.length > 0 && (
+            {!fetchError && articles.length > 0 && (
               <div className="grid gap-8 md:grid-cols-2">
                 {articles.map((article) => (
                   <Link
@@ -163,7 +147,7 @@ export default function BlogListPage() {
             </h2>
             <p className="mt-3 text-slate-600">{b.ctaSub}</p>
             <Link
-              href="/#contact"
+              href={localizePath("/#contact")}
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-brand-700 hover:shadow-md hover:shadow-brand-600/20"
             >
               {b.ctaBtn}
