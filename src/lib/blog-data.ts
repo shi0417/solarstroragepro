@@ -48,9 +48,15 @@ export async function fetchArticles(locale: string): Promise<BlogArticle[]> {
   if (!rows || !Array.isArray(rows)) return [];
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return rows.map((row: Record<string, any>) => {
-    const t = Array.isArray(row.blog_article_translations) ? row.blog_article_translations[0] : {};
-    return {
+  return rows
+    .filter(
+      (row: Record<string, any>) =>
+        Array.isArray(row.blog_article_translations) &&
+        row.blog_article_translations.length > 0
+    )
+    .map((row: Record<string, any>) => {
+      const t = row.blog_article_translations[0];
+      return {
       id: row.id as string,
       slug: row.slug as string,
       date: row.date as string,
@@ -80,7 +86,9 @@ export async function fetchArticleBySlug(
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const row: Record<string, any> = rows[0];
-  const t = Array.isArray(row.blog_article_translations) ? row.blog_article_translations[0] : {};
+  const translations = row.blog_article_translations;
+  if (!Array.isArray(translations) || translations.length === 0) return null;
+  const t = translations[0];
   return {
     id: row.id as string,
     slug: row.slug as string,
