@@ -785,5 +785,157 @@
     "ctaBtn": "WhatsApp 咨询",
     "moreBtn": "查看更多案例",
     "techPageBtn": "了解技术平台"
+  },
+  "solutionsGridLevelBess": {
+    "breadcrumbHome": "首页",
+    "breadcrumbSolutions": "解决方案",
+    "badge": "电网侧 · 大容量储能",
+    "title": "电网级电池储能系统（BESS）",
+    "subtitle": "大容量变电站与电网级储能整体方案，服务电力系统灵活性、辅助服务与新能源消纳。",
+    "paragraphText": "方案定位涵盖：电网级大规模储能系统与大容量变电站侧集成，面向并网运行与电力市场规则工程化落地。",
+    "advantagesTitle": "四大核心优势",
+    "advantages": [
+      {
+        "n": "01",
+        "title": "一站式方案",
+        "body": "覆盖源、网、荷侧全场景应用，从方案设计到系统集成形成闭环交付能力。"
+      },
+      {
+        "n": "02",
+        "title": "产业级产品平台",
+        "body": "基于储能专用 1P 314Ah 方形电芯等平台，面向长寿命与高一致性运行优化。"
+      },
+      {
+        "n": "03",
+        "title": "毫秒级响应",
+        "body": "支持毫秒级功率响应与快速充放，系统功率设计可覆盖最高约 2P 需求（以工程边界为准）。"
+      },
+      {
+        "n": "04",
+        "title": "多重安全保障",
+        "body": "三重消防体系结合模块化结构，提升舱级/簇级/包级协同防护与运维友好性。"
+      }
+    ],
+    "appsIntroTitle": "细分应用场景",
+    "appsIntro": "面向电网级大型储能（BESS）的高功率供电应用正在重塑能源系统运行方式，为电网企业与大型用电主体提供可调度、可交易、可并网的灵活资源。系统可高效存储风电、光伏等新能源大发时段的富余电量，并在负荷高峰与电价高峰时段释放，提升资产利用率与电网稳定性。依托大功率变流与电池集成能力，BESS 可参与一次调频、电压支撑、备用与需求响应等辅助服务，在削峰填谷与峰谷套利场景下显著优化用能成本。",
+    "apps": [
+      {
+        "title": "火电一次调频",
+        "body": "提供大功率储能系统，实现毫秒级一次调频响应，帮助火电机组提升调频速度与质量，在辅助服务市场中获取稳定收益。"
+      },
+      {
+        "title": "光储充一体化",
+        "body": "大功率储能支撑充电场站与园区负荷的功率需求，通过削峰填谷降低用电成本与碳排放强度。"
+      },
+      {
+        "title": "超快充配套储能",
+        "body": "作为容量支撑配置，满足超充桩群峰值功率需求，提升充电站运行效率与电网接入友好性。"
+      },
+      {
+        "title": "矿山应急供电",
+        "body": "为井下等关键负荷提供重要供电保障；相较柴油发电方案，响应更快、效率更高，有助于缩短投资回收周期并改善电能质量。"
+      }
+    ],
+    "techTitle": "技术要点概览",
+    "techNote": "具体参数以项目型式试验、并网测试与合同技术附件为准。",
+    "techHighlights": [
+      {
+        "k": "响应特性",
+        "v": "毫秒级调控能力（以具体项目与控制策略为准）"
+      },
+      {
+        "k": "功率能力",
+        "v": "系统功率设计可覆盖最高约 2P 倍率区间"
+      },
+      {
+        "k": "电芯平台",
+        "v": "储能专用 1P 314Ah 级方形磷酸铁锂电芯"
+      },
+      {
+        "k": "安全架构",
+        "v": "三重消防体系 + 模块化系统设计"
+      },
+      {
+        "k": "场景覆盖",
+        "v": "源、网、荷侧全链路应用"
+      }
+    ],
+    "relatedTitle": "相关储能产品",
+    "relatedBody": "查看集装箱式储能系统等产品页面，获取系统级方案与参数说明。",
+    "relatedCta": "Energy Storage System",
+    "contactCta": "联系工程团队"
+  },
+  "solutionsDataCenter": {
+    "breadcrumbHome": "首页",
+    "breadcrumbSolutions": "解决方案",
+    "badge": "AIDC · 备电与电能质量",
+    "title": "数据中心储能解决方案",
+    "lead": "面向智算与高密度算力场景的大倍率锂电备电方案，兼顾供电可靠性与电能质量，平滑 GPU 类负载的毫秒级波动。",
+    "painTitle": "行业痛点",
+    "painItems": [
+      "数据中心用电快速增长，对电网供电能力与扩容节奏提出更高要求。",
+      "GPU 负载瞬时波动大、峰值高，增加 IT 设备宕机与供电质量风险。",
+      "PUE 与能效指标日趋严格，供电架构需向更高效方向演进。",
+      "对电芯安全性要求极高，需满足无起火、无爆炸等严苛标准。"
+    ],
+    "scenariosTitle": "应用场景",
+    "scenarioGridTitle": "近电网侧 BESS",
+    "scenarioGridBody": "在电网侧附近部署电池储能系统，平抑大规模 GPU 集群的负荷波动，并提供 UPS 级备电能力。",
+    "scenarioLocalTitle": "近 GPU 本地储能",
+    "scenarioLocalBody": "在 GPU 近端部署储能，平滑毫秒级负载冲击，可按需配置备电时长，实现更贴近负载的功率支撑。",
+    "provideTitle": "我们提供什么",
+    "provideBody": "从电芯、模组到系统的锂电 UPS 全链条产品供应，支持模块化并联与工程化交付。",
+    "advantagesTitle": "核心优势",
+    "advantages": [
+      {
+        "title": "高安全",
+        "body": "温升可控；电芯通过针刺等严苛测试条件下无起火、无爆炸表现（以具体认证与报告为准）。"
+      },
+      {
+        "title": "长寿命",
+        "body": "10 年日历寿命设计取向，满足数据中心长期稳定运行需求。"
+      },
+      {
+        "title": "快响应",
+        "body": "毫秒级响应负载波动，可支撑最高约 300% 的峰值功率需求。"
+      },
+      {
+        "title": "更优成本",
+        "body": "单位功率成本较传统方案约低 20%；相较常规方案可减少 50% 以上 UPS 系统部署数量（视架构与负载而定）。"
+      },
+      {
+        "title": "权威认证",
+        "body": "独立专利与质量体系，适配头部企业供应链与合规要求。"
+      },
+      {
+        "title": "更绿色高效",
+        "body": "以更高直流母线电压等方式推动 AIDC 供电架构升级，助力降低 PUE。"
+      }
+    ],
+    "moduleTableTitle": "技术参数 · UPS 模组",
+    "moduleCols": [
+      "模组",
+      "类型",
+      "电芯电压",
+      "模组电压",
+      "放电倍率 (C)",
+      "备电时间"
+    ],
+    "systemTableTitle": "技术参数 · UPS 系统",
+    "systemRows": {
+      "backup": "备电时间",
+      "cellV": "电芯电压",
+      "moduleV": "模组电压",
+      "cRate": "放电倍率 (C)",
+      "power": "系统功率"
+    },
+    "footnoteTitle": "设计与消防",
+    "footnote": "设计：模块化并联，安全可靠、灵活扩展、智能运维、极简运维。消防：气溶胶、全氟己酮等方案可选（以项目设计为准）。",
+    "relatedTitle": "相关储能产品",
+    "relatedBody": "了解集装箱式储能系统与更多产品细节。",
+    "relatedCta": "查看 Energy Storage System",
+    "contactCta": "联系工程团队",
+    "scenariosParagraph": "For future distributed data center power architectures, storage adds both stabilization and backup at grid- and load-side touchpoints.",
+    "tableNote": "Scroll horizontally on small screens to view all columns."
   }
 }
