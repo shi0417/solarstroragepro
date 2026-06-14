@@ -3,14 +3,24 @@ import type { NextRequest } from "next/server";
 
 const locales = ["en", "zh", "es", "tr", "pt", "de", "fr", "th", "ar", "ja", "ko", "id"];
 
+// 静态资源路径——不经过中间件重写/重定向
+const STATIC_PATHS = [
+  "/favicon.ico",
+  "/robots.txt",
+  "/sitemap.xml",
+  "/sitemap-0.xml",
+];
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // 跳过 API 路由、Next.js 内部路径、静态文件
   if (
+    STATIC_PATHS.includes(pathname) ||
     pathname.startsWith("/api/") ||
     pathname.startsWith("/_next/") ||
-    pathname.includes(".")
+    pathname.includes(".") ||
+    pathname.startsWith("/public/")
   ) {
     return NextResponse.next();
   }
