@@ -29,6 +29,9 @@ const SERIES: SeriesBlock[] = [
       zh: { badge: "便携式 · 500W 级", title: "便携式储能系统", note: "" },
       es: { badge: "Portátil · 500W", title: "Almacenamiento de energía portátil", note: "" },
       tr: { badge: "Duvar Serisi", title: "Duvara Monte Hepsi Bir Arada ESS", note: "5-15 kWh depolama gerektiren konut kurulumları için idealdir. Kompakt tasarım, kolay kurulum." },
+      pt: { badge: "Portátil · 500W", title: "Armazenamento portátil de energia", note: "" },
+      de: { badge: "Tragbar · 500W", title: "Tragbarer Energiespeicher", note: "" },
+      fr: { badge: "Portable · 500W", title: "Stockage d'énergie portable", note: "" },
     },
     specs: [
       { labelKey: "model", value: "MD-BXS500" },
@@ -49,6 +52,9 @@ const SERIES: SeriesBlock[] = [
       zh: { badge: "便携式 · 1000W 级", title: "便携式储能系统", note: "" },
       es: { badge: "Portátil · 1000W", title: "Almacenamiento de energía portátil", note: "" },
       tr: { badge: "Zemin Serisi", title: "Zeminde Duran Hepsi Bir Arada ESS", note: "15-30 kWh ihtiyaç duyan evler için yüksek kapasiteli çözüm. İstiflenebilir modüller, esnek genişletme." },
+      pt: { badge: "Portátil · 1000W", title: "Armazenamento portátil de energia", note: "" },
+      de: { badge: "Tragbar · 1.000W", title: "Tragbarer Energiespeicher", note: "" },
+      fr: { badge: "Portable · 1.000W", title: "Stockage d'énergie portable", note: "" },
     },
     specs: [
       { labelKey: "model", value: "MD-BXS1000" },
@@ -85,6 +91,21 @@ const SERIES: SeriesBlock[] = [
         title: "İstiflenebilir Hepsi Bir Arada ESS",
         note: "30 kWh üzeri ticari kurulumlar için modüler istiflenebilir tasarım. Hızlı dağıtım için önceden yapılandırılmış.",
       },
+      pt: {
+        badge: "Tudo-em-um modular",
+        title: "Sistema ESS modular tudo-em-um",
+        note: "Empilhamento modular: dimensione os níveis de acordo com a carga e duração do backup; siga as normas locais e guias de instalação para cabeamento e conexão à rede.",
+      },
+      de: {
+        badge: "Modular All-in-One",
+        title: "Modulares ESS All-in-One",
+        note: "Modulare Stapelung: Skalieren Sie die Stufen je nach Last und Backup-Dauer; folgen Sie den örtlichen Vorschriften und Installationsanleitungen für Verkabelung und Netzanschluss.",
+      },
+      fr: {
+        badge: "Tout-en-un modulaire",
+        title: "Système ESS modulaire tout-en-un",
+        note: "Empilage modulaire : dimensionnez les niveaux selon la charge et la durée de secours ; suivez les normes locales et les guides d'installation pour le câblage et le raccordement au réseau.",
+      },
     },
     specs: [
       { labelKey: "model", value: "MD-BXS15360" },
@@ -101,21 +122,21 @@ const SERIES: SeriesBlock[] = [
 ];
 
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  model:            { en: "Model", zh: "型号", es: "Modelo", tr: "Model", pt: "Modelo" },
-  ratedPower:       { en: "Rated power", zh: "额定功率", es: "Potencia nominal", tr: "Nominal Güç" },
-  ratedEnergy:      { en: "Rated energy", zh: "额定能量", es: "Energía nominal", tr: "Nominal Enerji" },
-  voltage:          { en: "Voltage", zh: "电压", es: "Voltaje", tr: "Voltaj" },
-  nominalVoltage:   { en: "Nominal voltage", zh: "标称电压", es: "Voltaje nominal", tr: "Nominal Voltaj" },
-  capacity:         { en: "Capacity", zh: "容量", es: "Capacidad", tr: "Kapasite" },
-  acOutput:         { en: "AC output", zh: "AC 输出", es: "Salida AC", tr: "AC Çıkış", pt: "Saída AC" },
-  acInput:          { en: "AC input", zh: "AC 输入", es: "Entrada AC", tr: "AC Giriş" },
-  dimensions:       { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar (G×Y×D)", pt: "Dimensões" },
-  energyPerModule:  { en: "Energy per module", zh: "单模块能量", es: "Energía por módulo", tr: "Modül Başına Enerji" },
-  scalability:      { en: "Scalability", zh: "扩展能力", es: "Escalabilidad", tr: "Ölçeklenebilirlik" },
-  cycleLife:        { en: "Cycle life", zh: "循环寿命", es: "Vida útil (ciclos)", tr: "Çevrim Ömrü" },
-  communication:    { en: "Communication", zh: "通讯", es: "Comunicación", tr: "İletişim", pt: "Comunicação" },
-  dimSingle:        { en: "Dimensions — single tier (mm)", zh: "尺寸 — 单层 (mm)", es: "Dimensiones — un nivel (mm)", tr: "Boyutlar — Tek Katman (mm)" },
-  dimThree:         { en: "Dimensions — three tiers (mm)", zh: "尺寸 — 三层 (mm)", es: "Dimensiones — tres niveles (mm)", tr: "Boyutlar — Üç Katman (mm)" },
+  model:            { en: "Model", zh: "型号", es: "Modelo", tr: "Model", pt: "Modelo", de: "Modell", fr: "Modèle" },
+  ratedPower:       { en: "Rated power", zh: "额定功率", es: "Potencia nominal", tr: "Nominal Güç", pt: "Potência nominal", de: "Nennleistung", fr: "Puissance nominale" },
+  ratedEnergy:      { en: "Rated energy", zh: "额定能量", es: "Energía nominal", tr: "Nominal Enerji", pt: "Energia nominal", de: "Nennenergie", fr: "Énergie nominale" },
+  voltage:          { en: "Voltage", zh: "电压", es: "Voltaje", tr: "Voltaj", pt: "Tensão", de: "Spannung", fr: "Tension" },
+  nominalVoltage:   { en: "Nominal voltage", zh: "标称电压", es: "Voltaje nominal", tr: "Nominal Voltaj", pt: "Tensão nominal", de: "Nennspannung", fr: "Tension nominale" },
+  capacity:         { en: "Capacity", zh: "容量", es: "Capacidad", tr: "Kapasite", pt: "Capacidade", de: "Kapazität", fr: "Capacité" },
+  acOutput:         { en: "AC output", zh: "AC 输出", es: "Salida AC", tr: "AC Çıkış", pt: "Saída AC", de: "AC-Ausgang", fr: "Sortie AC" },
+  acInput:          { en: "AC input", zh: "AC 输入", es: "Entrada AC", tr: "AC Giriş", pt: "Entrada AC", de: "AC-Eingang", fr: "Entrée AC" },
+  dimensions:       { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar (G×Y×D)", pt: "Dimensões", de: "Abmessungen (mm)", fr: "Dimensions (mm)" },
+  energyPerModule:  { en: "Energy per module", zh: "单模块能量", es: "Energía por módulo", tr: "Modül Başına Enerji", pt: "Energia por módulo", de: "Energie pro Modul", fr: "Énergie par module" },
+  scalability:      { en: "Scalability", zh: "扩展能力", es: "Escalabilidad", tr: "Ölçeklenebilirlik", pt: "Escalabilidade", de: "Skalierbarkeit", fr: "Évolutivité" },
+  cycleLife:        { en: "Cycle life", zh: "循环寿命", es: "Vida útil (ciclos)", tr: "Çevrim Ömrü", pt: "Vida útil (ciclos)", de: "Lebensdauer (Zyklen)", fr: "Durée de vie (cycles)" },
+  communication:    { en: "Communication", zh: "通讯", es: "Comunicación", tr: "İletişim", pt: "Comunicação", de: "Kommunikation", fr: "Communication" },
+  dimSingle:        { en: "Dimensions — single tier (mm)", zh: "尺寸 — 单层 (mm)", es: "Dimensiones — un nivel (mm)", tr: "Boyutlar — Tek Katman (mm)", pt: "Dimensões — um nível (mm)", de: "Abmessungen — einstufig (mm)", fr: "Dimensions — un niveau (mm)" },
+  dimThree:         { en: "Dimensions — three tiers (mm)", zh: "尺寸 — 三层 (mm)", es: "Dimensiones — tres niveles (mm)", tr: "Boyutlar — Üç Katman (mm)", pt: "Dimensões — três níveis (mm)", de: "Abmessungen — dreistufig (mm)", fr: "Dimensions — trois niveaux (mm)" },
 };
 
 function getLabel(key: string, locale: string): string {

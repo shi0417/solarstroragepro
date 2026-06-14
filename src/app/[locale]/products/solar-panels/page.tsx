@@ -47,6 +47,18 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEOSTAR — Konut",
         desc: "Üçüncü nesil ABC INFINITE modül. Kısmi gölgeleme optimizasyonu, daha iyi sıcaklık katsayısı (-0,26 %/°C), mikro çatlak direnci, 25 yıl ürün garantisi ve 30 yıl performans garantisi. %24,8'e varan verimlilik. BloombergNEF Tier 1 Solar PV üreticisi.",
       },
+      pt: {
+        series: "NEOSTAR — Residencial",
+        desc: "Módulo ABC INFINITE de terceira geração. Otimização de sombreamento parcial, melhor coeficiente de temperatura (-0,26 %/°C), resistência a microfissuras, garantia de produto de 25 anos e de desempenho de 30 anos. Eficiência de até 24,8 %. Fabricante de painéis solares Tier 1 da BloombergNEF.",
+      },
+      de: {
+        series: "NEOSTAR — Wohnbereich",
+        desc: "ABC INFINITE Modul der dritten Generation. Teilabschattungsoptimierung, besserer Temperaturkoeffizient (-0,26 %/°C), Mikrorissbeständigkeit, 25 Jahre Produktgarantie und 30 Jahre Leistungsgarantie. Wirkungsgrad bis zu 24,8 %. BloombergNEF Tier 1 Solar PV-Hersteller.",
+      },
+      fr: {
+        series: "NEOSTAR — Résidentiel",
+        desc: "Module ABC INFINITE de troisième génération. Optimisation de l'ombrage partiel, meilleur coefficient de température (-0,26 %/°C), résistance aux microfissures, garantie produit de 25 ans et garantie de performance de 30 ans. Efficacité jusqu'à 24,8 %. Fabricant de panneaux solaires Tier 1 de BloombergNEF.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "530 W – 550 W" },
@@ -88,6 +100,18 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEOSTAR — Konut",
         desc: "Infinite teknolojisine sahip üçüncü nesil tek camlı konut modülü. Daha yüksek güç çıkışı, daha düşük BOS ve daha estetik değerler.",
       },
+      pt: {
+        series: "NEOSTAR — Residencial",
+        desc: "Módulo residencial de vidro simples de terceira geração com tecnologia Infinite. Maior potência de saída, menor BOS e maior valor estético.",
+      },
+      de: {
+        series: "NEOSTAR — Wohnbereich",
+        desc: "Einglas-Wohnmodul der dritten Generation mit Infinite-Technologie. Höhere Leistungsabgabe, niedrigere BOS-Kosten und höherer ästhetischer Wert.",
+      },
+      fr: {
+        series: "NEOSTAR — Résidentiel",
+        desc: "Module résidentiel à verre simple de troisième génération avec technologie Infinite. Puissance de sortie plus élevée, BOS réduit et valeur esthétique supérieure.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "530 W – 555 W" },
@@ -127,6 +151,18 @@ const PRODUCTS: SolarProduct[] = [
         series: "COMET — Ticari",
         desc: "Aynı geri ödeme süresinde daha yüksek getiri oranı. Ticari ve endüstriyel uygulamalar için üçüncü nesil N-tipi modül, kısmi gölgeleme optimizasyonu ve mikro çatlak direnci.",
       },
+      pt: {
+        series: "COMET — Comercial & Industrial",
+        desc: "Maior taxa de retorno no mesmo período de payback. Módulo N-type de terceira geração para aplicações comerciais e industriais com otimização de sombreamento parcial e resistência a microfissuras.",
+      },
+      de: {
+        series: "COMET — Gewerbe & Industrie",
+        desc: "Höhere Rendite bei gleicher Amortisationszeit. N-Typ-Modul der dritten Generation für gewerbliche und industrielle Anwendungen mit Teilabschattungsoptimierung und Mikrorissbeständigkeit.",
+      },
+      fr: {
+        series: "COMET — Commercial & Industriel",
+        desc: "Taux de retour plus élevé pour la même période de récupération. Module N-type de troisième génération pour applications commerciales et industrielles avec optimisation de l'ombrage partiel et résistance aux microfissures.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "655 W – 690 W" },
@@ -161,6 +197,18 @@ const PRODUCTS: SolarProduct[] = [
       tr: {
         series: "STELLAR — Endüstriyel",
         desc: "Şebeke ölçekli güneş projeleri için daha yüksek güç çıkışı ve daha düşük LCOE. Infinite teknolojisine sahip üçüncü nesil çift cam N-tipi modül.",
+      },
+      pt: {
+        series: "STELLAR — Grande Escala",
+        desc: "Maior potência de saída e menor LCOE para projetos solares de grande escala. Módulo N-type de vidro duplo de terceira geração com tecnologia Infinite.",
+      },
+      de: {
+        series: "STELLAR — Großanlagen",
+        desc: "Höhere Leistungsabgabe und niedrigere Stromgestehungskosten für große Solarprojekte. Doppelglas-N-Typ-Modul der dritten Generation mit Infinite-Technologie.",
+      },
+      fr: {
+        series: "STELLAR — Grande Échelle",
+        desc: "Puissance de sortie plus élevée et LCOE réduit pour les projets solaires à grande échelle. Module N-type à double vitrage de troisième génération avec technologie Infinite.",
       },
     },
     specs: [
@@ -201,6 +249,18 @@ const PRODUCTS: SolarProduct[] = [
         series: "STELLAR — Endüstriyel",
         desc: "Ultra yüksek güçlü şebeke modülü. 770–805 W çıkışa sahip ikinci nesil çift cam N-tipi ve gelişmiş termal yönetim.",
       },
+      pt: {
+        series: "STELLAR — Grande Escala",
+        desc: "Módulo de altíssima potência para grande escala. N-type de vidro duplo de segunda geração com saída de 770–805 W e gestão térmica avançada.",
+      },
+      de: {
+        series: "STELLAR — Großanlagen",
+        desc: "Ultrahochleistungsmodul für Großanlagen. Doppelglas-N-Typ der zweiten Generation mit 770–805 W Leistung und fortschrittlichem Wärmemanagement.",
+      },
+      fr: {
+        series: "STELLAR — Grande Échelle",
+        desc: "Module ultra-haute puissance pour grandes installations. N-type à double vitrage de deuxième génération avec puissance de 770–805 W et gestion thermique avancée.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "770 W – 805 W" },
@@ -240,6 +300,18 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEBULAR — Hafif",
         desc: "Sınırlı taşıma kapasiteli çatılar için hafif modül. Kısmi gölgeleme optimizasyonu, mikro çatlak direnci ve daha estetik değerler.",
       },
+      pt: {
+        series: "NEBULAR — Leve",
+        desc: "Módulo leve para telhados com capacidade de carga limitada. Otimização de sombreamento parcial, resistência a microfissuras e maior valor estético.",
+      },
+      de: {
+        series: "NEBULAR — Leichtbau",
+        desc: "Leichtbaumodul für Dächer mit begrenzter Tragfähigkeit. Teilabschattungsoptimierung, Mikrorissbeständigkeit und höherer ästhetischer Wert.",
+      },
+      fr: {
+        series: "NEBULAR — Léger",
+        desc: "Module léger pour toits à capacité de charge limitée. Optimisation de l'ombrage partiel, résistance aux microfissures et valeur esthétique supérieure.",
+      },
     },
     specs: [
       { labelKey: "powerRange", value: "435 W – 450 W" },
@@ -265,12 +337,12 @@ const PRODUCTS: SolarProduct[] = [
  * Add more locales as needed; the component falls back to `en`.
  */
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı", pt: "Faixa de Potência" },
-  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi" },
-  generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil" },
-  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar", pt: "Dimensões" },
-  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik", pt: "Eficiência" },
-  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı" },
+  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı", pt: "Faixa de Potência", de: "Leistungsbereich", fr: "Plage de Puissance" },
+  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi", pt: "Tipo de Vidro", de: "Glastyp", fr: "Type de Verre" },
+  generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil", pt: "Geração", de: "Generation", fr: "Génération" },
+  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar", pt: "Dimensões", de: "Abmessungen (mm)", fr: "Dimensions (mm)" },
+  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik", pt: "Eficiência", de: "Wirkungsgrad", fr: "Efficacité" },
+  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı", pt: "Coef. de Temperatura", de: "Temperaturkoeff.", fr: "Coeff. de Température" },
 };
 
 function getLabel(labelKey: string, locale: string): string {
