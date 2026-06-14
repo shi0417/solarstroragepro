@@ -18,7 +18,7 @@ import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
-import { CASE_DETAILS } from "@/app/[locale]/case-center/case-data";
+import { CASE_MAP } from "@/app/[locale]/case-center/case-data";
 
 export default function CaseDetailPage() {
   const params = useParams();
@@ -26,11 +26,11 @@ export default function CaseDetailPage() {
   const id = typeof rawId === "string" ? rawId : Array.isArray(rawId) ? rawId[0] : undefined;
 
   const { locale, messages } = useLocaleContext();
-  const isZh = locale === "zh";
 
-  const c = id ? CASE_DETAILS[id] : undefined;
+  const c = id ? CASE_MAP[id] : undefined;
   if (!c) notFound();
 
+  const ct = c.t[locale] ?? c.t.en;
   const cd = messages.caseDetail ?? {};
 
   return (
@@ -41,7 +41,7 @@ export default function CaseDetailPage() {
         <section className="relative h-[45vh] min-h-[320px] overflow-hidden bg-slate-950 sm:h-[55vh]">
           <img
             src={c.galleryImages[0]}
-            alt={isZh ? c.titleZh : c.titleEn}
+            alt={ct.title}
             className="absolute inset-0 h-full w-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-900/30" />
@@ -64,7 +64,7 @@ export default function CaseDetailPage() {
               </div>
 
               <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-                {isZh ? c.titleZh : c.titleEn}
+                {ct.title}
               </h1>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function CaseDetailPage() {
               { icon: <MapPin className="h-4 w-4" />, label: cd.location, value: c.location },
               { icon: <Calendar className="h-4 w-4" />, label: cd.date, value: c.date },
               { icon: <Tag className="h-4 w-4" />, label: cd.type, value: c.tag },
-              { icon: <Zap className="h-4 w-4" />, label: "Capacity", value: c.stats[0].value },
+              { icon: <Zap className="h-4 w-4" />, label: ct.statLabels[0], value: c.stats[0].value },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-3">
                 <span className="text-blue-500">{item.icon}</span>
@@ -93,11 +93,11 @@ export default function CaseDetailPage() {
         {/* ── Stats bar ── */}
         <section className="border-b border-slate-100 bg-white">
           <div className="mx-auto grid max-w-5xl grid-cols-2 gap-px bg-slate-100 sm:grid-cols-4">
-            {c.stats.map((stat) => (
-              <div key={stat.labelEn} className="bg-white px-6 py-5 text-center">
+            {c.stats.map((stat, i) => (
+              <div key={i} className="bg-white px-6 py-5 text-center">
                 <span className="text-2xl">{stat.icon}</span>
                 <p className="mt-1 text-xl font-bold text-slate-900">{stat.value}</p>
-                <p className="mt-0.5 text-xs text-slate-500">{isZh ? stat.labelZh : stat.labelEn}</p>
+                <p className="mt-0.5 text-xs text-slate-500">{ct.statLabels[i] ?? ""}</p>
               </div>
             ))}
           </div>
@@ -109,24 +109,24 @@ export default function CaseDetailPage() {
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
               <div>
                 <span className="text-xs font-semibold uppercase tracking-widest text-red-500">
-                  {cd.challengeTitle/* fallback to inline */ || (isZh ? "项目挑战" : "Challenge")}
+                  {cd.challengeTitle}
                 </span>
                 <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
                   {cd.challengeTitle}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-slate-600">
-                  {isZh ? c.challengeZh : c.challengeEn}
+                  {ct.challenge}
                 </p>
               </div>
               <div>
                 <span className="text-xs font-semibold uppercase tracking-widest text-blue-600">
-                  {cd.solutionTitle/* fallback */ || (isZh ? "技术方案" : "Solution")}
+                  {cd.solutionTitle}
                 </span>
                 <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
                   {cd.solutionTitle}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-slate-600">
-                  {isZh ? c.solutionZh : c.solutionEn}
+                  {ct.solution}
                 </p>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function CaseDetailPage() {
             </h2>
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               <div className="divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-                {(isZh ? c.technicalSpecsZh : c.technicalSpecsEn).map((spec) => (
+                {ct.technicalSpecs.map((spec) => (
                   <div key={spec.k} className="flex items-start justify-between gap-4 px-5 py-3.5">
                     <span className="text-sm text-slate-500">{spec.k}</span>
                     <span className="text-right text-sm font-semibold text-slate-900">{spec.v}</span>
@@ -176,13 +176,13 @@ export default function CaseDetailPage() {
               <div>
                 <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-green-600">
                   <BarChart3 className="h-4 w-4" aria-hidden />
-                  {cd.outcomesTitle/* fallback */ || (isZh ? "项目成果" : "Outcomes")}
+                  {cd.outcomesTitle}
                 </span>
                 <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
                   {cd.outcomesTitle}
                 </h2>
                 <ul className="mt-6 space-y-3">
-                  {(isZh ? c.outcomeZh : c.outcomeEn).map((item) => (
+                  {ct.outcomes.map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <CheckCircle2
                         className="mt-0.5 h-5 w-5 shrink-0 text-green-500"

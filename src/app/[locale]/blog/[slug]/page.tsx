@@ -1,6 +1,6 @@
 "use client";
 
-import { use } from "react";
+import { use, useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 
@@ -9,24 +9,67 @@ import { Header } from "@/components/site/Header";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { ContactForm } from "@/components/site/ContactForm";
-import { getArticleBySlug, ARTICLES } from "../blog-data";
+import { fetchArticleBySlug, fetchArticles, BlogArticle } from "@/lib/blog-data";
 
 export default function BlogArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const { locale, messages } = useLocaleContext();
-  const isZh = locale === "zh";
-  const article = getArticleBySlug(slug);
-
   const bd = messages.blogDetail ?? {};
 
+  const [article, setArticle] = useState<BlogArticle | null>(null);
+  const [related, setRelated] = useState<BlogArticle[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      try {
+        const [art, relatedArts] = await Promise.all([
+          fetchArticleBySlug(slug, locale),
+          fetchArticles(locale),
+        ]);
+        if (!cancelled) {
+          setArticle(art);
+          setRelated(relatedArts.filter((a) => a.slug !== slug).slice(0, 3));
+          setLoading(false);
+        }
+      } catch {
+        if (!cancelled) setLoading(false);
+      }
+    }
+    load();
+    return () => { cancelled = true; };
+  }, [slug, locale]);
+
+  // ── Loading State ──
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-white">
+        <Header />
+        <div className="mx-auto max-w-4xl px-4 py-32">
+          <div className="animate-pulse">
+            <div className="h-4 w-20 rounded bg-slate-200" />
+            <div className="mt-6 h-10 w-3/4 rounded bg-slate-200" />
+            <div className="mt-4 h-6 w-full rounded bg-slate-100" />
+            <div className="mt-12 space-y-4">
+              {[1, 2, 3, 4].map((n) => (
+                <div key={n} className="h-4 w-full rounded bg-slate-100" />
+              ))}
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  // ── Not Found ──
   if (!article) {
     return (
       <div className="min-h-screen bg-white">
         <Header />
         <div className="mx-auto max-w-3xl px-4 py-32 text-center">
-          <h1 className="text-2xl font-bold text-slate-900">
-            {bd.notFound}
-          </h1>
+          <h1 className="text-2xl font-bold text-slate-900">{bd.notFound}</h1>
           <Link href="/blog" className="mt-4 inline-flex items-center gap-2 text-brand-600 hover:underline">
             <ArrowLeft className="h-4 w-4" />
             {bd.backToBlog}
@@ -37,12 +80,8 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
     );
   }
 
-  const title = isZh ? article.title.zh : article.title.en;
-  const description = isZh ? article.description.zh : article.description.en;
-  const body = isZh ? article.body.zh : article.body.en;
-
-  // Parse body into sections for table of contents and rendering
-  const sections = body.split("\n## ").filter(Boolean);
+  // ── Parse body content ──
+  const sections = article.body.split("\n## ").filter(Boolean);
   const introSection = sections[0];
   const contentSections = sections.slice(1).map((section) => {
     const lines = section.split("\n");
@@ -50,9 +89,6 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
     const content = lines.slice(1).join("\n");
     return { heading, content };
   });
-
-  // Related articles (exclude current, take up to 3)
-  const relatedArticles = ARTICLES.filter((a) => a.slug !== article.slug).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-white">
@@ -73,7 +109,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
 
             <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-400">
               <span className="inline-flex items-center gap-1 rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-0.5 text-xs font-medium text-brand-400">
-                {isZh ? article.category.zh : article.category.en}
+                {article.category}
               </span>
               <span className="inline-flex items-center gap-1">
                 <Calendar className="h-3.5 w-3.5" />
@@ -86,10 +122,10 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
             </div>
 
             <h1 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-              {title}
+              {article.title}
             </h1>
 
-            <p className="mt-4 max-w-3xl text-lg text-slate-300">{description}</p>
+            <p className="mt-4 max-w-3xl text-lg text-slate-300">{article.description}</p>
 
             <div className="mt-4 flex flex-wrap gap-2">
               {article.tags.map((tag) => (
@@ -111,10 +147,8 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
             <div className="grid gap-12 lg:grid-cols-[1fr_220px]">
               {/* Main content */}
               <article className="prose prose-slate prose-lg max-w-none prose-headings:scroll-mt-20 prose-a:text-brand-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-slate-900 prose-table:text-sm">
-                {/* Intro */}
                 {renderBody(introSection)}
 
-                {/* Content sections */}
                 {contentSections.map((section) => (
                   <div key={section.heading}>
                     <h2 id={slugify(section.heading)}>{section.heading}</h2>
@@ -123,7 +157,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
                 ))}
               </article>
 
-              {/* Sidebar: Table of Contents (desktop only) */}
+              {/* Sidebar: Table of Contents */}
               <aside className="hidden lg:block">
                 <div className="sticky top-24">
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">
@@ -147,7 +181,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
         </section>
 
         {/* ── CTA: Contact Form ── */}
-        <section id="contact" className="scroll-mt-20 border-t border-slate-200 bg-slate-50 py-16 sm:py-20">
+        <section className="scroll-mt-20 border-t border-slate-200 bg-slate-50 py-16 sm:py-20">
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
@@ -162,26 +196,22 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
         </section>
 
         {/* ── Related Articles ── */}
-        {relatedArticles.length > 0 && (
+        {related.length > 0 && (
           <section className="border-t border-slate-200 py-12 sm:py-16">
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
               <h2 className="text-2xl font-bold text-slate-900">{bd.relatedArticles}</h2>
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {relatedArticles.map((related) => (
+                {related.map((r) => (
                   <Link
-                    key={related.slug}
-                    href={`/blog/${related.slug}`}
+                    key={r.slug}
+                    href={`/blog/${r.slug}`}
                     className="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-brand-200 hover:shadow-md"
                   >
-                    <span className="text-xs font-medium text-brand-600">
-                      {isZh ? related.category.zh : related.category.en}
-                    </span>
+                    <span className="text-xs font-medium text-brand-600">{r.category}</span>
                     <h3 className="mt-1 text-base font-semibold text-slate-900 transition-colors group-hover:text-brand-600 line-clamp-2">
-                      {isZh ? related.title.zh : related.title.en}
+                      {r.title}
                     </h3>
-                    <p className="mt-1.5 text-sm text-slate-500 line-clamp-2">
-                      {isZh ? related.description.zh : related.description.en}
-                    </p>
+                    <p className="mt-1.5 text-sm text-slate-500 line-clamp-2">{r.description}</p>
                   </Link>
                 ))}
               </div>
@@ -258,17 +288,12 @@ function renderBody(text: string): React.ReactNode {
   for (const line of lines) {
     const trimmed = line.trim();
 
-    // Skip empty lines
-    if (!trimmed) {
-      flushList();
-      continue;
-    }
+    if (!trimmed) { flushList(); continue; }
 
     // Table row
     if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
       flushList();
       const cells = trimmed.split("|").filter(Boolean).map((c) => c.trim());
-      // Separator row
       if (cells.every((c) => /^[-:]+$/.test(c))) continue;
       if (!currentTable) {
         currentTable = { header: cells, rows: [] };
