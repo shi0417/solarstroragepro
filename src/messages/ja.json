@@ -449,23 +449,23 @@
   },
   "blog": {
     "latestArticles": "最新記事",
-    "readMore": "Read Article",
+    "readMore": "記事を読む",
     "publishedOn": "公開日",
     "minRead": "分で読む",
     "backToBlog": "ブログに戻る",
     "relatedPosts": "関連記事",
     "noResults": "記事が見つかりませんでした。",
-    "categories": "Categories",
+    "categories": "カテゴリ",
     "allCategories": "すべて",
     "searchBlog": "記事を検索...",
-    "badge": "Knowledge Base",
-    "pageTitle": "Energy Storage Blog",
-    "pageSub": "Deep dives into battery storage technology, market trends, and best practices. From ROI analysis to installation guides, make informed decisions for your energy storage projects.",
-    "readTime": "min read",
-    "backToHome": "Back to Home",
-    "ctaTitle": "Need Expert Advice?",
-    "ctaSub": "Our engineering team can design a custom energy storage solution for your project.",
-    "ctaBtn": "Request a Proposal"
+    "badge": "ナレッジベース",
+    "pageTitle": "蓄電エネルギーブログ",
+    "pageSub": "蓄電池技術、市場動向、ベストプラクティスの深掘り分析。ROI分析から設置ガイドまで、蓄電プロジェクトの意思決定をサポートします。",
+    "readTime": "分で読了",
+    "backToHome": "ホームに戻る",
+    "ctaTitle": "専門家のアドバイスが必要ですか？",
+    "ctaSub": "弊社エンジニアチームが、お客様のプロジェクトに最適な蓄電ソリューションを設計いたします。",
+    "ctaBtn": "提案書を依頼"
   },
   "caseCenter": {
     "title": "導入事例センター",
@@ -477,189 +477,189 @@
     "noCases": "まだ事例がありません。",
     "filterByRegion": "地域でフィルター",
     "allRegions": "全ての地域",
-    "badge": "Global Projects",
-    "pageTitle": "Frequency Regulation & Energy Storage Cases",
-    "pageSub": "Real-world deployments in grid frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "readMore": "View Details",
-    "ctaTitle": "Need a similar solution?",
-    "ctaSub": "Our engineering team will design a custom frequency regulation and energy storage system for your grid requirements.",
-    "ctaBtn": "Request a Proposal",
-    "techLink": "Explore our technology platform"
+    "badge": "グローバルプロジェクト",
+    "pageTitle": "周波数調整・蓄電導入事例",
+    "pageSub": "50カ国以上でのグリッド周波数調整、ピークカット、再エネ統合の実際の導入実績。",
+    "readMore": "詳細を見る",
+    "ctaTitle": "同様のソリューションが必要ですか？",
+    "ctaSub": "弊社エンジニアチームが、お客様のグリッド要件に合わせた周波数調整・蓄電システムを設計いたします。",
+    "ctaBtn": "提案書を依頼",
+    "techLink": "技術プラットフォームを見る"
   },
   "technology": {
-    "diagramCaption": "System single-line diagram — click tabs above to switch topologies",
-    "viewCases": "View Frequency Regulation Cases",
-    "gridBessLink": "Grid-Level BESS Solutions"
+    "diagramCaption": "システム単線結線図 — 上部のタブをクリックしてトポロジーを切り替え",
+    "viewCases": "周波数調整の導入事例を見る",
+    "gridBessLink": "系統規模BESSソリューション"
   },
   "productsEnergyStorage": {
-    "breadcrumbHome": "Home",
-    "breadcrumbProducts": "Products",
-    "badge": "Core product",
-    "title": "Energy Storage System",
-    "description": "Includes Energy Storage System Pack / DC Liquid Cooling Container — system-level delivery for high-power, long-life, and safe deployments.",
-    "certTitle": "Certifications",
-    "certDesc": "Common transport & safety standards",
-    "featuresTitle": "Features",
-    "featuresSub": "System-engineering features for scalable delivery: power coverage, lifetime consistency, redundant safety, and O&M friendliness.",
+    "breadcrumbHome": "ホーム",
+    "breadcrumbProducts": "製品",
+    "badge": "コア製品",
+    "title": "エネルギー貯蔵システム",
+    "description": "蓄電システムパック/DC液冷コンテナを含む——高出力・長寿命・安全な導入のためのシステムレベル納品。",
+    "certTitle": "認証",
+    "certDesc": "一般的な輸送・安全基準",
+    "featuresTitle": "特徴",
+    "featuresSub": "拡張性のある納品のためのシステムエンジニアリング機能：電力カバレッジ、寿命一貫性、冗長安全性、O&M容易性。",
     "features": [
       {
-        "t": "High power",
-        "b": "0.25P–2P coverage across power-type and energy-type battery containers."
+        "t": "高出力",
+        "b": "パワータイプとエネルギータイプの蓄電池コンテナで0.25P～2Pをカバー。"
       },
       {
-        "t": "Long lifetime",
-        "b": "Cell temperature delta: 2℃ within a pack, 5℃ across clusters — designed for 10-year calendar life."
+        "t": "長寿命",
+        "b": "セル温度差：パック内2℃、クラスタ間5℃——10年カレンダー寿命設計。"
       },
       {
-        "t": "Real safety",
-        "b": "Three-layer fire protection at pack/cluster/container levels; battery modules rated IP67."
+        "t": "真の安全性",
+        "b": "パック/クラスタ/コンテナレベルの3層防火対策；バッテリーモジュールIP67定格。"
       },
       {
-        "t": "Easy integration",
-        "b": "Modular design enables per-cluster unit architecture with no inter-cluster circulating current; supports independent maintenance and upgrades."
+        "t": "容易な統合",
+        "b": "モジュラー設計によりクラスタ間循環電流のないクラスタ単位アーキテクチャを実現；独立したメンテナンスとアップグレードに対応。"
       },
       {
-        "t": "Flexible configuration",
-        "b": "Side-by-side or end-to-end layout options with flexible expansion."
+        "t": "柔軟な構成",
+        "b": "横並びまたは縦並びのレイアウトオプションと柔軟な拡張。"
       },
       {
-        "t": "Easy management",
-        "b": "Real-time data exchange with energy statistics, fault warnings, and thermal-runaway early warning."
+        "t": "容易な管理",
+        "b": "エネルギー統計、故障警告、熱暴走早期警告を含むリアルタイムデータ交換。"
       }
     ],
-    "specsTitle": "Specifications",
-    "specsSub": "Scroll horizontally on mobile to view all capacity variants.",
-    "specCornerLabel": "Parameter \\ Model",
-    "certFooter": "Certifications",
-    "ctaTitle": "Get a Custom Solution",
-    "ctaSub": "Tell us about your project — our engineers will design a custom solution within 48 hours."
+    "specsTitle": "仕様",
+    "specsSub": "モバイルで横スクロールして全容量バリエーションをご確認ください。",
+    "specCornerLabel": "パラメータ \\ モデル",
+    "certFooter": "認証",
+    "ctaTitle": "カスタムソリューションを取得",
+    "ctaSub": "プロジェクトについてお聞かせください——48時間以内にエンジニアがカスタムソリューションを設計いたします。"
   },
   "productsResidentialEss": {
-    "back": "Back to home",
-    "badge": "Residential",
-    "pageTitle": "Residential ESS",
-    "pageSub": "Low-voltage stack & wall-mount packs, high-voltage systems, and all-in-one inverter + battery solutions.",
-    "categoriesTitle": "Product families",
-    "catLv": "Low-voltage (51.2V)",
-    "catLvDesc": "Stackable and wall-mounted batteries around 10kWh & 16kWh class.",
-    "catHv": "High-voltage (358.4V – 716.8V)",
-    "catHvDesc": "Systems for higher power and HV DC bus requirements.",
-    "catAio": "ESS all-in-one",
-    "catAioDesc": "Integrated inverter and battery for faster residential deployment.",
-    "gridTitle": "Products",
-    "viewHvsDetails": "View HVS high-voltage series details",
-    "viewAioDetails": "View ESS All-in-one series details",
-    "viewLfpDetails": "View LFP battery series details",
-    "details": "Details",
+    "back": "ホームに戻る",
+    "badge": "家庭用",
+    "pageTitle": "家庭用ESS",
+    "pageSub": "低圧スタック＆壁掛けパック、高圧システム、オールインワンインバーター＋バッテリーソリューション。",
+    "categoriesTitle": "製品ファミリー",
+    "catLv": "低圧（51.2V）",
+    "catLvDesc": "約10kWhおよび16kWhクラスのスタック型・壁掛けバッテリー。",
+    "catHv": "高圧（358.4V – 716.8V）",
+    "catHvDesc": "より高い電力とHV DCバス要件に対応するシステム。",
+    "catAio": "ESSオールインワン",
+    "catAioDesc": "家庭用導入を迅速化する統合インバーター＋バッテリー。",
+    "gridTitle": "製品",
+    "viewHvsDetails": "HVS高圧シリーズ詳細を見る",
+    "viewAioDetails": "ESSオールインワンシリーズ詳細を見る",
+    "viewLfpDetails": "LFPバッテリーシリーズ詳細を見る",
+    "details": "詳細",
     "products": [
       {
         "key": "wallMount",
-        "title": "Wall-mounted battery",
+        "title": "壁掛けバッテリー",
         "subtitle": "MDS-512200",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "電圧",
             "v": "25.6V-51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "容量",
             "v": "206Ah"
           },
           {
-            "l": "Energy",
+            "l": "エネルギー",
             "v": "5.12KWH-10.54KWH"
           },
           {
-            "l": "Cycle life",
+            "l": "サイクル寿命",
             "v": "6000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "寸法（mm）",
             "v": "723 × 655 × 255"
           },
           {
-            "l": "Communication",
+            "l": "通信",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "stackable",
-        "title": "Stackable battery",
+        "title": "スタック型バッテリー",
         "subtitle": "MDS-51314",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "電圧",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "容量",
             "v": "314Ah"
           },
           {
-            "l": "Energy",
+            "l": "エネルギー",
             "v": "16.07kWh"
           },
           {
-            "l": "Cycle life",
+            "l": "サイクル寿命",
             "v": "8000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "寸法（mm）",
             "v": "730 × 610 × 257"
           },
           {
-            "l": "Communication",
+            "l": "通信",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "hvSystem",
-        "title": "High voltage system",
+        "title": "高圧システム",
         "subtitle": "HVS Series",
         "specs": [
           {
-            "l": "Voltage range",
+            "l": "電圧範囲",
             "v": "358.4V – 716.8V"
           },
           {
-            "l": "Energy range",
+            "l": "エネルギー範囲",
             "v": "14.33kWh – 100.35kWh (scalable)"
           },
           {
-            "l": "Cycle life",
+            "l": "サイクル寿命",
             "v": "8000 cycles"
           },
           {
-            "l": "Communication",
+            "l": "通信",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "aio",
-        "title": "ESS all-in-one",
+        "title": "ESSオールインワン",
         "subtitle": "All-in-one family",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "電圧",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "容量",
             "v": "100Ah / 314Ah"
           },
           {
-            "l": "Energy",
+            "l": "エネルギー",
             "v": "5.12kWh – 16.07kWh"
           },
           {
-            "l": "Representative models",
+            "l": "代表モデル",
             "v": "M1200 (1), MB-1111, etc."
           },
           {
-            "l": "Communication",
+            "l": "通信",
             "v": "RS485 / RS232 / CAN"
           }
         ]
@@ -667,70 +667,70 @@
     ]
   },
   "productsPcs": {
-    "back": "Back to home",
-    "badge": "PCS · Prefabricated",
-    "heroTitle": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation",
-    "heroSub": "Highly integrated prefabricated cabin combining inverter and step-up substation for utility-scale PV+storage and grid connection.",
-    "overviewTitle": "Product overview",
-    "overviewName": "Name",
+    "back": "ホームに戻る",
+    "badge": "PCS · プレハブ式",
+    "heroTitle": "SES4H-5160/6900-MV-EX プレハブ式インバーター変電所",
+    "heroSub": "系統規模のPV+蓄電および系統連系のためのインバーターと昇圧変電所を統合した高集積プレハブ筐体。",
+    "overviewTitle": "製品概要",
+    "overviewName": "名称",
     "overviewNameVal": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation (PCS)",
-    "featuresTitle": "Key advantages",
-    "imageAlt": "SES4H-5160/6900-MV-EX prefabricated inverter substation product",
-    "specsTitle": "Technical specifications",
-    "specsHint": "Scroll horizontally on small screens.",
-    "colCat": "Category",
-    "colItem": "Parameter",
-    "colDetail": "Details",
-    "complianceTitle": "Compliance & certifications",
-    "complianceIntro": "Design and type testing comply with the following standards and grid codes (subject to delivery certificate).",
-    "ctaDatasheet": "Request datasheet",
-    "ctaContact": "Contact us",
+    "featuresTitle": "主な利点",
+    "imageAlt": "SES4H-5160/6900-MV-EX プレハブ式インバーター変電所製品",
+    "specsTitle": "技術仕様",
+    "specsHint": "小画面では横スクロールしてください。",
+    "colCat": "カテゴリ",
+    "colItem": "パラメータ",
+    "colDetail": "詳細",
+    "complianceTitle": "準拠・認証",
+    "complianceIntro": "設計および型式試験は以下の規格とグリッドコードに準拠しています（納品証明書による）。",
+    "ctaDatasheet": "データシートを依頼",
+    "ctaContact": "お問い合わせ",
     "features": [
       {
-        "t": "Flexible config",
-        "b": "Integrated inverter and substation in a highly prefabricated design, improving space efficiency and simplifying installation."
+        "t": "柔軟な構成",
+        "b": "高度にプレハブ化された設計でインバーターと変電所を統合し、スペース効率を向上させ設置を簡素化。"
       },
       {
-        "t": "Modular power",
-        "b": "Modular design allows configurable power rating to match project requirements."
+        "t": "モジュラー電力",
+        "b": "プロジェクト要件に合わせて定格電力を構成可能なモジュラー設計。"
       },
       {
-        "t": "High efficiency & stability",
-        "b": "1500V wide DC voltage range with multi-branch DC design to prevent battery circulating current."
+        "t": "高効率・高安定性",
+        "b": "1500V広域DC電圧範囲、バッテリー循環電流を防止する多分岐DC設計。"
       },
       {
-        "t": "Versatile use",
-        "b": "Supports VSG / PQ / VF modes with peak shaving and local autonomous operation."
+        "t": "多用途",
+        "b": "VSG/PQ/VFモード対応、ピークカットおよびローカル自律運転。"
       },
       {
-        "t": "Safe & compatible",
-        "b": "Supports HVRT/LVRT, four-quadrant active/reactive power regulation, fast power response (<20ms)."
+        "t": "安全・互換性",
+        "b": "HVRT/LVRT対応、四象限有効/無効電力調整、高速電力応答（<20ms）。"
       },
       {
-        "t": "Grid-friendly",
-        "b": "Rated AC power: N×215kW @45°C, N×129kW @50°C (N = 20~32 modules); THDi/THDu <3%."
+        "t": "グリッドフレンドリー",
+        "b": "定格AC電力：N×215kW @45°C、N×129kW @50°C（N = 20~32モジュール）；THDi/THDu <3%。"
       }
     ]
   },
   "productsSolarPanels": {
-    "back": "Back to home",
-    "badge": "Solar",
-    "pageTitle": "Solar Panels",
-    "pageSub": "High-efficiency ABC INFINITE modules with partial shading optimisation and industry-leading warranties.",
-    "gridTitle": "Product series",
-    "source": "Data source",
+    "back": "ホームに戻る",
+    "badge": "ソーラー",
+    "pageTitle": "ソーラーパネル",
+    "pageSub": "部分影最適化と業界トップクラスの保証を備えた高効率ABC INFINITEモジュール。",
+    "gridTitle": "製品シリーズ",
+    "source": "データソース",
     "sourceLink": "aikosolar.com"
   },
   "productsHvs": {
-    "back": "Back to residential ESS",
-    "title": "High-Voltage System HVS Series",
-    "sub": "Rack-mount and cabinet-style high-voltage battery systems for higher power density and scalability.",
-    "secA": "Section A · Standard Rack (100Ah)",
-    "secB": "Section B · High-capacity Rack (280Ah)",
-    "secC": "Section C · Cabinet BESS (large capacity)",
-    "introA": "100Ah rack family: modular stackable design with IP65 protection, ideal for indoor/outdoor residential HV battery banks.",
-    "introB": "280Ah racks up to 35.84kWh per tower — designed for higher energy demands with the same footprint.",
-    "introC": "Cabinet BESS: pre-assembled high-voltage solution for residential and small commercial applications, scalable up to 100kWh.",
+    "back": "家庭用ESSに戻る",
+    "title": "高圧システム HVSシリーズ",
+    "sub": "より高い電力密度と拡張性を実現するラックマウントおよびキャビネット型高圧バッテリーシステム。",
+    "secA": "セクションA · 標準ラック（100Ah）",
+    "secB": "セクションB · 大容量ラック（280Ah）",
+    "secC": "セクションC · キャビネットBESS（大容量）",
+    "introA": "100Ahラックファミリー：IP65保護付きモジュラースタック設計、屋内/屋外の家庭用HVバッテリーバンクに最適。",
+    "introB": "280Ahラック 1タワーあたり最大35.84kWh——同じ設置面積でより高いエネルギー需要に対応。",
+    "introC": "キャビネットBESS：家庭用および小規模商業用のプレアセンブル高圧ソリューション、最大100kWhまで拡張可能。",
     "specLabels": {
       "model": {
         "en": "Model",
@@ -742,7 +742,7 @@
         "fr": "Model",
         "th": "Model",
         "ar": "Model",
-        "ja": "Model",
+        "ja": "モデル",
         "ko": "Model",
         "id": "Model"
       },
@@ -756,7 +756,7 @@
         "fr": "Voltage",
         "th": "Voltage",
         "ar": "Voltage",
-        "ja": "Voltage",
+        "ja": "電圧",
         "ko": "Voltage",
         "id": "Voltage"
       },
@@ -770,7 +770,7 @@
         "fr": "Capacity",
         "th": "Capacity",
         "ar": "Capacity",
-        "ja": "Capacity",
+        "ja": "容量",
         "ko": "Capacity",
         "id": "Capacity"
       },
@@ -784,7 +784,7 @@
         "fr": "Energy",
         "th": "Energy",
         "ar": "Energy",
-        "ja": "Energy",
+        "ja": "エネルギー",
         "ko": "Energy",
         "id": "Energy"
       },
@@ -798,7 +798,7 @@
         "fr": "Cycle life",
         "th": "Cycle life",
         "ar": "Cycle life",
-        "ja": "Cycle life",
+        "ja": "サイクル寿命",
         "ko": "Cycle life",
         "id": "Cycle life"
       },
@@ -812,7 +812,7 @@
         "fr": "Dimensions",
         "th": "Dimensions",
         "ar": "Dimensions",
-        "ja": "Dimensions",
+        "ja": "寸法",
         "ko": "Dimensions",
         "id": "Dimensions"
       },
@@ -826,7 +826,7 @@
         "fr": "Comm.",
         "th": "Comm.",
         "ar": "Comm.",
-        "ja": "Comm.",
+        "ja": "通信",
         "ko": "Comm.",
         "id": "Comm."
       },
@@ -840,7 +840,7 @@
         "fr": "Module size",
         "th": "Module size",
         "ar": "Module size",
-        "ja": "Module size",
+        "ja": "モジュールサイズ",
         "ko": "Module size",
         "id": "Module size"
       },
@@ -854,7 +854,7 @@
         "fr": "Total energy",
         "th": "Total energy",
         "ar": "Total energy",
-        "ja": "Total energy",
+        "ja": "総エネルギー",
         "ko": "Total energy",
         "id": "Total energy"
       },
@@ -868,7 +868,7 @@
         "fr": "Footprint",
         "th": "Footprint",
         "ar": "Footprint",
-        "ja": "Footprint",
+        "ja": "設置面積",
         "ko": "Footprint",
         "id": "Footprint"
       },
@@ -882,19 +882,19 @@
         "fr": "Nominal voltage",
         "th": "Nominal voltage",
         "ar": "Nominal voltage",
-        "ja": "Nominal voltage",
+        "ja": "公称電圧",
         "ko": "Nominal voltage",
         "id": "Nominal voltage"
       }
     }
   },
   "productsLfpBattery": {
-    "back": "Back to residential ESS",
-    "title": "LFP Battery Series",
-    "sub": "Ultra-slim wall-mount and floor-standing / mobile LFP battery solutions.",
-    "sec1": "Ultra-slim Wall-mount Group · M1200 / M2400",
-    "sec2": "Floor / Mobile Group · M-BXS / M-LFP",
-    "corner": "Parameter",
+    "back": "家庭用ESSに戻る",
+    "title": "LFPバッテリーシリーズ",
+    "sub": "超薄型壁掛け・床置き/モバイルLFPバッテリーソリューション。",
+    "sec1": "超薄型壁掛けグループ · M1200 / M2400",
+    "sec2": "床置き/モバイルグループ · M-BXS / M-LFP",
+    "corner": "パラメータ",
     "specLabels": {
       "nominalVoltage": {
         "en": "Nominal voltage",
@@ -906,7 +906,7 @@
         "fr": "Nominal voltage",
         "th": "Nominal voltage",
         "ar": "Nominal voltage",
-        "ja": "Nominal voltage",
+        "ja": "公称電圧",
         "ko": "Nominal voltage",
         "id": "Nominal voltage"
       },
@@ -920,7 +920,7 @@
         "fr": "Nominal capacity",
         "th": "Nominal capacity",
         "ar": "Nominal capacity",
-        "ja": "Nominal capacity",
+        "ja": "公称容量",
         "ko": "Nominal capacity",
         "id": "Nominal capacity"
       },
@@ -934,7 +934,7 @@
         "fr": "Energy",
         "th": "Energy",
         "ar": "Energy",
-        "ja": "Energy",
+        "ja": "エネルギー",
         "ko": "Energy",
         "id": "Energy"
       },
@@ -948,7 +948,7 @@
         "fr": "Cycle life",
         "th": "Cycle life",
         "ar": "Cycle life",
-        "ja": "Cycle life",
+        "ja": "サイクル寿命",
         "ko": "Cycle life",
         "id": "Cycle life"
       },
@@ -962,7 +962,7 @@
         "fr": "Dimensions (L×W×H)",
         "th": "Dimensions (L×W×H)",
         "ar": "Dimensions (L×W×H)",
-        "ja": "Dimensions (L×W×H)",
+        "ja": "寸法（L×W×H）",
         "ko": "Dimensions (L×W×H)",
         "id": "Dimensions (L×W×H)"
       },
@@ -976,208 +976,208 @@
         "fr": "Communication",
         "th": "Communication",
         "ar": "Communication",
-        "ja": "Communication",
+        "ja": "通信",
         "ko": "Communication",
         "id": "Communication"
       }
     }
   },
   "productsAllInOne": {
-    "back": "Back to residential ESS",
-    "title": "Wall-mounted / Floor-standing LFP Battery Comparison",
-    "sub": "Side-by-side specification comparison across 6 popular models in the LFP battery lineup.",
-    "section": "Parameter comparison (6 models)",
-    "corner": "Parameter"
+    "back": "家庭用ESSに戻る",
+    "title": "壁掛け/床置き LFPバッテリー比較",
+    "sub": "LFPバッテリーラインの人気6モデルの仕様並列比較。",
+    "section": "パラメータ比較（6モデル）",
+    "corner": "パラメータ"
   },
   "productsEssAllInOne": {
-    "back": "Back to residential ESS",
-    "pageTitle": "ESS All-in-one Series",
-    "pageSub": "Integrated inverter + battery systems for hassle-free residential energy storage deployment."
+    "back": "家庭用ESSに戻る",
+    "pageTitle": "ESSオールインワンシリーズ",
+    "pageSub": "手間のかからない家庭用蓄電導入のための統合インバーター＋バッテリーシステム。"
   },
   "productsStackableBattery": {
-    "back": "Back to residential ESS",
-    "title": "Stackable / Floor-standing Battery (314Ah / 200Ah) Comparison",
-    "sub": "Side-by-side specification comparison across 7 popular models.",
-    "section": "Parameter comparison (7 models)",
-    "corner": "Parameter"
+    "back": "家庭用ESSに戻る",
+    "title": "スタック型/床置きバッテリー（314Ah/200Ah）比較",
+    "sub": "人気7モデルの仕様並列比較。",
+    "section": "パラメータ比較（7モデル）",
+    "corner": "パラメータ"
   },
   "blogDetail": {
-    "notFound": "Article Not Found",
-    "backToBlog": "Back to Blog",
-    "readTime": "min read",
-    "tableOfContents": "Table of Contents",
-    "ctaTitle": "Questions about this article?",
-    "ctaSub": "Contact our engineering team for a personalised consultation on your energy storage project.",
-    "relatedArticles": "Related Articles",
-    "readMore": "Read Article"
+    "notFound": "記事が見つかりません",
+    "backToBlog": "ブログに戻る",
+    "readTime": "分で読了",
+    "tableOfContents": "目次",
+    "ctaTitle": "この記事について質問がありますか？",
+    "ctaSub": "蓄電プロジェクトに関する個別相談は弊社エンジニアチームまでお問い合わせください。",
+    "relatedArticles": "関連記事",
+    "readMore": "記事を読む"
   },
   "caseDetail": {
-    "back": "Back to case center",
-    "location": "Location",
-    "date": "Implementation date",
-    "type": "Frequency regulation type",
-    "challengeTitle": "The Problem to Solve",
-    "solutionTitle": "Our Approach",
-    "specsTitle": "Technical Specifications",
-    "outcomesTitle": "Measurable Results",
-    "gallery": "Site photos",
-    "freqDiagram": "Frequency response diagram",
-    "cta": "Get a similar solution",
-    "ctaSub": "Tell us about your project requirements and our engineers will design a tailored solution.",
-    "ctaBtn": "WhatsApp Consultation",
-    "moreBtn": "View more cases",
-    "techPageBtn": "Explore technology platform"
+    "back": "導入事例センターに戻る",
+    "location": "場所",
+    "date": "導入日",
+    "type": "周波数調整タイプ",
+    "challengeTitle": "解決すべき課題",
+    "solutionTitle": "当社のアプローチ",
+    "specsTitle": "技術仕様",
+    "outcomesTitle": "測定可能な成果",
+    "gallery": "現場写真",
+    "freqDiagram": "周波数応答図",
+    "cta": "同様のソリューションを取得",
+    "ctaSub": "プロジェクト要件をお知らせください。エンジニアが最適なソリューションを設計いたします。",
+    "ctaBtn": "WhatsAppで相談",
+    "moreBtn": "さらに事例を見る",
+    "techPageBtn": "技術プラットフォームを見る"
   },
   "solutionsGridLevelBess": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "Grid-side · Bulk storage",
-    "title": "Grid-level Battery Energy Storage System (BESS)",
-    "subtitle": "Grid-scale energy storage and bulk power substation solutions — flexibility, ancillary services, and renewable integration for utilities and large C&I.",
-    "paragraphText": "BESS solution scope: grid-scale energy storage systems and bulk power substation integration — aligned with utility-grade deployment practices.",
-    "advantagesTitle": "Top 4 advantages",
+    "breadcrumbHome": "ホーム",
+    "breadcrumbSolutions": "ソリューション",
+    "badge": "系統側 · 大容量蓄電",
+    "title": "系統規模蓄電池エネルギー貯蔵システム（BESS）",
+    "subtitle": "系統規模の蓄電および大容量変電所ソリューション——電力会社および大規模C&I向けの柔軟性、アンシラリーサービス、再エネ統合。",
+    "paragraphText": "BESSソリューション範囲：系統規模の蓄電システムおよび大容量変電所統合——電力会社グレードの導入プラクティスに準拠。",
+    "advantagesTitle": "トップ4の利点",
     "advantages": [
       {
         "n": "01",
-        "title": "One-stop solution",
-        "body": "Full application coverage across generation, grid, and demand-side use cases — from concept to integrated delivery."
+        "title": "ワンストップソリューション",
+        "body": "発電・系統・需要側のユースケースを概念から統合納品までフルカバー。"
       },
       {
         "n": "02",
-        "title": "Industrial pioneer",
-        "body": "Energy-storage-oriented 1P 314Ah prismatic cell platforms engineered for long calendar life and tight consistency."
+        "title": "業界パイオニア",
+        "body": "長いカレンダー寿命と高精度な一致性を実現する蓄電指向1P 314Ah角型セルプラットフォーム。"
       },
       {
         "n": "03",
-        "title": "Millisecond response",
-        "body": "Millisecond-class power response with system designs supporting up to ~2P power capability (project-dependent)."
+        "title": "ミリ秒応答",
+        "body": "最大約2Pの電力能力（プロジェクト依存）をサポートするミリ秒級の電力応答システム設計。"
       },
       {
         "n": "04",
-        "title": "Multiple security measures",
-        "body": "Triple fire-suppression concepts paired with modular architecture for safer O&M at container, cluster, and pack levels."
+        "title": "複数の安全対策",
+        "body": "コンテナ・クラスタ・パックレベルでの安全なO&Mを実現する三重消火コンセプトとモジュラーアーキテクチャ。"
       }
     ],
-    "appsIntroTitle": "Segmented applications",
-    "appsIntro": "High-power applications for grid-level BESS are transforming how utilities and large consumers operate. These systems store bulk energy from renewables such as solar and wind, shifting surplus generation to peak demand periods. With rapid charge and discharge capability, BESS supports grid stability through ancillary services including frequency regulation and voltage support, and enables demand-response participation — cutting costs by dispatching stored energy when the grid is most stressed.",
+    "appsIntroTitle": "セグメント別アプリケーション",
+    "appsIntro": "系統規模BESSの高出力アプリケーションは、電力会社や大規模需要家の運用方法を変革しています。これらのシステムは太陽光や風力などの再生可能エネルギーからの大量の電力を貯蔵し、余剰発電をピーク需要時間帯にシフトします。急速な充放電能力により、BESSは周波数調整や電圧サポートを含むアンシラリーサービスを通じて系統安定性を支え、デマンドレスポンス参加を可能にします——系統が最も逼迫している時に貯蔵電力を放電することでコストを削減します。",
     "apps": [
       {
-        "title": "Thermal power frequency regulation",
-        "body": "High-power storage delivers millisecond-class frequency response for thermal plants, improving regulation quality and capturing ancillary-service value."
+        "title": "火力発電の周波数調整",
+        "body": "高出力蓄電が火力発電所にミリ秒級の周波数応答を提供し、調整品質を向上させアンシラリーサービス価値を獲得。"
       },
       {
-        "title": "PV + storage + charging",
-        "body": "High-power systems support charging loads and campus demand, reducing cost and emissions through peak shaving and valley filling."
+        "title": "PV＋蓄電＋充電",
+        "body": "高出力システムが充電負荷とキャンパス需要をサポートし、ピークカットとバレーフィルでコストと排出量を削減。"
       },
       {
-        "title": "Energy storage for fast chargers",
-        "body": "Capacity support for ultra-fast charging — meeting peak power requirements while improving station utilization and grid friendliness."
+        "title": "急速充電器用蓄電",
+        "body": "超高速充電のための容量サポート——ピーク電力要件を満たし、ステーション利用率とグリッド親和性を向上。"
       },
       {
-        "title": "Emergency power for mines",
-        "body": "Critical backup for underground operations — faster and more efficient than diesel-only approaches, improving payback and power quality."
+        "title": "鉱山用非常用電源",
+        "body": "地下操業の重要バックアップ——ディーゼル単独より高速かつ効率的で、投資回収と電力品質を改善。"
       }
     ],
-    "techTitle": "Technical highlights",
-    "techNote": "Final figures are subject to project FAT/SAT, grid codes, and contract technical schedules.",
+    "techTitle": "技術ハイライト",
+    "techNote": "最終数値はプロジェクトFAT/SAT、グリッドコード、契約技術仕様書に従います。",
     "techHighlights": [
       {
-        "k": "Response",
-        "v": "Millisecond-level control loop (application-dependent)"
+        "k": "応答",
+        "v": "ミリ秒レベルの制御ループ（アプリケーション依存）"
       },
       {
-        "k": "Power capability",
-        "v": "Up to ~2P system power design envelope"
+        "k": "電力能力",
+        "v": "最大約2Pのシステム電力設計エンベロープ"
       },
       {
-        "k": "Cell platform",
-        "v": "1P 314Ah-class prismatic LFP for energy storage"
+        "k": "セルプラットフォーム",
+        "v": "蓄電用1P 314Ahクラス角型LFP"
       },
       {
-        "k": "Safety architecture",
-        "v": "Triple fire suppression + modular system design"
+        "k": "安全アーキテクチャ",
+        "v": "三重消火＋モジュラーシステム設計"
       },
       {
-        "k": "Coverage",
-        "v": "Source, grid, and load-side application scenarios"
+        "k": "カバレッジ",
+        "v": "電源・系統・負荷側のアプリケーションシナリオ"
       }
     ],
-    "relatedTitle": "Related energy storage products",
-    "relatedBody": "Explore containerized ESS and system-level documentation on our product page.",
-    "relatedCta": "Energy Storage System",
-    "contactCta": "Contact engineering"
+    "relatedTitle": "関連蓄電製品",
+    "relatedBody": "製品ページでコンテナ型ESSとシステムレベルのドキュメントをご覧ください。",
+    "relatedCta": "エネルギー貯蔵システム",
+    "contactCta": "エンジニアリングに問い合わせる"
   },
   "solutionsDataCenter": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "AIDC · Backup & power quality",
-    "title": "Data Center Energy Storage Solutions",
-    "lead": "High-power lithium backup for AIDC workloads — engineered for supply reliability and power quality, with millisecond response to GPU-scale load swings.",
-    "painTitle": "Industry pain points",
+    "breadcrumbHome": "ホーム",
+    "breadcrumbSolutions": "ソリューション",
+    "badge": "AIDC · バックアップ＆電力品質",
+    "title": "データセンター蓄電ソリューション",
+    "lead": "AIDCワークロード向け高出力リチウムバックアップ——GPU規模の負荷変動にミリ秒応答する供給信頼性と電力品質を実現。",
+    "painTitle": "業界の課題",
     "painItems": [
-      "Rapidly rising data center power demand challenges grid capacity and expansion timelines.",
-      "GPU load swings create high peaks and increase IT downtime risk from power-quality events.",
-      "PUE and efficiency requirements are becoming stricter across facilities.",
-      "Battery safety expectations are extreme — no fire or explosion tolerance in mission-critical sites."
+      "急速に増加するデータセンターの電力需要がグリッド容量と拡張タイムラインに課題をもたらしています。",
+      "GPU負荷変動が高いピークを生み出し、電力品質イベントによるITダウンタイムリスクを増大させます。",
+      "PUEおよび効率要件が施設全体で厳格化しています。",
+      "バッテリー安全への期待は極めて高く——ミッションクリティカルサイトでは火災や爆発は許容されません。"
     ],
-    "scenariosTitle": "Application scenarios",
-    "scenarioGridTitle": "Grid-proximate BESS",
-    "scenarioGridBody": "Battery energy storage near the grid stabilizes large-scale GPU cluster swings and provides UPS-class backup power.",
-    "scenarioLocalTitle": "GPU-proximate energy storage",
-    "scenarioLocalBody": "Local storage near GPUs smooths millisecond-level transients with configurable backup duration and load-adjacent support.",
-    "provideTitle": "What we provide",
-    "provideBody": "Full-chain lithium UPS products from cells and modules to systems — modular parallel designs for dependable delivery.",
-    "advantagesTitle": "Key features & advantages",
+    "scenariosTitle": "アプリケーションシナリオ",
+    "scenarioGridTitle": "グリッド近接BESS",
+    "scenarioGridBody": "グリッド近くの蓄電が大規模GPUクラスタ変動を安定化し、UPSクラスのバックアップ電力を提供。",
+    "scenarioLocalTitle": "GPU近接蓄電",
+    "scenarioLocalBody": "GPU近くのローカル蓄電がミリ秒レベルの過渡現象を平滑化し、設定可能なバックアップ時間と負荷隣接サポート。",
+    "provideTitle": "当社の提供内容",
+    "provideBody": "セル・モジュール・システムまでのフルチェーンリチウムUPS製品——信頼性の高い納品のためのモジュラー並列設計。",
+    "advantagesTitle": "主な特徴と利点",
     "advantages": [
       {
-        "title": "High safety",
-        "body": "Controlled temperature rise; cells demonstrate no fire or explosion under rigorous tests such as nail penetration (per applicable certifications and reports)."
+        "title": "高安全性",
+        "body": "制御された温度上昇；釘刺し試験などの厳格なテストで火災や爆発のないセル（該当認証・報告書による）。"
       },
       {
-        "title": "Long lifespan",
-        "body": "10-year calendar life design orientation for long-run data center operations."
+        "title": "長寿命",
+        "body": "長期データセンター運用のための10年カレンダー寿命設計指向。"
       },
       {
-        "title": "Fast response",
-        "body": "Millisecond response to load swings with support for up to ~300% peak load scenarios."
+        "title": "高速応答",
+        "body": "最大約300%のピーク負荷シナリオをサポートするミリ秒応答。"
       },
       {
-        "title": "Cost friendly",
-        "body": "~20% lower unit power cost vs conventional approaches; 50%+ fewer UPS systems deployed in comparable architectures (project-dependent)."
+        "title": "コスト効果",
+        "body": "従来手法比で約20%低い単位電力コスト；同等アーキテクチャで50%以上のUPSシステム削減（プロジェクト依存）。"
       },
       {
-        "title": "Authoritative certification",
-        "body": "Independent IP and quality systems aligned with leading enterprise supply-chain requirements."
+        "title": "信頼できる認証",
+        "body": "主要企業のサプライチェーン要件に準拠した独自IPと品質システム。"
       },
       {
-        "title": "Greener & more efficient",
-        "body": "Higher DC voltage architectures help evolve AIDC power design and reduce PUE."
+        "title": "より環境に優しく効率的",
+        "body": "より高いDC電圧アーキテクチャがAIDC電力設計の進化とPUE削減を支援。"
       }
     ],
-    "moduleTableTitle": "Technical specifications · UPS module",
+    "moduleTableTitle": "技術仕様 · UPSモジュール",
     "moduleCols": [
-      "Module",
-      "Type",
-      "Cell voltage",
-      "Module voltage",
-      "Discharge C-rate",
-      "Backup time"
+      "モジュール",
+      "タイプ",
+      "セル電圧",
+      "モジュール電圧",
+      "放電Cレート",
+      "バックアップ時間"
     ],
-    "systemTableTitle": "Technical specifications · UPS system",
+    "systemTableTitle": "技術仕様 · UPSシステム",
     "systemRows": {
-      "backup": "Backup time",
-      "cellV": "Cell voltage",
-      "moduleV": "Module voltage",
-      "cRate": "Discharge C-rate",
-      "power": "System power"
+      "backup": "バックアップ時間",
+      "cellV": "セル電圧",
+      "moduleV": "モジュール電圧",
+      "cRate": "放電Cレート",
+      "power": "システム電力"
     },
-    "footnoteTitle": "Design & fire suppression",
-    "footnote": "Design: modular parallel topology — safe, reliable, flexible, intelligent, and streamlined O&M. Fire suppression: aerosol and perfluoro options (per project engineering).",
-    "relatedTitle": "Related energy storage product",
-    "relatedBody": "Explore containerized ESS and datasheet-ready details.",
-    "relatedCta": "View Energy Storage System",
-    "contactCta": "Contact engineering",
-    "scenariosParagraph": "For future distributed data center power architectures, storage adds both stabilization and backup at grid- and load-side touchpoints.",
-    "tableNote": "Scroll horizontally on small screens to view all columns."
+    "footnoteTitle": "設計と消火",
+    "footnote": "設計：安全、信頼性、柔軟性、インテリジェント、合理化されたO&Mのためのモジュラー並列トポロジー。消火：エアロゾルおよびパーフルオロオプション（プロジェクトエンジニアリングによる）。",
+    "relatedTitle": "関連蓄電製品",
+    "relatedBody": "コンテナ型ESSとデータシート対応の詳細をご覧ください。",
+    "relatedCta": "エネルギー貯蔵システムを見る",
+    "contactCta": "エンジニアリングに問い合わせる",
+    "scenariosParagraph": "将来の分散型データセンター電力アーキテクチャでは、蓄電がグリッド側と負荷側の接点で安定化とバックアップの両方を追加します。",
+    "tableNote": "小画面では横スクロールして全列を表示してください。"
   }
 }

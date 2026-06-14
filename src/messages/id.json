@@ -449,23 +449,23 @@
   },
   "blog": {
     "latestArticles": "Artikel Terbaru",
-    "readMore": "Read Article",
+    "readMore": "Baca Artikel",
     "publishedOn": "Diterbitkan pada",
     "minRead": "menit baca",
     "backToBlog": "Kembali ke Blog",
     "relatedPosts": "Artikel Terkait",
     "noResults": "Artikel tidak ditemukan.",
-    "categories": "Categories",
+    "categories": "Kategori",
     "allCategories": "Semua",
     "searchBlog": "Cari artikel...",
-    "badge": "Knowledge Base",
-    "pageTitle": "Energy Storage Blog",
-    "pageSub": "Deep dives into battery storage technology, market trends, and best practices. From ROI analysis to installation guides, make informed decisions for your energy storage projects.",
-    "readTime": "min read",
-    "backToHome": "Back to Home",
-    "ctaTitle": "Need Expert Advice?",
-    "ctaSub": "Our engineering team can design a custom energy storage solution for your project.",
-    "ctaBtn": "Request a Proposal"
+    "badge": "Basis Pengetahuan",
+    "pageTitle": "Blog Penyimpanan Energi",
+    "pageSub": "Analisis mendalam tentang teknologi penyimpanan baterai, tren pasar, dan praktik terbaik. Dari analisis ROI hingga panduan instalasi, buat keputusan yang tepat untuk proyek penyimpanan energi Anda.",
+    "readTime": "menit baca",
+    "backToHome": "Kembali ke Beranda",
+    "ctaTitle": "Butuh Saran Ahli?",
+    "ctaSub": "Tim teknik kami dapat merancang solusi penyimpanan energi khusus untuk proyek Anda.",
+    "ctaBtn": "Minta Proposal"
   },
   "caseCenter": {
     "title": "Pusat Studi Kasus",
@@ -477,162 +477,162 @@
     "noCases": "Belum ada kasus yang tersedia.",
     "filterByRegion": "Filter berdasarkan Wilayah",
     "allRegions": "Semua Wilayah",
-    "badge": "Global Projects",
-    "pageTitle": "Frequency Regulation & Energy Storage Cases",
-    "pageSub": "Real-world deployments in grid frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "readMore": "View Details",
-    "ctaTitle": "Need a similar solution?",
-    "ctaSub": "Our engineering team will design a custom frequency regulation and energy storage system for your grid requirements.",
-    "ctaBtn": "Request a Proposal",
-    "techLink": "Explore our technology platform"
+    "badge": "Proyek Global",
+    "pageTitle": "Kasus Pengaturan Frekuensi & Penyimpanan Energi",
+    "pageSub": "Penerapan nyata dalam pengaturan frekuensi jaringan, pemangkasan beban puncak, dan integrasi energi terbarukan di 50+ negara.",
+    "readMore": "Lihat Detail",
+    "ctaTitle": "Butuh solusi serupa?",
+    "ctaSub": "Tim teknik kami akan merancang sistem pengaturan frekuensi dan penyimpanan energi khusus untuk kebutuhan jaringan Anda.",
+    "ctaBtn": "Minta Proposal",
+    "techLink": "Jelajahi platform teknologi kami"
   },
   "technology": {
     "diagramCaption": "System single-line diagram — click tabs above to switch topologies",
-    "viewCases": "View Frequency Regulation Cases",
-    "gridBessLink": "Grid-Level BESS Solutions"
+    "viewCases": "Lihat Kasus Pengaturan Frekuensi",
+    "gridBessLink": "Solusi BESS Tingkat Jaringan"
   },
   "productsEnergyStorage": {
-    "breadcrumbHome": "Home",
-    "breadcrumbProducts": "Products",
-    "badge": "Core product",
-    "title": "Energy Storage System",
-    "description": "Includes Energy Storage System Pack / DC Liquid Cooling Container — system-level delivery for high-power, long-life, and safe deployments.",
-    "certTitle": "Certifications",
-    "certDesc": "Common transport & safety standards",
-    "featuresTitle": "Features",
-    "featuresSub": "System-engineering features for scalable delivery: power coverage, lifetime consistency, redundant safety, and O&M friendliness.",
+    "breadcrumbHome": "Beranda",
+    "breadcrumbProducts": "Produk",
+    "badge": "Produk inti",
+    "title": "Sistem Penyimpanan Energi",
+    "description": "Termasuk Paket Sistem Penyimpanan Energi / Kontainer Pendingin Cairan DC — pengiriman tingkat sistem untuk penerapan daya tinggi, umur panjang, dan aman.",
+    "certTitle": "Sertifikasi",
+    "certDesc": "Standar transportasi & keamanan umum",
+    "featuresTitle": "Fitur",
+    "featuresSub": "Fitur rekayasa sistem untuk pengiriman yang dapat diskalakan: cakupan daya, konsistensi umur, keamanan berlebih, dan keramahan O&M.",
     "features": [
       {
-        "t": "High power",
-        "b": "0.25P–2P coverage across power-type and energy-type battery containers."
+        "t": "Daya tinggi",
+        "b": "Cakupan 0,25P–2P di seluruh kontainer baterai tipe daya dan tipe energi."
       },
       {
-        "t": "Long lifetime",
-        "b": "Cell temperature delta: 2℃ within a pack, 5℃ across clusters — designed for 10-year calendar life."
+        "t": "Umur panjang",
+        "b": "Delta suhu sel: 2℃ dalam satu pak, 5℃ antar klaster — dirancang untuk umur kalender 10 tahun."
       },
       {
-        "t": "Real safety",
-        "b": "Three-layer fire protection at pack/cluster/container levels; battery modules rated IP67."
+        "t": "Keamanan nyata",
+        "b": "Perlindungan kebakaran tiga lapis di tingkat pak/klaster/kontainer; modul baterai berperingkat IP67."
       },
       {
-        "t": "Easy integration",
-        "b": "Modular design enables per-cluster unit architecture with no inter-cluster circulating current; supports independent maintenance and upgrades."
+        "t": "Integrasi mudah",
+        "b": "Desain modular memungkinkan arsitektur unit per-klaster tanpa arus sirkulasi antar-klaster; mendukung pemeliharaan dan peningkatan independen."
       },
       {
-        "t": "Flexible configuration",
-        "b": "Side-by-side or end-to-end layout options with flexible expansion."
+        "t": "Konfigurasi fleksibel",
+        "b": "Opsi tata letak berdampingan atau ujung-ke-ujung dengan ekspansi fleksibel."
       },
       {
-        "t": "Easy management",
-        "b": "Real-time data exchange with energy statistics, fault warnings, and thermal-runaway early warning."
+        "t": "Manajemen mudah",
+        "b": "Pertukaran data real-time dengan statistik energi, peringatan kesalahan, dan peringatan dini thermal runaway."
       }
     ],
-    "specsTitle": "Specifications",
-    "specsSub": "Scroll horizontally on mobile to view all capacity variants.",
+    "specsTitle": "Spesifikasi",
+    "specsSub": "Gulir horizontal di ponsel untuk melihat semua varian kapasitas.",
     "specCornerLabel": "Parameter \\ Model",
-    "certFooter": "Certifications",
-    "ctaTitle": "Get a Custom Solution",
-    "ctaSub": "Tell us about your project — our engineers will design a custom solution within 48 hours."
+    "certFooter": "Sertifikasi",
+    "ctaTitle": "Dapatkan Solusi Khusus",
+    "ctaSub": "Ceritakan tentang proyek Anda — teknisi kami akan merancang solusi khusus dalam 48 jam."
   },
   "productsResidentialEss": {
-    "back": "Back to home",
-    "badge": "Residential",
-    "pageTitle": "Residential ESS",
-    "pageSub": "Low-voltage stack & wall-mount packs, high-voltage systems, and all-in-one inverter + battery solutions.",
-    "categoriesTitle": "Product families",
-    "catLv": "Low-voltage (51.2V)",
-    "catLvDesc": "Stackable and wall-mounted batteries around 10kWh & 16kWh class.",
-    "catHv": "High-voltage (358.4V – 716.8V)",
-    "catHvDesc": "Systems for higher power and HV DC bus requirements.",
+    "back": "Kembali ke beranda",
+    "badge": "Perumahan",
+    "pageTitle": "ESS Perumahan",
+    "pageSub": "Paket tumpukan tegangan rendah & dinding, sistem tegangan tinggi, dan solusi inverter + baterai all-in-one.",
+    "categoriesTitle": "Keluarga produk",
+    "catLv": "Tegangan rendah (51,2V)",
+    "catLvDesc": "Baterai yang dapat ditumpuk dan dipasang di dinding sekitar kelas 10kWh & 16kWh.",
+    "catHv": "Tegangan tinggi (358,4V – 716,8V)",
+    "catHvDesc": "Sistem untuk kebutuhan daya lebih tinggi dan bus DC HV.",
     "catAio": "ESS all-in-one",
-    "catAioDesc": "Integrated inverter and battery for faster residential deployment.",
-    "gridTitle": "Products",
-    "viewHvsDetails": "View HVS high-voltage series details",
-    "viewAioDetails": "View ESS All-in-one series details",
-    "viewLfpDetails": "View LFP battery series details",
-    "details": "Details",
+    "catAioDesc": "Inverter dan baterai terintegrasi untuk penerapan perumahan yang lebih cepat.",
+    "gridTitle": "Produk",
+    "viewHvsDetails": "Lihat detail seri HVS tegangan tinggi",
+    "viewAioDetails": "Lihat detail seri ESS All-in-one",
+    "viewLfpDetails": "Lihat detail seri baterai LFP",
+    "details": "Detail",
     "products": [
       {
         "key": "wallMount",
-        "title": "Wall-mounted battery",
+        "title": "Baterai dinding",
         "subtitle": "MDS-512200",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "Tegangan",
             "v": "25.6V-51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "Kapasitas",
             "v": "206Ah"
           },
           {
-            "l": "Energy",
+            "l": "Energi",
             "v": "5.12KWH-10.54KWH"
           },
           {
-            "l": "Cycle life",
+            "l": "Siklus hidup",
             "v": "6000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "Dimensi (mm)",
             "v": "723 × 655 × 255"
           },
           {
-            "l": "Communication",
+            "l": "Komunikasi",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "stackable",
-        "title": "Stackable battery",
+        "title": "Baterai tumpuk",
         "subtitle": "MDS-51314",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "Tegangan",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "Kapasitas",
             "v": "314Ah"
           },
           {
-            "l": "Energy",
+            "l": "Energi",
             "v": "16.07kWh"
           },
           {
-            "l": "Cycle life",
+            "l": "Siklus hidup",
             "v": "8000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "Dimensi (mm)",
             "v": "730 × 610 × 257"
           },
           {
-            "l": "Communication",
+            "l": "Komunikasi",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "hvSystem",
-        "title": "High voltage system",
+        "title": "Sistem tegangan tinggi",
         "subtitle": "HVS Series",
         "specs": [
           {
-            "l": "Voltage range",
+            "l": "Rentang tegangan",
             "v": "358.4V – 716.8V"
           },
           {
-            "l": "Energy range",
+            "l": "Rentang energi",
             "v": "14.33kWh – 100.35kWh (scalable)"
           },
           {
-            "l": "Cycle life",
+            "l": "Siklus hidup",
             "v": "8000 cycles"
           },
           {
-            "l": "Communication",
+            "l": "Komunikasi",
             "v": "RS485 / RS232 / CAN"
           }
         ]
@@ -643,23 +643,23 @@
         "subtitle": "All-in-one family",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "Tegangan",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "Kapasitas",
             "v": "100Ah / 314Ah"
           },
           {
-            "l": "Energy",
+            "l": "Energi",
             "v": "5.12kWh – 16.07kWh"
           },
           {
-            "l": "Representative models",
+            "l": "Model representatif",
             "v": "M1200 (1), MB-1111, etc."
           },
           {
-            "l": "Communication",
+            "l": "Komunikasi",
             "v": "RS485 / RS232 / CAN"
           }
         ]
@@ -667,70 +667,70 @@
     ]
   },
   "productsPcs": {
-    "back": "Back to home",
-    "badge": "PCS · Prefabricated",
-    "heroTitle": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation",
-    "heroSub": "Highly integrated prefabricated cabin combining inverter and step-up substation for utility-scale PV+storage and grid connection.",
-    "overviewTitle": "Product overview",
-    "overviewName": "Name",
+    "back": "Kembali ke beranda",
+    "badge": "PCS · Prafabrikasi",
+    "heroTitle": "SES4H-5160/6900-MV-EX Gardu Induk Inverter Prafabrikasi",
+    "heroSub": "Kabin prafabrikasi terintegrasi tinggi yang menggabungkan inverter dan gardu step-up untuk PV+penyimpanan skala utilitas dan koneksi jaringan.",
+    "overviewTitle": "Ikhtisar produk",
+    "overviewName": "Nama",
     "overviewNameVal": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation (PCS)",
-    "featuresTitle": "Key advantages",
-    "imageAlt": "SES4H-5160/6900-MV-EX prefabricated inverter substation product",
-    "specsTitle": "Technical specifications",
-    "specsHint": "Scroll horizontally on small screens.",
-    "colCat": "Category",
+    "featuresTitle": "Keunggulan utama",
+    "imageAlt": "Produk gardu induk inverter prafabrikasi SES4H-5160/6900-MV-EX",
+    "specsTitle": "Spesifikasi teknis",
+    "specsHint": "Gulir horizontal di layar kecil.",
+    "colCat": "Kategori",
     "colItem": "Parameter",
-    "colDetail": "Details",
-    "complianceTitle": "Compliance & certifications",
-    "complianceIntro": "Design and type testing comply with the following standards and grid codes (subject to delivery certificate).",
-    "ctaDatasheet": "Request datasheet",
-    "ctaContact": "Contact us",
+    "colDetail": "Detail",
+    "complianceTitle": "Kepatuhan & sertifikasi",
+    "complianceIntro": "Desain dan pengujian tipe mematuhi standar dan kode jaringan berikut (tergantung sertifikat pengiriman).",
+    "ctaDatasheet": "Minta datasheet",
+    "ctaContact": "Hubungi kami",
     "features": [
       {
-        "t": "Flexible config",
-        "b": "Integrated inverter and substation in a highly prefabricated design, improving space efficiency and simplifying installation."
+        "t": "Konfigurasi fleksibel",
+        "b": "Inverter dan gardu terintegrasi dalam desain yang sangat prafabrikasi, meningkatkan efisiensi ruang dan menyederhanakan instalasi."
       },
       {
-        "t": "Modular power",
-        "b": "Modular design allows configurable power rating to match project requirements."
+        "t": "Daya modular",
+        "b": "Desain modular memungkinkan peringkat daya yang dapat dikonfigurasi untuk memenuhi persyaratan proyek."
       },
       {
-        "t": "High efficiency & stability",
-        "b": "1500V wide DC voltage range with multi-branch DC design to prevent battery circulating current."
+        "t": "Efisiensi & stabilitas tinggi",
+        "b": "Rentang tegangan DC lebar 1500V dengan desain DC multi-cabang untuk mencegah arus sirkulasi baterai."
       },
       {
-        "t": "Versatile use",
-        "b": "Supports VSG / PQ / VF modes with peak shaving and local autonomous operation."
+        "t": "Penggunaan serbaguna",
+        "b": "Mendukung mode VSG / PQ / VF dengan pemangkasan puncak dan operasi otonom lokal."
       },
       {
-        "t": "Safe & compatible",
-        "b": "Supports HVRT/LVRT, four-quadrant active/reactive power regulation, fast power response (<20ms)."
+        "t": "Aman & kompatibel",
+        "b": "Mendukung HVRT/LVRT, pengaturan daya aktif/reaktif empat kuadran, respons daya cepat (<20ms)."
       },
       {
-        "t": "Grid-friendly",
-        "b": "Rated AC power: N×215kW @45°C, N×129kW @50°C (N = 20~32 modules); THDi/THDu <3%."
+        "t": "Ramah jaringan",
+        "b": "Daya AC terukur: N×215kW @45°C, N×129kW @50°C (N = 20~32 modul); THDi/THDu <3%."
       }
     ]
   },
   "productsSolarPanels": {
-    "back": "Back to home",
-    "badge": "Solar",
-    "pageTitle": "Solar Panels",
-    "pageSub": "High-efficiency ABC INFINITE modules with partial shading optimisation and industry-leading warranties.",
-    "gridTitle": "Product series",
-    "source": "Data source",
+    "back": "Kembali ke beranda",
+    "badge": "Panel Surya",
+    "pageTitle": "Panel Surya",
+    "pageSub": "Modul ABC INFINITE efisiensi tinggi dengan optimasi bayangan parsial dan jaminan terdepan di industri.",
+    "gridTitle": "Seri produk",
+    "source": "Sumber data",
     "sourceLink": "aikosolar.com"
   },
   "productsHvs": {
-    "back": "Back to residential ESS",
-    "title": "High-Voltage System HVS Series",
-    "sub": "Rack-mount and cabinet-style high-voltage battery systems for higher power density and scalability.",
-    "secA": "Section A · Standard Rack (100Ah)",
-    "secB": "Section B · High-capacity Rack (280Ah)",
-    "secC": "Section C · Cabinet BESS (large capacity)",
-    "introA": "100Ah rack family: modular stackable design with IP65 protection, ideal for indoor/outdoor residential HV battery banks.",
-    "introB": "280Ah racks up to 35.84kWh per tower — designed for higher energy demands with the same footprint.",
-    "introC": "Cabinet BESS: pre-assembled high-voltage solution for residential and small commercial applications, scalable up to 100kWh.",
+    "back": "Kembali ke ESS perumahan",
+    "title": "Sistem Tegangan Tinggi Seri HVS",
+    "sub": "Sistem baterai tegangan tinggi rak-mount dan kabinet untuk kepadatan daya dan skalabilitas yang lebih tinggi.",
+    "secA": "Bagian A · Rak Standar (100Ah)",
+    "secB": "Bagian B · Rak Kapasitas Tinggi (280Ah)",
+    "secC": "Bagian C · Kabinet BESS (kapasitas besar)",
+    "introA": "Keluarga rak 100Ah: desain tumpuk modular dengan perlindungan IP65, ideal untuk bank baterai HV perumahan dalam/luar ruangan.",
+    "introB": "Rak 280Ah hingga 35,84kWh per menara — dirancang untuk permintaan energi lebih tinggi dengan tapak yang sama.",
+    "introC": "Kabinet BESS: solusi tegangan tinggi pra-rakitan untuk aplikasi perumahan dan komersial kecil, dapat diskalakan hingga 100kWh.",
     "specLabels": {
       "model": {
         "en": "Model",
@@ -758,7 +758,7 @@
         "ar": "Voltage",
         "ja": "Voltage",
         "ko": "Voltage",
-        "id": "Voltage"
+        "id": "Tegangan"
       },
       "capacity": {
         "en": "Capacity",
@@ -772,7 +772,7 @@
         "ar": "Capacity",
         "ja": "Capacity",
         "ko": "Capacity",
-        "id": "Capacity"
+        "id": "Kapasitas"
       },
       "energy": {
         "en": "Energy",
@@ -786,7 +786,7 @@
         "ar": "Energy",
         "ja": "Energy",
         "ko": "Energy",
-        "id": "Energy"
+        "id": "Energi"
       },
       "cycleLife": {
         "en": "Cycle life",
@@ -800,7 +800,7 @@
         "ar": "Cycle life",
         "ja": "Cycle life",
         "ko": "Cycle life",
-        "id": "Cycle life"
+        "id": "Siklus hidup"
       },
       "dimensions": {
         "en": "Dimensions",
@@ -814,7 +814,7 @@
         "ar": "Dimensions",
         "ja": "Dimensions",
         "ko": "Dimensions",
-        "id": "Dimensions"
+        "id": "Dimensi"
       },
       "comm": {
         "en": "Comm.",
@@ -828,7 +828,7 @@
         "ar": "Comm.",
         "ja": "Comm.",
         "ko": "Comm.",
-        "id": "Comm."
+        "id": "Kom."
       },
       "moduleSize": {
         "en": "Module size",
@@ -842,7 +842,7 @@
         "ar": "Module size",
         "ja": "Module size",
         "ko": "Module size",
-        "id": "Module size"
+        "id": "Ukuran modul"
       },
       "totalEnergy": {
         "en": "Total energy",
@@ -856,7 +856,7 @@
         "ar": "Total energy",
         "ja": "Total energy",
         "ko": "Total energy",
-        "id": "Total energy"
+        "id": "Total energi"
       },
       "footprint": {
         "en": "Footprint",
@@ -870,7 +870,7 @@
         "ar": "Footprint",
         "ja": "Footprint",
         "ko": "Footprint",
-        "id": "Footprint"
+        "id": "Tapak"
       },
       "nominalVoltage": {
         "en": "Nominal voltage",
@@ -884,16 +884,16 @@
         "ar": "Nominal voltage",
         "ja": "Nominal voltage",
         "ko": "Nominal voltage",
-        "id": "Nominal voltage"
+        "id": "Tegangan nominal"
       }
     }
   },
   "productsLfpBattery": {
-    "back": "Back to residential ESS",
-    "title": "LFP Battery Series",
-    "sub": "Ultra-slim wall-mount and floor-standing / mobile LFP battery solutions.",
-    "sec1": "Ultra-slim Wall-mount Group · M1200 / M2400",
-    "sec2": "Floor / Mobile Group · M-BXS / M-LFP",
+    "back": "Kembali ke ESS perumahan",
+    "title": "Seri Baterai LFP",
+    "sub": "Solusi baterai LFP ultra-tipis dinding dan berdiri di lantai / mobile.",
+    "sec1": "Grup Dinding Ultra-tipis · M1200 / M2400",
+    "sec2": "Grup Lantai / Mobile · M-BXS / M-LFP",
     "corner": "Parameter",
     "specLabels": {
       "nominalVoltage": {
@@ -908,7 +908,7 @@
         "ar": "Nominal voltage",
         "ja": "Nominal voltage",
         "ko": "Nominal voltage",
-        "id": "Nominal voltage"
+        "id": "Tegangan nominal"
       },
       "nominalCapacity": {
         "en": "Nominal capacity",
@@ -922,7 +922,7 @@
         "ar": "Nominal capacity",
         "ja": "Nominal capacity",
         "ko": "Nominal capacity",
-        "id": "Nominal capacity"
+        "id": "Kapasitas nominal"
       },
       "energy": {
         "en": "Energy",
@@ -936,7 +936,7 @@
         "ar": "Energy",
         "ja": "Energy",
         "ko": "Energy",
-        "id": "Energy"
+        "id": "Energi"
       },
       "cycleLife": {
         "en": "Cycle life",
@@ -950,7 +950,7 @@
         "ar": "Cycle life",
         "ja": "Cycle life",
         "ko": "Cycle life",
-        "id": "Cycle life"
+        "id": "Siklus hidup"
       },
       "dimensions": {
         "en": "Dimensions (L×W×H)",
@@ -964,7 +964,7 @@
         "ar": "Dimensions (L×W×H)",
         "ja": "Dimensions (L×W×H)",
         "ko": "Dimensions (L×W×H)",
-        "id": "Dimensions (L×W×H)"
+        "id": "Dimensi (P×L×T)"
       },
       "communication": {
         "en": "Communication",
@@ -978,206 +978,206 @@
         "ar": "Communication",
         "ja": "Communication",
         "ko": "Communication",
-        "id": "Communication"
+        "id": "Komunikasi"
       }
     }
   },
   "productsAllInOne": {
-    "back": "Back to residential ESS",
-    "title": "Wall-mounted / Floor-standing LFP Battery Comparison",
-    "sub": "Side-by-side specification comparison across 6 popular models in the LFP battery lineup.",
-    "section": "Parameter comparison (6 models)",
+    "back": "Kembali ke ESS perumahan",
+    "title": "Perbandingan Baterai LFP Dinding / Lantai",
+    "sub": "Perbandingan spesifikasi berdampingan di 6 model populer dalam jajaran baterai LFP.",
+    "section": "Perbandingan parameter (7 model)",
     "corner": "Parameter"
   },
   "productsEssAllInOne": {
-    "back": "Back to residential ESS",
-    "pageTitle": "ESS All-in-one Series",
-    "pageSub": "Integrated inverter + battery systems for hassle-free residential energy storage deployment."
+    "back": "Kembali ke ESS perumahan",
+    "pageTitle": "Seri ESS All-in-one",
+    "pageSub": "Sistem inverter + baterai terintegrasi untuk penerapan penyimpanan energi perumahan tanpa repot."
   },
   "productsStackableBattery": {
-    "back": "Back to residential ESS",
-    "title": "Stackable / Floor-standing Battery (314Ah / 200Ah) Comparison",
-    "sub": "Side-by-side specification comparison across 7 popular models.",
-    "section": "Parameter comparison (7 models)",
+    "back": "Kembali ke ESS perumahan",
+    "title": "Perbandingan Baterai Tumpuk / Lantai (314Ah / 200Ah)",
+    "sub": "Perbandingan spesifikasi berdampingan di 7 model populer.",
+    "section": "Perbandingan parameter (7 model)",
     "corner": "Parameter"
   },
   "blogDetail": {
-    "notFound": "Article Not Found",
-    "backToBlog": "Back to Blog",
-    "readTime": "min read",
-    "tableOfContents": "Table of Contents",
-    "ctaTitle": "Questions about this article?",
-    "ctaSub": "Contact our engineering team for a personalised consultation on your energy storage project.",
-    "relatedArticles": "Related Articles",
-    "readMore": "Read Article"
+    "notFound": "Artikel Tidak Ditemukan",
+    "backToBlog": "Kembali ke Blog",
+    "readTime": "menit baca",
+    "tableOfContents": "Daftar Isi",
+    "ctaTitle": "Pertanyaan tentang artikel ini?",
+    "ctaSub": "Hubungi tim teknik kami untuk konsultasi yang dipersonalisasi tentang proyek penyimpanan energi Anda.",
+    "relatedArticles": "Artikel Terkait",
+    "readMore": "Baca Artikel"
   },
   "caseDetail": {
-    "back": "Back to case center",
-    "location": "Location",
-    "date": "Implementation date",
-    "type": "Frequency regulation type",
-    "challengeTitle": "The Problem to Solve",
-    "solutionTitle": "Our Approach",
-    "specsTitle": "Technical Specifications",
-    "outcomesTitle": "Measurable Results",
-    "gallery": "Site photos",
-    "freqDiagram": "Frequency response diagram",
-    "cta": "Get a similar solution",
-    "ctaSub": "Tell us about your project requirements and our engineers will design a tailored solution.",
-    "ctaBtn": "WhatsApp Consultation",
-    "moreBtn": "View more cases",
-    "techPageBtn": "Explore technology platform"
+    "back": "Kembali ke pusat kasus",
+    "location": "Lokasi",
+    "date": "Tanggal implementasi",
+    "type": "Jenis pengaturan frekuensi",
+    "challengeTitle": "Masalah yang Harus Dipecahkan",
+    "solutionTitle": "Pendekatan Kami",
+    "specsTitle": "Spesifikasi Teknis",
+    "outcomesTitle": "Hasil Terukur",
+    "gallery": "Foto lokasi",
+    "freqDiagram": "Diagram respons frekuensi",
+    "cta": "Dapatkan solusi serupa",
+    "ctaSub": "Ceritakan kebutuhan proyek Anda dan teknisi kami akan merancang solusi yang disesuaikan.",
+    "ctaBtn": "Konsultasi WhatsApp",
+    "moreBtn": "Lihat lebih banyak kasus",
+    "techPageBtn": "Jelajahi platform teknologi"
   },
   "solutionsGridLevelBess": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "Grid-side · Bulk storage",
-    "title": "Grid-level Battery Energy Storage System (BESS)",
-    "subtitle": "Grid-scale energy storage and bulk power substation solutions — flexibility, ancillary services, and renewable integration for utilities and large C&I.",
-    "paragraphText": "BESS solution scope: grid-scale energy storage systems and bulk power substation integration — aligned with utility-grade deployment practices.",
-    "advantagesTitle": "Top 4 advantages",
+    "breadcrumbHome": "Beranda",
+    "breadcrumbSolutions": "Solusi",
+    "badge": "Sisi Jaringan · Penyimpanan massal",
+    "title": "Sistem Penyimpanan Energi Baterai Tingkat Jaringan (BESS)",
+    "subtitle": "Solusi penyimpanan energi skala jaringan dan gardu daya massal — fleksibilitas, layanan tambahan, dan integrasi energi terbarukan untuk utilitas dan C&I besar.",
+    "paragraphText": "Lingkup solusi BESS: sistem penyimpanan energi skala jaringan dan integrasi gardu daya massal — selaras dengan praktik penerapan tingkat utilitas.",
+    "advantagesTitle": "4 keunggulan utama",
     "advantages": [
       {
         "n": "01",
-        "title": "One-stop solution",
-        "body": "Full application coverage across generation, grid, and demand-side use cases — from concept to integrated delivery."
+        "title": "Solusi satu atap",
+        "body": "Cakupan aplikasi penuh di seluruh kasus penggunaan pembangkitan, jaringan, dan sisi permintaan — dari konsep hingga pengiriman terintegrasi."
       },
       {
         "n": "02",
-        "title": "Industrial pioneer",
-        "body": "Energy-storage-oriented 1P 314Ah prismatic cell platforms engineered for long calendar life and tight consistency."
+        "title": "Pelopor industri",
+        "body": "Platform sel prismatik 1P 314Ah berorientasi penyimpanan energi yang direkayasa untuk umur kalender panjang dan konsistensi ketat."
       },
       {
         "n": "03",
-        "title": "Millisecond response",
-        "body": "Millisecond-class power response with system designs supporting up to ~2P power capability (project-dependent)."
+        "title": "Respons milidetik",
+        "body": "Respons daya kelas milidetik dengan desain sistem mendukung hingga kemampuan daya ~2P (tergantung proyek)."
       },
       {
         "n": "04",
-        "title": "Multiple security measures",
-        "body": "Triple fire-suppression concepts paired with modular architecture for safer O&M at container, cluster, and pack levels."
+        "title": "Langkah keamanan ganda",
+        "body": "Konsep pemadaman kebakaran tiga kali lipat dipasangkan dengan arsitektur modular untuk O&M yang lebih aman di tingkat kontainer, klaster, dan pak."
       }
     ],
-    "appsIntroTitle": "Segmented applications",
-    "appsIntro": "High-power applications for grid-level BESS are transforming how utilities and large consumers operate. These systems store bulk energy from renewables such as solar and wind, shifting surplus generation to peak demand periods. With rapid charge and discharge capability, BESS supports grid stability through ancillary services including frequency regulation and voltage support, and enables demand-response participation — cutting costs by dispatching stored energy when the grid is most stressed.",
+    "appsIntroTitle": "Aplikasi tersegmentasi",
+    "appsIntro": "Aplikasi daya tinggi untuk BESS tingkat jaringan mengubah cara utilitas dan konsumen besar beroperasi. Sistem ini menyimpan energi massal dari sumber terbarukan seperti surya dan angin, mengalihkan pembangkitan surplus ke periode permintaan puncak.",
     "apps": [
       {
-        "title": "Thermal power frequency regulation",
-        "body": "High-power storage delivers millisecond-class frequency response for thermal plants, improving regulation quality and capturing ancillary-service value."
+        "title": "Pengaturan frekuensi pembangkit termal",
+        "body": "Penyimpanan daya tinggi memberikan respons frekuensi kelas milidetik untuk pembangkit termal, meningkatkan kualitas pengaturan dan menangkap nilai layanan tambahan."
       },
       {
-        "title": "PV + storage + charging",
-        "body": "High-power systems support charging loads and campus demand, reducing cost and emissions through peak shaving and valley filling."
+        "title": "PV + penyimpanan + pengisian",
+        "body": "Sistem daya tinggi mendukung beban pengisian dan permintaan kampus, mengurangi biaya dan emisi melalui pemangkasan puncak dan pengisian lembah."
       },
       {
-        "title": "Energy storage for fast chargers",
-        "body": "Capacity support for ultra-fast charging — meeting peak power requirements while improving station utilization and grid friendliness."
+        "title": "Penyimpanan energi untuk pengisi daya cepat",
+        "body": "Dukungan kapasitas untuk pengisian ultra-cepat — memenuhi persyaratan daya puncak sambil meningkatkan utilisasi stasiun dan keramahan jaringan."
       },
       {
-        "title": "Emergency power for mines",
-        "body": "Critical backup for underground operations — faster and more efficient than diesel-only approaches, improving payback and power quality."
+        "title": "Daya darurat untuk tambang",
+        "body": "Cadangan kritis untuk operasi bawah tanah — lebih cepat dan lebih efisien daripada pendekatan diesel saja, meningkatkan pengembalian dan kualitas daya."
       }
     ],
-    "techTitle": "Technical highlights",
-    "techNote": "Final figures are subject to project FAT/SAT, grid codes, and contract technical schedules.",
+    "techTitle": "Sorotan teknis",
+    "techNote": "Angka akhir tergantung pada FAT/SAT proyek, kode jaringan, dan jadwal teknis kontrak.",
     "techHighlights": [
       {
-        "k": "Response",
-        "v": "Millisecond-level control loop (application-dependent)"
+        "k": "Respons",
+        "v": "Loop kontrol tingkat milidetik"
       },
       {
-        "k": "Power capability",
-        "v": "Up to ~2P system power design envelope"
+        "k": "Kemampuan daya",
+        "v": "Amplop desain daya sistem hingga ~2P"
       },
       {
-        "k": "Cell platform",
-        "v": "1P 314Ah-class prismatic LFP for energy storage"
+        "k": "Platform sel",
+        "v": "LFP prismatik kelas 314Ah"
       },
       {
-        "k": "Safety architecture",
-        "v": "Triple fire suppression + modular system design"
+        "k": "Arsitektur keamanan",
+        "v": "Pemadaman kebakaran tiga kali lipat + sistem modular"
       },
       {
-        "k": "Coverage",
-        "v": "Source, grid, and load-side application scenarios"
+        "k": "Cakupan",
+        "v": "Skenario aplikasi sisi sumber, jaringan, dan beban"
       }
     ],
-    "relatedTitle": "Related energy storage products",
-    "relatedBody": "Explore containerized ESS and system-level documentation on our product page.",
-    "relatedCta": "Energy Storage System",
-    "contactCta": "Contact engineering"
+    "relatedTitle": "Produk penyimpanan energi terkait",
+    "relatedBody": "Jelajahi ESS terkontainerisasi dan dokumentasi tingkat sistem di halaman produk kami.",
+    "relatedCta": "Sistem Penyimpanan Energi",
+    "contactCta": "Hubungi teknik"
   },
   "solutionsDataCenter": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "AIDC · Backup & power quality",
-    "title": "Data Center Energy Storage Solutions",
-    "lead": "High-power lithium backup for AIDC workloads — engineered for supply reliability and power quality, with millisecond response to GPU-scale load swings.",
-    "painTitle": "Industry pain points",
+    "breadcrumbHome": "Beranda",
+    "breadcrumbSolutions": "Solusi",
+    "badge": "AIDC · Cadangan & kualitas daya",
+    "title": "Solusi Penyimpanan Energi Pusat Data",
+    "lead": "Cadangan lithium daya tinggi untuk beban kerja AIDC — direkayasa untuk keandalan pasokan dan kualitas daya, dengan respons milidetik terhadap fluktuasi beban skala GPU.",
+    "painTitle": "Titik masalah industri",
     "painItems": [
-      "Rapidly rising data center power demand challenges grid capacity and expansion timelines.",
-      "GPU load swings create high peaks and increase IT downtime risk from power-quality events.",
-      "PUE and efficiency requirements are becoming stricter across facilities.",
-      "Battery safety expectations are extreme — no fire or explosion tolerance in mission-critical sites."
+      "Permintaan daya pusat data yang meningkat pesat menantang kapasitas jaringan dan jadwal ekspansi.",
+      "Fluktuasi beban GPU menciptakan puncak tinggi dan meningkatkan risiko downtime TI dari peristiwa kualitas daya.",
+      "Persyaratan PUE dan efisiensi menjadi lebih ketat di seluruh fasilitas.",
+      "Harapan keamanan baterai sangat ekstrem — tidak ada toleransi kebakaran atau ledakan di situs mission-critical."
     ],
-    "scenariosTitle": "Application scenarios",
-    "scenarioGridTitle": "Grid-proximate BESS",
-    "scenarioGridBody": "Battery energy storage near the grid stabilizes large-scale GPU cluster swings and provides UPS-class backup power.",
-    "scenarioLocalTitle": "GPU-proximate energy storage",
-    "scenarioLocalBody": "Local storage near GPUs smooths millisecond-level transients with configurable backup duration and load-adjacent support.",
-    "provideTitle": "What we provide",
-    "provideBody": "Full-chain lithium UPS products from cells and modules to systems — modular parallel designs for dependable delivery.",
-    "advantagesTitle": "Key features & advantages",
+    "scenariosTitle": "Skenario aplikasi",
+    "scenarioGridTitle": "BESS dekat jaringan",
+    "scenarioGridBody": "Penyimpanan energi baterai dekat jaringan menstabilkan fluktuasi klaster GPU skala besar dan menyediakan daya cadangan kelas UPS.",
+    "scenarioLocalTitle": "Penyimpanan energi dekat GPU",
+    "scenarioLocalBody": "Penyimpanan lokal dekat GPU menghaluskan transien tingkat milidetik dengan durasi cadangan yang dapat dikonfigurasi dan dukungan dekat beban.",
+    "provideTitle": "Apa yang kami sediakan",
+    "provideBody": "Produk UPS lithium rantai penuh dari sel dan modul hingga sistem — desain paralel modular untuk pengiriman yang andal.",
+    "advantagesTitle": "Fitur & keunggulan utama",
     "advantages": [
       {
-        "title": "High safety",
-        "body": "Controlled temperature rise; cells demonstrate no fire or explosion under rigorous tests such as nail penetration (per applicable certifications and reports)."
+        "title": "Keamanan tinggi",
+        "body": "Kenaikan suhu terkendali; sel tidak menunjukkan kebakaran atau ledakan di bawah pengujian ketat seperti penetrasi paku."
       },
       {
-        "title": "Long lifespan",
-        "body": "10-year calendar life design orientation for long-run data center operations."
+        "title": "Umur panjang",
+        "body": "Orientasi desain umur kalender 10 tahun untuk operasi pusat data jangka panjang."
       },
       {
-        "title": "Fast response",
-        "body": "Millisecond response to load swings with support for up to ~300% peak load scenarios."
+        "title": "Respons cepat",
+        "body": "Respons milidetik terhadap fluktuasi beban dengan dukungan hingga skenario beban puncak ~300%."
       },
       {
-        "title": "Cost friendly",
-        "body": "~20% lower unit power cost vs conventional approaches; 50%+ fewer UPS systems deployed in comparable architectures (project-dependent)."
+        "title": "Ramah biaya",
+        "body": "Biaya daya unit ~20% lebih rendah vs pendekatan konvensional; 50%+ lebih sedikit sistem UPS dalam arsitektur sebanding."
       },
       {
-        "title": "Authoritative certification",
-        "body": "Independent IP and quality systems aligned with leading enterprise supply-chain requirements."
+        "title": "Sertifikasi otoritatif",
+        "body": "IP independen dan sistem kualitas selaras dengan persyaratan rantai pasokan perusahaan terkemuka."
       },
       {
-        "title": "Greener & more efficient",
-        "body": "Higher DC voltage architectures help evolve AIDC power design and reduce PUE."
+        "title": "Lebih hijau & lebih efisien",
+        "body": "Arsitektur tegangan DC lebih tinggi membantu mengembangkan desain daya AIDC dan mengurangi PUE."
       }
     ],
-    "moduleTableTitle": "Technical specifications · UPS module",
+    "moduleTableTitle": "Spesifikasi teknis · Modul UPS",
     "moduleCols": [
-      "Module",
-      "Type",
-      "Cell voltage",
-      "Module voltage",
-      "Discharge C-rate",
-      "Backup time"
+      "Modul",
+      "Tipe",
+      "Tegangan sel",
+      "Tegangan modul",
+      "C-rate discharge",
+      "Waktu cadangan"
     ],
-    "systemTableTitle": "Technical specifications · UPS system",
+    "systemTableTitle": "Spesifikasi teknis · Sistem UPS",
     "systemRows": {
-      "backup": "Backup time",
-      "cellV": "Cell voltage",
-      "moduleV": "Module voltage",
-      "cRate": "Discharge C-rate",
-      "power": "System power"
+      "backup": "Waktu cadangan",
+      "cellV": "Tegangan sel",
+      "moduleV": "Tegangan modul",
+      "cRate": "C-rate discharge",
+      "power": "Daya sistem"
     },
-    "footnoteTitle": "Design & fire suppression",
-    "footnote": "Design: modular parallel topology — safe, reliable, flexible, intelligent, and streamlined O&M. Fire suppression: aerosol and perfluoro options (per project engineering).",
-    "relatedTitle": "Related energy storage product",
-    "relatedBody": "Explore containerized ESS and datasheet-ready details.",
-    "relatedCta": "View Energy Storage System",
-    "contactCta": "Contact engineering",
-    "scenariosParagraph": "For future distributed data center power architectures, storage adds both stabilization and backup at grid- and load-side touchpoints.",
-    "tableNote": "Scroll horizontally on small screens to view all columns."
+    "footnoteTitle": "Desain & pemadaman kebakaran",
+    "footnote": "Desain: topologi paralel modular — aman, andal, fleksibel, cerdas, dan O&M yang disederhanakan. Pemadaman kebakaran: opsi aerosol dan perfluoro (per rekayasa proyek).",
+    "relatedTitle": "Produk penyimpanan energi terkait",
+    "relatedBody": "Jelajahi ESS terkontainerisasi dan detail siap datasheet.",
+    "relatedCta": "Lihat Sistem Penyimpanan Energi",
+    "contactCta": "Hubungi teknik",
+    "scenariosParagraph": "Untuk arsitektur daya pusat data terdistribusi di masa depan, penyimpanan menambahkan stabilisasi dan cadangan di titik sentuh sisi jaringan dan beban.",
+    "tableNote": "Gulir horizontal di layar kecil untuk melihat semua kolom."
   }
 }

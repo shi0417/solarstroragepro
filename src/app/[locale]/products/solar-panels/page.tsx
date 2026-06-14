@@ -55,9 +55,29 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEOSTAR — Wohnbereich",
         desc: "ABC INFINITE Modul der dritten Generation. Teilabschattungsoptimierung, besserer Temperaturkoeffizient (-0,26 %/°C), Mikrorissbeständigkeit, 25 Jahre Produktgarantie und 30 Jahre Leistungsgarantie. Wirkungsgrad bis zu 24,8 %. BloombergNEF Tier 1 Solar PV-Hersteller.",
       },
+      ar: {
+        series: "NEOSTAR — سكني",
+        desc: "وحدة ABC INFINITE من الجيل الثالث. تحسين التظليل الجزئي، معامل درجة حرارة أفضل (-0.26%/°C)، مقاومة التشققات الدقيقة، ضمان منتج 25 سنة وضمان أداء 30 سنة. كفاءة تصل إلى 24.8%. مصنع ألواح شمسية من الفئة الأولى حسب BloombergNEF.",
+      },
       fr: {
         series: "NEOSTAR — Résidentiel",
         desc: "Module ABC INFINITE de troisième génération. Optimisation de l'ombrage partiel, meilleur coefficient de température (-0,26 %/°C), résistance aux microfissures, garantie produit de 25 ans et garantie de performance de 30 ans. Efficacité jusqu'à 24,8 %. Fabricant de panneaux solaires Tier 1 de BloombergNEF.",
+      },
+      ja: {
+        series: "NEOSTAR — 住宅用",
+        desc: "第3世代ABC INFINITEモジュール。部分影最適化、優れた温度係数（-0.26%/°C）、マイクロクラック耐性、25年製品保証と30年性能保証。最大効率24.8%。BloombergNEF Tier 1ソーラーパネルメーカー。",
+      },      ko: {
+        series: "NEOSTAR — 주거용",
+        desc: "3세대 ABC INFINITE 모듈. 부분 음영 최적화, 개선된 온도 계수(-0.26%/°C), 미세 균열 저항성, 25년 제품 보증 및 30년 성능 보증. 최대 효율 24.8%. BloombergNEF Tier 1 태양광 패널 제조사.",
+      },      id: {
+        series: "NEOSTAR — Perumahan",
+        desc: "Modul ABC INFINITE generasi ketiga. Optimasi bayangan parsial, koefisien suhu lebih baik (-0,26%/°C), tahan retak mikro, garansi produk 25 tahun & garansi performa 30 tahun. Efisiensi hingga 24,8%. Produsen panel surya BloombergNEF Tier 1.",
+      },
+
+
+      th: {
+        series: "NEOSTAR — ที่อยู่อาศัย",
+        desc: "โมดูล ABC INFINITE รุ่นที่ 3 การปรับให้เหมาะสมกับการบังแดดบางส่วน ค่าสัมประสิทธิ์อุณหภูมิที่ดีขึ้น (-0.26 %/°C) ความต้านทานรอยแตกขนาดเล็ก การรับประกันผลิตภัณฑ์ 25 ปี และการรับประกันประสิทธิภาพ 30 ปี ประสิทธิภาพสูงถึง 24.8% ผู้ผลิตแผงโซลาร์ BloombergNEF Tier 1",
       },
     },
     specs: [
@@ -108,9 +128,33 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEOSTAR — Wohnbereich",
         desc: "Einglas-Wohnmodul der dritten Generation mit Infinite-Technologie. Höhere Leistungsabgabe, niedrigere BOS-Kosten und höherer ästhetischer Wert.",
       },
+      ar: {
+        series: "NEOSTAR 3P60 — سكني",
+        desc: "وحدة زجاج أحادي سكنية من الجيل الثالث بتقنية Infinite. خرج طاقة أعلى، BOS أقل، وقيمة جمالية أعلى.",
+      },
       fr: {
         series: "NEOSTAR — Résidentiel",
         desc: "Module résidentiel à verre simple de troisième génération avec technologie Infinite. Puissance de sortie plus élevée, BOS réduit et valeur esthétique supérieure.",
+      },
+      ar: {
+        series: "NEOSTAR — سكني",
+        desc: "وحدة سكنية زجاج أحادي من الجيل الثالث بتقنية Infinite. طاقة خرج أعلى، BOS أقل، وقيم جمالية أفضل.",
+      },
+      ja: {
+        series: "NEOSTAR — 家庭用",
+        desc: "Infiniteテクノロジー搭載の第3世代単板ガラス家庭用モジュール。より高い出力、低いBOS、優れた美観価値。",
+      },
+      ko: {
+        series: "NEOSTAR — 주거용",
+        desc: "Infinite 기술이 적용된 3세대 단판 유리 주거용 모듈. 더 높은 출력, 낮은 BOS, 우수한 미적 가치.",
+      },      id: {
+        series: "COMET — Komersial",
+        desc: "Modul ABC daya tinggi untuk atap komersial & industri dan ground-mount. Koefisien suhu unggul menghasilkan lebih banyak daya di lingkungan panas. Mengurangi biaya BOS sistem.",
+      },
+
+      th: {
+        series: "NEOSTAR — ที่อยู่อาศัย",
+        desc: "โมดูลกระจกเดี่ยวสำหรับที่อยู่อาศัยรุ่นที่ 3 พร้อมเทคโนโลยี Infinite กำลังไฟฟ้าสูงขึ้น BOS ต่ำลง และความสวยงามมากขึ้น",
       },
     },
     specs: [
@@ -159,9 +203,33 @@ const PRODUCTS: SolarProduct[] = [
         series: "COMET — Gewerbe & Industrie",
         desc: "Höhere Rendite bei gleicher Amortisationszeit. N-Typ-Modul der dritten Generation für gewerbliche und industrielle Anwendungen mit Teilabschattungsoptimierung und Mikrorissbeständigkeit.",
       },
+      ar: {
+        series: "NEOSTAR — تجاري",
+        desc: "وحدة ABC INFINITE من الجيل الثالث للأسقف التجارية. كفاءة تصل إلى 24.3% مع مقاومة فائقة للتشققات الدقيقة وتحسين التظليل الجزئي. تقليل تكاليف BOS للمنشآت التجارية.",
+      },
       fr: {
         series: "COMET — Commercial & Industriel",
         desc: "Taux de retour plus élevé pour la même période de récupération. Module N-type de troisième génération pour applications commerciales et industrielles avec optimisation de l'ombrage partiel et résistance aux microfissures.",
+      },
+      ar: {
+        series: "COMET — تجاري وصناعي",
+        desc: "معدل عائد أعلى في نفس فترة الاسترداد. وحدة من النوع N من الجيل الثالث للتطبيقات التجارية والصناعية مع تحسين التظليل الجزئي ومقاومة التشققات الدقيقة.",
+      },
+      ja: {
+        series: "COMET — 商業・産業用",
+        desc: "同一回収期間でより高い収益率。部分影最適化とマイクロクラック耐性を備えた商業・産業用第3世代N型モジュール。",
+      },      ko: {
+        series: "STELLAR — 유틸리티",
+        desc: "유틸리티 규모 프로젝트를 위한 최대 출력 모듈. 대면적 셀로 설치 비용 최소화. 계통 연계에 최적화된 고전압 출력.",
+      },      id: {
+        series: "STELLAR — Utilitas",
+        desc: "Modul output tertinggi untuk proyek skala utilitas. Sel area besar meminimalkan biaya instalasi. Output tegangan tinggi dioptimalkan untuk koneksi jaringan.",
+      },
+
+
+      th: {
+        series: "COMET — เชิงพาณิชย์และอุตสาหกรรม",
+        desc: "อัตราผลตอบแทนที่สูงขึ้นในช่วงคืนทุนเท่ากัน โมดูล N-type รุ่นที่ 3 สำหรับการใช้งานเชิงพาณิชย์และอุตสาหกรรม พร้อมการปรับให้เหมาะสมกับการบังแดดบางส่วนและความต้านทานรอยแตกขนาดเล็ก",
       },
     },
     specs: [
@@ -206,9 +274,33 @@ const PRODUCTS: SolarProduct[] = [
         series: "STELLAR — Großanlagen",
         desc: "Höhere Leistungsabgabe und niedrigere Stromgestehungskosten für große Solarprojekte. Doppelglas-N-Typ-Modul der dritten Generation mit Infinite-Technologie.",
       },
+      ar: {
+        series: "NEOSTAR 2P72 — نطاق واسع",
+        desc: "وحدة زجاج مزدوج عالية الطاقة للمشاريع على نطاق المرافق. كفاءة تصل إلى 24.3% مع ضمان أداء 30 سنة. مثالية لمزارع الطاقة الشمسية الكبيرة والمنشآت التجارية والصناعية.",
+      },
       fr: {
         series: "STELLAR — Grande Échelle",
         desc: "Puissance de sortie plus élevée et LCOE réduit pour les projets solaires à grande échelle. Module N-type à double vitrage de troisième génération avec technologie Infinite.",
+      },
+      ar: {
+        series: "STELLAR — مرافق",
+        desc: "طاقة خرج أعلى وتكلفة طاقة مستوية أقل لمشاريع الطاقة الشمسية على نطاق المرافق. وحدة زجاج مزدوج من النوع N من الجيل الثالث بتقنية Infinite.",
+      },
+      ja: {
+        series: "STELLAR — 系統用",
+        desc: "大規模ソーラープロジェクト向けの高出力と低LCOE。Infiniteテクノロジー搭載の第3世代両面ガラスN型モジュール。",
+      },
+      ko: {
+        series: "STELLAR — 유틸리티",
+        desc: "대규모 태양광 프로젝트를 위한 더 높은 출력과 낮은 LCOE. Infinite 기술이 적용된 3세대 양면 유리 N형 모듈.",
+      },
+      id: {
+        series: "STELLAR — Utilitas",
+        desc: "Output daya lebih tinggi dan LCOE lebih rendah untuk proyek surya skala utilitas. Modul N-type kaca ganda generasi ketiga dengan teknologi Infinite.",
+      },
+      th: {
+        series: "STELLAR — สาธารณูปโภค",
+        desc: "กำลังไฟฟ้าสูงขึ้นและ LCOE ต่ำลงสำหรับโครงการโซลาร์ระดับสาธารณูปโภค โมดูล N-type กระจกคู่รุ่นที่ 3 พร้อมเทคโนโลยี Infinite",
       },
     },
     specs: [
@@ -257,9 +349,33 @@ const PRODUCTS: SolarProduct[] = [
         series: "STELLAR — Großanlagen",
         desc: "Ultrahochleistungsmodul für Großanlagen. Doppelglas-N-Typ der zweiten Generation mit 770–805 W Leistung und fortschrittlichem Wärmemanagement.",
       },
+      ar: {
+        series: "COMET 2P66 — مرافق",
+        desc: "وحدة على نطاق المرافق عالية الكفاءة بتقنية ABC INFINITE. تعظيم إنتاج الطاقة وتقليل LCOE لمشاريع الطاقة الشمسية على نطاق GW.",
+      },
       fr: {
         series: "STELLAR — Grande Échelle",
         desc: "Module ultra-haute puissance pour grandes installations. N-type à double vitrage de deuxième génération avec puissance de 770–805 W et gestion thermique avancée.",
+      },
+      ar: {
+        series: "STELLAR — مرافق",
+        desc: "وحدة طاقة فائقة الارتفاع للمرافق. زجاج مزدوج من النوع N من الجيل الثاني بقدرة 770–805 واط وإدارة حرارية متقدمة.",
+      },
+      ja: {
+        series: "STELLAR — 系統用",
+        desc: "系統用超高出力モジュール。770～805W出力の第2世代両面ガラスN型、高度な熱管理。",
+      },
+      ko: {
+        series: "STELLAR — 유틸리티",
+        desc: "유틸리티용 초고출력 모듈. 770–805W 출력 및 고급 열 관리 기능을 갖춘 2세대 양면 유리 N형.",
+      },
+      id: {
+        series: "STELLAR — Utilitas",
+        desc: "Modul daya ultra-tinggi untuk utilitas. Kaca ganda N-type generasi kedua dengan output 770–805W dan manajemen termal canggih.",
+      },
+      th: {
+        series: "STELLAR — สาธารณูปโภค",
+        desc: "โมดูลกำลังสูงพิเศษสำหรับสาธารณูปโภค N-type กระจกคู่รุ่นที่ 2 กำลัง 770–805 W พร้อมการจัดการความร้อนขั้นสูง",
       },
     },
     specs: [
@@ -308,9 +424,33 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEBULAR — Leichtbau",
         desc: "Leichtbaumodul für Dächer mit begrenzter Tragfähigkeit. Teilabschattungsoptimierung, Mikrorissbeständigkeit und höherer ästhetischer Wert.",
       },
+      ar: {
+        series: "COMET — تجاري",
+        desc: "وحدة زجاج أحادي تجارية عالية الكفاءة. توفر التوازن الأمثل بين التكلفة والأداء للأسقف التجارية والصناعية.",
+      },
       fr: {
         series: "NEBULAR — Léger",
         desc: "Module léger pour toits à capacité de charge limitée. Optimisation de l'ombrage partiel, résistance aux microfissures et valeur esthétique supérieure.",
+      },
+      ar: {
+        series: "NEBULAR — خفيف الوزن",
+        desc: "وحدة خفيفة الوزن للأسقف ذات سعة الحمل المحدودة. تحسين التظليل الجزئي، مقاومة التشققات الدقيقة، وقيم جمالية أفضل.",
+      },
+      ja: {
+        series: "NEBULAR — 軽量",
+        desc: "荷重制限のある屋根向け軽量モジュール。部分影最適化、マイクロクラック耐性、優れた美観価値。",
+      },
+      ko: {
+        series: "NEBULAR — 경량",
+        desc: "하중 제한이 있는 지붕용 경량 모듈. 부분 음영 최적화, 미세 균열 저항성, 우수한 미적 가치.",
+      },
+      id: {
+        series: "NEBULAR — Ringan",
+        desc: "Modul ringan untuk atap dengan kapasitas beban terbatas. Optimasi bayangan parsial, tahan retak mikro, dan nilai estetika unggul.",
+      },
+      th: {
+        series: "NEBULAR — น้ำหนักเบา",
+        desc: "โมดูลน้ำหนักเบาสำหรับหลังคาที่มีความสามารถในการรับน้ำหนักจำกัด การปรับให้เหมาะสมกับการบังแดดบางส่วน ความต้านทานรอยแตกขนาดเล็ก และความสวยงามมากขึ้น",
       },
     },
     specs: [
@@ -337,12 +477,12 @@ const PRODUCTS: SolarProduct[] = [
  * Add more locales as needed; the component falls back to `en`.
  */
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı", pt: "Faixa de Potência", de: "Leistungsbereich", fr: "Plage de Puissance" },
-  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi", pt: "Tipo de Vidro", de: "Glastyp", fr: "Type de Verre" },
-  generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil", pt: "Geração", de: "Generation", fr: "Génération" },
-  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar", pt: "Dimensões", de: "Abmessungen (mm)", fr: "Dimensions (mm)" },
-  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik", pt: "Eficiência", de: "Wirkungsgrad", fr: "Efficacité" },
-  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı", pt: "Coef. de Temperatura", de: "Temperaturkoeff.", fr: "Coeff. de Température" },
+  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı", pt: "Faixa de Potência", de: "Leistungsbereich", fr: "Plage de Puissance", ar: "نطاق الطاقة", ja: "電力範囲", ko: "전력 범위", id: "Rentang Daya", th: "ช่วงกำลังไฟฟ้า" },
+  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi", pt: "Tipo de Vidro", de: "Glastyp", fr: "Type de Verre", ar: "نوع الزجاج", ja: "ガラスタイプ", ko: "유리 유형", id: "Tipe Kaca", th: "ประเภทกระจก" },
+  generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil", pt: "Geração", de: "Generation", fr: "Génération", ar: "الجيل", ja: "世代", ko: "세대", id: "Generasi", th: "รุ่น" },
+  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar", pt: "Dimensões", de: "Abmessungen (mm)", fr: "Dimensions (mm)", ar: "الأبعاد (مم)", ja: "寸法（mm）", ko: "치수 (mm)", id: "Dimensi (mm)", th: "ขนาด (มม.)" },
+  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik", pt: "Eficiência", de: "Wirkungsgrad", fr: "Efficacité", ar: "الكفاءة", ja: "効率", ko: "효율", id: "Efisiensi", th: "ประสิทธิภาพ" },
+  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı", pt: "Coef. de Temperatura", de: "Temperaturkoeff.", fr: "Coeff. de Température", ar: "معامل درجة الحرارة", ja: "温度係数", ko: "온도 계수", id: "Koef. Suhu", th: "ค่าสัมประสิทธิ์อุณหภูมิ" },
 };
 
 function getLabel(labelKey: string, locale: string): string {

@@ -449,23 +449,23 @@
   },
   "blog": {
     "latestArticles": "آخر المقالات",
-    "readMore": "Read Article",
+    "readMore": "اقرأ المقال",
     "publishedOn": "نُشر في",
     "minRead": "دقيقة قراءة",
     "backToBlog": "العودة إلى المدونة",
     "relatedPosts": "مقالات ذات صلة",
     "noResults": "لم يتم العثور على مقالات.",
-    "categories": "Categories",
+    "categories": "الفئات",
     "allCategories": "الكل",
     "searchBlog": "البحث في المقالات...",
-    "badge": "Knowledge Base",
-    "pageTitle": "Energy Storage Blog",
-    "pageSub": "Deep dives into battery storage technology, market trends, and best practices. From ROI analysis to installation guides, make informed decisions for your energy storage projects.",
-    "readTime": "min read",
-    "backToHome": "Back to Home",
-    "ctaTitle": "Need Expert Advice?",
-    "ctaSub": "Our engineering team can design a custom energy storage solution for your project.",
-    "ctaBtn": "Request a Proposal"
+    "badge": "قاعدة المعرفة",
+    "pageTitle": "مدونة تخزين الطاقة",
+    "pageSub": "تحليلات معمقة في تكنولوجيا تخزين البطاريات واتجاهات السوق وأفضل الممارسات. من تحليل العائد على الاستثمار إلى أدلة التركيب، اتخذ قرارات مستنيرة لمشاريع تخزين الطاقة الخاصة بك.",
+    "readTime": "دقيقة قراءة",
+    "backToHome": "العودة إلى الرئيسية",
+    "ctaTitle": "هل تحتاج إلى استشارة خبير؟",
+    "ctaSub": "يمكن لفريقنا الهندسي تصميم حل مخصص لتخزين الطاقة لمشروعك.",
+    "ctaBtn": "طلب عرض سعر"
   },
   "caseCenter": {
     "title": "مركز دراسات الحالة",
@@ -477,189 +477,189 @@
     "noCases": "لا توجد حالات متاحة بعد.",
     "filterByRegion": "فلترة حسب المنطقة",
     "allRegions": "جميع المناطق",
-    "badge": "Global Projects",
-    "pageTitle": "Frequency Regulation & Energy Storage Cases",
-    "pageSub": "Real-world deployments in grid frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "readMore": "View Details",
-    "ctaTitle": "Need a similar solution?",
-    "ctaSub": "Our engineering team will design a custom frequency regulation and energy storage system for your grid requirements.",
-    "ctaBtn": "Request a Proposal",
-    "techLink": "Explore our technology platform"
+    "badge": "مشاريع عالمية",
+    "pageTitle": "حالات تنظيم التردد وتخزين الطاقة",
+    "pageSub": "نشرات واقعية في تنظيم تردد الشبكة وإدارة ذروة الأحمال ودمج الطاقة المتجددة في أكثر من 50 دولة.",
+    "readMore": "عرض التفاصيل",
+    "ctaTitle": "هل تحتاج إلى حل مماثل؟",
+    "ctaSub": "سيقوم فريقنا الهندسي بتصميم نظام مخصص لتنظيم التردد وتخزين الطاقة لمتطلبات شبكتك.",
+    "ctaBtn": "طلب عرض سعر",
+    "techLink": "استكشف منصتنا التكنولوجية"
   },
   "technology": {
-    "diagramCaption": "System single-line diagram — click tabs above to switch topologies",
-    "viewCases": "View Frequency Regulation Cases",
-    "gridBessLink": "Grid-Level BESS Solutions"
+    "diagramCaption": "مخطط أحادي الخط للنظام — انقر على علامات التبويب أعلاه لتبديل الطوبولوجيات",
+    "viewCases": "عرض حالات تنظيم التردد",
+    "gridBessLink": "حلول BESS على مستوى الشبكة"
   },
   "productsEnergyStorage": {
-    "breadcrumbHome": "Home",
-    "breadcrumbProducts": "Products",
-    "badge": "Core product",
-    "title": "Energy Storage System",
-    "description": "Includes Energy Storage System Pack / DC Liquid Cooling Container — system-level delivery for high-power, long-life, and safe deployments.",
-    "certTitle": "Certifications",
-    "certDesc": "Common transport & safety standards",
-    "featuresTitle": "Features",
-    "featuresSub": "System-engineering features for scalable delivery: power coverage, lifetime consistency, redundant safety, and O&M friendliness.",
+    "breadcrumbHome": "الرئيسية",
+    "breadcrumbProducts": "المنتجات",
+    "badge": "المنتج الأساسي",
+    "title": "نظام تخزين الطاقة",
+    "description": "يشمل حزمة نظام تخزين الطاقة / حاوية التبريد السائل DC — تسليم على مستوى النظام للنشر عالي الطاقة وطويل العمر والآمن.",
+    "certTitle": "الشهادات",
+    "certDesc": "معايير النقل والسلامة الشائعة",
+    "featuresTitle": "الميزات",
+    "featuresSub": "ميزات هندسة النظام للتسليم القابل للتطوير: تغطية الطاقة، تناسق العمر، السلامة المتكررة، وسهولة التشغيل والصيانة.",
     "features": [
       {
-        "t": "High power",
-        "b": "0.25P–2P coverage across power-type and energy-type battery containers."
+        "t": "طاقة عالية",
+        "b": "تغطية 0.25P–2P عبر حاويات البطاريات من نوع الطاقة ونوع السعة."
       },
       {
-        "t": "Long lifetime",
-        "b": "Cell temperature delta: 2℃ within a pack, 5℃ across clusters — designed for 10-year calendar life."
+        "t": "عمر طويل",
+        "b": "فرق درجة حرارة الخلية: 2°C داخل الحزمة، 5°C عبر العناقيد — مصممة لعمر تقويمي 10 سنوات."
       },
       {
-        "t": "Real safety",
-        "b": "Three-layer fire protection at pack/cluster/container levels; battery modules rated IP67."
+        "t": "سلامة حقيقية",
+        "b": "حماية من الحريق ثلاثية الطبقات على مستويات الحزمة/العنقود/الحاوية؛ وحدات البطارية مصنفة IP67."
       },
       {
-        "t": "Easy integration",
-        "b": "Modular design enables per-cluster unit architecture with no inter-cluster circulating current; supports independent maintenance and upgrades."
+        "t": "تكامل سهل",
+        "b": "التصميم المعياري يتيح هندسة وحدة لكل عنقود بدون تيار دوران بين العناقيد؛ يدعم الصيانة والترقيات المستقلة."
       },
       {
-        "t": "Flexible configuration",
-        "b": "Side-by-side or end-to-end layout options with flexible expansion."
+        "t": "تكوين مرن",
+        "b": "خيارات تخطيط جنبًا إلى جنب أو من طرف إلى طرف مع توسع مرن."
       },
       {
-        "t": "Easy management",
-        "b": "Real-time data exchange with energy statistics, fault warnings, and thermal-runaway early warning."
+        "t": "إدارة سهلة",
+        "b": "تبادل البيانات في الوقت الفعلي مع إحصائيات الطاقة وتحذيرات الأعطال والإنذار المبكر للانفلات الحراري."
       }
     ],
-    "specsTitle": "Specifications",
-    "specsSub": "Scroll horizontally on mobile to view all capacity variants.",
-    "specCornerLabel": "Parameter \\ Model",
-    "certFooter": "Certifications",
-    "ctaTitle": "Get a Custom Solution",
-    "ctaSub": "Tell us about your project — our engineers will design a custom solution within 48 hours."
+    "specsTitle": "المواصفات",
+    "specsSub": "مرر أفقيًا على الهاتف المحمول لعرض جميع متغيرات السعة.",
+    "specCornerLabel": "المعامل \\ الطراز",
+    "certFooter": "الشهادات",
+    "ctaTitle": "احصل على حل مخصص",
+    "ctaSub": "أخبرنا عن مشروعك — سيصمم مهندسونا حلاً مخصصاً في غضون 48 ساعة."
   },
   "productsResidentialEss": {
-    "back": "Back to home",
-    "badge": "Residential",
-    "pageTitle": "Residential ESS",
-    "pageSub": "Low-voltage stack & wall-mount packs, high-voltage systems, and all-in-one inverter + battery solutions.",
-    "categoriesTitle": "Product families",
-    "catLv": "Low-voltage (51.2V)",
-    "catLvDesc": "Stackable and wall-mounted batteries around 10kWh & 16kWh class.",
-    "catHv": "High-voltage (358.4V – 716.8V)",
-    "catHvDesc": "Systems for higher power and HV DC bus requirements.",
-    "catAio": "ESS all-in-one",
-    "catAioDesc": "Integrated inverter and battery for faster residential deployment.",
-    "gridTitle": "Products",
-    "viewHvsDetails": "View HVS high-voltage series details",
-    "viewAioDetails": "View ESS All-in-one series details",
-    "viewLfpDetails": "View LFP battery series details",
-    "details": "Details",
+    "back": "العودة إلى الرئيسية",
+    "badge": "سكني",
+    "pageTitle": "نظام ESS السكني",
+    "pageSub": "حزم منخفضة الجهد قابلة للتكديس والتثبيت على الحائط، وأنظمة عالية الجهد، وحلول عاكس + بطارية متكاملة.",
+    "categoriesTitle": "عائلات المنتجات",
+    "catLv": "جهد منخفض (51.2V)",
+    "catLvDesc": "بطاريات قابلة للتكديس ومثبتة على الحائط حوالي فئة 10kWh و 16kWh.",
+    "catHv": "جهد عالي (358.4V – 716.8V)",
+    "catHvDesc": "أنظمة لمتطلبات الطاقة الأعلى وحافلة DC عالية الجهد.",
+    "catAio": "ESS متكامل",
+    "catAioDesc": "عاكس وبطارية مدمجان لنشر سكني أسرع.",
+    "gridTitle": "المنتجات",
+    "viewHvsDetails": "عرض تفاصيل سلسلة HVS عالية الجهد",
+    "viewAioDetails": "عرض تفاصيل سلسلة ESS المتكامل",
+    "viewLfpDetails": "عرض تفاصيل سلسلة بطاريات LFP",
+    "details": "التفاصيل",
     "products": [
       {
         "key": "wallMount",
-        "title": "Wall-mounted battery",
+        "title": "بطارية مثبتة على الحائط",
         "subtitle": "MDS-512200",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "الجهد",
             "v": "25.6V-51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "السعة",
             "v": "206Ah"
           },
           {
-            "l": "Energy",
+            "l": "الطاقة",
             "v": "5.12KWH-10.54KWH"
           },
           {
-            "l": "Cycle life",
+            "l": "عمر الدورة",
             "v": "6000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "الأبعاد (مم)",
             "v": "723 × 655 × 255"
           },
           {
-            "l": "Communication",
+            "l": "الاتصال",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "stackable",
-        "title": "Stackable battery",
+        "title": "بطارية قابلة للتكديس",
         "subtitle": "MDS-51314",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "الجهد",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "السعة",
             "v": "314Ah"
           },
           {
-            "l": "Energy",
+            "l": "الطاقة",
             "v": "16.07kWh"
           },
           {
-            "l": "Cycle life",
+            "l": "عمر الدورة",
             "v": "8000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "الأبعاد (مم)",
             "v": "730 × 610 × 257"
           },
           {
-            "l": "Communication",
+            "l": "الاتصال",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "hvSystem",
-        "title": "High voltage system",
+        "title": "نظام عالي الجهد",
         "subtitle": "HVS Series",
         "specs": [
           {
-            "l": "Voltage range",
+            "l": "نطاق الجهد",
             "v": "358.4V – 716.8V"
           },
           {
-            "l": "Energy range",
+            "l": "نطاق الطاقة",
             "v": "14.33kWh – 100.35kWh (scalable)"
           },
           {
-            "l": "Cycle life",
+            "l": "عمر الدورة",
             "v": "8000 cycles"
           },
           {
-            "l": "Communication",
+            "l": "الاتصال",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "aio",
-        "title": "ESS all-in-one",
+        "title": "ESS الكل في واحد",
         "subtitle": "All-in-one family",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "الجهد",
             "v": "51.2V"
           },
           {
-            "l": "Capacity",
+            "l": "السعة",
             "v": "100Ah / 314Ah"
           },
           {
-            "l": "Energy",
+            "l": "الطاقة",
             "v": "5.12kWh – 16.07kWh"
           },
           {
-            "l": "Representative models",
+            "l": "النماذج الممثلة",
             "v": "M1200 (1), MB-1111, etc."
           },
           {
-            "l": "Communication",
+            "l": "الاتصال",
             "v": "RS485 / RS232 / CAN"
           }
         ]
@@ -667,24 +667,24 @@
     ]
   },
   "productsPcs": {
-    "back": "Back to home",
-    "badge": "PCS · Prefabricated",
-    "heroTitle": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation",
-    "heroSub": "Highly integrated prefabricated cabin combining inverter and step-up substation for utility-scale PV+storage and grid connection.",
-    "overviewTitle": "Product overview",
-    "overviewName": "Name",
-    "overviewNameVal": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation (PCS)",
-    "featuresTitle": "Key advantages",
-    "imageAlt": "SES4H-5160/6900-MV-EX prefabricated inverter substation product",
-    "specsTitle": "Technical specifications",
-    "specsHint": "Scroll horizontally on small screens.",
-    "colCat": "Category",
-    "colItem": "Parameter",
-    "colDetail": "Details",
-    "complianceTitle": "Compliance & certifications",
-    "complianceIntro": "Design and type testing comply with the following standards and grid codes (subject to delivery certificate).",
-    "ctaDatasheet": "Request datasheet",
-    "ctaContact": "Contact us",
+    "back": "العودة إلى الرئيسية",
+    "badge": "PCS · مسبق الصنع",
+    "heroTitle": "SES4H-5160/6900-MV-EX محطة العاكس الفرعية مسبقة الصنع",
+    "heroSub": "كابينة مسبقة الصنع عالية التكامل تجمع بين العاكس ومحطة رفع الجهد لأنظمة PV+التخزين على نطاق المرافق واتصال الشبكة.",
+    "overviewTitle": "نظرة عامة على المنتج",
+    "overviewName": "الاسم",
+    "overviewNameVal": "SES4H-5160/6900-MV-EX محطة العاكس الفرعية مسبقة الصنع (PCS)",
+    "featuresTitle": "المزايا الرئيسية",
+    "imageAlt": "منتج محطة العاكس الفرعية مسبقة الصنع SES4H-5160/6900-MV-EX",
+    "specsTitle": "المواصفات التقنية",
+    "specsHint": "مرر أفقيًا على الشاشات الصغيرة.",
+    "colCat": "الفئة",
+    "colItem": "المعامل",
+    "colDetail": "التفاصيل",
+    "complianceTitle": "الامتثال والشهادات",
+    "complianceIntro": "يتوافق التصميم واختبار النوع مع المعايير وأكواد الشبكة التالية (حسب شهادة التسليم).",
+    "ctaDatasheet": "طلب ورقة البيانات",
+    "ctaContact": "اتصل بنا",
     "features": [
       {
         "t": "Flexible config",
@@ -713,24 +713,24 @@
     ]
   },
   "productsSolarPanels": {
-    "back": "Back to home",
-    "badge": "Solar",
-    "pageTitle": "Solar Panels",
-    "pageSub": "High-efficiency ABC INFINITE modules with partial shading optimisation and industry-leading warranties.",
-    "gridTitle": "Product series",
-    "source": "Data source",
+    "back": "العودة إلى الرئيسية",
+    "badge": "شمسي",
+    "pageTitle": "ألواح شمسية",
+    "pageSub": "وحدات ABC INFINITE عالية الكفاءة مع تحسين التظليل الجزئي وضمانات رائدة في الصناعة.",
+    "gridTitle": "سلسلة المنتجات",
+    "source": "مصدر البيانات",
     "sourceLink": "aikosolar.com"
   },
   "productsHvs": {
-    "back": "Back to residential ESS",
-    "title": "High-Voltage System HVS Series",
-    "sub": "Rack-mount and cabinet-style high-voltage battery systems for higher power density and scalability.",
-    "secA": "Section A · Standard Rack (100Ah)",
-    "secB": "Section B · High-capacity Rack (280Ah)",
-    "secC": "Section C · Cabinet BESS (large capacity)",
-    "introA": "100Ah rack family: modular stackable design with IP65 protection, ideal for indoor/outdoor residential HV battery banks.",
-    "introB": "280Ah racks up to 35.84kWh per tower — designed for higher energy demands with the same footprint.",
-    "introC": "Cabinet BESS: pre-assembled high-voltage solution for residential and small commercial applications, scalable up to 100kWh.",
+    "back": "العودة إلى ESS السكني",
+    "title": "سلسلة HVS نظام الجهد العالي",
+    "sub": "أنظمة بطاريات عالية الجهد مثبتة على رفوف وبنمط خزائن لكثافة طاقة أعلى وقابلية للتوسع.",
+    "secA": "القسم أ · رف قياسي (100Ah)",
+    "secB": "القسم ب · رف عالي السعة (280Ah)",
+    "secC": "القسم ج · خزانة BESS (سعة كبيرة)",
+    "introA": "عائلة رف 100Ah: تصميم معياري قابل للتكديس مع حماية IP65، مثالي لبنوك بطاريات HV السكنية الداخلية/الخارجية.",
+    "introB": "رفوف 280Ah تصل إلى 35.84kWh لكل برج — مصممة لمتطلبات طاقة أعلى بنفس المساحة.",
+    "introC": "خزانة BESS: حل عالي الجهد مجمع مسبقًا للتطبيقات السكنية والتجارية الصغيرة، قابل للتوسع حتى 100kWh.",
     "specLabels": {
       "model": {
         "en": "Model",
@@ -741,7 +741,7 @@
         "de": "Model",
         "fr": "Model",
         "th": "Model",
-        "ar": "Model",
+        "ar": "الطراز",
         "ja": "Model",
         "ko": "Model",
         "id": "Model"
@@ -755,7 +755,7 @@
         "de": "Voltage",
         "fr": "Voltage",
         "th": "Voltage",
-        "ar": "Voltage",
+        "ar": "الجهد",
         "ja": "Voltage",
         "ko": "Voltage",
         "id": "Voltage"
@@ -769,7 +769,7 @@
         "de": "Capacity",
         "fr": "Capacity",
         "th": "Capacity",
-        "ar": "Capacity",
+        "ar": "السعة",
         "ja": "Capacity",
         "ko": "Capacity",
         "id": "Capacity"
@@ -783,7 +783,7 @@
         "de": "Energy",
         "fr": "Energy",
         "th": "Energy",
-        "ar": "Energy",
+        "ar": "الطاقة",
         "ja": "Energy",
         "ko": "Energy",
         "id": "Energy"
@@ -797,7 +797,7 @@
         "de": "Cycle life",
         "fr": "Cycle life",
         "th": "Cycle life",
-        "ar": "Cycle life",
+        "ar": "العمر (دورات)",
         "ja": "Cycle life",
         "ko": "Cycle life",
         "id": "Cycle life"
@@ -811,7 +811,7 @@
         "de": "Dimensions",
         "fr": "Dimensions",
         "th": "Dimensions",
-        "ar": "Dimensions",
+        "ar": "الأبعاد",
         "ja": "Dimensions",
         "ko": "Dimensions",
         "id": "Dimensions"
@@ -825,7 +825,7 @@
         "de": "Comm.",
         "fr": "Comm.",
         "th": "Comm.",
-        "ar": "Comm.",
+        "ar": "الاتصال",
         "ja": "Comm.",
         "ko": "Comm.",
         "id": "Comm."
@@ -839,7 +839,7 @@
         "de": "Module size",
         "fr": "Module size",
         "th": "Module size",
-        "ar": "Module size",
+        "ar": "حجم الوحدة",
         "ja": "Module size",
         "ko": "Module size",
         "id": "Module size"
@@ -853,7 +853,7 @@
         "de": "Total energy",
         "fr": "Total energy",
         "th": "Total energy",
-        "ar": "Total energy",
+        "ar": "الطاقة الكلية",
         "ja": "Total energy",
         "ko": "Total energy",
         "id": "Total energy"
@@ -867,7 +867,7 @@
         "de": "Footprint",
         "fr": "Footprint",
         "th": "Footprint",
-        "ar": "Footprint",
+        "ar": "المساحة",
         "ja": "Footprint",
         "ko": "Footprint",
         "id": "Footprint"
@@ -881,7 +881,7 @@
         "de": "Nominal voltage",
         "fr": "Nominal voltage",
         "th": "Nominal voltage",
-        "ar": "Nominal voltage",
+        "ar": "الجهد الاسمي",
         "ja": "Nominal voltage",
         "ko": "Nominal voltage",
         "id": "Nominal voltage"
@@ -889,12 +889,12 @@
     }
   },
   "productsLfpBattery": {
-    "back": "Back to residential ESS",
-    "title": "LFP Battery Series",
-    "sub": "Ultra-slim wall-mount and floor-standing / mobile LFP battery solutions.",
-    "sec1": "Ultra-slim Wall-mount Group · M1200 / M2400",
-    "sec2": "Floor / Mobile Group · M-BXS / M-LFP",
-    "corner": "Parameter",
+    "back": "العودة إلى ESS السكني",
+    "title": "سلسلة بطاريات LFP",
+    "sub": "حلول بطاريات LFP رفيعة للغاية للتثبيت على الحائط وقائمة على الأرض/متنقلة.",
+    "sec1": "مجموعة التثبيت على الحائط الرفيعة · M1200 / M2400",
+    "sec2": "مجموعة الأرضية/المتنقلة · M-BXS / M-LFP",
+    "corner": "المعامل",
     "specLabels": {
       "nominalVoltage": {
         "en": "Nominal voltage",
@@ -905,7 +905,7 @@
         "de": "Nominal voltage",
         "fr": "Nominal voltage",
         "th": "Nominal voltage",
-        "ar": "Nominal voltage",
+        "ar": "الجهد الاسمي",
         "ja": "Nominal voltage",
         "ko": "Nominal voltage",
         "id": "Nominal voltage"
@@ -919,7 +919,7 @@
         "de": "Nominal capacity",
         "fr": "Nominal capacity",
         "th": "Nominal capacity",
-        "ar": "Nominal capacity",
+        "ar": "السعة الاسمية",
         "ja": "Nominal capacity",
         "ko": "Nominal capacity",
         "id": "Nominal capacity"
@@ -933,7 +933,7 @@
         "de": "Energy",
         "fr": "Energy",
         "th": "Energy",
-        "ar": "Energy",
+        "ar": "الطاقة",
         "ja": "Energy",
         "ko": "Energy",
         "id": "Energy"
@@ -947,7 +947,7 @@
         "de": "Cycle life",
         "fr": "Cycle life",
         "th": "Cycle life",
-        "ar": "Cycle life",
+        "ar": "العمر (دورات)",
         "ja": "Cycle life",
         "ko": "Cycle life",
         "id": "Cycle life"
@@ -961,7 +961,7 @@
         "de": "Dimensions (L×W×H)",
         "fr": "Dimensions (L×W×H)",
         "th": "Dimensions (L×W×H)",
-        "ar": "Dimensions (L×W×H)",
+        "ar": "الأبعاد (L×W×H)",
         "ja": "Dimensions (L×W×H)",
         "ko": "Dimensions (L×W×H)",
         "id": "Dimensions (L×W×H)"
@@ -975,7 +975,7 @@
         "de": "Communication",
         "fr": "Communication",
         "th": "Communication",
-        "ar": "Communication",
+        "ar": "الاتصال",
         "ja": "Communication",
         "ko": "Communication",
         "id": "Communication"
@@ -983,201 +983,201 @@
     }
   },
   "productsAllInOne": {
-    "back": "Back to residential ESS",
-    "title": "Wall-mounted / Floor-standing LFP Battery Comparison",
-    "sub": "Side-by-side specification comparison across 6 popular models in the LFP battery lineup.",
-    "section": "Parameter comparison (6 models)",
-    "corner": "Parameter"
+    "back": "العودة إلى ESS السكني",
+    "title": "مقارنة بطاريات LFP المثبتة على الحائط/القائمة على الأرض",
+    "sub": "مقارنة المواصفات جنبًا إلى جنب عبر 6 موديلات شائعة في مجموعة بطاريات LFP.",
+    "section": "مقارنة المعاملات (6 موديلات)",
+    "corner": "المعامل"
   },
   "productsEssAllInOne": {
-    "back": "Back to residential ESS",
-    "pageTitle": "ESS All-in-one Series",
-    "pageSub": "Integrated inverter + battery systems for hassle-free residential energy storage deployment."
+    "back": "العودة إلى ESS السكني",
+    "pageTitle": "سلسلة ESS المتكامل",
+    "pageSub": "أنظمة عاكس + بطارية مدمجة لنشر تخزين الطاقة السكني بدون متاعب."
   },
   "productsStackableBattery": {
-    "back": "Back to residential ESS",
-    "title": "Stackable / Floor-standing Battery (314Ah / 200Ah) Comparison",
-    "sub": "Side-by-side specification comparison across 7 popular models.",
-    "section": "Parameter comparison (7 models)",
-    "corner": "Parameter"
+    "back": "العودة إلى ESS السكني",
+    "title": "مقارنة البطاريات القابلة للتكديس/القائمة على الأرض (314Ah / 200Ah)",
+    "sub": "مقارنة المواصفات جنبًا إلى جنب عبر 7 موديلات شائعة.",
+    "section": "مقارنة المعاملات (7 موديلات)",
+    "corner": "المعامل"
   },
   "blogDetail": {
-    "notFound": "Article Not Found",
-    "backToBlog": "Back to Blog",
-    "readTime": "min read",
-    "tableOfContents": "Table of Contents",
-    "ctaTitle": "Questions about this article?",
-    "ctaSub": "Contact our engineering team for a personalised consultation on your energy storage project.",
-    "relatedArticles": "Related Articles",
-    "readMore": "Read Article"
+    "notFound": "المقال غير موجود",
+    "backToBlog": "العودة إلى المدونة",
+    "readTime": "دقيقة قراءة",
+    "tableOfContents": "جدول المحتويات",
+    "ctaTitle": "هل لديك أسئلة حول هذا المقال؟",
+    "ctaSub": "اتصل بفريقنا الهندسي للحصول على استشارة مخصصة حول مشروع تخزين الطاقة الخاص بك.",
+    "relatedArticles": "مقالات ذات صلة",
+    "readMore": "اقرأ المقال"
   },
   "caseDetail": {
-    "back": "Back to case center",
-    "location": "Location",
-    "date": "Implementation date",
-    "type": "Frequency regulation type",
-    "challengeTitle": "The Problem to Solve",
-    "solutionTitle": "Our Approach",
-    "specsTitle": "Technical Specifications",
-    "outcomesTitle": "Measurable Results",
-    "gallery": "Site photos",
-    "freqDiagram": "Frequency response diagram",
-    "cta": "Get a similar solution",
-    "ctaSub": "Tell us about your project requirements and our engineers will design a tailored solution.",
-    "ctaBtn": "WhatsApp Consultation",
-    "moreBtn": "View more cases",
-    "techPageBtn": "Explore technology platform"
+    "back": "العودة إلى مركز الحالات",
+    "location": "الموقع",
+    "date": "تاريخ التنفيذ",
+    "type": "نوع تنظيم التردد",
+    "challengeTitle": "المشكلة المطلوب حلها",
+    "solutionTitle": "نهجنا",
+    "specsTitle": "المواصفات التقنية",
+    "outcomesTitle": "النتائج القابلة للقياس",
+    "gallery": "صور الموقع",
+    "freqDiagram": "مخطط استجابة التردد",
+    "cta": "احصل على حل مماثل",
+    "ctaSub": "أخبرنا عن متطلبات مشروعك وسيقوم مهندسونا بتصميم حل مخصص.",
+    "ctaBtn": "استشارة عبر واتساب",
+    "moreBtn": "عرض المزيد من الحالات",
+    "techPageBtn": "استكشف منصة التكنولوجيا"
   },
   "solutionsGridLevelBess": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "Grid-side · Bulk storage",
-    "title": "Grid-level Battery Energy Storage System (BESS)",
-    "subtitle": "Grid-scale energy storage and bulk power substation solutions — flexibility, ancillary services, and renewable integration for utilities and large C&I.",
-    "paragraphText": "BESS solution scope: grid-scale energy storage systems and bulk power substation integration — aligned with utility-grade deployment practices.",
-    "advantagesTitle": "Top 4 advantages",
+    "breadcrumbHome": "الرئيسية",
+    "breadcrumbSolutions": "الحلول",
+    "badge": "جانب الشبكة · تخزين كبير",
+    "title": "نظام تخزين طاقة البطاريات على مستوى الشبكة (BESS)",
+    "subtitle": "حلول تخزين الطاقة على نطاق الشبكة ومحطات الطاقة الفرعية الكبيرة — مرونة وخدمات مساعدة ودمج الطاقة المتجددة للمرافق والمؤسسات التجارية والصناعية الكبيرة.",
+    "paragraphText": "نطاق حل BESS: أنظمة تخزين الطاقة على نطاق الشبكة وتكامل محطات الطاقة الفرعية الكبيرة — متوافقة مع ممارسات النشر على مستوى المرافق.",
+    "advantagesTitle": "أفضل 4 مزايا",
     "advantages": [
       {
         "n": "01",
-        "title": "One-stop solution",
-        "body": "Full application coverage across generation, grid, and demand-side use cases — from concept to integrated delivery."
+        "title": "حل شامل",
+        "body": "تغطية كاملة للتطبيقات عبر التوليد والشبكة وجانب الطلب — من المفهوم إلى التسليم المتكامل."
       },
       {
         "n": "02",
-        "title": "Industrial pioneer",
-        "body": "Energy-storage-oriented 1P 314Ah prismatic cell platforms engineered for long calendar life and tight consistency."
+        "title": "رائد صناعي",
+        "body": "منصات خلايا منشورية 1P 314Ah موجهة لتخزين الطاقة مصممة لعمر تقويمي طويل وتناسق محكم."
       },
       {
         "n": "03",
-        "title": "Millisecond response",
-        "body": "Millisecond-class power response with system designs supporting up to ~2P power capability (project-dependent)."
+        "title": "استجابة بالميلي ثانية",
+        "body": "استجابة طاقة بفئة الميلي ثانية مع تصاميم نظام تدعم قدرة طاقة تصل إلى ~2P (حسب المشروع)."
       },
       {
         "n": "04",
-        "title": "Multiple security measures",
-        "body": "Triple fire-suppression concepts paired with modular architecture for safer O&M at container, cluster, and pack levels."
+        "title": "إجراءات أمنية متعددة",
+        "body": "مفاهيم إخماد حريق ثلاثية مقترنة بهندسة معيارية لتشغيل وصيانة أكثر أمانًا على مستويات الحاوية والعنقود والحزمة."
       }
     ],
-    "appsIntroTitle": "Segmented applications",
-    "appsIntro": "High-power applications for grid-level BESS are transforming how utilities and large consumers operate. These systems store bulk energy from renewables such as solar and wind, shifting surplus generation to peak demand periods. With rapid charge and discharge capability, BESS supports grid stability through ancillary services including frequency regulation and voltage support, and enables demand-response participation — cutting costs by dispatching stored energy when the grid is most stressed.",
+    "appsIntroTitle": "تطبيقات مجزأة",
+    "appsIntro": "تطبيقات الطاقة العالية لـ BESS على مستوى الشبكة تغير كيفية عمل المرافق والمستهلكين الكبار. تخزن هذه الأنظمة كميات كبيرة من الطاقة من المصادر المتجددة مثل الشمس والرياح، وتحول الفائض إلى فترات ذروة الطلب. مع قدرة الشحن والتفريغ السريعة، يدعم BESS استقرار الشبكة من خلال الخدمات المساعدة بما في ذلك تنظيم التردد ودعم الجهد، ويمكن من المشاركة في الاستجابة للطلب — مما يخفض التكاليف من خلال توزيع الطاقة المخزنة عندما تكون الشبكة تحت أقصى ضغط.",
     "apps": [
       {
-        "title": "Thermal power frequency regulation",
-        "body": "High-power storage delivers millisecond-class frequency response for thermal plants, improving regulation quality and capturing ancillary-service value."
+        "title": "تنظيم تردد الطاقة الحرارية",
+        "body": "يوفر التخزين عالي الطاقة استجابة تردد بفئة الميلي ثانية للمحطات الحرارية، مما يحسن جودة التنظيم ويحقق قيمة الخدمات المساعدة."
       },
       {
-        "title": "PV + storage + charging",
-        "body": "High-power systems support charging loads and campus demand, reducing cost and emissions through peak shaving and valley filling."
+        "title": "PV + تخزين + شحن",
+        "body": "تدعم الأنظمة عالية الطاقة أحمال الشحن وطلب الحرم الجامعي، مما يقلل التكلفة والانبعاثات من خلال قص الذروة وملء الوديان."
       },
       {
-        "title": "Energy storage for fast chargers",
-        "body": "Capacity support for ultra-fast charging — meeting peak power requirements while improving station utilization and grid friendliness."
+        "title": "تخزين الطاقة للشواحن السريعة",
+        "body": "دعم السعة للشحن فائق السرعة — تلبية متطلبات الطاقة القصوى مع تحسين استخدام المحطة وملاءمة الشبكة."
       },
       {
-        "title": "Emergency power for mines",
-        "body": "Critical backup for underground operations — faster and more efficient than diesel-only approaches, improving payback and power quality."
+        "title": "طاقة طوارئ للمناجم",
+        "body": "نسخ احتياطي حاسم للعمليات تحت الأرض — أسرع وأكثر كفاءة من النهج المعتمد على الديزل فقط، مما يحسن الاسترداد وجودة الطاقة."
       }
     ],
-    "techTitle": "Technical highlights",
-    "techNote": "Final figures are subject to project FAT/SAT, grid codes, and contract technical schedules.",
+    "techTitle": "النقاط التقنية البارزة",
+    "techNote": "الأرقام النهائية تخضع لـ FAT/SAT للمشروع وأكواد الشبكة والجداول الفنية التعاقدية.",
     "techHighlights": [
       {
-        "k": "Response",
-        "v": "Millisecond-level control loop (application-dependent)"
+        "k": "الاستجابة",
+        "v": "حلقة تحكم بمستوى الميلي ثانية (حسب التطبيق)"
       },
       {
-        "k": "Power capability",
-        "v": "Up to ~2P system power design envelope"
+        "k": "قدرة الطاقة",
+        "v": "مظروف تصميم طاقة نظام يصل إلى ~2P"
       },
       {
-        "k": "Cell platform",
-        "v": "1P 314Ah-class prismatic LFP for energy storage"
+        "k": "منصة الخلايا",
+        "v": "LFP منشوري فئة 1P 314Ah لتخزين الطاقة"
       },
       {
-        "k": "Safety architecture",
-        "v": "Triple fire suppression + modular system design"
+        "k": "هندسة السلامة",
+        "v": "إخماد حريق ثلاثي + تصميم نظام معياري"
       },
       {
-        "k": "Coverage",
-        "v": "Source, grid, and load-side application scenarios"
+        "k": "التغطية",
+        "v": "سيناريوهات تطبيق جانب المصدر والشبكة والحمل"
       }
     ],
-    "relatedTitle": "Related energy storage products",
-    "relatedBody": "Explore containerized ESS and system-level documentation on our product page.",
-    "relatedCta": "Energy Storage System",
-    "contactCta": "Contact engineering"
+    "relatedTitle": "منتجات تخزين الطاقة ذات الصلة",
+    "relatedBody": "استكشف ESS الحاوي ووثائق مستوى النظام في صفحة منتجاتنا.",
+    "relatedCta": "نظام تخزين الطاقة",
+    "contactCta": "اتصل بقسم الهندسة"
   },
   "solutionsDataCenter": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "AIDC · Backup & power quality",
-    "title": "Data Center Energy Storage Solutions",
-    "lead": "High-power lithium backup for AIDC workloads — engineered for supply reliability and power quality, with millisecond response to GPU-scale load swings.",
-    "painTitle": "Industry pain points",
+    "breadcrumbHome": "الرئيسية",
+    "breadcrumbSolutions": "الحلول",
+    "badge": "AIDC · نسخ احتياطي وجودة طاقة",
+    "title": "حلول تخزين الطاقة لمراكز البيانات",
+    "lead": "نسخ احتياطي ليثيوم عالي الطاقة لأحمال عمل AIDC — مصمم لموثوقية الإمداد وجودة الطاقة، مع استجابة بالميلي ثانية لتقلبات الحمل على مستوى GPU.",
+    "painTitle": "نقاط الألم في الصناعة",
     "painItems": [
-      "Rapidly rising data center power demand challenges grid capacity and expansion timelines.",
-      "GPU load swings create high peaks and increase IT downtime risk from power-quality events.",
-      "PUE and efficiency requirements are becoming stricter across facilities.",
-      "Battery safety expectations are extreme — no fire or explosion tolerance in mission-critical sites."
+      "الارتفاع السريع في طلب طاقة مراكز البيانات يتحدى سعة الشبكة وجداول التوسع الزمنية.",
+      "تقلبات حمل GPU تخلق ذروات عالية وتزيد من مخاطر توقف تقنية المعلومات بسبب أحداث جودة الطاقة.",
+      "متطلبات PUE والكفاءة تصبح أكثر صرامة عبر المنشآت.",
+      "توقعات سلامة البطارية قصوى — لا تسامح مع الحريق أو الانفجار في المواقع الحرجة للعمليات."
     ],
-    "scenariosTitle": "Application scenarios",
-    "scenarioGridTitle": "Grid-proximate BESS",
-    "scenarioGridBody": "Battery energy storage near the grid stabilizes large-scale GPU cluster swings and provides UPS-class backup power.",
-    "scenarioLocalTitle": "GPU-proximate energy storage",
-    "scenarioLocalBody": "Local storage near GPUs smooths millisecond-level transients with configurable backup duration and load-adjacent support.",
-    "provideTitle": "What we provide",
-    "provideBody": "Full-chain lithium UPS products from cells and modules to systems — modular parallel designs for dependable delivery.",
-    "advantagesTitle": "Key features & advantages",
+    "scenariosTitle": "سيناريوهات التطبيق",
+    "scenarioGridTitle": "BESS بالقرب من الشبكة",
+    "scenarioGridBody": "تخزين طاقة البطاريات بالقرب من الشبكة يثبت تقلبات مجموعات GPU واسعة النطاق ويوفر طاقة احتياطية بمستوى UPS.",
+    "scenarioLocalTitle": "تخزين الطاقة بالقرب من GPU",
+    "scenarioLocalBody": "التخزين المحلي بالقرب من وحدات GPU ينعم العبورات بمستوى الميلي ثانية مع مدة احتياطية قابلة للتكوين ودعم مجاور للحمل.",
+    "provideTitle": "ما نقدمه",
+    "provideBody": "منتجات UPS ليثيوم كاملة السلسلة من الخلايا والوحدات إلى الأنظمة — تصاميم موازية معيارية للتسليم الموثوق.",
+    "advantagesTitle": "الميزات والمزايا الرئيسية",
     "advantages": [
       {
-        "title": "High safety",
-        "body": "Controlled temperature rise; cells demonstrate no fire or explosion under rigorous tests such as nail penetration (per applicable certifications and reports)."
+        "title": "سلامة عالية",
+        "body": "ارتفاع درجة الحرارة متحكم به؛ تظهر الخلايا عدم وجود حريق أو انفجار تحت اختبارات صارمة مثل اختراق المسمار (وفقًا للشهادات والتقارير المعمول بها)."
       },
       {
-        "title": "Long lifespan",
-        "body": "10-year calendar life design orientation for long-run data center operations."
+        "title": "عمر طويل",
+        "body": "توجه تصميم لعمر تقويمي 10 سنوات لعمليات مراكز البيانات طويلة المدى."
       },
       {
-        "title": "Fast response",
-        "body": "Millisecond response to load swings with support for up to ~300% peak load scenarios."
+        "title": "استجابة سريعة",
+        "body": "استجابة بالميلي ثانية لتقلبات الحمل مع دعم يصل إلى ~300% من سيناريوهات الحمل الأقصى."
       },
       {
-        "title": "Cost friendly",
-        "body": "~20% lower unit power cost vs conventional approaches; 50%+ fewer UPS systems deployed in comparable architectures (project-dependent)."
+        "title": "تكلفة مناسبة",
+        "body": "تكلفة طاقة أقل بحوالي 20% مقارنة بالنهج التقليدية؛ أنظمة UPS أقل بنسبة 50%+ منشورة في هياكل قابلة للمقارنة (حسب المشروع)."
       },
       {
-        "title": "Authoritative certification",
-        "body": "Independent IP and quality systems aligned with leading enterprise supply-chain requirements."
+        "title": "شهادة موثوقة",
+        "body": "ملكية فكرية مستقلة وأنظمة جودة متوافقة مع متطلبات سلسلة التوريد للمؤسسات الرائدة."
       },
       {
-        "title": "Greener & more efficient",
-        "body": "Higher DC voltage architectures help evolve AIDC power design and reduce PUE."
+        "title": "أكثر مراعاة للبيئة وكفاءة",
+        "body": "هياكل جهد DC الأعلى تساعد في تطوير تصميم طاقة AIDC وتقليل PUE."
       }
     ],
-    "moduleTableTitle": "Technical specifications · UPS module",
+    "moduleTableTitle": "المواصفات التقنية · وحدة UPS",
     "moduleCols": [
-      "Module",
-      "Type",
-      "Cell voltage",
-      "Module voltage",
-      "Discharge C-rate",
-      "Backup time"
+      "الوحدة",
+      "النوع",
+      "جهد الخلية",
+      "جهد الوحدة",
+      "معدل التفريغ C",
+      "وقت النسخ الاحتياطي"
     ],
-    "systemTableTitle": "Technical specifications · UPS system",
+    "systemTableTitle": "المواصفات التقنية · نظام UPS",
     "systemRows": {
-      "backup": "Backup time",
-      "cellV": "Cell voltage",
-      "moduleV": "Module voltage",
-      "cRate": "Discharge C-rate",
-      "power": "System power"
+      "backup": "وقت النسخ الاحتياطي",
+      "cellV": "جهد الخلية",
+      "moduleV": "جهد الوحدة",
+      "cRate": "معدل التفريغ C",
+      "power": "طاقة النظام"
     },
-    "footnoteTitle": "Design & fire suppression",
-    "footnote": "Design: modular parallel topology — safe, reliable, flexible, intelligent, and streamlined O&M. Fire suppression: aerosol and perfluoro options (per project engineering).",
-    "relatedTitle": "Related energy storage product",
-    "relatedBody": "Explore containerized ESS and datasheet-ready details.",
-    "relatedCta": "View Energy Storage System",
-    "contactCta": "Contact engineering",
-    "scenariosParagraph": "For future distributed data center power architectures, storage adds both stabilization and backup at grid- and load-side touchpoints.",
-    "tableNote": "Scroll horizontally on small screens to view all columns."
+    "footnoteTitle": "التصميم وإخماد الحريق",
+    "footnote": "التصميم: طوبولوجيا موازية معيارية — تشغيل وصيانة آمنة وموثوقة ومرنة وذكية ومبسطة. إخماد الحريق: خيارات الأيروسول والبيرفلورو (حسب هندسة المشروع).",
+    "relatedTitle": "منتج تخزين طاقة ذو صلة",
+    "relatedBody": "استكشف ESS الحاوي والتفاصيل الجاهزة لورقة البيانات.",
+    "relatedCta": "عرض نظام تخزين الطاقة",
+    "contactCta": "اتصل بقسم الهندسة",
+    "scenariosParagraph": "للهياكل المستقبلية للطاقة الموزعة لمراكز البيانات، يضيف التخزين كلاً من الاستقرار والنسخ الاحتياطي عند نقاط اتصال الشبكة وجانب الحمل.",
+    "tableNote": "مرر أفقيًا على الشاشات الصغيرة لعرض جميع الأعمدة."
   }
 }

@@ -32,6 +32,11 @@ const SERIES: SeriesBlock[] = [
       pt: { badge: "Portátil · 500W", title: "Armazenamento portátil de energia", note: "" },
       de: { badge: "Tragbar · 500W", title: "Tragbarer Energiespeicher", note: "" },
       fr: { badge: "Portable · 500W", title: "Stockage d'énergie portable", note: "" },
+      ar: { badge: "محمول · 500W", title: "تخزين طاقة محمول", note: "" },
+      ja: { badge: "ポータブル · 500W", title: "ポータブル蓄電", note: "" },
+      ko: { badge: "휴대용 · 500W", title: "휴대용 에너지 저장", note: "" },
+      id: { badge: "Portabel · 500W", title: "Penyimpanan energi portabel", note: "" },
+      th: { badge: "พกพา · 500W", title: "ระบบกักเก็บพลังงานแบบพกพา", note: "" },
     },
     specs: [
       { labelKey: "model", value: "MD-BXS500" },
@@ -55,6 +60,11 @@ const SERIES: SeriesBlock[] = [
       pt: { badge: "Portátil · 1000W", title: "Armazenamento portátil de energia", note: "" },
       de: { badge: "Tragbar · 1.000W", title: "Tragbarer Energiespeicher", note: "" },
       fr: { badge: "Portable · 1.000W", title: "Stockage d'énergie portable", note: "" },
+      ar: { badge: "محمول · 1000W", title: "تخزين طاقة محمول", note: "" },
+      ja: { badge: "ポータブル · 1000W", title: "ポータブル蓄電", note: "" },
+      ko: { badge: "휴대용 · 1000W", title: "휴대용 에너지 저장", note: "" },
+      id: { badge: "Portabel · 1000W", title: "Penyimpanan energi portabel", note: "" },
+      th: { badge: "พกพา · 1000W", title: "ระบบกักเก็บพลังงานแบบพกพา", note: "" },
     },
     specs: [
       { labelKey: "model", value: "MD-BXS1000" },
@@ -101,10 +111,27 @@ const SERIES: SeriesBlock[] = [
         title: "Modulares ESS All-in-One",
         note: "Modulare Stapelung: Skalieren Sie die Stufen je nach Last und Backup-Dauer; folgen Sie den örtlichen Vorschriften und Installationsanleitungen für Verkabelung und Netzanschluss.",
       },
+      ar: {
+        badge: "متكامل معياري",
+        title: "نظام ESS متكامل معياري",
+        note: "تكديس معياري: اضبط المستويات حسب الحمل ومدة النسخ الاحتياطي؛ اتبع الأكواد المحلية وأدلة التركيب للتمديدات واتصال الشبكة.",
+      },
       fr: {
         badge: "Tout-en-un modulaire",
         title: "Système ESS modulaire tout-en-un",
         note: "Empilage modulaire : dimensionnez les niveaux selon la charge et la durée de secours ; suivez les normes locales et les guides d'installation pour le câblage et le raccordement au réseau.",
+      },
+      ja: {
+        badge: "モジュラーオールインワン",
+        title: "モジュラーESSオールインワン",
+        note: "モジュラースタッキング：負荷とバックアップ時間に応じて段数を調整；配線と系統接続は地域の規格と設置ガイドに従ってください。",
+      },
+      ko: { badge: "모듈형 올인원", title: "모듈형 ESS 올인원", note: "모듈형 스태킹: 부하 및 백업 시간에 따라 단계 조정; 배선 및 계통 연결은 현지 규정 및 설치 가이드를 따르십시오." },
+      id: { badge: "Modular all-in-one", title: "ESS modular all-in-one", note: "Penumpukan modular: sesuaikan tingkat berdasarkan beban dan durasi cadangan; ikuti kode lokal dan panduan instalasi untuk pengkabelan dan koneksi jaringan." },
+      th: {
+        badge: "ออลอินวันโมดูลาร์",
+        title: "ระบบ ESS ออลอินวันโมดูลาร์",
+        note: "การซ้อนโมดูลาร์: ปรับขนาดระดับตามโหลดและระยะเวลาสำรอง; ปฏิบัติตามรหัสท้องถิ่นและคู่มือการติดตั้งสำหรับการเดินสายไฟและการเชื่อมต่อกริด",
       },
     },
     specs: [
@@ -122,21 +149,21 @@ const SERIES: SeriesBlock[] = [
 ];
 
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  model:            { en: "Model", zh: "型号", es: "Modelo", tr: "Model", pt: "Modelo", de: "Modell", fr: "Modèle" },
-  ratedPower:       { en: "Rated power", zh: "额定功率", es: "Potencia nominal", tr: "Nominal Güç", pt: "Potência nominal", de: "Nennleistung", fr: "Puissance nominale" },
-  ratedEnergy:      { en: "Rated energy", zh: "额定能量", es: "Energía nominal", tr: "Nominal Enerji", pt: "Energia nominal", de: "Nennenergie", fr: "Énergie nominale" },
-  voltage:          { en: "Voltage", zh: "电压", es: "Voltaje", tr: "Voltaj", pt: "Tensão", de: "Spannung", fr: "Tension" },
-  nominalVoltage:   { en: "Nominal voltage", zh: "标称电压", es: "Voltaje nominal", tr: "Nominal Voltaj", pt: "Tensão nominal", de: "Nennspannung", fr: "Tension nominale" },
-  capacity:         { en: "Capacity", zh: "容量", es: "Capacidad", tr: "Kapasite", pt: "Capacidade", de: "Kapazität", fr: "Capacité" },
-  acOutput:         { en: "AC output", zh: "AC 输出", es: "Salida AC", tr: "AC Çıkış", pt: "Saída AC", de: "AC-Ausgang", fr: "Sortie AC" },
-  acInput:          { en: "AC input", zh: "AC 输入", es: "Entrada AC", tr: "AC Giriş", pt: "Entrada AC", de: "AC-Eingang", fr: "Entrée AC" },
-  dimensions:       { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar (G×Y×D)", pt: "Dimensões", de: "Abmessungen (mm)", fr: "Dimensions (mm)" },
-  energyPerModule:  { en: "Energy per module", zh: "单模块能量", es: "Energía por módulo", tr: "Modül Başına Enerji", pt: "Energia por módulo", de: "Energie pro Modul", fr: "Énergie par module" },
-  scalability:      { en: "Scalability", zh: "扩展能力", es: "Escalabilidad", tr: "Ölçeklenebilirlik", pt: "Escalabilidade", de: "Skalierbarkeit", fr: "Évolutivité" },
-  cycleLife:        { en: "Cycle life", zh: "循环寿命", es: "Vida útil (ciclos)", tr: "Çevrim Ömrü", pt: "Vida útil (ciclos)", de: "Lebensdauer (Zyklen)", fr: "Durée de vie (cycles)" },
-  communication:    { en: "Communication", zh: "通讯", es: "Comunicación", tr: "İletişim", pt: "Comunicação", de: "Kommunikation", fr: "Communication" },
-  dimSingle:        { en: "Dimensions — single tier (mm)", zh: "尺寸 — 单层 (mm)", es: "Dimensiones — un nivel (mm)", tr: "Boyutlar — Tek Katman (mm)", pt: "Dimensões — um nível (mm)", de: "Abmessungen — einstufig (mm)", fr: "Dimensions — un niveau (mm)" },
-  dimThree:         { en: "Dimensions — three tiers (mm)", zh: "尺寸 — 三层 (mm)", es: "Dimensiones — tres niveles (mm)", tr: "Boyutlar — Üç Katman (mm)", pt: "Dimensões — três níveis (mm)", de: "Abmessungen — dreistufig (mm)", fr: "Dimensions — trois niveaux (mm)" },
+  model:            { en: "Model", zh: "型号", es: "Modelo", tr: "Model", pt: "Modelo", de: "Modell", ar: "الطراز", fr: "Modèle", ja: "モデル", ko: "모델", id: "Model", th: "รุ่น" },
+  ratedPower:       { en: "Rated power", zh: "额定功率", es: "Potencia nominal", tr: "Nominal Güç", pt: "Potência nominal", de: "Nennleistung", ar: "القدرة الاسمية", fr: "Puissance nominale", ja: "定格電力", ko: "정격 전력", id: "Daya Terukur", th: "กำลังไฟฟ้าที่กำหนด" },
+  ratedEnergy:      { en: "Rated energy", zh: "额定能量", es: "Energía nominal", tr: "Nominal Enerji", pt: "Energia nominal", de: "Nennenergie", ar: "الطاقة الاسمية", fr: "Énergie nominale", ja: "定格エネルギー", ko: "정격 에너지", id: "Energi Terukur", th: "พลังงานที่กำหนด" },
+  voltage:          { en: "Voltage", zh: "电压", es: "Voltaje", tr: "Voltaj", pt: "Tensão", de: "Spannung", ar: "الجهد", fr: "Tension", ja: "電圧", ko: "전압", id: "Tegangan", th: "แรงดันไฟฟ้า" },
+  nominalVoltage:   { en: "Nominal voltage", zh: "标称电压", es: "Voltaje nominal", tr: "Nominal Voltaj", pt: "Tensão nominal", de: "Nennspannung", ar: "الجهد الاسمي", fr: "Tension nominale", ja: "公称電圧", ko: "공칭 전압", id: "Tegangan Nominal", th: "แรงดันไฟฟ้าที่กำหนด" },
+  capacity:         { en: "Capacity", zh: "容量", es: "Capacidad", tr: "Kapasite", pt: "Capacidade", de: "Kapazität", ar: "السعة", fr: "Capacité", ja: "容量", ko: "용량", id: "Kapasitas", th: "ความจุ" },
+  acOutput:         { en: "AC output", zh: "AC 输出", es: "Salida AC", tr: "AC Çıkış", pt: "Saída AC", de: "AC-Ausgang", ar: "خرج AC", fr: "Sortie AC", ja: "AC出力", ko: "AC 출력", id: "Output AC", th: "เอาต์พุต AC" },
+  acInput:          { en: "AC input", zh: "AC 输入", es: "Entrada AC", tr: "AC Giriş", pt: "Entrada AC", de: "AC-Eingang", ar: "دخل AC", fr: "Entrée AC", ja: "AC入力", ko: "AC 입력", id: "Input AC", th: "อินพุต AC" },
+  dimensions:       { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar (G×Y×D)", pt: "Dimensões", de: "Abmessungen (mm)", ar: "الأبعاد (مم)", fr: "Dimensions (mm)", ja: "寸法 (mm)", ko: "치수 (mm)", id: "Dimensi (mm)", th: "ขนาด (มม.)" },
+  energyPerModule:  { en: "Energy per module", zh: "单模块能量", es: "Energía por módulo", tr: "Modül Başına Enerji", pt: "Energia por módulo", de: "Energie pro Modul", ar: "الطاقة لكل وحدة", fr: "Énergie par module", ja: "モジュールあたりエネルギー", ko: "모듈당 에너지", id: "Energi per Modul", th: "พลังงานต่อโมดูล" },
+  scalability:      { en: "Scalability", zh: "扩展能力", es: "Escalabilidad", tr: "Ölçeklenebilirlik", pt: "Escalabilidade", de: "Skalierbarkeit", ar: "قابلية التوسع", fr: "Évolutivité", ja: "拡張性", ko: "확장성", id: "Skalabilitas", th: "ความสามารถในการขยาย" },
+  cycleLife:        { en: "Cycle life", zh: "循环寿命", es: "Vida útil (ciclos)", tr: "Çevrim Ömrü", pt: "Vida útil (ciclos)", de: "Lebensdauer (Zyklen)", ar: "العمر (دورات)", fr: "Durée de vie (cycles)", ja: "サイクル寿命", ko: "사이클 수명", id: "Siklus Hidup", th: "อายุการใช้งาน (รอบ)" },
+  communication:    { en: "Communication", zh: "通讯", es: "Comunicación", tr: "İletişim", pt: "Comunicação", de: "Kommunikation", ar: "الاتصال", fr: "Communication", ja: "通信", ko: "통신", id: "Komunikasi", th: "การสื่อสาร" },
+  dimSingle:        { en: "Dimensions — single tier (mm)", zh: "尺寸 — 单层 (mm)", es: "Dimensiones — un nivel (mm)", tr: "Boyutlar — Tek Katman (mm)", pt: "Dimensões — um nível (mm)", de: "Abmessungen — einstufig (mm)", ar: "الأبعاد - مستوى واحد (مم)", fr: "Dimensions — un niveau (mm)", ja: "寸法 — 単層 (mm)", ko: "치수 — 단층 (mm)", id: "Dimensi — satu tingkat (mm)", th: "ขนาด — ชั้นเดียว (มม.)" },
+  dimThree:         { en: "Dimensions — three tiers (mm)", zh: "尺寸 — 三层 (mm)", es: "Dimensiones — tres niveles (mm)", tr: "Boyutlar — Üç Katman (mm)", pt: "Dimensões — três níveis (mm)", de: "Abmessungen — dreistufig (mm)", ar: "الأبعاد - ثلاثة مستويات (مم)", fr: "Dimensions — trois niveaux (mm)", ja: "寸法 — 三層 (mm)", ko: "치수 — 삼층 (mm)", id: "Dimensi — tiga tingkat (mm)", th: "ขนาด — สามชั้น (มม.)" },
 };
 
 function getLabel(key: string, locale: string): string {

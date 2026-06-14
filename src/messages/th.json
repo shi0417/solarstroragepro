@@ -449,23 +449,23 @@
   },
   "blog": {
     "latestArticles": "บทความล่าสุด",
-    "readMore": "Read Article",
+    "readMore": "อ่านบทความ",
     "publishedOn": "เผยแพร่เมื่อ",
     "minRead": "นาทีอ่าน",
     "backToBlog": "กลับไปยังบล็อก",
     "relatedPosts": "บทความที่เกี่ยวข้อง",
     "noResults": "ไม่พบบทความ",
-    "categories": "Categories",
+    "categories": "หมวดหมู่",
     "allCategories": "ทั้งหมด",
     "searchBlog": "ค้นหาบทความ...",
-    "badge": "Knowledge Base",
-    "pageTitle": "Energy Storage Blog",
-    "pageSub": "Deep dives into battery storage technology, market trends, and best practices. From ROI analysis to installation guides, make informed decisions for your energy storage projects.",
-    "readTime": "min read",
-    "backToHome": "Back to Home",
-    "ctaTitle": "Need Expert Advice?",
-    "ctaSub": "Our engineering team can design a custom energy storage solution for your project.",
-    "ctaBtn": "Request a Proposal"
+    "badge": "คลังความรู้",
+    "pageTitle": "บล็อกระบบกักเก็บพลังงาน",
+    "pageSub": "เจาะลึกเทคโนโลยีการกักเก็บพลังงานด้วยแบตเตอรี่ แนวโน้มตลาด และแนวทางปฏิบัติที่ดีที่สุด ตั้งแต่การวิเคราะห์ ROI ไปจนถึงคู่มือการติดตั้ง เพื่อช่วยให้คุณตัดสินใจอย่างมีข้อมูลสำหรับโครงการกักเก็บพลังงานของคุณ",
+    "readTime": "นาที",
+    "backToHome": "กลับหน้าแรก",
+    "ctaTitle": "ต้องการคำแนะนำจากผู้เชี่ยวชาญ?",
+    "ctaSub": "ทีมวิศวกรของเราสามารถออกแบบโซลูชันการกักเก็บพลังงานที่กำหนดเองสำหรับโครงการของคุณ",
+    "ctaBtn": "ขอข้อเสนอ"
   },
   "caseCenter": {
     "title": "ศูนย์กรณีศึกษา",
@@ -477,88 +477,88 @@
     "noCases": "ยังไม่มีกรณีศึกษา",
     "filterByRegion": "กรองตามภูมิภาค",
     "allRegions": "ภูมิภาคทั้งหมด",
-    "badge": "Global Projects",
-    "pageTitle": "Frequency Regulation & Energy Storage Cases",
-    "pageSub": "Real-world deployments in grid frequency regulation, peak shaving, and renewable integration across 50+ countries.",
-    "readMore": "View Details",
-    "ctaTitle": "Need a similar solution?",
-    "ctaSub": "Our engineering team will design a custom frequency regulation and energy storage system for your grid requirements.",
-    "ctaBtn": "Request a Proposal",
-    "techLink": "Explore our technology platform"
+    "badge": "โครงการทั่วโลก",
+    "pageTitle": "กรณีศึกษาการควบคุมความถี่และการกักเก็บพลังงาน",
+    "pageSub": "การติดตั้งจริงในการควบคุมความถี่กริด การตัดยอดการใช้ไฟฟ้าสูงสุด และการผสานรวมพลังงานหมุนเวียนในกว่า 50 ประเทศ",
+    "readMore": "ดูรายละเอียด",
+    "ctaTitle": "ต้องการโซลูชันที่คล้ายกัน?",
+    "ctaSub": "ทีมวิศวกรของเราจะออกแบบระบบควบคุมความถี่และการกักเก็บพลังงานที่กำหนดเองสำหรับความต้องการกริดของคุณ",
+    "ctaBtn": "ขอข้อเสนอ",
+    "techLink": "สำรวจแพลตฟอร์มเทคโนโลยีของเรา"
   },
   "technology": {
-    "diagramCaption": "System single-line diagram — click tabs above to switch topologies",
-    "viewCases": "View Frequency Regulation Cases",
-    "gridBessLink": "Grid-Level BESS Solutions"
+    "diagramCaption": "แผนภาพเส้นเดี่ยวของระบบ — คลิกแท็บด้านบนเพื่อสลับโทโพโลยี",
+    "viewCases": "ดูกรณีศึกษาการควบคุมความถี่",
+    "gridBessLink": "โซลูชัน BESS ระดับกริด"
   },
   "productsEnergyStorage": {
-    "breadcrumbHome": "Home",
-    "breadcrumbProducts": "Products",
-    "badge": "Core product",
-    "title": "Energy Storage System",
-    "description": "Includes Energy Storage System Pack / DC Liquid Cooling Container — system-level delivery for high-power, long-life, and safe deployments.",
-    "certTitle": "Certifications",
-    "certDesc": "Common transport & safety standards",
-    "featuresTitle": "Features",
-    "featuresSub": "System-engineering features for scalable delivery: power coverage, lifetime consistency, redundant safety, and O&M friendliness.",
+    "breadcrumbHome": "หน้าแรก",
+    "breadcrumbProducts": "ผลิตภัณฑ์",
+    "badge": "ผลิตภัณฑ์หลัก",
+    "title": "ระบบกักเก็บพลังงาน",
+    "description": "ประกอบด้วยชุดระบบกักเก็บพลังงาน / ตู้คอนเทนเนอร์ระบายความร้อนด้วยของเหลว DC — การส่งมอบระดับระบบสำหรับการใช้งานกำลังสูง อายุการใช้งานยาวนาน และปลอดภัย",
+    "certTitle": "การรับรอง",
+    "certDesc": "มาตรฐานการขนส่งและความปลอดภัยทั่วไป",
+    "featuresTitle": "คุณสมบัติ",
+    "featuresSub": "คุณสมบัติทางวิศวกรรมระบบสำหรับการส่งมอบที่ปรับขนาดได้: ครอบคลุมกำลังไฟฟ้า ความสม่ำเสมอของอายุการใช้งาน ความปลอดภัยซ้ำซ้อน และความเป็นมิตรต่อการบำรุงรักษา",
     "features": [
       {
-        "t": "High power",
-        "b": "0.25P–2P coverage across power-type and energy-type battery containers."
+        "t": "กำลังสูง",
+        "b": "ครอบคลุม 0.25P–2P สำหรับตู้คอนเทนเนอร์แบตเตอรี่ประเภทกำลังและประเภทพลังงาน"
       },
       {
-        "t": "Long lifetime",
-        "b": "Cell temperature delta: 2℃ within a pack, 5℃ across clusters — designed for 10-year calendar life."
+        "t": "อายุการใช้งานยาวนาน",
+        "b": "ส่วนต่างอุณหภูมิเซลล์: 2℃ ภายในแพ็ค, 5℃ ระหว่างคลัสเตอร์ — ออกแบบสำหรับอายุการใช้งาน 10 ปี"
       },
       {
-        "t": "Real safety",
-        "b": "Three-layer fire protection at pack/cluster/container levels; battery modules rated IP67."
+        "t": "ความปลอดภัยที่แท้จริง",
+        "b": "การป้องกันอัคคีภัยสามชั้นที่ระดับแพ็ค/คลัสเตอร์/ตู้คอนเทนเนอร์ โมดูลแบตเตอรี่ได้รับการจัดอันดับ IP67"
       },
       {
-        "t": "Easy integration",
-        "b": "Modular design enables per-cluster unit architecture with no inter-cluster circulating current; supports independent maintenance and upgrades."
+        "t": "การผสานรวมที่ง่าย",
+        "b": "การออกแบบโมดูลาร์ช่วยให้มีสถาปัตยกรรมหน่วยต่อคลัสเตอร์โดยไม่มีกระแสหมุนเวียนระหว่างคลัสเตอร์ รองรับการบำรุงรักษาและอัปเกรดอิสระ"
       },
       {
-        "t": "Flexible configuration",
-        "b": "Side-by-side or end-to-end layout options with flexible expansion."
+        "t": "การกำหนดค่าที่ยืดหยุ่น",
+        "b": "ตัวเลือกการจัดวางแบบเคียงข้างหรือปลายต่อปลายพร้อมการขยายที่ยืดหยุ่น"
       },
       {
-        "t": "Easy management",
-        "b": "Real-time data exchange with energy statistics, fault warnings, and thermal-runaway early warning."
+        "t": "การจัดการที่ง่าย",
+        "b": "การแลกเปลี่ยนข้อมูลแบบเรียลไทม์พร้อมสถิติพลังงาน การแจ้งเตือนข้อผิดพลาด และการแจ้งเตือนล่วงหน้าการหนีความร้อน"
       }
     ],
-    "specsTitle": "Specifications",
-    "specsSub": "Scroll horizontally on mobile to view all capacity variants.",
-    "specCornerLabel": "Parameter \\ Model",
-    "certFooter": "Certifications",
-    "ctaTitle": "Get a Custom Solution",
-    "ctaSub": "Tell us about your project — our engineers will design a custom solution within 48 hours."
+    "specsTitle": "ข้อมูลจำเพาะ",
+    "specsSub": "เลื่อนแนวนอนบนมือถือเพื่อดูตัวเลือกความจุทั้งหมด",
+    "specCornerLabel": "พารามิเตอร์ \\ รุ่น",
+    "certFooter": "การรับรอง",
+    "ctaTitle": "รับโซลูชันที่กำหนดเอง",
+    "ctaSub": "บอกเราเกี่ยวกับโครงการของคุณ — วิศวกรของเราจะออกแบบโซลูชันที่กำหนดเองภายใน 48 ชั่วโมง"
   },
   "productsResidentialEss": {
-    "back": "Back to home",
-    "badge": "Residential",
-    "pageTitle": "Residential ESS",
-    "pageSub": "Low-voltage stack & wall-mount packs, high-voltage systems, and all-in-one inverter + battery solutions.",
-    "categoriesTitle": "Product families",
-    "catLv": "Low-voltage (51.2V)",
-    "catLvDesc": "Stackable and wall-mounted batteries around 10kWh & 16kWh class.",
-    "catHv": "High-voltage (358.4V – 716.8V)",
-    "catHvDesc": "Systems for higher power and HV DC bus requirements.",
-    "catAio": "ESS all-in-one",
-    "catAioDesc": "Integrated inverter and battery for faster residential deployment.",
-    "gridTitle": "Products",
-    "viewHvsDetails": "View HVS high-voltage series details",
-    "viewAioDetails": "View ESS All-in-one series details",
-    "viewLfpDetails": "View LFP battery series details",
-    "details": "Details",
+    "back": "กลับหน้าแรก",
+    "badge": "ที่อยู่อาศัย",
+    "pageTitle": "ESS สำหรับที่อยู่อาศัย",
+    "pageSub": "แพ็คแรงดันต่ำแบบวางซ้อนและติดผนัง ระบบแรงดันสูง และโซลูชันอินเวอร์เตอร์+แบตเตอรี่แบบออลอินวัน",
+    "categoriesTitle": "กลุ่มผลิตภัณฑ์",
+    "catLv": "แรงดันต่ำ (51.2V)",
+    "catLvDesc": "แบตเตอรี่แบบวางซ้อนได้และติดผนังประมาณระดับ 10kWh และ 16kWh",
+    "catHv": "แรงดันสูง (358.4V – 716.8V)",
+    "catHvDesc": "ระบบสำหรับความต้องการกำลังไฟฟ้าที่สูงขึ้นและบัส DC แรงดันสูง",
+    "catAio": "ESS ออลอินวัน",
+    "catAioDesc": "อินเวอร์เตอร์และแบตเตอรี่ในตัวเพื่อการติดตั้งที่อยู่อาศัยที่รวดเร็วขึ้น",
+    "gridTitle": "ผลิตภัณฑ์",
+    "viewHvsDetails": "ดูรายละเอียดซีรีส์ HVS แรงดันสูง",
+    "viewAioDetails": "ดูรายละเอียดซีรีส์ ESS ออลอินวัน",
+    "viewLfpDetails": "ดูรายละเอียดซีรีส์แบตเตอรี่ LFP",
+    "details": "รายละเอียด",
     "products": [
       {
         "key": "wallMount",
-        "title": "Wall-mounted battery",
+        "title": "แบตเตอรี่ติดผนัง",
         "subtitle": "MDS-512200",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "แรงดันไฟฟ้า",
             "v": "25.6V-51.2V"
           },
           {
@@ -570,26 +570,26 @@
             "v": "5.12KWH-10.54KWH"
           },
           {
-            "l": "Cycle life",
+            "l": "อายุการใช้งาน",
             "v": "6000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "ขนาด (มม.)",
             "v": "723 × 655 × 255"
           },
           {
-            "l": "Communication",
+            "l": "การสื่อสาร",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "stackable",
-        "title": "Stackable battery",
+        "title": "แบตเตอรี่แบบวางซ้อน",
         "subtitle": "MDS-51314",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "แรงดันไฟฟ้า",
             "v": "51.2V"
           },
           {
@@ -601,49 +601,49 @@
             "v": "16.07kWh"
           },
           {
-            "l": "Cycle life",
+            "l": "อายุการใช้งาน",
             "v": "8000 cycles"
           },
           {
-            "l": "Dimensions (mm)",
+            "l": "ขนาด (มม.)",
             "v": "730 × 610 × 257"
           },
           {
-            "l": "Communication",
+            "l": "การสื่อสาร",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "hvSystem",
-        "title": "High voltage system",
+        "title": "ระบบแรงดันสูง",
         "subtitle": "HVS Series",
         "specs": [
           {
-            "l": "Voltage range",
+            "l": "ช่วงแรงดันไฟฟ้า",
             "v": "358.4V – 716.8V"
           },
           {
-            "l": "Energy range",
+            "l": "ช่วงพลังงาน",
             "v": "14.33kWh – 100.35kWh (scalable)"
           },
           {
-            "l": "Cycle life",
+            "l": "อายุการใช้งาน",
             "v": "8000 cycles"
           },
           {
-            "l": "Communication",
+            "l": "การสื่อสาร",
             "v": "RS485 / RS232 / CAN"
           }
         ]
       },
       {
         "key": "aio",
-        "title": "ESS all-in-one",
+        "title": "ESS ออลอินวัน",
         "subtitle": "All-in-one family",
         "specs": [
           {
-            "l": "Voltage",
+            "l": "แรงดันไฟฟ้า",
             "v": "51.2V"
           },
           {
@@ -655,11 +655,11 @@
             "v": "5.12kWh – 16.07kWh"
           },
           {
-            "l": "Representative models",
+            "l": "รุ่นตัวแทน",
             "v": "M1200 (1), MB-1111, etc."
           },
           {
-            "l": "Communication",
+            "l": "การสื่อสาร",
             "v": "RS485 / RS232 / CAN"
           }
         ]
@@ -667,70 +667,70 @@
     ]
   },
   "productsPcs": {
-    "back": "Back to home",
-    "badge": "PCS · Prefabricated",
-    "heroTitle": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation",
-    "heroSub": "Highly integrated prefabricated cabin combining inverter and step-up substation for utility-scale PV+storage and grid connection.",
-    "overviewTitle": "Product overview",
-    "overviewName": "Name",
-    "overviewNameVal": "SES4H-5160/6900-MV-EX Prefabricated Inverter Substation (PCS)",
-    "featuresTitle": "Key advantages",
-    "imageAlt": "SES4H-5160/6900-MV-EX prefabricated inverter substation product",
-    "specsTitle": "Technical specifications",
-    "specsHint": "Scroll horizontally on small screens.",
-    "colCat": "Category",
-    "colItem": "Parameter",
-    "colDetail": "Details",
-    "complianceTitle": "Compliance & certifications",
-    "complianceIntro": "Design and type testing comply with the following standards and grid codes (subject to delivery certificate).",
-    "ctaDatasheet": "Request datasheet",
-    "ctaContact": "Contact us",
+    "back": "กลับหน้าแรก",
+    "badge": "PCS · สำเร็จรูป",
+    "heroTitle": "SES4H-5160/6900-MV-EX สถานีไฟฟ้าย่อยอินเวอร์เตอร์สำเร็จรูป",
+    "heroSub": "ตู้สำเร็จรูปที่ผสานรวมสูงรวมอินเวอร์เตอร์และสถานีไฟฟ้าย่อยเพิ่มแรงดันสำหรับการเชื่อมต่อ PV+ที่เก็บพลังงานระดับสาธารณูปโภคและกริด",
+    "overviewTitle": "ภาพรวมผลิตภัณฑ์",
+    "overviewName": "ชื่อ",
+    "overviewNameVal": "SES4H-5160/6900-MV-EX สถานีไฟฟ้าย่อยอินเวอร์เตอร์สำเร็จรูป (PCS)",
+    "featuresTitle": "ข้อได้เปรียบหลัก",
+    "imageAlt": "ผลิตภัณฑ์สถานีไฟฟ้าย่อยอินเวอร์เตอร์สำเร็จรูป SES4H-5160/6900-MV-EX",
+    "specsTitle": "ข้อมูลจำเพาะทางเทคนิค",
+    "specsHint": "เลื่อนแนวนอนบนหน้าจอขนาดเล็ก",
+    "colCat": "หมวดหมู่",
+    "colItem": "พารามิเตอร์",
+    "colDetail": "รายละเอียด",
+    "complianceTitle": "การปฏิบัติตามข้อกำหนดและการรับรอง",
+    "complianceIntro": "การออกแบบและการทดสอบประเภทเป็นไปตามมาตรฐานและรหัสกริดต่อไปนี้ (ขึ้นอยู่กับใบรับรองการส่งมอบ)",
+    "ctaDatasheet": "ขอเอกสารข้อมูล",
+    "ctaContact": "ติดต่อเรา",
     "features": [
       {
-        "t": "Flexible config",
-        "b": "Integrated inverter and substation in a highly prefabricated design, improving space efficiency and simplifying installation."
+        "t": "การกำหนดค่าที่ยืดหยุ่น",
+        "b": "อินเวอร์เตอร์และสถานีไฟฟ้าย่อยในตัวในการออกแบบสำเร็จรูปสูง ปรับปรุงประสิทธิภาพพื้นที่และลดความซับซ้อนในการติดตั้ง"
       },
       {
-        "t": "Modular power",
-        "b": "Modular design allows configurable power rating to match project requirements."
+        "t": "กำลังไฟฟ้าแบบโมดูลาร์",
+        "b": "การออกแบบโมดูลาร์ช่วยให้สามารถกำหนดค่าพิกัดกำลังไฟฟ้าให้ตรงกับความต้องการของโครงการ"
       },
       {
-        "t": "High efficiency & stability",
-        "b": "1500V wide DC voltage range with multi-branch DC design to prevent battery circulating current."
+        "t": "ประสิทธิภาพและความเสถียรสูง",
+        "b": "ช่วงแรงดันไฟฟ้า DC กว้าง 1500V พร้อมการออกแบบ DC หลายสาขาเพื่อป้องกันกระแสหมุนเวียนของแบตเตอรี่"
       },
       {
-        "t": "Versatile use",
-        "b": "Supports VSG / PQ / VF modes with peak shaving and local autonomous operation."
+        "t": "การใช้งานที่หลากหลาย",
+        "b": "รองรับโหมด VSG / PQ / VF พร้อมการตัดยอดและการทำงานอัตโนมัติในพื้นที่"
       },
       {
-        "t": "Safe & compatible",
-        "b": "Supports HVRT/LVRT, four-quadrant active/reactive power regulation, fast power response (<20ms)."
+        "t": "ปลอดภัยและเข้ากันได้",
+        "b": "รองรับ HVRT/LVRT การควบคุมกำลังไฟฟ้าแอคทีฟ/รีแอคทีฟสี่ควอดรันต์ การตอบสนองกำลังไฟฟ้าที่รวดเร็ว (<20ms)"
       },
       {
-        "t": "Grid-friendly",
-        "b": "Rated AC power: N×215kW @45°C, N×129kW @50°C (N = 20~32 modules); THDi/THDu <3%."
+        "t": "เป็นมิตรกับกริด",
+        "b": "กำลังไฟฟ้า AC พิกัด: N×215kW @45°C, N×129kW @50°C (N = 20~32 โมดูล); THDi/THDu <3%"
       }
     ]
   },
   "productsSolarPanels": {
-    "back": "Back to home",
-    "badge": "Solar",
-    "pageTitle": "Solar Panels",
-    "pageSub": "High-efficiency ABC INFINITE modules with partial shading optimisation and industry-leading warranties.",
-    "gridTitle": "Product series",
-    "source": "Data source",
+    "back": "กลับหน้าแรก",
+    "badge": "โซลาร์",
+    "pageTitle": "แผงโซลาร์เซลล์",
+    "pageSub": "โมดูล ABC INFINITE ประสิทธิภาพสูงพร้อมการปรับให้เหมาะสมกับการบังแดดบางส่วนและการรับประกันระดับชั้นนำของอุตสาหกรรม",
+    "gridTitle": "ซีรีส์ผลิตภัณฑ์",
+    "source": "แหล่งข้อมูล",
     "sourceLink": "aikosolar.com"
   },
   "productsHvs": {
-    "back": "Back to residential ESS",
-    "title": "High-Voltage System HVS Series",
-    "sub": "Rack-mount and cabinet-style high-voltage battery systems for higher power density and scalability.",
-    "secA": "Section A · Standard Rack (100Ah)",
-    "secB": "Section B · High-capacity Rack (280Ah)",
-    "secC": "Section C · Cabinet BESS (large capacity)",
-    "introA": "100Ah rack family: modular stackable design with IP65 protection, ideal for indoor/outdoor residential HV battery banks.",
-    "introB": "280Ah racks up to 35.84kWh per tower — designed for higher energy demands with the same footprint.",
-    "introC": "Cabinet BESS: pre-assembled high-voltage solution for residential and small commercial applications, scalable up to 100kWh.",
+    "back": "กลับไปยัง ESS สำหรับที่อยู่อาศัย",
+    "title": "ระบบแรงดันสูง ซีรีส์ HVS",
+    "sub": "ระบบแบตเตอรี่แรงดันสูงแบบติดตั้งในแร็คและแบบตู้สำหรับความหนาแน่นกำลังไฟฟ้าที่สูงขึ้นและการปรับขนาด",
+    "secA": "ส่วน A · แร็คมาตรฐาน (100Ah)",
+    "secB": "ส่วน B · แร็คความจุสูง (280Ah)",
+    "secC": "ส่วน C · ตู้ BESS (ความจุขนาดใหญ่)",
+    "introA": "กลุ่มแร็ค 100Ah: การออกแบบโมดูลาร์แบบวางซ้อนได้พร้อมการป้องกัน IP65 เหมาะสำหรับธนาคารแบตเตอรี่ HV ที่อยู่อาศัยในร่ม/กลางแจ้ง",
+    "introB": "แร็ค 280Ah สูงสุด 35.84kWh ต่อทาวเวอร์ — ออกแบบสำหรับความต้องการพลังงานที่สูงขึ้นด้วยพื้นที่เท่าเดิม",
+    "introC": "ตู้ BESS: โซลูชันแรงดันสูงที่ประกอบไว้ล่วงหน้าสำหรับการใช้งานที่อยู่อาศัยและเชิงพาณิชย์ขนาดเล็ก ปรับขนาดได้สูงสุด 100kWh",
     "specLabels": {
       "model": {
         "en": "Model",
@@ -740,7 +740,7 @@
         "pt": "Model",
         "de": "Model",
         "fr": "Model",
-        "th": "Model",
+        "th": "รุ่น",
         "ar": "Model",
         "ja": "Model",
         "ko": "Model",
@@ -754,7 +754,7 @@
         "pt": "Voltage",
         "de": "Voltage",
         "fr": "Voltage",
-        "th": "Voltage",
+        "th": "แรงดันไฟฟ้า",
         "ar": "Voltage",
         "ja": "Voltage",
         "ko": "Voltage",
@@ -768,7 +768,7 @@
         "pt": "Capacity",
         "de": "Capacity",
         "fr": "Capacity",
-        "th": "Capacity",
+        "th": "ความจุ",
         "ar": "Capacity",
         "ja": "Capacity",
         "ko": "Capacity",
@@ -782,7 +782,7 @@
         "pt": "Energy",
         "de": "Energy",
         "fr": "Energy",
-        "th": "Energy",
+        "th": "พลังงาน",
         "ar": "Energy",
         "ja": "Energy",
         "ko": "Energy",
@@ -796,7 +796,7 @@
         "pt": "Cycle life",
         "de": "Cycle life",
         "fr": "Cycle life",
-        "th": "Cycle life",
+        "th": "อายุการใช้งาน (รอบ)",
         "ar": "Cycle life",
         "ja": "Cycle life",
         "ko": "Cycle life",
@@ -810,7 +810,7 @@
         "pt": "Dimensions",
         "de": "Dimensions",
         "fr": "Dimensions",
-        "th": "Dimensions",
+        "th": "ขนาด",
         "ar": "Dimensions",
         "ja": "Dimensions",
         "ko": "Dimensions",
@@ -824,7 +824,7 @@
         "pt": "Comm.",
         "de": "Comm.",
         "fr": "Comm.",
-        "th": "Comm.",
+        "th": "การสื่อสาร",
         "ar": "Comm.",
         "ja": "Comm.",
         "ko": "Comm.",
@@ -838,7 +838,7 @@
         "pt": "Module size",
         "de": "Module size",
         "fr": "Module size",
-        "th": "Module size",
+        "th": "ขนาดโมดูล",
         "ar": "Module size",
         "ja": "Module size",
         "ko": "Module size",
@@ -852,7 +852,7 @@
         "pt": "Total energy",
         "de": "Total energy",
         "fr": "Total energy",
-        "th": "Total energy",
+        "th": "พลังงานรวม",
         "ar": "Total energy",
         "ja": "Total energy",
         "ko": "Total energy",
@@ -866,7 +866,7 @@
         "pt": "Footprint",
         "de": "Footprint",
         "fr": "Footprint",
-        "th": "Footprint",
+        "th": "ขนาดภายนอก",
         "ar": "Footprint",
         "ja": "Footprint",
         "ko": "Footprint",
@@ -880,7 +880,7 @@
         "pt": "Nominal voltage",
         "de": "Nominal voltage",
         "fr": "Nominal voltage",
-        "th": "Nominal voltage",
+        "th": "แรงดันไฟฟ้าที่กำหนด",
         "ar": "Nominal voltage",
         "ja": "Nominal voltage",
         "ko": "Nominal voltage",
@@ -889,12 +889,12 @@
     }
   },
   "productsLfpBattery": {
-    "back": "Back to residential ESS",
-    "title": "LFP Battery Series",
-    "sub": "Ultra-slim wall-mount and floor-standing / mobile LFP battery solutions.",
-    "sec1": "Ultra-slim Wall-mount Group · M1200 / M2400",
-    "sec2": "Floor / Mobile Group · M-BXS / M-LFP",
-    "corner": "Parameter",
+    "back": "กลับไปยัง ESS สำหรับที่อยู่อาศัย",
+    "title": "ซีรีส์แบตเตอรี่ LFP",
+    "sub": "โซลูชันแบตเตอรี่ LFP แบบติดผนังบางพิเศษและแบบตั้งพื้น/เคลื่อนที่",
+    "sec1": "กลุ่มติดผนังบางพิเศษ · M1200 / M2400",
+    "sec2": "กลุ่มตั้งพื้น/เคลื่อนที่ · M-BXS / M-LFP",
+    "corner": "พารามิเตอร์",
     "specLabels": {
       "nominalVoltage": {
         "en": "Nominal voltage",
@@ -904,7 +904,7 @@
         "pt": "Nominal voltage",
         "de": "Nominal voltage",
         "fr": "Nominal voltage",
-        "th": "Nominal voltage",
+        "th": "แรงดันไฟฟ้าที่กำหนด",
         "ar": "Nominal voltage",
         "ja": "Nominal voltage",
         "ko": "Nominal voltage",
@@ -918,7 +918,7 @@
         "pt": "Nominal capacity",
         "de": "Nominal capacity",
         "fr": "Nominal capacity",
-        "th": "Nominal capacity",
+        "th": "ความจุที่กำหนด",
         "ar": "Nominal capacity",
         "ja": "Nominal capacity",
         "ko": "Nominal capacity",
@@ -932,7 +932,7 @@
         "pt": "Energy",
         "de": "Energy",
         "fr": "Energy",
-        "th": "Energy",
+        "th": "พลังงาน",
         "ar": "Energy",
         "ja": "Energy",
         "ko": "Energy",
@@ -946,7 +946,7 @@
         "pt": "Cycle life",
         "de": "Cycle life",
         "fr": "Cycle life",
-        "th": "Cycle life",
+        "th": "อายุการใช้งาน (รอบ)",
         "ar": "Cycle life",
         "ja": "Cycle life",
         "ko": "Cycle life",
@@ -960,7 +960,7 @@
         "pt": "Dimensions (L×W×H)",
         "de": "Dimensions (L×W×H)",
         "fr": "Dimensions (L×W×H)",
-        "th": "Dimensions (L×W×H)",
+        "th": "ขนาด (L×W×H)",
         "ar": "Dimensions (L×W×H)",
         "ja": "Dimensions (L×W×H)",
         "ko": "Dimensions (L×W×H)",
@@ -974,7 +974,7 @@
         "pt": "Communication",
         "de": "Communication",
         "fr": "Communication",
-        "th": "Communication",
+        "th": "การสื่อสาร",
         "ar": "Communication",
         "ja": "Communication",
         "ko": "Communication",
@@ -983,201 +983,201 @@
     }
   },
   "productsAllInOne": {
-    "back": "Back to residential ESS",
-    "title": "Wall-mounted / Floor-standing LFP Battery Comparison",
-    "sub": "Side-by-side specification comparison across 6 popular models in the LFP battery lineup.",
-    "section": "Parameter comparison (6 models)",
-    "corner": "Parameter"
+    "back": "กลับไปยัง ESS สำหรับที่อยู่อาศัย",
+    "title": "การเปรียบเทียบแบตเตอรี่ LFP แบบติดผนัง/ตั้งพื้น",
+    "sub": "การเปรียบเทียบข้อมูลจำเพาะแบบเคียงข้างใน 6 รุ่นยอดนิยมในกลุ่มผลิตภัณฑ์แบตเตอรี่ LFP",
+    "section": "การเปรียบเทียบพารามิเตอร์ (6 รุ่น)",
+    "corner": "พารามิเตอร์"
   },
   "productsEssAllInOne": {
-    "back": "Back to residential ESS",
-    "pageTitle": "ESS All-in-one Series",
-    "pageSub": "Integrated inverter + battery systems for hassle-free residential energy storage deployment."
+    "back": "กลับไปยัง ESS สำหรับที่อยู่อาศัย",
+    "pageTitle": "ซีรีส์ ESS ออลอินวัน",
+    "pageSub": "ระบบอินเวอร์เตอร์ + แบตเตอรี่ในตัวสำหรับการติดตั้งระบบกักเก็บพลังงานที่อยู่อาศัยที่ไร้ความยุ่งยาก"
   },
   "productsStackableBattery": {
-    "back": "Back to residential ESS",
-    "title": "Stackable / Floor-standing Battery (314Ah / 200Ah) Comparison",
-    "sub": "Side-by-side specification comparison across 7 popular models.",
-    "section": "Parameter comparison (7 models)",
-    "corner": "Parameter"
+    "back": "กลับไปยัง ESS สำหรับที่อยู่อาศัย",
+    "title": "การเปรียบเทียบแบตเตอรี่แบบวางซ้อน/ตั้งพื้น (314Ah / 200Ah)",
+    "sub": "การเปรียบเทียบข้อมูลจำเพาะแบบเคียงข้างใน 7 รุ่นยอดนิยม",
+    "section": "การเปรียบเทียบพารามิเตอร์ (7 รุ่น)",
+    "corner": "พารามิเตอร์"
   },
   "blogDetail": {
-    "notFound": "Article Not Found",
-    "backToBlog": "Back to Blog",
-    "readTime": "min read",
-    "tableOfContents": "Table of Contents",
-    "ctaTitle": "Questions about this article?",
-    "ctaSub": "Contact our engineering team for a personalised consultation on your energy storage project.",
-    "relatedArticles": "Related Articles",
-    "readMore": "Read Article"
+    "notFound": "ไม่พบบทความ",
+    "backToBlog": "กลับไปยังบล็อก",
+    "readTime": "นาที",
+    "tableOfContents": "สารบัญ",
+    "ctaTitle": "มีคำถามเกี่ยวกับบทความนี้?",
+    "ctaSub": "ติดต่อทีมวิศวกรของเราเพื่อรับคำปรึกษาส่วนบุคคลเกี่ยวกับโครงการกักเก็บพลังงานของคุณ",
+    "relatedArticles": "บทความที่เกี่ยวข้อง",
+    "readMore": "อ่านบทความ"
   },
   "caseDetail": {
-    "back": "Back to case center",
-    "location": "Location",
-    "date": "Implementation date",
-    "type": "Frequency regulation type",
-    "challengeTitle": "The Problem to Solve",
-    "solutionTitle": "Our Approach",
-    "specsTitle": "Technical Specifications",
-    "outcomesTitle": "Measurable Results",
-    "gallery": "Site photos",
-    "freqDiagram": "Frequency response diagram",
-    "cta": "Get a similar solution",
-    "ctaSub": "Tell us about your project requirements and our engineers will design a tailored solution.",
-    "ctaBtn": "WhatsApp Consultation",
-    "moreBtn": "View more cases",
-    "techPageBtn": "Explore technology platform"
+    "back": "กลับไปยังศูนย์กรณีศึกษา",
+    "location": "สถานที่",
+    "date": "วันที่ดำเนินการ",
+    "type": "ประเภทการควบคุมความถี่",
+    "challengeTitle": "ปัญหาที่ต้องแก้ไข",
+    "solutionTitle": "แนวทางของเรา",
+    "specsTitle": "ข้อมูลจำเพาะทางเทคนิค",
+    "outcomesTitle": "ผลลัพธ์ที่วัดได้",
+    "gallery": "ภาพถ่ายหน้างาน",
+    "freqDiagram": "แผนภาพการตอบสนองความถี่",
+    "cta": "รับโซลูชันที่คล้ายกัน",
+    "ctaSub": "บอกเราเกี่ยวกับความต้องการโครงการของคุณและวิศวกรของเราจะออกแบบโซลูชันที่เหมาะสม",
+    "ctaBtn": "ปรึกษาทาง WhatsApp",
+    "moreBtn": "ดูกรณีศึกษาเพิ่มเติม",
+    "techPageBtn": "สำรวจแพลตฟอร์มเทคโนโลยี"
   },
   "solutionsGridLevelBess": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "Grid-side · Bulk storage",
-    "title": "Grid-level Battery Energy Storage System (BESS)",
-    "subtitle": "Grid-scale energy storage and bulk power substation solutions — flexibility, ancillary services, and renewable integration for utilities and large C&I.",
-    "paragraphText": "BESS solution scope: grid-scale energy storage systems and bulk power substation integration — aligned with utility-grade deployment practices.",
-    "advantagesTitle": "Top 4 advantages",
+    "breadcrumbHome": "หน้าแรก",
+    "breadcrumbSolutions": "โซลูชัน",
+    "badge": "ด้านกริด · การจัดเก็บขนาดใหญ่",
+    "title": "ระบบกักเก็บพลังงานแบตเตอรี่ระดับกริด (BESS)",
+    "subtitle": "โซลูชันการกักเก็บพลังงานระดับกริดและสถานีไฟฟ้าย่อยกำลังสูง — ความยืดหยุ่น บริการเสริม และการผสานรวมพลังงานหมุนเวียนสำหรับสาธารณูปโภคและ C&I ขนาดใหญ่",
+    "paragraphText": "ขอบเขตโซลูชัน BESS: ระบบกักเก็บพลังงานระดับกริดและการผสานรวมสถานีไฟฟ้าย่อยกำลังสูง — สอดคล้องกับแนวทางการติดตั้งระดับสาธารณูปโภค",
+    "advantagesTitle": "ข้อได้เปรียบ 4 อันดับแรก",
     "advantages": [
       {
         "n": "01",
-        "title": "One-stop solution",
-        "body": "Full application coverage across generation, grid, and demand-side use cases — from concept to integrated delivery."
+        "title": "โซลูชันครบวงจร",
+        "body": "ครอบคลุมการใช้งานเต็มรูปแบบทั้งด้านการผลิต กริด และด้านความต้องการ — ตั้งแต่แนวคิดจนถึงการส่งมอบแบบบูรณาการ"
       },
       {
         "n": "02",
-        "title": "Industrial pioneer",
-        "body": "Energy-storage-oriented 1P 314Ah prismatic cell platforms engineered for long calendar life and tight consistency."
+        "title": "ผู้บุกเบิกอุตสาหกรรม",
+        "body": "แพลตฟอร์มเซลล์ปริซึม 1P 314Ah ที่มุ่งเน้นการกักเก็บพลังงาน ออกแบบมาเพื่ออายุการใช้งานที่ยาวนานและความสม่ำเสมอที่เข้มงวด"
       },
       {
         "n": "03",
-        "title": "Millisecond response",
-        "body": "Millisecond-class power response with system designs supporting up to ~2P power capability (project-dependent)."
+        "title": "การตอบสนองระดับมิลลิวินาที",
+        "body": "การตอบสนองกำลังไฟฟ้าระดับมิลลิวินาทีด้วยการออกแบบระบบที่รองรับความสามารถกำลังไฟฟ้าสูงสุด ~2P (ขึ้นอยู่กับโครงการ)"
       },
       {
         "n": "04",
-        "title": "Multiple security measures",
-        "body": "Triple fire-suppression concepts paired with modular architecture for safer O&M at container, cluster, and pack levels."
+        "title": "มาตรการความปลอดภัยหลายชั้น",
+        "body": "แนวคิดการดับเพลิงสามชั้นผสานกับสถาปัตยกรรมโมดูลาร์เพื่อการบำรุงรักษาที่ปลอดภัยยิ่งขึ้นในระดับตู้คอนเทนเนอร์ คลัสเตอร์ และแพ็ค"
       }
     ],
-    "appsIntroTitle": "Segmented applications",
-    "appsIntro": "High-power applications for grid-level BESS are transforming how utilities and large consumers operate. These systems store bulk energy from renewables such as solar and wind, shifting surplus generation to peak demand periods. With rapid charge and discharge capability, BESS supports grid stability through ancillary services including frequency regulation and voltage support, and enables demand-response participation — cutting costs by dispatching stored energy when the grid is most stressed.",
+    "appsIntroTitle": "การใช้งานแบบแบ่งส่วน",
+    "appsIntro": "การใช้งานกำลังสูงสำหรับ BESS ระดับกริดกำลังเปลี่ยนแปลงวิธีการดำเนินงานของสาธารณูปโภคและผู้บริโภครายใหญ่ ระบบเหล่านี้จัดเก็บพลังงานปริมาณมากจากพลังงานหมุนเวียน เช่น แสงอาทิตย์และลม โดยถ่ายโอนการผลิตส่วนเกินไปยังช่วงความต้องการสูงสุด ด้วยความสามารถในการชาร์จและดิสชาร์จที่รวดเร็ว BESS สนับสนุนเสถียรภาพของกริดผ่านบริการเสริมรวมถึงการควบคุมความถี่และการสนับสนุนแรงดันไฟฟ้า และช่วยให้สามารถเข้าร่วมการตอบสนองความต้องการ — ลดต้นทุนโดยการจ่ายพลังงานที่เก็บไว้เมื่อกริดมีความเครียดสูงสุด",
     "apps": [
       {
-        "title": "Thermal power frequency regulation",
-        "body": "High-power storage delivers millisecond-class frequency response for thermal plants, improving regulation quality and capturing ancillary-service value."
+        "title": "การควบคุมความถี่โรงไฟฟ้าพลังความร้อน",
+        "body": "การจัดเก็บกำลังสูงให้การตอบสนองความถี่ระดับมิลลิวินาทีสำหรับโรงไฟฟ้าพลังความร้อน ปรับปรุงคุณภาพการควบคุมและรับมูลค่าบริการเสริม"
       },
       {
-        "title": "PV + storage + charging",
-        "body": "High-power systems support charging loads and campus demand, reducing cost and emissions through peak shaving and valley filling."
+        "title": "PV + การจัดเก็บ + การชาร์จ",
+        "body": "ระบบกำลังสูงรองรับโหลดการชาร์จและความต้องการของวิทยาเขต ลดต้นทุนและการปล่อยมลพิษผ่านการตัดยอดและการเติมหุบเขา"
       },
       {
-        "title": "Energy storage for fast chargers",
-        "body": "Capacity support for ultra-fast charging — meeting peak power requirements while improving station utilization and grid friendliness."
+        "title": "การจัดเก็บพลังงานสำหรับเครื่องชาร์จเร็ว",
+        "body": "การสนับสนุนความจุสำหรับการชาร์จเร็วพิเศษ — ตอบสนองความต้องการกำลังไฟฟ้าสูงสุดพร้อมปรับปรุงการใช้สถานีและความเป็นมิตรต่อกริด"
       },
       {
-        "title": "Emergency power for mines",
-        "body": "Critical backup for underground operations — faster and more efficient than diesel-only approaches, improving payback and power quality."
+        "title": "พลังงานสำรองฉุกเฉินสำหรับเหมือง",
+        "body": "การสำรองที่สำคัญสำหรับการดำเนินงานใต้ดิน — เร็วกว่าและมีประสิทธิภาพมากกว่าวิธีการใช้ดีเซลเพียงอย่างเดียว ปรับปรุงผลตอบแทนและคุณภาพไฟฟ้า"
       }
     ],
-    "techTitle": "Technical highlights",
-    "techNote": "Final figures are subject to project FAT/SAT, grid codes, and contract technical schedules.",
+    "techTitle": "จุดเด่นทางเทคนิค",
+    "techNote": "ตัวเลขสุดท้ายขึ้นอยู่กับ FAT/SAT ของโครงการ รหัสกริด และกำหนดการทางเทคนิคตามสัญญา",
     "techHighlights": [
       {
-        "k": "Response",
-        "v": "Millisecond-level control loop (application-dependent)"
+        "k": "การตอบสนอง",
+        "v": "วงควบคุมระดับมิลลิวินาที (ขึ้นอยู่กับการใช้งาน)"
       },
       {
-        "k": "Power capability",
-        "v": "Up to ~2P system power design envelope"
+        "k": "ความสามารถกำลังไฟฟ้า",
+        "v": "ขอบเขตการออกแบบกำลังไฟฟ้าระบบสูงสุด ~2P"
       },
       {
-        "k": "Cell platform",
-        "v": "1P 314Ah-class prismatic LFP for energy storage"
+        "k": "แพลตฟอร์มเซลล์",
+        "v": "LFP ปริซึมระดับ 1P 314Ah สำหรับการกักเก็บพลังงาน"
       },
       {
-        "k": "Safety architecture",
-        "v": "Triple fire suppression + modular system design"
+        "k": "สถาปัตยกรรมความปลอดภัย",
+        "v": "การดับเพลิงสามชั้น + การออกแบบระบบโมดูลาร์"
       },
       {
-        "k": "Coverage",
-        "v": "Source, grid, and load-side application scenarios"
+        "k": "การครอบคลุม",
+        "v": "สถานการณ์การใช้งานด้านแหล่งผลิต กริด และโหลด"
       }
     ],
-    "relatedTitle": "Related energy storage products",
-    "relatedBody": "Explore containerized ESS and system-level documentation on our product page.",
-    "relatedCta": "Energy Storage System",
-    "contactCta": "Contact engineering"
+    "relatedTitle": "ผลิตภัณฑ์กักเก็บพลังงานที่เกี่ยวข้อง",
+    "relatedBody": "สำรวจ ESS แบบคอนเทนเนอร์และเอกสารระดับระบบในหน้าผลิตภัณฑ์ของเรา",
+    "relatedCta": "ระบบกักเก็บพลังงาน",
+    "contactCta": "ติดต่อวิศวกร"
   },
   "solutionsDataCenter": {
-    "breadcrumbHome": "Home",
-    "breadcrumbSolutions": "Solutions",
-    "badge": "AIDC · Backup & power quality",
-    "title": "Data Center Energy Storage Solutions",
-    "lead": "High-power lithium backup for AIDC workloads — engineered for supply reliability and power quality, with millisecond response to GPU-scale load swings.",
-    "painTitle": "Industry pain points",
+    "breadcrumbHome": "หน้าแรก",
+    "breadcrumbSolutions": "โซลูชัน",
+    "badge": "AIDC · สำรองและคุณภาพไฟฟ้า",
+    "title": "โซลูชันการกักเก็บพลังงานสำหรับศูนย์ข้อมูล",
+    "lead": "การสำรองลิเธียมกำลังสูงสำหรับภาระงาน AIDC — ออกแบบมาเพื่อความน่าเชื่อถือในการจ่ายไฟและคุณภาพไฟฟ้า พร้อมการตอบสนองระดับมิลลิวินาทีต่อการเปลี่ยนแปลงโหลดระดับ GPU",
+    "painTitle": "จุดเจ็บปวดของอุตสาหกรรม",
     "painItems": [
-      "Rapidly rising data center power demand challenges grid capacity and expansion timelines.",
-      "GPU load swings create high peaks and increase IT downtime risk from power-quality events.",
-      "PUE and efficiency requirements are becoming stricter across facilities.",
-      "Battery safety expectations are extreme — no fire or explosion tolerance in mission-critical sites."
+      "ความต้องการพลังงานของศูนย์ข้อมูลที่เพิ่มขึ้นอย่างรวดเร็วท้าทายความจุของกริดและระยะเวลาการขยาย",
+      "การเปลี่ยนแปลงโหลด GPU สร้างยอดสูงและเพิ่มความเสี่ยงการหยุดทำงานของ IT จากเหตุการณ์คุณภาพไฟฟ้า",
+      "ข้อกำหนด PUE และประสิทธิภาพเข้มงวดมากขึ้นทั่วทั้งสิ่งอำนวยความสะดวก",
+      "ความคาดหวังด้านความปลอดภัยของแบตเตอรี่สูงมาก — ไม่ยอมรับไฟไหม้หรือการระเบิดในไซต์ภารกิจสำคัญ"
     ],
-    "scenariosTitle": "Application scenarios",
-    "scenarioGridTitle": "Grid-proximate BESS",
-    "scenarioGridBody": "Battery energy storage near the grid stabilizes large-scale GPU cluster swings and provides UPS-class backup power.",
-    "scenarioLocalTitle": "GPU-proximate energy storage",
-    "scenarioLocalBody": "Local storage near GPUs smooths millisecond-level transients with configurable backup duration and load-adjacent support.",
-    "provideTitle": "What we provide",
-    "provideBody": "Full-chain lithium UPS products from cells and modules to systems — modular parallel designs for dependable delivery.",
-    "advantagesTitle": "Key features & advantages",
+    "scenariosTitle": "สถานการณ์การใช้งาน",
+    "scenarioGridTitle": "BESS ใกล้กริด",
+    "scenarioGridBody": "การกักเก็บพลังงานแบตเตอรี่ใกล้กริดทำให้การเปลี่ยนแปลงของคลัสเตอร์ GPU ขนาดใหญ่มีเสถียรภาพและให้พลังงานสำรองระดับ UPS",
+    "scenarioLocalTitle": "การกักเก็บพลังงานใกล้ GPU",
+    "scenarioLocalBody": "การจัดเก็บในพื้นที่ใกล้ GPU ทำให้การเปลี่ยนแปลงชั่วคราวระดับมิลลิวินาทีราบรื่นด้วยระยะเวลาสำรองที่กำหนดค่าได้และการสนับสนุนใกล้โหลด",
+    "provideTitle": "สิ่งที่เราจัดหาให้",
+    "provideBody": "ผลิตภัณฑ์ UPS ลิเธียมครบวงจรตั้งแต่เซลล์และโมดูลจนถึงระบบ — การออกแบบโมดูลาร์แบบขนานเพื่อการส่งมอบที่เชื่อถือได้",
+    "advantagesTitle": "คุณสมบัติหลักและข้อได้เปรียบ",
     "advantages": [
       {
-        "title": "High safety",
-        "body": "Controlled temperature rise; cells demonstrate no fire or explosion under rigorous tests such as nail penetration (per applicable certifications and reports)."
+        "title": "ความปลอดภัยสูง",
+        "body": "ควบคุมการเพิ่มขึ้นของอุณหภูมิ; เซลล์แสดงให้เห็นว่าไม่มีไฟไหม้หรือการระเบิดภายใต้การทดสอบที่เข้มงวด เช่น การเจาะด้วยตะปู (ตามการรับรองและรายงานที่เกี่ยวข้อง)"
       },
       {
-        "title": "Long lifespan",
-        "body": "10-year calendar life design orientation for long-run data center operations."
+        "title": "อายุการใช้งานยาวนาน",
+        "body": "แนวทางการออกแบบอายุการใช้งาน 10 ปีสำหรับการดำเนินงานศูนย์ข้อมูลระยะยาว"
       },
       {
-        "title": "Fast response",
-        "body": "Millisecond response to load swings with support for up to ~300% peak load scenarios."
+        "title": "การตอบสนองที่รวดเร็ว",
+        "body": "การตอบสนองระดับมิลลิวินาทีต่อการเปลี่ยนแปลงโหลดพร้อมรองรับสถานการณ์โหลดสูงสุด ~300%"
       },
       {
-        "title": "Cost friendly",
-        "body": "~20% lower unit power cost vs conventional approaches; 50%+ fewer UPS systems deployed in comparable architectures (project-dependent)."
+        "title": "ต้นทุนที่เป็นมิตร",
+        "body": "ต้นทุนพลังงานต่อหน่วยต่ำกว่า ~20% เมื่อเทียบกับวิธีการทั่วไป; ระบบ UPS ที่ใช้งานน้อยลง 50%+ ในสถาปัตยกรรมที่เทียบเคียงได้ (ขึ้นอยู่กับโครงการ)"
       },
       {
-        "title": "Authoritative certification",
-        "body": "Independent IP and quality systems aligned with leading enterprise supply-chain requirements."
+        "title": "การรับรองที่เชื่อถือได้",
+        "body": "IP อิสระและระบบคุณภาพที่สอดคล้องกับข้อกำหนดห่วงโซ่อุปทานขององค์กรชั้นนำ"
       },
       {
-        "title": "Greener & more efficient",
-        "body": "Higher DC voltage architectures help evolve AIDC power design and reduce PUE."
+        "title": "เป็นมิตรต่อสิ่งแวดล้อมและมีประสิทธิภาพมากขึ้น",
+        "body": "สถาปัตยกรรมแรงดัน DC ที่สูงขึ้นช่วยพัฒนาการออกแบบพลังงาน AIDC และลด PUE"
       }
     ],
-    "moduleTableTitle": "Technical specifications · UPS module",
+    "moduleTableTitle": "ข้อมูลจำเพาะทางเทคนิค · โมดูล UPS",
     "moduleCols": [
-      "Module",
-      "Type",
-      "Cell voltage",
-      "Module voltage",
-      "Discharge C-rate",
-      "Backup time"
+      "โมดูล",
+      "ประเภท",
+      "แรงดันเซลล์",
+      "แรงดันโมดูล",
+      "อัตรา C ดิสชาร์จ",
+      "เวลาสำรอง"
     ],
-    "systemTableTitle": "Technical specifications · UPS system",
+    "systemTableTitle": "ข้อมูลจำเพาะทางเทคนิค · ระบบ UPS",
     "systemRows": {
-      "backup": "Backup time",
-      "cellV": "Cell voltage",
-      "moduleV": "Module voltage",
-      "cRate": "Discharge C-rate",
-      "power": "System power"
+      "backup": "เวลาสำรอง",
+      "cellV": "แรงดันเซลล์",
+      "moduleV": "แรงดันโมดูล",
+      "cRate": "อัตรา C ดิสชาร์จ",
+      "power": "กำลังไฟฟ้าระบบ"
     },
-    "footnoteTitle": "Design & fire suppression",
-    "footnote": "Design: modular parallel topology — safe, reliable, flexible, intelligent, and streamlined O&M. Fire suppression: aerosol and perfluoro options (per project engineering).",
-    "relatedTitle": "Related energy storage product",
-    "relatedBody": "Explore containerized ESS and datasheet-ready details.",
-    "relatedCta": "View Energy Storage System",
-    "contactCta": "Contact engineering",
-    "scenariosParagraph": "For future distributed data center power architectures, storage adds both stabilization and backup at grid- and load-side touchpoints.",
-    "tableNote": "Scroll horizontally on small screens to view all columns."
+    "footnoteTitle": "การออกแบบและการดับเพลิง",
+    "footnote": "การออกแบบ: โทโพโลยีโมดูลาร์แบบขนาน — ปลอดภัย เชื่อถือได้ ยืดหยุ่น ชาญฉลาด และการบำรุงรักษาที่คล่องตัว การดับเพลิง: ตัวเลือกแอโรซอลและเพอร์ฟลูออโร (ตามวิศวกรรมโครงการ)",
+    "relatedTitle": "ผลิตภัณฑ์กักเก็บพลังงานที่เกี่ยวข้อง",
+    "relatedBody": "สำรวจ ESS แบบคอนเทนเนอร์และรายละเอียดพร้อมเอกสารข้อมูล",
+    "relatedCta": "ดูระบบกักเก็บพลังงาน",
+    "contactCta": "ติดต่อวิศวกร",
+    "scenariosParagraph": "สำหรับสถาปัตยกรรมพลังงานศูนย์ข้อมูลแบบกระจายในอนาคต การจัดเก็บเพิ่มทั้งการรักษาเสถียรภาพและการสำรองที่จุดสัมผัสด้านกริดและโหลด",
+    "tableNote": "เลื่อนแนวนอนบนหน้าจอขนาดเล็กเพื่อดูคอลัมน์ทั้งหมด"
   }
 }
