@@ -35,7 +35,7 @@ export function LocaleProvider({
         } else {
           // 替换第一个路径段（locale）
           const match = pathname.match(/^\/([^/]+)/);
-          if (match && ["en","zh","es","tr","pt","de","fr","th","ar","ja","ko","id"].includes(match[1])) {
+          if (match && ["en","zh","es","tr","pt","de","fr","th","ar","ja","ko","id","uk"].includes(match[1])) {
             // 有有效的 locale 前缀，替换它
             newPath = `/${next}${pathname.slice(match[0].length)}`;
           } else {

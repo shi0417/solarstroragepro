@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { loadMessages } from "@/lib/load-messages";
 import ClientLayout from "./ClientLayout";
 
-const LOCALES = ["en", "zh", "es", "tr", "pt", "de", "fr", "th", "ar", "ja", "ko", "id"];
+const LOCALES = ["en", "zh", "es", "tr", "pt", "de", "fr", "th", "ar", "ja", "ko", "id", "uk"];
 
 export default async function LocaleLayout({
   children,

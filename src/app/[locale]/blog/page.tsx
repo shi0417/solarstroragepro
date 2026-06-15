@@ -7,7 +7,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { fetchArticles } from "@/lib/blog-data";
 import { loadMessages } from "@/lib/load-messages";
 
-const LOCALES = ["en", "zh", "es", "tr", "pt", "de", "fr", "th", "ar", "ja", "ko", "id"] as const;
+const LOCALES = ["en", "zh", "es", "tr", "pt", "de", "fr", "th", "ar", "ja", "ko", "id", "uk"] as const;
 
 type Params = Promise<{ locale: string }>;
 
