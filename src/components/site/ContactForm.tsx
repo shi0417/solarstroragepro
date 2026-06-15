@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Send, CheckCircle2, Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Send, Loader2 } from "lucide-react";
 
 import { useLocaleContext } from "./LocaleProvider";
 import { trackFormSubmit } from "@/lib/tracking";
@@ -15,7 +16,8 @@ type FormData = {
 };
 
 export function ContactForm({ compact = false }: { compact?: boolean }) {
-  const { messages } = useLocaleContext();
+  const router = useRouter();
+  const { messages, localizePath } = useLocaleContext();
   const cf = messages.contactForm;
 
   const [form, setForm] = useState<FormData>({
@@ -51,27 +53,14 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
         throw new Error(data.error || "Submission failed");
       }
 
-      setStatus("success");
       setForm({ name: "", company: "", email: "", projectType: "", message: "" });
       trackFormSubmit();
+      // Redirect to thank-you page — Google Ads conversion tracks only /thank-you URL
+      router.push(localizePath("/thank-you"));
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Unknown error");
     }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="flex flex-col items-center gap-3 rounded-2xl border border-emerald-200 bg-emerald-50 p-8 text-center">
-        <CheckCircle2 className="h-12 w-12 text-emerald-500" aria-hidden />
-        <h3 className="text-lg font-bold text-emerald-800">
-          {cf.successTitle}
-        </h3>
-        <p className="text-sm text-emerald-600">
-          {cf.successMessage}
-        </p>
-      </div>
-    );
   }
 
   const labelClass = "block text-sm font-semibold text-slate-700 mb-1.5";
