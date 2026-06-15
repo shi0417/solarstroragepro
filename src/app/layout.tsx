@@ -37,23 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             gtag('config', 'AW-18235093488');
           `}
         </Script>
-        {/* Google Ads Conversion */}
-        <Script id="gtag-conversion" strategy="beforeInteractive">
-          {`
-            window.gtag_report_conversion = function(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  window.location = url;
-                }
-              };
-              gtag('event', 'conversion', {
-                'send_to': 'AW-18235093488/jw1ICOmCj74cEPDjlfdD',
-                'event_callback': callback
-              });
-              return false;
-            }
-          `}
-        </Script>
+        {/* Google Ads Conversion — moved to /thank-you page only */}
       </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
