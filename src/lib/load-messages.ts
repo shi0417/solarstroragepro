@@ -10,6 +10,7 @@ import arMessages from "@/messages/ar.json";
 import jaMessages from "@/messages/ja.json";
 import koMessages from "@/messages/ko.json";
 import idMessages from "@/messages/id.json";
+import ukMessages from "@/messages/uk.json";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const messagesMap: Record<string, any> = {
@@ -25,6 +26,7 @@ const messagesMap: Record<string, any> = {
   ja: jaMessages,
   ko: koMessages,
   id: idMessages,
+  uk: ukMessages,
 };
 
 export function loadMessages(locale: string) {

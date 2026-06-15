@@ -4,7 +4,7 @@ export const LOCALE_HEADER = "x-ssp-locale";
 // ── 全量语言列表（按展示顺序）───────────────────────────────
 export type Locale =
   | "en" | "zh" | "es" | "tr" | "pt" | "de" | "fr"
-  | "th" | "ar" | "ja" | "ko" | "id";
+  | "th" | "ar" | "ja" | "ko" | "id" | "uk";
 
 /** 语言显示标签（用于切换器 UI） */
 export const LOCALES: readonly { code: Locale; label: string; native: string }[] = [
@@ -20,6 +20,7 @@ export const LOCALES: readonly { code: Locale; label: string; native: string }[]
   { code: "ja", label: "日本語",   native: "日本語" },
   { code: "ko", label: "한국어",    native: "한국어" },
   { code: "id", label: "ID",       native: "Bahasa" },
+  { code: "uk", label: "UK",       native: "Українська" },
 ];
 
 export const LOCALE_CODES: readonly Locale[] = LOCALES.map((l) => l.code);
@@ -53,6 +54,7 @@ export function detectLocaleFromRequest(request: {
       JA: "ja", JP: "ja",
       KO: "ko", KR: "ko",
       ID: "id",
+      UA: "uk",
     };
     return map[country] || "en";
   }
@@ -71,6 +73,7 @@ export function detectLocaleFromRequest(request: {
   if (/^ja\b/i.test(accept)) return "ja";
   if (/^ko\b/i.test(accept)) return "ko";
   if (/^id\b/i.test(accept)) return "id";
+  if (/^uk\b/i.test(accept)) return "uk";
 
   return "en";
 }

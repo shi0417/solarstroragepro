@@ -460,12 +460,12 @@ const PRODUCTS: SolarProduct[] = [
  * Add more locales as needed; the component falls back to `en`.
  */
 const SPEC_LABELS: Record<string, Record<string, string>> = {
-  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı", pt: "Faixa de Potência", de: "Leistungsbereich", fr: "Plage de Puissance", ar: "نطاق الطاقة", ja: "電力範囲", ko: "전력 범위", id: "Rentang Daya", th: "ช่วงกำลังไฟฟ้า" },
-  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi", pt: "Tipo de Vidro", de: "Glastyp", fr: "Type de Verre", ar: "نوع الزجاج", ja: "ガラスタイプ", ko: "유리 유형", id: "Tipe Kaca", th: "ประเภทกระจก" },
-  generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil", pt: "Geração", de: "Generation", fr: "Génération", ar: "الجيل", ja: "世代", ko: "세대", id: "Generasi", th: "รุ่น" },
-  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar", pt: "Dimensões", de: "Abmessungen (mm)", fr: "Dimensions (mm)", ar: "الأبعاد (مم)", ja: "寸法（mm）", ko: "치수 (mm)", id: "Dimensi (mm)", th: "ขนาด (มม.)" },
-  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik", pt: "Eficiência", de: "Wirkungsgrad", fr: "Efficacité", ar: "الكفاءة", ja: "効率", ko: "효율", id: "Efisiensi", th: "ประสิทธิภาพ" },
-  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı", pt: "Coef. de Temperatura", de: "Temperaturkoeff.", fr: "Coeff. de Température", ar: "معامل درجة الحرارة", ja: "温度係数", ko: "온도 계수", id: "Koef. Suhu", th: "ค่าสัมประสิทธิ์อุณหภูมิ" },
+  powerRange:  { en: "Power Range", zh: "功率范围", es: "Rango de potencia", tr: "Güç Aralığı", pt: "Faixa de Potência", de: "Leistungsbereich", fr: "Plage de Puissance", ar: "نطاق الطاقة", ja: "電力範囲", ko: "전력 범위", id: "Rentang Daya", th: "ช่วงกำลังไฟฟ้า", uk: "Діапазон потужності" },
+  glassType:   { en: "Glass Type", zh: "玻璃类型", es: "Tipo de vidrio", tr: "Cam Tipi", pt: "Tipo de Vidro", de: "Glastyp", fr: "Type de Verre", ar: "نوع الزجاج", ja: "ガラスタイプ", ko: "유리 유형", id: "Tipe Kaca", th: "ประเภทกระจก", uk: "Тип скла" },
+  generation:  { en: "Generation", zh: "代次", es: "Generación", tr: "Nesil", pt: "Geração", de: "Generation", fr: "Génération", ar: "الجيل", ja: "世代", ko: "세대", id: "Generasi", th: "รุ่น", uk: "Покоління" },
+  dimensions:  { en: "Dimensions (mm)", zh: "尺寸 (mm)", es: "Dimensiones (mm)", tr: "Boyutlar", pt: "Dimensões", de: "Abmessungen (mm)", fr: "Dimensions (mm)", ar: "الأبعاد (مم)", ja: "寸法（mm）", ko: "치수 (mm)", id: "Dimensi (mm)", th: "ขนาด (มม.)", uk: "Розміри (мм)" },
+  efficiency:  { en: "Efficiency", zh: "效率", es: "Eficiencia", tr: "Verimlilik", pt: "Eficiência", de: "Wirkungsgrad", fr: "Efficacité", ar: "الكفاءة", ja: "効率", ko: "효율", id: "Efisiensi", th: "ประสิทธิภาพ", uk: "Ефективність" },
+  tempCoeff:   { en: "Temperature Coeff.", zh: "温度系数", es: "Coef. de temperatura", tr: "Sıcaklık Katsayısı", pt: "Coef. de Temperatura", de: "Temperaturkoeff.", fr: "Coeff. de Température", ar: "معامل درجة الحرارة", ja: "温度係数", ko: "온도 계수", id: "Koef. Suhu", th: "ค่าสัมประสิทธิ์อุณหภูมิ", uk: "Темп. коеф." },
 };
 
 function getLabel(labelKey: string, locale: string): string {

@@ -1,30 +1,29 @@
-"""Shared Supabase auth helper — reads token from env or .env.local"""
+"""
+Shared Supabase auth module.
+
+All scripts that need to call the Supabase Management API should import from here:
+    from _supabase_auth import SUPABASE_LOGIN_TOKEN as TOKEN
+
+This keeps the token in one place and out of version control (add to .gitignore).
+Set SUPABASE_LOGIN_TOKEN in .env.local or as an environment variable.
+"""
 import os
 
-def get_token():
-    token = os.environ.get("SUPABASE_LOGIN_TOKEN", "")
-    if token:
-        return token
+# Priority: env var > .env.local
+SUPABASE_LOGIN_TOKEN = os.environ.get("SUPABASE_LOGIN_TOKEN", "")
 
-    # Fallback: try reading from project root .env.local
-    import re
-    env_paths = [
-        os.path.join(os.path.dirname(__file__), '..', '.env.local'),
-        os.path.join(os.getcwd(), '.env.local'),
-    ]
-    for fp in env_paths:
-        try:
-            with open(fp, 'r', encoding='utf-8') as f:
-                for line in f:
-                    m = re.match(r'^SUPABASE_LOGIN_TOKEN\s*=\s*(.+)$', line.strip())
-                    if m:
-                        return m.group(1).strip()
-        except FileNotFoundError:
-            continue
-    raise RuntimeError("SUPABASE_LOGIN_TOKEN not found in env or .env.local")
+if not SUPABASE_LOGIN_TOKEN:
+    # Try reading from .env.local
+    env_path = os.path.join(os.path.dirname(__file__), "..", ".env.local")
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                if line.startswith("SUPABASE_LOGIN_TOKEN="):
+                    SUPABASE_LOGIN_TOKEN = line.strip().split("=", 1)[1]
+                    break
 
-# Export as constant for convenience
-SUPABASE_LOGIN_TOKEN = get_token()
-SUPABASE_URL = "https://qujcrmbzuzlgjrexbzga.supabase.co"
-API_BASE = f"{SUPABASE_URL}/rest/v1"
-MGMT_BASE = f"https://api.supabase.com/v1/projects/qujcrmbzuzlgjrexbzga/database/query"
+if not SUPABASE_LOGIN_TOKEN:
+    raise ValueError(
+        "SUPABASE_LOGIN_TOKEN not found. "
+        "Set it in .env.local or as an environment variable."
+    )
