@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
+import { getEnhancedData, type EnhancedData } from "@/lib/enhanced-conversions";
 
 const BUTTON_LABELS: Record<string, { backHome: string; browseProducts: string; contactTeam: string }> = {
   en: { backHome: "Back to Home", browseProducts: "Browse Products", contactTeam: "Contact Our Team" },
@@ -31,15 +32,26 @@ export default function ThankYouPage() {
     // SSR safety: only run on client
     if (typeof window === "undefined") return;
 
+    // Read Enhanced Conversions data from sessionStorage (stored by ContactForm)
+    const ecData: EnhancedData | null = getEnhancedData();
+
     // Google Ads conversion
     if (typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
+      const transactionId = "ssp_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
+      const params: Record<string, unknown> = {
         send_to: "AW-18235093488/jw1ICOmCj74cEPDjlfdD",
         value: 5.0,
         currency: "HKD",
-        event_label: "form_submit_thankyou",
-      });
-      console.log("[GA] Thank-you page conversion fired");
+        transaction_id: transactionId,
+      };
+      // Enhanced Conversions: SHA-256 hashed first-party data
+      if (ecData) {
+        params.email = ecData.email_hashed;
+        params.first_name = ecData.first_name_hashed;
+        params.last_name = ecData.last_name_hashed;
+      }
+      window.gtag("event", "conversion", params);
+      console.log("[GA] Thank-you page conversion fired", { transactionId, ec: !!ecData });
     }
 
     // Meta Pixel Lead event

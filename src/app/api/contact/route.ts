@@ -1,6 +1,7 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
 import { getSupabaseEnv } from "@/lib/supabase/env";
 
@@ -110,6 +111,12 @@ export async function POST(request: Request) {
       );
     }
 
+    // Fire-and-forget: send email notification (don't block the response)
+    const locale = request.headers.get("x-locale") || "en";
+    notifySalesTeam(data, locale).catch((e) =>
+      console.error("[Contact Form] Email notification failed:", e),
+    );
+
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("[Contact Form] Unexpected error:", err);
@@ -117,5 +124,51 @@ export async function POST(request: Request) {
       { error: "Internal server error" },
       { status: 500 },
     );
+  }
+}
+
+/**
+ * Send email notification to the sales team when a new form submission arrives.
+ * Uses Resend (https://resend.com) — configure RESEND_API_KEY in .env.local.
+ * Non-blocking: fires in the background, failures are logged but don't affect the user.
+ */
+async function notifySalesTeam(data: ContactBody, locale: string): Promise<void> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.warn("[Contact Form] RESEND_API_KEY not set — skipping email notification.");
+    return;
+  }
+
+  try {
+    const resend = new Resend(apiKey);
+
+    const localeLabel = locale.toUpperCase();
+    const projectInfo = data.projectType ? `\n- **项目类型**: ${data.projectType}` : "";
+    const messageInfo = data.message ? `\n- **消息内容**: ${data.message}` : "";
+
+    await resend.emails.send({
+      from: "SolarStoragePro <noreply@solarstoragepro.com>",
+      to: ["sales@solarstoragepro.com"],
+      subject: `[新询盘] ${data.name} — ${data.company} (${localeLabel})`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #f59e0b;">新客户询盘通知</h2>
+          <p>收到一条来自网站的新潜在客户提交：</p>
+          <table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+            <tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">姓名</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.name}</td></tr>
+            <tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">公司</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.company}</td></tr>
+            <tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">邮箱</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;"><a href="mailto:${data.email}">${data.email}</a></td></tr>
+            <tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">语言</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${localeLabel}</td></tr>
+            ${projectInfo ? `<tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">项目类型</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.projectType}</td></tr>` : ""}
+            ${messageInfo ? `<tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">消息</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.message}</td></tr>` : ""}
+          </table>
+          <p style="color: #6b7280; font-size: 14px;">此邮件由 SolarStoragePro 网站自动发送。</p>
+        </div>
+      `,
+    });
+
+    console.log(`[Contact Form] Email notification sent to sales@solarstoragepro.com for ${data.name}`);
+  } catch (err) {
+    console.error("[Contact Form] Failed to send email notification:", err);
   }
 }

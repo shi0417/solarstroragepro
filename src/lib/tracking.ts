@@ -41,11 +41,12 @@ const GA_CONVERSION_SEND_TO = "AW-18235093488/jw1ICOmCj74cEPDjlfdD";
  * This function guarantees the conversion fires regardless of execution context.
  */
 function trackGoogleAdsConversion(eventLabel: string, value = 1.0) {
-  const params = {
+  const transactionId = "ssp_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
+  const params: Record<string, unknown> = {
     send_to: GA_CONVERSION_SEND_TO,
     value,
     currency: "HKD",
-    event_label: eventLabel,
+    transaction_id: transactionId,
   };
 
   // ── Tier 1: Standard gtag() ──
