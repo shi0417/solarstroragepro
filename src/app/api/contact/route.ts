@@ -111,11 +111,14 @@ export async function POST(request: Request) {
       );
     }
 
-    // Fire-and-forget: send email notification (don't block the response)
+    // Send email notification — must AWAIT in serverless (fire-and-forget gets killed by Vercel)
     const locale = request.headers.get("x-locale") || "en";
-    notifySalesTeam(data, locale).catch((e) =>
-      console.error("[Contact Form] Email notification failed:", e),
-    );
+    try {
+      await notifySalesTeam(data, locale);
+    } catch {
+      // Email failure is non-blocking: form was still saved to Supabase
+      console.warn("[Contact Form] Email notification failed (form saved OK)");
+    }
 
     return NextResponse.json({ success: true });
   } catch (err) {
@@ -135,18 +138,15 @@ export async function POST(request: Request) {
 async function notifySalesTeam(data: ContactBody, locale: string): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
-    console.warn("[Contact Form] RESEND_API_KEY not set — skipping email notification.");
-    return;
+    throw new Error("RESEND_API_KEY not set");
   }
 
-  try {
-    const resend = new Resend(apiKey);
+  const resend = new Resend(apiKey);
+  const localeLabel = locale.toUpperCase();
 
-    const localeLabel = locale.toUpperCase();
-    const projectInfo = data.projectType ? `\n- **项目类型**: ${data.projectType}` : "";
-    const messageInfo = data.message ? `\n- **消息内容**: ${data.message}` : "";
+  console.log(`[Contact Form] Sending email notification for ${data.name} <${data.email}>`);
 
-    await resend.emails.send({
+  const { data: emailData, error } = await resend.emails.send({
       from: "SolarStoragePro <noreply@solarstoragepro.com>",
       to: ["sales@solarstoragepro.com"],
       subject: `[新询盘] ${data.name} — ${data.company} (${localeLabel})`,
@@ -159,16 +159,18 @@ async function notifySalesTeam(data: ContactBody, locale: string): Promise<void>
             <tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">公司</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.company}</td></tr>
             <tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">邮箱</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;"><a href="mailto:${data.email}">${data.email}</a></td></tr>
             <tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">语言</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${localeLabel}</td></tr>
-            ${projectInfo ? `<tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">项目类型</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.projectType}</td></tr>` : ""}
-            ${messageInfo ? `<tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">消息</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.message}</td></tr>` : ""}
+            ${data.projectType ? `<tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">项目类型</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.projectType}</td></tr>` : ""}
+            ${data.message ? `<tr><td style="padding: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 600;">消息</td><td style="padding: 8px; border-bottom: 1px solid #e5e7eb;">${data.message}</td></tr>` : ""}
           </table>
           <p style="color: #6b7280; font-size: 14px;">此邮件由 SolarStoragePro 网站自动发送。</p>
         </div>
       `,
     });
 
-    console.log(`[Contact Form] Email notification sent to sales@solarstoragepro.com for ${data.name}`);
-  } catch (err) {
-    console.error("[Contact Form] Failed to send email notification:", err);
+  if (error) {
+    console.error("[Contact Form] Resend API error:", JSON.stringify(error));
+    throw new Error(error.message || "Resend API error");
   }
+
+  console.log(`[Contact Form] ✅ Email sent! ID: ${emailData?.id}`);
 }
