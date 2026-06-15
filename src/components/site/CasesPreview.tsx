@@ -40,7 +40,7 @@ export function CasesPreview() {
             return (
               <Link
                 key={c.id}
-                href={`/case-center/${c.id}`}
+                href={localizePath(`/case-center/${c.id}`)}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-800/60 backdrop-blur transition-all hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-500/10"
               >
                 {/* Image */}

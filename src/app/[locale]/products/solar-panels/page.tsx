@@ -136,10 +136,6 @@ const PRODUCTS: SolarProduct[] = [
         series: "NEOSTAR — Résidentiel",
         desc: "Module résidentiel à verre simple de troisième génération avec technologie Infinite. Puissance de sortie plus élevée, BOS réduit et valeur esthétique supérieure.",
       },
-      ar: {
-        series: "NEOSTAR — سكني",
-        desc: "وحدة سكنية زجاج أحادي من الجيل الثالث بتقنية Infinite. طاقة خرج أعلى، BOS أقل، وقيم جمالية أفضل.",
-      },
       ja: {
         series: "NEOSTAR — 家庭用",
         desc: "Infiniteテクノロジー搭載の第3世代単板ガラス家庭用モジュール。より高い出力、低いBOS、優れた美観価値。",
@@ -147,9 +143,10 @@ const PRODUCTS: SolarProduct[] = [
       ko: {
         series: "NEOSTAR — 주거용",
         desc: "Infinite 기술이 적용된 3세대 단판 유리 주거용 모듈. 더 높은 출력, 낮은 BOS, 우수한 미적 가치.",
-      },      id: {
-        series: "COMET — Komersial",
-        desc: "Modul ABC daya tinggi untuk atap komersial & industri dan ground-mount. Koefisien suhu unggul menghasilkan lebih banyak daya di lingkungan panas. Mengurangi biaya BOS sistem.",
+      },
+      id: {
+        series: "NEOSTAR — Perumahan",
+        desc: "Modul perumahan kaca tunggal generasi ketiga dengan teknologi Infinite. Output daya lebih tinggi, BOS lebih rendah, dan nilai estetika unggul.",
       },
 
       th: {
@@ -211,19 +208,17 @@ const PRODUCTS: SolarProduct[] = [
         series: "COMET — Commercial & Industriel",
         desc: "Taux de retour plus élevé pour la même période de récupération. Module N-type de troisième génération pour applications commerciales et industrielles avec optimisation de l'ombrage partiel et résistance aux microfissures.",
       },
-      ar: {
-        series: "COMET — تجاري وصناعي",
-        desc: "معدل عائد أعلى في نفس فترة الاسترداد. وحدة من النوع N من الجيل الثالث للتطبيقات التجارية والصناعية مع تحسين التظليل الجزئي ومقاومة التشققات الدقيقة.",
-      },
       ja: {
         series: "COMET — 商業・産業用",
         desc: "同一回収期間でより高い収益率。部分影最適化とマイクロクラック耐性を備えた商業・産業用第3世代N型モジュール。",
-      },      ko: {
-        series: "STELLAR — 유틸리티",
-        desc: "유틸리티 규모 프로젝트를 위한 최대 출력 모듈. 대면적 셀로 설치 비용 최소화. 계통 연계에 최적화된 고전압 출력.",
-      },      id: {
-        series: "STELLAR — Utilitas",
-        desc: "Modul output tertinggi untuk proyek skala utilitas. Sel area besar meminimalkan biaya instalasi. Output tegangan tinggi dioptimalkan untuk koneksi jaringan.",
+      },
+      ko: {
+        series: "COMET — 상업·산업용",
+        desc: "동일한 회수 기간에 더 높은 수익률. 부분 그림자 최적화와 미세 균열 내성을 갖춘 상업·산업용 3세대 N형 모듈.",
+      },
+      id: {
+        series: "COMET — Komersial & Industri",
+        desc: "Tingkat pengembalian lebih tinggi dalam periode payback yang sama. Modul N-type generasi ketiga untuk aplikasi komersial dan industri dengan optimasi bayangan parsial dan ketahanan retak mikro.",
       },
 
 
@@ -273,10 +268,6 @@ const PRODUCTS: SolarProduct[] = [
       de: {
         series: "STELLAR — Großanlagen",
         desc: "Höhere Leistungsabgabe und niedrigere Stromgestehungskosten für große Solarprojekte. Doppelglas-N-Typ-Modul der dritten Generation mit Infinite-Technologie.",
-      },
-      ar: {
-        series: "NEOSTAR 2P72 — نطاق واسع",
-        desc: "وحدة زجاج مزدوج عالية الطاقة للمشاريع على نطاق المرافق. كفاءة تصل إلى 24.3% مع ضمان أداء 30 سنة. مثالية لمزارع الطاقة الشمسية الكبيرة والمنشآت التجارية والصناعية.",
       },
       fr: {
         series: "STELLAR — Grande Échelle",
@@ -349,10 +340,6 @@ const PRODUCTS: SolarProduct[] = [
         series: "STELLAR — Großanlagen",
         desc: "Ultrahochleistungsmodul für Großanlagen. Doppelglas-N-Typ der zweiten Generation mit 770–805 W Leistung und fortschrittlichem Wärmemanagement.",
       },
-      ar: {
-        series: "COMET 2P66 — مرافق",
-        desc: "وحدة على نطاق المرافق عالية الكفاءة بتقنية ABC INFINITE. تعظيم إنتاج الطاقة وتقليل LCOE لمشاريع الطاقة الشمسية على نطاق GW.",
-      },
       fr: {
         series: "STELLAR — Grande Échelle",
         desc: "Module ultra-haute puissance pour grandes installations. N-type à double vitrage de deuxième génération avec puissance de 770–805 W et gestion thermique avancée.",
@@ -423,10 +410,6 @@ const PRODUCTS: SolarProduct[] = [
       de: {
         series: "NEBULAR — Leichtbau",
         desc: "Leichtbaumodul für Dächer mit begrenzter Tragfähigkeit. Teilabschattungsoptimierung, Mikrorissbeständigkeit und höherer ästhetischer Wert.",
-      },
-      ar: {
-        series: "COMET — تجاري",
-        desc: "وحدة زجاج أحادي تجارية عالية الكفاءة. توفر التوازن الأمثل بين التكلفة والأداء للأسقف التجارية والصناعية.",
       },
       fr: {
         series: "NEBULAR — Léger",

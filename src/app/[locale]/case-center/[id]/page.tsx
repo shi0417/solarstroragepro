@@ -25,7 +25,7 @@ export default function CaseDetailPage() {
   const rawId = params?.id;
   const id = typeof rawId === "string" ? rawId : Array.isArray(rawId) ? rawId[0] : undefined;
 
-  const { locale, messages } = useLocaleContext();
+  const { locale, messages, localizePath } = useLocaleContext();
 
   const c = id ? CASE_MAP[id] : undefined;
   if (!c) notFound();
@@ -49,7 +49,7 @@ export default function CaseDetailPage() {
           <div className="absolute inset-x-0 bottom-0">
             <div className="mx-auto max-w-5xl px-4 pb-10 sm:px-6">
               <Link
-                href="/case-center"
+                href={localizePath("/case-center")}
                 className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-blue-400/30 hover:text-blue-400"
               >
                 <ArrowLeft className="h-3.5 w-3.5" aria-hidden />
@@ -237,7 +237,7 @@ export default function CaseDetailPage() {
                 <ArrowRight className="h-4 w-4" aria-hidden />
               </a>
               <Link
-                href="/case-center"
+                href={localizePath("/case-center")}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-slate-300 transition hover:bg-white/10"
               >
                 {cd.moreBtn}
@@ -247,7 +247,7 @@ export default function CaseDetailPage() {
 
             <div className="mt-6">
               <Link
-                href="/technology"
+                href={localizePath("/technology")}
                 className="inline-flex items-center gap-1.5 text-sm text-slate-500 transition hover:text-blue-400"
               >
                 {cd.techPageBtn}

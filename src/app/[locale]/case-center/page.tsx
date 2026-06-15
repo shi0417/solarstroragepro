@@ -10,7 +10,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { CASES } from "./case-data";
 
 export default function CaseCenterPage() {
-  const { locale, messages } = useLocaleContext();
+  const { locale, messages, localizePath } = useLocaleContext();
 
   const cc = messages.caseCenter ?? {};
 
@@ -35,7 +35,7 @@ export default function CaseCenterPage() {
 
             <div className="mt-6">
               <Link
-                href="/technology"
+                href={localizePath("/technology")}
                 className="inline-flex items-center gap-1.5 text-sm text-slate-400 transition hover:text-blue-400"
               >
                 {cc.techLink}
@@ -98,7 +98,7 @@ export default function CaseCenterPage() {
                       {/* CTA */}
                       <div className="mt-auto pt-4">
                         <Link
-                          href={`/case-center/${c.id}`}
+                          href={localizePath(`/case-center/${c.id}`)}
                           className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-blue-50 px-4 py-2.5 text-sm font-medium text-blue-700 transition hover:bg-blue-100"
                         >
                           {cc.readMore}
