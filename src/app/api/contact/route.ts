@@ -113,14 +113,22 @@ export async function POST(request: Request) {
 
     // Send email notification — must AWAIT in serverless (fire-and-forget gets killed by Vercel)
     const locale = request.headers.get("x-locale") || "en";
+    let emailResult: "sent" | "skipped" | "failed" = "skipped";
+    let emailError = "";
     try {
       await notifySalesTeam(data, locale);
-    } catch {
-      // Email failure is non-blocking: form was still saved to Supabase
-      console.warn("[Contact Form] Email notification failed (form saved OK)");
+      emailResult = "sent";
+    } catch (err: unknown) {
+      emailResult = "failed";
+      emailError = err instanceof Error ? err.message : String(err);
+      console.error("[Contact Form] Email notification failed:", emailError);
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({
+      success: true,
+      _email: emailResult,
+      ...(emailError ? { _emailError: emailError } : {}),
+    });
   } catch (err) {
     console.error("[Contact Form] Unexpected error:", err);
     return NextResponse.json(
