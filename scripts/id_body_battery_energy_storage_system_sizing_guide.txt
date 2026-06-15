@@ -1,0 +1,79 @@
+## Mengapa Sizing BESS yang Tepat Penting
+
+Sizing BESS adalah keputusan terpenting dalam proyek penyimpanan. Oversizing memblokir modal; undersizing kehilangan jendela pendapatan. Pada **$280–340/kWh**, kesalahan 10% pada proyek 10 MWh berarti **$280K–340K** CAPEX terbuang.
+
+## Langkah 1: Tentukan Aplikasi dan Revenue Stack
+
+| Aplikasi | Nilai Utama | Durasi Tipikal |
+|---|---|---|
+| Peak Shaving | Pengurangan biaya beban | 2–4 jam |
+| Regulasi Frekuensi | Pendapatan layanan tambahan | 15–30 menit |
+| Pergeseran Solar | Arbitrase energi | 3–5 jam |
+| Daya Cadangan | Ketahanan/keandalan | 4–8 jam |
+
+## Langkah 2: Hitung Kapasitas Energi (kWh)
+
+### Untuk Peak Shaving
+
+1. Dapatkan data beban interval 15 menit selama 12 bulan
+2. Identifikasi jendela permintaan puncak
+3. Tentukan target puncak yang ingin dipangkas
+4. Hitung energi di atas garis target
+
+**Contoh:** Puncak 800 kW, target 500 kW, jendela 3 jam:
+- Daya: 300 kW, Energi: 300 × 3 = 900 kWh
+- Tambah margin 15%: **≈1.035 kWh**
+
+### Untuk Pergeseran Solar
+
+6 MWh surplus ÷ 0,88 RTE ≈ **6,8 MWh**
+
+## Langkah 3: Tentukan Peringkat Daya
+
+| Sistem C&I | Daya | Energi | Durasi |
+|---|---|---|---|
+| C&I Kecil | 100–250 kW | 200–500 kWh | 2 jam |
+| C&I Sedang | 250–500 kW | 500–1.000 kWh | 2–4 jam |
+| C&I Besar | 500 kW–2 MW | 1–4 MWh | 2–4 jam |
+| Grid-Scale | 2–10 MW | 4–40 MWh | 2–4 jam |
+
+## Langkah 4: Degradasi dan Kapasitas yang Dapat Digunakan
+
+1. **DoD:** 80–90% untuk LFP
+2. **RTE:** 87–92% untuk LFP
+3. **Margin akhir masa pakai:** Rencanakan 80% retensi pada tahun 10
+
+**Rumus:** Nameplate = (Energi yang dibutuhkan) ÷ DoD ÷ RTE ÷ Faktor EoL
+
+**Contoh:** 1.000 kWh → 1.000 ÷ 0,90 ÷ 0,90 ÷ 0,80 = **1.543 kWh**
+
+## Langkah 5: Kimia yang Tepat
+
+| Parameter | LFP | NMC |
+|---|---|---|
+| Siklus (80% SoH) | 6.000–10.000 | 2.000–4.000 |
+| DoD optimal | 80–90% | 70–80% |
+| RTE (sistem) | 87–92% | 85–90% |
+| Biaya ($/kWh) | $80–100 | $95–120 |
+
+**LFP adalah pilihan jelas** untuk penyimpanan stasioner dengan siklus harian.
+
+## Langkah 6: Pertimbangan Termal dan Lokasi
+
+1. **Footprint:** Kontainer 20 kaki → 15–25 m²
+2. **Suhu:** >35°C → derating 5–15%
+3. **Ketinggian:** >2.000m → derating 1% per 100m
+
+## Tabel Referensi Cepat
+
+| Aplikasi | Daya | Energi | Durasi |
+|---|---|---|---|
+| C&I Kecil Peak | 100–250 kW | 200–500 kWh | 2 jam |
+| C&I Besar Peak | 500 kW–2 MW | 1–4 MWh | 2–4 jam |
+| Regulasi Frekuensi | 2–10 MW | 1–5 MWh | 0,25–0,5 jam |
+| Solar Time-Shifting | 1–5 MW | 4–20 MWh | 2–4 jam |
+| Backup Data Center | 1–10 MW | 4–40 MWh | 4–8 jam |
+
+## Bantuan Ahli
+
+**SolarStoragePro** menyediakan **penilaian sizing awal gratis**. Hubungi kami untuk analisis dalam 48 jam.

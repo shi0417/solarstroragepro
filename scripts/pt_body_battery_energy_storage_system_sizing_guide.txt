@@ -1,0 +1,79 @@
+## Por que o Dimensionamento Correto é Importante
+
+O dimensionamento de um BESS é a decisão mais importante de qualquer projeto de armazenamento. Superdimensionar bloqueia capital; subdimensionar perde janelas de receita. A **$280–340/kWh**, um erro de 10% em um projeto de 10 MWh representa **$280K–340K** de CAPEX desperdiçado.
+
+## Etapa 1: Definir a Aplicação e o Revenue Stack
+
+| Aplicação | Valor Principal | Duração Típica |
+|---|---|---|
+| Peak Shaving | Redução de encargos de demanda | 2–4 horas |
+| Regulação de frequência | Serviços ancilares | 15–30 min |
+| Armazenamento solar | Arbitragem de energia | 3–5 horas |
+| Energia de backup | Resiliência | 4–8 horas |
+
+## Etapa 2: Calcular a Capacidade de Energia (kWh)
+
+### Para Peak Shaving
+
+1. Dados de medição por intervalos de 15 min por 12 meses
+2. Identificar janela de pico de demanda
+3. Definir demanda-alvo
+4. Integrar energia acima da linha-alvo
+
+**Exemplo:** Pico 800 kW, meta 500 kW, janela 3 h:
+- Potência: 300 kW, Energia: 300 × 3 = 900 kWh
+- Com margem de 15%: **≈1.035 kWh**
+
+### Para Armazenamento Solar
+
+6 MWh excedente ÷ 0,88 RTE ≈ **6,8 MWh**
+
+## Etapa 3: Determinar a Classificação de Potência
+
+| Sistema C&I | Potência | Energia | Duração |
+|---|---|---|---|
+| Pequeno C&I | 100–250 kW | 200–500 kWh | 2 h |
+| Médio C&I | 250–500 kW | 500–1.000 kWh | 2–4 h |
+| Grande C&I | 500 kW–2 MW | 1–4 MWh | 2–4 h |
+| Grid-Scale | 2–10 MW | 4–40 MWh | 2–4 h |
+
+## Etapa 4: Degradação e Capacidade Utilizável
+
+1. **DoD:** 80–90% para LFP
+2. **RTE:** 87–92% para LFP
+3. **Margem de fim de vida:** 80% de retenção no ano 10
+
+**Fórmula:** Nominal = (Energia necessária) ÷ DoD ÷ RTE ÷ Fator EoL
+
+**Exemplo:** 1.000 kWh → 1.000 ÷ 0,90 ÷ 0,90 ÷ 0,80 = **1.543 kWh**
+
+## Etapa 5: Química Correta
+
+| Parâmetro | LFP | NMC |
+|---|---|---|
+| Ciclos (80% SoH) | 6.000–10.000 | 2.000–4.000 |
+| DoD ótimo | 80–90% | 70–80% |
+| RTE (sistema) | 87–92% | 85–90% |
+| Custo ($/kWh) | $80–100 | $95–120 |
+
+**LFP é a escolha clara** para armazenamento estacionário com ciclagem diária.
+
+## Etapa 6: Considerações Térmicas e de Local
+
+1. **Pegada:** Container 20 pés → 15–25 m²
+2. **Temperatura:** >35°C → redução de 5–15%
+3. **Altitude:** >2.000m → redução de 1% por 100m
+
+## Tabela de Referência Rápida
+
+| Aplicação | Potência | Energia | Duração |
+|---|---|---|---|
+| Pequeno C&I Peak | 100–250 kW | 200–500 kWh | 2 h |
+| Grande C&I Peak | 500 kW–2 MW | 1–4 MWh | 2–4 h |
+| Regulação de frequência | 2–10 MW | 1–5 MWh | 0,25–0,5 h |
+| Solar Time-Shifting | 1–5 MW | 4–20 MWh | 2–4 h |
+| Backup data center | 1–10 MW | 4–40 MWh | 4–8 h |
+
+## Ajuda Especializada
+
+**SolarStoragePro** oferece **avaliações de dimensionamento preliminares gratuitas**. Contate-nos para análise em 48 horas.

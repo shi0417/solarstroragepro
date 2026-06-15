@@ -1,0 +1,81 @@
+Lors de la conception d'un système de stockage d'énergie par batterie (BESS), l'un des choix les plus fondamentaux est la chimie de la batterie. Les deux chimies dominantes sur le marché actuel sont **LFP (phosphate de fer lithium)** et **NMC (nickel manganèse cobalt)**. Bien que toutes deux soient à base lithium-ion, leurs différences en matière de sécurité, de coût, de durée de vie et de performance les rendent adaptées à des applications très différentes.
+
+## Comprendre les Chimies
+
+### Qu'est-ce que LFP ?
+
+**LFP (LiFePO₄)** utilise le phosphate de fer lithium comme matériau de cathode. Les liaisons covalentes fortes entre le fer, le phosphore et l'oxygène rendent la structure cristalline exceptionnellement stable.
+
+### Qu'est-ce que NMC ?
+
+**NMC (LiNiₓMnᵧCo₁₋ₓ₋ᵧO₂)** combine le nickel (pour la densité d'énergie), le manganèse (pour la stabilité) et le cobalt (pour la performance). Le contenu élevé en nickel permet une plus grande densité d'énergie mais réduit la stabilité thermique.
+
+## Sécurité : Le Facteur Décisif
+
+| Paramètre de Sécurité | LFP | NMC |
+|-----------------|-----|-----|
+| Température d'emballement thermique | 270–300°C | 150–200°C |
+| Température de pointe | ~400°C | ~700–900°C |
+| Dégagement d'oxygène lors décomposition | Négligeable | Important (alimente le feu) |
+| Difficulté de suppression d'incendie | Modérée | Élevée |
+
+C'est ce qui a fait de LFP la **chimie dominante pour BESS C&I et industriel mondial**, avec plus de 85% des nouvelles installations en 2025.
+
+## Durée de Vie en Cycles : Le Moteur des Coûts Totaux
+
+| Paramètre | LFP | NMC |
+|---------------------|-----|-----|
+| Durée de vie typique (80% rétention) | 6 000–10 000 cycles | 2 000–4 000 cycles |
+| Durée de vie calendaire | 15–20 ans | 8–12 ans |
+| Taux de dégradation (annuel à 1C) | 1,5–2,5% | 3,5–5,0% |
+
+Un système LFP 500 kWh peut fonctionner **16–27 ans** avec un cycle complet par jour. Un NMC équivalent atteint la même dégradation en **5–11 ans**.
+
+## Densité d'Énergie : Où NMC Domine Encore
+
+| Métrique | LFP | NMC |
+|---------------|-----|-----|
+| Densité gravimétrique cellule | 140–170 Wh/kg | 200–260 Wh/kg |
+| Densité volumétrique cellule | 300–400 Wh/L | 500–700 Wh/L |
+| Niveau système | 80–110 Wh/kg | 120–160 Wh/kg |
+
+Pour le **stockage stationnaire**, le poids et le volume sont rarement des contraintes décisives.
+
+## Comparaison des Coûts
+
+| Facteur de Coût | LFP | NMC |
+|------------|-----|-----|
+| Coût cellule (2025-2026, $/kWh) | 50–65 $ | 80–110 $ |
+| Coût installé ($/kWh, C&I) | 280–380 $ | 380–480 $ |
+| Teneur en cobalt | 0% | 5–20% |
+| LCOS ($/MWh) | 120–180 $ | 200–300+ $ |
+
+**Zéro cobalt** dans LFP = protection contre les risques géopolitiques et éthiques.
+
+## Guide d'Application
+
+### Choisir LFP quand :
+1. La sécurité est primordiale — C&I près de bâtiments occupés
+2. La durée de vie en cycles est importante — réglage de fréquence, écrêtement de pointe
+3. Le coût total de possession est la priorité
+4. Durée de projet 10+ ans
+5. Conformité durabilité requise — Règlement UE sur les batteries
+
+### Considérer NMC quand :
+1. Espace extrêmement contraint — installations en toiture
+2. Projets de démonstration à courte durée de vie
+
+## Tendance du Secteur : Dominance LFP
+
+**85%+ des nouvelles installations BESS utilisent LFP.** LFP est le choix évident pour 95% des projets stationnaires.
+
+## Construisez Votre BESS LFP avec SolarStoragePro
+
+Nos **armoires batteries C&I** (100–500 kWh) et **containers BESS Grid-Scale** (1–5 MW) sont construits exclusivement sur technologie LFP :
+- LFP **8 000+ cycles** à 1C (80% DoD)
+- Suppression d'incendie triple couche
+- Refroidissement liquide intégré **ΔT <2°C**
+- Surveillance BMS niveau cellule
+- Certifications complètes : IEC 62619, UN38.3, GB/T 36276-2023, CE, IEC 60730
+
+Contactez notre équipe d'ingénierie pour une consultation technique gratuite.

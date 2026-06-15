@@ -1,0 +1,190 @@
+Selecting the right battery energy storage supplier is one of the most consequential decisions in any BESS project. The wrong choice can lead to schedule delays, safety incidents, performance shortfalls, and costly warranty disputes. This framework provides a structured approach to evaluating and comparing suppliers.
+
+## The 15-Point Evaluation Framework
+
+### 1. Manufacturing Capability & Capacity
+
+**What to assess:**
+- Annual production capacity (GWh)
+- Vertical integration (do they make cells, modules, and systems, or just assemble?)
+- Manufacturing locations and supply chain resilience
+- Production lead times and on-time delivery track record
+
+**Red flags:** Suppliers who can't provide factory audit reports, those with single-source cell dependencies, or those with less than 1 GWh annual capacity.
+
+### 2. Product Certification
+
+**What to assess:**
+- IEC 62619, UL 9540A, UN38.3, CE, GB/T 36276
+- Market-specific certifications for your target regions
+- Certification scope (cell-level, module-level, system-level)
+- Expiration dates and maintenance plans
+
+**Red flags:** Partial certifications, expired certificates, or "certification pending" with no confirmed timeline.
+
+### 3. Cell Chemistry & Performance
+
+**What to assess:**
+- Cell chemistry (LFP is the industry standard for C&I/utility)
+- Cycle life at rated power (minimum 6,000 at 0.5C; 8,000+ preferred)
+- Calendar life (10+ years)
+- Round-trip efficiency at system level (>87%)
+- Degradation curve and end-of-warranty capacity guarantee (≥70% EOL)
+
+**Red flags:** NMC chemistry for stationary storage (fire risk), vague cycle life claims without test conditions, or no explicit EOL capacity guarantee.
+
+### 4. Thermal Management
+
+**What to assess:**
+- Cooling technology (liquid cooling preferred for C&I/utility)
+- Cell temperature uniformity (ΔT <3°C within a pack)
+- Performance in ambient temperatures from -20°C to +50°C
+- Heating capability for cold-climate deployment
+
+**Red flags:** Air cooling only for systems >100 kWh, no heater for cold climate, or ΔT >5°C within a pack.
+
+### 5. Fire Safety System
+
+**What to assess:**
+- Number of fire suppression layers (minimum 3: pack, cluster, container)
+- Fire suppression agents (perfluorohexanone, aerosol, water spray)
+- Gas detection and early warning systems
+- Fire compartmentalization between racks/strings
+- Compliance with NFPA 855 / local fire codes
+
+**Red flags:** Single-layer fire suppression, no gas detection, or fire system not tested as an integrated unit.
+
+### 6. BMS & EMS Capabilities
+
+**What to assess:**
+- BMS measurement accuracy (voltage ±5mV, temperature ±1°C)
+- Cell-level monitoring vs module-level only
+- EMS features: scheduling, arbitrage, frequency regulation, demand response
+- Communication protocols (Modbus, DNP3, IEC 61850, MQTT)
+- Remote monitoring and OTA update capability
+
+**Red flags:** Module-level-only BMS, proprietary communication protocols with no integration documentation, or no remote monitoring.
+
+### 7. System Integration Experience
+
+**What to assess:**
+- Number of completed projects and total deployed capacity
+- Experience with your specific application (frequency regulation, peak shaving, microgrid)
+- References from customers in your region
+- Case studies with performance data
+
+**Red flags:** Fewer than 10 completed projects, no reference projects in your application type, or no willing references.
+
+### 8. Warranty Terms
+
+**What to assess:**
+- Warranty duration (10 years minimum for C&I/utility)
+- Capacity guarantee at end of warranty (≥70% retained capacity)
+- What's excluded (improper operation, force majeure, etc.)
+- Process for warranty claims and replacement
+- Whether warranty is backed by insurance or parent company guarantee
+
+**Red flags:** Warranties shorter than 10 years, no explicit capacity guarantee, exclusions that effectively void the warranty for common operating conditions.
+
+### 9. After-Sales Support
+
+**What to assess:**
+- 24/7 technical support availability
+- Remote monitoring and diagnostic capability
+- Spare parts availability and delivery time
+- Local service team or authorized service partner
+- Software update frequency and change management process
+
+**Red flags:** No 24/7 support, no remote monitoring, spare parts lead time >4 weeks, or no local service presence.
+
+### 10. Financial Stability
+
+**What to assess:**
+- Company financials (revenue, profitability, debt ratio)
+- Years in business and ownership structure
+- Product liability insurance coverage
+- Bank references or credit rating
+- Parent company backing (if applicable)
+
+**Red flags:** Startups less than 3 years old, companies with no product liability insurance, or those with recent financial restructuring.
+
+### 11. Compliance with Grid Codes
+
+**What to assess:**
+- Experience with grid compliance testing in your target market
+- Available grid code certifications (IEEE 1547, IEC 61850, etc.)
+- Anti-islanding and protection relay capabilities
+- Power quality compliance (harmonics, flicker, DC injection)
+
+**Red flags:** No grid compliance experience in your market, no anti-islanding protection, or no power quality test reports.
+
+### 12. Scalability & Future-Proofing
+
+**What to assess:**
+- Modular architecture for easy capacity expansion
+- Software upgradeability for new revenue streams
+- Compatibility with emerging standards and regulations
+- Planned product roadmap and lifecycle management
+
+**Red flags:** Proprietary and locked architectures, no software update path, or products near end-of-life.
+
+### 13. Environmental & Sustainability
+
+**What to assess:**
+- Carbon footprint of manufacturing
+- Recyclability of battery components
+- Compliance with EU Battery Regulation sustainability requirements
+- Environmental management system (ISO 14001)
+
+**Red flags:** No recycling program, no sustainability reporting, or non-compliance with emerging EU Battery Regulation.
+
+### 14. Pricing & Commercial Terms
+
+**What to assess:**
+- Total cost of ownership (not just equipment price)
+- Payment terms and milestones
+- Performance guarantees and liquidated damages
+- Cost of optional services (O&M, extended warranty, performance optimization)
+
+**Red flags:** Prices significantly below market (quality risk), full upfront payment required, or no performance guarantees.
+
+### 15. References & Track Record
+
+**What to assess:**
+- Willingness to provide customer references
+- Third-party performance verification
+- Industry reputation and analyst coverage
+- Awards, certifications, and industry memberships
+
+**Red flags:** No willing references, no third-party verified performance data, or negative industry reports.
+
+## Weighted Scoring System
+
+Not all criteria carry equal weight. Here's a suggested weighting for a typical C&I project:
+
+| Category | Weight |
+|----------|--------|
+| Safety & Certification (3, 5, 6) | 25% |
+| Performance & Technology (4, 6, 12) | 20% |
+| Warranty & Support (8, 9) | 15% |
+| Track Record (7, 15) | 15% |
+| Commercial (14, 10) | 10% |
+| Future-Proofing (11, 12, 13) | 10% |
+| Manufacturing (1, 2) | 5% |
+
+## SolarStoragePro Evaluation Summary
+
+| Criterion | Rating |
+|-----------|--------|
+| Manufacturing capacity | 3.7+ GWh/year, vertically integrated |
+| Certifications | IEC 62619, UN38.3, GB/T 36276, CE, IEC 60730 |
+| Cell chemistry | LFP, 8,000+ cycles at 1C |
+| Thermal management | Liquid cooling, ΔT <2°C |
+| Fire safety | 3-layer (pack/cluster/container) |
+| BMS/EMS | Cell-level monitoring, AGC/FCAS ready |
+| Deployed capacity | 500+ MWh across 50+ countries |
+| Warranty | 10-year, ≥70% EOL capacity guarantee |
+| Support | 24/7, remote monitoring, OTA updates |
+| Financial stability | 10+ years, product liability insured |
+
+Contact us for a detailed evaluation package including test reports, reference project data, and commercial terms.

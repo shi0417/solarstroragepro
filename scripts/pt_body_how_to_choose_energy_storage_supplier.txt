@@ -1,0 +1,109 @@
+Selecionar o fornecedor certo de sistema de armazenamento de energia por bateria é uma das decisões mais importantes em qualquer projeto BESS. Esta estrutura fornece uma abordagem estruturada para avaliar e comparar fornecedores.
+
+## A Estrutura de Avaliação de 15 Pontos
+
+### 1. Capacidade e Competência de Fabricação
+
+**O que avaliar:**
+- Capacidade de produção anual (GWh)
+- Integração vertical (fabricam células, módulos e sistemas?)
+- Locais de fabricação e resiliência da cadeia de suprimentos
+- Prazos de produção e histórico de entrega pontual
+
+**Sinais de alerta:** Fornecedores que não podem fornecer relatórios de auditoria de fábrica, com dependência de fonte única, ou menos de 1 GWh de capacidade anual.
+
+### 2. Certificação de Produtos
+
+**O que avaliar:**
+- IEC 62619, UL 9540A, UN38.3, CE, GB/T 36276
+- Certificações específicas do mercado para suas regiões-alvo
+- Escopo da certificação (nível de célula, módulo, sistema)
+- Datas de validade e planos de manutenção
+
+### 3. Química e Desempenho das Células
+
+**O que avaliar:**
+- Química da célula (LFP é o padrão da indústria para C&I)
+- Vida útil em ciclos (mínimo 6.000 a 0,5C; 8.000+ preferido)
+- Vida útil em calendário (10+ anos)
+- Eficiência de ida e volta em nível de sistema (>87%)
+- Garantia de capacidade no fim da garantia (≥70% EOL)
+
+### 4. Gerenciamento Térmico
+
+**O que avaliar:**
+- Tecnologia de resfriamento (líquido preferido para C&I)
+- Uniformidade de temperatura das células (ΔT <3°C)
+- Desempenho de -20°C a +50°C
+
+### 5. Sistema de Segurança Contra Incêndio
+
+**O que avaliar:**
+- Número de camadas de supressão (mínimo 3: pack, cluster, container)
+- Agentes de supressão (perfluorohexanona, aerossol, aspersão de água)
+- Detecção de gás e sistemas de alerta precoce
+- Conformidade NFPA 855
+
+### 6. Capacidades BMS e EMS
+
+**O que avaliar:**
+- Precisão de medição BMS (tensão ±5mV, temperatura ±1°C)
+- Monitoramento a nível de célula
+- Recursos EMS: agendamento, arbitragem, regulação de frequência
+- Protocolos de comunicação (Modbus, DNP3, IEC 61850)
+
+### 7. Experiência em Integração de Sistemas
+
+- Número de projetos concluídos e capacidade total implantada
+- Experiência na sua aplicação específica
+- Referências de clientes na sua região
+
+### 8. Termos de Garantia
+
+- Duração (mínimo 10 anos para C&I)
+- Garantia de capacidade no final (≥70% de capacidade retida)
+- Processo de reclamação e substituição
+
+### 9. Suporte Pós-Venda
+
+- Suporte técnico 24/7
+- Monitoramento remoto
+- Disponibilidade de peças de reposição
+- Equipe de serviço local
+
+### 10-15. Critérios Adicionais
+
+- **Estabilidade financeira:** Receitas, rentabilidade, seguro de responsabilidade
+- **Conformidade com códigos de rede:** IEEE 1547, IEC 61850
+- **Escalabilidade:** Arquitetura modular
+- **Sustentabilidade:** Pegada de carbono, programa de reciclagem
+- **Preços:** Custo total de propriedade
+- **Referências:** Dados de desempenho verificados por terceiros
+
+## Sistema de Ponderação Sugerido
+
+| Categoria | Peso |
+|----------|--------|
+| Segurança e Certificação | 25% |
+| Desempenho e Tecnologia | 20% |
+| Garantia e Suporte | 15% |
+| Histórico | 15% |
+| Comercial | 10% |
+| Preparação para o Futuro | 10% |
+| Fabricação | 5% |
+
+## Resumo de Avaliação SolarStoragePro
+
+| Critério | Avaliação |
+|-----------|--------|
+| Capacidade de fabricação | 3,7+ GWh/ano, verticalmente integrado |
+| Certificações | IEC 62619, UN38.3, GB/T 36276, CE |
+| Química da célula | LFP, 8.000+ ciclos a 1C |
+| Gerenciamento térmico | Resfriamento líquido, ΔT <2°C |
+| Segurança contra incêndio | 3 camadas (pack/cluster/container) |
+| BMS/EMS | Monitoramento a nível de célula |
+| Capacidade implantada | 500+ MWh em 50+ países |
+| Garantia | 10 anos, ≥70% EOL |
+| Suporte | 24/7, monitoramento remoto |
+
+Entre em contato para um pacote de avaliação detalhado.

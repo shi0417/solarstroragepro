@@ -1,0 +1,106 @@
+Para que os sistemas de armazenamento de energia por bateria (BESS) sejam implantados comercialmente, eles devem atender a uma complexa rede de requisitos de certificação internacionais e regionais. Compreender esses padrões é essencial para desenvolvedores de projetos, contratantes EPC e integradores de sistemas. Este guia detalha as principais certificações e explica o que cada uma significa para o seu projeto.
+
+## Por que a Certificação é Importante
+
+As certificações de armazenamento por bateria servem a três propósitos críticos:
+
+1. **Garantia de segurança:** As certificações verificam que o sistema foi testado contra padrões de segurança reconhecidos, reduzindo o risco de fuga térmica, incêndio e riscos elétricos.
+2. **Conformidade regulatória:** A maioria das jurisdições exige certificações específicas antes de conceder licenças de instalação ou aprovação de interligação à rede.
+3. **Seguro e financiamento:** Credores e seguradoras normalmente exigem equipamento certificado como condição para financiamento e cobertura do projeto.
+
+## Principais Padrões de Bateria
+
+### IEC 62619 — Requisitos de Segurança para Baterias Industriais
+
+**Escopo:** Requisitos de segurança para células e baterias secundárias de lítio usadas em aplicações industriais, incluindo BESS.
+
+**Principais requisitos:**
+- Teste de abuso térmico (aquecimento a 130°C por 10 minutos)
+- Teste de esmagamento (força igual à massa da célula × 1000g)
+- Teste de sobrecarga (carregamento a 150% do limite superior de tensão)
+- Teste de curto-circuito externo
+- Teste de queda (queda de 1m sobre concreto)
+
+**Onde exigido:** UE, Ásia-Pacífico, Oriente Médio, África — cada vez mais a linha de base global.
+
+### UL 9540A — Método de Teste de Propagação de Fogo
+
+**Escopo:** Uma metodologia de teste que avalia as características de propagação de incêndio das instalações BESS.
+
+**Aspectos principais:**
+- Teste de iniciação de fuga térmica a nível de célula
+- Teste de propagação a nível de módulo
+- Teste de fogo a nível de unidade com avaliação de sprinkler
+
+**Onde exigido:** EUA, Canadá — exigido pela maioria das jurisdições dos EUA conforme NFPA 855.
+
+### UN38.3 — Testes de Segurança de Transporte
+
+**Escopo:** Testes de segurança para baterias de lítio durante transporte aéreo, marítimo, rodoviário e ferroviário.
+
+**Testes principais:**
+- Simulação de altitude
+- Teste térmico (-40°C a +75°C, 6 ciclos)
+- Teste de vibração
+- Teste de choque (impulso de 150g meia-seno)
+- Teste de curto-circuito externo
+- Teste de sobrecarga
+- Teste de descarga forçada
+
+**Onde exigido:** Global — obrigatório para transporte de baterias de lítio no mundo todo.
+
+### GB/T 36276-2023 — Padrão Nacional Chinês
+
+**Escopo:** Requisitos técnicos e métodos de teste para BESS de íons de lítio na China.
+
+**Principais requisitos:**
+- Testes de desempenho e segurança da célula
+- Requisitos de integração do módulo
+- Verificação de desempenho a nível de sistema
+- Teste de vida útil (≥6.000 ciclos a 0,5C)
+
+**Onde exigido:** China — obrigatório.
+
+## Requisitos Regionais de Certificação
+
+### União Europeia (Marcação CE)
+
+- **Diretiva de Baixa Tensão 2014/35/UE**
+- **Diretiva EMC 2014/30/UE**
+- **Regulamento de Baterias 2023/1542**
+- **Diretiva de Máquinas 2006/42/CE**
+
+### América do Norte
+
+- **UL 9540,** **UL 9540A,** **NFPA 855,** **IEEE 2800,** **NEC Artigo 706**
+
+### Ásia-Pacífico
+
+- **Japão:** JIS C 8715-2
+- **Austrália:** AS/NZS 5139
+- **Coreia do Sul:** KC, KOSHA
+- **Índia:** BIS, CEA
+
+## Cronograma de Certificação
+
+| Certificação | Prazo Típico | Faixa de Custo |
+|--------------|-----------------|------------|
+| IEC 62619 | 3–6 meses | $50.000–$150.000 |
+| UL 9540A | 4–8 meses | $100.000–$300.000 |
+| UN38.3 | 2–4 meses | $10.000–$30.000 |
+| Marcação CE | 2–4 meses | $20.000–$80.000 |
+| GB/T 36276 | 4–6 meses | ¥200.000–¥500.000 |
+
+## Dicas Estratégicas
+
+1. **Comece cedo:** Inicie o processo 6–12 meses antes da implantação planejada.
+2. **Priorize por mercado:** UE: IEC 62619 e CE. EUA: UL 9540/9540A.
+3. **Aproveite certificações existentes:** Um programa de teste bem planejado pode reduzir custos totais em 30–40%.
+4. **Trabalhe com laboratórios experientes:** Escolha TÜV, SGS, UL ou Intertek.
+
+## Status de Certificação SolarStoragePro
+
+Todos os produtos SolarStoragePro possuem as seguintes certificações:
+- IEC 62619, UN38.3, GB/T 36276-2023, GB/T 44240, IEC 60730, Marcação CE
+
+Testes UL 9540A disponíveis sob consulta para projetos do mercado americano. Contate nossa equipe de conformidade.

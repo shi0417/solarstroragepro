@@ -1,0 +1,85 @@
+## Warum richtige BESS-Dimensionierung wichtig ist
+
+Die Dimensionierung eines BESS ist die wichtigste Einzelentscheidung jedes Speicherprojekts. Überdimensionierung bindet Kapital in ungenutzter Kapazität; Unterdimensionierung verfehlt Ertragsfenster. Mit Kosten von **$280–340/kWh** bedeutet selbst ein 10%-Fehler bei einem 10-MWh-Projekt **$280K–340K** an verschwendetem CAPEX.
+
+## Schritt 1: Anwendung und Revenue Stack definieren
+
+| Anwendung | Primärwert | Typische Dauer |
+|---|---|---|
+| Lastspitzenkappung | Leistungspreissenkung | 2–4 Stunden |
+| Frequenzregelung | Systemdienstleistungen | 15–30 min |
+| Solar-Verschiebung | Energiearbitrage | 3–5 Stunden |
+| Notstrom | Resilienz | 4–8 Stunden |
+
+**Regel:** Zuerst für die Anwendung mit höchster Priorität dimensionieren.
+
+## Schritt 2: Energiekapazität (kWh) berechnen
+
+### Für Lastspitzenkappung
+
+1. 15-Minuten-Intervalldaten für 12 Monate besorgen
+2. Spitzenbedarfsfenster identifizieren
+3. Zielspitzenbedarf festlegen
+4. Energie oberhalb des Ziels integrieren
+
+**Beispiel:** Spitzen 800 kW, Ziel 500 kW, 3-Stunden-Fenster:
+- Leistung: 300 kW, Energie: 300 × 3 = 900 kWh
+- Mit 15% Marge: **≈1.035 kWh**
+
+### Für Solar-Verschiebung
+
+6 MWh Überschuss ÷ 0,88 RTE ≈ **6,8 MWh**
+
+## Schritt 3: Leistungsbewertung (kW/MW)
+
+| C&I-System | Typische Leistung | Typische Energie | Dauer |
+|---|---|---|---|
+| Kleines C&I | 100–250 kW | 200–500 kWh | 2 h |
+| Mittleres C&I | 250–500 kW | 500–1.000 kWh | 2–4 h |
+| Große C&I | 500 kW–2 MW | 1–4 MWh | 2–4 h |
+| Grid-Scale | 2–10 MW | 4–40 MWh | 2–4 h |
+
+## Schritt 4: Degradation und nutzbare Kapazität
+
+1. **Entladetiefe (DoD):** 80–90% für LFP empfohlen
+2. **Round-Trip-Effizienz (RTE):** 87–92% für LFP
+3. **End-of-Life-Marge:** 80% Kapazitätserhalt in Jahr 10
+
+**Formel:** Nennleistung = (Energiebedarf) ÷ (DoD) ÷ (RTE) ÷ (EoL-Faktor)
+
+**Beispiel:** 1.000 kWh → 1.000 ÷ 0,90 ÷ 0,90 ÷ 0,80 = **1.543 kWh**
+
+## Schritt 5: Die richtige Chemie wählen
+
+| Parameter | LFP | NMC |
+|---|---|---|
+| Zyklen (80% SoH) | 6.000–10.000 | 2.000–4.000 |
+| DoD optimal | 80–90% | 70–80% |
+| RTE (System) | 87–92% | 85–90% |
+| Kosten ($/kWh, 2025) | $80–100 | $95–120 |
+
+**LFP ist die klare Wahl** für stationäre Speicher mit täglichem Zyklenbetrieb.
+
+## Schritt 6: Thermische und Standortbedingungen
+
+1. **Grundfläche:** 20ft-BESS-Container benötigt 15–25 m²
+2. **Temperatur:** Über 35°C → 5–15% Derating
+3. **Höhe:** Über 2.000m → 1% Derating pro 100m
+
+## Schritt 7: Mit Simulation validieren
+
+8.760-Stunden-Jahressimulation mit HOMER Pro, PVsyst oder PyPSA.
+
+## Schnellreferenztabelle
+
+| Anwendung | Leistung | Energie | Dauer |
+|---|---|---|---|
+| Kleines C&I Peak Shaving | 100–250 kW | 200–500 kWh | 2 h |
+| Große C&I Peak Shaving | 500 kW–2 MW | 1–4 MWh | 2–4 h |
+| Grid Frequenzregelung | 2–10 MW | 1–5 MWh | 0,25–0,5 h |
+| Solar Time-Shifting | 1–5 MW | 4–20 MWh | 2–4 h |
+| Rechenzentrum Backup | 1–10 MW | 4–40 MWh | 4–8 h |
+
+## Expertensupport
+
+**SolarStoragePro** bietet **kostenlose vorläufige Dimensionierungsbewertungen**. Kontaktieren Sie uns für eine Dimensionierungsanalyse innerhalb von 48 Stunden.

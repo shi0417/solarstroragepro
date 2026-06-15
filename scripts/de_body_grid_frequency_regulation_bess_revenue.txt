@@ -1,0 +1,84 @@
+Die Frequenzregelung des Stromnetzes ist die höchstwertige Systemdienstleistung für Batterie-Energiespeichersysteme (BESS). Anders als Energiearbitrage erzielt Frequenzregelung Premium-Preise, da sie Geschwindigkeit, Präzision und Zuverlässigkeit erfordert, die nur Batterien liefern können.
+
+## Wie Frequenzregelungsmärkte funktionieren
+
+Die Netzfrequenz muss in einem engen Band um 50 Hz (bzw. 60 Hz in Nordamerika) gehalten werden.
+
+### Die Drei Stufen der Frequenzregelung
+
+| Stufe | Reaktionszeit | Dauer | BESS-Rolle |
+|------|-------------|----------|-----------|
+| **Primär (FCR/PFR)** | 1–30 Sekunden | Bis 15 min | ★★★★★ Dominant |
+| **Sekundär (aFRR/RegD)** | 30 s–15 min | 15 min–1 Stunde | ★★★★ Stark |
+| **Tertiär (mFRR/Reserve)** | 15 min+ | 1–24 Stunden | ★★ Nische |
+
+**Fast Frequency Response (FFR)** ist eine aufkommende ultraschnelle Kategorie (<1 Sekunde), bei der BESS keinerlei Konkurrenz hat. Märkte wie UK Dynamic Containment und Australien Very Fast FCAS zahlen außergewöhnliche Prämien.
+
+### Wichtige Marktmechanismen
+
+- **Regelung-up und Regelung-down:** Der Netzbetreiber sendet ein dynamisches Signal (alle 2–4 Sekunden aktualisiert). Das BESS folgt diesem Signal in Echtzeit.
+- **Mileage-Kompensation:** Viele Märkte (PJM, CAISO, ERCOT) zahlen nach `Mileage` — den gesamten gelieferten MW an Regelbewegung, nicht nur reservierte Kapazität.
+- **Performance-Scoring:** PJMs RegD-Markt verwendet einen `Performance-Score` (0–100). BESS erreicht typischerweise 95–100, verglichen mit 60–80 für thermische Anlagen.
+
+## Warum BESS die Frequenzregelung dominiert
+
+| Leistungsmetrik | BESS (LFP) | Gas Spitzenlast | Pump-Speicher |
+|--------------------|------------|------------|--------------|
+| Reaktionszeit | <100 ms | 2–5 Minuten | 10–60 Sekunden |
+| Rampenrate | Sofort (0,2C→2C) | 5–10% pro min | 20–50% pro min |
+| Genauigkeit (PJM) | 95–100 | 60–75 | 50–70 |
+| Mileage-Verhältnis | 10–15× | 1–2× | 1–3× |
+
+**Der Mileage-Multiplikatoreffekt ist transformativ.** In PJMs RegD-Markt verdient ein 20-MW-BESS mit 12× Mileage effektiv an **240 MW Regelungsausgang**.
+
+## Einnahmemodelle und reale Erträge
+
+### Revenue Stacking für Frequenzregelung
+
+1. **Frequenzregelung** — Basiseinnahmen (40–60% des Gesamten)
+2. **Energiearbitrage** — Günstig laden, teuer entladen (20–30%)
+3. **Kapazitätsmarkt** — Garantierte Verfügbarkeitszahlungen (10–20%)
+4. **Schwarzstart/Inertia-Dienste** — Premium-Dienste (5–15%)
+
+### Reale Ertragsbenchmarks nach Markt
+
+| Markt | Dienst | Ertragsbereich ($/MW/Jahr) | BESS-Größe |
+|--------|---------|--------------------------|-----------|
+| PJM (US) | RegD | $180.000–$320.000 | 20 MW / 10 MWh |
+| UK | Dynamic Containment | £100.000–£180.000 | 10 MW / 5 MWh |
+| Australien NEM | FCAS (8 Märkte) | AUD $150.000–$400.000 | 10–50 MW |
+| ERCOT (Texas) | Fast Responding | $120.000–$250.000 | 10–20 MW |
+| Deutschland | aFRR | €80.000–€160.000 | 10–50 MW |
+| China (Guangdong) | AGC | ¥800.000–¥1.600.000 | 10–20 MW |
+
+### Fallstudie UK Dynamic Containment
+
+Ein 10 MW / 5 MWh BESS:
+- Dienst: Low-Frequency Response (49,5–49,8 Hz)
+- Durchschnittspreis: £12/MW/h in 2025–2026
+- Jährlicher Ertrag: 10 MW × £12 × 8.760 × 75% ≈ **£788.400/Jahr**
+- Kapitalkosten: £3,5–4,5 Millionen
+- Einfache Amortisation: 4,5–5,7 Jahre (nur Frequenzregelung)
+- Mit Revenue Stacking: **3–4 Jahre**
+
+## Technische Anforderungen
+
+1. **Reaktionszeit <200 ms:** Übergang von Leerlauf zu Volllast in <200 Millisekunden.
+2. **C-Rate ≥1C (kontinuierlich):** Für per-Sekunden-Signale wird 2C-Fähigkeit bevorzugt.
+3. **BMS-Genauigkeit:** SOC, Spannung und Temperatur auf Zellebene mit Millisekunden-Präzision.
+4. **Kommunikationsprotokolle:** DNP3, IEC 61850, Modbus TCP obligatorisch.
+5. **Wärmemanagement:** Flüssigkeitskühlung mit ΔT <2°C essentiell.
+6. **SOC-Puffer:** Betrieb typischerweise bei 45–55% SOC.
+7. **Zyklenlebensdauer:** LFP mit 8.000+ Zyklen essentiell.
+
+## Partnerschaft mit SolarStoragePro
+
+Unsere **Grid-Scale-BESS-Container** (1–5 MW) sind für Frequenzregelungsmärkte gebaut:
+- **2C-Rate-LFP-Batteriemodule** für Dauer-Hochleistungsbetrieb
+- **Integrierte Flüssigkeitskühlung**, ΔT <2°C
+- **Grid-Forming PCS** mit <50 ms Reaktionszeit
+- **Smart EMS** mit vorkonfigurierten Algorithmen für PJM RegD, UK DC, Australien FCAS
+- **10-Jahres-Garantie** mit ≥70% EOL-Kapazitätsgarantie
+- Zertifizierungen: IEC 62619, UN38.3, GB/T 36276-2023, CE
+
+Kontaktieren Sie unser Grid-Services-Team für ein maßgeschneidertes Ertragsmodell.

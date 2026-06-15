@@ -1,0 +1,124 @@
+Die Wahl des richtigen Batterie-Energiespeicherlieferanten ist eine der folgenreichsten Entscheidungen in jedem BESS-Projekt. Dieser Rahmen bietet einen strukturierten Ansatz zur Bewertung und zum Vergleich von Lieferanten.
+
+## Der 15-Punkte-Bewertungsrahmen
+
+### 1. Fertigungskapazität und -kompetenz
+
+**Was zu bewerten ist:**
+- Jährliche Produktionskapazität (GWh)
+- Vertikale Integration (produzieren sie Zellen, Module und Systeme oder nur Montage?)
+- Produktionsstandorte und Lieferkettenstabilität
+- Produktions-Lieferzeiten und Liefertreue
+
+**Warnsignale:** Lieferanten, die keine Werksauditberichte vorlegen können, mit Single-Source-Zellenabhängigkeit oder weniger als 1 GWh jährlicher Kapazität.
+
+### 2. Produktzertifizierung
+
+**Was zu bewerten ist:**
+- IEC 62619, UL 9540A, UN38.3, CE, GB/T 36276
+- Marktspezifische Zertifizierungen für Ihre Zielmärkte
+- Zertifizierungsumfang (Zell-, Modul-, Systemebene)
+- Ablaufdaten und Wartungspläne
+
+**Warnsignale:** Teilzertifizierungen, abgelaufene Zertifikate oder "Zertifizierung ausstehend" ohne bestätigten Zeitplan.
+
+### 3. Zellenchemie und Leistung
+
+**Was zu bewerten ist:**
+- Zellenchemie (LFP ist der Industriestandard für C&I/Utility)
+- Zyklenlebensdauer bei Nennleistung (mindestens 6.000 bei 0,5C; 8.000+ bevorzugt)
+- Kalenderlebensdauer (10+ Jahre)
+- Round-Trip-Effizienz auf Systemebene (>87%)
+- Degradationskurve und End-of-Warranty-Kapazitätsgarantie (≥70% EOL)
+
+**Warnsignale:** NMC-Chemie für stationäre Speicher, vage Zyklenlebensdauerbehauptungen, keine EOL-Kapazitätsgarantie.
+
+### 4. Wärmemanagement
+
+**Was zu bewerten ist:**
+- Kühltechnologie (Flüssigkeitskühlung bevorzugt für C&I/Utility)
+- Temperaturgleichmäßigkeit der Zellen (ΔT <3°C innerhalb eines Packs)
+- Leistung bei -20°C bis +50°C Umgebungstemperatur
+- Heizfähigkeit für Kaltklimaeinsatz
+
+### 5. Brandsicherheitssystem
+
+**Was zu bewerten ist:**
+- Anzahl der Brandunterdrückungsschichten (mindestens 3: Pack, Cluster, Container)
+- Brandunterdrückungsmittel (Perfluorhexanon, Aerosol, Wassersprühnebel)
+- Gasdetektion und Frühwarnsysteme
+- NFPA 855 / lokale Brandschutzkonformität
+
+### 6. BMS- und EMS-Fähigkeiten
+
+**Was zu bewerten ist:**
+- BMS-Messgenauigkeit (Spannung ±5mV, Temperatur ±1°C)
+- Überwachung auf Zellenebene
+- EMS-Funktionen: Scheduling, Arbitrage, Frequenzregelung
+- Kommunikationsprotokolle (Modbus, DNP3, IEC 61850, MQTT)
+
+### 7. Systemintegrationserfahrung
+
+**Was zu bewerten ist:**
+- Anzahl abgeschlossener Projekte und installierter Gesamtkapazität
+- Erfahrung mit Ihrer spezifischen Anwendung
+- Referenzen von Kunden in Ihrer Region
+
+### 8. Garantiebedingungen
+
+**Was zu bewerten ist:**
+- Garantiedauer (mindestens 10 Jahre für C&I/Utility)
+- Kapazitätsgarantie am Ende der Garantiezeit (≥70% verbleibende Kapazität)
+- Garantieanspruchsprozess und -ersatz
+
+### 9. After-Sales-Support
+
+**Was zu bewerten ist:**
+- 24/7 technischer Support
+- Fernüberwachung und Diagnosefähigkeit
+- Ersatzteilverfügbarkeit und Lieferzeit
+- Lokales Service-Team
+
+### 10. Finanzielle Stabilität
+
+**Was zu bewerten ist:**
+- Unternehmensfinanzen (Umsatz, Rentabilität)
+- Betriebsjahre und Eigentumsstruktur
+- Produkthaftpflichtversicherung
+
+### 11–15. Weitere Kriterien
+
+- **Netzcode-Konformität:** IEEE 1547, IEC 61850
+- **Skalierbarkeit:** Modulare Architektur
+- **Nachhaltigkeit:** Kohlenstoff-Fußabdruck, Recyclingprogramm
+- **Preisgestaltung:** Gesamtbetriebskosten
+- **Referenzen:** Bereitschaft, Kundenerfahrungen zu teilen
+
+## Gewichtetes Bewertungssystem
+
+| Kategorie | Gewichtung |
+|----------|--------|
+| Sicherheit & Zertifizierung | 25% |
+| Leistung & Technologie | 20% |
+| Garantie & Support | 15% |
+| Erfolgsbilanz | 15% |
+| Kommerziell | 10% |
+| Zukunftssicherheit | 10% |
+| Fertigung | 5% |
+
+## SolarStoragePro Bewertungsübersicht
+
+| Kriterium | Bewertung |
+|-----------|--------|
+| Fertigungskapazität | 3,7+ GWh/Jahr, vertikal integriert |
+| Zertifizierungen | IEC 62619, UN38.3, GB/T 36276, CE |
+| Zellenchemie | LFP, 8.000+ Zyklen bei 1C |
+| Wärmemanagement | Flüssigkühlung, ΔT <2°C |
+| Brandsicherheit | 3-schichtig (Pack/Cluster/Container) |
+| BMS/EMS | Zellenebene-Überwachung |
+| Installierte Kapazität | 500+ MWh in 50+ Ländern |
+| Garantie | 10 Jahre, ≥70% EOL |
+| Support | 24/7, Fernüberwachung, OTA |
+| Finanzielle Stabilität | 10+ Jahre, Produkthaftpflicht |
+
+Kontaktieren Sie uns für ein detailliertes Bewertungspaket.

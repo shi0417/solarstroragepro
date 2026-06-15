@@ -1,0 +1,94 @@
+A instalação de um sistema de armazenamento de energia por bateria comercial e industrial (C&I) é um processo de múltiplas fases que requer planejamento cuidadoso, execução profissional e rigorosa conformidade de segurança. Este guia o conduz por cada etapa, da avaliação inicial do local até o comissionamento final.
+
+## Fase 1: Avaliação do Local e Viabilidade
+
+### Análise do Perfil de Carga
+
+Você precisa de 12 meses de dados de medição por intervalos (15 minutos ou por hora). Métricas principais:
+- **Demanda de pico (kW):** Determina a classificação de potência da bateria
+- **Consumo energético diário (kWh):** Determina a capacidade da bateria
+- **Forma do perfil de carga:** Identifica janelas ótimas de carga/descarga
+- **Fator de potência:** Pode requerer correção
+
+### Levantamento do Local
+
+Um levantamento profissional deve avaliar:
+1. **Espaço disponível:** Gabinetes C&I requerem tipicamente 1,5–3 m² por 100 kWh.
+2. **Infraestrutura elétrica:** Proximidade da chave geral, capacidade do transformador.
+3. **Condições ambientais:** Faixa de temperatura, umidade, zona sísmica.
+4. **Condições do piso:** A superfície deve suportar 3–6 toneladas por gabinete.
+
+### Estudo de Interligação
+
+Seu serviço de utilidade exigirá um estudo de interligação. Tipicamente leva 4–12 semanas.
+
+## Fase 2: Projeto e Engenharia
+
+### Projeto Elétrico
+- Ponto de interligação no lado do cliente do medidor, tipicamente a 480V ou 400V.
+- Dimensionamento do transformador para fluxo de potência bidirecional.
+- Proteção: chaves de desconexão DC/CA, proteção contra sobrecorrente, detecção de falta à terra, antiilhamento.
+
+### Projeto Mecânico
+- Folga mínima de 1m em todos os lados para ventilação e manutenção.
+- Conformidade NFPA 855 para supressão de incêndio.
+- Travamento sísmico em zonas sísmicas.
+- Planejamento de bandejas de cabos DC e CA.
+
+### Licenças
+
+Licenças necessárias: alvará de construção, revisão do corpo de bombeiros, acordo de interligação, licenças ambientais.
+
+## Fase 3: Aquisição e Entrega
+
+| Componente | Prazo Típico |
+|-----------|------------------|
+| Gabinetes de bateria | 8–14 semanas |
+| PCS / Inversor | 10–16 semanas |
+| Controlador EMS | 4–8 semanas |
+| Balance of System | 4–6 semanas |
+
+Notas de entrega: gabinetes pesam 2–6 toneladas. Baterias LFP classificadas como UN3480.
+
+## Fase 4: Instalação
+
+Uma instalação típica de BESS C&I de 500 kWh leva 4–8 semanas:
+
+| Semana | Atividade |
+|------|----------|
+| 1–2 | Preparação do local, fundação |
+| 2–3 | Entrega e posicionamento dos gabinetes |
+| 3–4 | Fiação DC/CA, aterramento, instalação de supressão de incêndio |
+| 4–5 | Instalação de PCS e EMS |
+| 5–6 | Testes, comissionamento |
+| 6–8 | Inspeções finais, entrega |
+
+### Melhores Práticas Críticas
+
+1. Verificação do torque de todas as conexões elétricas.
+2. Teste de isolamento antes da energização.
+3. Aterramento de todos os gabinetes metálicos conforme NEC.
+4. Comissionamento do sistema de supressão de incêndio antes da energização das baterias.
+5. Aplicação de etiquetas de segurança obrigatórias.
+
+## Fase 5: Comissionamento
+
+1. Verificações pré-energização
+2. Teste funcional de baixa tensão
+3. Comissionamento do PCS
+4. Comissionamento do string de baterias
+5. Teste de carga/descarga (meta: >87% eficiência)
+6. Teste de interação com a rede
+7. Aceitação de desempenho (72 horas em modo automático)
+
+## Operações Contínuas
+
+- Monitoramento remoto 24/7
+- Manutenção preventiva trimestral
+- Atualizações regulares de firmware e EMS
+
+## Pronto para Começar?
+
+A SolarStoragePro oferece soluções completas de armazenamento C&I da viabilidade ao comissionamento e manutenção. Nossos gabinetes integrados são pré-testados na fábrica, reduzindo o tempo de instalação no local em até 40%.
+
+Entre em contato para uma avaliação gratuita do local e proposta personalizada.

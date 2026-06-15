@@ -1,0 +1,79 @@
+## Pourquoi un Bon Dimensionnement BESS est Important
+
+Le dimensionnement d'un BESS est la décision la plus conséquente de tout projet de stockage. Surdimensionner bloque du capital ; sous-dimensionner manque des fenêtres de revenus. À **280–340 $/kWh**, une erreur de 10 % sur un projet de 10 MWh représente **280K–340K $** de CAPEX gaspillé.
+
+## Étape 1 : Définir l'Application et le Revenue Stack
+
+| Application | Valeur Principale | Durée Typique |
+|---|---|---|
+| Écrêtement de pointe | Réduction frais de demande | 2–4 heures |
+| Réglage de fréquence | Services auxiliaires | 15–30 min |
+| Décalage solaire | Arbitrage énergétique | 3–5 heures |
+| Alimentation de secours | Résilience | 4–8 heures |
+
+## Étape 2 : Calculer la Capacité Énergétique (kWh)
+
+### Pour Écrêtement de Pointe
+
+1. Obtenir données de charge par intervalles de 15 min sur 12 mois
+2. Identifier la fenêtre de demande de pointe
+3. Définir la demande cible
+4. Intégrer l'énergie au-dessus de la cible
+
+**Exemple :** Pointe 800 kW, cible 500 kW, fenêtre 3 h :
+- Puissance : 300 kW, Énergie : 300 × 3 = 900 kWh
+- Marge 15 % : **≈1 035 kWh**
+
+### Pour Décalage Solaire
+
+6 MWh excédentaire ÷ 0,88 RTE ≈ **6,8 MWh**
+
+## Étape 3 : Déterminer la Puissance (kW/MW)
+
+| Système C&I | Puissance | Énergie | Durée |
+|---|---|---|---|
+| Petit C&I | 100–250 kW | 200–500 kWh | 2 h |
+| C&I moyen | 250–500 kW | 500–1 000 kWh | 2–4 h |
+| Grand C&I | 500 kW–2 MW | 1–4 MWh | 2–4 h |
+| Grid-Scale | 2–10 MW | 4–40 MWh | 2–4 h |
+
+## Étape 4 : Dégradation et Capacité Utilisable
+
+1. **DoD :** 80–90 % pour LFP
+2. **RTE :** 87–92 % pour LFP
+3. **Marge fin de vie :** 80 % rétention à l'an 10
+
+**Formule :** Nominale = (Besoin) ÷ DoD ÷ RTE ÷ Facteur EoL
+
+**Exemple :** 1 000 kWh → 1 000 ÷ 0,90 ÷ 0,90 ÷ 0,80 = **1 543 kWh**
+
+## Étape 5 : Choisir la Bonne Chimie
+
+| Paramètre | LFP | NMC |
+|---|---|---|
+| Cycles (80% SoH) | 6 000–10 000 | 2 000–4 000 |
+| DoD optimal | 80–90% | 70–80% |
+| RTE (système) | 87–92% | 85–90% |
+| Coût ($/kWh) | $80–100 | $95–120 |
+
+**LFP est le choix évident** pour stockage stationnaire avec cyclage quotidien.
+
+## Étape 6 : Considérations Thermiques et Site
+
+1. **Empreinte :** Container 20 pieds → 15–25 m²
+2. **Température :** >35°C → déclassement 5–15 %
+3. **Altitude :** >2 000 m → déclassement 1 % par 100 m
+
+## Tableau de Référence Rapide
+
+| Application | Puissance | Énergie | Durée |
+|---|---|---|---|
+| Petit C&I Peak | 100–250 kW | 200–500 kWh | 2 h |
+| Grand C&I Peak | 500 kW–2 MW | 1–4 MWh | 2–4 h |
+| Réglage fréquence | 2–10 MW | 1–5 MWh | 0,25–0,5 h |
+| Décalage solaire | 1–5 MW | 4–20 MWh | 2–4 h |
+| Backup data center | 1–10 MW | 4–40 MWh | 4–8 h |
+
+## Aide Experte
+
+**SolarStoragePro** propose des **évaluations de dimensionnement préliminaires gratuites**. Contactez-nous pour une analyse sous 48 heures.

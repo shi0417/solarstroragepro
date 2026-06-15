@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "battery-energy-storage-system-sizing-guide",
+    "title": "How to Size a Battery Energy Storage System: A Practical Guide for Commercial and Grid-Scale Projects",
+    "description": "Step-by-step methodology for sizing BESS across peak shaving, frequency regulation, and solar-plus-storage applications. Includes formulas, reference tables, and real-world examples for C&I and grid-scale projects."
+  },
+  {
+    "slug": "ci-solar-storage-installation-guide",
+    "title": "C&I Solar Storage Installation Guide: From Site Prep to Commissioning",
+    "description": "Step-by-step guide to installing a commercial & industrial battery energy storage system, covering site assessment, electrical design, permitting, installation, and commissioning best practices."
+  },
+  {
+    "slug": "commercial-battery-storage-roi",
+    "title": "Commercial Battery Storage ROI: A Complete Guide to Payback Periods and Revenue Streams",
+    "description": "Discover how commercial battery energy storage systems generate ROI through peak shaving, demand charge reduction, frequency regulation, and energy arbitrage. Includes real payback calculations."
+  },
+  {
+    "slug": "grid-frequency-regulation-bess-revenue",
+    "title": "Grid Frequency Regulation with BESS: Revenue Models, Market Access, and Real-World Earnings (2026 Guide)",
+    "description": "Comprehensive analysis of how battery energy storage systems earn revenue from grid frequency regulation markets worldwide. Covers PJM RegD, UK Dynamic Containment, Australia FCAS, and China ancillary services with real earnings data and system requirements."
+  },
+  {
+    "slug": "how-to-choose-energy-storage-supplier",
+    "title": "How to Choose an Energy Storage Supplier: 15-Point Evaluation Framework",
+    "description": "Learn the 15 critical criteria for evaluating battery energy storage suppliers, from manufacturing capability and certification to after-sales support and financial stability."
+  },
+  {
+    "slug": "lfp-vs-nmc-battery-energy-storage",
+    "title": "LFP vs NMC Battery for Energy Storage: Safety, Cost, and Cycle Life Compared",
+    "description": "Comprehensive comparison of LFP (lithium iron phosphate) and NMC (nickel manganese cobalt) battery chemistries for stationary energy storage. Includes safety analysis, cycle life data, cost trends, and application guidance for BESS projects."
+  },
+  {
+    "slug": "lithium-battery-cabinet-vs-rack-mount",
+    "title": "Lithium Battery Cabinet vs Rack Mount: Which Is Right for Your C&I Storage Project?",
+    "description": "Detailed comparison between cabinet-type and rack-mount lithium battery energy storage systems for commercial applications. Understand the trade-offs in cost, installation, maintenance, and scalability."
+  },
+  {
+    "slug": "solar-storage-certification-guide",
+    "title": "Solar Storage System Certification Guide: IEC, UL, CE, and UN38.3 Explained",
+    "description": "Navigate the complex landscape of battery energy storage certifications. Understand IEC 62619, UL 9540A, CE marking, UN38.3, and other critical standards for deploying BESS globally."
+  }
+]

@@ -1,0 +1,94 @@
+L'installation d'un système de stockage d'énergie par batterie commercial et industriel (C&I) est un processus multiphase qui nécessite une planification minutieuse, une exécution professionnelle et une conformité rigoureuse à la sécurité. Ce guide vous accompagne à chaque étape, de l'évaluation initiale du site à la mise en service finale.
+
+## Phase 1 : Évaluation du Site et Faisabilité
+
+### Analyse du Profil de Charge
+
+Vous avez besoin de 12 mois de données de compteur à intervalles (15 minutes ou horaires). Métriques clés :
+- **Demande de pointe (kW) :** Détermine la puissance nominale de la batterie
+- **Consommation énergétique quotidienne (kWh) :** Détermine la capacité de la batterie
+- **Forme du profil de charge :** Fenêtres optimales de charge/décharge
+- **Facteur de puissance :** Peut nécessiter une correction
+
+### Étude de Site
+
+Une étude professionnelle doit évaluer :
+1. **Espace disponible :** 1,5–3 m² par 100 kWh.
+2. **Infrastructure électrique :** Proximité du tableau principal, capacité du transformateur.
+3. **Conditions environnementales :** Plage de température, humidité, zone sismique.
+4. **Conditions du sol :** La surface doit supporter 3–6 tonnes par armoire.
+
+### Étude de Raccordement
+
+Votre service public exigera une étude de raccordement. Délai typique : 4–12 semaines.
+
+## Phase 2 : Conception et Ingénierie
+
+### Conception Électrique
+- Point de raccordement côté client du compteur, typiquement à 480V ou 400V.
+- Dimensionnement du transformateur pour le flux bidirectionnel.
+- Protection : sectionneurs DC/AC, protection contre les surintensités, détection de défaut à la terre, anti-îlotage.
+
+### Conception Mécanique
+- Disposition : 1m de dégagement minimum sur tous les côtés.
+- Protection incendie conforme NFPA 855.
+- Contreventement sismique dans les zones concernées.
+- Chemins de câbles DC et AC.
+
+### Permis
+
+Permis requis : permis de construire, examen par les pompiers, accord de raccordement, permis environnementaux.
+
+## Phase 3 : Approvisionnement et Livraison
+
+| Composant | Délai Typique |
+|-----------|------------------|
+| Armoires batterie | 8–14 semaines |
+| PCS / Onduleur | 10–16 semaines |
+| Contrôleur EMS | 4–8 semaines |
+| Balance of System | 4–6 semaines |
+
+Points clés de livraison : armoires de 2–6 tonnes, accès camion et grue. Batteries LFP classées UN3480.
+
+## Phase 4 : Installation
+
+Installation typique de 500 kWh : 4–8 semaines.
+
+| Semaine | Activité |
+|------|----------|
+| 1–2 | Préparation du site, fondations |
+| 2–3 | Livraison et positionnement des armoires |
+| 3–4 | Câblage DC/AC, mise à la terre |
+| 4–5 | Installation PCS/EMS |
+| 5–6 | Tests, mise en service |
+| 6–8 | Inspections finales, remise |
+
+### Bonnes Pratiques
+
+1. Vérification du couple de serrage selon spécifications fabricant.
+2. Test d'isolement avant mise sous tension.
+3. Mise à la terre de toutes les enceintes métalliques.
+4. Test du système de protection incendie avant alimentation des batteries.
+5. Étiquetage complet.
+
+## Phase 5 : Mise en Service
+
+1. Vérifications préalables à la mise sous tension
+2. Test fonctionnel basse tension
+3. Mise en service du PCS (test anti-îlotage)
+4. Mise en service des chaînes de batteries
+5. Test de charge/décharge (rendement cible >87%)
+6. Test d'interaction réseau
+7. Essai de performance de 72 heures
+
+## Exploitation Continue
+
+- Surveillance à distance 24/7
+- Maintenance préventive trimestrielle
+- Mises à jour logicielles régulières
+
+## Prêt à Démarrer ?
+
+SolarStoragePro fournit des solutions clés en main de stockage C&I, de l'étude de faisabilité à la mise en service et à la maintenance. Nos armoires intégrées sont pré-testées en usine, réduisant le temps d'installation sur site jusqu'à 40%.
+
+Contactez-nous pour une évaluation gratuite du site et une proposition de système personnalisée.

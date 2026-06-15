@@ -1,0 +1,109 @@
+Memilih pemasok sistem penyimpanan energi baterai yang tepat adalah salah satu keputusan terpenting dalam proyek BESS apa pun. Kerangka ini memberikan pendekatan terstruktur untuk mengevaluasi dan membandingkan pemasok.
+
+## Kerangka Evaluasi 15 Poin
+
+### 1. Kemampuan dan Kapasitas Manufaktur
+
+**Yang perlu dinilai:**
+- Kapasitas produksi tahunan (GWh)
+- Integrasi vertikal (apakah mereka membuat sel, modul, dan sistem?)
+- Lokasi manufaktur dan ketahanan rantai pasok
+- Lead time produksi dan rekam jejak pengiriman tepat waktu
+
+**Bendera merah:** Pemasok yang tidak dapat memberikan laporan audit pabrik, dengan ketergantungan sumber tunggal, atau kurang dari 1 GWh kapasitas tahunan.
+
+### 2. Sertifikasi Produk
+
+**Yang perlu dinilai:**
+- IEC 62619, UL 9540A, UN38.3, CE, GB/T 36276
+- Sertifikasi khusus pasar untuk wilayah target
+- Cakupan sertifikasi (tingkat sel, modul, sistem)
+- Tanggal kadaluarsa dan rencana pemeliharaan
+
+### 3. Kimia dan Performa Sel
+
+**Yang perlu dinilai:**
+- Kimia sel (LFP adalah standar industri untuk C&I)
+- Umur siklus (minimum 6.000 pada 0,5C; 8.000+ disukai)
+- Umur kalender (10+ tahun)
+- Efisiensi round-trip tingkat sistem (>87%)
+- Jaminan kapasitas akhir garansi (≥70% EOL)
+
+### 4. Manajemen Termal
+
+**Yang perlu dinilai:**
+- Teknologi pendinginan (pendinginan cair disukai untuk C&I)
+- Keseragaman suhu sel (ΔT <3°C)
+- Performa pada -20°C hingga +50°C
+
+### 5. Sistem Keamanan Kebakaran
+
+**Yang perlu dinilai:**
+- Jumlah lapisan pemadam (minimum 3: pack, cluster, container)
+- Agen pemadam (perfluorohexanone, aerosol, semprotan air)
+- Deteksi gas dan sistem peringatan dini
+- Kepatuhan NFPA 855
+
+### 6. Kemampuan BMS dan EMS
+
+**Yang perlu dinilai:**
+- Akurasi pengukuran BMS (tegangan ±5mV, suhu ±1°C)
+- Pemantauan tingkat sel
+- Fitur EMS: penjadwalan, arbitrase, regulasi frekuensi
+- Protokol komunikasi (Modbus, DNP3, IEC 61850)
+
+### 7. Pengalaman Integrasi Sistem
+
+- Jumlah proyek selesai dan total kapasitas terpasang
+- Pengalaman dengan aplikasi spesifik Anda
+- Referensi dari pelanggan di wilayah Anda
+
+### 8. Ketentuan Garansi
+
+- Durasi (minimum 10 tahun untuk C&I)
+- Jaminan kapasitas akhir garansi (≥70%)
+- Proses klaim dan penggantian garansi
+
+### 9. Dukungan Purna Jual
+
+- Dukungan teknis 24/7
+- Pemantauan jarak jauh
+- Ketersediaan suku cadang
+- Tim layanan lokal
+
+### 10-15. Kriteria Tambahan
+
+- **Stabilitas keuangan:** Pendapatan, profitabilitas, asuransi tanggung jawab
+- **Kepatuhan kode jaringan:** IEEE 1547, IEC 61850
+- **Skalabilitas:** Arsitektur modular
+- **Keberlanjutan:** Jejak karbon, program daur ulang
+- **Harga:** Total biaya kepemilikan
+- **Referensi:** Data kinerja terverifikasi pihak ketiga
+
+## Sistem Pembobotan yang Disarankan
+
+| Kategori | Bobot |
+|----------|--------|
+| Keamanan dan Sertifikasi | 25% |
+| Performa dan Teknologi | 20% |
+| Garansi dan Dukungan | 15% |
+| Rekam Jejak | 15% |
+| Komersial | 10% |
+| Masa Depan | 10% |
+| Manufaktur | 5% |
+
+## Ringkasan Evaluasi SolarStoragePro
+
+| Kriteria | Penilaian |
+|-----------|--------|
+| Kapasitas manufaktur | 3,7+ GWh/tahun, terintegrasi vertikal |
+| Sertifikasi | IEC 62619, UN38.3, GB/T 36276, CE |
+| Kimia sel | LFP, 8.000+ siklus pada 1C |
+| Manajemen termal | Pendinginan cair, ΔT <2°C |
+| Keamanan kebakaran | 3 lapis (pack/cluster/container) |
+| BMS/EMS | Pemantauan tingkat sel |
+| Kapasitas terpasang | 500+ MWh di 50+ negara |
+| Garansi | 10 tahun, ≥70% EOL |
+| Dukungan | 24/7, pemantauan jarak jauh |
+
+Hubungi kami untuk paket evaluasi terperinci.

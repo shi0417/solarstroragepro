@@ -1,0 +1,108 @@
+Sélectionner le bon fournisseur de système de stockage d'énergie par batterie est l'une des décisions les plus importantes dans tout projet BESS. Ce cadre fournit une approche structurée pour évaluer et comparer les fournisseurs.
+
+## Le Cadre d'Évaluation en 15 Points
+
+### 1. Capacité et Compétences de Fabrication
+
+**Ce qu'il faut évaluer :**
+- Capacité de production annuelle (GWh)
+- Intégration verticale (fabriquent-ils les cellules, modules et systèmes ?)
+- Emplacements de fabrication et résilience de la chaîne d'approvisionnement
+- Délais de production et track record de livraison
+
+**Signaux d'alarme :** Fournisseurs ne pouvant pas fournir des rapports d'audit d'usine, avec dépendance à source unique, ou moins de 1 GWh de capacité annuelle.
+
+### 2. Certification des Produits
+
+**Ce qu'il faut évaluer :**
+- IEC 62619, UL 9540A, UN38.3, CE, GB/T 36276
+- Certifications spécifiques au marché pour vos régions cibles
+- Portée de la certification (cellule, module, système)
+- Dates d'expiration et plans de maintenance
+
+### 3. Chimie et Performance des Cellules
+
+**Ce qu'il faut évaluer :**
+- Chimie de la cellule (LFP est la norme industrielle pour C&I/utilité)
+- Durée de vie en cycles (minimum 6 000 à 0,5C ; 8 000+ préféré)
+- Durée de vie calendaire (10+ ans)
+- Rendement aller-retour au niveau système (>87%)
+
+### 4. Gestion Thermique
+
+**Ce qu'il faut évaluer :**
+- Technologie de refroidissement (liquide préféré pour C&I)
+- Uniformité de température des cellules (ΔT <3°C)
+- Performance à -20°C à +50°C
+
+### 5. Système de Sécurité Incendie
+
+**Ce qu'il faut évaluer :**
+- Nombre de couches de suppression d'incendie (minimum 3)
+- Agents de suppression (perfluorohexanone, aérosol, eau)
+- Détection de gaz et systèmes d'alerte précoce
+- Conformité NFPA 855
+
+### 6. Capacités BMS et EMS
+
+**Ce qu'il faut évaluer :**
+- Précision de mesure BMS (tension ±5mV, température ±1°C)
+- Surveillance au niveau cellule
+- Fonctionnalités EMS : arbitrage, réglage de fréquence
+- Protocoles de communication (Modbus, DNP3, IEC 61850)
+
+### 7. Expérience en Intégration Système
+
+- Nombre de projets achevés
+- Expérience dans votre application spécifique
+- Références de clients dans votre région
+
+### 8. Conditions de Garantie
+
+- Durée (minimum 10 ans)
+- Garantie de capacité en fin de garantie (≥70%)
+- Processus de réclamation et de remplacement
+
+### 9. Support Après-Vente
+
+- Support technique 24/7
+- Surveillance à distance
+- Disponibilité des pièces de rechange
+- Équipe de service locale
+
+### 10–15. Critères Additionnels
+
+- **Stabilité financière :** Revenus, rentabilité, assurance responsabilité
+- **Conformité aux codes réseau :** IEEE 1547, IEC 61850
+- **Évolutivité :** Architecture modulaire
+- **Durabilité :** Empreinte carbone, programme de recyclage
+- **Prix :** Coût total de possession
+- **Références :** Données de performance vérifiées par tiers
+
+## Système de Pondération Suggéré
+
+| Catégorie | Pondération |
+|----------|--------|
+| Sécurité & Certification | 25% |
+| Performance & Technologie | 20% |
+| Garantie & Support | 15% |
+| Track Record | 15% |
+| Commercial | 10% |
+| Pérennité | 10% |
+| Fabrication | 5% |
+
+## Résumé d'Évaluation SolarStoragePro
+
+| Critère | Évaluation |
+|-----------|--------|
+| Capacité de fabrication | 3,7+ GWh/an, intégré verticalement |
+| Certifications | IEC 62619, UN38.3, GB/T 36276, CE |
+| Chimie cellule | LFP, 8 000+ cycles à 1C |
+| Gestion thermique | Refroidissement liquide, ΔT <2°C |
+| Sécurité incendie | 3 couches (pack/cluster/container) |
+| BMS/EMS | Surveillance niveau cellule |
+| Capacité déployée | 500+ MWh dans 50+ pays |
+| Garantie | 10 ans, ≥70% EOL |
+| Support | 24/7, surveillance à distance |
+
+Contactez-nous pour un package d'évaluation détaillé.

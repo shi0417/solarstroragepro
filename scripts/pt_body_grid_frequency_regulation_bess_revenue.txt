@@ -1,0 +1,79 @@
+Regulação de frequência da rede é o serviço auxiliar de maior valor disponível para BESS hoje. Ao contrário da arbitragem de energia, a regulação de frequência oferece preços premium pois exige velocidade, precisão e confiabilidade que apenas as baterias podem fornecer.
+
+## Como os Mercados de Regulação Funcionam
+
+A frequência da rede deve ser mantida em banda estreita em torno de 50 Hz (ou 60 Hz na América do Norte).
+
+### Os Três Níveis de Controle
+
+| Nível | Tempo de Resposta | Duração | Papel BESS |
+|------|-------------|----------|-----------|
+| **Primário (FCR/PFR)** | 1–30 segundos | Até 15 min | ★★★★★ Dominante |
+| **Secundário (aFRR/RegD)** | 30 s–15 min | 15 min–1 h | ★★★★ Forte |
+| **Terciário (mFRR/Reserva)** | 15 min+ | 1–24 h | ★★ Nicho |
+
+**Fast Frequency Response (FFR)** — categoria ultra-rápida (<1 seg.) onde BESS não tem concorrência. Mercados como UK Dynamic Containment e Austrália Very Fast FCAS pagam prêmios extraordinários.
+
+### Mecanismos de Mercado
+
+- **Sinais dinâmicos:** Operador envia sinal (a cada 2–4 seg.) com potência requerida.
+- **Compensação mileage:** PJM, CAISO, ERCOT pagam por `mileage` — MW total de movimento de regulação fornecido.
+- **Score de desempenho:** PJM RegD usa score 0–100. BESS: 95–100, térmicas: 60–80.
+
+## Por que BESS Domina a Regulação
+
+| Métrica | BESS (LFP) | Térmica Pico | Hidrelétrica |
+|--------------------|------------|------------|--------------|
+| Tempo de resposta | <100 ms | 2–5 min | 10–60 seg. |
+| Velocidade de rampa | Instantânea | 5–10%/min | 20–50%/min |
+| Precisão (PJM) | 95–100 | 60–75 | 50–70 |
+| Razão mileage | 10–15× | 1–2× | 1–3× |
+
+Um BESS 20 MW com 12× mileage efetivamente ganha sobre **240 MW de produção efetiva**.
+
+## Modelos de Receita
+
+### Revenue Stacking
+
+1. **Regulação de frequência** — 40–60% do total
+2. **Arbitragem de energia** — 20–30%
+3. **Mercado de capacidade** — 10–20%
+4. **Serviços black start/inércia** — 5–15%
+
+### Benchmarks por Mercado
+
+| Mercado | Serviço | Receita ($/MW/ano) | Tamanho |
+|--------|---------|--------------------------|-----------|
+| PJM (EUA) | RegD | $180.000–$320.000 | 20 MW |
+| UK | Dynamic Containment | £100.000–£180.000 | 10 MW |
+| Austrália | FCAS | AUD $150.000–$400.000 | 10–50 MW |
+| Alemanha | aFRR | €80.000–€160.000 | 10–50 MW |
+
+### Caso UK
+
+BESS 10 MW / 5 MWh:
+- Preço médio: £12/MW/h
+- Receita anual: 10 × £12 × 8.760 × 75% ≈ **£788.400/ano**
+- Payback simples: 4,5–5,7 anos (só regulação)
+- Com stacking: **3–4 anos**
+
+## Requisitos Técnicos
+
+1. **Resposta <200 ms**
+2. **C-rate ≥1C contínuo**, 2C preferido
+3. **Precisão BMS** nível célula
+4. **Protocolos:** DNP3, IEC 61850, Modbus TCP
+5. **Resfriamento líquido** ΔT <2°C
+6. **Buffer SOC:** 45–55%
+7. **Vida útil:** LFP 8.000+ ciclos
+
+## Parceria com SolarStoragePro
+
+Nossos **containers BESS Grid-Scale** (1–5 MW) para regulação:
+- Módulos LFP **2C** para ciclagem contínua de alta potência
+- Resfriamento líquido integrado ΔT <2°C
+- PCS Grid-forming <50 ms
+- EMS inteligente com algoritmos pré-configurados
+- Garantia 10 anos ≥70% EOL, certificações completas
+
+Contate nossa equipe de serviços de rede.
