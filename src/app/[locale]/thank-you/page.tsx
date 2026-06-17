@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { useLocaleContext } from "@/components/site/LocaleProvider";
-import { getEnhancedData, type EnhancedData } from "@/lib/enhanced-conversions";
+import { trackThankYouView } from "@/lib/tracking";
 
 const BUTTON_LABELS: Record<string, { backHome: string; browseProducts: string; contactTeam: string }> = {
   en: { backHome: "Back to Home", browseProducts: "Browse Products", contactTeam: "Contact Our Team" },
@@ -17,7 +17,7 @@ const BUTTON_LABELS: Record<string, { backHome: string; browseProducts: string; 
   th: { backHome: "กลับสู่หน้าแรก", browseProducts: "ดูผลิตภัณฑ์", contactTeam: "ติดต่อทีมงาน" },
   ar: { backHome: "العودة إلى الصفحة الرئيسية", browseProducts: "تصفح المنتجات", contactTeam: "اتصل بفريقنا" },
   ja: { backHome: "ホームに戻る", browseProducts: "製品を見る", contactTeam: "チームに問い合わせる" },
-  ko: { backHome: "홈으로 돌아가기", browseProducts: "제품 보기", contactTeam: "팀에 문의하기" },
+  ko: { backHome: "홈으로 돌아가기", browseProducts: "제품 보기", contactTeam: "팀に 문의하기" },
   id: { backHome: "Kembali ke Beranda", browseProducts: "Lihat Produk", contactTeam: "Hubungi Tim Kami" },
   uk: { backHome: "Повернутися на головну", browseProducts: "Переглянути продукти", contactTeam: "Зв'язатися з командою" },
 };
@@ -27,43 +27,10 @@ export default function ThankYouPage() {
   const cf = messages.contactForm;
   const labels = BUTTON_LABELS[locale] || BUTTON_LABELS.en;
 
-  // ── Fire Google Ads conversion ONLY on this page (not globally) ──
+  // ── Fire GTM conversion event + Meta Pixel on this page ──
   useEffect(() => {
-    // SSR safety: only run on client
     if (typeof window === "undefined") return;
-
-    // Read Enhanced Conversions data from sessionStorage (stored by ContactForm)
-    const ecData: EnhancedData | null = getEnhancedData();
-
-    // Google Ads conversion
-    if (typeof window.gtag === "function") {
-      const transactionId = "ssp_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
-      const params: Record<string, unknown> = {
-        send_to: "AW-18235093488/jw1ICOmCj74cEPDjlfdD",
-        value: 5.0,
-        currency: "HKD",
-        transaction_id: transactionId,
-      };
-      // Enhanced Conversions: SHA-256 hashed first-party data
-      if (ecData) {
-        params.email = ecData.email_hashed;
-        params.first_name = ecData.first_name_hashed;
-        params.last_name = ecData.last_name_hashed;
-      }
-      window.gtag("event", "conversion", params);
-      console.log("[GA] Thank-you page conversion fired", { transactionId, ec: !!ecData });
-    }
-
-    // Meta Pixel Lead event
-    if (typeof window.fbq === "function") {
-      window.fbq("track", "Lead", {
-        content_name: "Contact Form - Thank You Page",
-        content_category: "B2B Inquiry",
-        value: 50,
-        currency: "USD",
-      });
-      console.log("[FB] Thank-you page Lead event fired");
-    }
+    trackThankYouView();
   }, []);
 
   return (

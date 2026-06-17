@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { Send, Loader2 } from "lucide-react";
 
 import { useLocaleContext } from "./LocaleProvider";
-import { storeEnhancedData } from "@/lib/enhanced-conversions";
 
 type FormData = {
   name: string;
@@ -54,9 +53,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       }
 
       setForm({ name: "", company: "", email: "", projectType: "", message: "" });
-      // Store hashed user data for Google Ads Enhanced Conversions (read by thank-you page)
-      await storeEnhancedData(form.email, form.name);
-      // Redirect to thank-you page — Google Ads conversion tracks only /thank-you URL
+      // Redirect to thank-you page — GTM fires conversion via dataLayer event
       router.push(localizePath("/thank-you"));
     } catch (err) {
       setStatus("error");

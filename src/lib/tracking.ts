@@ -1,102 +1,40 @@
 /**
- * Google Ads + Meta Pixel unified conversion tracking helpers.
+ * Conversion tracking helpers — dataLayer + Meta Pixel.
  *
- * Usage: call these in onClick handlers of WhatsApp / Email / Form links.
- * The functions use a 3-tier fallback strategy to ensure events always fire.
+ * All Google-related tracking now pushes custom events to window.dataLayer,
+ * which Google Tag Manager (GTM-MKHQ69MQ) listens for and fires the actual
+ * Google Ads / GA conversion tags.
  *
- * Tier 1: window.gtag() — the standard Google gtag function
- * Tier 2: window.dataLayer.push() — direct dataLayer manipulation (gtag.js reads this)
- * Tier 3: Create & inject a temporary <script> tag with the exact conversion snippet
+ * Meta (Facebook) Pixel calls remain direct since they are not GTM-managed.
+ *
+ * GTM custom events (configure in GTM dashboard):
+ *   - ssp_form_submit     → trigger: Google Ads conversion (AW-18235093488)
+ *   - ssp_whatsapp_click  → trigger: Google Ads conversion (lower value)
+ *   - ssp_email_click     → trigger: Google Ads conversion (lower value)
+ *   - ssp_thank_you_view  → trigger: Google Ads conversion (thank-you page)
  */
 
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
 
-type GtagFn = (command: string, event: string, params: Record<string, unknown>) => void;
-
 declare global {
   interface Window {
-    gtag?: GtagFn;
     dataLayer?: Record<string, unknown>[];
     fbq?: (...args: unknown[]) => void;
   }
 }
 
 // ---------------------------------------------------------------------------
-// Constants
+// Helpers
 // ---------------------------------------------------------------------------
 
-const GA_CONVERSION_SEND_TO = "AW-18235093488/jw1ICOmCj74cEPDjlfdD";
-
-// ---------------------------------------------------------------------------
-// Core: Fire Google Ads conversion event (triple-fallback)
-// ---------------------------------------------------------------------------
-
-/**
- * Fire a Google Ads conversion event using triple-fallback strategy.
- *
- * Why three tiers? Next.js App Router (RSC) can make globally-defined functions
- * from <Script> components unreliable depending on streaming/hydration timing.
- * This function guarantees the conversion fires regardless of execution context.
- */
-function trackGoogleAdsConversion(eventLabel: string, value = 1.0) {
-  const transactionId = "ssp_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
-  const params: Record<string, unknown> = {
-    send_to: GA_CONVERSION_SEND_TO,
-    value,
-    currency: "HKD",
-    transaction_id: transactionId,
-  };
-
-  // ── Tier 1: Standard gtag() ──
-  if (typeof window.gtag === "function") {
-    try {
-      window.gtag("event", "conversion", params);
-      console.log("[GA] Conversion fired via gtag()", params);
-      return;
-    } catch (e) {
-      console.warn("[GA] gtag() failed, falling back...", e);
-    }
-  }
-
-  // ── Tier 2: Direct dataLayer push (what gtag() does internally) ──
-  if (Array.isArray(window.dataLayer)) {
-    try {
-      window.dataLayer.push({
-        event: "conversion",
-        ...params,
-      });
-      console.log("[GA] Conversion pushed to dataLayer", params);
-      return;
-    } catch (e) {
-      console.warn("[GA] dataLayer push failed, falling back...", e);
-    }
-  }
-
-  // ── Tier 3: Inject a fresh <script> tag with raw conversion code ──
-  // This is the nuclear option — guaranteed to reach Google's servers
-  // because we create a brand-new script element that loads independently.
-  try {
-    const script = document.createElement("script");
-    script.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('event', 'conversion', ${JSON.stringify(params)});
-    `;
-    document.head.appendChild(script);
-
-    // Clean up after a moment to avoid DOM pollution
-    setTimeout(() => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    }, 5000);
-
-    console.log("[GA] Conversion fired via injected script (Tier 3)", params);
-  } catch (e) {
-    console.error("[GA] ALL tracking methods failed!", e);
-  }
+/** Push a custom event to GTM dataLayer. */
+function pushToDataLayer(event: string, params: Record<string, unknown> = {}) {
+  if (typeof window === "undefined") return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event, ...params });
+  console.log(`[GTM] dataLayer push: ${event}`, params);
 }
 
 // ---------------------------------------------------------------------------
@@ -113,9 +51,9 @@ function trackFbPixel(event: string, params: Record<string, unknown>) {
 // Public API
 // ---------------------------------------------------------------------------
 
-/** Call when the contact form is successfully submitted. */
+/** Call when the contact form is successfully submitted (before redirect). */
 export function trackFormSubmit() {
-  trackGoogleAdsConversion("form_submit", 5.0);
+  pushToDataLayer("ssp_form_submit", { value: 5.0, currency: "HKD" });
   trackFbPixel("Lead", {
     content_name: "Contact Form",
     content_category: "B2B Inquiry",
@@ -124,9 +62,20 @@ export function trackFormSubmit() {
   });
 }
 
+/** Call when the thank-you page loads (GTM fires conversion here). */
+export function trackThankYouView() {
+  pushToDataLayer("ssp_thank_you_view", { value: 5.0, currency: "HKD" });
+  trackFbPixel("Lead", {
+    content_name: "Contact Form - Thank You Page",
+    content_category: "B2B Inquiry",
+    value: 50,
+    currency: "USD",
+  });
+}
+
 /** Call when a WhatsApp link/button is clicked. */
 export function trackWhatsAppClick(source: string) {
-  trackGoogleAdsConversion("whatsapp_click", 2.0);
+  pushToDataLayer("ssp_whatsapp_click", { source, value: 2.0, currency: "HKD" });
   trackFbPixel("Contact", {
     content_name: `WhatsApp - ${source}`,
     value: 20,
@@ -136,7 +85,7 @@ export function trackWhatsAppClick(source: string) {
 
 /** Call when a mailto: email link is clicked. */
 export function trackEmailClick(source: string) {
-  trackGoogleAdsConversion("email_click", 2.0);
+  pushToDataLayer("ssp_email_click", { source, value: 2.0, currency: "HKD" });
   trackFbPixel("Contact", {
     content_name: `Email - ${source}`,
     value: 20,
