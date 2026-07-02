@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Send, Loader2 } from "lucide-react";
 
 import { useLocaleContext } from "./LocaleProvider";
@@ -187,7 +188,10 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       </button>
 
       <p className="text-center text-xs text-slate-400">
-        {cf.privacyNote}
+        {cf.privacyNote}{" "}
+        <Link href={localizePath("/privacy-policy")} className="underline hover:text-brand-500">
+          Privacy Policy
+        </Link>
       </p>
     </form>
   );

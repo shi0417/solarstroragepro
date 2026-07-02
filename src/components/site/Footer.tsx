@@ -154,20 +154,33 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 sm:flex-row">
-          <p className="text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} {f.rights}
-          </p>
-          <div className="flex items-center gap-6 text-xs text-slate-600">
-            <span>IEC 62619</span>
+        <div className="mt-12 space-y-4 border-t border-slate-800 pt-8">
+          {/* Legal links */}
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs sm:justify-start">
+            <Link href={localizePath("/privacy-policy")} className="text-slate-400 transition-colors hover:text-brand-400">Privacy Policy</Link>
             <span className="text-slate-700">|</span>
-            <span>CE Certified</span>
+            <Link href={localizePath("/terms-of-service")} className="text-slate-400 transition-colors hover:text-brand-400">Terms of Service</Link>
             <span className="text-slate-700">|</span>
-            <span>UL 9540A</span>
+            <Link href={localizePath("/cookie-policy")} className="text-slate-400 transition-colors hover:text-brand-400">Cookie Policy</Link>
             <span className="text-slate-700">|</span>
-            <span>ISO 9001</span>
-            <span className="text-slate-700">|</span>
-            <span>24/7 Technical Support Across Time Zones</span>
+            <Link href={localizePath("/imprint")} className="text-slate-400 transition-colors hover:text-brand-400">Imprint</Link>
+          </div>
+
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-xs text-slate-500">
+              &copy; {new Date().getFullYear()} {f.rights}
+            </p>
+            <div className="flex items-center gap-6 text-xs text-slate-600">
+              <span>IEC 62619</span>
+              <span className="text-slate-700">|</span>
+              <span>CE Certified</span>
+              <span className="text-slate-700">|</span>
+              <span>UL 9540A</span>
+              <span className="text-slate-700">|</span>
+              <span>ISO 9001</span>
+              <span className="text-slate-700">|</span>
+              <span>24/7 Technical Support Across Time Zones</span>
+            </div>
           </div>
         </div>
       </div>
