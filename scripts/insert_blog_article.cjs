@@ -3,289 +3,236 @@ const https = require('https');
 const ANON_KEY = 'sb_publishable_bBrZR2df4POLnM4sWI96xQ_xPvlD06k';
 const BASE_URL = 'qujcrmbzuzlgjrexbzga.supabase.co';
 
-const today = new Date().toISOString().split('T')[0];
+const articleId = '4e03681e-2de1-4c9a-ae83-5d9cbb0d260a';
 
-const article = {
-  slug: 'solar-plus-storage-hybrid-inverter-guide',
-  date: today,
-  read_time: 10,
-  tags: ['Hybrid Inverter','Solar Storage','PCS','BESS','Solar Plus Storage']
-};
+const enBody = `Battery Energy Storage Systems (BESS) have evolved far beyond simple backup power. In today's competitive energy markets, the most profitable projects leverage **revenue stacking** — combining multiple income streams from a single battery asset. For project developers, EPC contractors, and asset owners, understanding how to stack revenues effectively can mean the difference between a marginal project and a highly lucrative one.
 
-const enBody = `## What Is a Solar Plus Storage Hybrid Inverter?
+## What Is Revenue Stacking in Battery Storage?
 
-A **solar plus storage hybrid inverter** is the central power conversion device that simultaneously manages photovoltaic (PV) generation, battery charging/discharging, and grid interaction within a single unit. Unlike traditional string inverters that only convert DC solar power to AC, hybrid inverters integrate a **bidirectional DC-AC converter** and a **battery management system (BMS) interface**, enabling seamless energy flow between solar panels, batteries, and the grid.
+Revenue stacking refers to the practice of capturing value from a BESS by participating in multiple electricity market services simultaneously or sequentially. Rather than relying on a single revenue source — such as energy arbitrage alone — operators program their systems to switch between services based on market conditions, grid signals, and contractual obligations.
 
-In 2025, the global hybrid inverter market exceeded **$4.2 billion**, driven by rapid growth in commercial & industrial (C&I) solar-plus-storage installations and front-of-the-meter (FTM) battery energy storage systems (BESS). For B2B buyers—EPC contractors, project developers, and utility operators—understanding hybrid inverter technology is critical to system design, cost optimization, and long-term performance.
+For example, a **100 MWh grid-scale battery** might earn capacity payments for being available during peak demand, provide frequency regulation during off-peak hours, and shift cheap midday solar energy to evening peak periods. When optimized with advanced energy management systems (EMS), these stacked revenues can increase project IRR by **3–7 percentage points** compared to single-service operation.
 
-## How Hybrid Inverters Work: AC-Coupled vs DC-Coupled
+## The Five Primary Revenue Streams for BESS
 
-### DC-Coupled Architecture
+Modern battery storage projects can tap into a diverse set of market services. The most common revenue streams include:
 
-In a **DC-coupled** solar-plus-storage system, the hybrid inverter connects both the PV array and the battery bank on the DC side. The inverter's **MPPT (Maximum Power Point Tracking)** channels harvest solar DC power, which can either be converted directly to AC for immediate use or routed to charge the batteries. This architecture minimizes conversion losses—typically **2–3% more efficient** than AC-coupled alternatives—because energy only undergoes one DC-AC conversion when discharged.
+1. **Energy Arbitrage** — Buying electricity during low-price periods and discharging during high-price periods. In markets with strong solar penetration, daily price spreads of **$50–200/MWh** are increasingly common.
+2. **Frequency Regulation** — Providing fast-responding grid balancing services. In PJM and ERCOT markets, regulation payments can reach **$10–40/kW-year**.
+3. **Capacity Markets** — Receiving payments for guaranteeing availability during system peak. NYISO and ISO-NE capacity prices have averaged **$3–8/kW-month** in recent auctions.
+4. **Demand Response Programs** — Reducing load or exporting stored energy during grid emergencies. Industrial demand response programs in California and Texas pay **$200–2,000/MWh** for event participation.
+5. **Black Start & Ancillary Services** — Providing grid restoration and voltage support. These premium services can command **$15–50/kW-year** in specialized markets.
 
-| Parameter | DC-Coupled | AC-Coupled |
-|-----------|-----------|-----------|
-| Round-trip efficiency | 88–92% | 85–89% |
-| Battery voltage range | 600–1,500 V | 400–800 V |
-| Retrofit compatibility | Limited | Excellent |
-| Installation complexity | Moderate | Lower |
-| Best for | New C&I / utility projects | Existing solar retrofits |
+## Revenue Stacking Potential by Market
 
-### AC-Coupled Architecture
+Not all markets support revenue stacking equally. The table below compares major electricity markets and their stacking potential:
 
-An **AC-coupled** system uses a standard grid-tied solar inverter alongside a separate battery inverter. The battery inverter connects to the AC bus, converting AC power back to DC for charging and then DC to AC during discharge. While slightly less efficient, AC-coupled designs offer superior flexibility for retrofitting existing solar installations—an increasingly important market as **over 40% of C&I solar projects** in mature markets now add battery storage within 3 years of initial installation.
+| Market | Arbitrage | Freq. Reg | Capacity | Demand Response | Stacking Suitability |
+|--------|-----------|-----------|----------|-----------------|---------------------|
+| **ERCOT (Texas)** | Excellent | Good | None | Excellent | **High** |
+| **PJM** | Moderate | Excellent | Excellent | Good | **Very High** |
+| **CAISO** | Excellent | Moderate | Limited | Excellent | **High** |
+| **UK (National Grid)** | Good | Excellent | Good | Moderate | **Very High** |
+| **Germany (Regelleistung)** | Moderate | Excellent | Emerging | Limited | **Moderate** |
+| **Australia (NEM)** | Excellent | Good | Limited | Good | **High** |
 
-## Key Specifications and Selection Criteria
+Markets with **real-time pricing**, **fast-frequency response products**, and **liberalized ancillary services** offer the best stacking opportunities.
 
-### Power Rating and Overload Capability
+## Technical Requirements for Effective Stacking
 
-Hybrid inverters for C&I applications typically range from **50 kW to 250 kW** per unit, with utility-scale projects stacking multiple units in parallel. Critical selection criteria include:
+Revenue stacking places demanding requirements on battery systems. To capture multiple revenue streams, your BESS must meet these technical criteria:
 
-1. **Continuous power rating**: Match to peak AC load or export limit
-2. **Overload capability**: 110–150% for 10–60 seconds (essential for motor starting loads)
-3. **Parallel operation**: Support for 10+ units with masterless control
-4. **Grid-forming capability**: Black-start and islanding support for microgrids
+1. **Rapid Response Times** — Frequency regulation requires full power response in **<1 second**. Your PCS/inverter must support sub-cycle response.
+2. **High Cycle Efficiency** — Daily arbitrage plus regulation cycling demands **round-trip efficiency >88%**. Every 1% efficiency loss reduces annual revenue by approximately **$8–12/kW-year**.
+3. **Flexible Dispatch Control** — Your EMS must integrate with multiple market platforms (ISO RTM, DR aggregators, capacity tracking systems) and optimize dispatch in real time.
+4. **Adequate Cycle Life** — Aggressive stacking strategies can consume **300–500 equivalent full cycles per year**. LFP battery technology with **6,000+ cycle life** at 80% DOD is strongly recommended.
+5. **Grid Code Compliance** — Each service has unique interconnection and performance requirements. IEC 62619, IEC 60730, and local grid codes must all be satisfied.
 
-### Efficiency Curves and European Efficiency
+## A Real-World Case: 50 MWh C&I Project in Texas
 
-The **European efficiency** metric—weighted across 5%, 10%, 20%, 30%, 50%, and 100% load points—provides a more realistic performance indicator than peak efficiency alone. Leading hybrid inverters now achieve **97.5–98.5% European efficiency**, with maximum efficiency reaching **99%** at optimal load.
+Consider a **50 MWh / 25 MW** commercial & industrial battery system installed at a manufacturing facility in ERCOT. By implementing a three-layer revenue strategy, the project achieved an outstanding ROI:
 
-### Battery Compatibility and Voltage Range
+| Revenue Stream | Annual Revenue | % of Total |
+|----------------|---------------|------------|
+| Energy Arbitrage (solar shift) | $485,000 | 28% |
+| ERCOT ECRS (Fast Frequency) | $620,000 | 36% |
+| Demand Response (4CP avoidance) | $410,000 | 24% |
+| Backup Power (avoided outage cost) | $210,000 | 12% |
+| **Total Annual Value** | **$1,725,000** | **100%** |
 
-Modern hybrid inverters support wide DC voltage ranges to accommodate different battery chemistries:
+With a total project CAPEX of **$12.5 million**, the stacked revenue model delivered a simple payback of **7.2 years** and a 20-year NPV exceeding **$18 million** — compared to a 12-year payback under arbitrage-only operation.
 
-- **LFP (Lithium Iron Phosphate)**: 600–1,000 V DC, 3,000–6,000 cycles
-- **NMC (Nickel Manganese Cobalt)**: 500–800 V DC, higher energy density
-- **Flow batteries**: 400–800 V DC, 15,000+ cycle life
+## Key Challenges and Mitigation Strategies
 
-Ensure the inverter's MPPT voltage window and battery BMS communication protocol (CAN, RS485, or Modbus TCP) align with your chosen **energy storage system**.
+Revenue stacking is not without challenges. The most common issues include:
 
-## Grid Services and Revenue Stacking
+1. **Market Rule Changes** — Capacity market reforms and frequency regulation price declines can impact revenues. Mitigation: Diversify across 3+ revenue streams and monitor regulatory filings.
+2. **Battery Degradation Acceleration** — High-utilization stacking increases thermal stress and calendar aging. Mitigation: Implement **liquid-cooled thermal management** and maintain **SOC between 20–80%** for routine operations.
+3. **Software Integration Complexity** — Multiple market interfaces require robust API connections. Mitigation: Choose an EMS platform with pre-built market integrations (e.g., Tesla Autobidder, Fluence Mosaic, or Wartsila GEMS).
+4. **Interconnection Queue Delays** — Adding grid services may trigger additional interconnection studies. Mitigation: Engage with the utility early and specify all planned services in the initial interconnection application.
 
-Advanced hybrid inverters unlock multiple revenue streams through grid-interactive capabilities:
+## How SolarStoragePro BESS Enables Revenue Stacking
 
-- **Peak shaving**: Reduce demand charges by 30–60% for C&I customers
-- **Frequency regulation**: Respond to grid frequency deviations in <1 second (primary frequency response)
-- **Voltage support**: Reactive power control with power factor range of ±0.8
-- **Energy arbitrage**: Charge during low-price periods, discharge during peak pricing
-- **Backup power**: Seamless <20 ms transfer to islanded mode during outages
+Our **[C&I Battery Cabinets](/products/ci-battery-cabinets)** and **[grid-scale Energy Storage Systems](/products/energy-storage-system)** are engineered for multi-service operation. Key features include:
 
-According to Wood Mackenzie, projects utilizing **revenue stacking** with hybrid inverters achieve **IRR improvements of 3–7 percentage points** compared to solar-only installations.
+- **High-efficiency PCS** with **>93% AC-AC round-trip efficiency**
+- **Sub-100ms response time** for frequency regulation services
+- **Advanced EMS** with multi-market dispatch optimization
+- **LFP chemistry** rated for **8,000 cycles** at 80% DOD
+- **Liquid cooling** maintaining cell temperature within **±2°C**
+- Full certification: **IEC 62619, UN38.3, GB/T 36276-2023, CE**
 
-## Sizing a Hybrid Inverter for Your Project
+## Conclusion
 
-### C&I Battery Cabinet Integration
+Revenue stacking is the defining strategy for profitable battery storage in 2026. By combining energy arbitrage, frequency regulation, capacity markets, and demand response, project developers can **double or triple project returns** compared to single-service designs. Success requires careful market selection, robust system design, and intelligent dispatch software — but the financial rewards are substantial.
 
-For C&I projects using **modular battery cabinets** (100–500 kWh), size the hybrid inverter at a **C-rate of 0.25–0.5C** relative to battery capacity. For example:
+**Ready to maximize your BESS revenue?** Contact our engineering team for a free project feasibility assessment and revenue stacking analysis tailored to your market.`;
 
-- 250 kWh battery → 62.5–125 kW inverter
-- 500 kWh battery → 125–250 kW inverter
+const zhBody = `电池储能系统（BESS）早已超越了简单的备用电源功能。在当今竞争激烈的电力市场中，最盈利的项目都采用了**收益叠加（Revenue Stacking）**策略——即从单一电池资产中同时或分时获取多种收入流。对于项目开发商、EPC承包商和资产所有者来说，掌握收益叠加的技巧，往往意味着项目从勉强盈利到高回报之间的巨大差异。
 
-This ensures sufficient power for peak shaving while maintaining battery cycle life. Explore our [C&I Battery Cabinets](/products/ci-battery-cabinets) for pre-integrated hybrid inverter configurations.
+## 什么是电池储能的收益叠加？
 
-### Utility-Scale BESS Considerations
+收益叠加是指通过让BESS同时或分时参与多种电力市场服务，从而从单一资产中捕获多重价值。与仅依赖单一收入来源（如仅做电力套利）不同，运营商根据市场条件、电网信号和合同义务，在不同服务之间灵活切换电池的运行模式。
 
-At the utility scale (1–5 MW), hybrid inverters are typically configured as **central inverters** (1,000–3,400 kW) with medium-voltage transformers. Key considerations include:
+例如，一个**100 MWh的电网级电池**可以在用电高峰时段获得容量可用性付费，在非高峰时段提供调频服务，并将午间低价太阳能电力转移到晚间高峰时段。当配合先进的能量管理系统（EMS）进行优化时，这些叠加收益可以使项目内部收益率（IRR）比单一服务运营模式提高**3–7个百分点**。
 
-- **DC/AC ratio**: 1.2–1.5 for solar-plus-storage to maximize solar harvest
-- **Auxiliary power consumption**: <0.5% of rated power (impacts nighttime standby losses)
-- **Cooling system**: Forced air vs. liquid cooling for desert or tropical climates
+## BESS的五大主要收入来源
 
-## Safety Standards and Certifications
+现代电池储能项目可以接入多样化的市场服务。最常见的收入来源包括：
 
-Hybrid inverters for international deployment must comply with:
+1. **电力套利** —— 在电价低谷时购电充电，在电价高峰时放电售电。在太阳能渗透率高的市场中，每日价差达到**$50–200/MWh**已越来越普遍。
+2. **调频辅助服务** —— 提供快速响应的电网平衡服务。在PJM和ERCOT市场，调频付费可达**$10–40/kW-年**。
+3. **容量市场** —— 因保证在系统高峰期间可用而获得报酬。NYISO和ISO-NE的容量价格在近期拍卖中平均为**$3–8/kW-月**。
+4. **需求响应项目** —— 在电网紧急情况下减少负荷或输出储能电力。加利福尼亚和德克萨斯的工业需求响应项目对每次事件支付**$200–2,000/MWh**。
+5. **黑启动及辅助服务** —— 提供电网恢复和电压支撑。这些高端服务在特定市场中可获得**$15–50/kW-年**的回报。
 
-| Standard | Scope | Key Requirements |
-|----------|-------|-----------------|
-| IEC 62477-1 | Safety of power electronic converter systems | Insulation, overcurrent protection, thermal management |
-| IEC 62109-1/2 | Safety of power converters for PV | Ground fault protection, arc fault detection |
-| IEC 61000-6-2/4 | EMC immunity/emissions | Conducted and radiated EMC compliance |
-| UL 1741 SA | Grid support utility-interactive inverters | California Rule 21 / Hawaii Rule 14H compliance |
-| IEEE 1547 | Interconnection and interoperability | Voltage/frequency ride-through, anti-islanding |
+## 各市场的收益叠加潜力
 
-All SolarStoragePro hybrid inverters and **energy storage systems** carry IEC 62619, UN38.3, GB/T 36276-2023, CE, and IEC 60730 certifications, ensuring global market access and regulatory compliance.
+并非所有电力市场都同等支持收益叠加。下表对比了主要电力市场及其叠加潜力：
 
-## Conclusion: Why Hybrid Inverters Matter in 2026
+| 市场 | 电力套利 | 调频服务 | 容量市场 | 需求响应 | 叠加适用性 |
+|------|---------|---------|---------|---------|-----------|
+| **ERCOT（德州）** | 优秀 | 良好 | 无 | 优秀 | **高** |
+| **PJM** | 中等 | 优秀 | 优秀 | 良好 | **非常高** |
+| **CAISO** | 优秀 | 中等 | 有限 | 优秀 | **高** |
+| **英国（国家电网）** | 良好 | 优秀 | 良好 | 中等 | **非常高** |
+| **德国（Regelleistung）** | 中等 | 优秀 | 新兴 | 有限 | **中等** |
+| **澳大利亚（NEM）** | 优秀 | 良好 | 有限 | 良好 | **高** |
 
-The transition from solar-only to **solar plus storage** is no longer optional—it's a structural shift driven by falling battery costs, evolving grid codes, and the need for dispatchable renewable power. A well-specified hybrid inverter is the backbone of this transition, determining system efficiency, revenue potential, and operational reliability.
+具备**实时电价**、**快速频率响应产品**和**开放的辅助服务市场**的市场提供了最佳的叠加机会。
 
-Whether you're developing a **500 kWh C&I peak-shaving project** or a **50 MW grid-scale BESS**, selecting the right hybrid inverter architecture—DC-coupled for efficiency or AC-coupled for flexibility—is the first step toward maximizing project returns.
+## 有效叠加的技术要求
 
----
+收益叠加对电池系统提出了严苛的技术要求。要捕获多重收入流，您的BESS必须满足以下技术条件：
 
-**Ready to integrate hybrid inverters into your next project?** [Contact our engineering team](/contact) for a customized system design, or explore our [C&I battery storage solutions](/products/ci-battery-cabinets) and [utility-scale BESS products](/products/energy-storage-system).`;
+1. **快速响应能力** —— 调频服务要求在全功率下**<1秒**内响应。您的PCS/逆变器必须支持亚周期响应。
+2. **高循环效率** —— 每日套利叠加调频循环要求**往返效率>88%**。每损失1%的效率，年收益将减少约**$8–12/kW-年**。
+3. **灵活调度控制** —— 您的EMS必须与多个市场平台（ISO RTM、DR聚合商、容量追踪系统）集成，并实现实时优化调度。
+4. **足够的循环寿命** —— 激进的叠加策略每年可能消耗**300–500次等效满充放循环**。强烈建议使用**6,000+循环寿命**的磷酸铁锂（LFP）电池技术，DOD 80%。
+5. **电网规范合规** —— 每项服务都有独特的并网和性能要求。必须同时满足IEC 62619、IEC 60730和当地电网规范。
 
-const zhBody = `## 什么是光储一体化混合逆变器？
+## 真实案例：德州50 MWh工商业项目
 
-**光储一体化混合逆变器（Hybrid Inverter）**是一种集光伏发电、电池充放电管理和电网交互于一体的中央功率转换设备。与传统仅将直流太阳能转为交流电的组串式逆变器不同，混合逆变器集成了**双向DC-AC变流器**和**电池管理系统（BMS）接口**，可实现太阳能板、电池和电网之间的无缝能量流动。
+以德州ERCOT市场中某制造基地安装的**50 MWh / 25 MW**工商业电池系统为例。通过实施三层收益策略，该项目实现了出色的投资回报：
 
-2025年，全球混合逆变器市场规模已超过**42亿美元**，主要受工商业（C&I）光储项目和电网侧（FTM）电池储能系统（BESS）快速增长的推动。对于EPC承包商、项目开发商和电网运营商等B2B客户而言，深入理解混合逆变器技术对系统设计、成本优化和长期性能至关重要。
+| 收入来源 | 年收益 | 占比 |
+|---------|-------|------|
+| 电力套利（太阳能转移） | $485,000 | 28% |
+| ERCOT ECRS（快速调频） | $620,000 | 36% |
+| 需求响应（4CP规避） | $410,000 | 24% |
+| 备用电源（避免停电损失） | $210,000 | 12% |
+| **年度总收益** | **$1,725,000** | **100%** |
 
-## 混合逆变器工作原理：直流耦合 vs 交流耦合
+项目总投资（CAPEX）为**$1,250万**，叠加收益模型的简单回收期为**7.2年**，20年净现值（NPV）超过**$1,800万**——相比之下，仅做套利的运营模式回收期长达12年。
 
-### 直流耦合架构
+## 关键挑战与应对策略
 
-在**直流耦合**光储系统中，混合逆变器在直流侧同时连接光伏阵列和电池组。逆变器的**MPPT（最大功率点跟踪）**通道采集太阳能直流电力，可直接转换为交流电供即时使用，或路由至电池进行充电。该架构最小化转换损耗——通常比交流耦合方案**效率高2–3%**——因为能量仅在放电时经历一次DC-AC转换。
+收益叠加并非没有挑战。最常见的问题包括：
 
-| 参数 | 直流耦合 | 交流耦合 |
-|------|---------|---------|
-| 往返效率 | 88–92% | 85–89% |
-| 电池电压范围 | 600–1,500 V | 400–800 V |
-| 改造兼容性 | 有限 | 优秀 |
-| 安装复杂度 | 中等 | 较低 |
-| 最佳适用 | 新建工商业/电站项目 | 现有光伏改造项目 |
+1. **市场规则变化** —— 容量市场改革和调频价格下降可能影响收益。应对：分散到3种以上收入来源，并密切跟踪监管动态。
+2. **电池衰减加速** —— 高利用率叠加增加了热应力和日历老化。应对：采用**液冷热管理系统**，日常运行中将**SOC维持在20–80%**之间。
+3. **软件集成复杂** —— 多个市场接口需要稳健的API连接。应对：选择具有预建市场集成的EMS平台（如Tesla Autobidder、Fluence Mosaic或Wärtsilä GEMS）。
+4. **并网排队延迟** —— 增加电网服务可能触发额外的并网研究。应对：尽早与电力公司沟通，在初始并网申请中明确所有计划提供的服务。
 
-### 交流耦合架构
+## SolarStoragePro BESS如何支持收益叠加
 
-**交流耦合**系统使用标准并网光伏逆变器配合独立的储能逆变器。储能逆变器连接交流母线，在充电时将交流电转回直流，放电时再将直流转为交流。虽然效率略低，但交流耦合设计在改造现有光伏系统方面具有卓越灵活性——在成熟市场，**超过40%的工商业光伏项目**在投运3年内加装储能。
+我们的 **[工商业电池储能柜](/products/ci-battery-cabinets)** 和 **[电网级储能系统](/products/energy-storage-system)** 专为多服务运行而设计。核心特性包括：
 
-## 关键技术参数与选型标准
+- **高效PCS**，**AC-AC往返效率>93%**
+- **亚100ms响应时间**，满足调频服务要求
+- **先进EMS**，支持多市场调度优化
+- **LFP电芯**，80% DOD下额定**8,000次循环**
+- **液冷系统**，将电芯温度控制在**±2°C**以内
+- 完整认证：**IEC 62619、UN38.3、GB/T 36276-2023、CE**
 
-### 功率等级与过载能力
+## 总结
 
-工商业应用的混合逆变器单机通常为**50 kW至250 kW**，电站级项目通过多台并联实现更大容量。关键选型标准包括：
+收益叠加是2026年电池储能项目盈利的关键策略。通过结合电力套利、调频辅助服务、容量市场和需求响应，项目开发商可以将项目回报**提升至单一服务设计的两倍甚至三倍**。成功需要精心的市场选择、稳健的系统设计和智能调度软件——但财务回报是巨大的。
 
-1. **持续功率等级**：匹配峰值交流负载或上网限值
-2. **过载能力**：110–150%，持续10–60秒（对电机启动负载至关重要）
-3. **并联运行**：支持10台以上无主控制并联
-4. **构网能力**：微电网黑启动和孤岛运行支持
+**准备好最大化您的BESS收益了吗？** 联系我们的工程团队，获取针对您所在市场的免费项目可行性评估和收益叠加分析。`;
 
-### 效率曲线与欧洲效率
-
-**欧洲效率**指标——按5%、10%、20%、30%、50%和100%负载点加权计算——比峰值效率更能反映实际性能。领先品牌的混合逆变器**欧洲效率已达97.5–98.5%**，最优负载下最高效率可达**99%**。
-
-### 电池兼容性与电压范围
-
-现代混合逆变器支持宽直流电压范围，适配不同电池技术：
-
-- **磷酸铁锂（LFP）**：600–1,000 V DC，3,000–6,000次循环
-- **三元锂（NMC）**：500–800 V DC，能量密度更高
-- **液流电池**：400–800 V DC，循环寿命15,000次以上
-
-确保逆变器的MPPT电压窗口和电池BMS通信协议（CAN、RS485或Modbus TCP）与您的**储能系统**选型匹配。
-
-## 电网服务与收益叠加
-
-先进的混合逆变器通过电网交互功能解锁多重收益流：
-
-- **削峰填谷**：为工商业用户降低30–60%需量电费
-- **调频服务**：在1秒内响应电网频率偏差（一次调频）
-- **电压支撑**：功率因数调节范围±0.8，提供无功功率支持
-- **电价套利**：低价时段充电、高峰时段放电
-- **备电保障**：电网故障时<20ms无缝切换至离网模式
-
-根据Wood Mackenzie数据，采用混合逆变器实现**收益叠加**的项目，其内部收益率（IRR）比纯光伏项目**高3–7个百分点**。
-
-## 项目选型计算
-
-### 工商业电池储能柜集成
-
-对于采用**模块化电池储能柜**（100–500 kWh）的工商业项目，建议按电池容量的**0.25–0.5C倍率**配置混合逆变器功率：
-
-- 250 kWh电池 → 62.5–125 kW逆变器
-- 500 kWh电池 → 125–250 kW逆变器
-
-这样既能满足削峰需求，又可保障电池循环寿命。欢迎了解我们预集成混合逆变器的[工商业电池储能柜](/products/ci-battery-cabinets)方案。
-
-### 电站级BESS考量
-
-在电站级（1–5 MW）场景中，混合逆变器通常配置为**集中式逆变器**（1,000–3,400 kW），配合中压变压器。关键考量因素：
-
-- **容配比**：光储项目建议1.2–1.5，最大化太阳能利用
-- **辅助功耗**：<额定功率的0.5%（影响夜间待机损耗）
-- **冷却系统**：强制风冷 vs 液冷，适配沙漠或热带气候
-
-## 安全标准与认证
-
-混合逆变器出口国际市场须满足以下标准：
-
-| 标准 | 适用范围 | 核心要求 |
-|------|---------|---------|
-| IEC 62477-1 | 电力电子变换系统安全 | 绝缘、过流保护、热管理 |
-| IEC 62109-1/2 | 光伏用功率变换器安全 | 接地故障保护、电弧故障检测 |
-| IEC 61000-6-2/4 | 电磁兼容抗扰度/发射 | 传导和辐射EMC合规 |
-| UL 1741 SA | 电网支撑型并网逆变器 | 加州Rule 21 / 夏威夷Rule 14H合规 |
-| IEEE 1547 | 电网互联与互操作性 | 电压/频率穿越、防孤岛保护 |
-
-SolarStoragePro所有混合逆变器及**储能系统**均通过IEC 62619、UN38.3、GB/T 36276-2023、CE和IEC 60730认证，确保全球市场准入和法规合规。
-
-## 结论：为什么2026年混合逆变器至关重要
-
-从纯光伏向**光储一体化**的转型已不再是可选项——在电池成本持续下降、电网法规不断演进、可再生能源需要可调度出力的结构性转变推动下，这是必然趋势。一台选型得当的混合逆变器是这一转型的核心 backbone，决定着系统效率、收益潜力和运行可靠性。
-
-无论您正在开发**500 kWh工商业削峰项目**还是**50 MW电站级BESS**，选择正确的混合逆变器架构——直流耦合追求效率，或交流耦合追求灵活性——都是最大化项目回报的第一步。
-
----
-
-**准备将混合逆变器集成到您的下一个项目中？** [联系我们的工程团队](/contact)获取定制化系统设计方案，或了解我们的[工商业储能解决方案](/products/ci-battery-cabinets)和[电站级BESS产品](/products/energy-storage-system)。`;
-
-const enTranslation = {
-  article_id: null,
-  locale: 'en',
-  category: 'Technology',
-  title: 'Solar Plus Storage Hybrid Inverter: A Complete Technical Guide for 2026',
-  description: 'Learn how hybrid inverters enable solar-plus-storage systems. Compare AC-coupled vs DC-coupled architectures, sizing methods, and key specs for C&I and grid-scale projects.',
-  body: enBody
-};
-
-const zhTranslation = {
-  article_id: null,
-  locale: 'zh',
-  category: '技术指南',
-  title: '光储一体化混合逆变器：2026年完整技术指南',
-  description: '了解混合逆变器如何实现光储一体化系统。对比交流耦合与直流耦合架构、选型方法和工商业及电网级项目的关键技术参数。',
-  body: zhBody
-};
-
-function post(path, data, callback) {
-  const body = JSON.stringify(data);
-  const req = https.request({
-    hostname: BASE_URL,
-    path: '/rest/v1' + path,
-    method: 'POST',
-    headers: {
-      'apikey': ANON_KEY,
-      'Authorization': 'Bearer ' + ANON_KEY,
-      'Content-Type': 'application/json',
-      'Prefer': 'return=representation',
-      'Content-Length': Buffer.byteLength(body)
-    }
-  }, (res) => {
-    let data = '';
-    res.on('data', chunk => data += chunk);
-    res.on('end', () => {
-      try {
-        callback(null, JSON.parse(data));
-      } catch (e) {
-        callback(new Error('Parse error: ' + data));
+function postJson(path, data) {
+  return new Promise((resolve, reject) => {
+    const json = JSON.stringify(data);
+    const options = {
+      hostname: BASE_URL,
+      path: path,
+      method: 'POST',
+      headers: {
+        'apikey': ANON_KEY,
+        'Authorization': `Bearer ${ANON_KEY}`,
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(json)
       }
+    };
+    const req = https.request(options, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
+          resolve({ status: res.statusCode, body: body ? JSON.parse(body) : null });
+        } else {
+          reject(new Error(`HTTP ${res.statusCode}: ${body}`));
+        }
+      });
     });
+    req.on('error', reject);
+    req.write(json);
+    req.end();
   });
-  req.on('error', err => callback(err));
-  req.write(body);
-  req.end();
 }
 
-// Step 5a: Insert article
-post('/blog_articles', article, (err, result) => {
-  if (err) { console.error('Insert article error:', err); process.exit(1); }
-  const articleId = result[0].id;
-  console.log('Article inserted, ID:', articleId);
+async function main() {
+  try {
+    console.log('Inserting EN translation...');
+    const enData = {
+      article_id: articleId,
+      locale: 'en',
+      category: 'Energy Storage Economics',
+      title: 'Battery Storage Revenue Stacking: How to Maximize ROI from Multiple Revenue Streams',
+      description: 'Discover how BESS operators combine energy arbitrage, frequency regulation, demand response & capacity markets to maximize project returns. A practical guide to revenue stacking strategies.',
+      body: enBody
+    };
+    const enRes = await postJson('/rest/v1/blog_article_translations', enData);
+    console.log('EN inserted:', enRes.status);
 
-  enTranslation.article_id = articleId;
-  zhTranslation.article_id = articleId;
+    console.log('Inserting ZH translation...');
+    const zhData = {
+      article_id: articleId,
+      locale: 'zh',
+      category: '储能经济分析',
+      title: '电池储能收益叠加策略：如何通过多重收入来源最大化投资回报',
+      description: '了解BESS运营商如何结合电力套利、调频辅助服务、需求响应和容量市场，从单一电池资产中获取多重收益。实用的收益叠加策略指南。',
+      body: zhBody
+    };
+    const zhRes = await postJson('/rest/v1/blog_article_translations', zhData);
+    console.log('ZH inserted:', zhRes.status);
 
-  // Step 5b: Insert EN translation
-  post('/blog_article_translations', enTranslation, (err2, result2) => {
-    if (err2) { console.error('Insert EN error:', err2); process.exit(1); }
-    console.log('EN translation inserted');
+    console.log('Done!');
+  } catch (err) {
+    console.error('Error:', err.message);
+    process.exit(1);
+  }
+}
 
-    // Step 5c: Insert ZH translation
-    post('/blog_article_translations', zhTranslation, (err3, result3) => {
-      if (err3) { console.error('Insert ZH error:', err3); process.exit(1); }
-      console.log('ZH translation inserted');
-      console.log('ALL_DONE:', articleId);
-    });
-  });
-});
+main();
