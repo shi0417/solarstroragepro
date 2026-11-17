@@ -42,3 +42,4 @@ tsconfig.tsbuildinfo
 # python cache
 __pycache__/
 *.pyc
+slugs_tmp.json
